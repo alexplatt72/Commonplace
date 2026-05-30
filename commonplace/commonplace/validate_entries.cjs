@@ -211,8 +211,8 @@ for (const fname of files) {
       const max = maxSentenceLength(allText);
       const wc = wordCount(allText);
       let readAdvisory = false;
-      if (avg > 18) { issues.advisory.push(`${id}: beginner avg sentence length ${avg.toFixed(1)} words (target ≤18)`); readAdvisory = true; }
-      if (max > 35) { issues.advisory.push(`${id}: beginner has sentence >${35} words (max: ${max})`); readAdvisory = true; }
+      if (avg > 18) { issues.required.push(`${id}: beginner avg sentence length ${avg.toFixed(1)} words (target ≤18)`); }
+      if (max > 35) { issues.required.push(`${id}: beginner has sentence >${35} words (max: ${max})`); }
       if (wc < 400) { issues.advisory.push(`${id}: beginner word count ${wc} (target 400-700)`); readAdvisory = true; }
       if (wc > 700) { issues.advisory.push(`${id}: beginner word count ${wc} (target 400-700)`); readAdvisory = true; }
       if (readAdvisory) totalReadabilityAdvisory++;
