@@ -319,7 +319,7 @@ function ContentView({ entry, depth }) {
     if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:15, color:C.muted, fontStyle:"italic" }}>Educational content for this entry is in development.</div>;
     return <EducationalView content={content} />;
   }
-  if (depth === "research") return <ResearchView items={content} />;
+  if (depth === "research") return <ResearchView items={entry.research} />;
   if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:16, color:C.muted, fontStyle:"italic" }}>Full content for this depth level available in the concept build files.</div>;
   return (
     <div>
@@ -586,7 +586,7 @@ function EntryView({ entry, accent, navigateTo }) {
             <button key={t} onClick={() => setTab(t)} style={{ padding:"12px 24px", border:"none", borderBottom: tab === t ? `2px solid ${accent}` : "2px solid transparent", background: tab === t ? C.surface : C.warm, color: tab === t ? accent : C.muted, fontFamily:"'Lora',serif", fontSize:14, fontWeight: tab === t ? 600 : 400, cursor:"pointer", transition:"all 0.15s", textTransform:"capitalize" }}>{t}</button>
           ))}
           <div style={{ marginLeft:"auto", display:"flex", alignItems:"center", paddingRight:24, opacity: tab === "reference" ? 0.3 : 1, pointerEvents: tab === "reference" ? "none" : "auto" }}>
-            <DepthIndicator depth={depth} hasResearch={entry.hasResearch} onChange={setDepth} />
+            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={setDepth} />
           </div>
         </div>
       </div>
@@ -594,7 +594,7 @@ function EntryView({ entry, accent, navigateTo }) {
         {tab === "content" ? (
           <>
             <ContentView entry={entry} depth={depth} />
-            {depth !== "research" && <GoDeeper currentDepth={depth} hasResearch={entry.hasResearch} onChange={setDepth} accent={accent} />}
+            {depth !== "research" && <GoDeeper currentDepth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={setDepth} accent={accent} />}
             <div style={{ borderTop:`1px solid ${C.border}`, marginTop:44, paddingTop:36 }}>
               {showPopularCulture && <PopularCulture items={entry.popularCulture} />}
               {showComparative && <ComparativeNarrative perspectives={entry.comparativeNarrative} summary={entry.comparativeSummary} />}
