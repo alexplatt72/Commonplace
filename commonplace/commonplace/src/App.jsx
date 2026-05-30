@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Fuse from "fuse.js";
 
 // ─── GLOBAL STATE ─────────────────────────────────────────────────────────────
-let MANIFEST = [];   // loaded once from /entries/manifest.json
-let ENTRY_CACHE = {}; // full entries loaded on demand
+let MANIFEST = [];      // loaded once from /entries/manifest.json
+let ENTRY_CACHE = {};   // full entries loaded on demand
+let SEARCH_INDEX = [];  // richer search data: aliases, themes, indexTerms
+let FUSE = null;        // Fuse.js instance, initialised after searchIndex loads
 
 
 const FONTS = `
@@ -633,25 +636,63 @@ const TEMPLATE_META = {
 // SEARCH ENGINE
 // ═══════════════════════════════════════════════════════════════════════════════
 
-function scoreEntry(entry, terms) {
-  if (!terms.length) return 0;
-  const title = (entry.title || '').toLowerCase();
-  const summary = (entry.summary || '').toLowerCase();
-  const hook = (entry.hook || '').toLowerCase();
-  const compSummary = (entry.comparativeSummary || '').toLowerCase();
-  const subtype = (entry.subtype || '').toLowerCase();
-  const period = (entry.period || '').toLowerCase();
-  let score = 0;
-  terms.forEach(term => {
-    if (title === term) score += 30;
-    if (title.includes(term)) score += 10;
-    if (subtype.includes(term)) score += 8;
-    if (hook.includes(term)) score += 6;
-    if (summary.includes(term)) score += 4;
-    if (compSummary.includes(term)) score += 3;
-    if (period.includes(term)) score += 2;
+function initFuse() {
+  FUSE = new Fuse(SEARCH_INDEX, {
+    keys: [
+      { name: "title",      weight: 0.40 },
+      { name: "aliases",    weight: 0.30 },
+      { name: "indexTerms", weight: 0.15 },
+      { name: "themes",     weight: 0.10 },
+      { name: "summary",    weight: 0.05 },
+    ],
+    threshold:        0.35,  // 0 = exact, 1 = match anything — 0.35 tolerates typos
+    ignoreLocation:   true,  // match anywhere in the string, not just start
+    minMatchCharLength: 2,
+    includeScore:     true,
   });
-  return score;
+}
+
+// scoreEntry used for autocomplete — looks up Fuse result by id
+function scoreEntry(entry, terms) {
+  if (!FUSE || !terms.length) {
+    // Fallback before Fuse is ready: basic title match
+    const title = (entry.title || '').toLowerCase();
+    return terms.some(t => title.includes(t)) ? 10 : 0;
+  }
+  const results = FUSE.search(terms.join(' '));
+  const match = results.find(r => r.item.id === entry.id);
+  // Fuse score is 0 (perfect) to 1 (no match) — invert for our convention
+  return match ? Math.round((1 - match.score) * 100) : 0;
+}
+
+function searchEntries(query) {
+  if (!query.trim()) return { results: [], query: '', empty: false };
+
+  // Use Fuse.js if available
+  if (FUSE) {
+    const fuseResults = FUSE.search(query, { limit: 12 });
+    if (fuseResults.length > 0) {
+      const results = fuseResults.map(r => {
+        const manifest = MANIFEST.find(e => e.id === r.item.id);
+        return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
+      }).filter(x => x.entry);
+      return { results, query, empty: false };
+    }
+    return { results: [], suggestions: [], query, empty: true };
+  }
+
+  // Fallback: simple keyword search before Fuse loads
+  const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
+  const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
+  if (!terms.length) return { results: [], query, empty: false };
+  const scored = MANIFEST.map(entry => {
+    const title = (entry.title || '').toLowerCase();
+    const score = terms.reduce((s, t) => s + (title.includes(t) ? 10 : 0), 0);
+    return { id: entry.id, entry, score };
+  }).filter(x => x.score > 0).sort((a,b) => b.score - a.score);
+  return scored.length > 0
+    ? { results: scored.slice(0,12), query, empty: false }
+    : { results: [], suggestions: [], query, empty: true };
 }
 function getMatchSnippet(entry, terms) {
   // Priority: hook first (interpretive statement), then comparativeSummary, then summary
@@ -1077,13 +1118,41 @@ export default function CommonplaceApp() {
   const [activeEntryId, setActiveEntryId] = React.useState(null);
   const [searchQuery, setSearchQuery] = React.useState('');
   const [headerQuery, setHeaderQuery] = React.useState('');
+  const [acResults, setAcResults] = React.useState([]); // autocomplete suggestions
+  const [acOpen, setAcOpen] = React.useState(false);
 
   React.useEffect(() => {
-    fetch('/entries/manifest.json')
-      .then(r => r.json())
-      .then(data => { MANIFEST = data; setManifestLoaded(true); })
-      .catch(() => setManifestLoaded(true));
+    // Load manifest + search index in parallel
+    Promise.all([
+      fetch('/entries/manifest.json').then(r => r.json()),
+      fetch('/searchIndex.json').then(r => r.json()).catch(() => []),
+    ]).then(([manifest, searchIdx]) => {
+      MANIFEST = manifest;
+      SEARCH_INDEX = searchIdx;
+      if (searchIdx.length > 0) initFuse(); // initialise Fuse once data is ready
+      setManifestLoaded(true);
+    }).catch(() => setManifestLoaded(true));
   }, []);
+
+  // Live autocomplete as user types in header
+  const handleHeaderChange = (e) => {
+    const q = e.target.value;
+    setHeaderQuery(q);
+    if (q.trim().length < 2) { setAcResults([]); setAcOpen(false); return; }
+    let scored = [];
+    if (FUSE) {
+      scored = FUSE.search(q, { limit: 6 }).map(r => {
+        const entry = MANIFEST.find(m => m.id === r.item.id) || r.item;
+        return { entry, score: Math.round((1 - r.score) * 100) };
+      }).filter(x => x.entry);
+    } else {
+      const terms = q.toLowerCase().split(/\s+/).filter(t => t.length > 1);
+      scored = MANIFEST.map(entry => ({ entry, score: scoreEntry(entry, terms) }))
+        .filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0, 6);
+    }
+    setAcResults(scored);
+    setAcOpen(scored.length > 0);
+  };
 
   const goHome = () => setView('home');
   const goToTemplate = (t) => { setActiveTemplate(t); setView('template'); };
@@ -1125,20 +1194,57 @@ export default function CommonplaceApp() {
             The Commonplace
           </span>
           {/* Header search — always visible */}
-          <form onSubmit={e => { e.preventDefault(); doSearch(headerQuery); }}
-            style={{ flex:1, display:"flex", gap:6, maxWidth:420 }}>
-            <input value={headerQuery} onChange={e => setHeaderQuery(e.target.value)}
-              placeholder="Search the canon…"
-              style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
-                color:"#f8f8f0", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)",
-                borderRadius:4, outline:"none" }} />
-            <button type="submit"
-              style={{ padding:"7px 12px", background:"rgba(255,255,255,0.12)", color:"#cbd5e1",
-                border:"1px solid rgba(255,255,255,0.15)", borderRadius:4, cursor:"pointer",
-                fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.05em" }}>
-              ↵
-            </button>
-          </form>
+          {/* Header search with autocomplete */}
+          <div style={{ flex:1, maxWidth:420, position:"relative" }}>
+            <form onSubmit={e => { e.preventDefault(); setAcOpen(false); doSearch(headerQuery); }}
+              style={{ display:"flex", gap:6 }}>
+              <input value={headerQuery}
+                onChange={handleHeaderChange}
+                onFocus={() => acResults.length > 0 && setAcOpen(true)}
+                onBlur={() => setTimeout(() => setAcOpen(false), 150)}
+                placeholder="Search the canon…"
+                style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
+                  color:"#f8f8f0", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)",
+                  borderRadius:4, outline:"none" }} />
+              <button type="submit"
+                style={{ padding:"7px 12px", background:"rgba(255,255,255,0.12)", color:"#cbd5e1",
+                  border:"1px solid rgba(255,255,255,0.15)", borderRadius:4, cursor:"pointer",
+                  fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.05em" }}>
+                ↵
+              </button>
+            </form>
+            {acOpen && acResults.length > 0 && (
+              <div style={{ position:"absolute", top:"calc(100% + 4px)", left:0, right:0,
+                background:"#1e2d3d", border:"1px solid rgba(255,255,255,0.15)", borderRadius:6,
+                boxShadow:"0 8px 24px rgba(0,0,0,0.4)", zIndex:200, overflow:"hidden" }}>
+                {acResults.map(({ entry }, i) => {
+                  const cfg = TEMPLATE_CONFIG[entry.template] || {};
+                  return (
+                    <div key={entry.id}
+                      onMouseDown={() => { goToEntry(entry.id); setHeaderQuery(''); setAcOpen(false); }}
+                      style={{ padding:"10px 14px", cursor:"pointer",
+                        borderBottom: i < acResults.length-1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}
+                      onMouseEnter={e => e.currentTarget.style.background = "rgba(255,255,255,0.08)"}
+                      onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
+                      <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+                        <span style={{ width:8, height:8, borderRadius:"50%",
+                          background: cfg.accent || "#8b4513", flexShrink:0 }} />
+                        <span style={{ fontFamily:"'Playfair Display',serif", fontSize:13,
+                          color:"#f8f8f0", fontWeight:600 }}>{entry.title}</span>
+                        <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+                          color:"rgba(255,255,255,0.4)", marginLeft:"auto" }}>{entry.template}</span>
+                      </div>
+                      <div style={{ fontFamily:"'Lora',serif", fontSize:11,
+                        color:"rgba(255,255,255,0.5)", marginTop:3, marginLeft:16,
+                        overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
+                        {entry.subtype} · {entry.period}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
           {/* Template pills */}
           <div style={{ display:"flex", gap:4, flexShrink:0 }}>
             {Object.entries(TEMPLATE_CONFIG).filter(([_,c]) => c.active).slice(0,5).map(([name, cfg]) => (
