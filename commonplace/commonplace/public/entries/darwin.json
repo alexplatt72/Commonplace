@@ -1,0 +1,226 @@
+{
+  "id": "darwin",
+  "template": "People",
+  "subtype": "Thinker",
+  "period": "1809–1882",
+  "title": "Charles Darwin",
+  "summary": "The naturalist who proposed natural selection as the mechanism of evolution, producing a theory so coherent and so well-evidenced that it made divine creation scientifically unnecessary within biology, and permanently transformed how humans understand the relationship between life and time, and established biology as a historical science",
+  "hasResearch": true,
+  "hook": "Darwin spent twenty years not publishing. He gathered evidence from 1838 — when he first formulated natural selection — until 1859, when Alfred Russel Wallace's independent arrival at the same idea forced his hand. The twenty-year delay was not indolence. It was the calculation of a man who understood exactly how dangerous his argument was and wanted it to be unimpeachable before he released it. He was right about the danger and right about the strategy.",
+  "comparativeSummary": "Darwin transformed biology from a descriptive natural history into a historical science with a single explanatory framework. The reception of Darwinism in different cultural contexts reveals the boundaries of scientific universalism: natural selection was accepted rapidly in Britain and Germany, more slowly in France (where Lamarckism had deeper institutional roots), and is still actively resisted in parts of the American public. The subsequent development of Darwinism — the Modern Synthesis, molecular biology, genomics — has confirmed and deepened Darwin’s core framework while substantially expanding what it can explain.",
+  "content": {
+    "beginner": {
+      "theFigure": "Darwin was not a revolutionary in temperament. He was a meticulous, methodical English naturalist — the son of a wealthy physician, trained at Cambridge for the clergy, sent on a five-year voyage around the world as the HMS Beagle’s naturalist, and then settled at Down House in Kent for the rest of his life to think and write. He was deeply conventional in most respects. He found the implications of his own theory disturbing. He did not publish for twenty years. None of this prevented him from producing the most consequential scientific idea of the 19th century, which is itself worth examining: the relationship between intellectual courage and personal temperament is not what popular narratives suggest.",
+      "worldOfIdeas": "Darwin inherited three crucial ideas that his work synthesized. From Charles Lyell: geological deep time. The earth was not thousands but millions of years old, which meant there had been time for gradual change to produce large differences. From Thomas Malthus: population pressure. More organisms are born than can survive and reproduce; competition for limited resources is the universal condition of life. From the comparative anatomists: structural homologies. The same bone structure appeared in human hands, bat wings, whale flippers, and horse legs — which implied common ancestry even before Darwin provided the mechanism.",
+      "centralIdea": "Natural selection is the argument that organisms with heritable variations that improve their survival and reproduction will, on average, leave more descendants than those without. Over generations, these variations accumulate. Given enough time and enough variation, populations diverge. Given more time, they diverge further. Given geological time, the diversity of life follows from this simple process. The argument requires no designer, no direction, no goal. The appearance of design in nature — the eye that seems perfectly adapted for seeing — is not the result of intention but of selection acting on heritable variation over millions of generations.",
+      "howSpread": "On the Origin of Species (1859) sold out its first printing on the day of publication and went through six editions in Darwin’s lifetime. The initial reception was divided: scientists generally recognized the force of the argument; clergy and much of the public were horrified by the implication that humans were modified animals with no special creation. Thomas Huxley — \"Darwin’s bulldog\" — became the theory’s most effective public advocate. The famous debate at the Oxford Museum in 1860 between Huxley and Bishop Samuel Wilberforce became a set-piece in the conflict between science and religion, though the actual outcome was more ambiguous than the legend.",
+      "contestedInheritance": "Darwin’s theory has been misused more systematically than almost any other scientific idea. Social Darwinism — the application of natural selection to social competition, used to justify laissez-faire capitalism, imperialism, and the oppression of the poor as \"natural\" — was not Darwin’s own view but emerged almost immediately from his work. Eugenics — the project of improving the human race through selective breeding — followed from Social Darwinism and produced forced sterilizations, anti-immigration legislation, and ultimately the Nazi racial programs. Darwin’s theory bore none of this intellectual responsibility, but the misuse was so systematic and so catastrophic that the theory’s legitimate applications still carry its shadow."
+    },
+    "general": {
+      "theFigure": "Darwin's biography shaped the theory's structure. Five years on the Beagle gave him a global perspective that no British naturalist had previously had. He saw how life had diverged in specific ways across specific environments.\n\nThe twenty years he spent at Down House afterward were deliberate. He accumulated evidence from barnacles, pigeon breeding, geology, and botany. He was building a case that would be unimpeachable before he released it.\n\nHis notebooks show that he understood the theory's implications early. He knew it was dangerous. He recorded concerns about religion and human origins. The long delay before publishing was not timidity. It was strategic calculation — waiting until the evidence was too strong to dismiss.",
+      "worldOfIdeas": "The pre-Darwinian consensus in natural history was not simple biblical creationism. The sophisticated version — natural theology, exemplified by William Paley’s Natural Theology (1802) — argued that the complexity and apparent design of organisms was evidence for a designing intelligence. Paley’s watchmaker argument was intellectually serious and Darwin had read it at Cambridge. The alternative — Lamarck’s transmutation theory — proposed that organisms changed over time through the inheritance of acquired characteristics but lacked a convincing mechanism and had been decisively criticized by Cuvier. Darwin’s contribution was not to propose evolution for the first time but to propose a mechanism that was both powerful and empirically grounded.",
+      "centralIdea": "Darwin's argument in Origin of Species had one significant weakness he could not fix. If offspring blend parental characteristics, any advantageous variation would be diluted by half with each generation. Within a few generations it would disappear entirely.\n\nDarwin knew this problem. He never solved it. The solution required Mendelian genetics — work he never encountered.\n\nThe Modern Synthesis of the 1930s and 1940s resolved the issue. Fisher, Haldane, Dobzhansky, and Mayr showed that inheritance works through discrete particles, not blending. Advantageous traits can persist and accumulate. The theoretical weakness was closed. The framework that emerged from this synthesis is what modern evolutionary biology still uses.",
+      "howSpread": "Origin of Species sold out on its first day of publication in 1859. Within a decade, natural selection was the dominant framework in professional biology.\n\nThe cultural reception was slower and more contested. The idea that humans were modified animals — with no special creation, no divine purpose — was experienced as a profound threat. Not just to religious belief, but to the entire framework of human dignity that natural theology had built.\n\nThomas Huxley became Darwin's most effective public advocate. The 1860 debate at Oxford between Huxley and Bishop Wilberforce became a defining episode in the popular narrative of science versus religion. The actual debate was more ambiguous than the legend suggests. But the legend set the terms for how the public understood Darwinism for generations.",
+      "contestedInheritance": "Social Darwinism’s relationship to Darwin is contested. Herbert Spencer — who coined \"survival of the fittest\" — developed his evolutionary social theory before Darwin published and appropriated natural selection retrospectively. Darwin himself was not a Social Darwinist in the full ideological sense; The Descent of Man (1871) contains passages that both express racial hierarchies of his time and emphasize the importance of cooperative and moral instincts in human evolution. The relationship between evolutionary biology and the political ideologies that claimed its authority is a history of misappropriation that scientists and historians have been disentangling for 150 years."
+    },
+    "advanced": {
+      "theFigure": "The intellectual history of Darwin’s development has been substantially revised by the opening of his private notebooks. The Darwin Industry — the systematic editing and publication of the Darwin archive since the 1970s — has produced a detailed picture of how Darwin arrived at natural selection in 1838 (reading Malthus in September of that year) and how he developed and tested the idea over the following twenty years. The notebooks show that Darwin understood the theory’s implications for religion early and that this understanding shaped his strategy of accumulating overwhelming evidence before publishing. The image of the cautious, methodical naturalist is accurate but incomplete: Darwin was also conducting a long-term strategic calculation about how to make his idea unrejectable.",
+      "centralIdea": "The development of molecular biology from the 1950s onward has provided Darwin’s theory with a confirmation mechanism he could not have imagined. DNA sequence comparisons provide independent evidence for evolutionary relationships that was previously accessible only through morphology and the fossil record. The genetic evidence is so consistent with the phylogenetic relationships Darwin inferred from anatomy that it constitutes essentially independent confirmation of the theory. Evolutionary developmental biology (evo-devo), which studies how changes in developmental genes produce morphological changes, has provided a mechanistic explanation for macroevolutionary change that the Modern Synthesis lacked. The theory is better confirmed today than at any previous point in its history.",
+      "contestedInheritance": "The most intellectually interesting contemporary debates within evolutionary biology concern levels of selection and the extended evolutionary synthesis. The levels-of-selection debate — whether natural selection operates primarily on genes, organisms, groups, or all three — engages fundamental questions about altruism, cooperation, and social behavior. The extended evolutionary synthesis (Pigliucci, Müller) proposes that the Modern Synthesis needs supplementation to account for epigenetic inheritance, niche construction, and developmental plasticity. These are genuine scientific debates about the scope of the Darwinian framework, not challenges to its core validity.",
+      "worldOfIdeas": "The intellectual context Darwin worked within has been substantially reanalyzed by historians of science. The pre-Darwinian consensus was not monolithically creationist in the simple sense: natural theology (Paley) and transformism (Lamarck, Chambers's Vestiges) were distinct and competing frameworks, and Darwin's achievement was not simply defeating creationism but displacing both natural theology and Lamarckian transformism with a mechanism that explained adaptation without design and change without directionality. Adrian Desmond and James Moore's Darwin (1991) argued that Darwin's delay in publishing was shaped partly by his awareness of the political implications of materialism in the volatile 1840s context of Chartism and radical politics — that natural selection's implication that mind and morality had natural rather than divine origins was politically dangerous in ways that affected his publication calculus. This biographical revision has been contested but it situates Darwin's intellectual history within a political history that purely internalist accounts of scientific development miss.",
+      "howSpread": "The global reception of Darwinism reveals that the theory's spread was not uniform diffusion of a correct idea but a series of local negotiations in which Darwinism was adapted to, contested by, and transformed within specific national intellectual and religious contexts. The American reception was shaped by the prior existence of a strong natural theology tradition (Asa Gray attempted a theistic Darwinism) and by the proximity of the slavery debates (some used polygenism — the pre-Darwinian view that races had separate origins — to defend slavery, and Darwinism's common ancestry undermined this). The German reception involved rapid adoption by materialist scientists (Haeckel) and appropriation for nationalist biological thinking that had no direct support in Darwin's text. The Russian reception was filtered through the specific conditions of Russian intellectual culture's encounter with Western science, producing a tradition (Kropotkin's mutual aid) that emphasized cooperation over competition in ways that Darwin's own text does not support but that the selective reading of 'survival of the fittest' invited. Each national reception is partly about Darwin and partly about the receiving culture's own unresolved conflicts.\n\nAlfred Russel Wallace sent Darwin his essay independently developing natural selection in June 1858. Darwin had been working on the same theory for twenty years. The joint presentation at the Linnean Society in July 1858, arranged by Lyell and Hooker, gave Darwin priority he might otherwise have shared or lost. The episode raises a question that the history of science has not fully resolved: what does it mean that two people arrived at the same idea within years of each other, from different evidence in different locations?\n\nThe individual genius account holds that Darwin's priority is genuine and meaningful. Darwin did not merely have the idea of natural selection — he spent two decades building the systematic evidentiary case that made it compelling and transformative. Wallace had the insight; Darwin had the argument. Origin of Species changed biology not because it announced natural selection but because it demonstrated it exhaustively. Wallace himself acknowledged this distinction.\n\nThe \"ready to be discovered\" account holds that the coincidence of Darwin and Wallace, combined with earlier precursors (Wells in 1813, Matthew in 1831 — both of whom articulated versions of natural selection before Darwin), suggests that the intellectual and empirical conditions of the mid-19th century made natural selection nearly inevitable. The comparative anatomy, the fossil record, the biogeographical distributions — the evidence had accumulated to a point where the framework to explain it was almost demanded by the data. Darwin got there first because he was faster and more thorough; but someone would have gotten there.\n\nEach framework explains something the other cannot. The individual genius account explains why Origin of Species was transformative in a way that Wallace's essay alone would not have been — the difference between announcing and demonstrating. The \"ready to be discovered\" account explains why the same core insight was reached independently by multiple people across three decades, which is structurally unlikely if the insight depended primarily on Darwin's individual genius.\n\nThe question neither framework settles: If natural selection was ready to be discovered by the scientific conditions of the 1850s, does that change how we evaluate Darwin's achievement? Does it mean he deserves credit for being fastest and most thorough rather than for being uniquely capable? And if scientific discoveries are shaped more by the condition of the field than by individual genius, what does that tell us about how we think about intellectual priority generally?"
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "Darwin’s achievement was not just the theory of natural selection. It was the methodological transformation of biology from a descriptive enterprise into a historical science. Before Darwin, biology asked \"what is this organism?\" After Darwin, it asked \"where did this organism come from and what were its ancestors?\" — which means it asked historical questions answerable by historical evidence. That methodological shift is as consequential as the specific content of natural selection. It meant that the study of life became inseparable from the study of time.",
+        "theDebate": "The central scientific debate about Darwin’s legacy concerns the pace of evolution (gradual vs. punctuated equilibrium) and the unit of selection (gene, organism, or group). Stephen Jay Gould and Niles Eldredge’s punctuated equilibrium hypothesis (1972) proposed that evolution proceeds in rapid bursts followed by stasis rather than the gradual change Darwin proposed. Richard Dawkins’s gene-centered view argues that organisms are \"vehicles\" for genes and that selection operates primarily at the genetic level. Both debates remain active within evolutionary biology, though they concern the details of how evolution operates rather than whether it operates.",
+        "whyItMatters": "Darwin matters because natural selection is the only explanation for the appearance of design in nature that does not require a designer. That claim is more philosophically significant than it sounds: if the apparent purposiveness of organisms — the eye, the hand, the immune system — does not require a purpose-giver, then the argument from design for the existence of God collapses. Darwin did not disprove the existence of God, but he made one of the historically most powerful arguments for God’s existence — the complexity of living things — scientifically unnecessary. The cultural consequences of that move are still unfolding.",
+        "questions": [
+          "Darwin waited twenty years to publish his theory. Was this scientific caution (accumulating more evidence), strategic calculation (waiting until the case was unimpeachable), or psychological resistance (to his own conclusions)? What do the notebooks suggest, and what does your answer imply about the relationship between scientific discovery and publication?",
+          "Social Darwinism claimed to derive its conclusions from Darwin’s science. Richard Hofstadter's Social Darwinism in American Thought argues the connection was superficial. Is it possible to derive social or political conclusions from evolutionary biology without committing the naturalistic fallacy? Where does the legitimate use of evolutionary thinking in social science end and Social Darwinism begin?",
+          "Darwin’s theory was confirmed at the molecular level by developments he could not have predicted. Does this retrospective confirmation change how we should evaluate scientific theories? What would it mean for a theory to be confirmed in this way, and what would it mean for a theory to fail such confirmation?",
+          "The extended evolutionary synthesis (Pigliucci, Müller) proposes supplementing the Modern Synthesis with epigenetic inheritance and niche construction. Is this a normal case of scientific theory extension, a paradigm shift, or a pseudoscientific challenge to established theory? What criteria would you use to evaluate this?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "Darwin scholarship divides between historians of science (who reconstruct how Darwin developed his ideas and how they were received) and biologists (who assess the theory’s current scientific status). These literatures rarely engage each other. The Darwin Industry — the systematic editing of Darwin’s correspondence and manuscripts — has produced a detailed intellectual biography but has also generated hagiography that overstates Darwin’s priority and underplays Wallace’s independent contribution. The cultural reception literature (how Darwinism was interpreted in different countries and religious contexts) has been substantially developed since the 1980s.",
+        "evidenceAndLimits": "The evidence for Darwin’s intellectual development is unusually rich: the Beagle notebooks, the transmutation notebooks, the correspondence, the successive editions of Origin of Species, the private essays he drafted and filed away. The evidence for how ordinary people understood and responded to Darwinism in the 19th century is much thinner — the cultural history of Darwinism’s popular reception is necessarily reconstructed from the texts that educated people produced, which is not representative of broader social understanding. What farmers, factory workers, and Sunday school teachers made of Darwin is mostly inaccessible.",
+        "takingAPosition": "The strongest interpretive position is that Darwin achieved two things of different kinds: a correct and comprehensive theory of biological evolution, and a methodological revolution that transformed biology into a historical science. The first can be evaluated scientifically; the second requires historical and philosophical assessment. The misuses of Darwinism — Social Darwinism, eugenics — are not evidence against the theory but evidence for the need to distinguish between descriptive claims about what evolution produces and normative claims about what humans should value or do. The naturalistic fallacy (deriving \"ought\" from \"is\") is the persistent intellectual error in the Darwinian tradition’s social applications.",
+        "questions": [
+          "Darwin waited twenty years to publish his theory. Was this scientific caution (accumulating more evidence), strategic calculation (waiting until the case was unimpeachable), or psychological resistance (to his own conclusions)? What do the notebooks suggest, and what does your answer imply about the relationship between scientific discovery and publication?",
+          "Social Darwinism claimed to derive its conclusions from Darwin’s science. Richard Hofstadter's Social Darwinism in American Thought argues the connection was superficial. Is it possible to derive social or political conclusions from evolutionary biology without committing the naturalistic fallacy? Where does the legitimate use of evolutionary thinking in social science end and Social Darwinism begin?",
+          "Darwin’s theory was confirmed at the molecular level by developments he could not have predicted. Does this retrospective confirmation change how we should evaluate scientific theories? What would it mean for a theory to be confirmed in this way, and what would it mean for a theory to fail such confirmation?",
+          "The extended evolutionary synthesis (Pigliucci, Müller) proposes supplementing the Modern Synthesis with epigenetic inheritance and niche construction. Is this a normal case of scientific theory extension, a paradigm shift, or a pseudoscientific challenge to established theory? What criteria would you use to evaluate this?"
+        ]
+      }
+    },
+    "research": [
+      {
+        "status": "established",
+        "topic": "Molecular confirmation of Darwinian phylogenies",
+        "content": "DNA sequence comparisons have confirmed the phylogenetic relationships that Darwin and subsequent evolutionary biologists inferred from morphological evidence. The genetic evidence is sufficiently consistent with morphological phylogenies that it constitutes essentially independent confirmation of the common descent hypothesis. In cases of disagreement, the genetic evidence has generally revised rather than overturned the morphological phylogeny."
+      },
+      {
+        "status": "established",
+        "topic": "Darwin’s independent arrival at natural selection in 1838",
+        "content": "The opening of Darwin’s notebooks has established that he arrived at the core of natural selection theory in September-October 1838, following his reading of Malthus. The notebooks document the development of the idea in detail and confirm that Darwin had a substantially complete theory decades before publication. Wallace’s independent arrival at the same theory in 1858 is also well-documented."
+      },
+      {
+        "status": "emerging",
+        "topic": "Epigenetic inheritance and the extended evolutionary synthesis",
+        "content": "Research on epigenetic inheritance — the transmission of phenotypic traits through mechanisms other than DNA sequence — and its implications for evolutionary theory is an active frontier. Whether epigenetic inheritance changes the scope of natural selection in fundamental ways or represents a quantitative extension of the Modern Synthesis is debated."
+      },
+      {
+        "status": "unrecoverable",
+        "topic": "Darwin’s psychological experience of his own theory’s implications",
+        "content": "Darwin's private response to the existential implications of his own theory — what it was like to be the person who had concluded that humans are modified animals in a purposeless universe, and to hold that conclusion for decades before making it public — cannot be fully recovered from the surviving documentary record.\n\nWhat evidence would resolve this: Private diary entries or genuinely candid letters to Emma Darwin describing Darwin's inner experience of what his theory meant — not its scientific content but its implications for meaning, purpose, and the nature of his own mind. Most specifically, documents from the 1840s and 1850s when the theory was fully formed but unpublished, when Darwin was living with his conclusion without the support of any broader cultural framework for accepting it.\n\nWhy that evidence is unavailable: Darwin was a private person who carefully managed what he committed to paper about his personal feelings and religious doubts. His letters to Asa Gray on religion are the closest surviving approximation of candid expression on these matters, but even this correspondence was understood by Darwin to be potentially published and was composed accordingly. His autobiography, written for his family, is more revealing than his published work but remains a controlled document shaped by Darwin's awareness of its potential readers and his characteristic reticence about inner life.\n\nWhat can be responsibly inferred: From Darwin's documented behavior — the twenty-year delay before publishing, the severe and unexplained physical illness that coincided with his theoretical development, his evident distress at the implications for his wife Emma's religious faith — we can infer that the personal and existential implications of his theory were deeply felt rather than merely intellectually acknowledged. The delay was not purely strategic; something else was happening during those decades.\n\nWhat must remain genuinely unknowable: The phenomenology of arriving at the conclusion that purposeless natural processes explain all of life's diversity including human minds — what it felt like, from inside, to be the person who had worked that out before it was culturally available as a position anyone could hold. Whether Darwin experienced this primarily as intellectual triumph, as existential crisis, as spiritual loss, or as something for which the vocabulary of all three categories is inadequate. The inner life of the person who changed humanity's self-understanding most fundamentally since Copernicus is accessible only through documents that Darwin shaped for external audiences."
+      }
+    ]
+  },
+  "comparativeNarrative": [
+    {
+      "perspective": "France",
+      "name": "Lamarck’s Shadow",
+      "content": "Darwinism was received more slowly and more ambivalently in France than in Britain or Germany. The explanation is partly institutional: Lamarck’s transmutation theory had deeper roots in French biology, and the neo-Lamarckian tradition resisted the purely mechanistic character of natural selection. French biology’s relative delay in adopting the Modern Synthesis (some historians argue it did not fully occur until the 1970s) meant that the genetic confirmation of Darwinism arrived in France with the Lamarckian alternative still alive. The French case is the clearest example that scientific theory adoption is shaped by prior intellectual commitments as much as by the quality of evidence."
+    },
+    {
+      "perspective": "United States",
+      "name": "The Persistence of Creationism",
+      "content": "The United States is the only advanced industrial nation where evolution is actively contested as public educational policy. The Scopes Trial (1925), the creation science movement of the 1970s-80s, intelligent design in the 1990s-2000s, and ongoing state-level curriculum battles represent a continuous 100-year effort to exclude or qualify Darwinism in public schools. The explanation involves the specific intersection of Protestant evangelicalism, populist anti-elitism, and constitutional church-state arrangements that have no close parallel in other industrialized democracies."
+    },
+    {
+      "perspective": "Russia and the Soviet Union",
+      "name": "Lysenkoist Rejection",
+      "content": "The Soviet Union under Stalin adopted Lysenko’s neo-Lamarckian theory over Mendelian genetics and Darwinian natural selection, partly for ideological reasons (Mendelian genetics was declared bourgeois science) and partly because Lysenko claimed his agricultural methods would produce results faster than conventional breeding. The Lysenko affair (1948-1964) set Soviet biology back a generation and produced agricultural failures. It is the clearest example of the cost of ideological interference in scientific theory selection."
+    },
+    {
+      "perspective": "Contemporary molecular biology",
+      "name": "Darwin Confirmed and Extended",
+      "content": "The development of molecular biology since the 1950s has confirmed Darwin’s core framework while substantially extending it. The universal genetic code, the molecular mechanisms of mutation and heredity, comparative genomics, and ancient DNA analysis all provide independent evidence for common descent and natural selection. The current scientific consensus on evolution is stronger than at any previous point in the theory’s history. The debates within evolutionary biology concern the details of how evolution operates — levels of selection, pace of change, relative importance of drift versus selection — not whether evolution by natural selection is the correct framework."
+    }
+  ],
+  "rabbitHole": [
+    {
+      "type": "Foundational",
+      "label": "On the Origin of Species",
+      "entryId": "originOfSpecies",
+      "reason": "The work itself — Darwin’s argument in full, for readers ready to engage with the primary text"
+    },
+    {
+      "type": "Foundational",
+      "label": "Probability",
+      "entryId": "probability",
+      "reason": "Natural selection is a probabilistic process; Darwin’s theory and probability theory were near-contemporaneous developments that have increasingly converged"
+    },
+    {
+      "type": "Consequential",
+      "label": "The Black Death",
+      "entryId": "blackDeath",
+      "reason": "Evolutionary biology provides the framework for understanding epidemic disease — pathogen evolution is natural selection in action at visible timescales"
+    },
+    {
+      "type": "Parallel",
+      "label": "Aristotle",
+      "entryId": "aristotle",
+      "reason": "The founding of systematic biology versus its transformation — Darwin’s relationship to Aristotle’s classification tradition is the history of biology in two figures"
+    },
+    {
+      "type": "Gateway",
+      "label": "The Selfish Gene — Richard Dawkins (1976)",
+      "reason": "The gene-centered view of evolution — the best introduction to post-Modern Synthesis Darwinism for non-specialists"
+    }
+  ],
+  "reference": [
+    {
+      "author": "Charles Darwin",
+      "title": "On the Origin of Species",
+      "year": "1859",
+      "type": "Primary source",
+      "reliability": "Primary",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "More readable than its reputation suggests — Darwin was a gifted prose stylist and the argument is presented accessibly."
+    },
+    {
+      "author": "Janet Browne",
+      "title": "Charles Darwin: Voyaging and Charles Darwin: The Power of Place",
+      "year": "1995/2002",
+      "type": "Biography",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The definitive two-volume biography — the standard scholarly account of Darwin’s life and intellectual development."
+    },
+    {
+      "author": "Richard Dawkins",
+      "title": "The Selfish Gene",
+      "year": "1976",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The gene-centered view of evolution — the most influential post-Darwin account of how natural selection works at the genetic level."
+    },
+    {
+      "author": "Richard Hofstadter",
+      "title": "Social Darwinism in American Thought",
+      "year": "1944",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The standard account of how Darwin’s ideas were misapplied in American social and political thought."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "title": "On the Origin of Species",
+      "author": "Charles Darwin",
+      "note": "More readable than expected — start here if you want to know what Darwin actually argued"
+    },
+    {
+      "type": "Book",
+      "title": "The Selfish Gene",
+      "author": "Richard Dawkins",
+      "note": "The gene-centered view — the best introduction to post-Modern Synthesis evolutionary thinking"
+    },
+    {
+      "type": "Book",
+      "title": "Charles Darwin: Voyaging",
+      "author": "Janet Browne",
+      "note": "The definitive biography — how the Beagle voyage shaped the theory"
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Scientific tourism",
+      "title": "The Galapagos Islands",
+      "description": "Darwin's five-week visit to the Galapagos in 1835 has made the islands the most famous evolutionary laboratory in the world and a major ecotourism destination visited by tens of thousands annually. The finches and tortoises he observed there — showing variation adapted to different island environments — became the paradigm case for natural selection. The Galapagos are now a UNESCO World Heritage Site partly because Darwin's observations there changed how humans understand life itself."
+    },
+    {
+      "type": "Legal history",
+      "title": "The Scopes Trial (1925)",
+      "description": "John Scopes's prosecution for teaching evolution in Tennessee became a national media spectacle that defined the conflict between scientific education and religious belief for the 20th century. The play and film Inherit the Wind (1955/1960) fictionalized it for mass audiences. The trial is still the reference point for evolution-in-schools debates a century later, demonstrating that Darwin's theory — confirmed at every level of biology — has never become culturally settled in the United States."
+    },
+    {
+      "type": "Cultural concept",
+      "title": "The Darwin Awards",
+      "description": "The annual recognition of people who 'improve the gene pool by removing themselves from it' through spectacularly bad decisions has been a global cultural institution since the 1990s. Websites, books, and annual ceremonies celebrate the concept with a specific, grim humor. The joke works because natural selection is now common knowledge: the premise is immediately comprehensible without explanation, which is itself evidence of how successfully Darwin's idea has penetrated popular understanding."
+    },
+    {
+      "type": "Documentary tradition",
+      "title": "Planet Earth (BBC, 2006) and Attenborough's legacy",
+      "description": "David Attenborough's nature documentary tradition — culminating in Planet Earth, Blue Planet, and their successors — makes Darwinian evolution visible in real time: predators and prey, adaptation under pressure, reproductive competition. Every episode is implicitly an argument for natural selection. The series has been seen by hundreds of millions of people and is arguably the most effective popular communication of evolutionary biology ever produced — more influential than any textbook."
+    },
+    {
+      "type": "Phrase",
+      "title": "'Survival of the fittest' — the most misused phrase in science",
+      "description": "Herbert Spencer coined this phrase, not Darwin — and Darwin used it reluctantly in later editions, coming to regret it. 'Fitness' in evolutionary biology means reproductive success in a specific environment, not general strength or superiority. Yet the phrase is now used constantly to justify competition, inequality, and the elimination of the weak as 'natural.' The gap between the phrase's scientific meaning and its cultural use is one of the clearest examples of scientific ideas being distorted in cultural transmission."
+    }
+  ]
+}

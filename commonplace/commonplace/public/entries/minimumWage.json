@@ -1,0 +1,235 @@
+{
+  "id": "minimumWage",
+  "template": "Policy",
+  "subtype": "Policy Question",
+  "period": "Ongoing",
+  "title": "The Federal Minimum Wage",
+  "summary": "Whether and how the federal floor on wages should be changed — the most extensively studied question in labor economics, with genuine methodological disputes and genuine value disagreements about how to weigh competing outcomes",
+  "hasResearch": true,
+  "hook": "The federal minimum wage has been $7.25 per hour since July 2009 — the longest period without an increase since the federal minimum wage was created in 1938. In real purchasing power, it is worth less today than it was in 1968. The question of whether and how to change it involves genuine empirical disputes and genuine disagreements about which costs matter most.",
+  "comparativeSummary": "The United Kingdom raised its minimum wage from £6.50 in 2014 to £11.44 in 2024 — a 76% increase over a decade — with employment effects that have been modest by most measures. Germany introduced a minimum wage in 2015 and has raised it significantly since. The US federal floor, by contrast, has been frozen at $7.25 while most states have passed increases — producing the most fragmented minimum wage landscape in the wealthy world.",
+  "content": {
+    "beginner": {
+      "theQuestion": "The minimum wage is the lowest hourly rate that employers are legally allowed to pay most workers. The federal minimum wage — $7.25 — sets the floor for the entire country, though states and cities can set higher minimums. Most do: as of 2024, 30 states and many cities have minimums above $7.25.\n\nThe core question: should the federal floor be raised, left where it is, or restructured? If raised, to what level, on what timeline, and with what regional variation?",
+      "theStakes": "Approximately 1.1 million workers in 2023 earned exactly the federal minimum wage; an additional 1.3 million earned below it (primarily tipped workers). The group directly affected by a significant increase is larger: a CBO analysis of a $15 minimum wage projected 17 million workers would see direct wage increases.\n\nThe affected workforce skews toward women (roughly 59%), workers of color (roughly 40%), workers in food service, retail, and care work, and workers in lower-wage states — particularly in the South and rural Midwest where $7.25 is still the actual floor.\n\nThere is also a symbolic dimension to this debate that runs alongside the policy substance. For many small business owners, minimum wage regulation represents government intrusion into private employment relationships. For many workers and labor advocates, it represents recognition of a basic standard of dignified work. These symbolic stakes are part of the actual political landscape.",
+      "theValueFramework": "*Worker income security:* The primary argument for raising the minimum wage. Low-wage workers need higher incomes; the current floor has lost purchasing power for decades; raising it directly addresses the earnings of the lowest-paid.\n\n*Employment stability:* The primary argument for caution. If raising the minimum wage causes employers to cut jobs, hours, or benefits, workers could end up worse off even with higher wages. The question is how large this effect is and in what conditions.\n\n*Fiscal restraint and price stability:* Higher minimum wages raise production costs, which can be passed to consumers through higher prices. They can also reduce demand for government assistance programs if workers earn more. The net fiscal effect depends on which effect is larger.\n\n*Limited government:* A position that wage rates should be set by employers and employees in voluntary transactions, not mandated by government. On this view, the minimum wage interferes with price signals and freedom of contract.\n\n*Administrative feasibility:* What can actually pass Congress and remain durable across administrations? This framing suggests focusing on achievable incremental increases rather than large one-time jumps.",
+      "theEvidence": "The employment effects of minimum wage increases are the most studied question in labor economics — and one of the most genuinely contested.\n\nThe Congressional Budget Office's 2021 analysis of a $15 federal minimum wage projected a central estimate of 1.4 million job losses (range: 0 to 2.7 million), 17 million workers with higher wages, and 900,000 people lifted from poverty. The CBO uses a competitive labor market assumption — which, if incorrect, would reduce the job-loss estimate.\n\nArindrajit Dube and colleagues have argued, based on cross-border county comparisons, that employment effects are much smaller than standard models predict — and that in markets where employers have significant wage-setting power (monopsony), minimum wage increases can actually increase employment by reducing the employer's ability to pay below competitive wages.\n\nDavid Neumark and William Wascher maintain that the employment effects are meaningful and that the Dube methodology understates them.\n\nThe University of Washington study of Seattle's $13 minimum wage found approximately 9% reductions in low-wage hours — but the study's comparison group methodology has been disputed.\n\nEvidence note: symmetric presentation of these positions does not imply equal evidentiary support. The academic consensus has shifted toward Dube's view that employment effects at moderate levels are small. The Neumark-Wascher position represents a significant minority view, not equal standing with the mainstream consensus.",
+      "theOptions": "*Option 1 — Maintain at $7.25:* No federal disruption. In real terms, wages continue to erode — at 3% inflation, $7.25 is worth about $5.80 by 2035. States continue setting their own floors; the federal floor becomes increasingly irrelevant for most workers.\n\n*Option 2 — Moderate federal increase ($10-11):* Updates the floor roughly for inflation since 2009. Very low estimated employment effects across all methodologies. Would raise wages for workers in states still at or near $7.25.\n\n*Option 3 — $15 federal floor (Raise the Wage Act):* The most-debated proposal. CBO estimates 17 million with higher wages, 1.4 million job losses (central estimate), 900,000 out of poverty. Highest employment risk in low-wage regions.\n\n*Option 4 — Index to inflation or median wages:* Automatic adjustment removes political cycle. Workers don't lose purchasing power between legislative increases. Eliminates future minimum wage debates. Implementation requires choosing the indexing formula.\n\n*Option 5 — Regional differentiation:* Allow the federal floor to vary by cost of living or regional wage levels. Addresses concern that $15 in rural Mississippi has very different effects than $15 in Seattle. Implementation requires a mechanism for determining regional adjustments.",
+      "theInternationalEvidence": "The United Kingdom's experience is the most relevant international comparison. Between 2016 and 2024, the UK raised its National Living Wage from £7.20 to £11.44 — a 59% increase. Research by the Resolution Foundation and others found employment effects were small and offset by productivity gains and reduced turnover. The UK's minimum wage as a share of median wages is now higher than the proposed US $15 floor would be at current US median wages.\n\nGermany introduced a €8.50 minimum wage in 2015 after years without one and raised it to €12 in 2022. Initial employment effects were modest by most measures.\n\nTransferability: the US has significantly more regional wage variation than either the UK or Germany. A single federal floor applies across regions with dramatically different cost structures. The employment effects are likely to be more variable — smaller in high-wage urban areas, larger in low-wage rural regions — than UK or German averages suggest."
+    },
+    "general": {
+      "signals": {
+        "theEvidence": "Scholarly consensus on direction of effects; contested on magnitude"
+      },
+      "theQuestion": "The minimum wage debate is unusual in labor economics because it has produced some of the most methodologically sophisticated research of any policy question — and the research genuinely disagrees. The dispute is not primarily about values but about methodology: how to construct the right comparison group for minimum wage studies, how to account for employer market power, and how to interpret the relationship between average regional effects and effects in specific labor markets. Understanding what the research actually establishes — and what it doesn't — is more analytically productive than treating the debate as a simple fight between minimum wage supporters and opponents.",
+      "theEvidence": "The 'Seattle Minimum Wage Study' from the University of Washington is the most methodologically controversial recent study. It found larger employment effects than most comparable research and generated an extensive methodological critique from other labor economists, centering on the comparison group construction. The study's own authors have produced subsequent work with more nuanced conclusions. The episode illustrates that minimum wage research is technically demanding in ways that make confident conclusions about any single study unwarranted.\n\nThe most important methodological advance in minimum wage research has been the shift to border-county comparisons — comparing labor market outcomes on either side of a state border where one state raised its minimum wage and the other didn't. This approach, developed primarily by Dube and colleagues, finds much smaller employment effects than studies comparing states with and without minimum wage increases (which may confound minimum wage effects with broader economic differences between states).",
+      "theOptions": "The regional differentiation option deserves more analytical attention than it typically receives in the public debate. The US has unusually large regional wage variation — median wages in San Francisco are more than double median wages in rural Mississippi. A uniform $15 federal floor represents a very different bite relative to local wages in these two places, which is why CBO projects the employment effects would fall disproportionately in lower-wage regions. Indexed regional minimums exist at the state level (several states have geographic variation within their own minimums) but have never been implemented federally."
+    },
+    "advanced": {
+      "theEvidence": "The monopsony debate is the most theoretically significant dispute in contemporary minimum wage economics. Standard competitive labor market theory predicts minimum wages cause employment losses proportional to the wage elasticity of labor demand. Monopsony theory — where employers have wage-setting power because workers face search costs and imperfect information — predicts that minimum wages can be raised to the competitive equilibrium without job losses, and potentially above it with small losses. Dube's empirical work finding small employment effects is consistent with significant monopsony in low-wage labor markets. The policy implication is significant: if low-wage labor markets are characterized by monopsony, the appropriate minimum wage level is higher than competitive market models suggest, and the employment risk of increases is lower.",
+      "theOptions": "Card and Krueger's 1994 study of the New Jersey-Pennsylvania border following New Jersey's 1992 minimum wage increase was the methodological turning point that made border comparisons the standard approach. Before Card-Krueger, the standard finding was negative employment effects. After it — and following the methodological revolution it initiated — the standard finding shifted toward small or negligible effects at moderate levels. Card received the Nobel Prize in Economics in 2021, partly for this work. The prize implicitly endorsed the methodological approach if not specific policy conclusions.\n\nThe Card-Krueger natural experiment created a methodological revolution in labor economics — and the interpretive confrontation it opened has not been closed even by David Card's Nobel Prize in 2021.\n\nThe neoclassical prediction is clear: in a competitive labor market, a wage floor above the market equilibrium reduces employment. Employers hire fewer workers at higher wages; some workers price themselves out of the market. This follows directly from supply and demand and was the standard finding in employment research before the 1990s.\n\nCard and Krueger (1994) challenged this with a natural experiment comparing fast food employment in New Jersey and Pennsylvania after New Jersey raised its minimum wage. They found no statistically significant employment reduction. Arindrajit Dube extended this using border discontinuity designs — comparing employment in counties on opposite sides of state lines with different minimum wages — finding similarly small effects across many contexts and time periods. Card received the Nobel Prize partly for this body of work.\n\nThe monopsony interpretation explains why: if employers have market power in local labor markets — if workers cannot easily move between employers — they set wages below the competitive equilibrium. A minimum wage corrects this distortion rather than imposing one, raising wages without reducing employment because it is capturing surplus that was previously flowing to employers. If labor markets are locally monopsonistic, the neoclassical model's prediction is wrong in structure, not just in magnitude.\n\nEach framework explains something the other cannot. The neoclassical model explains why there must be some minimum wage level at which employment effects appear — why moderate current levels not producing disemployment does not vindicate arbitrarily high floors. Card-Dube explains why the employment reductions the neoclassical model predicts for moderate increases have not appeared consistently across many different natural experiments.\n\nThe question that the empirical evidence does not fully settle: Is the absence of observed disemployment from moderate minimum wage increases evidence that labor markets are monopsonistic and the neoclassical prediction is structurally wrong — or evidence that current minimum wages are below the disemployment threshold of markets that are fundamentally competitive? Resolving this requires settling the market structure question empirically, which turns out to be as contested as the employment effect question itself. And if we cannot settle the market structure question, can we set minimum wage policy confidently?"
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "The minimum wage debate matters as a case study in how to think carefully about policy when the evidence is genuinely complex and the values are genuinely in conflict. It is not a debate where one side is correct about the facts and the other is wrong — it is a debate where the facts are contested in specific ways, the values in tension are real, and the best answer depends on which costs you weigh most heavily. Learning to hold all of that simultaneously, without either dismissing the evidence or pretending it resolves the value questions, is the fundamental skill this debate teaches.",
+        "theDebate": "The central methodological dispute is whether the Dube border-county methodology or the traditional state-comparison methodology produces more accurate estimates of employment effects. This is a genuine technical question about research design — not a question of which economists are pro-worker or pro-business. Both methodologies have assumptions that can be challenged. The academic consensus has moved toward the Dube approach, but the debate is not fully resolved.",
+        "whyItMatters": "The minimum wage debate matters beyond its specific stakes because it is the paradigm case for thinking about evidence and values in labor policy. The specific pattern — genuine empirical dispute about magnitude of effects, genuine value disagreement about how to weigh employment risk against wage gains — recurs in debates about occupational licensing, overtime rules, and other labor market regulations. Understanding how to reason carefully about the minimum wage makes you better equipped to reason about the entire domain.",
+        "questions": [
+          "The CBO projects 1.4 million job losses and 17 million workers with higher wages from a $15 minimum wage. If you were one of the 1.4 million who might lose their job, would that change how you weigh the tradeoff? If you were one of the 17 million with higher wages? What does this tell you about how policy analysis relates to individual stakes?",
+          "The academic consensus has shifted toward finding smaller employment effects from minimum wage increases than older studies found. What does it tell you about policy debates that expert consensus can shift? Should this make you more or less confident in the current consensus?",
+          "The 'index to inflation' option removes future minimum wage debates from the political process. Is this desirable? What is gained and what is lost by removing a decision from ongoing democratic contestation?",
+          "States and cities have higher minimum wages than the federal floor, and they've had them for years. What does their experience tell us? What are the limits of inferring from state experience to federal policy?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "Card and Krueger's Myth or Measurement (1995) introduced the border-county methodology that transformed the field and shifted academic consensus toward finding smaller employment effects. Their finding that the 1992 New Jersey minimum wage increase did not reduce employment in New Jersey fast food relative to Pennsylvania generated immediate controversy and extensive replication. David Neumark and William Wascher's ongoing critique represents the sustained dissent. Arindrajit Dube's synthesis argues that monopsony — employer wage-setting power in low-wage labor markets — explains why minimum wage increases have smaller employment effects than standard competitive models predict. The CBO's 2021 analysis, while not conventionally peer-reviewed, is the most authoritative official synthesis.",
+        "evidenceAndLimits": "All minimum wage studies face the fundamental problem that the counterfactual is unobservable. Border-county methods reduce this problem but the validity of the comparison depends on the assumption that both sides of the border face similar economic conditions except for the wage change — an assumption that critics argue is often violated. The Seattle University of Washington study controversy illustrates this: the UW team and the Berkeley team studying the same policy change using different comparison group methodologies reached different conclusions. Neither conclusion is simply right or wrong — they reflect different methodological choices with different assumptions.",
+        "takingAPosition": "A strong argument about minimum wage policy must specify which labor market model it is using, engage with the CBO's methodology and assumptions, and explain what level of employment risk is acceptable relative to wage gains — which is a value question that evidence informs but cannot answer. Strong positions engage with the specific regional variation question: the evidence consistently suggests employment effects are larger in lower-wage regions, which is an argument for regional differentiation rather than a single national floor.",
+        "questions": [
+          "Card and Krueger's methodology using border counties was methodologically innovative. Neumark and Wascher argue it underestimates employment effects. What methodological standard would adjudicate this dispute?",
+          "The CBO's central estimate of 1.4 million job losses uses competitive market assumptions. If low-wage labor markets are characterized by monopsony, this estimate would be too high. How should policymakers respond to empirical uncertainty of this kind?",
+          "The evidence consistently shows larger employment effects in lower-wage regions. Does this argue for regional differentiation in the minimum wage, for keeping the federal floor lower, or for accepting regional effects as part of the policy?",
+          "If you were writing a paper arguing that the shift from competitive to monopsony models is the most important development in minimum wage economics, what would be your strongest arguments?"
+        ]
+      }
+    },
+    "research": [
+      {
+        "status": "established",
+        "topic": "Purchasing power erosion of $7.25",
+        "content": "The real value of the $7.25 federal minimum wage has eroded significantly since 2009 due to inflation. In 2024 dollars, the 1968 peak minimum wage would be approximately $13-14. This is established arithmetic."
+      },
+      {
+        "status": "established",
+        "topic": "Demographic profile of affected workers",
+        "content": "The demographic profile of minimum wage workers — disproportionately female, workers of color, in food service and retail — is established from BLS surveys. The profile of workers who would be affected by a $15 federal minimum (17 million per CBO) is somewhat broader."
+      },
+      {
+        "status": "emerging",
+        "topic": "Monopsony in low-wage labor markets",
+        "content": "The empirical extent of employer wage-setting power (monopsony) in low-wage labor markets is an active research area. If monopsony is widespread, employment effects of minimum wage increases are smaller than competitive models predict. Current evidence is suggestive but not conclusive about prevalence."
+      },
+      {
+        "status": "unrecoverable",
+        "topic": "Counterfactual employment without increases",
+        "content": "What employment in affected industries would have been without minimum wage increases — the true counterfactual — cannot be directly observed, and all employment effect estimates depend on assumptions about what would have happened that cannot be fully verified.\n\nWhat evidence would resolve this: Direct observation of what employment in the same location and time would have been without the policy change — which is impossible. The next best thing would be a perfect instrument: a source of variation in minimum wages that is completely orthogonal to local labor market conditions, allowing clean causal identification of the wage effect on employment without confounding from economic trends that affect both wages and employment.\n\nWhy that evidence is unavailable: All minimum wage increases occur in specific economic contexts that differ from comparison contexts in ways that are difficult to fully control for. The Card-Krueger comparison of New Jersey and Pennsylvania assumes that the two states would have had parallel employment trends absent the policy change — a parallel trends assumption that is plausible, testable in pre-period data, and impossible to verify in the period of interest. Dube's border discontinuity designs assume that counties on opposite sides of a state line differ primarily in their minimum wage; this assumption is plausible for narrowly defined geographic pairs but involves unmeasured differences in local economic conditions, employer types, and worker characteristics. Every natural experiment design involves counterfactual assumptions that are defensible but not verifiable by definition.\n\nWhat can be responsibly inferred: The convergence of multiple natural experiment studies across different states, time periods, industries, and methodological designs consistently finding small or negligible employment effects from moderate minimum wage increases is robust evidence that large employment reductions from such increases do not typically occur. This convergence across different comparison strategies makes it unlikely that the finding is an artifact of any particular methodological assumption. The weight of evidence supports the conclusion that moderate minimum wage increases do not produce the large employment reductions the simple neoclassical model predicts.\n\nWhat must remain genuinely unknowable: The precise employment effect of minimum wage increases in specific contexts — what employment in New Jersey's fast food industry would actually have been in 1992 had the minimum wage not risen. This matters because the policy welfare calculation requires knowing not just the average employment effect but the distribution of effects across workers, and that calculation requires the exact counterfactual that natural experiment designs approximate but cannot provide. The comparison between workers who gain higher wages and workers who might lose jobs or hours requires knowing the precise effect, which can only be bounded, not specified."
+      }
+    ]
+  },
+  "comparativeNarrative": [
+    {
+      "perspective": "Worker Income Security",
+      "name": "The Purchasing Power Case",
+      "content": "From a worker income security orientation, the clearest fact is that the real value of the federal minimum wage has declined for decades. Workers earning $7.25 today have less purchasing power than workers earned at the federal minimum in 1968, despite enormous productivity growth over that period. The debate about employment effects, while real, should be held in this context: the question is not whether to risk any employment effect but whether a moderate risk of modest job losses is worth ensuring that the lowest-paid workers earn enough to meet basic needs. On this framing, the risk calculus favors significant increases at least to recover historical purchasing power."
+    },
+    {
+      "perspective": "Employment Stability",
+      "name": "The Job Risk Case",
+      "content": "From an employment stability orientation, the CBO's central estimate of 1.4 million job losses from a $15 federal minimum is not a statistic to be minimized — it represents 1.4 million people losing their jobs or having their hours cut. The workers most at risk are precisely the most economically vulnerable: those in low-wage regions, those with less education, those most dependent on the jobs the minimum wage would make more expensive. On this framing, a significant increase poses the highest risks to the people most in need of economic stability, and caution — or regional differentiation — is warranted."
+    },
+    {
+      "perspective": "Limited Government",
+      "name": "The Market Wages Case",
+      "content": "From a limited government orientation, the minimum wage represents government substituting its judgment for the voluntary agreement of employers and employees. Employers set wages based on productivity and market conditions; workers accept wages that reflect their skills and alternatives. Government-mandated minimums distort this process, potentially pricing out workers whose productivity doesn't justify the mandated rate. On this framing, the appropriate response to low wages is addressing the factors that limit workers' productivity and alternatives — education, transportation, childcare — rather than mandating wage rates."
+    },
+    {
+      "perspective": "Administrative Feasibility",
+      "name": "The Durable Reform Case",
+      "content": "From an administrative feasibility orientation, the politically durable reform is one that can survive changes in Congress and administration and that maintains broad support across the political spectrum. Indexing the minimum wage to inflation has strong cross-partisan support in polling and eliminates the recurring political battle. Phased increases give businesses time to adjust and reduce the political backlash. Regional differentiation addresses the most serious employment concerns in low-wage areas. On this framing, the goal is a sustainable improvement that doesn't generate the kind of political backlash that leads to reversal."
+    }
+  ],
+  "rabbitHole": [
+    {
+      "type": "Foundational",
+      "label": "Labor Economics",
+      "reason": "The field within which the employment effects debate takes place — understanding the basic models helps you evaluate the competing claims"
+    },
+    {
+      "type": "Foundational",
+      "label": "The Earned Income Tax Credit",
+      "reason": "The major alternative tool for raising incomes of low-wage workers — understanding the EITC clarifies what the minimum wage does that the EITC doesn't, and vice versa"
+    },
+    {
+      "type": "Consequential",
+      "label": "Tipped Worker Wages",
+      "reason": "The federal tipped minimum ($2.13/hr since 1991) is a distinct policy with distinct politics — often discussed alongside the minimum wage but with different dynamics"
+    },
+    {
+      "type": "Parallel",
+      "label": "UK Living Wage",
+      "reason": "The most comparable international case — significant increases with modest employment effects — and the closest test of what US advocates predict"
+    },
+    {
+      "type": "Contrasting",
+      "label": "Universal Basic Income",
+      "reason": "An alternative approach to addressing low-income workers' needs that sidesteps the employment effects concern entirely"
+    },
+    {
+      "type": "Gateway",
+      "label": "'Minimum Wages and Employment' — Card & Krueger (1994)",
+      "reason": "The paper that transformed the research methodology and shifted academic consensus — the most important single paper in the minimum wage literature"
+    }
+  ],
+  "reference": [
+    {
+      "author": "Congressional Budget Office",
+      "title": "The Effects on Employment and Family Income of Increasing the Federal Minimum Wage",
+      "year": "2021",
+      "type": "Policy analysis",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": "CBO",
+      "annotation": "The authoritative nonpartisan projection. Methodology and assumptions are documented. The central estimate of 1.4M job losses uses competitive market assumptions; the report acknowledges the monopsony alternative."
+    },
+    {
+      "author": "Arindrajit Dube",
+      "title": "Impacts of Minimum Wages: Review of the International Evidence",
+      "year": "2019",
+      "type": "Academic survey",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The most comprehensive review of international evidence. Represents the current mainstream academic view that employment effects are small at moderate levels. Dube is the leading proponent of the monopsony-consistent interpretation."
+    },
+    {
+      "author": "David Neumark & William Wascher",
+      "title": "Minimum Wages and Employment",
+      "year": "2008",
+      "type": "Academic monograph",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The most systematic presentation of the traditional view finding meaningful employment effects. The minority position in current academic debate but a serious scholarly argument."
+    },
+    {
+      "author": "David Card & Alan Krueger",
+      "title": "Myth or Measurement: The New Economics of the Minimum Wage",
+      "year": "1995",
+      "type": "Academic monograph",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The book that introduced border-county methodology and shifted academic consensus. Card won the 2021 Nobel Prize in Economics partly for this work."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "title": "Myth or Measurement",
+      "author": "Card & Krueger",
+      "note": "The research that transformed how economists study minimum wage effects"
+    },
+    {
+      "type": "Report",
+      "title": "CBO 2021 Minimum Wage Report",
+      "note": "Free and authoritative — the starting point for any serious engagement with the evidence"
+    },
+    {
+      "type": "Essay",
+      "title": "'Who Are Minimum Wage Workers?' — BLS",
+      "note": "Annual survey — the ground-level demographics before the economics"
+    },
+    {
+      "type": "Documentary",
+      "title": "$2 an Hour: Living on Minimum Wage",
+      "note": "Ground-level treatment — what the policy debate looks like in individual lives"
+    },
+    {
+      "type": "Book",
+      "title": "Nickel and Dimed",
+      "author": "Barbara Ehrenreich",
+      "note": "Journalist lives on minimum wage for a year — the closest thing to essential fiction; essential non-fiction about what $7.25 actually means to live on"
+    },
+    {
+      "type": "Film",
+      "title": "I, Daniel Blake (2016)",
+      "note": "Ken Loach's film about the UK benefits system and working poverty — the most powerful recent fiction about what low-wage precarity feels like from inside"
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Book",
+      "title": "Nickel and Dimed — Barbara Ehrenreich (2001)",
+      "description": "Journalist spends a year working minimum-wage jobs — waitressing, cleaning, Walmart. The essential first-person account of what living on the federal minimum actually means. More read and influential than any economics paper on the subject."
+    },
+    {
+      "type": "Film",
+      "title": "I, Daniel Blake (2016) — Ken Loach",
+      "description": "British film about a carpenter navigating the benefits system after a heart attack. Not US-specific but the most powerful recent fiction about what low-wage precarity and bureaucratic indignity feel like from inside."
+    },
+    {
+      "type": "Fact",
+      "title": "$7.25 since 2009",
+      "description": "The federal minimum wage has been unchanged since July 2009 — the longest gap without an increase since the minimum wage was created in 1938. In that time, a full-time minimum wage worker has earned approximately $15,080 per year, before taxes, in a country where the median rent for a one-bedroom apartment exceeds $1,200/month in most cities."
+    },
+    {
+      "type": "Concept",
+      "title": "'Working poor'",
+      "description": "People who work full-time but remain in poverty. The existence of this category — workers who cannot afford basic needs despite working full-time — is the central moral argument for a higher minimum wage."
+    }
+  ]
+}
