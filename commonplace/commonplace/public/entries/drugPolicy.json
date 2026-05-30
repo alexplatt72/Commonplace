@@ -52,34 +52,7 @@
           "If you were writing a paper arguing that the evidence now supports implementing a decriminalization and treatment investment model in the United States, what would be your three strongest arguments?"
         ]
       }
-    },
-    "research": [
-      {
-        "status": "established",
-        "topic": "Portugal decriminalization outcomes",
-        "content": "Two decades of data establish that Portugal's 2001 decriminalization did not produce significant increases in drug use, and is associated with sharp reductions in overdose deaths and HIV transmission among users, combined with increased treatment uptake. The treatment investment was a critical component."
-      },
-      {
-        "status": "established",
-        "topic": "Racial disparities in drug enforcement",
-        "content": "The racial disparity in marijuana and drug enforcement — Black Americans arrested at substantially higher rates than white Americans despite similar use rates — is among the most thoroughly documented disparities in American criminal justice. It is not contested in the empirical literature."
-      },
-      {
-        "status": "established",
-        "topic": "Treatment effectiveness relative to incarceration",
-        "content": "Multiple systematic reviews establish that addiction treatment is more effective than incarceration at reducing drug use and crime. This finding is robust across treatment modalities and drug types."
-      },
-      {
-        "status": "emerging",
-        "topic": "Effects of marijuana legalization on use and health",
-        "content": "With over a decade of data from early-adopting states, the effects of legal marijuana on adolescent use and public health are still being assessed. Effects on use rates are contested; effects on traffic safety are debated; long-term health effects of legal commercial marijuana (including high-potency products) are not yet fully characterized."
-      },
-      {
-        "status": "unrecoverable",
-        "topic": "The counterfactual: addiction and incarceration under a treatment-first framework",
-        "content": "What US addiction rates, overdose deaths, and incarceration levels would look like today had the United States adopted a treatment-first rather than enforcement-first approach from the 1970s onward cannot be established from available evidence.\n\nWhat evidence would resolve this: A natural experiment in which comparable populations were exposed to treatment-first drug policy versus criminalization simultaneously — with identical drug supply conditions, demographics, healthcare infrastructure, and socioeconomic contexts — allowing direct comparison of addiction rates, overdose deaths, incarceration, and community outcomes over decades. Alternatively: a comprehensive institutional model of US drug markets calibrated against international comparators, with sufficient confidence in the causal structure to project counterfactual outcomes under different policy regimes.\n\nWhy that evidence is unavailable: No such natural experiment exists in the United States. The War on Drugs was implemented nationally; no comparable population experienced different enforcement intensities from a clean baseline over the same period. International comparisons — Portugal's 2001 decriminalization, Switzerland's heroin-assisted treatment program, the Netherlands' tolerance policies — are informative but not directly translatable because those countries differ from the United States in healthcare infrastructure, cultural attitudes toward drug use, drug supply networks, income inequality, and many other factors that independently affect drug outcomes. The institutional path that treatment-first US drug policy would have taken cannot be specified in enough detail to model because it would have depended on specific legislative choices, enforcement decisions, and treatment capacity investments that cannot be retroactively determined.\n\nWhat can be responsibly inferred: From international comparisons and from within-US variation in enforcement intensity over time, we can infer directionally that treatment-oriented approaches produce better public health outcomes — lower overdose mortality, lower HIV transmission rates, lower incarceration — than enforcement-first approaches, even after controlling for available confounders. Portugal's post-2001 experience is the most systematically studied case: drug-related deaths fell substantially, HIV infections among drug users declined, and drug use rates did not increase as critics predicted. The direction of effect is established; the magnitude in the US context is not.\n\nWhat must remain genuinely unknowable: The full magnitude of the harm that the War on Drugs has produced beyond what a treatment-first approach would have produced — the preventable overdose deaths, preventable incarcerations, preventable community disruptions — and therefore the true cost-benefit assessment of fifty years of enforcement-first drug policy. The institutional counterfactual cannot be specified in sufficient detail to estimate outcomes confidently, because it would have produced a different healthcare system, different criminal justice infrastructure, and different community conditions that would have interacted in ways that cannot be retroactively modeled."
-      }
-    ]
+    }
   },
   "comparativeNarrative": [
     {
@@ -240,6 +213,33 @@
       "type": "Campaign",
       "title": "'Just Say No' — Nancy Reagan (1982)",
       "description": "Nancy Reagan's anti-drug campaign is one of the most widely remembered public health slogans in American history — and one of the most criticized for its failure to engage with addiction as a medical condition. The phrase 'just say no' is still used, most often ironically, to refer to naive or insufficient responses to complex problems. It encodes an entire philosophy of drug policy — personal responsibility over structural intervention — that shaped a generation of American drug legislation."
+    }
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Portugal decriminalization outcomes",
+      "content": "Two decades of data establish that Portugal's 2001 decriminalization did not produce significant increases in drug use, and is associated with sharp reductions in overdose deaths and HIV transmission among users, combined with increased treatment uptake. The treatment investment was a critical component."
+    },
+    {
+      "status": "established",
+      "topic": "Racial disparities in drug enforcement",
+      "content": "The racial disparity in marijuana and drug enforcement — Black Americans arrested at substantially higher rates than white Americans despite similar use rates — is among the most thoroughly documented disparities in American criminal justice. It is not contested in the empirical literature."
+    },
+    {
+      "status": "established",
+      "topic": "Treatment effectiveness relative to incarceration",
+      "content": "Multiple systematic reviews establish that addiction treatment is more effective than incarceration at reducing drug use and crime. This finding is robust across treatment modalities and drug types."
+    },
+    {
+      "status": "emerging",
+      "topic": "Effects of marijuana legalization on use and health",
+      "content": "With over a decade of data from early-adopting states, the effects of legal marijuana on adolescent use and public health are still being assessed. Effects on use rates are contested; effects on traffic safety are debated; long-term health effects of legal commercial marijuana (including high-potency products) are not yet fully characterized."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The counterfactual: addiction and incarceration under a treatment-first framework",
+      "content": "What US addiction rates, overdose deaths, and incarceration levels would look like today had the United States adopted a treatment-first rather than enforcement-first approach from the 1970s onward cannot be established from available evidence.\n\nWhat evidence would resolve this: A natural experiment in which comparable populations were exposed to treatment-first drug policy versus criminalization simultaneously — with identical drug supply conditions, demographics, healthcare infrastructure, and socioeconomic contexts — allowing direct comparison of addiction rates, overdose deaths, incarceration, and community outcomes over decades. Alternatively: a comprehensive institutional model of US drug markets calibrated against international comparators, with sufficient confidence in the causal structure to project counterfactual outcomes under different policy regimes.\n\nWhy that evidence is unavailable: No such natural experiment exists in the United States. The War on Drugs was implemented nationally; no comparable population experienced different enforcement intensities from a clean baseline over the same period. International comparisons — Portugal's 2001 decriminalization, Switzerland's heroin-assisted treatment program, the Netherlands' tolerance policies — are informative but not directly translatable because those countries differ from the United States in healthcare infrastructure, cultural attitudes toward drug use, drug supply networks, income inequality, and many other factors that independently affect drug outcomes. The institutional path that treatment-first US drug policy would have taken cannot be specified in enough detail to model because it would have depended on specific legislative choices, enforcement decisions, and treatment capacity investments that cannot be retroactively determined.\n\nWhat can be responsibly inferred: From international comparisons and from within-US variation in enforcement intensity over time, we can infer directionally that treatment-oriented approaches produce better public health outcomes — lower overdose mortality, lower HIV transmission rates, lower incarceration — than enforcement-first approaches, even after controlling for available confounders. Portugal's post-2001 experience is the most systematically studied case: drug-related deaths fell substantially, HIV infections among drug users declined, and drug use rates did not increase as critics predicted. The direction of effect is established; the magnitude in the US context is not.\n\nWhat must remain genuinely unknowable: The full magnitude of the harm that the War on Drugs has produced beyond what a treatment-first approach would have produced — the preventable overdose deaths, preventable incarcerations, preventable community disruptions — and therefore the true cost-benefit assessment of fifty years of enforcement-first drug policy. The institutional counterfactual cannot be specified in sufficient detail to estimate outcomes confidently, because it would have produced a different healthcare system, different criminal justice infrastructure, and different community conditions that would have interacted in ways that cannot be retroactively modeled."
     }
   ]
 }

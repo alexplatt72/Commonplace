@@ -55,34 +55,7 @@
           "If you were writing a paper arguing that the malaria-poverty trap is the contemporary expression of colonial investment patterns that mosquito ecology helped produce, what would be your three strongest arguments? What would be the hardest objection?"
         ]
       }
-    },
-    "research": [
-      {
-        "status": "established",
-        "topic": "Differential immunity and Atlantic World colonial patterns",
-        "content": "Genetic analysis of sickle cell trait (HbS), G6PD deficiency, and Duffy antigen negativity distributions provides strong evidence for the historical geography of malaria and yellow fever exposure. The distribution of sickle cell trait in the Americas maps closely onto the historical geography of plantation slavery, which maps onto historical malaria transmission zones — a three-way correlation that makes the role of differential immunity in New World labor systems legible at the genomic level. This is the strongest indirect evidence for McNeill's ecological history thesis."
-      },
-      {
-        "status": "established",
-        "topic": "Aedes aegypti African origin and Atlantic transmission",
-        "content": "Population genetic analysis of current New World Aedes aegypti populations shows African origin with founding event signatures consistent with the Atlantic slave trade period. The mosquito traveled in ship water barrels. The yellow fever virus that uses it as a vector was not present in the New World before 1492 — there were no prior immune populations, and the epidemiological consequences were structurally transformative for Caribbean and American colonial history."
-      },
-      {
-        "status": "emerging",
-        "topic": "Gene drive technology for Anopheles gambiae population suppression",
-        "content": "Laboratory demonstration of CRISPR-based suppression drives collapsing Anopheles gambiae populations has been achieved. Contained field trials are in development. The open-environment ecological consequences of population collapse — food web disruption, pollination effects, evolutionary resistance timelines — are not modelable with current data. The governance framework for a decision of this magnitude does not exist in its required form. The science is moving faster than the ethics and governance."
-      },
-      {
-        "status": "emerging",
-        "topic": "Artemisinin resistance spread",
-        "content": "Artemisinin-resistant Plasmodium falciparum strains, first documented in Southeast Asia, have now been confirmed in multiple African countries including Rwanda, Uganda, and Eritrea. Artemisinin-based combination therapies are the most effective current treatment; resistance threatens the primary pharmaceutical defense against malaria in the region with the highest disease burden. The pipeline for replacement drugs is thin relative to the urgency of the problem."
-      },
-      {
-        "status": "unrecoverable",
-        "topic": "The precise causal weight of disease ecology in specific historical decisions",
-        "content": "The precise causal weight of disease ecology in specific historical decisions — the Louisiana Purchase, the Haitian independence, the failure of specific colonial campaigns — cannot be established from the available record.\n\nWhat evidence would resolve this: Contemporary military medical records specifying mortality rates and causes of death with sufficient granularity to compare disease-killed to battle-killed soldiers; diaries and letters from commanders explicitly weighing disease mortality in strategic decisions; parallel campaign records from areas with different mosquito ecologies, allowing genuine comparison; and — ideally — documentation of deliberations where disease mortality was explicitly discussed as a factor in abandoning or pursuing a strategy.\n\nWhy that evidence is unavailable: 18th and early 19th-century military medicine did not distinguish reliably between yellow fever, malaria, and other fevers. Causes of death were recorded inconsistently and often incorrectly. The deliberations that produced decisions like Napoleon's abandonment of Saint-Domingue happened in closed councils and were documented only in retrospective accounts shaped by subsequent events. We cannot construct the counterfactual — what would have happened with a disease-resistant French army — because that army did not exist.\n\nWhat can be responsibly inferred: We can establish that mortality rates in Caribbean campaigns were dramatically higher than in European campaigns for European-born soldiers; that commanders wrote about disease in their correspondence as a significant operational factor; and that the correlation between high-fever-mortality zones and failed colonial campaigns is strong enough that it cannot be dismissed as coincidental. McNeill's quantitative work on this correlation is the best available evidence.\n\nWhat must remain genuinely unknowable: The relative weight of disease mortality versus political, military, and logistical factors in any specific decision; whether Napoleon's abandonment of his American ambitions was primarily driven by Saint-Domingue's disease environment or by the renewal of European war; and whether the enslaved population's eventual victory would have occurred under any mosquito ecology, given sufficient time and organization, or whether the specific ecology of yellow fever immunity was indispensable."
-      }
-    ]
+    }
   },
   "comparativeNarrative": [
     {
@@ -244,6 +217,33 @@
       "type": "Consumer product",
       "title": "DEET and the universal experience of mosquito repellent",
       "description": "N,N-Diethyl-meta-toluamide — DEET — has been applied to human skin in enormous quantities since the US Army developed it in 1946. It is one of the most widely used consumer chemicals in the world, standard equipment for camping, hiking, international travel, and in many regions simply going outside in summer. The universal experience of applying mosquito repellent is the most direct daily encounter most people have with the ecological power of a single insect genus."
+    }
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Differential immunity and Atlantic World colonial patterns",
+      "content": "Genetic analysis of sickle cell trait (HbS), G6PD deficiency, and Duffy antigen negativity distributions provides strong evidence for the historical geography of malaria and yellow fever exposure. The distribution of sickle cell trait in the Americas maps closely onto the historical geography of plantation slavery, which maps onto historical malaria transmission zones — a three-way correlation that makes the role of differential immunity in New World labor systems legible at the genomic level. This is the strongest indirect evidence for McNeill's ecological history thesis."
+    },
+    {
+      "status": "established",
+      "topic": "Aedes aegypti African origin and Atlantic transmission",
+      "content": "Population genetic analysis of current New World Aedes aegypti populations shows African origin with founding event signatures consistent with the Atlantic slave trade period. The mosquito traveled in ship water barrels. The yellow fever virus that uses it as a vector was not present in the New World before 1492 — there were no prior immune populations, and the epidemiological consequences were structurally transformative for Caribbean and American colonial history."
+    },
+    {
+      "status": "emerging",
+      "topic": "Gene drive technology for Anopheles gambiae population suppression",
+      "content": "Laboratory demonstration of CRISPR-based suppression drives collapsing Anopheles gambiae populations has been achieved. Contained field trials are in development. The open-environment ecological consequences of population collapse — food web disruption, pollination effects, evolutionary resistance timelines — are not modelable with current data. The governance framework for a decision of this magnitude does not exist in its required form. The science is moving faster than the ethics and governance."
+    },
+    {
+      "status": "emerging",
+      "topic": "Artemisinin resistance spread",
+      "content": "Artemisinin-resistant Plasmodium falciparum strains, first documented in Southeast Asia, have now been confirmed in multiple African countries including Rwanda, Uganda, and Eritrea. Artemisinin-based combination therapies are the most effective current treatment; resistance threatens the primary pharmaceutical defense against malaria in the region with the highest disease burden. The pipeline for replacement drugs is thin relative to the urgency of the problem."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The precise causal weight of disease ecology in specific historical decisions",
+      "content": "The precise causal weight of disease ecology in specific historical decisions — the Louisiana Purchase, the Haitian independence, the failure of specific colonial campaigns — cannot be established from the available record.\n\nWhat evidence would resolve this: Contemporary military medical records specifying mortality rates and causes of death with sufficient granularity to compare disease-killed to battle-killed soldiers; diaries and letters from commanders explicitly weighing disease mortality in strategic decisions; parallel campaign records from areas with different mosquito ecologies, allowing genuine comparison; and — ideally — documentation of deliberations where disease mortality was explicitly discussed as a factor in abandoning or pursuing a strategy.\n\nWhy that evidence is unavailable: 18th and early 19th-century military medicine did not distinguish reliably between yellow fever, malaria, and other fevers. Causes of death were recorded inconsistently and often incorrectly. The deliberations that produced decisions like Napoleon's abandonment of Saint-Domingue happened in closed councils and were documented only in retrospective accounts shaped by subsequent events. We cannot construct the counterfactual — what would have happened with a disease-resistant French army — because that army did not exist.\n\nWhat can be responsibly inferred: We can establish that mortality rates in Caribbean campaigns were dramatically higher than in European campaigns for European-born soldiers; that commanders wrote about disease in their correspondence as a significant operational factor; and that the correlation between high-fever-mortality zones and failed colonial campaigns is strong enough that it cannot be dismissed as coincidental. McNeill's quantitative work on this correlation is the best available evidence.\n\nWhat must remain genuinely unknowable: The relative weight of disease mortality versus political, military, and logistical factors in any specific decision; whether Napoleon's abandonment of his American ambitions was primarily driven by Saint-Domingue's disease environment or by the renewal of European war; and whether the enslaved population's eventual victory would have occurred under any mosquito ecology, given sufficient time and organization, or whether the specific ecology of yellow fever immunity was indispensable."
     }
   ]
 }

@@ -52,29 +52,7 @@
           "If you were writing a paper arguing that the shift from competitive to monopsony models is the most important development in minimum wage economics, what would be your strongest arguments?"
         ]
       }
-    },
-    "research": [
-      {
-        "status": "established",
-        "topic": "Purchasing power erosion of $7.25",
-        "content": "The real value of the $7.25 federal minimum wage has eroded significantly since 2009 due to inflation. In 2024 dollars, the 1968 peak minimum wage would be approximately $13-14. This is established arithmetic."
-      },
-      {
-        "status": "established",
-        "topic": "Demographic profile of affected workers",
-        "content": "The demographic profile of minimum wage workers — disproportionately female, workers of color, in food service and retail — is established from BLS surveys. The profile of workers who would be affected by a $15 federal minimum (17 million per CBO) is somewhat broader."
-      },
-      {
-        "status": "emerging",
-        "topic": "Monopsony in low-wage labor markets",
-        "content": "The empirical extent of employer wage-setting power (monopsony) in low-wage labor markets is an active research area. If monopsony is widespread, employment effects of minimum wage increases are smaller than competitive models predict. Current evidence is suggestive but not conclusive about prevalence."
-      },
-      {
-        "status": "unrecoverable",
-        "topic": "Counterfactual employment without increases",
-        "content": "What employment in affected industries would have been without minimum wage increases — the true counterfactual — cannot be directly observed, and all employment effect estimates depend on assumptions about what would have happened that cannot be fully verified.\n\nWhat evidence would resolve this: Direct observation of what employment in the same location and time would have been without the policy change — which is impossible. The next best thing would be a perfect instrument: a source of variation in minimum wages that is completely orthogonal to local labor market conditions, allowing clean causal identification of the wage effect on employment without confounding from economic trends that affect both wages and employment.\n\nWhy that evidence is unavailable: All minimum wage increases occur in specific economic contexts that differ from comparison contexts in ways that are difficult to fully control for. The Card-Krueger comparison of New Jersey and Pennsylvania assumes that the two states would have had parallel employment trends absent the policy change — a parallel trends assumption that is plausible, testable in pre-period data, and impossible to verify in the period of interest. Dube's border discontinuity designs assume that counties on opposite sides of a state line differ primarily in their minimum wage; this assumption is plausible for narrowly defined geographic pairs but involves unmeasured differences in local economic conditions, employer types, and worker characteristics. Every natural experiment design involves counterfactual assumptions that are defensible but not verifiable by definition.\n\nWhat can be responsibly inferred: The convergence of multiple natural experiment studies across different states, time periods, industries, and methodological designs consistently finding small or negligible employment effects from moderate minimum wage increases is robust evidence that large employment reductions from such increases do not typically occur. This convergence across different comparison strategies makes it unlikely that the finding is an artifact of any particular methodological assumption. The weight of evidence supports the conclusion that moderate minimum wage increases do not produce the large employment reductions the simple neoclassical model predicts.\n\nWhat must remain genuinely unknowable: The precise employment effect of minimum wage increases in specific contexts — what employment in New Jersey's fast food industry would actually have been in 1992 had the minimum wage not risen. This matters because the policy welfare calculation requires knowing not just the average employment effect but the distribution of effects across workers, and that calculation requires the exact counterfactual that natural experiment designs approximate but cannot provide. The comparison between workers who gain higher wages and workers who might lose jobs or hours requires knowing the precise effect, which can only be bounded, not specified."
-      }
-    ]
+    }
   },
   "comparativeNarrative": [
     {
@@ -230,6 +208,28 @@
       "type": "Concept",
       "title": "'Working poor'",
       "description": "People who work full-time but remain in poverty. The existence of this category — workers who cannot afford basic needs despite working full-time — is the central moral argument for a higher minimum wage."
+    }
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Purchasing power erosion of $7.25",
+      "content": "The real value of the $7.25 federal minimum wage has eroded significantly since 2009 due to inflation. In 2024 dollars, the 1968 peak minimum wage would be approximately $13-14. This is established arithmetic."
+    },
+    {
+      "status": "established",
+      "topic": "Demographic profile of affected workers",
+      "content": "The demographic profile of minimum wage workers — disproportionately female, workers of color, in food service and retail — is established from BLS surveys. The profile of workers who would be affected by a $15 federal minimum (17 million per CBO) is somewhat broader."
+    },
+    {
+      "status": "emerging",
+      "topic": "Monopsony in low-wage labor markets",
+      "content": "The empirical extent of employer wage-setting power (monopsony) in low-wage labor markets is an active research area. If monopsony is widespread, employment effects of minimum wage increases are smaller than competitive models predict. Current evidence is suggestive but not conclusive about prevalence."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "Counterfactual employment without increases",
+      "content": "What employment in affected industries would have been without minimum wage increases — the true counterfactual — cannot be directly observed, and all employment effect estimates depend on assumptions about what would have happened that cannot be fully verified.\n\nWhat evidence would resolve this: Direct observation of what employment in the same location and time would have been without the policy change — which is impossible. The next best thing would be a perfect instrument: a source of variation in minimum wages that is completely orthogonal to local labor market conditions, allowing clean causal identification of the wage effect on employment without confounding from economic trends that affect both wages and employment.\n\nWhy that evidence is unavailable: All minimum wage increases occur in specific economic contexts that differ from comparison contexts in ways that are difficult to fully control for. The Card-Krueger comparison of New Jersey and Pennsylvania assumes that the two states would have had parallel employment trends absent the policy change — a parallel trends assumption that is plausible, testable in pre-period data, and impossible to verify in the period of interest. Dube's border discontinuity designs assume that counties on opposite sides of a state line differ primarily in their minimum wage; this assumption is plausible for narrowly defined geographic pairs but involves unmeasured differences in local economic conditions, employer types, and worker characteristics. Every natural experiment design involves counterfactual assumptions that are defensible but not verifiable by definition.\n\nWhat can be responsibly inferred: The convergence of multiple natural experiment studies across different states, time periods, industries, and methodological designs consistently finding small or negligible employment effects from moderate minimum wage increases is robust evidence that large employment reductions from such increases do not typically occur. This convergence across different comparison strategies makes it unlikely that the finding is an artifact of any particular methodological assumption. The weight of evidence supports the conclusion that moderate minimum wage increases do not produce the large employment reductions the simple neoclassical model predicts.\n\nWhat must remain genuinely unknowable: The precise employment effect of minimum wage increases in specific contexts — what employment in New Jersey's fast food industry would actually have been in 1992 had the minimum wage not risen. This matters because the policy welfare calculation requires knowing not just the average employment effect but the distribution of effects across workers, and that calculation requires the exact counterfactual that natural experiment designs approximate but cannot provide. The comparison between workers who gain higher wages and workers who might lose jobs or hours requires knowing the precise effect, which can only be bounded, not specified."
     }
   ]
 }

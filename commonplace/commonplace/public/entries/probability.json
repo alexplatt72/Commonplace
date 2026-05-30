@@ -56,34 +56,7 @@
           "Quantum mechanics established that probability is a feature of physical reality, not just human ignorance. Does this vindication of probability as metaphysically fundamental change how we should think about probabilistic reasoning in the domains where it was applied before quantum mechanics — medicine, finance, epidemiology?"
         ]
       }
-    },
-    "research": [
-      {
-        "status": "established",
-        "topic": "Pascal-Fermat as the formal origin of probability theory",
-        "content": "The 1654 correspondence between Pascal and Fermat is well-documented and the mathematical content is clear. The problem of points — how to divide stakes in an unfinished game — required the formalization of expected value. The historical record establishes this as the first systematic probabilistic reasoning, though it built on Cardano and Islamic combinatorics."
-      },
-      {
-        "status": "established",
-        "topic": "Probability's role in the development of quantum mechanics",
-        "content": "The Copenhagen interpretation of quantum mechanics (Bohr, Heisenberg) established that the wave function is a probability amplitude and that quantum events are fundamentally probabilistic rather than deterministic. This is well-established physics, though the interpretation of what quantum probability means metaphysically remains philosophically contested."
-      },
-      {
-        "status": "emerging",
-        "topic": "Why formal probability did not emerge in Islamic or Chinese mathematics",
-        "content": "The question of why probability theory developed in 17th-century Europe rather than in the Islamic scholarly tradition (which had developed sophisticated combinatorics) or the Chinese mathematical tradition is actively researched. Current explanations emphasize the specific commercial demand from maritime insurance, the philosophical context of Enlightenment empiricism, and the institutional structure of European universities — but no consensus explanation has emerged."
-      },
-      {
-        "status": "emerging",
-        "topic": "The limits of probabilistic models in correlated risk systems",
-        "content": "Following the 2008 financial crisis, significant research has examined how probabilistic risk models fail when applied to systems with correlated risks — where the assumption of independent events is violated. The research frontier concerns how to model tail risk and systemic correlation without requiring computational tractability to be sacrificed."
-      },
-      {
-        "status": "unrecoverable",
-        "topic": "The cognitive process by which Pascal and Fermat understood what they were doing",
-        "content": "Whether Pascal and Fermat understood themselves as founding a new mathematical discipline, solving a practical commercial problem, or answering a philosophical question about chance cannot be recovered from the surviving correspondence.\n\nWhat evidence would resolve this: Personal journals, unpublished correspondence, or contemporary accounts in which Pascal or Fermat discussed the significance of what they were doing beyond the specific problem — what they thought probability theory would be used for, whether they understood themselves as establishing a foundation for a new field, and most specifically what the private relationship was between Pascal's probability work and his simultaneous religious crisis, which produced the Pensées and the famous Wager in the same period.\n\nWhy that evidence is unavailable: The surviving correspondence between Pascal and Fermat is almost entirely mathematical. It shows what they computed and proved; it does not record what they thought they were establishing or what weight they assigned to it in the context of their other intellectual concerns. Pascal's private religious writings are extensive, but they are not self-annotated in ways that would reveal how consciously he drew on his probability work. The Memorial — Pascal's record of his mystical conversion experience — was found sewn into his coat after his death, suggesting a private significance he chose not to articulate publicly.\n\nWhat can be responsibly inferred: From the generality of the problem they chose to analyze — how to divide stakes in any interrupted game, not just a specific one — we can infer that both men understood they were solving a class of problems rather than a single case. From Huygens's 1657 treatise on probability, which appeared within two years and extended their methods, we can infer that the mathematical community immediately recognized the framework's generalizability. From Pascal's Wager, formulated in roughly the same period, we can infer that probabilistic reasoning about uncertain outcomes was active in Pascal's thinking simultaneously with the mathematical development — but whether this was a deliberate application or a convergence of independent concerns cannot be established.\n\nWhat must remain genuinely unknowable: Whether Pascal or Fermat experienced their correspondence as the founding of a discipline or as the solution of a puzzle; what emotional and intellectual weight they assigned to the work; and whether the Wager represents Pascal consciously applying probability theory to theology, or a parallel but independent mode of reasoning about uncertainty that happened to share formal structure with the mathematics he had recently developed."
-      }
-    ]
+    }
   },
   "comparativeNarrative": [
     {
@@ -229,6 +202,33 @@
       "type": "Everyday phrase",
       "title": "'What are the odds?'",
       "description": "The rhetorical question — asked whenever something seems remarkably unlikely — demonstrates that probabilistic thinking has become part of everyday language even when no calculation is intended. People use it to express surprise, to note coincidence, to question whether something was really accidental. The phrase assumes that events have likelihoods that can be compared and commented on — an assumption that required probability theory to formalize, and that is now so embedded in language that its mathematical origin is invisible."
+    }
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Pascal-Fermat as the formal origin of probability theory",
+      "content": "The 1654 correspondence between Pascal and Fermat is well-documented and the mathematical content is clear. The problem of points — how to divide stakes in an unfinished game — required the formalization of expected value. The historical record establishes this as the first systematic probabilistic reasoning, though it built on Cardano and Islamic combinatorics."
+    },
+    {
+      "status": "established",
+      "topic": "Probability's role in the development of quantum mechanics",
+      "content": "The Copenhagen interpretation of quantum mechanics (Bohr, Heisenberg) established that the wave function is a probability amplitude and that quantum events are fundamentally probabilistic rather than deterministic. This is well-established physics, though the interpretation of what quantum probability means metaphysically remains philosophically contested."
+    },
+    {
+      "status": "emerging",
+      "topic": "Why formal probability did not emerge in Islamic or Chinese mathematics",
+      "content": "The question of why probability theory developed in 17th-century Europe rather than in the Islamic scholarly tradition (which had developed sophisticated combinatorics) or the Chinese mathematical tradition is actively researched. Current explanations emphasize the specific commercial demand from maritime insurance, the philosophical context of Enlightenment empiricism, and the institutional structure of European universities — but no consensus explanation has emerged."
+    },
+    {
+      "status": "emerging",
+      "topic": "The limits of probabilistic models in correlated risk systems",
+      "content": "Following the 2008 financial crisis, significant research has examined how probabilistic risk models fail when applied to systems with correlated risks — where the assumption of independent events is violated. The research frontier concerns how to model tail risk and systemic correlation without requiring computational tractability to be sacrificed."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The cognitive process by which Pascal and Fermat understood what they were doing",
+      "content": "Whether Pascal and Fermat understood themselves as founding a new mathematical discipline, solving a practical commercial problem, or answering a philosophical question about chance cannot be recovered from the surviving correspondence.\n\nWhat evidence would resolve this: Personal journals, unpublished correspondence, or contemporary accounts in which Pascal or Fermat discussed the significance of what they were doing beyond the specific problem — what they thought probability theory would be used for, whether they understood themselves as establishing a foundation for a new field, and most specifically what the private relationship was between Pascal's probability work and his simultaneous religious crisis, which produced the Pensées and the famous Wager in the same period.\n\nWhy that evidence is unavailable: The surviving correspondence between Pascal and Fermat is almost entirely mathematical. It shows what they computed and proved; it does not record what they thought they were establishing or what weight they assigned to it in the context of their other intellectual concerns. Pascal's private religious writings are extensive, but they are not self-annotated in ways that would reveal how consciously he drew on his probability work. The Memorial — Pascal's record of his mystical conversion experience — was found sewn into his coat after his death, suggesting a private significance he chose not to articulate publicly.\n\nWhat can be responsibly inferred: From the generality of the problem they chose to analyze — how to divide stakes in any interrupted game, not just a specific one — we can infer that both men understood they were solving a class of problems rather than a single case. From Huygens's 1657 treatise on probability, which appeared within two years and extended their methods, we can infer that the mathematical community immediately recognized the framework's generalizability. From Pascal's Wager, formulated in roughly the same period, we can infer that probabilistic reasoning about uncertain outcomes was active in Pascal's thinking simultaneously with the mathematical development — but whether this was a deliberate application or a convergence of independent concerns cannot be established.\n\nWhat must remain genuinely unknowable: Whether Pascal or Fermat experienced their correspondence as the founding of a discipline or as the solution of a puzzle; what emotional and intellectual weight they assigned to the work; and whether the Wager represents Pascal consciously applying probability theory to theology, or a parallel but independent mode of reasoning about uncertainty that happened to share formal structure with the mathematics he had recently developed."
     }
   ]
 }

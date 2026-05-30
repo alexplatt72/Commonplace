@@ -54,29 +54,7 @@
           "The Overton window on climate policy has shifted dramatically over the past decade. What mechanisms produce this kind of shift in what is politically discussable?"
         ]
       }
-    },
-    "research": [
-      {
-        "status": "established",
-        "topic": "Physical basis of anthropogenic warming",
-        "content": "The physical basis of anthropogenic climate change — greenhouse gas physics, the attribution of temperature rise to human emissions, the correlation between CO2 concentration and warming — is established through multiple independent lines of evidence and represents one of the most robust consensuses in science."
-      },
-      {
-        "status": "established",
-        "topic": "Attribution science for extreme weather",
-        "content": "The field of extreme weather attribution — calculating how much more or less likely specific extreme events are in a warmer world — has developed robust methodology in the past decade. Many individual events have now been formally attributed, establishing climate change as an immediate rather than purely future cause of specific harms."
-      },
-      {
-        "status": "emerging",
-        "topic": "Tipping point thresholds and timelines",
-        "content": "The precise warming levels at which various climate tipping points (Arctic ice loss, permafrost thaw, Amazon dieback, ice sheet instability) are crossed, and the timelines over which tipping dynamics would unfold, are active research areas. The risk is established; the precise thresholds are not."
-      },
-      {
-        "status": "unrecoverable",
-        "topic": "Counterfactual climate trajectories",
-        "content": "What the Earth's climate would have done without human greenhouse gas emissions — the counterfactual baseline from which actual climate change is measured — cannot be established with the precision that some policy applications require.\n\nWhat evidence would resolve this: A complete mechanistic understanding of all climate forcing factors integrated with complete knowledge of all feedback systems and tipping point dynamics, allowing confident simulation of counterfactual climate trajectories with specified uncertainty bounds. This would require resolving current uncertainties about cloud feedbacks, permafrost carbon dynamics, ice sheet behavior, and the relationship between greenhouse gas concentrations and regional precipitation patterns.\n\nWhy that evidence is unavailable: The climate system's internal variability is complex enough that even with improved forcing factor knowledge, precise counterfactual trajectories remain uncertain. The difference between the \"forced\" climate response (driven by greenhouse gas concentrations) and \"unforced\" internal variability (driven by ocean circulation patterns, volcanic activity, and other factors) is established in broad outline but imprecisely characterized in specific regional and decadal terms. The tipping point dynamics that could produce non-linear climate responses — abrupt permafrost thaw, ice sheet collapse, Amazon dieback — are understood mechanistically but not quantified precisely enough to model the counterfactual with confidence at the level of detail that attribution studies sometimes require.\n\nWhat can be responsibly inferred: The orbital forcing (Milankovitch cycles) that drives glacial-interglacial transitions is well-established. Without anthropogenic forcing, Earth's climate would currently be in a very slow cooling trend toward the next glaciation — a process operating on timescales of tens of thousands of years, not decades. Human greenhouse gas emissions have overwhelmed this orbital forcing and produced warming approximately 100 times faster than glacial-interglacial transitions of the geological past. The broad counterfactual — gradual long-term cooling rather than rapid warming — is established. The precise counterfactual temperature, precipitation, and sea level for specific regions and decades is not.\n\nWhat must remain genuinely unknowable: The precise counterfactual climate trajectory in the absence of human forcing — specifically what temperature, precipitation, sea level, and storm frequency would have been in specific regions at specific times without anthropogenic emissions. This unknowability matters for attribution studies and for fully characterizing the scale of human climate impact, because it requires knowing the baseline from which current conditions deviate, and that baseline involves uncertainty about how the climate system's internal variability would have evolved over the relevant period."
-      }
-    ]
+    }
   },
   "comparativeNarrative": [
     {
@@ -239,6 +217,28 @@
       "type": "Data",
       "title": "The Keeling Curve",
       "description": "The continuous measurement of atmospheric CO2 at Mauna Loa since 1958 — the most important single dataset in climate science. The curve's steady rise is not an interpretation. It is a measurement. Available at scripps.ucsd.edu."
+    }
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Physical basis of anthropogenic warming",
+      "content": "The physical basis of anthropogenic climate change — greenhouse gas physics, the attribution of temperature rise to human emissions, the correlation between CO2 concentration and warming — is established through multiple independent lines of evidence and represents one of the most robust consensuses in science."
+    },
+    {
+      "status": "established",
+      "topic": "Attribution science for extreme weather",
+      "content": "The field of extreme weather attribution — calculating how much more or less likely specific extreme events are in a warmer world — has developed robust methodology in the past decade. Many individual events have now been formally attributed, establishing climate change as an immediate rather than purely future cause of specific harms."
+    },
+    {
+      "status": "emerging",
+      "topic": "Tipping point thresholds and timelines",
+      "content": "The precise warming levels at which various climate tipping points (Arctic ice loss, permafrost thaw, Amazon dieback, ice sheet instability) are crossed, and the timelines over which tipping dynamics would unfold, are active research areas. The risk is established; the precise thresholds are not."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "Counterfactual climate trajectories",
+      "content": "What the Earth's climate would have done without human greenhouse gas emissions — the counterfactual baseline from which actual climate change is measured — cannot be established with the precision that some policy applications require.\n\nWhat evidence would resolve this: A complete mechanistic understanding of all climate forcing factors integrated with complete knowledge of all feedback systems and tipping point dynamics, allowing confident simulation of counterfactual climate trajectories with specified uncertainty bounds. This would require resolving current uncertainties about cloud feedbacks, permafrost carbon dynamics, ice sheet behavior, and the relationship between greenhouse gas concentrations and regional precipitation patterns.\n\nWhy that evidence is unavailable: The climate system's internal variability is complex enough that even with improved forcing factor knowledge, precise counterfactual trajectories remain uncertain. The difference between the \"forced\" climate response (driven by greenhouse gas concentrations) and \"unforced\" internal variability (driven by ocean circulation patterns, volcanic activity, and other factors) is established in broad outline but imprecisely characterized in specific regional and decadal terms. The tipping point dynamics that could produce non-linear climate responses — abrupt permafrost thaw, ice sheet collapse, Amazon dieback — are understood mechanistically but not quantified precisely enough to model the counterfactual with confidence at the level of detail that attribution studies sometimes require.\n\nWhat can be responsibly inferred: The orbital forcing (Milankovitch cycles) that drives glacial-interglacial transitions is well-established. Without anthropogenic forcing, Earth's climate would currently be in a very slow cooling trend toward the next glaciation — a process operating on timescales of tens of thousands of years, not decades. Human greenhouse gas emissions have overwhelmed this orbital forcing and produced warming approximately 100 times faster than glacial-interglacial transitions of the geological past. The broad counterfactual — gradual long-term cooling rather than rapid warming — is established. The precise counterfactual temperature, precipitation, and sea level for specific regions and decades is not.\n\nWhat must remain genuinely unknowable: The precise counterfactual climate trajectory in the absence of human forcing — specifically what temperature, precipitation, sea level, and storm frequency would have been in specific regions at specific times without anthropogenic emissions. This unknowability matters for attribution studies and for fully characterizing the scale of human climate impact, because it requires knowing the baseline from which current conditions deviate, and that baseline involves uncertainty about how the climate system's internal variability would have evolved over the relevant period."
     }
   ]
 }

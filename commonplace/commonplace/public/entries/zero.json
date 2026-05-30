@@ -55,34 +55,7 @@
           "If you were writing a paper arguing that zero's transmission through Arabic scholarship to medieval Europe was the most consequential intellectual transfer in human history, what would be your three strongest arguments? What would be the hardest objection?"
         ]
       }
-    },
-    "research": [
-      {
-        "status": "established",
-        "topic": "The primacy of Brahmagupta's arithmetic of zero",
-        "content": "Brahmagupta's Brahmasphutasiddhanta (628 CE) contains the first explicit arithmetic rules for zero as a number. This is well-established through direct textual analysis of the primary source. The Babylonian and Maya cases are established as independent prior developments of the positional placeholder but not the arithmetic. The transmission from Indian to Arabic to European mathematics through specific texts and scholars is documented with reasonable completeness."
-      },
-      {
-        "status": "established",
-        "topic": "Hindu-Arabic numeral adoption patterns in medieval Europe",
-        "content": "The timeline of Hindu-Arabic numeral adoption in Europe is well-documented through commercial records, mathematical texts, and institutional prohibitions (the Florence banking ban of 1299 is a primary source). The three-century gap between availability and widespread adoption is established. The correlation between adoption acceleration and the development of mathematics that required the notation (logarithms, analytic geometry, calculus) is documented, though the causal direction is not fully settled."
-      },
-      {
-        "status": "emerging",
-        "topic": "The Maya mathematical tradition and its limits",
-        "content": "The destruction of most Maya codices by Spanish missionaries in the 16th century means the full extent of Maya mathematical development is not recoverable. Recent work on surviving architectural and astronomical records has revealed more sophistication than previously recognized. The question of why Maya positional mathematics did not generate the algebraic developments that Indian positional mathematics did — whether the constraint was notational, cultural, or contextual — is being actively revisited as more Maya mathematical records are analyzed."
-      },
-      {
-        "status": "emerging",
-        "topic": "The mathematical foundations of quantum computing and the role of zero",
-        "content": "Classical computing treats zero and one as discrete states. Quantum computing treats quantum states as superpositions — a qubit is neither zero nor one but a probability distribution over both. The mathematical foundations of quantum computing require new treatments of what zero means in a probabilistic context. Whether quantum computing eventually requires a fundamentally different conceptual foundation than binary arithmetic, or whether it is an extension of the zero-based system, is an active research question."
-      },
-      {
-        "status": "unrecoverable",
-        "topic": "The subjective experience of mathematical cognition without zero",
-        "content": "What it was like to be a sophisticated mathematician working without positional notation and zero — the phenomenology of that cognition, what problems felt tractable and which felt structurally impossible — cannot be recovered from surviving evidence.\n\nWhat evidence would resolve this: Personal accounts from Roman mathematicians or medieval European scholars describing their experience of reaching the limits of their number system — what it felt like to attempt calculations that Roman numerals could not handle, which problems they avoided or approximated, what frustration or satisfaction attended their work. Most specifically useful would be accounts of mathematicians who worked in both traditions — scholars who learned both Roman and Hindu-Arabic numerals — describing the subjective difference in cognitive experience.\n\nWhy that evidence is unavailable: The Romans who worked with Roman numerals did not understand themselves as working within a limited system — they understood themselves as working within the mathematical system, full stop. The experience of a structural constraint is only visible from outside the constraining framework. When the alternative did not exist, the limitation was not experienced as a limitation; it was simply the shape of what mathematics was. Scholars who later learned both systems — and who might have described the cognitive difference — were medieval translators who typically wrote about mathematical content rather than mathematical phenomenology.\n\nWhat can be responsibly inferred: From the distribution of Roman mathematical achievement — strong in measurement, surveying, accounting, and ratio; limited in what we now call algebra — we can infer that certain computational domains were structurally under-developed. From the absence of certain types of problems in Roman mathematical texts, we can infer which calculations were avoided or handled through approximation. From the speed with which scholars who learned positional notation adopted it for practical calculation, we can infer that the experiential difference was immediately apparent.\n\nWhat must remain genuinely unknowable: The first-person phenomenology of mathematical cognition without zero — what it actually felt like to work at the edge of Roman numeral arithmetic; whether sophisticated practitioners experienced anything recognizable as frustration with the system or simply adapted their questions to what their system could answer; and what the transition from Roman to Hindu-Arabic notation felt like to a medieval scholar who made it, beyond what they chose to document in their formal mathematical writing."
-      }
-    ]
+    }
   },
   "comparativeNarrative": [
     {
@@ -234,6 +207,33 @@
       "type": "Concept",
       "title": "Binary and the digital world",
       "description": "Every piece of digital information — every photo, every message, every video, every piece of software — is ultimately a sequence of zeros and ones. This is not a metaphor. The physical implementation of computing (transistors switching between two states) and the mathematical foundation of computing (binary arithmetic) are both structured around zero and one as the two fundamental symbols. When you look at an image on a screen, you are looking at the consequence of billions of zeros and ones being processed per second. Brahmagupta's 628 CE arithmetic is executing in your pocket."
+    }
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "The primacy of Brahmagupta's arithmetic of zero",
+      "content": "Brahmagupta's Brahmasphutasiddhanta (628 CE) contains the first explicit arithmetic rules for zero as a number. This is well-established through direct textual analysis of the primary source. The Babylonian and Maya cases are established as independent prior developments of the positional placeholder but not the arithmetic. The transmission from Indian to Arabic to European mathematics through specific texts and scholars is documented with reasonable completeness."
+    },
+    {
+      "status": "established",
+      "topic": "Hindu-Arabic numeral adoption patterns in medieval Europe",
+      "content": "The timeline of Hindu-Arabic numeral adoption in Europe is well-documented through commercial records, mathematical texts, and institutional prohibitions (the Florence banking ban of 1299 is a primary source). The three-century gap between availability and widespread adoption is established. The correlation between adoption acceleration and the development of mathematics that required the notation (logarithms, analytic geometry, calculus) is documented, though the causal direction is not fully settled."
+    },
+    {
+      "status": "emerging",
+      "topic": "The Maya mathematical tradition and its limits",
+      "content": "The destruction of most Maya codices by Spanish missionaries in the 16th century means the full extent of Maya mathematical development is not recoverable. Recent work on surviving architectural and astronomical records has revealed more sophistication than previously recognized. The question of why Maya positional mathematics did not generate the algebraic developments that Indian positional mathematics did — whether the constraint was notational, cultural, or contextual — is being actively revisited as more Maya mathematical records are analyzed."
+    },
+    {
+      "status": "emerging",
+      "topic": "The mathematical foundations of quantum computing and the role of zero",
+      "content": "Classical computing treats zero and one as discrete states. Quantum computing treats quantum states as superpositions — a qubit is neither zero nor one but a probability distribution over both. The mathematical foundations of quantum computing require new treatments of what zero means in a probabilistic context. Whether quantum computing eventually requires a fundamentally different conceptual foundation than binary arithmetic, or whether it is an extension of the zero-based system, is an active research question."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The subjective experience of mathematical cognition without zero",
+      "content": "What it was like to be a sophisticated mathematician working without positional notation and zero — the phenomenology of that cognition, what problems felt tractable and which felt structurally impossible — cannot be recovered from surviving evidence.\n\nWhat evidence would resolve this: Personal accounts from Roman mathematicians or medieval European scholars describing their experience of reaching the limits of their number system — what it felt like to attempt calculations that Roman numerals could not handle, which problems they avoided or approximated, what frustration or satisfaction attended their work. Most specifically useful would be accounts of mathematicians who worked in both traditions — scholars who learned both Roman and Hindu-Arabic numerals — describing the subjective difference in cognitive experience.\n\nWhy that evidence is unavailable: The Romans who worked with Roman numerals did not understand themselves as working within a limited system — they understood themselves as working within the mathematical system, full stop. The experience of a structural constraint is only visible from outside the constraining framework. When the alternative did not exist, the limitation was not experienced as a limitation; it was simply the shape of what mathematics was. Scholars who later learned both systems — and who might have described the cognitive difference — were medieval translators who typically wrote about mathematical content rather than mathematical phenomenology.\n\nWhat can be responsibly inferred: From the distribution of Roman mathematical achievement — strong in measurement, surveying, accounting, and ratio; limited in what we now call algebra — we can infer that certain computational domains were structurally under-developed. From the absence of certain types of problems in Roman mathematical texts, we can infer which calculations were avoided or handled through approximation. From the speed with which scholars who learned positional notation adopted it for practical calculation, we can infer that the experiential difference was immediately apparent.\n\nWhat must remain genuinely unknowable: The first-person phenomenology of mathematical cognition without zero — what it actually felt like to work at the edge of Roman numeral arithmetic; whether sophisticated practitioners experienced anything recognizable as frustration with the system or simply adapted their questions to what their system could answer; and what the transition from Roman to Hindu-Arabic notation felt like to a medieval scholar who made it, beyond what they chose to document in their formal mathematical writing."
     }
   ]
 }
