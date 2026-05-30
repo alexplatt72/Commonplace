@@ -717,32 +717,6 @@ function getMatchSnippet(entry, terms) {
   return fallback.length > 130 ? fallback.slice(0, 127) + '…' : fallback;
 }
 
-function searchEntries(query) {
-  if (!query.trim()) return { results: [], query: '', empty: false };
-  const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
-  const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
-  if (!terms.length) return { results: [], query, empty: false };
-
-  const scored = MANIFEST.map((entry) => ({
-    id: entry.id,
-    entry, score: scoreEntry(entry, terms),
-  })).filter(x => x.score > 0).sort((a,b) => b.score - a.score);
-
-  if (scored.length > 0) {
-    return { results: scored.slice(0,12), query, empty: false };
-  }
-
-  // No results — generate suggestions by partial matching
-  const suggestions = MANIFEST.map((entry) => {
-    const id = entry.id;
-    const text = `${entry.title} ${entry.summary} ${entry.hook || ''}`.toLowerCase();
-    const partials = terms.filter(t => text.includes(t.slice(0, Math.max(3, t.length - 2))));
-    return { id, entry, score: partials.length };
-  }).filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0, 5);
-
-  return { results: [], suggestions, query, empty: true };
-}
-
 // ═══════════════════════════════════════════════════════════════════════════════
 // SHARED COMPONENTS
 // ═══════════════════════════════════════════════════════════════════════════════
