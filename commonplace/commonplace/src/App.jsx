@@ -501,11 +501,11 @@ function ReferenceTab({ items }) {
         return (
           <div key={i} style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:8, padding:"16px 20px", borderLeft:`4px solid ${rel.border}`, marginBottom:10 }}>
             <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", gap:16, marginBottom:8 }}>
-              <div>
-                {item.author && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.muted, marginRight:6 }}>{item.author} —</span>}
+              <div style={{ display:"flex", flexWrap:"wrap", alignItems:"baseline", gap:"2px 0" }}>
+                {item.author && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.muted, marginRight:6, whiteSpace:"nowrap" }}>{item.author} —</span>}
                 <span style={{ fontFamily:"'Lora',serif", fontSize:15, fontStyle:"italic", color:C.text }}>{item.title}</span>
-                {item.year && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.light, marginLeft:6 }}>{item.year}</span>}
-                {item.originLanguage && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, color:"#4a2060", background:"#f3eef8", padding:"1px 6px", borderRadius:2, marginLeft:8 }}>Non-English: {item.originLanguage}</span>}
+                {item.year && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.light, marginLeft:6, whiteSpace:"nowrap" }}>{item.year}</span>}
+                {item.originLanguage && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, color:"#4a2060", background:"#f3eef8", padding:"1px 6px", borderRadius:2, marginLeft:8, whiteSpace:"nowrap" }}>Non-English: {item.originLanguage}</span>}
               </div>
               <div style={{ display:"flex", flexDirection:"column", gap:4, alignItems:"flex-end" }}>
                 <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:rel.color, background:rel.bg, border:`1px solid ${rel.border}` }}>R: {item.reliability}</span>
