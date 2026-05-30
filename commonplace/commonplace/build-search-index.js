@@ -23,8 +23,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ENTRIES_DIR = join(__dirname, 'public', 'entries');
 const OUT_FILE    = join(__dirname, 'public', 'searchIndex.json');
 
-// ─── helpers ──────────────────────────────────────────────────────────────────
-
 function uniq(arr) {
   return [...new Set(arr.filter(Boolean).map(s => String(s).trim()).filter(s => s.length > 1))];
 }
@@ -38,8 +36,6 @@ function firstWords(str, n = 6) {
   if (typeof str !== 'string') return '';
   return str.split(/\s+/).slice(0, n).join(' ');
 }
-
-// ─── per-entry index builder ───────────────────────────────────────────────────
 
 function buildRecord(entry) {
   const { id, title, summary, template, subtype,
@@ -57,9 +53,7 @@ function buildRecord(entry) {
     ...pluck(commerce,       'title'),
     ...pluck(commerce,       'author'),
     ...pluck(popularCulture, 'title'),
-    ...(Array.isArray(rabbitHole)
-      ? rabbitHole.map(r => firstWords(r?.reason, 5))
-      : []),
+    ...(Array.isArray(rabbitHole) ? rabbitHole.map(r => firstWords(r?.reason, 5)) : []),
     subtype,
   ]);
 
@@ -73,8 +67,6 @@ function buildRecord(entry) {
 
   return { id, title, summary: summary || '', aliases, indexTerms, themes };
 }
-
-// ─── main ──────────────────────────────────────────────────────────────────────
 
 const files = readdirSync(ENTRIES_DIR)
   .filter(f => f.endsWith('.json') && f !== 'manifest.json' && f !== 'searchIndex.json');
@@ -98,18 +90,10 @@ for (const file of files) {
 }
 
 index.sort((a, b) => a.title.localeCompare(b.title));
-
 writeFileSync(OUT_FILE, JSON.stringify(index, null, 2));
 
-console.log(`\n✓ searchIndex.json written — ${index.length} entries indexed`);
-
+console.log(`✓ searchIndex.json written — ${index.length} entries indexed`);
 if (errors.length) {
-  console.warn(`\n⚠ ${errors.length} file(s) skipped:`);
+  console.warn(`⚠ ${errors.length} file(s) skipped:`);
   errors.forEach(e => console.warn('  ' + e));
 }
-
-const sample = index.slice(0, 3);
-console.log('\nSample records:');
-sample.forEach(r => {
-  console.log(`  ${r.id}: aliases[${r.aliases.length}] indexTerms[${r.indexTerms.length}] themes[${r.themes.length}]`);
-});
