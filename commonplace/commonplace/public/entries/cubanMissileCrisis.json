@@ -52,23 +52,6 @@
       }
     }
   },
-  "research": [
-    {
-      "status": "established",
-      "topic": "The B-59 submarine incident and Arkhipov's dissent",
-      "content": "Soviet submarine B-59, cut off from Moscow and under attack by American anti-submarine forces on Black Saturday, came within one officer's vote of launching a nuclear torpedo. Captain Savitsky and the political officer both voted to launch; flotilla commander Vasili Arkhipov voted against. Under Soviet rules requiring unanimity, the torpedo was not launched. This incident, concealed for decades, was confirmed by Soviet naval records and Arkhipov's own account. It demonstrates that the most dangerous moment in the crisis was produced by an organizational situation that neither government had created or controlled."
-    },
-    {
-      "status": "established",
-      "topic": "Soviet tactical nuclear weapons in Cuba and the invasion option",
-      "content": "American intelligence significantly underestimated Soviet forces in Cuba (estimated at 10,000; actually 43,000) and did not know that local Soviet commanders had tactical nuclear weapons authorized for use against an American invasion without further orders from Moscow. This information, revealed by Soviet and Cuban documents after 1991, demonstrated that the military option Kennedy's advisors were urging would almost certainly have produced nuclear weapons use -- a fact that neither ExComm nor the Joint Chiefs knew at the time."
-    },
-    {
-      "status": "unrecoverable",
-      "topic": "Khrushchev's precise calculation in placing missiles in Cuba",
-      "content": "Khrushchev's private reasoning for the Cuban missile deployment -- the relative weight he gave to Cuba's defense, the Turkish missile balance, the strategic gap, and domestic political pressures -- cannot be fully recovered. What evidence would resolve this: complete access to Khrushchev's private communications and Politburo discussions from 1962. Why unavailable: Soviet archives on the most sensitive deliberations remain partially closed; Khrushchev's memoirs were written under political constraints after his ouster. What can be responsibly inferred: the decision was multiply motivated -- Cuba's protection, the Turkish missile asymmetry, and strategic gap compression all played roles; no single motivation explains it. What must remain unknowable: the relative weight Khrushchev assigned to each factor and whether he expected the missiles to be discovered before they became operational."
-    }
-  ],
   "comparativeNarrative": [
     {
       "perspective": "Soviet Union",
@@ -148,7 +131,7 @@
       "year": "1990",
       "type": "Oral history",
       "reliability": "Scholarly",
-      "contribution": "Significant",
+      "contribution": "Supplementary",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The oral history of the conference proceedings -- brings together American and Soviet participants and reveals the gap between what each side thought was happening and what was actually happening. Essential for understanding the B-59 incident and the role of misperception."
@@ -158,8 +141,8 @@
       "title": "The Week the World Stood Still: Inside the Secret Cuban Missile Crisis",
       "year": "2005",
       "type": "Archival study",
-      "reliability": "Authoritative",
-      "contribution": "Significant",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The authoritative analysis of Kennedy's secret ExComm recordings -- corrects the selectively edited transcripts that were released earlier and provides the most accurate account of what the decision-makers actually said in real time."
@@ -245,5 +228,22 @@
     "Philip Zelikow",
     "James Blight",
     "Robert McNamara"
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "The B-59 submarine incident and Arkhipov's dissent",
+      "content": "Soviet submarine B-59, cut off from Moscow and under attack by American anti-submarine forces on Black Saturday, came within one officer's vote of launching a nuclear torpedo. Captain Savitsky and the political officer both voted to launch; flotilla commander Vasili Arkhipov voted against. Under Soviet rules requiring unanimity, the torpedo was not launched. This incident, concealed for decades, was confirmed by Soviet naval records and Arkhipov's own account. It demonstrates that the most dangerous moment in the crisis was produced by an organizational situation that neither government had created or controlled."
+    },
+    {
+      "status": "established",
+      "topic": "Soviet tactical nuclear weapons in Cuba and the invasion option",
+      "content": "American intelligence significantly underestimated Soviet forces in Cuba (estimated at 10,000; actually 43,000) and did not know that local Soviet commanders had tactical nuclear weapons authorized for use against an American invasion without further orders from Moscow. This information, revealed by Soviet and Cuban documents after 1991, demonstrated that the military option Kennedy's advisors were urging would almost certainly have produced nuclear weapons use -- a fact that neither ExComm nor the Joint Chiefs knew at the time."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "Khrushchev's precise calculation in placing missiles in Cuba",
+      "content": "Khrushchev's private reasoning for the Cuban missile deployment -- the relative weight he gave to Cuba's defense, the Turkish missile balance, the strategic gap, and domestic political pressures -- cannot be fully recovered. What evidence would resolve this: complete access to Khrushchev's private communications and Politburo discussions from 1962. Why unavailable: Soviet archives on the most sensitive deliberations remain partially closed; Khrushchev's memoirs were written under political constraints after his ouster. What can be responsibly inferred: the decision was multiply motivated -- Cuba's protection, the Turkish missile asymmetry, and strategic gap compression all played roles; no single motivation explains it. What must remain unknowable: the relative weight Khrushchev assigned to each factor and whether he expected the missiles to be discovered before they became operational."
+    }
   ]
 }

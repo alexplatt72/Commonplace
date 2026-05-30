@@ -62,23 +62,6 @@
       }
     }
   },
-  "research": [
-    {
-      "status": "established",
-      "topic": "Electricity as a general-purpose technology with delayed productivity effects",
-      "content": "Paul David's 1990 paper 'The Dynamo and the Computer' established the now-standard argument that the productivity benefits of electrification were delayed by approximately twenty years after significant adoption because realizing those benefits required factory reorganization and new organizational practices, not just new technology. This argument is based on analysis of US productivity statistics from roughly 1890-1940. The paper has been enormously influential in technology economics and policy. Subsequent work has refined the timing and magnitude of the effects but has not overturned the basic finding that organizational adaptation mediates between technological adoption and productivity impact."
-    },
-    {
-      "status": "emerging",
-      "topic": "The distributional consequences of the energy transition for fossil fuel communities",
-      "content": "A growing body of research examines the economic and social impacts on communities dependent on fossil fuel electricity generation \u2014 coal mining regions, natural gas producing areas, and towns built around large coal or nuclear plants. This literature documents significant economic disruption when plants close, including employment loss, population decline, and erosion of tax bases that fund local services. The emerging policy debate concerns what level of compensation and transition assistance is owed to affected communities, and who should pay for it. The evidence base is still developing, particularly for the long-run impacts of managed versus unmanaged plant closures."
-    },
-    {
-      "status": "unrecoverable",
-      "topic": "Counterfactual productivity growth without electrification",
-      "content": "What evidence would resolve this: a controlled experiment in which electricity was not introduced into one economy while being introduced into another otherwise identical economy. Why unavailable: there is no such natural experiment; all industrial economies electrified in roughly the same period, and pre-electrification economies differed from post-electrification economies in many ways simultaneously. What can be responsibly inferred: that electrification was associated with significant productivity improvements, that these improvements cannot be entirely attributed to concurrent changes (since the timing of productivity growth correlates with electrification timing at the industry level), and that the organizational complementarities David identifies are a real mechanism. What must remain unknowable: the precise magnitude of electricity's independent contribution to 20th-century productivity growth."
-    }
-  ],
   "comparativeNarrative": [
     {
       "perspective": "Rural and working-class communities",
@@ -144,8 +127,8 @@
       "title": "Networks of Power: Electrification in Western Society 1880-1930",
       "year": "1983",
       "type": "Monograph",
-      "reliability": "High \u2014 standard reference",
-      "contribution": "The definitive history of how electrical infrastructure was built in Britain, Germany, and the United States",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential technical and institutional history of electrification. Hughes shows how different national contexts produced different grid architectures and regulatory arrangements \u2014 the American system of competing private utilities, the German system of integrated municipal utilities, the British system of later nationalization \u2014 and traces the long-term consequences of these early choices."
@@ -155,8 +138,8 @@
       "title": "The Dynamo and the Computer: An Historical Perspective on the Modern Productivity Paradox",
       "year": "1990",
       "type": "Journal article (American Economic Review)",
-      "reliability": "High \u2014 highly influential, some critiques of empirical basis",
-      "contribution": "Establishes the delayed productivity impact of electrification and draws implications for computing",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "One of the most influential papers in economic history, with implications that extend to every general-purpose technology. The core argument \u2014 that productivity benefits require organizational adaptation, not just technological adoption \u2014 is now widely accepted; the empirical details continue to be refined."
@@ -166,8 +149,8 @@
       "title": "Electrifying America: Social Meanings of a New Technology",
       "year": "1990",
       "type": "Monograph",
-      "reliability": "High",
-      "contribution": "The social and cultural history of electrification in the United States",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "Complements Hughes's institutional history with attention to how Americans experienced and made meaning of electrification \u2014 the fairs and expositions, the advertising, the domestic transformation, the sense of wonder at artificial light. Essential for understanding electricity as a cultural phenomenon as well as a technical one."
@@ -177,8 +160,8 @@
       "title": "The Grid: The Fraying Wires Between Americans and Our Energy Future",
       "year": "2016",
       "type": "Monograph",
-      "reliability": "High for institutional analysis; more accessible than academic literature",
-      "contribution": "The most accessible account of how the American electrical grid works and why the energy transition is hard",
+      "reliability": "Credible",
+      "contribution": "Accessible",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "Essential for understanding the current energy transition. Bakke explains the physical and institutional logic of the grid clearly and diagnoses why decarbonization is harder than simply replacing coal plants with solar farms."
@@ -251,5 +234,22 @@
     "David Nye",
     "Robert Gordon",
     "Gretchen Bakke"
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Electricity as a general-purpose technology with delayed productivity effects",
+      "content": "Paul David's 1990 paper 'The Dynamo and the Computer' established the now-standard argument that the productivity benefits of electrification were delayed by approximately twenty years after significant adoption because realizing those benefits required factory reorganization and new organizational practices, not just new technology. This argument is based on analysis of US productivity statistics from roughly 1890-1940. The paper has been enormously influential in technology economics and policy. Subsequent work has refined the timing and magnitude of the effects but has not overturned the basic finding that organizational adaptation mediates between technological adoption and productivity impact."
+    },
+    {
+      "status": "emerging",
+      "topic": "The distributional consequences of the energy transition for fossil fuel communities",
+      "content": "A growing body of research examines the economic and social impacts on communities dependent on fossil fuel electricity generation \u2014 coal mining regions, natural gas producing areas, and towns built around large coal or nuclear plants. This literature documents significant economic disruption when plants close, including employment loss, population decline, and erosion of tax bases that fund local services. The emerging policy debate concerns what level of compensation and transition assistance is owed to affected communities, and who should pay for it. The evidence base is still developing, particularly for the long-run impacts of managed versus unmanaged plant closures."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "Counterfactual productivity growth without electrification",
+      "content": "What evidence would resolve this: a controlled experiment in which electricity was not introduced into one economy while being introduced into another otherwise identical economy. Why unavailable: there is no such natural experiment; all industrial economies electrified in roughly the same period, and pre-electrification economies differed from post-electrification economies in many ways simultaneously. What can be responsibly inferred: that electrification was associated with significant productivity improvements, that these improvements cannot be entirely attributed to concurrent changes (since the timing of productivity growth correlates with electrification timing at the industry level), and that the organizational complementarities David identifies are a real mechanism. What must remain unknowable: the precise magnitude of electricity's independent contribution to 20th-century productivity growth."
+    }
   ]
 }

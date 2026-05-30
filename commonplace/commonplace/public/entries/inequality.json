@@ -62,23 +62,6 @@
       }
     }
   },
-  "research": [
-    {
-      "status": "established",
-      "topic": "The rise in top income and wealth concentration in the United States since 1970",
-      "content": "Using tax records rather than surveys, economists Thomas Piketty, Emmanuel Saez, and Gabriel Zucman have documented a dramatic increase in income and wealth concentration in the United States since the 1970s. The top 1% income share roughly doubled from approximately 10% in the 1970s to approximately 20% by the 2010s. The top 0.1% wealth share returned to levels last seen in the 1920s. These findings have been replicated and extended by multiple researchers using independent data sources. The patterns are broadly confirmed for other rich countries, though the US case is the most extreme."
-    },
-    {
-      "status": "emerging",
-      "topic": "The political consequences of economic inequality",
-      "content": "A growing literature connects rising economic inequality to political polarization, democratic backsliding, and the rise of populist movements. The proposed mechanisms include: reduced social trust between economic groups, increased resentment among those left behind by economic changes, and the direct effects of economic insecurity on political behavior. Martin Gilens's work on policy responsiveness suggests that economic inequality has translated into political inequality. This literature is growing but the causal mechanisms are not fully established \u2014 the correlation between rising inequality and rising political polarization could reflect a common cause rather than a direct relationship."
-    },
-    {
-      "status": "unrecoverable",
-      "topic": "The precise magnitude of behavioral responses to redistributive taxation",
-      "content": "What evidence would resolve this: large-scale randomized controlled trials in which tax rates are varied across otherwise identical populations, allowing direct measurement of behavioral responses. Why unavailable: tax policy cannot be randomized; natural experiments (countries or jurisdictions that have raised or lowered top tax rates) provide some evidence but involve too many confounding changes to isolate the behavioral response to taxation alone. What can be responsibly inferred: that there are behavioral responses to very high marginal tax rates, but that these responses are smaller than claimed by many critics of redistribution \u2014 the empirical literature consistently finds smaller elasticities than theoretical arguments would predict. What must remain unknowable: the precise revenue-maximizing top marginal tax rate and the magnitude of efficiency costs of redistribution at different levels."
-    }
-  ],
   "comparativeNarrative": [
     {
       "perspective": "Working class and labor movement",
@@ -144,8 +127,8 @@
       "title": "Capital in the Twenty-First Century",
       "year": "2014",
       "type": "Monograph",
-      "reliability": "High \u2014 data widely accepted; theoretical framework contested",
-      "contribution": "Transformed the empirical measurement of inequality and proposed the r > g theory of its long-run dynamics",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
       "originLanguage": "French",
       "domainAuthority": null,
       "annotation": "The essential reference point for any contemporary discussion of inequality. Piketty's data on historical income and wealth concentration is now the foundation of the field; his theoretical argument about r > g is more contested. Readers should engage with both the data and the critiques of the theory."
@@ -155,8 +138,8 @@
       "title": "A Theory of Justice",
       "year": "1971",
       "type": "Monograph",
-      "reliability": "High \u2014 foundational philosophical text",
-      "contribution": "The dominant liberal egalitarian framework for thinking about just distributions",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most influential work of political philosophy of the 20th century and the essential starting point for normative thinking about inequality. Rawls's difference principle \u2014 that inequalities are just only if they benefit the least well-off \u2014 sets the terms for most subsequent liberal debate."
@@ -166,8 +149,8 @@
       "title": "What Is the Point of Equality?",
       "year": "1999",
       "type": "Journal article (Ethics)",
-      "reliability": "High",
-      "contribution": "The founding text of relational egalitarianism; challenges luck egalitarianism's focus on sources of inequality",
+      "reliability": "Scholarly",
+      "contribution": "Specialized",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "A landmark philosophical essay that redirected the inequality debate from questions about the sources of inequality to questions about its social consequences \u2014 specifically, whether inequality is compatible with the equal standing that democratic citizenship requires. Essential for understanding why equality matters beyond its effects on the worst-off."
@@ -177,8 +160,8 @@
       "title": "The Great Leveler: Violence and the History of Inequality from the Stone Age to the Twenty-First Century",
       "year": "2017",
       "type": "Monograph",
-      "reliability": "High \u2014 disturbing historical argument, well evidenced",
-      "contribution": "Documents that throughout history, major reductions in inequality have been produced primarily by catastrophe rather than reform",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most important long-run historical perspective on inequality. Scheidel's argument \u2014 that war, revolution, pandemic, and state collapse are the primary historical levelers \u2014 is deeply uncomfortable for those who believe that democratic reform can reduce inequality. The evidence is substantial; the implications are genuinely troubling."
@@ -251,5 +234,22 @@
     "Elizabeth Anderson",
     "Walter Scheidel",
     "Martin Gilens"
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "The rise in top income and wealth concentration in the United States since 1970",
+      "content": "Using tax records rather than surveys, economists Thomas Piketty, Emmanuel Saez, and Gabriel Zucman have documented a dramatic increase in income and wealth concentration in the United States since the 1970s. The top 1% income share roughly doubled from approximately 10% in the 1970s to approximately 20% by the 2010s. The top 0.1% wealth share returned to levels last seen in the 1920s. These findings have been replicated and extended by multiple researchers using independent data sources. The patterns are broadly confirmed for other rich countries, though the US case is the most extreme."
+    },
+    {
+      "status": "emerging",
+      "topic": "The political consequences of economic inequality",
+      "content": "A growing literature connects rising economic inequality to political polarization, democratic backsliding, and the rise of populist movements. The proposed mechanisms include: reduced social trust between economic groups, increased resentment among those left behind by economic changes, and the direct effects of economic insecurity on political behavior. Martin Gilens's work on policy responsiveness suggests that economic inequality has translated into political inequality. This literature is growing but the causal mechanisms are not fully established \u2014 the correlation between rising inequality and rising political polarization could reflect a common cause rather than a direct relationship."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The precise magnitude of behavioral responses to redistributive taxation",
+      "content": "What evidence would resolve this: large-scale randomized controlled trials in which tax rates are varied across otherwise identical populations, allowing direct measurement of behavioral responses. Why unavailable: tax policy cannot be randomized; natural experiments (countries or jurisdictions that have raised or lowered top tax rates) provide some evidence but involve too many confounding changes to isolate the behavioral response to taxation alone. What can be responsibly inferred: that there are behavioral responses to very high marginal tax rates, but that these responses are smaller than claimed by many critics of redistribution \u2014 the empirical literature consistently finds smaller elasticities than theoretical arguments would predict. What must remain unknowable: the precise revenue-maximizing top marginal tax rate and the magnitude of efficiency costs of redistribution at different levels."
+    }
   ]
 }

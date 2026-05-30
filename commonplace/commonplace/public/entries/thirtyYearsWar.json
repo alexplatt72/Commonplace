@@ -58,23 +58,6 @@
       }
     }
   },
-  "research": [
-    {
-      "status": "established",
-      "topic": "Demographic collapse in the German states",
-      "content": "The Thirty Years' War, combined with plague and famine, produced a severe demographic collapse in the German states. The best-documented estimates suggest population losses of 15-40% across the region, with some territories (Wurttemberg, Pomerania, Mecklenburg) losing larger proportions. Precise figures are contested because census and church records were disrupted by the war itself, but the broad conclusion -- that the war produced a demographic catastrophe comparable in some regions to the Black Death -- is not seriously contested by scholars."
-    },
-    {
-      "status": "emerging",
-      "topic": "Climate and the general crisis of the 17th century",
-      "content": "Geoffrey Parker's Global Crisis (2013) has argued for a systematic connection between the Little Ice Age climate deterioration of the 17th century -- reduced agricultural yields, harvest failures, famines -- and the wave of political instability that produced the Thirty Years' War, the English Civil War, the Fronde, and revolts across Europe and Asia. The climate connection is established in its general outlines; the specific mechanisms connecting climate stress to political instability, and the relative weight of climate versus political factors, remain subjects of active research."
-    },
-    {
-      "status": "unrecoverable",
-      "topic": "The actual content of the Westphalian sovereignty principle",
-      "content": "Whether the Peace of Westphalia actually established the sovereignty and non-interference principles that international relations theory has attributed to it cannot be finally resolved because the concept's content depends on interpretation. What the peace actually stated -- the specific treaty language -- is clear and well-documented. What evidence would clarify this: the actual treaty texts are available; the dispute is interpretive, not evidentiary. What can be responsibly inferred: the peace established a legal framework for religious coexistence in the Empire and confirmed territorial arrangements; it did not use the language of sovereignty that later theorists attributed to it. What must remain disputed: whether the principles that states have drawn from Westphalia represent a legitimate development of the peace's logic or a retrospective construction that the peace did not actually establish."
-    }
-  ],
   "comparativeNarrative": [
     {
       "perspective": "The Bohemian population",
@@ -167,7 +150,7 @@
       "year": "1994",
       "type": "Academic monograph",
       "reliability": "Scholarly",
-      "contribution": "Significant",
+      "contribution": "Supplementary",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "Essential for understanding the Westphalian sovereignty myth -- Osiander traces how the concept of Westphalian sovereignty was constructed by later international relations theorists and maps the gap between the actual 1648 settlement and its mythologized significance."
@@ -253,5 +236,22 @@
     "Ronald Asch",
     "Peter Wilson",
     "Axel Gotthard"
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "Demographic collapse in the German states",
+      "content": "The Thirty Years' War, combined with plague and famine, produced a severe demographic collapse in the German states. The best-documented estimates suggest population losses of 15-40% across the region, with some territories (Wurttemberg, Pomerania, Mecklenburg) losing larger proportions. Precise figures are contested because census and church records were disrupted by the war itself, but the broad conclusion -- that the war produced a demographic catastrophe comparable in some regions to the Black Death -- is not seriously contested by scholars."
+    },
+    {
+      "status": "emerging",
+      "topic": "Climate and the general crisis of the 17th century",
+      "content": "Geoffrey Parker's Global Crisis (2013) has argued for a systematic connection between the Little Ice Age climate deterioration of the 17th century -- reduced agricultural yields, harvest failures, famines -- and the wave of political instability that produced the Thirty Years' War, the English Civil War, the Fronde, and revolts across Europe and Asia. The climate connection is established in its general outlines; the specific mechanisms connecting climate stress to political instability, and the relative weight of climate versus political factors, remain subjects of active research."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The actual content of the Westphalian sovereignty principle",
+      "content": "Whether the Peace of Westphalia actually established the sovereignty and non-interference principles that international relations theory has attributed to it cannot be finally resolved because the concept's content depends on interpretation. What the peace actually stated -- the specific treaty language -- is clear and well-documented. What evidence would clarify this: the actual treaty texts are available; the dispute is interpretive, not evidentiary. What can be responsibly inferred: the peace established a legal framework for religious coexistence in the Empire and confirmed territorial arrangements; it did not use the language of sovereignty that later theorists attributed to it. What must remain disputed: whether the principles that states have drawn from Westphalia represent a legitimate development of the peace's logic or a retrospective construction that the peace did not actually establish."
+    }
   ]
 }

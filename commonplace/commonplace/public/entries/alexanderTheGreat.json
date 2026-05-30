@@ -49,23 +49,6 @@
       }
     }
   },
-  "research": [
-    {
-      "status": "established",
-      "topic": "The source problem for Alexander scholarship",
-      "content": "All major ancient sources for Alexander -- Arrian, Plutarch, Curtius Rufus, Diodorus Siculus -- were written four hundred to seven hundred years after Alexander's death, drawing on lost accounts by participants (Ptolemy, Aristobulus, Callisthenes). This source situation is established and has fundamental implications: claims about Alexander's intentions, psychology, and private beliefs cannot be verified against contemporary documentation. What the ancient sources can establish are the campaigns' broad outlines, major battles, and public administrative decisions."
-    },
-    {
-      "status": "emerging",
-      "topic": "Archaeological evidence for the Hellenistic cities",
-      "content": "Archaeological investigation of the cities Alexander founded -- particularly in Central Asia and Egypt -- has produced evidence independent of the literary sources about the scale and character of Greek colonization. This evidence generally supports the picture of substantial Greek urban settlement in previously non-Greek regions but reveals considerable local variation in how Greek and indigenous traditions mixed. The archaeology of Ai-Khanoum in Afghanistan (a Hellenistic city near the Hindu Kush) and Alexandria in Egypt has been particularly productive."
-    },
-    {
-      "status": "unrecoverable",
-      "topic": "Alexander's intentions and long-term plans",
-      "content": "Whether Alexander had a coherent vision of multicultural empire or was improvising responses to administrative necessity cannot be recovered from available sources. What evidence would resolve this: contemporary documents recording Alexander's stated intentions -- private letters, administrative edicts, recorded deliberations. Why unavailable: no such documents survive; all our sources postdate Alexander by centuries. What can be responsibly inferred: Alexander adapted his administrative style to each conquered territory; he adopted Persian customs selectively; his Macedonian companions resisted many of his innovations. What must remain unknowable: whether these adaptations reflected a vision of cultural synthesis or pragmatic responses to maintaining control over diverse populations."
-    }
-  ],
   "comparativeNarrative": [
     {
       "perspective": "Persia and the conquered populations",
@@ -240,5 +223,22 @@
     "Ernst Badian",
     "A.B. Bosworth",
     "Paul Cartledge"
+  ],
+  "research": [
+    {
+      "status": "established",
+      "topic": "The source problem for Alexander scholarship",
+      "content": "All major ancient sources for Alexander -- Arrian, Plutarch, Curtius Rufus, Diodorus Siculus -- were written four hundred to seven hundred years after Alexander's death, drawing on lost accounts by participants (Ptolemy, Aristobulus, Callisthenes). This source situation is established and has fundamental implications: claims about Alexander's intentions, psychology, and private beliefs cannot be verified against contemporary documentation. What the ancient sources can establish are the campaigns' broad outlines, major battles, and public administrative decisions."
+    },
+    {
+      "status": "emerging",
+      "topic": "Archaeological evidence for the Hellenistic cities",
+      "content": "Archaeological investigation of the cities Alexander founded -- particularly in Central Asia and Egypt -- has produced evidence independent of the literary sources about the scale and character of Greek colonization. This evidence generally supports the picture of substantial Greek urban settlement in previously non-Greek regions but reveals considerable local variation in how Greek and indigenous traditions mixed. The archaeology of Ai-Khanoum in Afghanistan (a Hellenistic city near the Hindu Kush) and Alexandria in Egypt has been particularly productive."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "Alexander's intentions and long-term plans",
+      "content": "Whether Alexander had a coherent vision of multicultural empire or was improvising responses to administrative necessity cannot be recovered from available sources. What evidence would resolve this: contemporary documents recording Alexander's stated intentions -- private letters, administrative edicts, recorded deliberations. Why unavailable: no such documents survive; all our sources postdate Alexander by centuries. What can be responsibly inferred: Alexander adapted his administrative style to each conquered territory; he adopted Persian customs selectively; his Macedonian companions resisted many of his innovations. What must remain unknowable: whether these adaptations reflected a vision of cultural synthesis or pragmatic responses to maintaining control over diverse populations."
+    }
   ]
 }
