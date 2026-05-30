@@ -671,13 +671,29 @@ function searchEntries(query) {
   // Use Fuse.js if available
   if (FUSE) {
     const fuseResults = FUSE.search(query, { limit: 12 });
-    if (fuseResults.length > 0) {
-      const results = fuseResults.map(r => {
-        const manifest = MANIFEST.find(e => e.id === r.item.id);
-        return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
-      }).filter(x => x.entry);
-      return { results, query, empty: false };
-    }
+    // Build set of ids already covered by Fuse
+    const fuseIds = new Set(fuseResults.map(r => r.item.id));
+    const fuseResultsMapped = fuseResults.map(r => {
+      const manifest = MANIFEST.find(e => e.id === r.item.id);
+      return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
+    }).filter(x => x.entry);
+
+    // Also search MANIFEST directly for entries not in the search index (new entries)
+    const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
+    const manifestFallback = MANIFEST
+      .filter(e => !fuseIds.has(e.id))
+      .map(entry => {
+        const title = (entry.title || '').toLowerCase();
+        const summary = (entry.summary || '').toLowerCase();
+        const score = terms.reduce((s, t) => s + (title.includes(t) ? 15 : 0) + (summary.includes(t) ? 5 : 0), 0);
+        return { id: entry.id, entry, score };
+      }).filter(x => x.score > 0);
+
+    const combined = [...fuseResultsMapped, ...manifestFallback]
+      .sort((a, b) => b.score - a.score).slice(0, 12);
+
+    if (combined.length > 0) return { results: combined, query, empty: false };
     return { results: [], suggestions: [], query, empty: true };
   }
 
@@ -878,7 +894,10 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
   const cfg = TEMPLATE_CONFIG[templateName] || {};
   const meta = TEMPLATE_META[templateName] || {};
   const accent = cfg.accent || '#555';
-  const entries = MANIFEST.filter(e => e.template === templateName).map(e => [e.id, e]);
+  const sortKey = t => (t || '').replace(/^the\s+/i, '').toLowerCase();
+  const entries = MANIFEST.filter(e => e.template === templateName)
+    .sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)))
+    .map(e => [e.id, e]);
 
   return (
     <div style={{ maxWidth:960, margin:"0 auto", padding:"32px 40px 80px" }}>
@@ -1115,10 +1134,20 @@ export default function CommonplaceApp() {
     if (q.trim().length < 2) { setAcResults([]); setAcOpen(false); return; }
     let scored = [];
     if (FUSE) {
+      const fuseIds = new Set();
       scored = FUSE.search(q, { limit: 6 }).map(r => {
+        fuseIds.add(r.item.id);
         const entry = MANIFEST.find(m => m.id === r.item.id) || r.item;
         return { entry, score: Math.round((1 - r.score) * 100) };
       }).filter(x => x.entry);
+      // Supplement with manifest entries not in Fuse index
+      const terms = q.toLowerCase().split(/\s+/).filter(t => t.length > 1);
+      const extra = MANIFEST.filter(e => !fuseIds.has(e.id)).map(entry => {
+        const title = (entry.title || '').toLowerCase();
+        const score = terms.some(t => title.includes(t)) ? 10 : 0;
+        return { entry, score };
+      }).filter(x => x.score > 0);
+      scored = [...scored, ...extra].sort((a,b) => b.score - a.score).slice(0, 6);
     } else {
       const terms = q.toLowerCase().split(/\s+/).filter(t => t.length > 1);
       scored = MANIFEST.map(entry => ({ entry, score: scoreEntry(entry, terms) }))
