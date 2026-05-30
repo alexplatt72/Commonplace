@@ -175,6 +175,9 @@ function validateEntry(entry, filename, manifestIds) {
 
   chk(id, Array.isArray(entry.reference) && entry.reference.length >= 4,
     `reference must have at least 4 items (has ${Array.isArray(entry.reference) ? entry.reference.length : 'none'})`);
+  if (Array.isArray(entry.reference) && entry.reference.length < 5 && entry.qualityTier === "A")
+    A(id, `reference has ${entry.reference.length} items — 5 is the standard for Tier A entries`);
+
   if (Array.isArray(entry.reference)) {
     entry.reference.forEach((r, i) => {
       chk(id, r.author && r.author.trim().length > 0,       `reference[${i}].author is missing`);
@@ -185,7 +188,11 @@ function validateEntry(entry, filename, manifestIds) {
 
   chk(id, Array.isArray(entry.commerce) && entry.commerce.length >= 3,
     `commerce must have at least 3 items (has ${Array.isArray(entry.commerce) ? entry.commerce.length : 'none'})`);
+  if (Array.isArray(entry.commerce) && entry.commerce.length < 4 && entry.qualityTier === "A")
+    A(id, `commerce has ${entry.commerce.length} items — consider adding another resource (Tier A standard: 4+)`);
 
+  if (Array.isArray(entry.popularCulture) && entry.popularCulture.length < 4 && entry.qualityTier === "A")
+    A(id, `popularCulture has ${entry.popularCulture.length} items — consider adding another example (Tier A standard: 4+)`);
   chk(id, Array.isArray(entry.popularCulture) && entry.popularCulture.length >= 3,
     `popularCulture must have at least 3 items (has ${Array.isArray(entry.popularCulture) ? entry.popularCulture.length : 'none'})`);
   if (Array.isArray(entry.popularCulture)) {
