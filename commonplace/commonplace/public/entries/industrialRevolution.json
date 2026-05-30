@@ -85,32 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Industrial civilization was built on iron and steel \u2014 the material foundation of everything the Industrial Revolution produced"
     },
     {
-      "type": "Foundational",
       "label": "Coal",
-      "reason": "The energy foundation of the Industrial Revolution \u2014 coal was the transition from organic to mineral economy",
-      "entryId": "coal"
+      "entryId": "coal",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The energy foundation of the Industrial Revolution \u2014 coal was the transition from organic to mineral economy"
     },
     {
-      "type": "Consequential",
       "label": "The Communist Manifesto",
       "entryId": "manifesto",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Industrial Revolution created the working class whose existence the Manifesto theorized \u2014 Marx wrote in direct response to what industrialization had produced"
     },
     {
-      "type": "Consequential",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Climate change is the Industrial Revolution\u2019s longest-running consequence \u2014 the carbon released since 1750 is reshaping the planet"
     },
     {
-      "type": "Gateway",
       "label": "The Making of the English Working Class \u2014 E.P. Thompson (1963)",
+      "relationship": "Gateway",
       "reason": "The foundational social history of industrialization from below \u2014 how the transition was experienced by those who lived through it"
     }
   ],

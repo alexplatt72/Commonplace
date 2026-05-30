@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Confucius",
       "entryId": "confucius",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The philosopher whose ideas became Han state ideology \u2014 understanding Confucianism is prerequisite to understanding what the Han built and why it lasted"
     },
     {
-      "type": "Foundational",
       "label": "The Art of War",
       "entryId": "artOfWar",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The military strategic tradition that the Han both inherited and institutionalized \u2014 the Art of War was preserved and canonized within the bingfa tradition during the Han period"
     },
     {
-      "type": "Parallel",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Han's near-contemporary in size, population, and imperial scope \u2014 comparing the two illuminates what is universal and what is particular about large agrarian empire formation"
     },
     {
-      "type": "Consequential",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Han dynasty's western expansion created the Chinese end of the Silk Road \u2014 the dynasty's relationship with Central Asia was the political precondition for the routes' development"
     },
     {
-      "type": "Consequential",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Buddhism entered China during the Han dynasty through Silk Road networks \u2014 the Han period is the beginning of Buddhism's transformation into a Chinese religion"
     },
     {
-      "type": "Gateway",
       "label": "The Early Chinese Empires \u2014 Mark Lewis (2007)",
-      "entryId": "hanDynasty",
+      "relationship": "Gateway",
       "reason": "The best recent English-language synthesis of Qin and Han history \u2014 accessible, analytically sophisticated, and well-connected to comparative imperial history"
     }
   ],

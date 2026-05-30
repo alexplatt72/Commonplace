@@ -86,38 +86,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Epic of Gilgamesh",
+      "entryId": "epicOfGilgamesh",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The first major literary work \u2014 produced in cuneiform Mesopotamia and containing the oldest versions of narrative patterns (the flood, the quest for immortality) that appear in subsequent world literature"
     },
     {
-      "type": "Consequential",
       "label": "The Hebrew Bible / Old Testament",
+      "entryId": "hebrewBibleOldTestament",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The textual tradition that absorbed and transformed Mesopotamian narrative elements \u2014 the flood story, the creation narrative, the Babylonian captivity \u2014 making Mesopotamia foundational to Western religious culture"
     },
     {
-      "type": "Foundational",
       "label": "The Agricultural Revolution",
+      "entryId": "agriculturalRevolution",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The transformation in human subsistence patterns that preceded and enabled Mesopotamian urbanization \u2014 understanding it reveals why the river valley became the site of the first cities"
     },
     {
-      "type": "Consequential",
       "label": "The Silk Road",
+      "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The trade network that eventually connected Mesopotamia to Central Asia, India, and China \u2014 the long-distance connectivity that extended what Mesopotamia had pioneered"
     },
     {
-      "type": "Contrasting",
       "label": "The Indus Valley Civilization",
+      "entryId": "indusValleyCivilization",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "A contemporary urban civilization of comparable scale that developed independently \u2014 comparing it to Mesopotamia reveals what was universal about early urbanism and what was specific to the river valley context"
     },
     {
-      "type": "Parallel",
       "label": "Ancient Egypt",
+      "entryId": "ancientEgypt",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The other foundational ancient civilization of the region \u2014 Mesopotamia and Egypt developed simultaneously in partially connected and partially independent trajectories"
     },
     {
-      "type": "Gateway",
       "label": "History Begins at Sumer \u2014 Samuel Noah Kramer",
+      "relationship": "Gateway",
       "reason": "The book that established the 'firsts' framework for Mesopotamia \u2014 still readable, now to be read critically alongside awareness of the framing it imposed"
     }
   ],

@@ -94,39 +94,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Navigation",
       "entryId": "navigation",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The maritime Silk Road required and stimulated navigation technology \u2014 the compass, cartography, and ocean-going ship design \u2014 making navigation a foundational prerequisite for understanding the routes' later development"
     },
     {
-      "type": "Consequential",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The most consequential unintended product of Silk Road connectivity \u2014 the plague's westward transmission reshaped European civilization and demonstrates how transmission systems generate consequences no participant intended"
     },
     {
-      "type": "Parallel",
       "label": "Indian Ocean Trade System",
       "entryId": "indianOceanTrade",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The maritime alternative to the overland Silk Road \u2014 understanding both systems together reveals the complementary and competitive logic of Eurasian connectivity across the same period"
     },
     {
-      "type": "Thematic",
       "label": "Paper",
       "entryId": "paper",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Papermaking technology's transmission from China through the Islamic world to Europe along Silk Road networks is one of the most consequential technology transfers in history \u2014 and a case study in how transmission systems work"
     },
     {
-      "type": "Consequential",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Buddhism's spread to East Asia happened primarily through Silk Road merchant networks \u2014 the Buddha's teaching became a world religion through commercial infrastructure"
     },
     {
-      "type": "Gateway",
       "label": "The Silk Road: A New History \u2014 Valerie Hansen (2012)",
-      "entryId": "silkRoad",
+      "relationship": "Gateway",
       "reason": "The most methodologically careful recent account \u2014 Hansen's revisionist argument about local trade forces engagement with the fundamental question of what the Silk Road actually was"
     }
   ],

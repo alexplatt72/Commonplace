@@ -85,32 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Zero",
       "entryId": "zero",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Probability required positional notation arithmetic to develop as a calculus \u2014 zero is the conceptual precondition"
     },
     {
-      "type": "Consequential",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Climate science runs on Bayesian inference and probabilistic modeling \u2014 the scientific case for climate change is fundamentally a probabilistic argument"
     },
     {
-      "type": "Consequential",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Epidemiology \u2014 the discipline that manages infectious disease risk \u2014 is built on probability theory; the Black Death was the event that made epidemiology's necessity undeniable"
     },
     {
-      "type": "Parallel",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both probability and the printing press are early modern information technologies that restructured how knowledge was produced, transmitted, and made actionable at scale"
     },
     {
-      "type": "Gateway",
       "label": "The Emergence of Probability \u2014 Ian Hacking (1975)",
+      "relationship": "Gateway",
       "reason": "The foundational intellectual history \u2014 argues that probability required specific philosophical conditions to emerge and examines why it appeared when and where it did"
     }
   ],

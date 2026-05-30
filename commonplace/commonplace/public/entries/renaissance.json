@@ -130,48 +130,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Scientific Revolution",
       "entryId": "scientificRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Renaissance created the intellectual and institutional preconditions for the Scientific Revolution -- the recovery of ancient science, the culture of empirical observation, and the patronage systems that supported learned inquiry"
     },
     {
-      "type": "Consequential",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Reformation both drew on humanist textual scholarship and disrupted the patronage systems that had sustained the Renaissance -- the relationship between the two is complex and essential"
     },
     {
-      "type": "Foundational",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The printing press transformed the reach and speed of Renaissance ideas -- making it possible for humanist learning to spread from Italian cities to educated readers across Europe"
     },
     {
-      "type": "Foundational",
       "label": "Leonardo da Vinci",
       "entryId": "leonardo",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Leonardo represents the Renaissance ideal of the universal man -- artist, scientist, engineer, anatomist -- whose notebooks embody the movement's aspiration to unite humanistic learning and empirical investigation"
     },
     {
-      "type": "Thematic",
       "label": "Colonialism",
       "entryId": "colonialism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The same period that produced the Renaissance also produced European expansion -- the two are connected through the courts that patronized both humanist scholarship and exploratory voyages"
     },
     {
-      "type": "Future",
       "label": "Petrarch -- Father of Humanism",
+      "entryId": "petrarchFatherOfHumanism",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Petrarch's recovery of Cicero's letters, his invention of the concept of the Dark Ages, and his creation of the sonnet form make him arguably the Renaissance's founding figure and deserving of dedicated treatment"
     },
     {
-      "type": "Future",
       "label": "Machiavelli",
+      "entryId": "machiavelli",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Machiavelli's Prince and Discourses represent the Renaissance's most consequential contribution to political philosophy -- his separation of political analysis from moral philosophy is still the foundational move of modern political realism"
     },
     {
-      "type": "Gateway",
       "label": "The Civilization of the Renaissance in Italy -- Jacob Burckhardt (1860)",
+      "relationship": "Gateway",
       "reason": "Burckhardt's foundational account -- still readable and still productive as the framework against which all subsequent revision has organized itself -- is the essential starting point for anyone engaging seriously with the period"
     }
   ],

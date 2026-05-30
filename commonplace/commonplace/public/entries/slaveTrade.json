@@ -94,34 +94,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Portuguese Maritime Empire",
+      "entryId": "portugueseMaritimeEmpire",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The first European power to establish the trade \u2014 understanding it reveals the institutional origins"
     },
     {
-      "type": "Consequential",
       "label": "The Haitian Revolution",
-      "reason": "The most radical consequence \u2014 the only successful slave revolt in history to produce a permanent free state",
-      "entryId": "haitianRevolution"
+      "entryId": "haitianRevolution",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The most radical consequence \u2014 the only successful slave revolt in history to produce a permanent free state"
     },
     {
-      "type": "Consequential",
       "label": "The American Civil War",
+      "entryId": "americanCivilWar",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The political crisis that ended slavery in the largest slave-holding republic"
     },
     {
-      "type": "Contrasting",
       "label": "The Abolition Movement",
+      "entryId": "abolitionMovement",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The organized resistance that eventually ended the trade \u2014 understanding it reveals how systemic evil is challenged"
     },
     {
-      "type": "Parallel",
       "label": "The Indian Ocean Slave Trade",
+      "entryId": "indianOceanSlaveTrade",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "A parallel slave trade of comparable scale operating simultaneously \u2014 less studied, equally significant"
     },
     {
-      "type": "Gateway",
       "label": "The Trans-Atlantic Slave Trade Database",
+      "relationship": "Gateway",
       "reason": "The most comprehensive historical dataset on the trade \u2014 accessible online and free to use"
     }
   ],

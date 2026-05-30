@@ -87,28 +87,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Medieval Manuscript Culture",
+      "entryId": "medievalManuscriptCulture",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The information system the press disrupted \u2014 understanding it reveals what exactly changed"
     },
     {
-      "type": "Consequential",
       "label": "The Protestant Reformation",
+      "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The most immediate and dramatic consequence \u2014 the Reformation as a media event"
     },
     {
-      "type": "Consequential",
       "label": "The Scientific Revolution",
+      "entryId": "scientificRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Print enabled the accumulation and circulation of scientific findings across Europe and generations"
     },
     {
-      "type": "Parallel",
       "label": "The Internet",
+      "entryId": "internet",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "A comparable information-economic disruption \u2014 same pattern, different scale and speed"
     },
     {
-      "type": "Gateway",
       "label": "Johannes Gutenberg",
+      "relationship": "Gateway",
       "reason": "The man himself \u2014 a useful entry point into the invention and its immediate context"
     }
   ],

@@ -101,33 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Parallel",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Wheat and rice are the two primary caloric foundations of human civilization \u2014 comparing them reveals how different agricultural systems produce different social structures, demographic patterns, and cultural values"
     },
     {
-      "type": "Consequential",
       "label": "Han Dynasty",
       "entryId": "hanDynasty",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Han Dynasty's demographic and military power was built on the rice-producing Yangtze valley \u2014 the connection between rice productivity and Chinese imperial capacity is foundational to understanding Han civilization"
     },
     {
-      "type": "Consequential",
       "label": "The Atlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Enslaved Africans from rice-growing regions of West Africa brought the agricultural knowledge that made South Carolina rice cultivation profitable \u2014 a direct link between West African rice civilizations and the origins of American wealth"
     },
     {
-      "type": "Parallel",
       "label": "The Indian Ocean Trade System",
       "entryId": "indianOceanTrade",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Rice trade across the Indian Ocean \u2014 from South Asian surpluses to East African markets, from Southeast Asian producers to South Asian consumers \u2014 was a major current in Indian Ocean commerce for two thousand years"
     },
     {
-      "type": "Thematic",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Rice paddies are significant methane sources and rice yields are threatened by climate change \u2014 the relationship between the world's most important food crop and the world's most consequential environmental crisis is direct and unresolved"
     }
   ],

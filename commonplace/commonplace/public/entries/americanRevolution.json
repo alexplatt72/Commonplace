@@ -85,32 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The French Revolution",
       "entryId": "frenchRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The American Revolution directly influenced the French and provides the essential comparison \u2014 why one produced durable institutions and the other Napoleon"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The American founding is the primary historical case for large-republic democracy \u2014 Madison\u2019s Federalist 10 argument is the foundational text of modern democratic theory"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "American civic nationalism \u2014 identity based on shared principles rather than ethnicity \u2014 was the first explicit version and became the template for subsequent civic nationalist projects"
     },
     {
-      "type": "Parallel",
       "label": "The Atlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Revolution\u2019s founding contradiction \u2014 universal rights coexisting with racial slavery \u2014 connects directly to the slave trade that the Constitution protected"
     },
     {
-      "type": "Gateway",
       "label": "The Ideological Origins of the American Revolution \u2014 Bernard Bailyn (1967)",
+      "relationship": "Gateway",
       "reason": "The foundational account of what the founders were actually thinking \u2014 essential for understanding the Revolution\u2019s intellectual content"
     }
   ],

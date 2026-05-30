@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Buddha gave his first sermon at Sarnath, a few kilometers from Varanasi \u2014 the city was already a major sacred center when Buddhism began, and the two traditions have coexisted and competed there for 2,500 years"
     },
     {
-      "type": "Parallel",
       "label": "Alexandria",
       "entryId": "alexandria",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "A great ancient city that declined when its function was displaced \u2014 contrasting with Varanasi's extraordinary continuity illuminates what makes sacred function more durable than intellectual or commercial function"
     },
     {
-      "type": "Thematic",
       "label": "The Bhagavad Gita",
       "entryId": "bhagavadGita",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The philosophical tradition that makes Varanasi sacred \u2014 the Shaiva and Vaishnava Hinduism whose theology constitutes the city's sacred significance has the Gita as its most accessible philosophical text"
     },
     {
-      "type": "Thematic",
       "label": "The Gupta Empire",
       "entryId": "guptaEmpire",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The political formation that patronized the Sanskrit learning tradition of which Varanasi was a center \u2014 a significant moment in the development of the sacred city's theological elaboration"
     },
     {
-      "type": "Parallel",
       "label": "Beijing",
       "entryId": "beijing",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both are cities whose identity is constituted by a specific kind of meaning rather than practical function \u2014 the comparison illuminates how different kinds of meaning produce different kinds of urban continuity"
     },
     {
-      "type": "Gateway",
       "label": "Banaras: City of Light \u2014 Diana Eck (1982)",
-      "entryId": "varanasi",
+      "relationship": "Gateway",
       "reason": "The foundational academic study \u2014 Eck's combination of religious studies scholarship with genuine engagement with the tradition's theological claims remains the essential starting point"
     }
   ],

@@ -85,32 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Coal and iron are co-foundations of industrial civilization \u2014 Darby's coke-iron process was the original link, and steel production remains coal's largest industrial use"
     },
     {
-      "type": "Consequential",
       "label": "The Industrial Revolution",
       "entryId": "industrialRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Industrial Revolution was coal at civilizational scale \u2014 coal was its energy foundation and without it the revolution was a water-powered regional phenomenon rather than a global transformation"
     },
     {
-      "type": "Consequential",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Climate change is coal's atmospheric feedback loop \u2014 the delayed consequence of burning 300 million years of stored solar energy in two centuries"
     },
     {
-      "type": "Parallel",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Wheat and coal are paired foundations: wheat broke the Malthusian food constraint; coal broke the energy constraint. Together they explain why industrial civilization could grow beyond all prior limits"
     },
     {
-      "type": "Gateway",
       "label": "Energy and the English Industrial Revolution \u2014 E.A. Wrigley (2010)",
+      "relationship": "Gateway",
       "reason": "The analytical framework for understanding what coal actually did \u2014 the organic versus mineral economy distinction that makes the Industrial Revolution's structural uniqueness visible"
     }
   ],

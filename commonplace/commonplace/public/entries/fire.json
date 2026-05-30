@@ -106,33 +106,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Coal",
       "entryId": "coal",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Coal is fire industrialized \u2014 the scale transformation of combustion into the energy substrate of modern civilization and the source of its atmospheric consequence"
     },
     {
-      "type": "Foundational",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Iron smelting requires temperatures achievable only with controlled high-heat fire \u2014 iron and fire are inseparable technologies"
     },
     {
-      "type": "Consequential",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Climate change is the atmospheric feedback of 400,000 years of hominid combustion concentrated into 250 years of fossil fuel burning"
     },
     {
-      "type": "Parallel",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Wheat and fire are the two foundational technologies of agricultural civilization \u2014 wheat as stored caloric base, fire as the technology that transformed wheat into cooked food and enabled the surplus that supported cities"
     },
     {
-      "type": "Thematic",
       "label": "Money",
       "entryId": "money",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Both fire and money are foundational technologies whose most consequential effects are not what they produce but what they do to everything they touch \u2014 fire to material civilization, money to social relationships"
     }
   ],

@@ -105,39 +105,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Precursor",
       "label": "Kyd's The Spanish Tragedy",
+      "entryId": "kydsTheSpanishTragedy",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The prototype revenge tragedy that established the form Hamlet would transform"
     },
     {
-      "type": "Foundational",
       "label": "Aristotle \u2014 Poetics",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Aristotle's theory of tragedy established the framework for understanding dramatic character, catharsis, and the relationship between plot and meaning that Renaissance theatrical culture inherited"
     },
     {
-      "type": "Foundational",
       "label": "Elizabethan Theater",
+      "entryId": "elizabethanTheater",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The specific theatrical conditions within which the play's formal innovations make sense"
     },
     {
-      "type": "Consequential",
       "label": "Romantic Criticism and the Character of Hamlet",
+      "entryId": "romanticCriticismAndTheCharacterOfHamlet",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The construction of Hamlet as the prototype of the sensitive modern soul \u2014 the reading that shaped two centuries of reception"
     },
     {
-      "type": "Descendant",
       "label": "Rosencrantz and Guildenstern Are Dead",
+      "entryId": "rosencrantzAndGuildensternAreDead",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "Tom Stoppard's 1966 play \u2014 the most productive single Descendant in the tradition"
     },
     {
-      "type": "Parallel",
       "label": "Don Quixote",
+      "entryId": "donQuixote",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "A near-contemporary work that made the gap between thought and action its central subject"
     },
     {
-      "type": "Gateway",
       "label": "Shakespeare's Hamlet \u2014 Major Film Versions",
+      "relationship": "Gateway",
       "reason": "The Kozintsev (1964), Branagh (1996), and Tennant (2009) productions together reveal what the play can sustain in performance"
     }
   ],

@@ -88,38 +88,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Buddha was a contemporary of the intellectual tradition the Gita synthesizes and explicitly rejected the atman doctrine the Gita affirms \u2014 the contrast illuminates what makes each position distinctive"
     },
     {
-      "type": "Thematic",
       "label": "The Iliad",
       "entryId": "iliad",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Both texts center on a warrior who hesitates before battle and must be persuaded to fight \u2014 comparing the arguments used (honor and duty in Homer versus cosmic duty and non-attachment in the Gita) reveals the different philosophical frameworks underlying each civilization's warrior ethic"
     },
     {
-      "type": "Consequential",
       "label": "Mahatma Gandhi",
+      "entryId": "mahatmaGandhi",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Gandhi's reading of the Gita as a nonviolence text transformed its political meaning and made it central to the independence movement \u2014 his interpretation is itself a major philosophical and political event"
     },
     {
-      "type": "Thematic",
       "label": "Justice",
       "entryId": "justice",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Gita's teaching that caste duty supersedes individual conscience raises the central question of political philosophy: what is owed to individuals, and can duty to a social order override it?"
     },
     {
-      "type": "Gateway",
       "label": "The Bhagavad Gita \u2014 Barbara Stoler Miller (trans., 1986)",
-      "entryId": "bhagavadGita",
+      "relationship": "Gateway",
       "reason": "The best English translation for philosophical reading \u2014 combines literary quality with scholarly rigor and includes a commentary that locates the text in its intellectual context"
     },
     {
-      "type": "Parallel",
       "label": "The Republic",
       "entryId": "theRepublic",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Plato's Republic, near-contemporary with the Gita, similarly uses a dialogue structure to address questions of justice, duty, and the proper ordering of the soul \u2014 comparing the two illuminates how different philosophical traditions approached the same fundamental questions"
     }
   ],

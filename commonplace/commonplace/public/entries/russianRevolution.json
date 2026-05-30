@@ -138,48 +138,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The First World War",
       "entryId": "firstWorldWar",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Russian Revolution was directly caused by the war's catastrophic human and material costs \u2014 without the war, the autocracy's survival was much more likely"
     },
     {
-      "type": "Foundational",
       "label": "The Communist Manifesto",
       "entryId": "manifesto",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Manifesto provided the ideological framework that Lenin adapted into Bolshevik practice \u2014 the revolution was the first attempt to build a state on Marxist principles"
     },
     {
-      "type": "Consequential",
       "label": "The Cold War",
       "entryId": "coldWar",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Soviet Union produced by the Russian Revolution was the other superpower whose competition with the United States defined global politics for fifty years"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The revolution's attempt to create a state based on class rather than nationality generated intense nationalist resistance \u2014 from Ukraine to the Baltic to Central Asia \u2014 that the Soviet state violently suppressed and that re-emerged after 1991"
     },
     {
-      "type": "Thematic",
       "label": "The French Revolution",
       "entryId": "frenchRevolution",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Russian Revolution consciously modeled itself on the French \u2014 Lenin compared himself to Robespierre, the Bolsheviks to the Jacobins \u2014 making the parallels and divergences analytically essential"
     },
     {
-      "type": "Future",
       "label": "The Soviet Union under Stalin",
+      "entryId": "sovietUnionUnderStalin",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Stalin's transformation of the revolutionary state \u2014 collectivization, the Gulag, the Great Terror \u2014 is arguably more consequential than the revolution itself and requires its own entry"
     },
     {
-      "type": "Future",
       "label": "Leon Trotsky",
+      "entryId": "leonTrotsky",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Trotsky's role in the October Revolution and civil war, his subsequent defeat by Stalin, and his continuing influence as a theorist of revolution make him essential to any serious engagement with the period"
     },
     {
-      "type": "Gateway",
       "label": "A People's Tragedy \u2014 Orlando Figes (1996)",
+      "relationship": "Gateway",
       "reason": "Figes's narrative history of the revolution and civil war is the essential starting point \u2014 comprehensive, readable, and drawing on the post-1991 archival opening to produce the most complete single-volume account"
     }
   ],

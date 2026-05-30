@@ -115,6 +115,11 @@
       "status": "established",
       "topic": "The ideology of the civilizing mission and its intellectual history",
       "content": "The intellectual frameworks that justified colonial rule \u2014 the 'civilizing mission,' the hierarchy of races and civilizations, the idea that some peoples were not yet ready for self-governance \u2014 have been analyzed extensively. Uday Mehta's Liberalism and Empire (1999) showed that liberal political thought, from Locke to Mill, provided resources for justifying colonial rule alongside its commitment to individual liberty \u2014 that the exclusion of colonized peoples from liberal rights was not a contradiction of liberal theory but produced from within it. Jennifer Pitts's A Turn to Empire (2005) extended this analysis to show how liberal attitudes toward empire shifted between the late 18th and 19th centuries."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The full extent of indigenous demographic collapse and cultural destruction",
+      "content": "The total human cost of colonialism -- the lives lost, cultures destroyed, and languages extinguished across four centuries of European expansion -- cannot be established with precision. What evidence would resolve this: systematic pre-colonial population surveys, complete records of violence and disease mortality, and documentation of cultural practices that were destroyed before being recorded. Why unavailable: colonial administrators had neither the interest nor the capacity for accurate population counting; pre-colonial societies often lacked written records that could be recovered; the destruction of indigenous archives, oral traditions, and material culture was itself part of the colonial process. What can be responsibly inferred: that indigenous population collapse in the Americas following contact was catastrophic (estimates range from 50 to 90 percent over the first century); that cultural and linguistic extinction was extensive; and that the documentary record represents primarily the colonizers' perspective. What must remain unknowable: the full subjective experience of colonized peoples who left no written records, the precise scale of demographic catastrophe in most regions, and the full extent of what was lost."
     }
   ],
   "comparativeNarrative": [
@@ -136,48 +141,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Transatlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Plantation slavery in the Americas was the most extreme form of colonial labor extraction \u2014 the economic engine of the Atlantic colonial system and the source of some of its most enduring racial hierarchies"
     },
     {
-      "type": "Foundational",
       "label": "Empire",
       "entryId": "empire",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Empire is the political form that colonialism takes \u2014 the extension of political authority over diverse peoples and territories that is the structural framework within which colonial extraction operates"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Anti-colonial nationalism \u2014 the demand for self-determination by colonized peoples \u2014 was one of the most consequential political movements of the 20th century, producing the decolonization that ended formal colonial rule"
     },
     {
-      "type": "Consequential",
       "label": "The Haitian Revolution",
       "entryId": "haitianRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The first successful anti-colonial revolution \u2014 which created the model for subsequent independence movements while also demonstrating the punishment that the colonial system could inflict on successful resisters"
     },
     {
-      "type": "Thematic",
       "label": "The Industrial Revolution",
       "entryId": "industrialRevolution",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Industrial production in Britain depended on colonial raw materials (cotton, sugar, rubber) and colonial markets \u2014 the relationship between industrialization and colonial extraction was constitutive of both"
     },
     {
-      "type": "Future",
       "label": "The Scramble for Africa",
+      "entryId": "scrambleForAfrica",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The formal division of Africa among European powers at the Berlin Conference (1884-85) \u2014 the most naked expression of colonial territorial ambition and the origin of Africa's colonial-era borders"
     },
     {
-      "type": "Future",
       "label": "Decolonization",
+      "entryId": "decolonization",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The process by which colonial rule ended \u2014 primarily in the 1940s-60s \u2014 and the forms of post-colonial statehood that emerged, which were often shaped more by colonial structures than by pre-colonial ones"
     },
     {
-      "type": "Gateway",
       "label": "The Wretched of the Earth \u2014 Frantz Fanon (1961)",
+      "relationship": "Gateway",
       "reason": "The most powerful single analytical account of colonialism's psychological and political dimensions \u2014 written by a psychiatrist from Martinique who joined the Algerian independence movement"
     }
   ],

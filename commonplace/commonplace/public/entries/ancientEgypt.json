@@ -101,33 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Egyptian civilization was built on the agricultural surplus that the Nile's annual flood enabled \u2014 wheat stored in Egyptian granaries fed the pyramid builders and the administrative class that organized them"
     },
     {
-      "type": "Foundational",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Egypt's transition from bronze to iron technology in the Late Period is part of the broader Iron Age transformation that ended the Bronze Age civilizations \u2014 Egypt's relationship to iron is part of its relationship to the geopolitical shifts of the first millennium BCE"
     },
     {
-      "type": "Consequential",
       "label": "Alexandria",
       "entryId": "alexandria",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Alexandria was built on the foundations of Egyptian civilization \u2014 the library, the Mouseion, and the intellectual culture of Alexandria represented the Greek synthesis of Egyptian, Near Eastern, and Greek knowledge traditions"
     },
     {
-      "type": "Parallel",
       "label": "Mesopotamia",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Egypt and Mesopotamia are the two foundational river valley civilizations \u2014 comparing them reveals how geography shapes political structure and administrative ideology"
     },
     {
-      "type": "Parallel",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Rome absorbed Egypt in 30 BCE and was profoundly shaped by Egyptian religious, artistic, and administrative traditions \u2014 the Roman-Egyptian relationship is one of the most consequential civilizational interactions in ancient history"
     }
   ],

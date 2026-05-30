@@ -85,33 +85,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Affordable Care Act",
+      "entryId": "affordableCareAct",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The most significant recent structural change \u2014 understanding what it did, what it didn't do, and why tells you what the current baseline is"
     },
     {
-      "type": "Consequential",
       "label": "Medicare and Medicaid",
+      "entryId": "medicareAndMedicaid",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The largest public programs \u2014 understanding their structure explains what 'expanding Medicare' would mean and what 'Medicaid work requirements' would change"
     },
     {
-      "type": "Parallel",
       "label": "Canadian Healthcare System",
+      "entryId": "canadianHealthcareSystem",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "The most-discussed international comparison \u2014 single-payer with private delivery, universal coverage, lower costs, longer waits"
     },
     {
-      "type": "Contrasting",
       "label": "Singapore's Healthcare System",
+      "entryId": "singaporesHealthcareSystem",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The most market-oriented universal system \u2014 mandatory savings accounts with catastrophic coverage \u2014 represents a genuinely different model from both the US and European approaches"
     },
     {
-      "type": "Foundational",
       "label": "Health Insurance",
+      "entryId": "healthInsurance",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "Understanding how insurance actually works \u2014 adverse selection, moral hazard, risk pooling \u2014 is prerequisite to evaluating any reform proposal"
     },
     {
-      "type": "Gateway",
       "label": "The Healing of America \u2014 T.R. Reid",
+      "relationship": "Gateway",
       "reason": "Visits five countries' healthcare systems and explains what each actually does \u2014 the most accessible international comparison available"
     }
   ],

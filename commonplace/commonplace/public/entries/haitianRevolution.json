@@ -136,54 +136,64 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Transatlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Haitian Revolution was a direct product of the Atlantic slave trade's most extreme expression \u2014 the plantation system of Saint-Domingue could not be understood without the forced migration of 500,000 Africans that built it"
     },
     {
-      "type": "Foundational",
       "label": "The French Revolution",
       "entryId": "frenchRevolution",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The French Revolution provided the ideological language of the Haitian Revolution \u2014 the Rights of Man that the enslaved population of Saint-Domingue applied to themselves \u2014 and the political disruption that created the opening for revolt"
     },
     {
-      "type": "Consequential",
       "label": "Napoleon Bonaparte",
       "entryId": "napoleon",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Napoleon sent the expedition that failed to suppress the Haitian Revolution, and Haiti's victory directly caused his decision to sell Louisiana \u2014 reshaping American and Atlantic history"
     },
     {
-      "type": "Consequential",
       "label": "Mosquitoes",
       "entryId": "mosquitoes",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Yellow fever \u2014 transmitted by Aedes aegypti mosquitoes \u2014 killed roughly 50,000 French soldiers in the 1802-1803 campaign and was the decisive military factor in Haiti's victory"
     },
     {
-      "type": "Parallel",
       "label": "The American Revolution",
       "entryId": "americanRevolution",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Haitian and American revolutions were contemporaneous expressions of Enlightenment political thought that came to opposite conclusions about slavery \u2014 the comparison illuminates what each revolution was actually about"
     },
     {
-      "type": "Thematic",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Haiti's founding is one of the earliest cases of anti-colonial nationalism \u2014 a people defining themselves against the imperial power that had enslaved them and founding a state on that collective identity"
     },
     {
-      "type": "Gateway",
       "label": "The Black Jacobins \u2014 C.L.R. James (1938)",
+      "relationship": "Gateway",
       "reason": "James's foundational account of the revolution remains the essential starting point \u2014 essential for understanding both the revolution and the tradition of interpretation that followed it"
     },
     {
-      "type": "Future",
       "label": "The Louisiana Purchase",
+      "entryId": "louisianaPurchase",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Napoleon's sale of Louisiana to the United States was directly caused by the defeat in Haiti \u2014 an event whose connection to the Haitian Revolution is rarely taught in American history"
     },
     {
-      "type": "Future",
       "label": "Abolition of Slavery",
+      "entryId": "abolitionOfSlavery",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The Haitian Revolution both accelerated abolitionist arguments (by proving enslaved people were capable of sophisticated political organization) and intensified pro-slavery defenses (by demonstrating what slaveholders most feared)"
     }
   ],

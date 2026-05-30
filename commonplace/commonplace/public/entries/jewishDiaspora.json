@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Bible",
       "entryId": "bible",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Torah is the portable constitution that made diaspora identity possible \u2014 the text that Jewish communities carried with them and organized their lives around across every dispersal"
     },
     {
-      "type": "Foundational",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Roman destruction of the Second Temple in 70 CE is the pivotal moment that accelerated the diaspora from a partial dispersal to a near-total one \u2014 Roman imperial power is the immediate cause of the diaspora's defining form"
     },
     {
-      "type": "Consequential",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The 1348-1349 massacres of Jewish communities across Europe \u2014 accused of poisoning wells \u2014 were the most violent episode of medieval antisemitism and produced major shifts in Jewish settlement patterns toward Eastern Europe"
     },
     {
-      "type": "Consequential",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The printing press transformed how Jewish texts circulated \u2014 making the Talmud and other rabbinic literature available across diaspora communities at a scale impossible with manuscript copying, accelerating the standardization of Jewish religious practice"
     },
     {
-      "type": "Thematic",
       "label": "Alexandria",
       "entryId": "alexandria",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "One of the largest ancient Jewish communities outside Palestine \u2014 the translation of the Hebrew Bible into Greek (the Septuagint) in Alexandria was the first major act of Jewish cultural translation for a non-Hebrew-speaking diaspora audience"
     },
     {
-      "type": "Gateway",
       "label": "A Mediterranean Society \u2014 S.D. Goitein (1967-1988)",
-      "entryId": "jewishDiaspora",
+      "relationship": "Gateway",
       "reason": "Goitein's five-volume analysis of the Cairo Geniza documents is the foundational modern reconstruction of how the medieval Jewish diaspora actually worked \u2014 essential for anyone who wants to understand the system rather than just its broad outlines"
     }
   ],

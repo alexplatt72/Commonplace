@@ -82,28 +82,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Italian Renaissance",
+      "entryId": "italianRenaissance",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The intellectual and cultural movement that made Leonardo possible"
     },
     {
-      "type": "Consequential",
       "label": "The High Renaissance",
+      "entryId": "highRenaissance",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "What Leonardo's generation made possible \u2014 Michelangelo, Raphael, and the peak of Renaissance artistic ambition"
     },
     {
-      "type": "Contrasting",
       "label": "Michelangelo",
+      "entryId": "michelangelo",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The contemporary competitor representing a completely different approach to the same Renaissance problems"
     },
     {
-      "type": "Parallel",
       "label": "Charles Darwin",
+      "entryId": "darwin",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The closest modern parallel \u2014 systematic visual investigation of the natural world as the foundation of knowledge"
     },
     {
-      "type": "Gateway",
       "label": "The Mona Lisa",
+      "relationship": "Gateway",
       "reason": "The most accessible entry point \u2014 but engaging with it as a formal achievement rather than a cultural icon"
     }
   ],

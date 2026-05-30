@@ -98,32 +98,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Athens",
       "entryId": "athens",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Iliad is inseparable from the Athenian cultural tradition that preserved, performed, and taught it \u2014 and from the tragic drama that Athens developed as a form of philosophical reflection on Homeric themes"
     },
     {
-      "type": "Parallel",
       "label": "The Bhagavad Gita",
       "entryId": "bhagavadGita",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Bhagavad Gita and the Iliad are the two great ancient epics structured around a warrior's refusal to fight and the philosophical resolution of that refusal \u2014 comparing them reveals how different civilizational traditions answer the question of duty, courage, and the relationship between the individual and the cosmic order"
     },
     {
-      "type": "Consequential",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Aeneid \u2014 Virgil's response to the Iliad \u2014 is the founding text of Roman cultural identity, and the relationship between Greek Homeric epic and Roman imperial epic is the relationship between the two foundational cultures of Western civilization"
     },
     {
-      "type": "Parallel",
       "label": "The Bhagavad Gita",
       "entryId": "bhagavadGita",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both the Iliad and the Bhagavad Gita are embedded in larger epic traditions about war, and both center on a warrior's crisis before battle \u2014 Achilles' grief-driven return and Arjuna's philosophical hesitation address the same fundamental question about whether heroic action is worth its cost"
     },
     {
-      "type": "Gateway",
       "label": "The Odyssey \u2014 Homer",
+      "relationship": "Gateway",
       "reason": "The Iliad's companion epic \u2014 about Odysseus's ten-year journey home from Troy \u2014 is the indispensable companion text, exploring the same Trojan War from the perspective of survival, homecoming, and the relationship between the hero and the domestic world his heroism serves and threatens"
     }
   ],

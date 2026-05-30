@@ -133,42 +133,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Burning oil is the primary driver of anthropogenic climate change -- the relationship between oil and the climate crisis is direct and causally central"
     },
     {
-      "type": "Foundational",
       "label": "Coal",
       "entryId": "coal",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Coal preceded oil as the dominant fossil fuel and the transition from coal to oil shaped the political economy of energy in ways Timothy Mitchell analyzes as deliberately structured to reduce labor power"
     },
     {
-      "type": "Thematic",
       "label": "The Industrial Revolution",
       "entryId": "industrialRevolution",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Industrial Revolution created the demand for energy that coal and then oil supplied -- understanding it reveals why fossil fuel dependence became structural rather than merely convenient"
     },
     {
-      "type": "Thematic",
       "label": "Colonialism",
       "entryId": "colonialism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The major oil-producing regions were under colonial or semi-colonial control when oil was discovered; the political economy of oil extraction was shaped by these colonial relationships"
     },
     {
-      "type": "Future",
       "label": "OPEC and the 1973 Oil Embargo",
+      "entryId": "oPECAndThe1973OilEmbargo",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The 1973 Arab oil embargo represents the pivotal moment when producing countries shifted power from Western oil companies and consuming nations, transforming the political economy of oil permanently"
     },
     {
-      "type": "Future",
       "label": "Saudi Arabia",
+      "entryId": "saudiArabia",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Saudi Arabia's relationship with the United States -- the oil-for-security deal struck by Roosevelt and ibn Saud in 1945 -- is the foundational relationship in the modern geopolitics of oil"
     },
     {
-      "type": "Gateway",
       "label": "The Prize -- Daniel Yergin (1991)",
+      "relationship": "Gateway",
       "reason": "Yergin's Pulitzer Prize-winning history of the oil industry is the essential narrative account -- comprehensive, readable, and covering the full sweep from the Pennsylvania oil rush to the Gulf War"
     }
   ],

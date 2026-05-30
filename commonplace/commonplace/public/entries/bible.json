@@ -82,32 +82,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Reformation was essentially a dispute about the Bible's authority and interpretation \u2014 Luther's sola scriptura claim restructured Western Christianity around biblical access"
     },
     {
-      "type": "Consequential",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Gutenberg Bible was the printing press's first major product; the mass availability of printed Bibles was essential to the Reformation's spread and to the proliferation of incompatible interpretations"
     },
     {
-      "type": "Consequential",
       "label": "The Atlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Bible was used to justify the slave trade through the \"curse of Ham\" and to oppose it through Exodus \u2014 the most consequential single case of the Bible's simultaneous use for oppression and liberation"
     },
     {
-      "type": "Consequential",
       "label": "Jerusalem",
       "entryId": "jerusalem",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Jerusalem's significance as a contested holy city is primarily biblical \u2014 it is sacred in Judaism, Christianity, and Islam in ways that derive from biblical texts"
     },
     {
-      "type": "Gateway",
       "label": "The Bible: A Biography \u2014 Karen Armstrong (2007)",
+      "relationship": "Gateway",
       "reason": "The most accessible account of how the Bible was written, canonized, and interpreted \u2014 covers the full history in a single readable volume"
     }
   ],

@@ -82,32 +82,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Parallel",
       "label": "Aristotle",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The most productive intellectual comparison in the history of political thought \u2014 two parallel founders of ethical and political traditions from the same century"
     },
     {
-      "type": "Parallel",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both produced the translation of authoritative religious-philosophical texts into vernacular languages, creating literate lay communities with direct access to their tradition's foundations"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Confucian meritocracy versus electoral democracy debate is one of the central questions in contemporary political theory about whether democratic institutions are culturally universal or culturally specific"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "East Asian nationalism developed in direct tension with Confucian universalism \u2014 the question of whether loyalty to the nation supersedes loyalty to the ruler was a major 20th-century Confucian political problem"
     },
     {
-      "type": "Gateway",
       "label": "The Analects \u2014 Confucius (trans. Edward Slingerland, 2003)",
+      "relationship": "Gateway",
       "reason": "Slingerland's translation with philosophical commentary is the most accessible scholarly version \u2014 makes the original argument available without requiring specialist training"
     }
   ],

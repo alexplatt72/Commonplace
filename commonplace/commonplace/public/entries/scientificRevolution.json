@@ -114,6 +114,11 @@
       "status": "emerging",
       "topic": "Non-European contributions to the Scientific Revolution",
       "content": "The assumption that the Scientific Revolution was purely a European achievement has been substantially complicated by recent scholarship. The transmission of Arabic mathematical and astronomical knowledge to Europe through translation movements was a precondition for the Copernican program. The navigational and botanical knowledge produced by European colonial encounters with Asia, the Americas, and Africa contributed to the development of natural history and chemistry. Londa Schiebinger's Plants and Empire (2004) and other works have traced the systematic incorporation (and systematic suppression) of indigenous botanical knowledge into European science. The full dimensions of this global dimension of the revolution are still being researched."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "How specific scientists actually made their discoveries and what they understood themselves to be doing",
+      "content": "The actual cognitive and social processes through which the major discoveries of the Scientific Revolution were made -- what Galileo was thinking when he first observed the moons of Jupiter, how Newton moved from observation to universal law, what Harvey experienced when he first understood the circulation of blood -- cannot be fully recovered from the available evidence. What evidence would resolve this: complete records of the scientists' working processes, including failed experiments, abandoned hypotheses, and the moment-by-moment development of ideas. Why unavailable: scientists typically published polished accounts of completed discoveries rather than working notes; surviving notebooks and correspondence represent a small fraction of the intellectual process; and the published accounts are strategically composed to present discoveries as more inevitable and systematic than they were. What can be responsibly inferred: that major discoveries typically involved more contingency, accident, and social influence than the published accounts suggest; that the boundary between the Scientific Revolution and earlier traditions of natural philosophy was less clear to participants than subsequent historiography implies; and that many scientists understood their work in religious or magical frameworks that later canonization has suppressed. What must remain unknowable: the specific cognitive processes of individual discovery, the role of unpublished or destroyed work in shaping the published record, and how different the Scientific Revolution would have looked had it been documented in real time rather than reconstructed afterward."
     }
   ],
   "comparativeNarrative": [
@@ -135,47 +140,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The dissemination of new scientific findings across Europe required the printing press \u2014 the Scientific Revolution's ideas could not have spread at the required speed without it"
     },
     {
-      "type": "Foundational",
       "label": "The Enlightenment",
       "entryId": "enlightenment",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Enlightenment extended the Scientific Revolution's epistemological authority from natural philosophy to politics, morality, and society \u2014 applying reason to human affairs as Newton had applied it to nature"
     },
     {
-      "type": "Consequential",
       "label": "On the Origin of Species",
       "entryId": "originOfSpecies",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Darwin's theory of evolution applied the Scientific Revolution's methods to the question of life's history \u2014 extending the mechanical, law-governed universe to include biology"
     },
     {
-      "type": "Thematic",
       "label": "Galileo",
+      "entryId": "galileo",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The figure whose work most dramatically embodies both the achievements and the conflicts of the Scientific Revolution \u2014 and whose trial is the most famous single episode in the history of science and religion"
     },
     {
-      "type": "Thematic",
       "label": "Mathematics",
       "entryId": "zero",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Zero and positional notation were preconditions for the mathematical language in which Newton expressed his laws \u2014 the Scientific Revolution's discoveries were expressed in a mathematics that itself had a history"
     },
     {
-      "type": "Future",
       "label": "Isaac Newton",
+      "entryId": "isaacNewton",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The culminating figure of the Scientific Revolution \u2014 whose Principia Mathematica unified Kepler's planetary laws and Galileo's terrestrial mechanics under a single mathematical framework"
     },
     {
-      "type": "Future",
       "label": "The Royal Society",
+      "entryId": "royalSociety",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The institutional expression of the Scientific Revolution \u2014 the first learned society dedicated to experimental natural philosophy, founded in London in 1660"
     },
     {
-      "type": "Gateway",
       "label": "The Scientific Revolution \u2014 Steven Shapin (1996)",
+      "relationship": "Gateway",
       "reason": "The best short introduction to the historiography as well as the history \u2014 Shapin's paradoxical opening sentence ('There was no such thing as the Scientific Revolution') announces the book's aim of questioning received narratives while presenting them"
     }
   ],

@@ -98,32 +98,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Aristotle",
+      "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Aristotle was Plato's most important student and most systematic critic \u2014 the Plato-Aristotle relationship defines the central divide in Western philosophy"
     },
     {
-      "type": "Foundational",
       "label": "Athens",
       "entryId": "athens",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Plato's philosophy is inseparable from the Athenian context that produced and killed Socrates \u2014 democracy, the agora, the tragedy of Socrates' trial are the conditions of Platonic philosophy"
     },
     {
-      "type": "Foundational",
       "label": "The Republic",
-      "reason": "The Republic is Plato's central philosophical dialogue \u2014 the work in which the Theory of Forms, the Allegory of the Cave, and his entire political philosophy are most fully developed; understanding Plato requires reading it alongside the secondary literature on its arguments",
-      "entryId": "theRepublic"
+      "entryId": "theRepublic",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The Republic is Plato's central philosophical dialogue \u2014 the work in which the Theory of Forms, the Allegory of the Cave, and his entire political philosophy are most fully developed; understanding Plato requires reading it alongside the secondary literature on its arguments"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Plato's most sustained argument is the critique of democracy in The Republic \u2014 understanding what Plato thought democracy was and why he distrusted it is essential for understanding democratic self-defense"
     },
     {
-      "type": "Parallel",
       "label": "Confucius",
       "entryId": "confucius",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Plato and Confucius are the founding philosophers of the Western and East Asian intellectual traditions \u2014 comparing them reveals how different civilizational contexts produce different philosophical starting points"
     }
   ],

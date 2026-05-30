@@ -88,40 +88,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Little Ice Age",
       "entryId": "littleIceAge",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The closest historical analogue \u2014 what a smaller temperature shift did to civilization over centuries, and the key calibration point for climate models"
     },
     {
-      "type": "Foundational",
       "label": "The Keeling Curve",
+      "entryId": "keelingCurve",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The direct measurement of atmospheric CO2 since 1958 \u2014 the single most important scientific dataset for establishing the reality and pace of the change"
     },
     {
-      "type": "Consequential",
       "label": "The Paris Agreement",
+      "entryId": "parisAgreement",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The current international governance framework \u2014 what it commits to, what current trajectories imply, and where the gap between commitment and implementation lies"
     },
     {
-      "type": "Consequential",
       "label": "The IPCC Assessment Reports",
+      "entryId": "iPCCAssessmentReports",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The periodic synthesis of climate science \u2014 essential for understanding both what the science establishes and how that consensus is produced"
     },
     {
-      "type": "Contrasting",
       "label": "The Ozone Crisis",
+      "entryId": "ozoneCrisis",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The successful international response to stratospheric ozone depletion \u2014 the closest analogue to a collective response to a global atmospheric problem, and instructive about what made it possible"
     },
     {
-      "type": "Parallel",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The paradigm case of a natural force exposing civilizational inequality and overwhelming institutional capacity \u2014 the structural comparison is more illuminating than the obvious differences"
     },
     {
-      "type": "Gateway",
       "label": "The Discovery of Global Warming \u2014 Spencer Weart",
+      "relationship": "Gateway",
       "reason": "The history of climate science \u2014 how the consensus developed, how long it has been established, and why it took so long to produce political response"
     }
   ],

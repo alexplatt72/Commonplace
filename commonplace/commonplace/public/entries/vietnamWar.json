@@ -137,42 +137,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Colonialism",
       "entryId": "colonialism",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Vietnam War was a continuation of anti-colonial resistance \u2014 understanding French colonialism in Indochina is essential for understanding what Ho Chi Minh and his movement were actually fighting for"
     },
     {
-      "type": "Foundational",
       "label": "The Cold War",
       "entryId": "coldWar",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "American intervention in Vietnam was driven by Cold War logic \u2014 the domino theory, fear of communist expansion, competition with the Soviet Union \u2014 that cannot be understood without the Cold War context"
     },
     {
-      "type": "Thematic",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Vietnam War was as much a nationalist struggle as a communist one \u2014 Ho Chi Minh's movement combined Marxist ideology with Vietnamese nationalism in ways that American Cold War frameworks consistently misread"
     },
     {
-      "type": "Thematic",
       "label": "The First World War",
       "entryId": "firstWorldWar",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Both wars demonstrate how institutional momentum and domestic political fear can drive states to escalate military commitments that senior leaders privately believe to be failing"
     },
     {
-      "type": "Future",
       "label": "Ho Chi Minh",
+      "entryId": "hoChiMinh",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Ho Chi Minh's trajectory \u2014 from Vietnamese nationalist to communist revolutionary to wartime leader \u2014 is one of the most significant political biographies of the 20th century and deserves its own dedicated entry"
     },
     {
-      "type": "Future",
       "label": "The Korean War",
+      "entryId": "koreanWar",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The Korean War immediately preceded Vietnam and established the pattern of American military intervention in Asian civil conflicts \u2014 the comparison reveals both the continuities in American Cold War strategy and the specific failures of the Vietnamese application"
     },
     {
-      "type": "Gateway",
       "label": "Embers of War \u2014 Fredrik Logevall (2012)",
+      "relationship": "Gateway",
       "reason": "Logevall's Pulitzer Prize-winning account of the origins of American involvement is the essential starting point \u2014 comprehensive, readable, and placing the American decision-making in the context of the colonial history that preceded it"
     }
   ],

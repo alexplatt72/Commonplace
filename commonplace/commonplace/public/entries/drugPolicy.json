@@ -85,33 +85,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The War on Drugs",
+      "entryId": "warOnDrugs",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The policy framework that has governed US drug enforcement since 1971 \u2014 understanding its origins reveals the political and moral context in which current alternatives are debated"
     },
     {
-      "type": "Consequential",
       "label": "Mass Incarceration",
+      "entryId": "massIncarceration",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Drug enforcement has been a major driver of the US incarceration rate \u2014 understanding the connection contextualizes the stakes of reform"
     },
     {
-      "type": "Parallel",
       "label": "Alcohol Prohibition",
+      "entryId": "alcoholProhibition",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "The closest US historical analogue \u2014 the 18th Amendment and its repeal \u2014 raises directly comparable questions about prohibition, enforcement, and consequences"
     },
     {
-      "type": "Contrasting",
       "label": "Portugal Drug Policy",
+      "entryId": "portugalDrugPolicy",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The most studied decriminalization experiment \u2014 20 years of data on what actually happened"
     },
     {
-      "type": "Foundational",
       "label": "The Opioid Crisis",
+      "entryId": "opioidCrisis",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The specific crisis driving current drug policy urgency \u2014 understanding the pharmaceutical industry origins clarifies what enforcement can and cannot address"
     },
     {
-      "type": "Gateway",
       "label": "Chasing the Scream \u2014 Johann Hari",
+      "relationship": "Gateway",
       "reason": "The most readable accessible account of drug prohibition's history and costs \u2014 advocacy, but well-documented advocacy"
     }
   ],

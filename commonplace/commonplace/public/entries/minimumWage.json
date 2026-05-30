@@ -85,33 +85,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Labor Economics",
+      "entryId": "laborEconomics",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The field within which the employment effects debate takes place \u2014 understanding the basic models helps you evaluate the competing claims"
     },
     {
-      "type": "Foundational",
       "label": "The Earned Income Tax Credit",
+      "entryId": "earnedIncomeTaxCredit",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The major alternative tool for raising incomes of low-wage workers \u2014 understanding the EITC clarifies what the minimum wage does that the EITC doesn't, and vice versa"
     },
     {
-      "type": "Consequential",
       "label": "Tipped Worker Wages",
+      "entryId": "tippedWorkerWages",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The federal tipped minimum ($2.13/hr since 1991) is a distinct policy with distinct politics \u2014 often discussed alongside the minimum wage but with different dynamics"
     },
     {
-      "type": "Parallel",
       "label": "UK Living Wage",
+      "entryId": "uKLivingWage",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "The most comparable international case \u2014 significant increases with modest employment effects \u2014 and the closest test of what US advocates predict"
     },
     {
-      "type": "Contrasting",
       "label": "Universal Basic Income",
+      "entryId": "universalBasicIncome",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "An alternative approach to addressing low-income workers' needs that sidesteps the employment effects concern entirely"
     },
     {
-      "type": "Gateway",
       "label": "'Minimum Wages and Employment' \u2014 Card & Krueger (1994)",
+      "relationship": "Gateway",
       "reason": "The paper that transformed the research methodology and shifted academic consensus \u2014 the most important single paper in the minimum wage literature"
     }
   ],

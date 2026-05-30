@@ -101,32 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Ancient Egypt",
       "entryId": "ancientEgypt",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Alexandria was built on the foundations of Egyptian civilization \u2014 its agricultural surplus, its geographic position, and its administrative traditions were the base on which the Ptolemaic cultural project was erected"
     },
     {
-      "type": "Parallel",
       "label": "Athens",
       "entryId": "athens",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Athens and Alexandria are the two great centers of Greek intellectual life \u2014 Athens in the classical period, Alexandria in the Hellenistic \u2014 and the relationship between them defines the arc of ancient Greek thought"
     },
     {
-      "type": "Consequential",
       "label": "The Islamic Golden Age",
+      "entryId": "islamicGoldenAge",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The knowledge preserved and synthesized in Alexandria was transmitted to the Islamic world through the Arabic translation movement \u2014 making Alexandria the relay station between ancient Greek knowledge and medieval Islamic science"
     },
     {
-      "type": "Parallel",
       "label": "Mesopotamia",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both Mesopotamia and Alexandria were centers where multiple civilizational traditions converged and synthesized \u2014 comparing them reveals different models of intellectual cross-pollination"
     },
     {
-      "type": "Thematic",
       "label": "Paper",
       "entryId": "paper",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Library of Alexandria required paper (in this case papyrus scrolls) as its physical substrate \u2014 and the relationship between Alexandria and later Islamic paper culture is part of the same transmission chain"
     }
   ],

@@ -101,33 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Paper's combination with the printing press in 15th-century Europe is one of the most consequential technological combinations in history \u2014 the printing revolution required paper to be already widely available"
     },
     {
-      "type": "Foundational",
       "label": "Zero",
       "entryId": "zero",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Zero and paper were both transmitted westward through the Islamic world \u2014 together they constitute the mathematical and material substrate of the quantitative revolution that enabled modern science"
     },
     {
-      "type": "Parallel",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Paper traveled west on the Silk Road in one of the most consequential technology transfers in history \u2014 the path from Chang'an to Baghdad to Toledo is the path from Chinese paper invention to European printing revolution"
     },
     {
-      "type": "Consequential",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Reformation was an information revolution as much as a theological one \u2014 Luther's ideas spread because paper and printing made them reproducible and distributable before ecclesiastical authority could contain them"
     },
     {
-      "type": "Thematic",
       "label": "Money",
       "entryId": "money",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Paper money and paper records of debt are the same technology applied to exchange \u2014 the paper trail that makes large-scale economic organization possible is the same substrate that makes large-scale administrative and intellectual organization possible"
     }
   ],

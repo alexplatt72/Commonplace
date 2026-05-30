@@ -131,35 +131,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Thematic",
       "label": "The Iliad",
       "entryId": "iliad",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Odyssey is the companion poem to the Iliad -- they depict the same world from different angles, and the contrast between the Iliad's values (heroic death, glory) and the Odyssey's values (survival, homecoming) is one of the most productive comparisons in ancient literature"
     },
     {
-      "type": "Foundational",
       "label": "Athens",
       "entryId": "athens",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Panathenaic festival in Athens was central to the standardization of the Homeric texts -- Athens's cultural centrality in the 6th-5th centuries BCE shaped how Homer was received and transmitted to subsequent generations"
     },
     {
-      "type": "Future",
       "label": "Virgil and the Aeneid",
+      "entryId": "virgilAndTheAeneid",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Virgil's Aeneid is written in deliberate dialogue with the Homeric tradition -- the Aeneid's first half mirrors the Odyssey and its second half mirrors the Iliad. Understanding Homer is essential for understanding Virgil and the entire subsequent tradition of Western epic."
     },
     {
-      "type": "Future",
       "label": "James Joyce's Ulysses",
+      "entryId": "jamesJoycesUlysses",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Joyce's Ulysses is the most ambitious literary reworking of the Odyssey -- mapping the entire epic onto a single day in Dublin, with Leopold Bloom as Odysseus and Molly as Penelope. Understanding the relationship between the two works illuminates both."
     },
     {
-      "type": "Future",
       "label": "Emily Wilson's translation (2017)",
+      "entryId": "emilyWilsonsTranslation2017",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Wilson's translation generated more discussion of the Odyssey's specific language -- about gender, slavery, and violence -- than any English translation in decades. The scholarly and popular conversation around it is itself a significant cultural event."
     },
     {
-      "type": "Gateway",
       "label": "The Odyssey -- trans. Emily Wilson (2017)",
+      "relationship": "Gateway",
       "reason": "Wilson's translation is the recommended entry point -- accessible, beautifully written, and asking different questions of the text than earlier translations in ways that make it the essential starting point for contemporary readers"
     }
   ],

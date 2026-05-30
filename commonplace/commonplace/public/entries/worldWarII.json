@@ -142,49 +142,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The First World War",
       "entryId": "firstWorldWar",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Second World War grew directly from the unresolved tensions of the First -- the Versailles settlement, the Depression it contributed to, and the nationalist resentments it generated were the structural conditions that enabled Hitler's rise"
     },
     {
-      "type": "Foundational",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Nazi ideology was the most extreme expression of ethnic nationalism -- understanding how nationalism can transform into genocidal ideology is essential for understanding the Holocaust and the war"
     },
     {
-      "type": "Consequential",
       "label": "The Cold War",
       "entryId": "coldWar",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Second World War produced the Cold War directly -- the alliance between the United States and the Soviet Union collapsed within years of Germany's defeat, and the Cold War was structured by the military and political geography of the war's ending"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The post-war reconstruction of West Germany and Japan as democracies, and the creation of the United Nations and Universal Declaration of Human Rights, represent the most ambitious effort in history to build democratic institutions from the ruins of authoritarian collapse"
     },
     {
-      "type": "Thematic",
       "label": "Colonialism",
       "entryId": "colonialism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Mark Mazower's analysis of Nazi empire-building as a radicalization of colonial practices connects the Holocaust to the broader history of European colonialism in analytically productive ways"
     },
     {
-      "type": "Consequential",
       "label": "The Russian Revolution",
       "entryId": "russianRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Hitler's ideological fixation on destroying Bolshevism -- central to the invasion of the Soviet Union -- makes the Russian Revolution's creation of the Soviet state essential context for understanding the war's Eastern dimension"
     },
     {
-      "type": "Future",
       "label": "The Holocaust",
+      "entryId": "holocaust",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The Holocaust deserves dedicated treatment as a subject in its own right -- the decision-making, the perpetrators, the victims, the bystanders, and the post-war reckoning all require more analysis than this entry can provide"
     },
     {
-      "type": "Gateway",
       "label": "The Second World War -- Antony Beevor (2012)",
+      "relationship": "Gateway",
       "reason": "Beevor's one-volume history draws on archives from multiple countries and covers all major theatres -- the most accessible comprehensive narrative account available"
     }
   ],

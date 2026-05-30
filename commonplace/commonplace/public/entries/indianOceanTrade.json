@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Navigation",
       "entryId": "navigation",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The monsoon system and the navigational knowledge to use it were the physical prerequisites of Indian Ocean trade \u2014 understanding navigation illuminates what made the system technically possible"
     },
     {
-      "type": "Consequential",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Buddhism spread from India to Southeast Asia and China primarily through Indian Ocean trade routes \u2014 the trade system is the mechanism through which Buddhism became a world religion"
     },
     {
-      "type": "Consequential",
       "label": "The Columbian Exchange",
       "entryId": "columbianExchange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "European entry into the Indian Ocean was motivated by the desire to access the spice trade directly \u2014 the Columbian Exchange is partly a consequence of the Indian Ocean system's exclusion of Europeans"
     },
     {
-      "type": "Parallel",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The overland Silk Road and the maritime Indian Ocean routes were complementary systems connecting the same civilizations \u2014 comparing them illuminates different models of long-distance trade organization"
     },
     {
-      "type": "Thematic",
       "label": "The Gupta Empire",
       "entryId": "guptaEmpire",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Gupta period's intellectual achievements were transmitted globally partly through Indian Ocean trade networks \u2014 the routes that carried pepper also carried mathematical texts"
     },
     {
-      "type": "Gateway",
       "label": "Trade and Civilisation in the Indian Ocean \u2014 K.N. Chaudhuri (1985)",
-      "entryId": "indianOceanTrade",
+      "relationship": "Gateway",
       "reason": "The foundational modern analysis that established the Indian Ocean as a coherent historical unit \u2014 the essential starting point for serious study"
     }
   ],

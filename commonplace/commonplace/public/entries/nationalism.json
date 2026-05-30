@@ -85,43 +85,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Assassination of Franz Ferdinand",
       "entryId": "franzFerdinand",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Serbian nationalism was the immediate context for the assassination \u2014 and the July Crisis reveals how nationalist movements and imperial structures interact catastrophically"
     },
     {
-      "type": "Consequential",
       "label": "Napoleon Bonaparte",
       "entryId": "napoleon",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Napoleon's conquests inadvertently generated European nationalism \u2014 subject peoples discovered national identity partly as a weapon of resistance against French domination"
     },
     {
-      "type": "Foundational",
       "label": "The French Revolution",
-      "reason": "The first explicit link between national identity and political legitimacy \u2014 the sovereignty of the nation replaced the sovereignty of the king",
-      "entryId": "frenchRevolution"
+      "entryId": "frenchRevolution",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The first explicit link between national identity and political legitimacy \u2014 the sovereignty of the nation replaced the sovereignty of the king"
     },
     {
-      "type": "Consequential",
       "label": "The First World War",
-      "reason": "The war in which nationalist conflicts within the European imperial system produced catastrophe \u2014 nationalism as the mechanism that converted a local assassination into a world war",
-      "entryId": "firstWorldWar"
+      "entryId": "firstWorldWar",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The war in which nationalist conflicts within the European imperial system produced catastrophe \u2014 nationalism as the mechanism that converted a local assassination into a world war"
     },
     {
-      "type": "Contrasting",
       "label": "Cosmopolitanism",
+      "entryId": "cosmopolitanism",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The normative concept that most directly challenges nationalism's claim that national community creates special obligations \u2014 the argument that we owe equal concern to all humans regardless of nationality"
     },
     {
-      "type": "Parallel",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Nationalism and democracy have been historically intertwined \u2014 national self-determination was the framework within which democratic self-governance was demanded"
     },
     {
-      "type": "Gateway",
       "label": "Imagined Communities \u2014 Benedict Anderson",
+      "relationship": "Gateway",
       "reason": "The most influential single work in nationalism studies \u2014 and genuinely readable. The essential entry point."
     }
   ],

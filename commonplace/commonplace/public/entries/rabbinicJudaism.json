@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Bible",
       "entryId": "bible",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Torah is the foundation on which Rabbinic Judaism builds \u2014 the Written Torah that the Oral Torah (Mishnah and Talmud) interprets, extends, and applies to every aspect of life"
     },
     {
-      "type": "Foundational",
       "label": "The Jewish Diaspora",
       "entryId": "jewishDiaspora",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Rabbinic Judaism is both a product of and the organizing system for the diaspora \u2014 understanding one requires understanding the other; they are two aspects of the same historical formation"
     },
     {
-      "type": "Consequential",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The printing of the Talmud and legal codes standardized Jewish practice across the diaspora in ways impossible with manuscripts \u2014 the printing press transformed how Rabbinic Judaism reproduced itself"
     },
     {
-      "type": "Parallel",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Roman destruction of the Temple is the precipitating event that made Rabbinic Judaism necessary \u2014 the relationship between Roman imperial power and Jewish religious transformation is direct and causal"
     },
     {
-      "type": "Thematic",
       "label": "Islam",
-      "reason": "Islamic law (fiqh) and Rabbinic halakha share structural similarities and intellectual influences \u2014 the comparison illuminates what is distinctive about each tradition and what they share as Abrahamic legal systems",
-      "entryId": "islam"
+      "entryId": "islam",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Islamic law (fiqh) and Rabbinic halakha share structural similarities and intellectual influences \u2014 the comparison illuminates what is distinctive about each tradition and what they share as Abrahamic legal systems"
     },
     {
-      "type": "Gateway",
       "label": "Jewish Literacy \u2014 Joseph Telushkin (1991)",
-      "entryId": "rabbinicJudaism",
+      "relationship": "Gateway",
       "reason": "Telushkin's comprehensive guide to Jewish religious concepts, history, and practice is the clearest accessible introduction to what Rabbinic Judaism actually contains \u2014 essential first reading for anyone outside the tradition"
     }
   ],

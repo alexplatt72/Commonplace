@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Fire",
       "entryId": "fire",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Fire and forest are inseparable in human history \u2014 fire was the primary tool for forest clearing, and the management of fire in forest landscapes was one of the most important technologies in human prehistory"
     },
     {
-      "type": "Foundational",
       "label": "Paper",
       "entryId": "paper",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Paper is forest made intellectual \u2014 the material foundation of literacy, record-keeping, and the transmission of knowledge across time is wood pulp; the history of paper is the history of forests converted into information"
     },
     {
-      "type": "Thematic",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Deforestation is both a driver of and a consequence of climate change \u2014 the forest-climate relationship is one of the most important feedbacks in the Earth system, and tropical forest loss is one of the most significant human contributions to atmospheric carbon"
     },
     {
-      "type": "Thematic",
       "label": "The Columbian Exchange",
       "entryId": "columbianExchange",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The demographic collapse of indigenous Americans after 1492 caused the reforestation of millions of hectares of previously cultivated land \u2014 the 'Great Dying' may have caused a measurable global cooling event through this reforestation effect"
     },
     {
-      "type": "Consequential",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Iron smelting required enormous quantities of charcoal \u2014 every iron-using civilization was also a forest-consuming civilization, and the geography of early iron production tracks the geography of forest availability"
     },
     {
-      "type": "Gateway",
       "label": "Seeing Like a State \u2014 James Scott (1998)",
-      "entryId": "theForest",
+      "relationship": "Gateway",
       "reason": "Scott's analysis of scientific forestry as a paradigm case of how states impose simplifying order on complex systems \u2014 the forest chapter is among the most analytically powerful in the book"
     }
   ],

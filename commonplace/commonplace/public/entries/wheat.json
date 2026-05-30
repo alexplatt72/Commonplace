@@ -85,30 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Mesopotamia",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The first grain-based civilizations \u2014 where the granary, the state, writing, and mathematics all developed together"
     },
     {
-      "type": "Foundational",
       "label": "Iron",
+      "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The material foundation that made large-scale wheat agriculture possible \u2014 the plow, the scythe, and grain storage infrastructure all required iron"
     },
     {
-      "type": "Consequential",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The paradigmatic case of what happens when civilizational dependency on grain-based sedentary settlement is exposed to epidemic disease"
     },
     {
-      "type": "Parallel",
       "label": "Coal",
+      "entryId": "coal",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The industrial era's foundational substrate \u2014 how coal replicated wheat's pattern of enabling population growth, creating dependency, and producing catastrophic feedback"
     },
     {
-      "type": "Gateway",
       "label": "Against the Grain \u2014 James C. Scott (2017)",
+      "relationship": "Gateway",
       "reason": "The most intellectually challenging single work about what grain did to civilization and what civilization did to people who grew it"
     }
   ],

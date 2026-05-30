@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Parallel",
       "label": "Ancient Egypt",
       "entryId": "ancientEgypt",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both are ancient Mediterranean civilizations whose historical legacy is shaped by the surviving sources \u2014 contrasting Carthage (known through hostile sources) with Egypt (known through its own abundant records) illuminates how the nature of surviving evidence shapes historical understanding"
     },
     {
-      "type": "Consequential",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Rome's destruction of Carthage was the decisive event in Roman conquest of the western Mediterranean \u2014 understanding what Carthage was and why Rome destroyed it is prerequisite to understanding Roman imperial expansion"
     },
     {
-      "type": "Foundational",
       "label": "Navigation",
       "entryId": "navigation",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Carthage's power was fundamentally maritime \u2014 its commercial empire and military capacity both rested on naval supremacy; the Carthaginian tradition of maritime exploration is one of the earliest records of systematic exploration"
     },
     {
-      "type": "Thematic",
       "label": "Alexandria",
       "entryId": "alexandria",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Both were great ancient cities whose libraries were destroyed \u2014 comparing what survived (Alexandria's legacy) with what did not (Carthage's) illuminates how intellectual heritage is preserved or lost through historical catastrophe"
     },
     {
-      "type": "Thematic",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Carthage controlled the western Mediterranean's primary trade routes as the Silk Road connected East Asia to the Mediterranean \u2014 comparing the two commercial systems illuminates different models of trade-based power"
     },
     {
-      "type": "Gateway",
       "label": "Carthage \u2014 Serge Lancel (1995)",
-      "entryId": "carthage",
+      "relationship": "Gateway",
       "reason": "The most comprehensive scholarly synthesis \u2014 Lancel combines archaeological and textual evidence to produce the fullest available account of Punic civilization"
     }
   ],

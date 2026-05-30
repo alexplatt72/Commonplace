@@ -85,37 +85,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Mesopotamia",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Babylonian predecessor to arithmetic zero \u2014 the positional placeholder that was the first step in a concept that India completed fourteen centuries later"
     },
     {
-      "type": "Consequential",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The printing press accelerated the adoption of Hindu-Arabic numerals in Europe by enabling exact reproduction of mathematical texts \u2014 zero's diffusion and the press's diffusion are historically entangled"
     },
     {
-      "type": "Consequential",
       "label": "Probability",
+      "entryId": "probability",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The other Conceptual Foundation \u2014 probability theory, built on the same algebraic and analytic tools that zero enables, and transforming what could be known about uncertainty and risk"
     },
     {
-      "type": "Parallel",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The paradigm enabling Material Foundation \u2014 comparing zero (enabling Conceptual Foundation) to wheat (enabling Material Foundation) reveals how different types of substrates reorganize civilization through different mechanisms"
     },
     {
-      "type": "Contrasting",
       "label": "Mosquitoes",
       "entryId": "mosquitoes",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The paradigm adversarial Foundation \u2014 the contrast between a concept that expanded what could be thought and an organism that constrained where civilization could go"
     },
     {
-      "type": "Gateway",
       "label": "Zero: The Biography of a Dangerous Idea \u2014 Charles Seife (2000)",
+      "relationship": "Gateway",
       "reason": "The most accessible entry into zero's history and philosophical significance \u2014 a starting point before the more rigorous scholarly literature"
     }
   ],

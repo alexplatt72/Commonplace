@@ -83,34 +83,45 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Natural Theology \u2014 Paley's Watchmaker",
+      "entryId": "naturalTheologyPaleysWatchmaker",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The framework the Origin was dismantling \u2014 understanding it makes Darwin's achievement specific"
     },
     {
-      "type": "Consequential",
       "label": "The Modern Synthesis",
+      "entryId": "modernSynthesis",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The 20th century integration of Darwinian selection with Mendelian genetics \u2014 which substantially confirmed and extended the Origin's core claims"
     },
     {
-      "type": "Consequential",
       "label": "Social Darwinism",
+      "entryId": "socialDarwinism",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The appropriation of evolutionary language for social and political ideology \u2014 the most consequential misreading in the Origin's reception history"
     },
     {
-      "type": "Contrasting",
       "label": "Aristotle \u2014 Teleological Biology",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Aristotle's teleological approach to biology \u2014 understanding organisms through their purposes \u2014 was precisely what Darwin's mechanism of natural selection made unnecessary as an explanation"
     },
     {
-      "type": "Parallel",
       "label": "Copernicus \u2014 De Revolutionibus",
+      "entryId": "copernicusDeRevolutionibus",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "The closest structural parallel: a scientific text that displaced an entrenched cosmology and generated sustained cultural conflict"
     },
     {
-      "type": "Descendant",
       "label": "The Selfish Gene \u2014 Richard Dawkins",
+      "entryId": "selfishGeneRichardDawkins",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The most influential popular elaboration of Darwinian thinking \u2014 and a source of some of the most contested extensions of evolutionary logic to human behavior"
     }
   ],

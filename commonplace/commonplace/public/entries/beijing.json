@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Han Dynasty",
       "entryId": "hanDynasty",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The political and cultural tradition that Beijing's imperial architecture embodies \u2014 the Han established the institutional and cosmological framework that all subsequent Chinese dynasties operated within"
     },
     {
-      "type": "Parallel",
       "label": "Ancient Egypt",
       "entryId": "ancientEgypt",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both civilizations built capitals as cosmological diagrams \u2014 the parallel illuminates how political authority is expressed through architecture and how the built environment encodes political theology"
     },
     {
-      "type": "Consequential",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Beijing's strategic location at the intersection of the north China plain and the steppe frontier made it the natural command center for managing Silk Road trade and steppe frontier relations"
     },
     {
-      "type": "Thematic",
       "label": "Empire",
       "entryId": "empire",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Beijing is the paradigm case of an imperial capital \u2014 a city whose entire purpose is the concentration and expression of imperial authority"
     },
     {
-      "type": "Parallel",
       "label": "Varanasi",
       "entryId": "varanasi",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both are cities whose identity is constituted by a specific kind of meaning rather than practical function \u2014 the comparison illuminates how different kinds of meaning produce different kinds of urban continuity"
     },
     {
-      "type": "Gateway",
       "label": "Remaking Beijing \u2014 Wu Hung (2005)",
-      "entryId": "beijing",
+      "relationship": "Gateway",
       "reason": "The best analytical account of how the Communist government transformed Beijing's symbolic landscape \u2014 essential for understanding the relationship between imperial and Communist political architecture"
     }
   ],

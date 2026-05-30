@@ -82,32 +82,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "On the Origin of Species",
       "entryId": "originOfSpecies",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The work itself \u2014 Darwin\u2019s argument in full, for readers ready to engage with the primary text"
     },
     {
-      "type": "Foundational",
       "label": "Probability",
       "entryId": "probability",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Natural selection is a probabilistic process; Darwin\u2019s theory and probability theory were near-contemporaneous developments that have increasingly converged"
     },
     {
-      "type": "Consequential",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Evolutionary biology provides the framework for understanding epidemic disease \u2014 pathogen evolution is natural selection in action at visible timescales"
     },
     {
-      "type": "Parallel",
       "label": "Aristotle",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The founding of systematic biology versus its transformation \u2014 Darwin\u2019s relationship to Aristotle\u2019s classification tradition is the history of biology in two figures"
     },
     {
-      "type": "Gateway",
       "label": "The Selfish Gene \u2014 Richard Dawkins (1976)",
+      "relationship": "Gateway",
       "reason": "The gene-centered view of evolution \u2014 the best introduction to post-Modern Synthesis Darwinism for non-specialists"
     }
   ],

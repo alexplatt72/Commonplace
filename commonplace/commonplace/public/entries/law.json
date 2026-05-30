@@ -101,33 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Mesopotamia",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The first written law codes emerged in Mesopotamia \u2014 the Code of Ur-Nammu and the Code of Hammurabi are the foundational documents of legal history"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Democratic governance and rule of law are deeply connected \u2014 democratic systems claim that law derives its authority from popular consent, while rule of law constrains the power of democratic majorities"
     },
     {
-      "type": "Consequential",
       "label": "Empire",
       "entryId": "empire",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Law is the primary administrative technology of empire \u2014 Roman law spread with Roman imperial expansion, and colonial law was one of the primary mechanisms through which European empires governed subject populations"
     },
     {
-      "type": "Consequential",
       "label": "Justice",
       "entryId": "justice",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Law and justice are related but not identical \u2014 the history of law is partly the history of the gap between what law does and what justice requires, and the struggle to close that gap"
     },
     {
-      "type": "Parallel",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Reformation created the first major challenge to papal legal authority in Western Europe and contributed to the development of secular law and the separation of religious and civil legal jurisdiction"
     }
   ],

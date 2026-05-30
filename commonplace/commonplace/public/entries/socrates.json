@@ -126,48 +126,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Plato",
       "entryId": "plato",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Socrates's most important student and the primary source for his philosophy \u2014 without Plato's dialogues, Socrates would be as obscure as most of the pre-Socratics"
     },
     {
-      "type": "Foundational",
       "label": "The Republic",
       "entryId": "theRepublic",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Plato's dialogue in which the Socratic method of questioning reaches its fullest expression \u2014 and where the question of what justice is receives its most systematic treatment"
     },
     {
-      "type": "Thematic",
       "label": "Aristotle",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Plato's student and Socrates's philosophical grandson \u2014 who carried forward the tradition while systematically revising it"
     },
     {
-      "type": "Thematic",
       "label": "Athens",
       "entryId": "athens",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The political and cultural world that produced Socrates \u2014 and that ultimately put him on trial"
     },
     {
-      "type": "Thematic",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Athenian democratic system that tried and executed Socrates \u2014 and whose relationship to philosophical authority Socrates's life and death permanently problematized"
     },
     {
-      "type": "Future",
       "label": "The Sophists",
+      "entryId": "sophists",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Protagoras, Gorgias, and the professional teachers of rhetoric whose relativism Socrates opposed \u2014 and without whom his own philosophical project cannot be understood"
     },
     {
-      "type": "Future",
       "label": "Stoicism",
+      "entryId": "stoicism",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The philosophical school that most directly claimed Socratic descent \u2014 taking from Socrates the ideas that virtue is sufficient for happiness and that the philosopher should be indifferent to external goods"
     },
     {
-      "type": "Gateway",
       "label": "Apology \u2014 Plato",
+      "relationship": "Gateway",
       "reason": "The shortest and most historically reliable account of Socrates's own philosophical self-presentation \u2014 his defense speech at his trial \u2014 the essential first text for anyone approaching Socratic philosophy"
     }
   ],

@@ -85,39 +85,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Athenian Democracy",
+      "entryId": "athenianDemocracy",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The institutional system that Athens developed and that became the origin point of Western democratic theory \u2014 understanding the structure reveals what the symbol is actually built on"
     },
     {
-      "type": "Foundational",
       "label": "Aristotle",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Macedonian philosopher who studied in Athens, taught there, and produced the most systematic ancient account of political systems \u2014 whose work was produced partly in critical response to Athenian democracy"
     },
     {
-      "type": "Consequential",
       "label": "The Parthenon Marbles Dispute",
+      "entryId": "parthenonMarblesDispute",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The concentrated contemporary form of questions about colonial cultural extraction and what decolonization requires in the cultural sphere"
     },
     {
-      "type": "Consequential",
       "label": "Western Political Philosophy",
+      "entryId": "westernPoliticalPhilosophy",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The tradition of political thought that has consistently invoked Athens as precedent and origin \u2014 from Machiavelli through Rousseau through contemporary democratic theory"
     },
     {
-      "type": "Contrasting",
       "label": "Sparta",
+      "entryId": "sparta",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The nearest contemporary rival whose political system \u2014 stable, militaristic, non-democratic \u2014 attracted as many ancient admirers as Athens did, and whose absence from the Western origin narrative is itself analytically significant"
     },
     {
-      "type": "Parallel",
       "label": "Rome",
+      "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The other ancient city whose political heritage Western tradition has consistently invoked \u2014 comparing Rome and Athens reveals what each symbol was needed to mean"
     },
     {
-      "type": "Gateway",
       "label": "The Peloponnesian War \u2014 Thucydides",
+      "relationship": "Gateway",
       "reason": "The most honest ancient account of Athenian power \u2014 Pericles's funeral oration and the Melian Dialogue in the same text reveal the gap between Athenian democratic idealism and Athenian imperial practice"
     }
   ],

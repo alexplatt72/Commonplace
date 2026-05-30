@@ -85,35 +85,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Medieval Warm Period",
+      "entryId": "medievalWarmPeriod",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The warmer climate that preceded the Little Ice Age \u2014 understanding it reveals what the cooling disrupted"
     },
     {
-      "type": "Consequential",
       "label": "The French Revolution",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The harvest failures of the 1780s contributed to the economic conditions that made 1789 revolutionary \u2014 one of the most debated climate-history connections"
     },
     {
-      "type": "Consequential",
       "label": "The Year Without a Summer (1816)",
+      "entryId": "yearWithoutASummer1816",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The Tambora eruption's acute amplification of Little Ice Age conditions \u2014 the threshold moment that reveals nonlinear climate-catastrophe dynamics"
     },
     {
-      "type": "Contrasting",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The contemporary parallel \u2014 same mechanism (climate constraining civilization) in the opposite direction and at potentially greater speed and magnitude"
     },
     {
-      "type": "Parallel",
       "label": "The Bronze Age Collapse",
+      "entryId": "bronzeAgeCollapse",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "Another case of civilizational disruption with a possible climate dimension \u2014 the recurring pattern of climate and crisis"
     },
     {
-      "type": "Gateway",
       "label": "A Cultural History of Climate \u2014 Wolfgang Behringer",
+      "relationship": "Gateway",
       "reason": "The most accessible scholarly treatment \u2014 connects climate to culture, politics, and everyday life across the Little Ice Age"
     }
   ],

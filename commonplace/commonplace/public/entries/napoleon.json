@@ -82,34 +82,41 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The French Revolution",
+      "entryId": "frenchRevolution",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The event that created the conditions for Napoleon's rise"
     },
     {
-      "type": "Consequential",
       "label": "The Haitian Revolution",
+      "entryId": "haitianRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The revolution Napoleon tried and failed to crush \u2014 the most radical realization of the principles Napoleon claimed to represent"
     },
     {
-      "type": "Consequential",
       "label": "European Nationalism",
+      "entryId": "europeanNationalism",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The force Napoleon inadvertently created by showing subject peoples the power of national mobilization"
     },
     {
-      "type": "Parallel",
       "label": "The Communist Manifesto",
       "entryId": "manifesto",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Another attempt to resolve the revolutionary-legitimacy tension \u2014 through class analysis and political programme rather than individual will and military power"
     },
     {
-      "type": "Gateway",
       "label": "The Napoleonic Code",
+      "relationship": "Gateway",
       "reason": "The most accessible entry into Napoleon's lasting significance \u2014 still operative in dozens of jurisdictions"
     },
     {
-      "type": "Gateway",
       "label": "The Concordat of 1801",
+      "relationship": "Gateway",
       "reason": "Napoleon's religious settlement \u2014 the entry point into his governing philosophy of controlled institutional integration"
     }
   ],

@@ -85,30 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The iron plow was the material precondition for wheat agriculture at scale in the heavy soils of northern Europe \u2014 these two foundations are causally linked"
     },
     {
-      "type": "Consequential",
       "label": "The Industrial Revolution",
+      "entryId": "industrialRevolution",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Industrial civilization was built on iron and steel \u2014 the coke-based iron production of the 18th century was the material skeleton of everything that followed"
     },
     {
-      "type": "Consequential",
       "label": "Mesopotamia",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The first iron-using civilizations in the Near East; the Bronze Age palace economies that iron ultimately disrupted were Mesopotamian in character"
     },
     {
-      "type": "Parallel",
       "label": "Coal",
+      "entryId": "coal",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Iron's deforestation problem generated the transition to coal; iron and coal are the co-foundations of industrial civilization"
     },
     {
-      "type": "Gateway",
       "label": "The Bronze Age Collapse \u2014 Eric Cline (2014)",
+      "relationship": "Gateway",
       "reason": "The best single account of the civilization iron followed \u2014 and the contested relationship between iron's spread and the collapse of the Bronze Age world"
     }
   ],

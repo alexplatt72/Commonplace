@@ -137,48 +137,57 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Jerusalem",
       "entryId": "jerusalem",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Crusades were launched specifically to recover Jerusalem \u2014 understanding the city's multiple sacred meanings is essential to understanding why it generated such extraordinary political and military mobilization"
     },
     {
-      "type": "Foundational",
       "label": "Islam",
       "entryId": "islam",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Crusades were a response to \u2014 and a shaping force upon \u2014 Islamic civilization in the Levant; understanding Islam's own political and religious development is essential context"
     },
     {
-      "type": "Thematic",
       "label": "Colonialism",
       "entryId": "colonialism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Crusader states involved Western European settlers governing non-Western populations \u2014 the structural parallels and differences with modern colonialism are analytically productive"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Modern nationalist movements in the Middle East have frequently invoked the Crusades as a template for understanding Western intervention \u2014 the Crusading memory has shaped modern political consciousness in ways that require historical analysis"
     },
     {
-      "type": "Parallel",
       "label": "The Mongol Empire",
       "entryId": "mongolEmpire",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Mongols and the Crusaders were the two great external forces reshaping the Middle East simultaneously in the 13th century \u2014 their interaction, including the Mongol destruction of the Abbasid Caliphate, shapes the world the Crusaders were operating in"
     },
     {
-      "type": "Future",
       "label": "Saladin",
+      "entryId": "saladin",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Saladin's recapture of Jerusalem in 1187 and his conduct toward the defeated Crusaders \u2014 releasing them rather than massacring them, in contrast to what the Crusaders had done in 1099 \u2014 has made him one of the most significant and contested figures in both Islamic and Western historical memory"
     },
     {
-      "type": "Future",
       "label": "The Military Orders \u2014 Templars and Hospitallers",
+      "entryId": "militaryOrdersTemplarsAndHospitallers",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The military religious orders that sustained the Crusader states for two centuries represent a specific and consequential institutional innovation \u2014 combining monasticism and military function \u2014 whose history and legacy deserve dedicated treatment"
     },
     {
-      "type": "Gateway",
       "label": "The Crusades: The War for the Holy Land \u2014 Thomas Asbridge (2010)",
+      "relationship": "Gateway",
       "reason": "Asbridge's narrative history is the most accessible serious scholarly account, drawing on Latin, Arabic, and Byzantine sources to present the Crusades from multiple perspectives simultaneously"
     }
   ],

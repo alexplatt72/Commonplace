@@ -94,38 +94,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Alliance System (1870\u20131914)",
+      "entryId": "allianceSystem18701914",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The structural conditions that made the assassination convertible into world war"
     },
     {
-      "type": "Foundational",
       "label": "Austro-Hungarian Nationalism Problem",
+      "entryId": "austroHungarianNationalismProblem",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The underlying political crisis the assassination crystallized"
     },
     {
-      "type": "Consequential",
       "label": "The First World War",
+      "entryId": "firstWorldWar",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "What the assassination activated \u2014 and what it produced"
     },
     {
-      "type": "Consequential",
       "label": "The Treaty of Versailles",
+      "entryId": "treatyOfVersailles",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The settlement that shaped the next twenty years and the next war"
     },
     {
-      "type": "Contrasting",
       "label": "The Cuban Missile Crisis",
+      "entryId": "cubanMissileCrisis",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "Another moment where small decisions under pressure could have produced catastrophe \u2014 and didn't"
     },
     {
-      "type": "Parallel",
       "label": "The Gulf of Tonkin Incident",
+      "entryId": "gulfOfTonkinIncident",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "Another triggering event whose actual significance was substantially constructed in its political aftermath"
     },
     {
-      "type": "Gateway",
       "label": "The Guns of August \u2014 Barbara Tuchman",
+      "relationship": "Gateway",
       "reason": "The most readable account of the first weeks of the war \u2014 the essential entry point"
     }
   ],

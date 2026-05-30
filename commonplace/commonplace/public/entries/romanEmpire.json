@@ -85,32 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Rome was a grain empire \u2014 the annona (grain supply to Rome) was a primary administrative function, and control of Egyptian and North African grain was a strategic priority throughout the empire"
     },
     {
-      "type": "Foundational",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Roman military supremacy rested on iron \u2014 the legionary's equipment, the siege machinery, the road-building tools were all iron-dependent"
     },
     {
-      "type": "Consequential",
       "label": "The Black Death",
       "entryId": "blackDeath",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Justinianic Plague (541-549 CE) was the first bubonic plague pandemic and struck the Eastern Empire at a critical moment of attempted reconquest of the West; Rome's road network was later the vector for plague spread across Europe"
     },
     {
-      "type": "Parallel",
       "label": "Jerusalem",
       "entryId": "jerusalem",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Rome destroyed the Second Temple in 70 CE, creating the Diaspora that shaped Judaism for two millennia; the Roman Empire is the political context for Christianity's emergence"
     },
     {
-      "type": "Gateway",
       "label": "The Fall of Rome and the End of Civilization \u2014 Bryan Ward-Perkins (2005)",
+      "relationship": "Gateway",
       "reason": "The most accessible account of what the end of Rome meant materially \u2014 and the strongest argument that transformation language understates the genuine catastrophe"
     }
   ],

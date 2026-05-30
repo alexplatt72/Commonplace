@@ -85,32 +85,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "Napoleon Bonaparte",
       "entryId": "napoleon",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Revolution\u2019s direct product \u2014 it created the conditions that made Napoleon possible and the ideology he spread across Europe"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Modern nationalism was substantially created by the Revolution \u2014 the concept that nations as peoples have rights to self-determination came from 1789"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Revolution established popular sovereignty as the organizing principle of legitimate government, which is the philosophical foundation of modern democracy"
     },
     {
-      "type": "Parallel",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Both events reorganized the relationship between authority and individual conscience, produced decades of violence, and permanently restructured European institutions"
     },
     {
-      "type": "Gateway",
       "label": "On Revolution \u2014 Hannah Arendt (1963)",
+      "relationship": "Gateway",
       "reason": "The most analytically powerful single comparison of the American and French revolutions \u2014 explains why one produced stable institutions and the other produced Napoleon"
     }
   ],

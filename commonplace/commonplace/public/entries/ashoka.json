@@ -125,37 +125,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Ashoka's conversion to Buddhism was the most consequential patronage the tradition received in its first centuries \u2014 understanding the Buddha himself is essential to understanding what Ashoka converted to and why it mattered"
     },
     {
-      "type": "Consequential",
       "label": "The Gupta Empire",
       "entryId": "guptaEmpire",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Gupta Empire succeeded the Mauryas and represents the next major phase of Indian imperial history \u2014 the comparison reveals how India's dominant religious and political traditions evolved after Ashoka"
     },
     {
-      "type": "Thematic",
       "label": "Colonialism",
       "entryId": "colonialism",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Ashoka's dhamma program represents an unusual attempt to govern a diverse multi-ethnic empire through ethical persuasion rather than coercion \u2014 a comparison with colonial governance reveals the structural differences and similarities between ancient and modern empire"
     },
     {
-      "type": "Parallel",
       "label": "The Roman Empire",
       "entryId": "romanEmpire",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Rome and the Maurya Empire were roughly contemporary and both faced the challenge of governing vast, ethnically diverse territories \u2014 comparing their administrative and legitimation strategies illuminates both"
     },
     {
-      "type": "Future",
       "label": "The Arthashastra \u2014 Kautilya",
+      "entryId": "arthashastraKautilya",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The political treatise attributed to Chandragupta Maurya's advisor Kautilya represents the opposite political philosophy from Ashokan dhamma \u2014 realpolitik versus ethical governance \u2014 and the contrast is essential for understanding ancient Indian political thought"
     },
     {
-      "type": "Gateway",
       "label": "Ashoka in Ancient India \u2014 Nayanjot Lahiri (2015)",
+      "relationship": "Gateway",
       "reason": "Lahiri's account draws on the latest archaeological evidence to reconstruct Ashoka's world with unusual concreteness \u2014 the best entry point for readers who want the historical figure rather than the legend"
     }
   ],

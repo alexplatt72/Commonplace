@@ -85,42 +85,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Enlightenment's direct intellectual ancestor \u2014 the individual conscience and reasoned authority Luther established became the foundation Enlightenment thinkers secularized and extended"
     },
     {
-      "type": "Foundational",
       "label": "The Scientific Revolution",
-      "reason": "The Enlightenment's epistemological foundation \u2014 the demonstration that empirical investigation rather than received authority was the way to understand reality",
-      "entryId": "scientificRevolution"
+      "entryId": "scientificRevolution",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The Enlightenment's epistemological foundation \u2014 the demonstration that empirical investigation rather than received authority was the way to understand reality"
     },
     {
-      "type": "Consequential",
       "label": "The French Revolution",
-      "reason": "The most dramatic attempt to actually reorganize society according to Enlightenment principles \u2014 and its most disturbing outcome",
-      "entryId": "frenchRevolution"
+      "entryId": "frenchRevolution",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The most dramatic attempt to actually reorganize society according to Enlightenment principles \u2014 and its most disturbing outcome"
     },
     {
-      "type": "Consequential",
       "label": "The Communist Manifesto",
       "entryId": "manifesto",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Heir and critic of the Enlightenment simultaneously \u2014 Marx worked within Enlightenment categories (reason, progress, historical law) while critiquing their liberal applications"
     },
     {
-      "type": "Contrasting",
       "label": "Romanticism",
+      "entryId": "romanticism",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The movement that arose in reaction against Enlightenment rationalism \u2014 reasserting emotion, tradition, and organic community"
     },
     {
-      "type": "Parallel",
       "label": "The Axial Age",
+      "entryId": "axialAge",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "An earlier period of simultaneous philosophical innovation across civilizations \u2014 the comparison raises questions about what conditions produce intellectual revolutions"
     },
     {
-      "type": "Gateway",
       "label": "What is Enlightenment? \u2014 Kant (1784)",
+      "relationship": "Gateway",
       "reason": "The movement's most concise self-definition \u2014 four pages that remain the essential entry point"
     }
   ],

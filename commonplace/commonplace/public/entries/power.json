@@ -85,40 +85,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Max Weber \u2014 Bureaucracy and Legitimate Domination",
+      "entryId": "maxWeberBureaucracyAndLegitimateDomination",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The foundational framework for power as institutionalized authority \u2014 essential for understanding why organizations persist and why challenging them is so hard"
     },
     {
-      "type": "Foundational",
       "label": "Michel Foucault",
+      "entryId": "michelFoucault",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The theorist who most fundamentally transformed how power is understood in the modern period \u2014 his disciplinary power framework is the entry point into non-sovereign power analysis"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Nationalism as a form of power \u2014 the capacity of national identity to mobilize populations, legitimate states, and exclude minorities"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The normative concept that most directly addresses the question of legitimate power \u2014 what makes authority acceptable rather than merely effective"
     },
     {
-      "type": "Contrasting",
       "label": "Hannah Arendt \u2014 The Human Condition",
+      "entryId": "hannahArendtTheHumanCondition",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "Arendt's communicative concept of power as collective action directly challenges the domination tradition \u2014 the most productive alternative framework"
     },
     {
-      "type": "Parallel",
       "label": "Capital",
+      "entryId": "capital",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "Another concept analyzing structural social relations \u2014 the economic parallel to power's political analysis"
     },
     {
-      "type": "Gateway",
       "label": "Discipline and Punish \u2014 Foucault",
+      "relationship": "Gateway",
       "reason": "The most accessible entry into Foucault's power analysis \u2014 the Panopticon chapter is one of the most influential passages in 20th century social theory"
     }
   ],

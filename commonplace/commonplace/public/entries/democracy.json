@@ -85,41 +85,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Power",
       "entryId": "power",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Democracy is fundamentally a concept about legitimate power \u2014 understanding power as an analytical concept is the prerequisite for understanding what democratic legitimacy claims and what it requires"
     },
     {
-      "type": "Foundational",
       "label": "Athens \u2014 Direct Democracy",
+      "entryId": "athensDirectDemocracy",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The origin of the concept and the paradigm case \u2014 understanding Athens reveals what democracy meant before representative government made direct participation seem impossible"
     },
     {
-      "type": "Consequential",
       "label": "The Weimar Republic",
+      "entryId": "weimarRepublic",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The paradigm case of democratic self-destruction \u2014 the case every subsequent democratic theorist has had to address"
     },
     {
-      "type": "Consequential",
       "label": "Nationalism",
       "entryId": "nationalism",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Nationalism and democracy have been historically intertwined \u2014 national self-determination provided the framework within which democratic self-governance was claimed"
     },
     {
-      "type": "Contrasting",
       "label": "Authoritarianism",
+      "entryId": "authoritarianism",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The concept that democracy defines itself against \u2014 understanding what it's not is as important as understanding what it is"
     },
     {
-      "type": "Parallel",
       "label": "Justice",
-      "reason": "The normative concept most often invoked alongside democracy \u2014 the relationship between democratic legitimacy and just outcomes is one of political philosophy's central problems",
-      "entryId": "justice"
+      "entryId": "justice",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "The normative concept most often invoked alongside democracy \u2014 the relationship between democratic legitimacy and just outcomes is one of political philosophy's central problems"
     },
     {
-      "type": "Gateway",
       "label": "How Democracies Die \u2014 Levitsky & Ziblatt",
+      "relationship": "Gateway",
       "reason": "The most accessible current scholarship on democratic erosion \u2014 the essential entry point for understanding contemporary democratic backsliding"
     }
   ],

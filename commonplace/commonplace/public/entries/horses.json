@@ -133,42 +133,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Mongol Empire",
       "entryId": "mongolEmpire",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Mongol Empire was fundamentally a horse empire -- its military effectiveness, its mobility, and its ability to project power across Eurasia all rested on the horse as the core military and logistical technology"
     },
     {
-      "type": "Thematic",
       "label": "Mosquitoes",
       "entryId": "mosquitoes",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Like horses, mosquitoes demonstrate how a single animal species can reshape the political and demographic history of entire continents -- the comparison illuminates how material foundations work"
     },
     {
-      "type": "Consequential",
       "label": "The Columbian Exchange",
       "entryId": "columbianExchange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The reintroduction of horses to the Americas after 1492 was one of the most consequential elements of the Columbian Exchange -- transforming indigenous societies across the Great Plains within a generation"
     },
     {
-      "type": "Thematic",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Silk Road's operation depended on horses -- both as the military technology that enabled the steppe peoples who controlled its Central Asian sections and as the pack animals that carried goods along it"
     },
     {
-      "type": "Future",
       "label": "The Indo-European language expansion",
+      "entryId": "indoEuropeanLanguageExpansion",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The spread of Proto-Indo-European languages across Eurasia -- producing English, Spanish, Russian, Persian, Sanskrit, Greek, and dozens of other languages -- is one of the most consequential cultural events in human history and is plausibly connected to horse domestication"
     },
     {
-      "type": "Future",
       "label": "The Comanche Empire",
+      "entryId": "comancheEmpire",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The Comanche created a horse-based empire on the Great Plains within a generation of acquiring horses -- the most dramatic American example of what horse culture can accomplish, deserving its own entry"
     },
     {
-      "type": "Gateway",
       "label": "The Horse, the Wheel, and Language -- David Anthony (2007)",
+      "relationship": "Gateway",
       "reason": "The essential starting point -- Anthony's synthesis of archaeology, linguistics, and horse biology placed horse domestication at the center of the Indo-European origin question with comprehensive evidence"
     }
   ],

@@ -89,40 +89,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Silk Road",
       "entryId": "mesopotamia",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The trade network through which the plague traveled from Central Asia to Europe \u2014 the transmission route is inseparable from the connectivity that made the Silk Road historically significant"
     },
     {
-      "type": "Foundational",
       "label": "Medieval European Society",
+      "entryId": "medievalEuropeanSociety",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The social, institutional, and theological order the plague disrupted \u2014 understanding it reveals what the Black Death was disrupting"
     },
     {
-      "type": "Consequential",
       "label": "The End of Serfdom in Western Europe",
+      "entryId": "endOfSerfdomInWesternEurope",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The direct economic consequence of the labor shortage \u2014 the most structurally significant long-term outcome"
     },
     {
-      "type": "Consequential",
       "label": "The Protestant Reformation",
       "entryId": "protestantReformation",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Black Death damaged the institutional Church and contributed to the conditions within which Reformation critiques would later find audiences \u2014 a century-long background condition"
     },
     {
-      "type": "Contrasting",
       "label": "The Justinianic Plague (First Pandemic)",
+      "entryId": "justinianicPlagueFirstPandemic",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The previous Y. pestis pandemic of 541-750 CE \u2014 comparing the two reveals what was universal and what was specific to the 14th-century context"
     },
     {
-      "type": "Parallel",
       "label": "COVID-19",
+      "entryId": "cOVID19",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "The most significant recent pandemic \u2014 comparing the two reveals what the Black Death template still explains and where it misleads"
     },
     {
-      "type": "Gateway",
       "label": "The Great Mortality \u2014 John Kelly",
+      "relationship": "Gateway",
       "reason": "The best accessible account \u2014 historically rigorous and compulsively readable"
     }
   ],

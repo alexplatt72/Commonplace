@@ -106,31 +106,36 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Wheat",
       "entryId": "wheat",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The grain surplus that wheat enabled created the first monetary accounting \u2014 Mesopotamian temples measured and recorded wheat in monetary units before coined money existed"
     },
     {
-      "type": "Foundational",
       "label": "Iron",
       "entryId": "iron",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The transition from bronze to iron democratized metalwork and contributed to the same political economy shift that produced Greek coinage and the first mass-market economies"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Athenian democracy and Greek coinage developed simultaneously and are causally connected \u2014 coinage enabled the urban commercial class that demanded and sustained democratic governance"
     },
     {
-      "type": "Consequential",
       "label": "Inequality",
+      "entryId": "inequality",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Monetary economies systematically generate inequality \u2014 money enables accumulation, and accumulation enables further accumulation \u2014 making money the technical substrate of every modern inequality debate"
     },
     {
-      "type": "Gateway",
       "label": "Debt: The First 5000 Years \u2014 David Graeber (2011)",
+      "relationship": "Gateway",
       "reason": "The essential revisionist account of money's history \u2014 challenges the barter-origin story with anthropological evidence and reconstructs money's emergence from credit, obligation, and power relations"
     }
   ],

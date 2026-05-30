@@ -101,33 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Navigation",
       "entryId": "navigation",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Columbus's 1492 voyage was enabled by specific navigation technology and Atlantic wind patterns \u2014 navigation is the enabling technology of the Exchange"
     },
     {
-      "type": "Foundational",
       "label": "Rice",
       "entryId": "rice",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Rice was one of the Old World crops introduced to the Americas through the Columbian Exchange \u2014 and enslaved Africans from rice-growing regions of West Africa brought the cultivation knowledge that made American rice agriculture viable"
     },
     {
-      "type": "Consequential",
       "label": "The Atlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The depopulation of the Americas by epidemic disease and the resulting demand for plantation labor was a primary driver of the Atlantic slave trade \u2014 the Columbian Exchange and the slave trade are causally connected"
     },
     {
-      "type": "Consequential",
       "label": "Climate Change",
       "entryId": "climateChange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The demographic collapse of 50\u201390 million indigenous Americans may have caused a measurable global cooling event as reforestation of previously cultivated land absorbed enough atmospheric carbon to reduce global temperatures by approximately 0.15\u00b0C \u2014 the Great Dying has been proposed as a detectable signal in Antarctic ice cores"
     },
     {
-      "type": "Thematic",
       "label": "Empire",
       "entryId": "empire",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Columbian Exchange did not happen in a political vacuum \u2014 it was shaped by specific colonial institutions (Spanish encomienda system, Portuguese trading posts, British plantation colonies) that determined who benefited and who was destroyed"
     }
   ],

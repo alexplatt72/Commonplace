@@ -91,39 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Siddhartha Gautama",
       "entryId": "siddharthaGautama",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "Buddhism flourished in Gupta-period India, with Nalanda university at its center \u2014 understanding the Buddhist intellectual tradition that the Gupta period supported and eventually eclipsed is prerequisite to understanding the period's internal diversity"
     },
     {
-      "type": "Foundational",
       "label": "The Bhagavad Gita",
       "entryId": "bhagavadGita",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The philosophical tradition the Guptas patronized \u2014 Brahmanical Hinduism in its classical Sanskrit form \u2014 has the Gita as its most accessible text; understanding the Gita illuminates the intellectual world the Gupta patrons were supporting"
     },
     {
-      "type": "Consequential",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The trade routes that brought wealth to Gupta India and through which Gupta-period intellectual achievements were eventually transmitted \u2014 the Silk Road is the transmission mechanism for India's global intellectual impact"
     },
     {
-      "type": "Parallel",
       "label": "The Han Dynasty",
       "entryId": "hanDynasty",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Near-contemporary empire whose intellectual and cultural achievements also defined a civilization's classical form \u2014 comparing the two illuminates what conditions produce concentrated intellectual flourishing"
     },
     {
-      "type": "Thematic",
       "label": "Ancient Egypt",
       "entryId": "ancientEgypt",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Both are periods retrospectively constructed as \"golden ages\" of great civilizations \u2014 comparing the construction of these labels illuminates how nationalist historiography shapes historical periodization"
     },
     {
-      "type": "Gateway",
       "label": "Early India \u2014 Romila Thapar (2002)",
-      "entryId": "guptaEmpire",
+      "relationship": "Gateway",
       "reason": "The most analytically careful and historically responsible account of early Indian history, including the Gupta period \u2014 Thapar's work disentangles the historical reality from the nationalist distortions"
     }
   ],

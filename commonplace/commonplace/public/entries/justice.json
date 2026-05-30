@@ -91,38 +91,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "John Rawls",
+      "entryId": "johnRawls",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "A Theory of Justice is the unavoidable reference point for contemporary justice debate \u2014 understanding Rawls is prerequisite to understanding the last fifty years of political philosophy"
     },
     {
-      "type": "Parallel",
       "label": "Law",
       "entryId": "law",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Law is justice's institutional expression \u2014 the system through which justice claims are formalized, adjudicated, and enforced; understanding the relationship between justice and law reveals what each concept requires from the other"
     },
     {
-      "type": "Consequential",
       "label": "Democracy",
       "entryId": "democracy",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Democratic institutions are justified partly on grounds of justice \u2014 equal political standing \u2014 and they in turn shape what justice requires; the relationship is mutually constitutive"
     },
     {
-      "type": "Thematic",
       "label": "Empire",
       "entryId": "empire",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Empire represents the systematic application of power without justice across populations who had no standing within the justice framework of the dominant group \u2014 the paradigm case of the exclusion problem"
     },
     {
-      "type": "Contrast",
       "label": "Power",
       "entryId": "power",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Foucault's analysis of power as productive and everywhere challenges the justice framework's assumption that wrongs have identifiable authors and victims \u2014 the contrast sharpens what justice requires as a political concept"
     },
     {
-      "type": "Gateway",
       "label": "A Theory of Justice \u2014 John Rawls (1971)",
-      "entryId": "justice",
+      "relationship": "Gateway",
       "reason": "The indispensable starting point for serious engagement with justice theory \u2014 everything in the contemporary debate is either building on or responding to Rawls"
     }
   ],

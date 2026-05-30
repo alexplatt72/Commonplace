@@ -84,40 +84,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Plato",
+      "entryId": "plato",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The philosopher Aristotle studied under for twenty years and whose work he spent his career partly responding to"
     },
     {
-      "type": "Consequential",
       "label": "The Scholastic Tradition",
+      "entryId": "scholasticTradition",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "Thomas Aquinas's synthesis of Aristotle with Christian theology \u2014 the framework the Scientific Revolution had to overcome"
     },
     {
-      "type": "Consequential",
       "label": "Islamic Philosophy",
+      "entryId": "islamicPhilosophy",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The tradition in which Aristotle was most seriously engaged \u2014 Averroes, Avicenna, al-Farabi"
     },
     {
-      "type": "Consequential",
       "label": "Hamlet",
       "entryId": "hamlet",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Aristotle's Poetics established the theoretical framework for tragic drama that Renaissance theatrical culture, including Shakespeare, inherited and transformed"
     },
     {
-      "type": "Contrasting",
       "label": "On the Origin of Species",
       "entryId": "originOfSpecies",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Darwin's mechanism of natural selection made Aristotle's teleological approach to biology \u2014 understanding organisms through their purposes \u2014 unnecessary as an explanation"
     },
     {
-      "type": "Parallel",
       "label": "Confucius",
+      "entryId": "confucius",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "A near-contemporary whose thought shaped an entire civilization's intellectual culture in ways that parallel Aristotle's role in the Western tradition"
     },
     {
-      "type": "Gateway",
       "label": "Nicomachean Ethics",
+      "relationship": "Gateway",
       "reason": "The most accessible entry into Aristotle's thought \u2014 and the part that remains most philosophically alive today"
     }
   ],

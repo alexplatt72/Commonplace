@@ -101,33 +101,38 @@
   ],
   "rabbitHole": [
     {
-      "type": "Consequential",
       "label": "The Columbian Exchange",
       "entryId": "columbianExchange",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Navigation technology made the Columbian Exchange possible \u2014 the connection of previously isolated disease pools and biological systems that was the most consequential single biological event of the modern era"
     },
     {
-      "type": "Parallel",
       "label": "The Silk Road",
       "entryId": "silkRoad",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Silk Road and the Indian Ocean trade system are the land and sea versions of the same commercial impulse \u2014 navigation technology defined which trade routes were possible and which remained beyond reach"
     },
     {
-      "type": "Parallel",
       "label": "The Indian Ocean Trade System",
       "entryId": "indianOceanTrade",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "The Indian Ocean trade system was built on monsoon navigation knowledge developed by Arab, Indian, and Malay sailors over millennia \u2014 navigation is the enabling technology of the world's most sophisticated pre-modern trade network"
     },
     {
-      "type": "Consequential",
       "label": "The Atlantic Slave Trade",
       "entryId": "slaveTrade",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Atlantic slave trade required oceanic navigation capability \u2014 the ability to cross the Atlantic reliably in both directions made the triangle trade possible and made the slave trade scale possible"
     },
     {
-      "type": "Thematic",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "Navigation charts and navigational knowledge were among the first practical uses of European printing \u2014 the diffusion of navigational knowledge via print was part of what enabled the acceleration of European oceanic expansion in the 16th century"
     }
   ],

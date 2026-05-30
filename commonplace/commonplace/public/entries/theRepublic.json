@@ -88,39 +88,43 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "Plato",
       "entryId": "plato",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The Republic is Plato's central work \u2014 understanding his broader philosophical project (the theory of Forms, the Socratic dialogues, the later self-critiques) is necessary for reading the Republic in context rather than in isolation"
     },
     {
-      "type": "Consequential",
       "label": "Aristotle",
       "entryId": "aristotle",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Aristotle's Politics is in large part a systematic response to the Republic \u2014 reading them together reveals the first and most consequential philosophical debate about political philosophy in the Western tradition"
     },
     {
-      "type": "Thematic",
       "label": "Justice",
       "entryId": "justice",
+      "status": "published",
+      "relationship": "Thematic",
       "reason": "The Republic's central question \u2014 what is justice? \u2014 is the organizing question of political philosophy; reading the Republic alongside contemporary justice theory shows both the continuity and the transformation of the question across 2,500 years"
     },
     {
-      "type": "Consequential",
       "label": "The Bhagavad Gita",
       "entryId": "bhagavadGita",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "Near-contemporary text that addresses similar questions (duty, the proper ordering of the soul, the relationship between action and virtue) from a completely different philosophical tradition \u2014 the comparison illuminates what is distinctive about both"
     },
     {
-      "type": "Parallel",
       "label": "The Art of War",
       "entryId": "artOfWar",
+      "status": "published",
+      "relationship": "Parallel",
       "reason": "Near-contemporary Chinese strategic text that also asks about how reason and knowledge should govern action \u2014 comparing the two reveals how different intellectual traditions conceptualized the relationship between knowledge and power"
     },
     {
-      "type": "Gateway",
       "label": "The Open Society and Its Enemies \u2014 Karl Popper (1945)",
-      "entryId": "theRepublic",
+      "relationship": "Gateway",
       "reason": "The most influential hostile reading \u2014 essential for understanding the 20th-century political debate about the Republic's legacy and for sharpening one's own interpretation of what the text actually claims"
     }
   ],

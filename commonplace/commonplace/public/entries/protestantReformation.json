@@ -85,40 +85,50 @@
   ],
   "rabbitHole": [
     {
-      "type": "Foundational",
       "label": "The Printing Press",
       "entryId": "printingPress",
+      "status": "published",
+      "relationship": "Foundational",
       "reason": "The organizational infrastructure that made the Reformation's speed of spread possible \u2014 the first major demonstration of what cheap information reproduction does to institutional authority"
     },
     {
-      "type": "Foundational",
       "label": "The Medieval Catholic Church",
+      "entryId": "medievalCatholicChurch",
+      "status": "planned",
+      "relationship": "Foundational",
       "reason": "The institution the Reformation was responding to \u2014 understanding what it was reveals what Luther was arguing against"
     },
     {
-      "type": "Consequential",
       "label": "The Thirty Years' War",
+      "entryId": "thirtyYearsWar",
+      "status": "planned",
+      "relationship": "Consequential",
       "reason": "The catastrophic confessional conflict the Reformation's divisions produced \u2014 and whose resolution (the Peace of Westphalia) created the modern state system"
     },
     {
-      "type": "Consequential",
       "label": "The Enlightenment",
       "entryId": "enlightenment",
+      "status": "published",
+      "relationship": "Consequential",
       "reason": "The Reformation's most significant intellectual descendant \u2014 the individual conscience and reasoned authority the Reformation established became the foundation Enlightenment thinkers built on"
     },
     {
-      "type": "Contrasting",
       "label": "The Counter-Reformation",
+      "entryId": "counterReformation",
+      "status": "planned",
+      "relationship": "Thematic",
       "reason": "The Catholic response \u2014 demonstrating how a movement generates organized opposition that transforms both parties"
     },
     {
-      "type": "Parallel",
       "label": "The Islamic Reformation debates",
+      "entryId": "islamicReformationDebates",
+      "status": "planned",
+      "relationship": "Parallel",
       "reason": "Whether Islam has had or needs a Reformation is a live contemporary debate \u2014 understanding the original reveals what the comparison assumes"
     },
     {
-      "type": "Gateway",
       "label": "Here I Stand \u2014 Roland Bainton",
+      "relationship": "Gateway",
       "reason": "The classic Luther biography \u2014 the most readable entry into the Reformation's central figure"
     }
   ],
