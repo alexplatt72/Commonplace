@@ -1,5 +1,8 @@
 {
   "id": "plato",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "B",
   "template": "People",
   "subtype": "Thinker",
   "period": "c. 428\u2013348 BCE",
@@ -97,7 +100,6 @@
     {
       "type": "Foundational",
       "label": "Aristotle",
-      "entryId": "aristotle",
       "reason": "Aristotle was Plato's most important student and most systematic critic \u2014 the Plato-Aristotle relationship defines the central divide in Western philosophy"
     },
     {
