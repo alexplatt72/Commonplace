@@ -252,6 +252,27 @@
       "title": "Something Deeply Hidden",
       "author": "Sean Carroll",
       "note": "The most accessible defense of Many-Worlds — Carroll argues that the Everett interpretation is not just one option among many but the only scientifically coherent account."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "In Search of Schrodinger's Cat: Quantum Physics and Reality",
+      "author": "John Gribbin",
+      "note": "Start here — the most readable introduction to quantum mechanics for non-physicists, covering both the theory and the philosophical puzzles it raises without requiring mathematical background."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Quantum: Einstein, Bohr, and the Great Debate about the Nature of Reality",
+      "author": "Manjit Kumar",
+      "note": "For readers who want the history alongside the physics — Kumar traces the Einstein-Bohr debate with narrative clarity and attention to both the science and the personalities."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "The Principles of Quantum Mechanics",
+      "author": "P.A.M. Dirac",
+      "note": "The foundational text of quantum mechanics formalism — Dirac's elegant treatment established the mathematical language of the field. Demanding but rewarding for readers with mathematical background."
     }
   ],
   "popularCulture": [
@@ -269,6 +290,16 @@
       "type": "Breakthrough",
       "title": "The transistor (1947)",
       "description": "The transistor — invented at Bell Labs in 1947 by Bardeen, Brattain, and Shockley — is the most economically significant application of quantum mechanics in history. Transistors are the basic switching elements of all digital electronics; a modern microprocessor contains billions of them. The transistor works by exploiting quantum mechanical properties of semiconductor materials that have no classical explanation. The digital world — computing, the internet, smartphones — runs on a quantum effect."
+    },
+    {
+      "type": "Concept",
+      "title": "Schrodinger's cat as cultural shorthand",
+      "description": "Erwin Schrodinger's 1935 thought experiment — a cat in a box simultaneously alive and dead until observed — has become the most widely cited scientific thought experiment in popular culture. What it reveals: that quantum superposition genuinely defies ordinary intuition and the measurement problem is a real and unresolved philosophical issue. What it distorts: popular usage usually treats the cat as a curiosity rather than a serious argument — Schrodinger intended it as a reductio ad absurdum, not a celebration of weirdness."
+    },
+    {
+      "type": "Concept",
+      "title": "The uncertainty principle in popular discourse",
+      "description": "Heisenberg's uncertainty principle has been appropriated in popular discourse to mean roughly 'the observer affects what is observed' or 'nothing can be known precisely.' The popular use is related to but substantially different from the physics. What the gap reveals: that quantum mechanics genuinely defies ordinary intuition and that people reach for its concepts to express something about the limits of knowledge — even when the physics says something more specific and stranger."
     }
   ]
 }
