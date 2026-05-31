@@ -1,651 +1,27 @@
 [
   {
-    "id": "alexandria",
-    "title": "Alexandria",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "331 BCE – present",
-    "summary": "The city Alexander the Great founded at the mouth of the Nile in 331 BCE — which became the ancient world's greatest center of knowledge, the meeting point of Greek, Egyptian, Jewish, and later Christian and Islamic intellectual traditions, and the site of the most famous library ever destroyed"
-  },
-  {
-    "id": "ancientEgypt",
-    "title": "Ancient Egypt",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 3100–30 BCE",
-    "summary": "The civilization that arose from the Nile's predictable floods — organized around the most reliable agricultural system in the ancient world, producing the administrative, artistic, and engineering achievements that made Egypt a continuous civilization for three thousand years and a model for every subsequent empire that encountered it"
-  },
-  {
-    "id": "aristotle",
-    "title": "Aristotle",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "384–322 BC",
-    "summary": "The philosopher who invented the categories through which Western and global intellectual culture organized knowledge for two millennia"
-  },
-  {
-    "id": "athens",
-    "title": "Athens",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "Continuous",
-    "summary": "The city that became Western civilization's origin myth — and the historical reality that the myth requires not looking at too carefully"
-  },
-  {
-    "id": "beijing",
-    "title": "Beijing",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 1045 BCE – present (major city); 1421 – present (as capital)",
-    "summary": "The capital of China for six centuries and the center of the world's most continuously inhabited civilization — a city whose built environment embeds a complete cosmological and political order and whose contemporary significance is inseparable from the authoritarian state that now occupies it."
-  },
-  {
-    "id": "carthage",
-    "title": "Carthage",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 814 BCE – 146 BCE (Punic); 44 BCE – 698 CE (Roman and late antique)",
-    "summary": "The Phoenician trading city that became Rome's most dangerous rival and was completely destroyed — the paradigm case of the losers' civilization in Western historical memory, known almost entirely through the accounts of those who destroyed it."
-  },
-  {
-    "id": "darwin",
-    "title": "Charles Darwin",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1809–1882",
-    "summary": "The naturalist who proposed natural selection as the mechanism of evolution, producing a theory so coherent and so well-evidenced that it made divine creation scientifically unnecessary within biology, and permanently transformed how humans understand the relationship between life and time, and established biology as a historical science"
-  },
-  {
-    "id": "climateChange",
-    "title": "Climate Change",
-    "template": "Natural Phenomena",
-    "subtype": "Natural Force",
-    "period": "c. 1850–present",
-    "summary": "The ongoing warming of the Earth's climate system driven by human greenhouse gas emissions — the defining environmental force of the present and future"
-  },
-  {
-    "id": "coal",
-    "title": "Coal",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 1709 CE – present",
-    "summary": "The fossilized sunlight that powered the Industrial Revolution — by providing the concentrated energy that broke the organic economy's land constraint, created the working class, built the railway network, and began accumulating the atmospheric carbon that is now reshaping the planet's climate"
-  },
-  {
-    "id": "colonialism",
-    "title": "Colonialism",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "15th century CE – 20th century CE",
-    "summary": "The establishment and maintenance of political and economic control by one society over another — the system through which European powers between the 15th and 20th centuries dominated most of the world's surface, extracting resources, displacing populations, restructuring economies, and imposing administrative systems whose consequences persist long after formal colonial rule ended."
-  },
-  {
-    "id": "confucius",
-    "title": "Confucius",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "551–479 BCE",
-    "summary": "The Chinese philosopher whose teachings on moral cultivation, proper relationships, and the virtuous ruler became the intellectual foundation of East Asian political culture for two and a half millennia — and whose ideas have never stopped being contested, weaponized, and reinterpreted"
-  },
-  {
-    "id": "democracy",
-    "title": "Democracy",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "Ongoing",
-    "summary": "The concept that political authority derives from the governed — and the site of the most active contemporary political contestation"
-  },
-  {
-    "id": "drugPolicy",
-    "title": "Drug Policy",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "Ongoing",
-    "summary": "How society should respond to drug use and addiction — through prohibition and criminal enforcement, public health treatment, harm reduction, or legalization — with genuine evidence about what works and genuine value disagreements about liberty, order, and the nature of addiction"
-  },
-  {
-    "id": "empire",
-    "title": "Empire",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "c. 2300 BCE – present",
-    "summary": "The political form in which one state rules over multiple peoples who did not choose that rule — the dominant political structure of most of recorded history, the framework through which most of the world's wealth, knowledge, and people were connected, and the system whose legacies continue to shape international politics, economic inequality, and cultural identity"
-  },
-  {
-    "id": "fire",
-    "title": "Fire",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 400,000 BCE – present",
-    "summary": "The first technology — controlled combustion that cooked food and expanded the human brain, enabled migration into cold climates, powered metallurgy, drove industrial civilization, and now reshapes the atmosphere through the carbon it releases"
-  },
-  {
-    "id": "hamlet",
-    "title": "Hamlet",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 1600–01",
-    "summary": "The play that invented modern self-consciousness — and trapped four centuries of readers inside a mind that cannot stop watching itself"
-  },
-  {
-    "id": "healthcarePolicy",
-    "title": "Healthcare Policy",
-    "template": "Policy",
-    "subtype": "Policy Landscape",
-    "period": "Ongoing",
-    "summary": "How a society ensures people can access medical care, and who pays — the most complex domestic policy domain in the United States, touching financing, delivery, insurance, labor, pharmaceutical economics, and federalism simultaneously"
-  },
-  {
-    "id": "indianOceanTrade",
-    "title": "Indian Ocean Trade System",
-    "template": "Places",
-    "subtype": "System",
-    "period": "c. 2000 BCE – 1500 CE",
-    "summary": "The maritime trading network that connected East Africa, the Arabian Peninsula, South Asia, Southeast Asia, and China for over three thousand years — the world's most durable commercial system and the mechanism through which Buddhism, Islam, crops, and technologies spread across half the globe."
-  },
-  {
-    "id": "iron",
-    "title": "Iron",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 1200 BCE – present",
-    "summary": "The metal that broke the Bronze Age monopoly on power — by widening access to effective tools and weapons beyond the tin-dependent elite of the Bronze Age, transforming agriculture, and enabling the scale of construction and warfare that defined every subsequent civilization"
-  },
-  {
-    "id": "islam",
-    "title": "Islam",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "7th century CE – present",
-    "summary": "A monotheistic religious tradition originating in 7th-century Arabia, now comprising approximately 1.8 billion adherents worldwide — encompassing a legal and ethical system derived from the Quran and the Hadith, a civilization that produced major advances in philosophy, mathematics, medicine, and the arts, and a diversity of practice and interpretation across fourteen centuries and dozens of distinct cultural contexts."
-  },
-  {
-    "id": "jerusalem",
-    "title": "Jerusalem",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "Continuous",
-    "summary": "The city where three world religions converge, four centuries of empire have claimed, and a political conflict remains unresolved — compressed into one square kilometer of contested sacred geography"
-  },
-  {
-    "id": "justice",
-    "title": "Justice",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "c. 500 BCE – present",
-    "summary": "The organizing concept of political and moral philosophy — the framework through which civilizations have argued about what people are owed, what institutions must do, and what wrongs require remedy."
-  },
-  {
-    "id": "law",
-    "title": "Law",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "c. 2100 BCE – present",
-    "summary": "The system of rules that a political community recognizes as binding on its members — the mechanism through which states establish authority, protect rights, resolve disputes, and constitute themselves as political communities; and the contested terrain on which every fundamental question about justice, power, and human freedom is ultimately fought out"
-  },
-  {
-    "id": "leonardo",
-    "title": "Leonardo da Vinci",
-    "template": "People",
-    "subtype": "Creative Figure",
-    "period": "1452–1519",
-    "summary": "The Renaissance painter, anatomist, and engineer who refused to separate art from science"
-  },
-  {
-    "id": "mesopotamia",
-    "title": "Mesopotamia",
-    "template": "Places",
-    "subtype": "System",
-    "period": "c. 10,000–500 BCE",
-    "summary": "The river valley system between the Tigris and Euphrates where urban civilization, writing, law, and empire were invented — and the 'cradle of civilization' framing that tells us as much about the civilizations that use it as about Mesopotamia itself"
-  },
-  {
-    "id": "money",
-    "title": "Money",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3000 BCE – present",
-    "summary": "The technology of exchange — from grain tallies in Mesopotamian temples to coined metal in Greek city-states to global digital credit — whose most consequential property is not what it buys but what it does to the relationships, values, and institutions of every civilization that uses it"
-  },
-  {
-    "id": "mosquitoes",
-    "title": "Mosquitoes",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "Prehistoric – present",
-    "summary": "The insect that has killed more humans than any other animal — and that shaped the geography of empire, the patterns of the Atlantic slave trade, and the limits of colonial expansion through differential immunity to the diseases it carries"
-  },
-  {
-    "id": "napoleon",
-    "title": "Napoleon Bonaparte",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1769–1821",
-    "summary": "The military and political genius who codified the French Revolution and turned its energies into continental empire"
-  },
-  {
-    "id": "nationalism",
-    "title": "Nationalism",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "Ongoing",
-    "summary": "The idea that the world should be divided into nations with the right to self-determination — and the most productively ambiguous concept in modern political life"
-  },
-  {
-    "id": "navigation",
-    "title": "Navigation",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 40,000 BCE – present",
-    "summary": "The technology of controlled movement across open water — from Polynesian star-path wayfinding to Arab dhow routes across the Indian Ocean to European oceanic exploration — that connected distant civilizations, enabled global trade and empire, and made the modern world's geographic integration possible"
-  },
-  {
-    "id": "originOfSpecies",
-    "title": "On the Origin of Species",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "1859",
-    "summary": "The foundational document of modern biology — and the most culturally contested scientific text in history"
-  },
-  {
-    "id": "paper",
-    "title": "Paper",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 100 BCE – present",
-    "summary": "The surface on which civilization recorded itself — invented in China around 100 BCE, transmitted westward through the Islamic world, and eventually combined with movable type to produce the information revolution that made the modern world; now being displaced by digital surfaces whose consequences are still unfolding"
-  },
-  {
-    "id": "plato",
-    "title": "Plato",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "c. 428–348 BCE",
-    "summary": "The Athenian philosopher whose dialogues invented Western philosophy's central questions — the nature of knowledge, justice, beauty, and the good life — and whose theory of Forms, defense of philosopher-kings, and suspicion of democracy have been argued with, built upon, and reacted against for 2,400 years"
-  },
-  {
-    "id": "power",
-    "title": "Power",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "Ongoing",
-    "summary": "The concept that makes the invisible architecture of social life visible — and reveals why authority persists even when it could be challenged"
-  },
-  {
-    "id": "probability",
-    "title": "Probability",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "c. 1654 CE – present",
-    "summary": "The mathematics of uncertainty — which transformed how civilization manages risk, enabled the insurance industry, statistical medicine, quantum mechanics, and machine learning, and produced an intellectual foreclosure that made prior frameworks for reasoning about uncertain futures permanently inadequate"
-  },
-  {
-    "id": "rabbinicJudaism",
-    "title": "Rabbinic Judaism",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "c. 70 CE – present",
-    "summary": "The form of Judaism that emerged after the Roman destruction of the Second Temple in 70 CE — replacing Temple sacrifice with prayer, priestly authority with rabbinic scholarship, and territorial religion with a portable legal and intellectual system that could survive anywhere on earth."
-  },
-  {
-    "id": "rice",
-    "title": "Rice",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 7000 BCE – present",
-    "summary": "The crop that fed half of humanity — domesticated in China's Yangtze River valley around 7000 BCE, spread across Asia through millennia of agricultural development, and shaped the labor-intensive paddy civilizations of East and Southeast Asia whose demographic weight, political structures, and cultural patterns remain distinct from the wheat-based civilizations of the West"
-  },
-  {
-    "id": "siddharthaGautama",
-    "title": "Siddhartha Gautama",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "c. 563–483 BCE (traditional); c. 480–400 BCE (revised scholarly dating)",
-    "summary": "The historical founder of Buddhism, whose analysis of suffering and the conditions of human experience produced one of the most enduring and geographically expansive intellectual traditions in human history."
-  },
-  {
-    "id": "socrates",
-    "title": "Socrates",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "c. 470–399 BCE",
-    "summary": "An Athenian philosopher who wrote nothing but transformed Western philosophy — through the practice of public questioning he called elenchus, his conviction that the unexamined life is not worth living, and his trial and execution for impiety and corrupting the youth of Athens, which became the defining image of philosophy as a dangerous practice."
-  },
-  {
-    "id": "americanRevolution",
-    "title": "The American Revolution",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1775–1783",
-    "summary": "The colonial revolt that established the first modern republic, created the template for constitutional self-government, produced founding documents whose contradictions between universal rights and racial slavery structured American politics for a century, and became the reference point for anti-colonial movements across two centuries"
-  },
-  {
-    "id": "artOfWar",
-    "title": "The Art of War",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
-    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history."
-  },
-  {
-    "id": "franzFerdinand",
-    "title": "The Assassination of Franz Ferdinand",
-    "template": "Events",
-    "subtype": "Discrete Event",
-    "period": "June 28, 1914",
-    "summary": "The shot that activated a system optimized for catastrophe"
-  },
-  {
-    "id": "bhagavadGita",
-    "title": "The Bhagavad Gita",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 200 BCE – 200 CE (composition); embedded in Mahabharata c. 400 BCE – 400 CE",
-    "summary": "A philosophical dialogue embedded in the Indian epic Mahabharata, in which the god Krishna instructs the warrior Arjuna on duty, action, and the nature of the self — the foundational text of Hindu ethical and spiritual thought and one of the most widely read philosophical works in human history."
-  },
-  {
-    "id": "bible",
-    "title": "The Bible",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 950 BCE – 100 CE (composition); ongoing",
-    "summary": "The compilation of texts — assembled over roughly a thousand years of composition, canonized through centuries of religious politics, translated into every major language, and used to justify slavery, liberation, empire, resistance, persecution, and redemption — that remains the most widely distributed and most contested book in human history"
-  },
-  {
-    "id": "blackDeath",
-    "title": "The Black Death",
-    "template": "Natural Phenomena",
-    "subtype": "Natural Event",
-    "period": "1347–1351 (peak)",
-    "summary": "The most lethal pandemic in recorded history — and the catastrophe that revealed what medieval European civilization was built on, and what it wasn't"
-  },
-  {
-    "id": "coldWar",
-    "title": "The Cold War",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "1947–1991",
-    "summary": "The geopolitical condition of superpower standoff that structured international relations for four decades — and felt, to those inside it, like it would never end"
-  },
-  {
-    "id": "columbianExchange",
-    "title": "The Columbian Exchange",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1492 – c. 1650",
-    "summary": "The biological and cultural transfer between the Old World and the New World that followed Columbus's 1492 voyage — connecting previously isolated ecologies through the movement of crops, animals, diseases, and peoples, producing one of the most catastrophic population collapses in human history and simultaneously reshaping the agricultural foundations of civilization on every inhabited continent"
-  },
-  {
-    "id": "manifesto",
-    "title": "The Communist Manifesto",
-    "template": "Works",
-    "subtype": "Non-narrative",
-    "period": "1848",
-    "summary": "The argument that compressed a theory of history, a critique of capitalism, and a political programme into 23 pages — and then became more powerful as a symbol than as a text"
-  },
-  {
-    "id": "enlightenment",
-    "title": "The Enlightenment",
+    "id": "abolitionMovement",
     "template": "Periods",
     "subtype": "Movement",
-    "period": "c. 1680–1800",
-    "summary": "The 18th-century intellectual movement that made reason the supreme authority — and whose legacy is still being fought over"
+    "period": "1780s–1888",
+    "title": "The Abolition Movement",
+    "summary": "The organized campaign to end the transatlantic slave trade and slavery itself, spanning roughly a century from the 1780s through Brazilian emancipation in 1888."
   },
   {
-    "id": "minimumWage",
-    "title": "The Federal Minimum Wage",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "Ongoing",
-    "summary": "Whether and how the federal floor on wages should be changed — the most extensively studied question in labor economics, with genuine methodological disputes and genuine value disagreements about how to weigh competing outcomes"
-  },
-  {
-    "id": "firstWorldWar",
-    "title": "The First World War",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1914–1918",
-    "summary": "A war fought between two alliance systems across Europe, the Middle East, Africa, and the oceans — the first industrial-scale conflict in history, which killed roughly 20 million people, destroyed four empires, redrew the political map of the world, and created the conditions for the Second World War."
-  },
-  {
-    "id": "theForest",
-    "title": "The Forest",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "deep prehistory – present",
-    "summary": "The ecosystem that sheltered, fed, and equipped the human species for most of its existence — and whose systematic destruction over the past ten thousand years has been both the precondition for civilization and one of civilization's most consequential long-term costs."
-  },
-  {
-    "id": "frenchRevolution",
-    "title": "The French Revolution",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1789–1799",
-    "summary": "The decade that relocated sovereignty from monarch to nation, invented the left-right political spectrum, produced the first systematic justification of state terror in the name of popular sovereignty, and established the template for every political revolution that followed"
-  },
-  {
-    "id": "guptaEmpire",
-    "title": "The Gupta Empire",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 320–550 CE",
-    "summary": "The north Indian empire whose two centuries of relative political stability produced one of the most concentrated periods of intellectual and artistic achievement in world history — the period retrospectively called the Golden Age of India."
-  },
-  {
-    "id": "haitianRevolution",
-    "title": "The Haitian Revolution",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1791–1804",
-    "summary": "The only successful slave revolution in history — a thirteen-year uprising in the French colony of Saint-Domingue that destroyed the most profitable plantation economy in the world, killed or expelled the colonial ruling class, defeated the armies of France, Britain, and Spain, and produced Haiti, the first Black republic and the first nation founded by formerly enslaved people."
-  },
-  {
-    "id": "hanDynasty",
-    "title": "The Han Dynasty",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "206 BCE – 220 CE",
-    "summary": "The second imperial dynasty of China — the political and cultural formation that established the institutional, philosophical, and ethnic foundations of Chinese civilization as it has persisted for over two thousand years."
-  },
-  {
-    "id": "iliad",
-    "title": "The Iliad",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 8th century BCE (oral tradition c. 12th–8th century BCE)",
-    "summary": "The oldest surviving Western epic — Homer's account of a few weeks in the last year of the Trojan War — that established war, heroism, honor, grief, and fate as permanent themes of Western literature and whose portrait of Achilles remains the most complex representation of the relationship between glory and mortality in the ancient world"
-  },
-  {
-    "id": "industrialRevolution",
-    "title": "The Industrial Revolution",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
-    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate"
-  },
-  {
-    "id": "printingPress",
-    "title": "The Invention of the Printing Press",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "c. 1440",
-    "summary": "The technology that made information cheap to reproduce — and institutional monopoly on knowledge permanently impossible"
-  },
-  {
-    "id": "jewishDiaspora",
-    "title": "The Jewish Diaspora",
-    "template": "Places",
-    "subtype": "System",
-    "period": "586 BCE – present",
-    "summary": "The dispersal of Jewish communities across the world following successive exiles and expulsions — and the remarkable development of institutions, texts, and practices that allowed a people to survive, maintain identity, and produce civilization-shaping intellectual and cultural achievements without a homeland for nearly two thousand years."
-  },
-  {
-    "id": "littleIceAge",
-    "title": "The Little Ice Age",
-    "template": "Natural Phenomena",
-    "subtype": "Natural Force",
-    "period": "c. 1300–1850",
-    "summary": "The prolonged cooling that shaped European and global history for five centuries — and what a 0.5°C temperature drop can do to a civilization"
-  },
-  {
-    "id": "protestantReformation",
-    "title": "The Protestant Reformation",
-    "template": "Periods",
-    "subtype": "Movement",
-    "period": "1517–c. 1648",
-    "summary": "The 16th-century religious movement that fractured Western Christianity, produced the modern state system, and demonstrated what the printing press could do"
-  },
-  {
-    "id": "theRepublic",
-    "title": "The Republic",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 375 BCE",
-    "summary": "Plato's extended philosophical dialogue on justice, the ideal state, and the nature of the soul — the foundational text of Western political philosophy and one of the most influential works in the history of ideas."
-  },
-  {
-    "id": "romanEmpire",
-    "title": "The Roman Empire",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "27 BCE – 476 CE (Western); 27 BCE – 1453 CE (Eastern)",
-    "summary": "The political structure that unified the Mediterranean world for five centuries, produced the legal, administrative, and infrastructural inheritance on which European and Near Eastern civilization was built, and whose legacy — in law, language, religion, and institutional imagination — has never fully ended"
-  },
-  {
-    "id": "scientificRevolution",
-    "title": "The Scientific Revolution",
-    "template": "Periods",
-    "subtype": "Movement",
-    "period": "c. 1543–1687",
-    "summary": "A transformation in how European thinkers understood and investigated the natural world — running from Copernicus's heliocentric model of the solar system to Newton's laws of motion — that established the experimental method, mathematical description of nature, and the idea of a law-governed universe as the foundations of modern science."
-  },
-  {
-    "id": "silkRoad",
-    "title": "The Silk Road",
-    "template": "Places",
-    "subtype": "System",
-    "period": "c. 130 BCE – 1450 CE",
-    "summary": "The overland and maritime trade network connecting China to the Mediterranean world — the primary channel through which goods, religions, technologies, diseases, and ideas moved across Eurasia for over a millennium."
-  },
-  {
-    "id": "slaveTrade",
-    "title": "The Transatlantic Slave Trade",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "c. 1500–1867",
-    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries"
-  },
-  {
-    "id": "varanasi",
-    "title": "Varanasi",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 1200 BCE – present",
-    "summary": "The oldest continuously inhabited city in the world and the holiest site in Hinduism — a place where the sacred geography of a civilization has been maintained without interruption for over three thousand years."
-  },
-  {
-    "id": "wheat",
-    "title": "Wheat",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 10,000 BCE – present",
-    "summary": "The grass that made civilization possible — by enabling the settled surplus agriculture that produced cities, writing, mathematics, states, and the civilizational dependency structure that still governs global food security"
-  },
-  {
-    "id": "zero",
-    "title": "Zero",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "c. 628 CE (arithmetic) – present",
-    "summary": "The concept that transformed mathematics from a tool for counting into a tool for describing the physical world — making algebra, calculus, and computing structurally possible, and sitting invisibly at the foundation of every calculation that modern civilization performs"
-  },
-  {
-    "id": "mongolEmpire",
-    "title": "The Mongol Empire",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "1206–1368",
-    "summary": "The largest contiguous land empire in history — a Eurasian empire founded by Genghis Khan in 1206 that within seventy years stretched from the Pacific to the Danube, destroyed some of the most sophisticated cities in the world, enabled unprecedented trade and exchange across the continent, and carried the plague that became the Black Death."
-  },
-  {
-    "id": "russianRevolution",
-    "title": "The Russian Revolution",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1917–1921",
-    "summary": "The collapse of Tsarist Russia in 1917 and the Bolshevik seizure of power — producing, after a devastating civil war, the Soviet Union, the world's first communist state, and reshaping global politics for the remainder of the 20th century."
-  },
-  {
-    "id": "ashoka",
-    "title": "Ashoka",
+    "id": "alanTuring",
+    "title": "Alan Turing",
     "template": "People",
-    "subtype": "Historical Actor",
-    "period": "c. 268–232 BCE",
-    "summary": "Emperor of the Maurya Empire who conquered most of the Indian subcontinent, was transformed by the violence of his wars, converted to Buddhism, and then ruled according to dhamma — a code of ethical governance — leaving behind the earliest major inscriptions in Indian history and one of the most influential examples of a ruler renouncing conquest."
-  },
-  {
-    "id": "crusades",
-    "title": "The Crusades",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1095–1291",
-    "summary": "A series of religious wars launched from Western Europe between 1095 and 1291 to recover Jerusalem and the Holy Land from Muslim rule — establishing Crusader states in the Levant for nearly two centuries, devastating Jewish communities in Europe en route, transforming the papacy, enriching the Italian city-states, and producing a memory that continues to structure political rhetoric on multiple sides."
-  },
-  {
-    "id": "vietnamWar",
-    "title": "The Vietnam War",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1955–1975",
-    "summary": "A conflict in Southeast Asia in which North Vietnam and its southern allies fought South Vietnam and the United States for two decades, ending in 1975 with communist victory — demonstrating the limits of conventional military superiority against determined guerrilla resistance and transforming American politics, society, and foreign policy."
-  },
-  {
-    "id": "oil",
-    "title": "Oil",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "1859-present",
-    "summary": "The fossil fuel that powers the modern world economy -- extracted commercially since 1859, the foundation of transportation, agriculture, plastics, and warfare for over a century, and the primary driver of anthropogenic climate change."
-  },
-  {
-    "id": "worldWarII",
-    "title": "The Second World War",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1939-1945",
-    "summary": "The deadliest conflict in human history -- killing between 70 and 85 million people across six years of fighting -- producing the Holocaust, the nuclear age, the Cold War, decolonization, and the international order that still governs global politics."
-  },
-  {
-    "id": "renaissance",
-    "title": "The Renaissance",
-    "template": "Periods",
-    "subtype": "Movement",
-    "period": "c. 1300-1600",
-    "summary": "The cultural and intellectual movement that transformed European art, literature, philosophy, and science between roughly 1300 and 1600 -- centered in Italian city-states, organized through patronage, and driven by the recovery and celebration of ancient Greek and Roman learning."
-  },
-  {
-    "id": "horses",
-    "title": "Horses",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3500 BCE-present",
-    "summary": "The domestication of the horse around 3500 BCE on the Eurasian steppe was among the most consequential events in human history -- transforming warfare, trade, agriculture, and political organization across Eurasia, enabling the steppe empires that repeatedly reshaped the ancient and medieval world, and reverberating through the Columbian Exchange to transform the Americas."
-  },
-  {
-    "id": "odyssey",
-    "title": "The Odyssey",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 8th century BCE",
-    "summary": "An ancient Greek epic poem attributed to Homer, composed around the 8th century BCE in the tradition of oral poetry, following Odysseus on his ten-year journey home after the Trojan War -- a foundational work of Western literature whose narrative templates have been reworked in every subsequent century."
-  },
-  {
-    "id": "cubanMissileCrisis",
-    "template": "Events",
-    "subtype": "Discrete Event",
-    "period": "October 1962",
-    "title": "The Cuban Missile Crisis",
-    "summary": "The thirteen-day confrontation between the United States and Soviet Union over nuclear missiles in Cuba — the closest the world has come to nuclear war, and the crisis that forced both superpowers to develop the tools for managing their mutual destruction."
+    "subtype": "Thinker",
+    "period": "1912–1954",
+    "themes": [
+      "science",
+      "mathematics",
+      "computing",
+      "20thCentury",
+      "england",
+      "knowledge"
+    ],
+    "summary": "The British mathematician who founded theoretical computer science, broke the Enigma cipher during the Second World War, and asked 'Can machines think?' — defining the questions that artificial intelligence has pursued ever since — before being prosecuted for homosexuality and dying at 41."
   },
   {
     "id": "alexanderTheGreat",
@@ -656,92 +32,12 @@
     "summary": "The Macedonian king who conquered the largest contiguous empire in ancient history in just thirteen years -- from Greece to Egypt to Persia to the edge of India -- and whose campaigns spread Greek culture across the Near East in ways that shaped the ancient world for centuries."
   },
   {
-    "id": "thirtyYearsWar",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1618-1648",
-    "title": "The Thirty Years' War",
-    "summary": "The catastrophic conflict that devastated Central Europe from 1618 to 1648 -- beginning as a religious war between Catholics and Protestants and ending as a struggle between European great powers that established the modern system of sovereign states."
-  },
-  {
-    "id": "wealthOfNations",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "1776",
-    "title": "The Wealth of Nations",
-    "summary": "Adam Smith's 1776 investigation into the causes of national prosperity -- the foundational text of modern economics, which established that markets coordinate economic activity more effectively than government direction, and whose arguments have been used to justify both the free market policies it recommends and the social concerns it actually expresses."
-  },
-  {
-    "id": "axialAge",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 800-200 BCE",
-    "title": "The Axial Age",
-    "summary": "The period between roughly 800 and 200 BCE when, independently and without evident contact, thinkers in China, India, Iran, and the Greek and Hebrew worlds developed the philosophical, religious, and ethical frameworks that still organize human civilization -- Confucianism, Buddhism, Zoroastrianism, philosophical monotheism, and Greek philosophy all emerging within a few centuries of each other."
-  },
-  {
-    "id": "socialDarwinism",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "title": "Social Darwinism",
-    "period": "1860s–present",
-    "summary": "The application of evolutionary ideas — competition, survival of the fittest, natural selection — to human societies, used to justify inequality, empire, and eugenics."
-  },
-  {
-    "id": "thePrince",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "title": "The Prince",
-    "period": "1513 (written); 1532 (published)",
-    "summary": "Niccolò Machiavelli's short treatise on political power, written in 1513, which set aside the question of how rulers ought to behave and asked instead how power is actually acquired, maintained, and lost."
-  },
-  {
-    "id": "electricity",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "title": "Electricity",
-    "period": "1880s–present",
-    "summary": "The harnessing of electromagnetic energy that reorganized how civilization produces and distributes power, enabling industrial production, communication, computing, and modern urban life."
-  },
-  {
-    "id": "inequality",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "title": "Inequality",
-    "period": "Ancient–present",
-    "summary": "The unequal distribution of income, wealth, opportunity, and status among individuals and groups — a feature of every known society, whose causes, consequences, and moral significance are among the most contested questions in politics and economics."
-  },
-  {
-    "id": "theHolocaust",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "title": "The Holocaust",
-    "period": "1933–1945",
-    "summary": "The systematic, state-organized persecution and murder of six million Jews and millions of others by the Nazi regime and its collaborators between 1933 and 1945 — the most extensively documented genocide in history."
-  },
-  {
-    "id": "mecca",
+    "id": "alexandria",
+    "title": "Alexandria",
     "template": "Places",
     "subtype": "Site",
-    "period": "Pre-Islamic antiquity–present",
-    "title": "Mecca",
-    "summary": "The holiest city in Islam, birthplace of the Prophet Muhammad, and site of the Kaaba — the point toward which 1.8 billion Muslims orient their daily prayers and to which they aspire to make the Hajj pilgrimage at least once in their lives."
-  },
-  {
-    "id": "constantinople",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "330 CE–1923",
-    "title": "Constantinople",
-    "summary": "The city founded by Constantine in 330 CE on the strait between Europe and Asia that served as the capital of the Roman Empire, then the Byzantine Empire for over a millennium, before falling to the Ottoman Turks in 1453 and becoming Istanbul."
-  },
-  {
-    "id": "abolitionMovement",
-    "template": "Periods",
-    "subtype": "Movement",
-    "period": "1780s–1888",
-    "title": "The Abolition Movement",
-    "summary": "The organized campaign to end the transatlantic slave trade and slavery itself, spanning roughly a century from the 1780s through Brazilian emancipation in 1888."
+    "period": "331 BCE – present",
+    "summary": "The city Alexander the Great founded at the mouth of the Nile in 331 BCE — which became the ancient world's greatest center of knowledge, the meeting point of Greek, Egyptian, Jewish, and later Christian and Islamic intellectual traditions, and the site of the most famous library ever destroyed"
   },
   {
     "id": "americanCivilWar",
@@ -752,135 +48,20 @@
     "summary": "The war fought between the United States of America and the Confederate States of America from 1861 to 1865, in which the Union’s victory ended slavery in America and settled the question of whether states could secede."
   },
   {
-    "id": "britishEmpire",
+    "id": "americanRevolution",
+    "title": "The American Revolution",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1775–1783",
+    "summary": "The colonial revolt that established the first modern republic, created the template for constitutional self-government, produced founding documents whose contradictions between universal rights and racial slavery structured American politics for a century, and became the reference point for anti-colonial movements across two centuries"
+  },
+  {
+    "id": "ancientEgypt",
+    "title": "Ancient Egypt",
     "template": "Periods",
     "subtype": "Period",
-    "period": "c. 1600–1997",
-    "title": "The British Empire",
-    "summary": "The largest empire in history by land area, encompassing at its peak in the 1920s approximately 25% of the world’s land surface and governing roughly 458 million people."
-  },
-  {
-    "id": "galileo",
-    "title": "Galileo Galilei",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1564–1642",
-    "summary": "The Italian mathematician, astronomer, and physicist whose telescopic observations, defense of heliocentrism, and development of experimental method made him a founding figure of the Scientific Revolution — and whose conflict with the Roman Inquisition became the paradigm case for the relationship between science and religious authority.",
-    "themes": [
-      "science",
-      "astronomy",
-      "religion",
-      "italy",
-      "renaissance",
-      "knowledge"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "schemaVersion": 1,
-    "aliases": [
-      "Galileo",
-      "Galileo Galilei",
-      "Galilei"
-    ],
-    "indexTerms": [
-      "telescope",
-      "heliocentrism",
-      "Copernicus",
-      "Inquisition",
-      "Dialogue Concerning the Two Chief World Systems",
-      "Sidereus Nuncius",
-      "moons of Jupiter",
-      "Two New Sciences",
-      "Pope Urban VIII",
-      "Kepler",
-      "pendulum",
-      "inclined plane",
-      "Padua",
-      "Florence",
-      "abjuration"
-    ]
-  },
-  {
-    "id": "indusValleyCivilization",
-    "title": "The Indus Valley Civilization",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 3300–c. 1300 BCE",
-    "summary": "The Bronze Age civilization that flourished in the Indus River basin from roughly 3300 to 1300 BCE, encompassing at its peak over a million square kilometers and cities including Mohenjo-daro and Harappa — the largest urban civilization of the ancient world, whose script remains undeciphered and whose collapse remains one of archaeology's great unsolved questions.",
-    "themes": [
-      "archaeology",
-      "southAsia",
-      "ancientHistory",
-      "urbanization",
-      "trade",
-      "bronze-age"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "schemaVersion": 1,
-    "aliases": [
-      "Harappan Civilization",
-      "Indus Civilization",
-      "Mature Harappan",
-      "Sarasvati-Sindhu Civilization"
-    ],
-    "indexTerms": [
-      "Mohenjo-daro",
-      "Harappa",
-      "Dholavira",
-      "Rakhigarhi",
-      "Lothal",
-      "Great Bath",
-      "Indus script",
-      "Dravidian",
-      "Bronze Age",
-      "Vedic",
-      "Aryan migration",
-      "Pakistan",
-      "Gujarat",
-      "Punjab",
-      "Mesopotamia"
-    ]
-  },
-  {
-    "id": "donQuixote",
-    "title": "Don Quixote",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "1605–1615",
-    "summary": "Miguel de Cervantes's two-part novel (1605, 1615) about a Spanish gentleman who reads so many chivalric romances that he loses his mind and sets out to become a knight-errant — widely regarded as the first modern novel, a founding text of European literature, and an inexhaustible meditation on the relationship between imagination and reality.",
-    "themes": [
-      "literature",
-      "spain",
-      "renaissance",
-      "identity",
-      "madness",
-      "fiction"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "schemaVersion": 1,
-    "aliases": [
-      "Don Quijote",
-      "The Ingenious Gentleman Don Quixote of La Mancha",
-      "El ingenioso hidalgo don Quijote de la Mancha"
-    ],
-    "indexTerms": [
-      "Miguel de Cervantes",
-      "Sancho Panza",
-      "Dulcinea",
-      "windmills",
-      "chivalric romance",
-      "hidalgo",
-      "Rocinante",
-      "metafiction",
-      "Alonso Quijano",
-      "Part I",
-      "Part II",
-      "Avellaneda",
-      "Golden Age Spain",
-      "knight-errant"
-    ]
+    "period": "c. 3100–30 BCE",
+    "summary": "The civilization that arose from the Nile's predictable floods — organized around the most reliable agricultural system in the ancient world, producing the administrative, artistic, and engineering achievements that made Egypt a continuous civilization for three thousand years and a model for every subsequent empire that encountered it"
   },
   {
     "id": "antibiotics",
@@ -923,6 +104,334 @@
       "WHO",
       "One Health"
     ]
+  },
+  {
+    "id": "aristotle",
+    "title": "Aristotle",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "384–322 BC",
+    "summary": "The philosopher who invented the categories through which Western and global intellectual culture organized knowledge for two millennia"
+  },
+  {
+    "id": "artOfWar",
+    "title": "The Art of War",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
+    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history."
+  },
+  {
+    "id": "artificialIntelligence",
+    "title": "Artificial Intelligence",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1950–present",
+    "themes": [
+      "technology",
+      "science",
+      "economics",
+      "philosophy",
+      "knowledge",
+      "20thCentury"
+    ],
+    "summary": "The project of building machines that can perform tasks requiring human-like intelligence — now the most rapidly developing technology in human history and the subject of the most consequential unresolved questions about the future of work, knowledge, and civilization."
+  },
+  {
+    "id": "ashoka",
+    "title": "Ashoka",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 268–232 BCE",
+    "summary": "Emperor of the Maurya Empire who conquered most of the Indian subcontinent, was transformed by the violence of his wars, converted to Buddhism, and then ruled according to dhamma — a code of ethical governance — leaving behind the earliest major inscriptions in Indian history and one of the most influential examples of a ruler renouncing conquest."
+  },
+  {
+    "id": "athenianDemocracy",
+    "title": "Athenian Democracy",
+    "template": "Sites",
+    "subtype": "Site",
+    "period": "507–322 BCE",
+    "themes": [
+      "politics",
+      "democracy",
+      "ancientHistory",
+      "greece",
+      "philosophy",
+      "power"
+    ],
+    "summary": "The first sustained experiment in democratic rule — more radical and participatory than any modern democracy, built on slavery, and foundational to Western political thought."
+  },
+  {
+    "id": "athens",
+    "title": "Athens",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "Continuous",
+    "summary": "The city that became Western civilization's origin myth — and the historical reality that the myth requires not looking at too carefully"
+  },
+  {
+    "id": "authoritarianism",
+    "title": "Authoritarianism",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "20th century–present",
+    "themes": [
+      "politics",
+      "democracy",
+      "20thCentury",
+      "power",
+      "psychology",
+      "globalisation"
+    ],
+    "summary": "The political system or disposition in which power is concentrated in a single leader or small group, political opposition is suppressed, and citizens are subordinated to the state — a category that encompasses regimes from military juntas to competitive autocracies, and a problem that democracy has never fully solved."
+  },
+  {
+    "id": "axialAge",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 800-200 BCE",
+    "title": "The Axial Age",
+    "summary": "The period between roughly 800 and 200 BCE when, independently and without evident contact, thinkers in China, India, Iran, and the Greek and Hebrew worlds developed the philosophical, religious, and ethical frameworks that still organize human civilization -- Confucianism, Buddhism, Zoroastrianism, philosophical monotheism, and Greek philosophy all emerging within a few centuries of each other."
+  },
+  {
+    "id": "beijing",
+    "title": "Beijing",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1045 BCE – present (major city); 1421 – present (as capital)",
+    "summary": "The capital of China for six centuries and the center of the world's most continuously inhabited civilization — a city whose built environment embeds a complete cosmological and political order and whose contemporary significance is inseparable from the authoritarian state that now occupies it."
+  },
+  {
+    "id": "bhagavadGita",
+    "title": "The Bhagavad Gita",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 200 BCE – 200 CE (composition); embedded in Mahabharata c. 400 BCE – 400 CE",
+    "summary": "A philosophical dialogue embedded in the Indian epic Mahabharata, in which the god Krishna instructs the warrior Arjuna on duty, action, and the nature of the self — the foundational text of Hindu ethical and spiritual thought and one of the most widely read philosophical works in human history."
+  },
+  {
+    "id": "bible",
+    "title": "The Bible",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 950 BCE – 100 CE (composition); ongoing",
+    "summary": "The compilation of texts — assembled over roughly a thousand years of composition, canonized through centuries of religious politics, translated into every major language, and used to justify slavery, liberation, empire, resistance, persecution, and redemption — that remains the most widely distributed and most contested book in human history"
+  },
+  {
+    "id": "blackDeath",
+    "title": "The Black Death",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Event",
+    "period": "1347–1351 (peak)",
+    "summary": "The most lethal pandemic in recorded history — and the catastrophe that revealed what medieval European civilization was built on, and what it wasn't"
+  },
+  {
+    "id": "britishEmpire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1600–1997",
+    "title": "The British Empire",
+    "summary": "The largest empire in history by land area, encompassing at its peak in the 1920s approximately 25% of the world’s land surface and governing roughly 458 million people."
+  },
+  {
+    "id": "carthage",
+    "title": "Carthage",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 814 BCE – 146 BCE (Punic); 44 BCE – 698 CE (Roman and late antique)",
+    "summary": "The Phoenician trading city that became Rome's most dangerous rival and was completely destroyed — the paradigm case of the losers' civilization in Western historical memory, known almost entirely through the accounts of those who destroyed it."
+  },
+  {
+    "id": "climateChange",
+    "title": "Climate Change",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 1850–present",
+    "summary": "The ongoing warming of the Earth's climate system driven by human greenhouse gas emissions — the defining environmental force of the present and future"
+  },
+  {
+    "id": "coal",
+    "title": "Coal",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1709 CE – present",
+    "summary": "The fossilized sunlight that powered the Industrial Revolution — by providing the concentrated energy that broke the organic economy's land constraint, created the working class, built the railway network, and began accumulating the atmospheric carbon that is now reshaping the planet's climate"
+  },
+  {
+    "id": "coldWar",
+    "title": "The Cold War",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1947–1991",
+    "summary": "The geopolitical condition of superpower standoff that structured international relations for four decades — and felt, to those inside it, like it would never end"
+  },
+  {
+    "id": "colonialism",
+    "title": "Colonialism",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "15th century CE – 20th century CE",
+    "summary": "The establishment and maintenance of political and economic control by one society over another — the system through which European powers between the 15th and 20th centuries dominated most of the world's surface, extracting resources, displacing populations, restructuring economies, and imposing administrative systems whose consequences persist long after formal colonial rule ended."
+  },
+  {
+    "id": "columbianExchange",
+    "title": "The Columbian Exchange",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1492 – c. 1650",
+    "summary": "The biological and cultural transfer between the Old World and the New World that followed Columbus's 1492 voyage — connecting previously isolated ecologies through the movement of crops, animals, diseases, and peoples, producing one of the most catastrophic population collapses in human history and simultaneously reshaping the agricultural foundations of civilization on every inhabited continent"
+  },
+  {
+    "id": "confucius",
+    "title": "Confucius",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "551–479 BCE",
+    "summary": "The Chinese philosopher whose teachings on moral cultivation, proper relationships, and the virtuous ruler became the intellectual foundation of East Asian political culture for two and a half millennia — and whose ideas have never stopped being contested, weaponized, and reinterpreted"
+  },
+  {
+    "id": "constantinople",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "330 CE–1923",
+    "title": "Constantinople",
+    "summary": "The city founded by Constantine in 330 CE on the strait between Europe and Asia that served as the capital of the Roman Empire, then the Byzantine Empire for over a millennium, before falling to the Ottoman Turks in 1453 and becoming Istanbul."
+  },
+  {
+    "id": "crusades",
+    "title": "The Crusades",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1095–1291",
+    "summary": "A series of religious wars launched from Western Europe between 1095 and 1291 to recover Jerusalem and the Holy Land from Muslim rule — establishing Crusader states in the Levant for nearly two centuries, devastating Jewish communities in Europe en route, transforming the papacy, enriching the Italian city-states, and producing a memory that continues to structure political rhetoric on multiple sides."
+  },
+  {
+    "id": "cubanMissileCrisis",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "October 1962",
+    "title": "The Cuban Missile Crisis",
+    "summary": "The thirteen-day confrontation between the United States and Soviet Union over nuclear missiles in Cuba — the closest the world has come to nuclear war, and the crisis that forced both superpowers to develop the tools for managing their mutual destruction."
+  },
+  {
+    "id": "darwin",
+    "title": "Charles Darwin",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1809–1882",
+    "summary": "The naturalist who proposed natural selection as the mechanism of evolution, producing a theory so coherent and so well-evidenced that it made divine creation scientifically unnecessary within biology, and permanently transformed how humans understand the relationship between life and time, and established biology as a historical science"
+  },
+  {
+    "id": "decolonization",
+    "title": "Decolonization",
+    "template": "Events",
+    "subtype": "Movement",
+    "period": "1945–1975",
+    "themes": [
+      "colonialism",
+      "africa",
+      "asia",
+      "politics",
+      "20thCentury",
+      "nationalism"
+    ],
+    "summary": "The process by which European colonial empires dissolved between 1945 and 1975 — creating 80 new states, transforming the map of the world, and generating the political and economic structures of the contemporary Global South."
+  },
+  {
+    "id": "democracy",
+    "title": "Democracy",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "Ongoing",
+    "summary": "The concept that political authority derives from the governed — and the site of the most active contemporary political contestation"
+  },
+  {
+    "id": "donQuixote",
+    "title": "Don Quixote",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "1605–1615",
+    "summary": "Miguel de Cervantes's two-part novel (1605, 1615) about a Spanish gentleman who reads so many chivalric romances that he loses his mind and sets out to become a knight-errant — widely regarded as the first modern novel, a founding text of European literature, and an inexhaustible meditation on the relationship between imagination and reality.",
+    "themes": [
+      "literature",
+      "spain",
+      "renaissance",
+      "identity",
+      "madness",
+      "fiction"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Don Quijote",
+      "The Ingenious Gentleman Don Quixote of La Mancha",
+      "El ingenioso hidalgo don Quijote de la Mancha"
+    ],
+    "indexTerms": [
+      "Miguel de Cervantes",
+      "Sancho Panza",
+      "Dulcinea",
+      "windmills",
+      "chivalric romance",
+      "hidalgo",
+      "Rocinante",
+      "metafiction",
+      "Alonso Quijano",
+      "Part I",
+      "Part II",
+      "Avellaneda",
+      "Golden Age Spain",
+      "knight-errant"
+    ]
+  },
+  {
+    "id": "drugPolicy",
+    "title": "Drug Policy",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "Ongoing",
+    "summary": "How society should respond to drug use and addiction — through prohibition and criminal enforcement, public health treatment, harm reduction, or legalization — with genuine evidence about what works and genuine value disagreements about liberty, order, and the nature of addiction"
+  },
+  {
+    "id": "einstein",
+    "title": "Albert Einstein",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1879–1955",
+    "themes": [
+      "science",
+      "physics",
+      "20thCentury",
+      "germany",
+      "knowledge",
+      "mathematics"
+    ],
+    "summary": "The German-born physicist whose special and general relativity overturned Newtonian mechanics — making him the most recognizable scientist in history and transforming the understanding of space, time, gravity, and the cosmos."
+  },
+  {
+    "id": "electricity",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "title": "Electricity",
+    "period": "1880s–present",
+    "summary": "The harnessing of electromagnetic energy that reorganized how civilization produces and distributes power, enabling industrial production, communication, computing, and modern urban life."
+  },
+  {
+    "id": "empire",
+    "title": "Empire",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "c. 2300 BCE – present",
+    "summary": "The political form in which one state rules over multiple peoples who did not choose that rule — the dominant political structure of most of recorded history, the framework through which most of the world's wealth, knowledge, and people were connected, and the system whose legacies continue to shape international politics, economic inequality, and cultural identity"
+  },
+  {
+    "id": "enlightenment",
+    "title": "The Enlightenment",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1680–1800",
+    "summary": "The 18th-century intellectual movement that made reason the supreme authority — and whose legacy is still being fought over"
   },
   {
     "id": "epicOfGilgamesh",
@@ -968,292 +477,77 @@
     ]
   },
   {
-    "id": "machiavelli",
-    "title": "Niccolò Machiavelli",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1469–1527",
-    "themes": [
-      "politics",
-      "power",
-      "italy",
-      "renaissance",
-      "philosophy",
-      "statecraft"
-    ],
-    "summary": "The Florentine diplomat and political theorist whose Prince offered a ruthlessly unsentimental account of how power is acquired and maintained — founding modern political science and generating five centuries of controversy."
+    "id": "fire",
+    "title": "Fire",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 400,000 BCE – present",
+    "summary": "The first technology — controlled combustion that cooked food and expanded the human brain, enabled migration into cold climates, powered metallurgy, drove industrial civilization, and now reshapes the atmosphere through the carbon it releases"
   },
   {
-    "id": "treatyOfVersailles",
-    "title": "The Treaty of Versailles",
+    "id": "firstWorldWar",
+    "title": "The First World War",
     "template": "Events",
     "subtype": "Extended Process",
-    "period": "1919",
-    "themes": [
-      "politics",
-      "war",
-      "europe",
-      "diplomacy",
-      "nationalism",
-      "20thCentury"
-    ],
-    "summary": "The peace settlement that formally ended the First World War — imposing disarmament, territorial losses, reparations, and the war guilt clause on Germany, and creating the political conditions debated ever since as causes of the Second World War."
+    "period": "1914–1918",
+    "summary": "A war fought between two alliance systems across Europe, the Middle East, Africa, and the oceans — the first industrial-scale conflict in history, which killed roughly 20 million people, destroyed four empires, redrew the political map of the world, and created the conditions for the Second World War."
   },
   {
-    "id": "hebrewBibleOldTestament",
-    "title": "The Hebrew Bible",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 900–c. 400 BCE",
-    "themes": [
-      "religion",
-      "ancientHistory",
-      "judaism",
-      "literature",
-      "law",
-      "myth"
-    ],
-    "summary": "The collection of ancient Israelite and Jewish texts that became the founding scripture of Judaism, the Old Testament of Christianity, and a primary source for Islam — shaping the moral and literary imagination of Western civilization more than any other single work."
+    "id": "franzFerdinand",
+    "title": "The Assassination of Franz Ferdinand",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "June 28, 1914",
+    "summary": "The shot that activated a system optimized for catastrophe"
   },
   {
-    "id": "newton",
-    "title": "Isaac Newton",
+    "id": "frenchRevolution",
+    "title": "The French Revolution",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1789–1799",
+    "summary": "The decade that relocated sovereignty from monarch to nation, invented the left-right political spectrum, produced the first systematic justification of state terror in the name of popular sovereignty, and established the template for every political revolution that followed"
+  },
+  {
+    "id": "galileo",
+    "title": "Galileo Galilei",
     "template": "People",
     "subtype": "Thinker",
-    "period": "1643–1727",
+    "period": "1564–1642",
+    "summary": "The Italian mathematician, astronomer, and physicist whose telescopic observations, defense of heliocentrism, and development of experimental method made him a founding figure of the Scientific Revolution — and whose conflict with the Roman Inquisition became the paradigm case for the relationship between science and religious authority.",
     "themes": [
       "science",
-      "mathematics",
-      "england",
-      "enlightenment",
       "astronomy",
+      "religion",
+      "italy",
+      "renaissance",
       "knowledge"
     ],
-    "summary": "The English mathematician and natural philosopher whose Principia Mathematica unified terrestrial and celestial mechanics under universal gravitation, making him the dominant figure of the Scientific Revolution and the foundation of classical physics."
-  },
-  {
-    "id": "internet",
-    "title": "The Internet",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "1969–present",
-    "themes": [
-      "technology",
-      "communication",
-      "globalisation",
-      "economics",
-      "politics",
-      "knowledge"
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Galileo",
+      "Galileo Galilei",
+      "Galilei"
     ],
-    "summary": "The global network originating from ARPANET in 1969 that has reorganized communication, commerce, knowledge, and politics more profoundly than any technology since the printing press."
-  },
-  {
-    "id": "athenianDemocracy",
-    "title": "Athenian Democracy",
-    "template": "Sites",
-    "subtype": "Site",
-    "period": "507–322 BCE",
-    "themes": [
-      "politics",
-      "democracy",
-      "ancientHistory",
-      "greece",
-      "philosophy",
-      "power"
-    ],
-    "summary": "The first sustained experiment in democratic rule — more radical and participatory than any modern democracy, built on slavery, and foundational to Western political thought."
-  },
-  {
-    "id": "weimarRepublic",
-    "title": "The Weimar Republic",
-    "template": "Events",
-    "subtype": "Period",
-    "period": "1919–1933",
-    "themes": [
-      "politics",
-      "germany",
-      "democracy",
-      "20thCentury",
-      "war",
-      "economics"
-    ],
-    "summary": "The German democratic republic that lasted fourteen years before Hitler's appointment as Chancellor — the paradigm case of democratic failure and the source of constitutional design lessons still in use today."
-  },
-  {
-    "id": "hobbes",
-    "title": "Thomas Hobbes",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1588–1679",
-    "themes": [
-      "politics",
-      "philosophy",
-      "england",
-      "power",
-      "war",
-      "science"
-    ],
-    "summary": "The English philosopher whose Leviathan argued that human beings in their natural condition face a war of all against all — founding the social contract tradition and the realist account of international relations."
-  },
-  {
-    "id": "einstein",
-    "title": "Albert Einstein",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1879–1955",
-    "themes": [
-      "science",
-      "physics",
-      "20thCentury",
-      "germany",
-      "knowledge",
-      "mathematics"
-    ],
-    "summary": "The German-born physicist whose special and general relativity overturned Newtonian mechanics — making him the most recognizable scientist in history and transforming the understanding of space, time, gravity, and the cosmos."
-  },
-  {
-    "id": "decolonization",
-    "title": "Decolonization",
-    "template": "Events",
-    "subtype": "Movement",
-    "period": "1945–1975",
-    "themes": [
-      "colonialism",
-      "africa",
-      "asia",
-      "politics",
-      "20thCentury",
-      "nationalism"
-    ],
-    "summary": "The process by which European colonial empires dissolved between 1945 and 1975 — creating 80 new states, transforming the map of the world, and generating the political and economic structures of the contemporary Global South."
-  },
-  {
-    "id": "ottomanEmpire",
-    "title": "The Ottoman Empire",
-    "template": "Sites",
-    "subtype": "Site",
-    "period": "c. 1299–1922",
-    "themes": [
-      "islam",
-      "turkey",
-      "empire",
-      "middleEast",
-      "politics",
-      "war"
-    ],
-    "summary": "The Turkic Muslim empire that ruled Anatolia, the Middle East, North Africa, and southeastern Europe for six centuries — the longest-lasting Islamic empire and the context for much of the contemporary Middle East."
-  },
-  {
-    "id": "sovietUnionUnderStalin",
-    "title": "The Soviet Union under Stalin",
-    "template": "Events",
-    "subtype": "Period",
-    "period": "1924–1953",
-    "themes": [
-      "russia",
-      "politics",
-      "20thCentury",
-      "war",
-      "economics",
-      "power"
-    ],
-    "summary": "The period of Soviet history from Lenin's death through Stalin's own — encompassing forced collectivization, the Great Terror, the Second World War, and the Cold War's beginning — during which the USSR became an industrial superpower and a totalitarian state responsible for millions of deaths."
-  },
-  {
-    "id": "interwarPeriod",
-    "title": "The Interwar Period",
-    "template": "Events",
-    "subtype": "Period",
-    "period": "1919–1939",
-    "themes": [
-      "politics",
-      "europe",
-      "20thCentury",
-      "economics",
-      "war",
-      "democracy"
-    ],
-    "summary": "The twenty years between the two World Wars — democratic experimentation, fascist and communist revolution, economic catastrophe, and the failure of the international order — that ended with the most destructive war in human history."
-  },
-  {
-    "id": "artificialIntelligence",
-    "title": "Artificial Intelligence",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "1950–present",
-    "themes": [
-      "technology",
-      "science",
-      "economics",
-      "philosophy",
-      "knowledge",
-      "20thCentury"
-    ],
-    "summary": "The project of building machines that can perform tasks requiring human-like intelligence — now the most rapidly developing technology in human history and the subject of the most consequential unresolved questions about the future of work, knowledge, and civilization."
-  },
-  {
-    "id": "romanticism",
-    "title": "Romanticism",
-    "template": "Events",
-    "subtype": "Movement",
-    "period": "c. 1770–1850",
-    "themes": [
-      "culture",
-      "philosophy",
-      "europe",
-      "literature",
-      "art",
-      "politics"
-    ],
-    "summary": "The intellectual and artistic movement that arose as a reaction against Enlightenment rationalism — emphasizing emotion, imagination, nature, and the individual — whose influence on art, literature, music, philosophy, and politics has been so pervasive that we still live within it."
-  },
-  {
-    "id": "quantumMechanics",
-    "title": "Quantum Mechanics",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "1900–present",
-    "themes": [
-      "science",
-      "physics",
-      "mathematics",
-      "knowledge",
-      "technology",
-      "20thCentury"
-    ],
-    "summary": "The physical theory developed between 1900 and 1930 that describes the behavior of matter and energy at atomic and subatomic scales — replacing classical physics in that domain, resisting intuitive interpretation for a century, and underpinning virtually all modern technology from semiconductors to lasers to medical imaging."
-  },
-  {
-    "id": "romanRepublic",
-    "title": "The Roman Republic",
-    "template": "Sites",
-    "subtype": "Site",
-    "period": "509–27 BCE",
-    "themes": [
-      "politics",
-      "rome",
-      "ancientHistory",
-      "democracy",
-      "war",
-      "law"
-    ],
-    "summary": "The political system through which Rome governed itself for nearly five centuries — replacing monarchy with elected magistrates, a senate, and popular assemblies — before collapsing into the civil wars that produced the empire, and bequeathing its institutional vocabulary to every subsequent republic."
-  },
-  {
-    "id": "alanTuring",
-    "title": "Alan Turing",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1912–1954",
-    "themes": [
-      "science",
-      "mathematics",
-      "computing",
-      "20thCentury",
-      "england",
-      "knowledge"
-    ],
-    "summary": "The British mathematician who founded theoretical computer science, broke the Enigma cipher during the Second World War, and asked 'Can machines think?' — defining the questions that artificial intelligence has pursued ever since — before being prosecuted for homosexuality and dying at 41."
+    "indexTerms": [
+      "telescope",
+      "heliocentrism",
+      "Copernicus",
+      "Inquisition",
+      "Dialogue Concerning the Two Chief World Systems",
+      "Sidereus Nuncius",
+      "moons of Jupiter",
+      "Two New Sciences",
+      "Pope Urban VIII",
+      "Kepler",
+      "pendulum",
+      "inclined plane",
+      "Padua",
+      "Florence",
+      "abjuration"
+    ]
   },
   {
     "id": "genghisKhan",
@@ -1272,6 +566,208 @@
     "summary": "The Mongol leader who unified the nomadic tribes of the steppe and conquered the largest contiguous land empire in history — bringing catastrophic destruction to settled civilizations while creating the Pax Mongolica that opened Eurasia to trade, ideas, and plague on an unprecedented scale."
   },
   {
+    "id": "guptaEmpire",
+    "title": "The Gupta Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 320–550 CE",
+    "summary": "The north Indian empire whose two centuries of relative political stability produced one of the most concentrated periods of intellectual and artistic achievement in world history — the period retrospectively called the Golden Age of India."
+  },
+  {
+    "id": "haitianRevolution",
+    "title": "The Haitian Revolution",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1791–1804",
+    "summary": "The only successful slave revolution in history — a thirteen-year uprising in the French colony of Saint-Domingue that destroyed the most profitable plantation economy in the world, killed or expelled the colonial ruling class, defeated the armies of France, Britain, and Spain, and produced Haiti, the first Black republic and the first nation founded by formerly enslaved people."
+  },
+  {
+    "id": "hamlet",
+    "title": "Hamlet",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 1600–01",
+    "summary": "The play that invented modern self-consciousness — and trapped four centuries of readers inside a mind that cannot stop watching itself"
+  },
+  {
+    "id": "hanDynasty",
+    "title": "The Han Dynasty",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "206 BCE – 220 CE",
+    "summary": "The second imperial dynasty of China — the political and cultural formation that established the institutional, philosophical, and ethnic foundations of Chinese civilization as it has persisted for over two thousand years."
+  },
+  {
+    "id": "healthcarePolicy",
+    "title": "Healthcare Policy",
+    "template": "Policy",
+    "subtype": "Policy Landscape",
+    "period": "Ongoing",
+    "summary": "How a society ensures people can access medical care, and who pays — the most complex domestic policy domain in the United States, touching financing, delivery, insurance, labor, pharmaceutical economics, and federalism simultaneously"
+  },
+  {
+    "id": "hebrewBibleOldTestament",
+    "title": "The Hebrew Bible",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 900–c. 400 BCE",
+    "themes": [
+      "religion",
+      "ancientHistory",
+      "judaism",
+      "literature",
+      "law",
+      "myth"
+    ],
+    "summary": "The collection of ancient Israelite and Jewish texts that became the founding scripture of Judaism, the Old Testament of Christianity, and a primary source for Islam — shaping the moral and literary imagination of Western civilization more than any other single work."
+  },
+  {
+    "id": "hobbes",
+    "title": "Thomas Hobbes",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1588–1679",
+    "themes": [
+      "politics",
+      "philosophy",
+      "england",
+      "power",
+      "war",
+      "science"
+    ],
+    "summary": "The English philosopher whose Leviathan argued that human beings in their natural condition face a war of all against all — founding the social contract tradition and the realist account of international relations."
+  },
+  {
+    "id": "horses",
+    "title": "Horses",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3500 BCE-present",
+    "summary": "The domestication of the horse around 3500 BCE on the Eurasian steppe was among the most consequential events in human history -- transforming warfare, trade, agriculture, and political organization across Eurasia, enabling the steppe empires that repeatedly reshaped the ancient and medieval world, and reverberating through the Columbian Exchange to transform the Americas."
+  },
+  {
+    "id": "iliad",
+    "title": "The Iliad",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 8th century BCE (oral tradition c. 12th–8th century BCE)",
+    "summary": "The oldest surviving Western epic — Homer's account of a few weeks in the last year of the Trojan War — that established war, heroism, honor, grief, and fate as permanent themes of Western literature and whose portrait of Achilles remains the most complex representation of the relationship between glory and mortality in the ancient world"
+  },
+  {
+    "id": "indianOceanTrade",
+    "title": "Indian Ocean Trade System",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 2000 BCE – 1500 CE",
+    "summary": "The maritime trading network that connected East Africa, the Arabian Peninsula, South Asia, Southeast Asia, and China for over three thousand years — the world's most durable commercial system and the mechanism through which Buddhism, Islam, crops, and technologies spread across half the globe."
+  },
+  {
+    "id": "indusValleyCivilization",
+    "title": "The Indus Valley Civilization",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 3300–c. 1300 BCE",
+    "summary": "The Bronze Age civilization that flourished in the Indus River basin from roughly 3300 to 1300 BCE, encompassing at its peak over a million square kilometers and cities including Mohenjo-daro and Harappa — the largest urban civilization of the ancient world, whose script remains undeciphered and whose collapse remains one of archaeology's great unsolved questions.",
+    "themes": [
+      "archaeology",
+      "southAsia",
+      "ancientHistory",
+      "urbanization",
+      "trade",
+      "bronze-age"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Harappan Civilization",
+      "Indus Civilization",
+      "Mature Harappan",
+      "Sarasvati-Sindhu Civilization"
+    ],
+    "indexTerms": [
+      "Mohenjo-daro",
+      "Harappa",
+      "Dholavira",
+      "Rakhigarhi",
+      "Lothal",
+      "Great Bath",
+      "Indus script",
+      "Dravidian",
+      "Bronze Age",
+      "Vedic",
+      "Aryan migration",
+      "Pakistan",
+      "Gujarat",
+      "Punjab",
+      "Mesopotamia"
+    ]
+  },
+  {
+    "id": "industrialRevolution",
+    "title": "The Industrial Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
+    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate"
+  },
+  {
+    "id": "inequality",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "title": "Inequality",
+    "period": "Ancient–present",
+    "summary": "The unequal distribution of income, wealth, opportunity, and status among individuals and groups — a feature of every known society, whose causes, consequences, and moral significance are among the most contested questions in politics and economics."
+  },
+  {
+    "id": "internet",
+    "title": "The Internet",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1969–present",
+    "themes": [
+      "technology",
+      "communication",
+      "globalisation",
+      "economics",
+      "politics",
+      "knowledge"
+    ],
+    "summary": "The global network originating from ARPANET in 1969 that has reorganized communication, commerce, knowledge, and politics more profoundly than any technology since the printing press."
+  },
+  {
+    "id": "interwarPeriod",
+    "title": "The Interwar Period",
+    "template": "Events",
+    "subtype": "Period",
+    "period": "1919–1939",
+    "themes": [
+      "politics",
+      "europe",
+      "20thCentury",
+      "economics",
+      "war",
+      "democracy"
+    ],
+    "summary": "The twenty years between the two World Wars — democratic experimentation, fascist and communist revolution, economic catastrophe, and the failure of the international order — that ended with the most destructive war in human history."
+  },
+  {
+    "id": "iron",
+    "title": "Iron",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1200 BCE – present",
+    "summary": "The metal that broke the Bronze Age monopoly on power — by widening access to effective tools and weapons beyond the tin-dependent elite of the Bronze Age, transforming agriculture, and enabling the scale of construction and warfare that defined every subsequent civilization"
+  },
+  {
+    "id": "islam",
+    "title": "Islam",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "7th century CE – present",
+    "summary": "A monotheistic religious tradition originating in 7th-century Arabia, now comprising approximately 1.8 billion adherents worldwide — encompassing a legal and ethical system derived from the Quran and the Hadith, a civilization that produced major advances in philosophy, mathematics, medicine, and the arts, and a diversity of practice and interpretation across fourteen centuries and dozens of distinct cultural contexts."
+  },
+  {
     "id": "islamicGoldenAge",
     "title": "The Islamic Golden Age",
     "template": "Events",
@@ -1286,6 +782,142 @@
       "ancientHistory"
     ],
     "summary": "The period of extraordinary intellectual, scientific, and cultural achievement in the Islamic world from the Abbasid caliphate through the 13th century — during which Baghdad was the world's intellectual capital, scholars preserved and extended Greek learning, and Muslim scientists made foundational contributions essential to the European Renaissance."
+  },
+  {
+    "id": "jerusalem",
+    "title": "Jerusalem",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "Continuous",
+    "summary": "The city where three world religions converge, four centuries of empire have claimed, and a political conflict remains unresolved — compressed into one square kilometer of contested sacred geography"
+  },
+  {
+    "id": "jewishDiaspora",
+    "title": "The Jewish Diaspora",
+    "template": "Places",
+    "subtype": "System",
+    "period": "586 BCE – present",
+    "summary": "The dispersal of Jewish communities across the world following successive exiles and expulsions — and the remarkable development of institutions, texts, and practices that allowed a people to survive, maintain identity, and produce civilization-shaping intellectual and cultural achievements without a homeland for nearly two thousand years."
+  },
+  {
+    "id": "juliusCaesar",
+    "title": "Julius Caesar",
+    "summary": "The Roman general and politician who conquered Gaul, crossed the Rubicon to trigger civil war, became dictator of Rome, and was assassinated on the Ides of March — ending the Roman Republic while claiming to restore it, and becoming one of the most potent symbols in Western political history.",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "themes": [
+      "rome",
+      "ancientHistory",
+      "war",
+      "politics",
+      "empire",
+      "biography"
+    ],
+    "period": "100–44 BCE",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "justice",
+    "title": "Justice",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 500 BCE – present",
+    "summary": "The organizing concept of political and moral philosophy — the framework through which civilizations have argued about what people are owed, what institutions must do, and what wrongs require remedy."
+  },
+  {
+    "id": "kant",
+    "title": "Immanuel Kant",
+    "summary": "The Prussian philosopher who attempted to reconcile rationalism and empiricism, established the Categorical Imperative as the foundation of moral philosophy, argued for the conditions of possible experience in the Critique of Pure Reason, and shaped every major philosophical tradition that followed — from German idealism to analytic philosophy to contemporary ethics.",
+    "template": "People",
+    "subtype": "Thinker",
+    "themes": [
+      "philosophy",
+      "Enlightenment",
+      "germany",
+      "knowledge",
+      "ethics",
+      "politics"
+    ],
+    "period": "1724–1804",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "law",
+    "title": "Law",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 2100 BCE – present",
+    "summary": "The system of rules that a political community recognizes as binding on its members — the mechanism through which states establish authority, protect rights, resolve disputes, and constitute themselves as political communities; and the contested terrain on which every fundamental question about justice, power, and human freedom is ultimately fought out"
+  },
+  {
+    "id": "leonardo",
+    "title": "Leonardo da Vinci",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1452–1519",
+    "summary": "The Renaissance painter, anatomist, and engineer who refused to separate art from science"
+  },
+  {
+    "id": "littleIceAge",
+    "title": "The Little Ice Age",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 1300–1850",
+    "summary": "The prolonged cooling that shaped European and global history for five centuries — and what a 0.5°C temperature drop can do to a civilization"
+  },
+  {
+    "id": "locke",
+    "title": "John Locke",
+    "summary": "The English philosopher whose Two Treatises of Government argued that legitimate political authority derives from consent of the governed, that natural rights to life, liberty, and property are inalienable, and that revolution is justified when governments violate those rights — providing the philosophical foundation of liberal democracy and the American Revolution.",
+    "template": "People",
+    "subtype": "Thinker",
+    "themes": [
+      "philosophy",
+      "politics",
+      "Enlightenment",
+      "england",
+      "democracy",
+      "law"
+    ],
+    "period": "1632–1704",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "machiavelli",
+    "title": "Niccolò Machiavelli",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1469–1527",
+    "themes": [
+      "politics",
+      "power",
+      "italy",
+      "renaissance",
+      "philosophy",
+      "statecraft"
+    ],
+    "summary": "The Florentine diplomat and political theorist whose Prince offered a ruthlessly unsentimental account of how power is acquired and maintained — founding modern political science and generating five centuries of controversy."
+  },
+  {
+    "id": "mahatmaGandhi",
+    "title": "Mahatma Gandhi",
+    "summary": "The Indian lawyer and independence leader who developed satyagraha — nonviolent resistance — into the most influential political method of the 20th century, led India's independence movement against British rule, and shaped every subsequent movement for civil rights and liberation from King to Mandela.",
+    "template": "People",
+    "subtype": "Thinker",
+    "themes": [
+      "india",
+      "colonialism",
+      "decolonization",
+      "politics",
+      "religion",
+      "20thCentury"
+    ],
+    "period": "1869–1948",
+    "qualityTier": "A",
+    "status": "published"
   },
   {
     "id": "manhattanProject",
@@ -1304,6 +936,306 @@
     "summary": "The secret American-led scientific and industrial program that built the first nuclear weapons during the Second World War — mobilizing over 130,000 people, spending two billion dollars, and producing the bombs dropped on Hiroshima and Nagasaki in August 1945, opening the nuclear age."
   },
   {
+    "id": "manifesto",
+    "title": "The Communist Manifesto",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "1848",
+    "summary": "The argument that compressed a theory of history, a critique of capitalism, and a political programme into 23 pages — and then became more powerful as a symbol than as a text"
+  },
+  {
+    "id": "mecca",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "Pre-Islamic antiquity–present",
+    "title": "Mecca",
+    "summary": "The holiest city in Islam, birthplace of the Prophet Muhammad, and site of the Kaaba — the point toward which 1.8 billion Muslims orient their daily prayers and to which they aspire to make the Hajj pilgrimage at least once in their lives."
+  },
+  {
+    "id": "medievalEuropeanSociety",
+    "title": "Medieval European Society",
+    "summary": "The social, economic, and cultural order that developed in Europe after the fall of the Western Roman Empire — organized around feudalism, the Catholic Church, and the manorial economy — before being transformed by the Black Death, the Renaissance, the printing press, and the Reformation into the early modern world.",
+    "template": "Events",
+    "subtype": "Period",
+    "themes": [
+      "europe",
+      "christianity",
+      "middleAges",
+      "society",
+      "economics",
+      "religion"
+    ],
+    "period": "c. 500–1500 CE",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "mesopotamia",
+    "title": "Mesopotamia",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 10,000–500 BCE",
+    "summary": "The river valley system between the Tigris and Euphrates where urban civilization, writing, law, and empire were invented — and the 'cradle of civilization' framing that tells us as much about the civilizations that use it as about Mesopotamia itself"
+  },
+  {
+    "id": "minimumWage",
+    "title": "The Federal Minimum Wage",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "Ongoing",
+    "summary": "Whether and how the federal floor on wages should be changed — the most extensively studied question in labor economics, with genuine methodological disputes and genuine value disagreements about how to weigh competing outcomes"
+  },
+  {
+    "id": "money",
+    "title": "Money",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE – present",
+    "summary": "The technology of exchange — from grain tallies in Mesopotamian temples to coined metal in Greek city-states to global digital credit — whose most consequential property is not what it buys but what it does to the relationships, values, and institutions of every civilization that uses it"
+  },
+  {
+    "id": "mongolEmpire",
+    "title": "The Mongol Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1206–1368",
+    "summary": "The largest contiguous land empire in history — a Eurasian empire founded by Genghis Khan in 1206 that within seventy years stretched from the Pacific to the Danube, destroyed some of the most sophisticated cities in the world, enabled unprecedented trade and exchange across the continent, and carried the plague that became the Black Death."
+  },
+  {
+    "id": "monotheism",
+    "title": "Monotheism",
+    "summary": "The belief in a single, all-powerful God who created the universe and demands exclusive worship — the founding theological claim of Judaism, Christianity, and Islam that shaped the religious, philosophical, and political history of half the world, and whose logic of exclusive truth generated both civilization and persecution.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "themes": [
+      "religion",
+      "judaism",
+      "christianity",
+      "islam",
+      "philosophy",
+      "ancientHistory"
+    ],
+    "period": "c. 1300 BCE–present",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "mosquitoes",
+    "title": "Mosquitoes",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "Prehistoric – present",
+    "summary": "The insect that has killed more humans than any other animal — and that shaped the geography of empire, the patterns of the Atlantic slave trade, and the limits of colonial expansion through differential immunity to the diseases it carries"
+  },
+  {
+    "id": "napoleon",
+    "title": "Napoleon Bonaparte",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1769–1821",
+    "summary": "The military and political genius who codified the French Revolution and turned its energies into continental empire"
+  },
+  {
+    "id": "nationalism",
+    "title": "Nationalism",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "Ongoing",
+    "summary": "The idea that the world should be divided into nations with the right to self-determination — and the most productively ambiguous concept in modern political life"
+  },
+  {
+    "id": "navigation",
+    "title": "Navigation",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 40,000 BCE – present",
+    "summary": "The technology of controlled movement across open water — from Polynesian star-path wayfinding to Arab dhow routes across the Indian Ocean to European oceanic exploration — that connected distant civilizations, enabled global trade and empire, and made the modern world's geographic integration possible"
+  },
+  {
+    "id": "newton",
+    "title": "Isaac Newton",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1643–1727",
+    "themes": [
+      "science",
+      "mathematics",
+      "england",
+      "enlightenment",
+      "astronomy",
+      "knowledge"
+    ],
+    "summary": "The English mathematician and natural philosopher whose Principia Mathematica unified terrestrial and celestial mechanics under universal gravitation, making him the dominant figure of the Scientific Revolution and the foundation of classical physics."
+  },
+  {
+    "id": "odyssey",
+    "title": "The Odyssey",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 8th century BCE",
+    "summary": "An ancient Greek epic poem attributed to Homer, composed around the 8th century BCE in the tradition of oral poetry, following Odysseus on his ten-year journey home after the Trojan War -- a foundational work of Western literature whose narrative templates have been reworked in every subsequent century."
+  },
+  {
+    "id": "oil",
+    "title": "Oil",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1859-present",
+    "summary": "The fossil fuel that powers the modern world economy -- extracted commercially since 1859, the foundation of transportation, agriculture, plastics, and warfare for over a century, and the primary driver of anthropogenic climate change."
+  },
+  {
+    "id": "originOfSpecies",
+    "title": "On the Origin of Species",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1859",
+    "summary": "The foundational document of modern biology — and the most culturally contested scientific text in history"
+  },
+  {
+    "id": "ottomanEmpire",
+    "title": "The Ottoman Empire",
+    "template": "Sites",
+    "subtype": "Site",
+    "period": "c. 1299–1922",
+    "themes": [
+      "islam",
+      "turkey",
+      "empire",
+      "middleEast",
+      "politics",
+      "war"
+    ],
+    "summary": "The Turkic Muslim empire that ruled Anatolia, the Middle East, North Africa, and southeastern Europe for six centuries — the longest-lasting Islamic empire and the context for much of the contemporary Middle East."
+  },
+  {
+    "id": "paper",
+    "title": "Paper",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 100 BCE – present",
+    "summary": "The surface on which civilization recorded itself — invented in China around 100 BCE, transmitted westward through the Islamic world, and eventually combined with movable type to produce the information revolution that made the modern world; now being displaced by digital surfaces whose consequences are still unfolding"
+  },
+  {
+    "id": "plato",
+    "title": "Plato",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 428–348 BCE",
+    "summary": "The Athenian philosopher whose dialogues invented Western philosophy's central questions — the nature of knowledge, justice, beauty, and the good life — and whose theory of Forms, defense of philosopher-kings, and suspicion of democracy have been argued with, built upon, and reacted against for 2,400 years"
+  },
+  {
+    "id": "power",
+    "title": "Power",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "Ongoing",
+    "summary": "The concept that makes the invisible architecture of social life visible — and reveals why authority persists even when it could be challenged"
+  },
+  {
+    "id": "printingPress",
+    "title": "The Invention of the Printing Press",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "c. 1440",
+    "summary": "The technology that made information cheap to reproduce — and institutional monopoly on knowledge permanently impossible"
+  },
+  {
+    "id": "probability",
+    "title": "Probability",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 1654 CE – present",
+    "summary": "The mathematics of uncertainty — which transformed how civilization manages risk, enabled the insurance industry, statistical medicine, quantum mechanics, and machine learning, and produced an intellectual foreclosure that made prior frameworks for reasoning about uncertain futures permanently inadequate"
+  },
+  {
+    "id": "protestantReformation",
+    "title": "The Protestant Reformation",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1517–c. 1648",
+    "summary": "The 16th-century religious movement that fractured Western Christianity, produced the modern state system, and demonstrated what the printing press could do"
+  },
+  {
+    "id": "quantumMechanics",
+    "title": "Quantum Mechanics",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1900–present",
+    "themes": [
+      "science",
+      "physics",
+      "mathematics",
+      "knowledge",
+      "technology",
+      "20thCentury"
+    ],
+    "summary": "The physical theory developed between 1900 and 1930 that describes the behavior of matter and energy at atomic and subatomic scales — replacing classical physics in that domain, resisting intuitive interpretation for a century, and underpinning virtually all modern technology from semiconductors to lasers to medical imaging."
+  },
+  {
+    "id": "rabbinicJudaism",
+    "title": "Rabbinic Judaism",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 70 CE – present",
+    "summary": "The form of Judaism that emerged after the Roman destruction of the Second Temple in 70 CE — replacing Temple sacrifice with prayer, priestly authority with rabbinic scholarship, and territorial religion with a portable legal and intellectual system that could survive anywhere on earth."
+  },
+  {
+    "id": "renaissance",
+    "title": "The Renaissance",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1300-1600",
+    "summary": "The cultural and intellectual movement that transformed European art, literature, philosophy, and science between roughly 1300 and 1600 -- centered in Italian city-states, organized through patronage, and driven by the recovery and celebration of ancient Greek and Roman learning."
+  },
+  {
+    "id": "rice",
+    "title": "Rice",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 7000 BCE – present",
+    "summary": "The crop that fed half of humanity — domesticated in China's Yangtze River valley around 7000 BCE, spread across Asia through millennia of agricultural development, and shaped the labor-intensive paddy civilizations of East and Southeast Asia whose demographic weight, political structures, and cultural patterns remain distinct from the wheat-based civilizations of the West"
+  },
+  {
+    "id": "romanEmpire",
+    "title": "The Roman Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "27 BCE – 476 CE (Western); 27 BCE – 1453 CE (Eastern)",
+    "summary": "The political structure that unified the Mediterranean world for five centuries, produced the legal, administrative, and infrastructural inheritance on which European and Near Eastern civilization was built, and whose legacy — in law, language, religion, and institutional imagination — has never fully ended"
+  },
+  {
+    "id": "romanRepublic",
+    "title": "The Roman Republic",
+    "template": "Sites",
+    "subtype": "Site",
+    "period": "509–27 BCE",
+    "themes": [
+      "politics",
+      "rome",
+      "ancientHistory",
+      "democracy",
+      "war",
+      "law"
+    ],
+    "summary": "The political system through which Rome governed itself for nearly five centuries — replacing monarchy with elected magistrates, a senate, and popular assemblies — before collapsing into the civil wars that produced the empire, and bequeathing its institutional vocabulary to every subsequent republic."
+  },
+  {
+    "id": "romanticism",
+    "title": "Romanticism",
+    "template": "Events",
+    "subtype": "Movement",
+    "period": "c. 1770–1850",
+    "themes": [
+      "culture",
+      "philosophy",
+      "europe",
+      "literature",
+      "art",
+      "politics"
+    ],
+    "summary": "The intellectual and artistic movement that arose as a reaction against Enlightenment rationalism — emphasizing emotion, imagination, nature, and the individual — whose influence on art, literature, music, philosophy, and politics has been so pervasive that we still live within it."
+  },
+  {
     "id": "rousseau",
     "title": "Jean-Jacques Rousseau",
     "template": "People",
@@ -1320,20 +1252,20 @@
     "summary": "The Geneva-born philosopher whose ideas about natural goodness, the social contract, the general will, and education shaped the French Revolution, Romanticism, modern democracy, and progressive pedagogy — while his life and contradictions made him one of the most contested figures in Western thought."
   },
   {
-    "id": "wretchedOfTheEarth",
-    "title": "The Wretched of the Earth",
-    "template": "Foundational Texts",
-    "subtype": "Non-narrative",
-    "period": "1961",
-    "themes": [
-      "decolonization",
-      "colonialism",
-      "africa",
-      "politics",
-      "psychology",
-      "20thCentury"
-    ],
-    "summary": "Frantz Fanon's 1961 analysis of colonialism, decolonization, and the psychology of the colonized — arguing that colonial violence could only be overcome through counter-violence, that the colonized must create new national cultures, and that the pitfalls of national consciousness threatened to reproduce colonial structures after independence."
+    "id": "russianRevolution",
+    "title": "The Russian Revolution",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1917–1921",
+    "summary": "The collapse of Tsarist Russia in 1917 and the Bolshevik seizure of power — producing, after a devastating civil war, the Soviet Union, the world's first communist state, and reshaping global politics for the remainder of the 20th century."
+  },
+  {
+    "id": "scientificRevolution",
+    "title": "The Scientific Revolution",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1543–1687",
+    "summary": "A transformation in how European thinkers understood and investigated the natural world — running from Copernicus's heliocentric model of the solar system to Newton's laws of motion — that established the experimental method, mathematical description of nature, and the idea of a law-governed universe as the foundations of modern science."
   },
   {
     "id": "scrambleForAfrica",
@@ -1352,19 +1284,231 @@
     "summary": "The rapid partition of Africa by European powers between roughly 1880 and 1914 — in which a continent that was 10% European-controlled became 90% European-controlled in three decades — establishing borders that ignored existing political and ethnic realities and creating the colonial structures whose legacy continues to define African politics."
   },
   {
-    "id": "authoritarianism",
-    "title": "Authoritarianism",
+    "id": "siddharthaGautama",
+    "title": "Siddhartha Gautama",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 563–483 BCE (traditional); c. 480–400 BCE (revised scholarly dating)",
+    "summary": "The historical founder of Buddhism, whose analysis of suffering and the conditions of human experience produced one of the most enduring and geographically expansive intellectual traditions in human history."
+  },
+  {
+    "id": "silkRoad",
+    "title": "The Silk Road",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 130 BCE – 1450 CE",
+    "summary": "The overland and maritime trade network connecting China to the Mediterranean world — the primary channel through which goods, religions, technologies, diseases, and ideas moved across Eurasia for over a millennium."
+  },
+  {
+    "id": "slaveTrade",
+    "title": "The Transatlantic Slave Trade",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1500–1867",
+    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries"
+  },
+  {
+    "id": "socialDarwinism",
     "template": "Concepts",
     "subtype": "Normative Concept",
-    "period": "20th century–present",
+    "title": "Social Darwinism",
+    "period": "1860s–present",
+    "summary": "The application of evolutionary ideas — competition, survival of the fittest, natural selection — to human societies, used to justify inequality, empire, and eugenics."
+  },
+  {
+    "id": "socrates",
+    "title": "Socrates",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 470–399 BCE",
+    "summary": "An Athenian philosopher who wrote nothing but transformed Western philosophy — through the practice of public questioning he called elenchus, his conviction that the unexamined life is not worth living, and his trial and execution for impiety and corrupting the youth of Athens, which became the defining image of philosophy as a dangerous practice."
+  },
+  {
+    "id": "sovietUnionUnderStalin",
+    "title": "The Soviet Union under Stalin",
+    "template": "Events",
+    "subtype": "Period",
+    "period": "1924–1953",
+    "themes": [
+      "russia",
+      "politics",
+      "20thCentury",
+      "war",
+      "economics",
+      "power"
+    ],
+    "summary": "The period of Soviet history from Lenin's death through Stalin's own — encompassing forced collectivization, the Great Terror, the Second World War, and the Cold War's beginning — during which the USSR became an industrial superpower and a totalitarian state responsible for millions of deaths."
+  },
+  {
+    "id": "sparta",
+    "title": "Sparta",
+    "summary": "The Greek city-state that subordinated all life to military excellence, produced the most feared army in the ancient world, and invented a social system so extreme — the agoge, the helot system, the suppression of individual life — that it has fascinated and disturbed observers from Plato to the present.",
+    "template": "Sites",
+    "subtype": "Site",
+    "themes": [
+      "ancientHistory",
+      "greece",
+      "war",
+      "politics",
+      "society",
+      "sparta"
+    ],
+    "period": "c. 900–146 BCE",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "theForest",
+    "title": "The Forest",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "deep prehistory – present",
+    "summary": "The ecosystem that sheltered, fed, and equipped the human species for most of its existence — and whose systematic destruction over the past ten thousand years has been both the precondition for civilization and one of civilization's most consequential long-term costs."
+  },
+  {
+    "id": "theHolocaust",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "title": "The Holocaust",
+    "period": "1933–1945",
+    "summary": "The systematic, state-organized persecution and murder of six million Jews and millions of others by the Nazi regime and its collaborators between 1933 and 1945 — the most extensively documented genocide in history."
+  },
+  {
+    "id": "thePrince",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "title": "The Prince",
+    "period": "1513 (written); 1532 (published)",
+    "summary": "Niccolò Machiavelli's short treatise on political power, written in 1513, which set aside the question of how rulers ought to behave and asked instead how power is actually acquired, maintained, and lost."
+  },
+  {
+    "id": "theRepublic",
+    "title": "The Republic",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 375 BCE",
+    "summary": "Plato's extended philosophical dialogue on justice, the ideal state, and the nature of the soul — the foundational text of Western political philosophy and one of the most influential works in the history of ideas."
+  },
+  {
+    "id": "thirtyYearsWar",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1618-1648",
+    "title": "The Thirty Years' War",
+    "summary": "The catastrophic conflict that devastated Central Europe from 1618 to 1648 -- beginning as a religious war between Catholics and Protestants and ending as a struggle between European great powers that established the modern system of sovereign states."
+  },
+  {
+    "id": "thucydides",
+    "title": "Thucydides",
+    "summary": "The Athenian general and historian whose account of the Peloponnesian War invented the discipline of history as rigorous political and military analysis — insisting on accurate evidence, rejecting mythological causation, and identifying the deep structural forces that drive states to war in ways that political scientists and strategists still use today.",
+    "template": "People",
+    "subtype": "Thinker",
+    "themes": [
+      "ancientHistory",
+      "greece",
+      "history",
+      "politics",
+      "war",
+      "knowledge"
+    ],
+    "period": "c. 460–400 BCE",
+    "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "treatyOfVersailles",
+    "title": "The Treaty of Versailles",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1919",
     "themes": [
       "politics",
+      "war",
+      "europe",
+      "diplomacy",
+      "nationalism",
+      "20thCentury"
+    ],
+    "summary": "The peace settlement that formally ended the First World War — imposing disarmament, territorial losses, reparations, and the war guilt clause on Germany, and creating the political conditions debated ever since as causes of the Second World War."
+  },
+  {
+    "id": "varanasi",
+    "title": "Varanasi",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1200 BCE – present",
+    "summary": "The oldest continuously inhabited city in the world and the holiest site in Hinduism — a place where the sacred geography of a civilization has been maintained without interruption for over three thousand years."
+  },
+  {
+    "id": "vietnamWar",
+    "title": "The Vietnam War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1955–1975",
+    "summary": "A conflict in Southeast Asia in which North Vietnam and its southern allies fought South Vietnam and the United States for two decades, ending in 1975 with communist victory — demonstrating the limits of conventional military superiority against determined guerrilla resistance and transforming American politics, society, and foreign policy."
+  },
+  {
+    "id": "wealthOfNations",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1776",
+    "title": "The Wealth of Nations",
+    "summary": "Adam Smith's 1776 investigation into the causes of national prosperity -- the foundational text of modern economics, which established that markets coordinate economic activity more effectively than government direction, and whose arguments have been used to justify both the free market policies it recommends and the social concerns it actually expresses."
+  },
+  {
+    "id": "weimarRepublic",
+    "title": "The Weimar Republic",
+    "template": "Events",
+    "subtype": "Period",
+    "period": "1919–1933",
+    "themes": [
+      "politics",
+      "germany",
       "democracy",
       "20thCentury",
-      "power",
-      "psychology",
-      "globalisation"
+      "war",
+      "economics"
     ],
-    "summary": "The political system or disposition in which power is concentrated in a single leader or small group, political opposition is suppressed, and citizens are subordinated to the state — a category that encompasses regimes from military juntas to competitive autocracies, and a problem that democracy has never fully solved."
+    "summary": "The German democratic republic that lasted fourteen years before Hitler's appointment as Chancellor — the paradigm case of democratic failure and the source of constitutional design lessons still in use today."
+  },
+  {
+    "id": "wheat",
+    "title": "Wheat",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 10,000 BCE – present",
+    "summary": "The grass that made civilization possible — by enabling the settled surplus agriculture that produced cities, writing, mathematics, states, and the civilizational dependency structure that still governs global food security"
+  },
+  {
+    "id": "worldWarII",
+    "title": "The Second World War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1939-1945",
+    "summary": "The deadliest conflict in human history -- killing between 70 and 85 million people across six years of fighting -- producing the Holocaust, the nuclear age, the Cold War, decolonization, and the international order that still governs global politics."
+  },
+  {
+    "id": "wretchedOfTheEarth",
+    "title": "The Wretched of the Earth",
+    "template": "Foundational Texts",
+    "subtype": "Non-narrative",
+    "period": "1961",
+    "themes": [
+      "decolonization",
+      "colonialism",
+      "africa",
+      "politics",
+      "psychology",
+      "20thCentury"
+    ],
+    "summary": "Frantz Fanon's 1961 analysis of colonialism, decolonization, and the psychology of the colonized — arguing that colonial violence could only be overcome through counter-violence, that the colonized must create new national cultures, and that the pitfalls of national consciousness threatened to reproduce colonial structures after independence."
+  },
+  {
+    "id": "zero",
+    "title": "Zero",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 628 CE (arithmetic) – present",
+    "summary": "The concept that transformed mathematics from a tool for counting into a tool for describing the physical world — making algebra, calculus, and computing structurally possible, and sitting invisibly at the foundation of every calculation that modern civilization performs"
   }
 ]
