@@ -1574,5 +1574,149 @@
     "subtype": "Conceptual Foundation",
     "period": "c. 628 CE (arithmetic) – present",
     "summary": "The concept that transformed mathematics from a tool for counting into a tool for describing the physical world — making algebra, calculus, and computing structurally possible, and sitting invisibly at the foundation of every calculation that modern civilization performs"
+  },
+  {
+    "id": "capitalism",
+    "title": "Capitalism",
+    "summary": "The economic system in which the means of production are privately owned, goods and services are allocated through markets, and profit-seeking drives investment — a system that has generated unprecedented material wealth, lifted billions from poverty, and produced inequality, environmental destruction, and periodic crises that have generated the most consequential political conflicts of the modern era.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 1500–present",
+    "themes": [
+      "economics",
+      "politics",
+      "history",
+      "society",
+      "globalHistory",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "marx",
+    "title": "Karl Marx",
+    "summary": "The German philosopher, economist, and revolutionary whose analysis of capitalism as a system of class exploitation — developed in Capital, the Communist Manifesto, and decades of political journalism — became the theoretical foundation of socialist and communist movements worldwide, inspired revolutions that shaped the 20th century, and remains the most systematic critique of capitalism ever produced.",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1818–1883",
+    "themes": [
+      "philosophy",
+      "economics",
+      "politics",
+      "germany",
+      "history",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "byzantineEmpire",
+    "title": "The Byzantine Empire",
+    "summary": "The eastern continuation of the Roman Empire — centered on Constantinople, Christian in religion, Greek in language and culture, Roman in legal tradition and political identity — that survived the fall of the Western Empire by a thousand years, preserved and transmitted classical learning, shaped the civilizations of Eastern Europe and Russia, and fell to the Ottoman Turks in 1453, an event that shook the Christian world and sent Greek scholars westward to fuel the Renaissance.",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "330–1453 CE",
+    "themes": [
+      "europe",
+      "middleAges",
+      "christianity",
+      "history",
+      "rome",
+      "islam"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "bureaucracy",
+    "title": "Bureaucracy",
+    "summary": "The system of administration through specialized officials, written records, hierarchical authority, and impersonal rules — independently invented by every large civilization in history, from Han China to the Roman Empire to the Ottoman devshirme to the modern nation-state — and the concept through which Max Weber understood modernity itself: the 'iron cage' of rationalized, impersonal rule that modern societies cannot escape.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 2500 BCE–present",
+    "themes": [
+      "politics",
+      "history",
+      "society",
+      "economics",
+      "modernity",
+      "globalHistory"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "muhammed",
+    "title": "Muhammad",
+    "summary": "The Prophet of Islam — born in Mecca around 570 CE, a merchant who received revelations he identified as the word of God, who united the Arabian Peninsula under a new monotheism, and whose life, teaching, and example became the foundation of a civilization that at its height stretched from Spain to Central Asia and remains a living force for 1.8 billion people — and a figure whose historical reconstruction is entangled with theological commitment in ways that make him one of the most studied and most contested persons in history.",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 570–632 CE",
+    "themes": [
+      "religion",
+      "history",
+      "middleEast",
+      "islam",
+      "biography",
+      "globalHistory"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "keynes",
+    "title": "John Maynard Keynes",
+    "summary": "The British economist whose General Theory of Employment, Interest and Money (1936) — written in response to the Great Depression — argued that market economies are not self-correcting and that governments must use fiscal policy to stabilize aggregate demand, thereby founding modern macroeconomics, justifying the postwar welfare state, and providing the intellectual framework for economic management in every advanced democracy.",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1883–1946",
+    "themes": [
+      "economics",
+      "britain",
+      "20thCentury",
+      "politics",
+      "history",
+      "capitalism"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "stoicism",
+    "title": "Stoicism",
+    "summary": "The ancient Greek and Roman philosophical school — founded by Zeno of Citium in Athens around 300 BCE — that taught that virtue is the only true good, that external circumstances are 'indifferent,' that we can control our judgments but not outcomes, and that living according to reason and nature is the path to flourishing: a philosophy that shaped Roman imperial culture, influenced early Christianity, and has undergone a remarkable 21st-century revival as a practical philosophy of life.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 300 BCE–180 CE",
+    "themes": [
+      "philosophy",
+      "greece",
+      "rome",
+      "ethics",
+      "history",
+      "psychology"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "ibnKhaldun",
+    "title": "Ibn Khaldun",
+    "summary": "The 14th-century Tunisian polymath — historian, sociologist, economist, and political theorist — whose Muqaddimah (Introduction to History) articulated the first systematic theory of how and why civilizations rise and fall, introducing concepts of group solidarity (asabiyyah), economic analysis, and the sociology of knowledge that anticipate by four centuries ideas usually credited to the European Enlightenment and social science traditions.",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1332–1406 CE",
+    "themes": [
+      "islam",
+      "history",
+      "philosophy",
+      "northAfrica",
+      "middleEast",
+      "sociology"
+    ],
+    "status": "published",
+    "qualityTier": "A"
   }
 ]
