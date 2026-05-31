@@ -758,5 +758,213 @@
     "period": "c. 1600–1997",
     "title": "The British Empire",
     "summary": "The largest empire in history by land area, encompassing at its peak in the 1920s approximately 25% of the world’s land surface and governing roughly 458 million people."
+  },
+  {
+    "id": "galileo",
+    "title": "Galileo Galilei",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1564–1642",
+    "summary": "The Italian mathematician, astronomer, and physicist whose telescopic observations, defense of heliocentrism, and development of experimental method made him a founding figure of the Scientific Revolution — and whose conflict with the Roman Inquisition became the paradigm case for the relationship between science and religious authority.",
+    "themes": [
+      "science",
+      "astronomy",
+      "religion",
+      "italy",
+      "renaissance",
+      "knowledge"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Galileo",
+      "Galileo Galilei",
+      "Galilei"
+    ],
+    "indexTerms": [
+      "telescope",
+      "heliocentrism",
+      "Copernicus",
+      "Inquisition",
+      "Dialogue Concerning the Two Chief World Systems",
+      "Sidereus Nuncius",
+      "moons of Jupiter",
+      "Two New Sciences",
+      "Pope Urban VIII",
+      "Kepler",
+      "pendulum",
+      "inclined plane",
+      "Padua",
+      "Florence",
+      "abjuration"
+    ]
+  },
+  {
+    "id": "indusValleyCivilization",
+    "title": "The Indus Valley Civilization",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 3300–c. 1300 BCE",
+    "summary": "The Bronze Age civilization that flourished in the Indus River basin from roughly 3300 to 1300 BCE, encompassing at its peak over a million square kilometers and cities including Mohenjo-daro and Harappa — the largest urban civilization of the ancient world, whose script remains undeciphered and whose collapse remains one of archaeology's great unsolved questions.",
+    "themes": [
+      "archaeology",
+      "southAsia",
+      "ancientHistory",
+      "urbanization",
+      "trade",
+      "bronze-age"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Harappan Civilization",
+      "Indus Civilization",
+      "Mature Harappan",
+      "Sarasvati-Sindhu Civilization"
+    ],
+    "indexTerms": [
+      "Mohenjo-daro",
+      "Harappa",
+      "Dholavira",
+      "Rakhigarhi",
+      "Lothal",
+      "Great Bath",
+      "Indus script",
+      "Dravidian",
+      "Bronze Age",
+      "Vedic",
+      "Aryan migration",
+      "Pakistan",
+      "Gujarat",
+      "Punjab",
+      "Mesopotamia"
+    ]
+  },
+  {
+    "id": "donQuixote",
+    "title": "Don Quixote",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "1605–1615",
+    "summary": "Miguel de Cervantes's two-part novel (1605, 1615) about a Spanish gentleman who reads so many chivalric romances that he loses his mind and sets out to become a knight-errant — widely regarded as the first modern novel, a founding text of European literature, and an inexhaustible meditation on the relationship between imagination and reality.",
+    "themes": [
+      "literature",
+      "spain",
+      "renaissance",
+      "identity",
+      "madness",
+      "fiction"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Don Quijote",
+      "The Ingenious Gentleman Don Quixote of La Mancha",
+      "El ingenioso hidalgo don Quijote de la Mancha"
+    ],
+    "indexTerms": [
+      "Miguel de Cervantes",
+      "Sancho Panza",
+      "Dulcinea",
+      "windmills",
+      "chivalric romance",
+      "hidalgo",
+      "Rocinante",
+      "metafiction",
+      "Alonso Quijano",
+      "Part I",
+      "Part II",
+      "Avellaneda",
+      "Golden Age Spain",
+      "knight-errant"
+    ]
+  },
+  {
+    "id": "antibiotics",
+    "title": "Antibiotics",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1928–present",
+    "summary": "Compounds that kill or inhibit the growth of bacteria, first developed from natural mold extracts in the 1920s–1940s and now among the most widely used medicines in human history — responsible for saving hundreds of millions of lives, enabling modern surgery and cancer treatment, and generating the crisis of antimicrobial resistance that threatens to reverse their gains.",
+    "themes": [
+      "medicine",
+      "science",
+      "publicHealth",
+      "biology",
+      "economics",
+      "globalHealth"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "antimicrobials",
+      "penicillin",
+      "antibacterials",
+      "wonder drugs"
+    ],
+    "indexTerms": [
+      "penicillin",
+      "Alexander Fleming",
+      "Howard Florey",
+      "Ernst Chain",
+      "streptomycin",
+      "Selman Waksman",
+      "ampicillin",
+      "MRSA",
+      "antimicrobial resistance",
+      "AMR",
+      "bacteriophage",
+      "sulfonamides",
+      "pharmaceutical industry",
+      "WHO",
+      "One Health"
+    ]
+  },
+  {
+    "id": "epicOfGilgamesh",
+    "title": "The Epic of Gilgamesh",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 2100–c. 700 BCE",
+    "summary": "The ancient Mesopotamian epic poem about the king of Uruk — compiled in its most complete form around 1200 BCE from older Sumerian traditions — that tells of friendship, loss, and the search for immortality, and is among the oldest surviving works of literature, containing a flood narrative that predates and closely parallels the biblical story of Noah.",
+    "themes": [
+      "ancientHistory",
+      "literature",
+      "mesopotamia",
+      "death",
+      "myth",
+      "archaeology"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Gilgamesh",
+      "Epic of Gilgamesh",
+      "He Who Saw the Deep"
+    ],
+    "indexTerms": [
+      "Gilgamesh",
+      "Enkidu",
+      "Utnapishtim",
+      "Shamash",
+      "Ishtar",
+      "Humbaba",
+      "Uruk",
+      "Nineveh",
+      "Ashurbanipal",
+      "George Smith",
+      "Andrew George",
+      "Standard Babylonian",
+      "Sumerian",
+      "cuneiform",
+      "flood narrative",
+      "Bull of Heaven",
+      "Cedar Forest"
+    ]
   }
 ]
