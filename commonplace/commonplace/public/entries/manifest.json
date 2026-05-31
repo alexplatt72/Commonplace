@@ -966,5 +966,85 @@
       "Bull of Heaven",
       "Cedar Forest"
     ]
+  },
+  {
+    "id": "machiavelli",
+    "title": "Niccolò Machiavelli",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1469–1527",
+    "themes": [
+      "politics",
+      "power",
+      "italy",
+      "renaissance",
+      "philosophy",
+      "statecraft"
+    ],
+    "summary": "The Florentine diplomat and political theorist whose Prince offered a ruthlessly unsentimental account of how power is acquired and maintained — founding modern political science and generating five centuries of controversy."
+  },
+  {
+    "id": "treatyOfVersailles",
+    "title": "The Treaty of Versailles",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1919",
+    "themes": [
+      "politics",
+      "war",
+      "europe",
+      "diplomacy",
+      "nationalism",
+      "20thCentury"
+    ],
+    "summary": "The peace settlement that formally ended the First World War — imposing disarmament, territorial losses, reparations, and the war guilt clause on Germany, and creating the political conditions debated ever since as causes of the Second World War."
+  },
+  {
+    "id": "hebrewBibleOldTestament",
+    "title": "The Hebrew Bible",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 900–c. 400 BCE",
+    "themes": [
+      "religion",
+      "ancientHistory",
+      "judaism",
+      "literature",
+      "law",
+      "myth"
+    ],
+    "summary": "The collection of ancient Israelite and Jewish texts that became the founding scripture of Judaism, the Old Testament of Christianity, and a primary source for Islam — shaping the moral and literary imagination of Western civilization more than any other single work."
+  },
+  {
+    "id": "newton",
+    "title": "Isaac Newton",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1643–1727",
+    "themes": [
+      "science",
+      "mathematics",
+      "england",
+      "enlightenment",
+      "astronomy",
+      "knowledge"
+    ],
+    "summary": "The English mathematician and natural philosopher whose Principia Mathematica unified terrestrial and celestial mechanics under universal gravitation, making him the dominant figure of the Scientific Revolution and the foundation of classical physics."
+  },
+  {
+    "id": "internet",
+    "title": "The Internet",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1969–present",
+    "themes": [
+      "technology",
+      "communication",
+      "globalisation",
+      "economics",
+      "politics",
+      "knowledge"
+    ],
+    "summary": "The global network originating from ARPANET in 1969 that has reorganized communication, commerce, knowledge, and politics more profoundly than any technology since the printing press."
   }
 ]
