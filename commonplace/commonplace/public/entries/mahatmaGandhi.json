@@ -221,32 +221,60 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Gandhi: The Years That Changed the World",
+      "title": "Gandhi: The Years That Changed the World, 1914–1948",
       "author": "Ramachandra Guha",
-      "note": "The essential biography of his Indian years — balanced, comprehensive, and essential for understanding both the achievement and the contradictions."
+      "note": "Start here — the second volume of Guha's definitive biography covers Gandhi's political life in India with extraordinary depth and balance; the most authoritative scholarly account in English."
+    },
+    {
+      "type": "Book",
+      "title": "An Autobiography: The Story of My Experiments with Truth",
+      "author": "Mohandas K. Gandhi",
+      "note": "Read as primary source — Gandhi's autobiography is essential for understanding how he understood himself and his method; it is also a philosophical document, not merely a memoir. Covers his life through 1921."
+    },
+    {
+      "type": "Book",
+      "title": "Gandhi Before India",
+      "author": "Ramachandra Guha",
+      "note": "The essential first volume — Guha's account of Gandhi's South African years shows how his methods and ideas developed in a context most readers don't know; essential for understanding the mature Gandhi."
     },
     {
       "type": "Book",
       "title": "Annihilation of Caste",
       "author": "B.R. Ambedkar",
-      "note": "The essential counter-voice — read alongside Gandhi to understand the most important challenge to his legacy."
+      "note": "The essential critical counterpoint — Ambedkar's 1936 critique of Gandhi's approach to caste is the most important document in their public disagreement; reading it alongside Gandhi shows the limits of satyagraha for those at the bottom of the caste hierarchy."
+    },
+    {
+      "type": "Book",
+      "title": "Gandhi's Truth",
+      "author": "Erik Erikson",
+      "note": "The best psychological biography — Erikson's psychoanalytic account of Gandhi's 1918 mill workers' strike applies identity theory to a political life with unusual depth; for readers who want the interior dimension that political biography cannot reach."
     }
   ],
   "popularCulture": [
     {
       "type": "Film",
-      "title": "Gandhi (1982)",
-      "description": "Richard Attenborough's Oscar-winning film brought Gandhi to mass audiences and substantially shaped how he is understood globally. Its Gandhi is saintly and somewhat flattened — the contradictions of his racial views, his approach to caste, and his personal life are largely absent. The film's enormous influence makes it essential to understand both as a cultural event and as a simplification of the historical record."
+      "title": "Gandhi — Richard Attenborough (1982)",
+      "description": "Ben Kingsley's Gandhi won eight Academy Awards and remains the dominant popular image of Gandhi worldwide — it is the film through which most non-Indian audiences have encountered him. Attenborough's reverential treatment emphasizes Gandhi's spiritual qualities and political courage while significantly softening his contradictions: his early racism toward Black South Africans, his complex attitudes toward caste and women, and his sometimes autocratic control of the independence movement are absent. The film's Gandhi is a saint; the historical Gandhi was a politician who also happened to be genuinely saintly in specific ways. The gap between the two is instructive about how hagiography works."
+    },
+    {
+      "type": "Political Method",
+      "title": "Satyagraha and nonviolent resistance as a global method",
+      "description": "Gandhi's method of nonviolent resistance — satyagraha, the force of truth — has been the most exported Indian political concept in history. Gene Sharp's 198 methods of nonviolent action, derived from studying Gandhi, became the handbook for civil resistance movements from the Philippines (1986) to Serbia (2000) to Egypt (2011). Martin Luther King explicitly modeled the American civil rights movement on Gandhian nonviolence, studied in India in 1959. Nelson Mandela admired Gandhi (though later concluded that nonviolence was insufficient against apartheid). The concept has been so thoroughly absorbed into global political repertoire that its Indian origins are often forgotten. Whether Gandhi's methods work against all forms of oppression — or only against regimes with some residual conscience — is the critical question that Sharp's successors debate."
     },
     {
       "type": "Concept",
-      "title": "Be the change",
-      "description": "The phrase 'Be the change you wish to see in the world' is widely attributed to Gandhi but he never said it. The sentiment is consistent with his emphasis on personal moral transformation as the foundation of political change, but the specific formulation is a modern paraphrase. Its viral spread as a motivational quote illustrates how Gandhi has been domesticated into self-help culture — stripped of the political radicalism of satyagraha and reduced to personal ethics."
+      "title": "'Be the change you wish to see in the world'",
+      "description": "This phrase — universally attributed to Gandhi on motivational posters, social media, and graduation speeches — is not found in Gandhi's writings. The actual sentiment behind it is real (Gandhi did argue for the congruence of means and ends, that the method of achieving change must embody the change sought) but the aphorism is a later invention. It exemplifies how Gandhi's ideas have been absorbed into a therapeutic individualism that strips them of their political content: Gandhi was arguing against political methods that contradict political goals, not counseling personal self-improvement. The gap between the motivational-poster Gandhi and the political Gandhi is one of the more instructive examples of how revolutionary thought gets domesticated."
     },
     {
-      "type": "Influence",
-      "title": "Gene Sharp's 198 methods",
-      "description": "Gene Sharp's The Politics of Nonviolent Action (1973) — which catalogues 198 specific methods of nonviolent resistance, from symbolic protests to strikes to parallel government — is the most systematic translation of Gandhi's practice into transferable political technology. Sharp's work, directly derived from Gandhi, has been used by liberation movements worldwide. It represents Gandhi's most concrete and practical legacy."
+      "type": "Historical Debate",
+      "title": "Gandhi and the Partition",
+      "description": "Gandhi's failure to prevent the 1947 Partition of India — which produced one of the largest and most violent forced migrations in history, with perhaps one million deaths — is the most contested aspect of his legacy. Gandhi opposed Partition until the end and fasted in its aftermath to stop communal violence; he was assassinated by a Hindu nationalist who blamed him for being too accommodating to Muslims. Whether Gandhi could have prevented Partition — whether his methods were adequate to the political crisis, whether his insistence on Hindu-Muslim unity was itself a form of political miscalculation — is genuinely debated. The Partition is the shadow that falls across Gandhi's legacy in ways that the Attenborough film does not acknowledge."
+    },
+    {
+      "type": "Critical Reassessment",
+      "title": "Gandhi's early writings on race and caste",
+      "description": "Gandhi's early writings in South Africa contain explicitly racist statements about Black Africans — arguing that Indians should not be treated as equivalent to 'kaffirs' and that the Indian community was superior to the Black African population. His later evolution on race is real but the early record has been recovered by scholars and activists, particularly in South Africa, where statues of Gandhi have been removed on these grounds. His views on caste are equally contested: Gandhi opposed untouchability but supported the varna system (the four-fold division of Hindu society) in ways that Ambedkar argued perpetuated caste rather than dismantling it. The reassessment of Gandhi's record on race and caste is the most important recent development in Gandhi studies and complicates the universal humanitarian image."
     }
   ]
 }

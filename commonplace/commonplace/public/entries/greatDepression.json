@@ -226,32 +226,66 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Great Depression",
-      "author": "Robert McElvaine",
-      "note": "The most accessible social history — McElvaine's account of the human experience of the Depression is the essential starting point."
+      "title": "The Great Crash 1929",
+      "author": "John Kenneth Galbraith",
+      "note": "Start here for the financial history — Galbraith's account of the stock market collapse is elegant, readable, and a model of economic writing for general audiences; the essential starting point before engaging more technical accounts."
     },
     {
       "type": "Book",
-      "title": "Golden Fetters",
+      "title": "Freedom from Fear: The American People in Depression and War",
+      "author": "David Kennedy",
+      "note": "The essential narrative history — Kennedy's Pulitzer-winning account of 1929–1945 gives the Depression its full political and social context; comprehensive, readable, and the standard one-volume account for general readers."
+    },
+    {
+      "type": "Book",
+      "title": "Golden Fetters: The Gold Standard and the Great Depression",
       "author": "Barry Eichengreen",
-      "note": "The essential scholarly account of the international dimension — demanding but the most important explanation of why the Depression was so deep and so long."
+      "note": "The essential economic history — Eichengreen's argument that the gold standard transmitted and prolonged the Depression across countries is the scholarly consensus position; demanding but the foundation of modern understanding of why the Depression was so severe."
+    },
+    {
+      "type": "Book",
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "note": "The essential literary account — Steinbeck's novel about Dust Bowl migrants is the most powerful single document of Depression-era human experience; read alongside the history to understand what the statistics meant for actual families."
+    },
+    {
+      "type": "Book",
+      "title": "Let Us Now Praise Famous Men",
+      "author": "James Agee and Walker Evans",
+      "note": "The essential documentary account — Agee's prose and Evans's photographs of Alabama sharecroppers during the Depression is one of the great works of American documentary literature; essential for understanding how the Depression was experienced in the rural South."
+    },
+    {
+      "type": "Book",
+      "title": "The Forgotten Man: A New History of the Great Depression",
+      "author": "Amity Shlaes",
+      "note": "The essential conservative revisionist account — Shlaes argues that New Deal intervention prolonged the Depression; read as the best-argued version of the anti-Keynesian position, which requires engagement even by those who find it unpersuasive."
     }
   ],
   "popularCulture": [
     {
       "type": "Novel",
-      "title": "The Grapes of Wrath (Steinbeck, 1939)",
-      "description": "Steinbeck's novel about the Joad family's migration from the Dust Bowl to California is the most powerful cultural representation of the Depression — its account of dispossession, labor exploitation, and the failure of the American dream shaped how the Depression was understood and remembered. Published in 1939, it won the Pulitzer Prize and is cited by scholars as evidence for the Depression's social conditions as well as a literary masterpiece. The tension between its documentary impulse and its advocacy for migrant workers has been debated since publication."
+      "title": "The Grapes of Wrath — John Steinbeck (1939)",
+      "description": "Steinbeck's novel about the Joad family's migration from Dust Bowl Oklahoma to California is the most widely read Depression-era document and the text through which most Americans first encounter the period's human cost. It won the Pulitzer Prize in 1940 and contributed to Steinbeck's Nobel Prize. The novel's power comes from its combination of documentary detail (Steinbeck traveled with migrant workers) and biblical resonance (the Joads as a modern Exodus). What it captures: the dispossession of agricultural families, the hostility toward 'Okies' in California, the exploitation of desperate workers. What critics have noted: Steinbeck idealized the workers and simplified the economics; his female characters (especially Ma Joad) carry the novel's emotional weight in ways that flatter sentimentality more than analysis."
     },
     {
-      "type": "Policy",
-      "title": "Deposit insurance",
-      "description": "The Federal Deposit Insurance Corporation (FDIC), created by the Banking Act of 1933, is the Depression's most durable institutional legacy. Before the FDIC, bank runs were rational — if you feared a bank might fail, you had every reason to withdraw your deposits before others did. The FDIC made bank runs irrational by guaranteeing deposits, breaking the self-fulfilling panic dynamic. Deposit insurance is now universal in developed economies and is one of the clearest examples of a policy innovation directly generated by Depression lessons."
+      "type": "Photography",
+      "title": "Dorothea Lange and the FSA photography project",
+      "description": "The Farm Security Administration's photography project — employing Dorothea Lange, Walker Evans, Gordon Parks, and others to document rural poverty during the Depression — produced the defining visual record of the era. Lange's 'Migrant Mother' (1936) — Florence Owens Thompson and her children in a California pea-picker's camp — is the most reproduced photograph of the Depression and one of the most recognized images in American history. The FSA photographs were government propaganda as well as documentary art: they were used to justify New Deal programs. The tension between their aesthetic power and their political function, and between the dignity they accorded their subjects and the voyeurism of poverty documentation, has been analyzed extensively by photography scholars."
     },
     {
-      "type": "Concept",
-      "title": "The Hooverville",
-      "description": "Hoovervilles — shantytowns built by homeless Americans in city parks, named mockingly for President Hoover — became the iconic image of Depression-era suffering and government inadequacy. The name captured the public's judgment that Hoover's insistence on balanced budgets and voluntary private charity was an inadequate response to mass unemployment. Roosevelt's explicit repudiation of Hooverian laissez-faire — 'the only thing we have to fear is fear itself' — defined the New Deal's political identity against Hoover's legacy."
+      "type": "Film",
+      "title": "Cinderella Man — Ron Howard (2005)",
+      "description": "Ron Howard's film about boxer James J. Braddock — a Depression-era fighter who came back from poverty to win the heavyweight championship — exemplifies how the Depression has been absorbed into American mythology as a story of individual resilience. Braddock's actual story is remarkable, but the film's framing (the Depression as backdrop for heroic individual triumph) is characteristic of American popular culture's relationship to collective economic catastrophe: the structural causes and political responses are minimized in favor of the story of the man who refused to give up. The 'Great Man overcomes the Depression' narrative is the American cultural default and is the opposite of what economic historians find most significant about the period."
+    },
+    {
+      "type": "Cultural Memory",
+      "title": "Hoovervilles and the politics of blame",
+      "description": "The shanty towns that Depression-era homeless built in cities across America were called 'Hoovervilles' — a direct and devastating attribution of responsibility to Herbert Hoover, whose insistence on voluntarism and fiscal orthodoxy in the Depression's early years made him the symbol of governmental failure. The term is one of the most effective political coinages in American history: it attached a specific name and face to abstract economic misery and made the 1932 election a referendum on whether the Depression was the government's fault and responsibility. The persistence of 'Hooverville' in historical memory — while Hoover's actual policies are forgotten — illustrates how political branding shapes historical interpretation."
+    },
+    {
+      "type": "Policy Legacy",
+      "title": "Deposit insurance and the architecture of financial safety",
+      "description": "The Federal Deposit Insurance Corporation (FDIC), created by the Banking Act of 1933, is the Depression's most consequential institutional legacy — and one of the least dramatic. By guaranteeing bank deposits up to a specified limit, the FDIC eliminated bank runs as a transmission mechanism for financial panics: if deposits are safe, there is no reason to rush to withdraw them. The institution has worked so well that it is invisible: most Americans have never experienced a bank run. The FDIC is the Depression's gift to financial stability, a piece of institutional design so successful that it has been almost entirely forgotten as a historical achievement. Its near-absence from popular memory of the Depression — which focuses on breadlines and Dust Bowl migrants rather than regulatory architecture — illustrates how effective policy disappears from cultural consciousness precisely because it works."
     }
   ]
 }

@@ -243,27 +243,66 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Great Transformation",
-      "author": "Karl Polanyi",
-      "note": "The most essential single text for understanding capitalism's political and social history — dense but transformative."
+      "title": "The Worldly Philosophers",
+      "author": "Robert Heilbroner",
+      "note": "Start here if you have no economics background — Heilbroner's history of economic thought from Smith through Marx to Keynes is the most readable introduction to how capitalism has been understood; the book that makes you want to read the originals."
     },
     {
       "type": "Book",
-      "title": "Empire of Cotton",
+      "title": "The Great Transformation",
+      "author": "Karl Polanyi",
+      "note": "The essential social history — Polanyi's account of how the self-regulating market was politically created and how society defended itself against it is the most productive single framework for understanding capitalism's political history; dense but transformative."
+    },
+    {
+      "type": "Book",
+      "title": "Empire of Cotton: A Global History",
       "author": "Sven Beckert",
-      "note": "The essential recent revisionist history — readable and thoroughly researched."
+      "note": "The essential revisionist history — Beckert's account of how cotton capitalism was built on slavery and colonial coercion substantially revises liberal narratives about capitalism's origins; readable and rigorously documented."
+    },
+    {
+      "type": "Book",
+      "title": "Capital: A Critique of Political Economy, Vol. 1",
+      "author": "Karl Marx",
+      "note": "The essential critical primary source — the most systematic analysis of how capitalism works; the first three chapters (the commodity, exchange, money) are the hardest and most important. Harvey's Companion should be read alongside."
+    },
+    {
+      "type": "Book",
+      "title": "Capitalism, Socialism and Democracy",
+      "author": "Joseph Schumpeter",
+      "note": "Essential for understanding capitalism's dynamism — Schumpeter's 'creative destruction' concept and his argument that capitalism would be succeeded not by its failure but by its success are the most productive counterpoint to both Marxist and liberal accounts."
+    },
+    {
+      "type": "Book",
+      "title": "How Will Capitalism End?",
+      "author": "Wolfgang Streeck",
+      "note": "The essential contemporary account — Streeck's argument that capitalism is in a long-term legitimacy crisis from which it cannot recover is the most rigorous recent treatment of where the system stands; for readers who have absorbed the basics and want the current debate."
     }
   ],
   "popularCulture": [
     {
       "type": "Concept",
       "title": "Creative destruction",
-      "description": "Schumpeter's phrase — capitalism 'incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one' — has become the dominant way Silicon Valley and business culture understand capitalist dynamism. Entrepreneurs disrupting established industries, new technologies destroying old ones, innovation as the engine of progress: this is creative destruction as ideology. What the concept captures: capitalism's extraordinary dynamism. What it obscures: the human costs of destruction, the concentration of gains from creation, and the political conditions that make the creative side possible."
+      "description": "Schumpeter's phrase — capitalism 'incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one' — has become the dominant way Silicon Valley and business culture understand capitalist dynamism. It is invoked to justify disrupting established industries, laying off workers whose skills have been made redundant, and treating every economic dislocation as the price of progress. What the concept captures: capitalism's extraordinary and genuine dynamism. What it systematically obscures: who bears the costs of destruction (workers, communities, ecosystems) and who captures the gains of creation (investors, entrepreneurs, shareholders). Schumpeter himself was not celebratory about creative destruction — he thought it was socially destructive in ways that would eventually undermine capitalism's political legitimacy."
     },
     {
       "type": "Concept",
       "title": "The invisible hand",
-      "description": "Adam Smith used the phrase 'invisible hand' only three times across all his writings — twice metaphorically, once in the Wealth of Nations to describe how domestic investment, pursued for private gain, unintentionally serves public benefit. It became the central metaphor of liberal economics: market self-regulation, the idea that individual self-interest produces social benefit without coordination or intention. What Smith actually argued was more nuanced — he was also the author of The Theory of Moral Sentiments and understood markets as embedded in social institutions. The reduction of Smith to the invisible hand is one of the more consequential simplifications in the history of economic thought."
+      "description": "Adam Smith used the phrase 'invisible hand' only three times across all his writings — twice metaphorically, once in the Wealth of Nations to describe how domestic investment, pursued for private gain, unintentionally serves public benefit. It has become the central metaphor of liberal economics: market self-regulation, the idea that individual self-interest produces social benefit without coordination or intention. This is both a genuine insight (markets do aggregate information and coordinate behavior more efficiently than most alternatives) and a profound oversimplification (Smith himself understood markets as embedded in moral and institutional frameworks, and wrote extensively about how merchants exploit them for private advantage). The reduction of Smith to the invisible hand is one of the more consequential simplifications in intellectual history."
+    },
+    {
+      "type": "Film",
+      "title": "The Big Short — Adam McKay (2015)",
+      "description": "McKay's adaptation of Michael Lewis's account of the 2008 financial crisis — following the small group of investors who recognized the housing bubble and bet against it — is the most successful recent attempt to make financial capitalism comprehensible to a general audience. Its technique of having celebrities explain complex financial instruments (Margot Robbie in a bathtub explaining mortgage-backed securities) is both pedagogically effective and self-aware about the difficulty of the project. What it captures: the moral vacancy of financial innovation, the capture of regulatory institutions, and the scale of the fraud. What it risks: making the 2008 crisis a story about clever individuals who saw what others missed, rather than about systemic features of financialized capitalism."
+    },
+    {
+      "type": "Documentary",
+      "title": "Inside Job — Charles Ferguson (2010)",
+      "description": "Ferguson's Academy Award-winning documentary about the causes of the 2008 financial crisis is the most systematic popular account of how deregulation, academic capture (economists paid by Wall Street while advising on financial regulation), and political corruption produced the crisis. Its most devastating sequences show prominent economists unable to account for their own conflicts of interest. The film made 'regulatory capture' — the colonization of regulatory agencies by the industries they regulate — comprehensible to a mass audience. It represents a tradition of investigative documentary as democratic education that the complexity of financial capitalism makes particularly necessary."
+    },
+    {
+      "type": "Cultural Phrase",
+      "title": "'Late capitalism' as internet shorthand",
+      "description": "The phrase 'late capitalism' — originally a Marxist periodization term (Ernest Mandel's 1972 book) referring to post-WWII monopoly capitalism — has migrated into internet culture as ironic shorthand for the absurdities and contradictions of contemporary market society: a vending machine in a hospital selling insulin, a company offering 'financial wellness' seminars to workers it has just made redundant, the gig economy packaging precarious labor as 'entrepreneurship.' The ironic use is less analytically precise than Mandel's but it performs a genuine critical function: it makes the contradictions of commodification visible by naming them. The phrase's migration from Marxist theory to Twitter illustrates how critical concepts travel."
     }
   ]
 }

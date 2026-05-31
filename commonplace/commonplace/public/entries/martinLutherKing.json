@@ -214,32 +214,60 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Parting the Waters",
+      "title": "Parting the Waters: America in the King Years 1954–63",
       "author": "Taylor Branch",
-      "note": "The definitive account — the first volume of the essential trilogy, covering the movement's early years."
+      "note": "Start here — Branch's Pulitzer-winning first volume of his King trilogy is the most comprehensive and readable account of the early civil rights movement; the standard against which all other accounts are measured."
     },
     {
       "type": "Book",
       "title": "Letter from Birmingham Jail",
       "author": "Martin Luther King Jr.",
-      "note": "The essential primary text — available as a standalone essay. Required reading for understanding King's thought."
+      "note": "Read the primary source first — King's 1963 letter is the essential document; at 7,000 words, it is the most important piece of American political prose written in the 20th century and completely accessible. Everything else should be read in its light."
+    },
+    {
+      "type": "Book",
+      "title": "Stride Toward Freedom: The Montgomery Story",
+      "author": "Martin Luther King Jr.",
+      "note": "King's own account of the Montgomery Bus Boycott — essential for understanding how he understood the movement he led and the philosophy of nonviolent resistance he developed in practice."
+    },
+    {
+      "type": "Book",
+      "title": "At Canaan's Edge: America in the King Years 1965–68",
+      "author": "Taylor Branch",
+      "note": "The essential account of King's later, more radical years — Branch's third volume covers the period that the sanitized holiday version of King suppresses: his opposition to the Vietnam War, his Poor People's Campaign, and his turn toward economic justice."
+    },
+    {
+      "type": "Book",
+      "title": "The Radical King",
+      "author": "Martin Luther King Jr. (ed. Cornel West)",
+      "note": "The essential corrective to the monument — West's anthology of King's lesser-known speeches and writings on poverty, militarism, and systemic racism recovers the King that the national holiday has made invisible; read alongside the 'I Have a Dream' speech to understand the full range."
     }
   ],
   "popularCulture": [
     {
       "type": "Speech",
-      "title": "'I Have a Dream' (1963)",
-      "description": "King's address at the March on Washington is the most famous speech in American political oratory — the culmination of a movement, a statement of American ideals, and the moment that made King the face of the Civil Rights Movement to the world. Its most quoted lines — about being judged by the content of character rather than the color of skin — have been selectively interpreted as an argument against race-conscious policy, a reading King would not have recognized. The speech in full is more complex and more demanding than the excerpts suggest."
+      "title": "'I Have a Dream' — August 28, 1963",
+      "description": "The 'I Have a Dream' speech — delivered at the March on Washington to 250,000 people and millions more watching on television — is the most widely recognized piece of American political oratory and the primary vehicle through which King is remembered in popular culture. Its visionary language, its biblical cadences, and its invocation of American founding ideals have made it available for domestication as a speech about racial harmony rather than racial justice. The problem, noted by many scholars and by King's own colleagues: the speech is regularly invoked to suggest that King's dream has been substantially achieved, or that his method was one of patient hope rather than confrontational demand. The speech was given at a march for jobs and freedom; the economic dimension is almost entirely absent from its popular memory."
     },
     {
       "type": "Document",
-      "title": "Letter from Birmingham Jail",
-      "description": "King wrote his letter in the margins of a newspaper in his jail cell, in response to a statement by white moderate clergy urging patience and warning against 'extreme measures.' His response — systematic, lethal, and written under conditions of deprivation — distinguishes between 'a negative peace which is the absence of tension' and 'a positive peace which is the presence of justice.' The letter is both a masterpiece of political argument and a window into King's theological and philosophical framework."
+      "title": "Letter from Birmingham Jail (1963)",
+      "description": "King wrote the Letter from Birmingham Jail in the margins of a newspaper and on scraps of paper while imprisoned for civil disobedience — a response to a public letter from eight white Alabama clergymen who called the demonstrations 'unwise and untimely.' The Letter is the most complete statement of King's political philosophy: his defense of nonviolent direct action, his distinction between just and unjust laws, his critique of the 'white moderate' who prefers order to justice, and his account of why waiting is not an option. It is a more complete and more challenging document than the 'Dream' speech and less available for comfortable interpretation: the white moderates King criticized have not disappeared."
     },
     {
-      "type": "Legacy",
+      "type": "Holiday Politics",
       "title": "The King holiday and its contested meaning",
-      "description": "The federal Martin Luther King Jr. holiday — signed into law in 1983 after years of opposition — became a site of contested memory almost immediately. Conservatives who opposed the holiday have since invoked King's words to oppose affirmative action. Progressives argue that King's actual politics — his support for economic redistribution, his opposition to the Vietnam War, his critique of 'the white moderate' — are precisely what is suppressed by the consensual national hero version. The holiday is less a celebration of what King actually believed than a negotiated settlement about which parts of his legacy are politically usable."
+      "description": "The Martin Luther King Jr. federal holiday — established in 1983, first observed in 1986 — has become one of the most politically contested commemorations in American life. The holiday's creation was itself the result of a 15-year political struggle; Reagan signed it reluctantly. Its annual observance has been marked by debates about what King stood for: the sanitized version (racial harmony, gradualism, the 'Dream') versus the full version (radical economic critique, anti-militarism, systemic analysis of racism). The holiday is regularly cited by conservatives who invoke King against affirmative action; it is regularly reclaimed by activists who cite his later writings against conservative appropriation. Few American figures have been as simultaneously celebrated and contested."
+    },
+    {
+      "type": "FBI Surveillance",
+      "title": "COINTELPRO and the surveillance of King",
+      "description": "The FBI's COINTELPRO program surveilled King for years, wiretapping his phones, attempting to blackmail him with recordings of extramarital affairs, and sending him an anonymous letter urging him to commit suicide. J. Edgar Hoover called King 'the most dangerous Negro in America.' The FBI's campaign against King — revealed by the Senate Church Committee in 1975 and subsequently by Freedom of Information releases — is the clearest case study in how the American security state responded to the civil rights movement. It also raises questions about the relationship between King's private life and his public mission that his hagiographic treatment suppresses. A Senate-sealed collection of FBI documents is scheduled for public release in 2027 and will likely generate substantial reexamination."
+    },
+    {
+      "type": "Political Tradition",
+      "title": "Nonviolent direct action as a global method",
+      "description": "King's adaptation of Gandhian nonviolent resistance to American conditions — the sit-ins, freedom rides, marches, and economic boycotts that constituted the civil rights movement's repertoire — has been the most exported American political method since 1968. Gene Sharp's systematic catalog of nonviolent tactics draws directly on the movement. The Solidarity movement in Poland, the anti-apartheid movement, the Serbian Otpor movement, and the Arab Spring all drew on civil rights movement methods. Whether nonviolent direct action works against all forms of oppression — or only against regimes with enough conscience to respond to moral pressure — is the most important question about King's method and the one his admirers most consistently avoid."
     }
   ]
 }

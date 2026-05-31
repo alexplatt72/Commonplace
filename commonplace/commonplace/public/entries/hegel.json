@@ -214,27 +214,60 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Hegel",
-      "author": "Charles Taylor",
-      "note": "The essential comprehensive account — demanding but indispensable for understanding Hegel's full range and influence."
+      "title": "Hegel: A Very Short Introduction",
+      "author": "Peter Singer",
+      "note": "Start here before touching Hegel directly — Singer's compressed account of the Phenomenology, the dialectic, and the Philosophy of History gives the map you need; at 100 pages, the most efficient orientation available."
     },
     {
       "type": "Book",
-      "title": "Hegel: A Very Short Introduction",
-      "author": "Peter Singer",
-      "note": "The most accessible entry point — Singer's clarity makes the core ideas available before tackling the primary texts."
+      "title": "Hegel",
+      "author": "Charles Taylor",
+      "note": "The essential scholarly account — Taylor's comprehensive study is the most important secondary work in English; demanding but the foundation for serious engagement with what Hegel actually argued versus what is attributed to him."
+    },
+    {
+      "type": "Book",
+      "title": "Phenomenology of Spirit",
+      "author": "G.W.F. Hegel (trans. A.V. Miller)",
+      "note": "The essential primary source — the most difficult text in the Western philosophical canon and the most consequential; the Miller translation is the scholarly standard. Read the Introduction and the Master-Slave dialectic section first; return to the rest after Taylor."
+    },
+    {
+      "type": "Book",
+      "title": "The End of History and the Last Man",
+      "author": "Francis Fukuyama",
+      "note": "The essential account of Hegel's political influence — Fukuyama's Hegelian argument that liberal democracy represents the end point of political development is the most consequential application of Hegel to contemporary politics; read critically alongside the original."
+    },
+    {
+      "type": "Book",
+      "title": "Hegel's Idealism: The Satisfactions of Self-Consciousness",
+      "author": "Robert Pippin",
+      "note": "The essential recent scholarly treatment — Pippin's interpretation of Hegel as a philosopher of self-consciousness rather than cosmic spirit has reshaped the academic field; for readers who want the cutting edge of Hegel scholarship."
     }
   ],
   "popularCulture": [
     {
-      "type": "Concept",
+      "type": "Political Theory",
       "title": "The end of history",
-      "description": "When Francis Fukuyama declared 'the end of history' after the Cold War's close, he was invoking Hegel explicitly — the idea that history has a direction and that liberal democracy represents its culmination. The phrase became shorthand for post-Cold War triumphalism and has been repeatedly challenged by subsequent events. Hegel's own 'end of history' was more modest: the claim that Spirit had achieved a certain level of self-understanding, not that nothing would ever change again. Fukuyama's Hegel is partly Kojève's Hegel, which is partly Hegel."
+      "description": "Francis Fukuyama's 1989 essay 'The End of History?' — arguing that the collapse of Soviet communism represented not just a geopolitical event but the endpoint of human ideological evolution, with liberal democracy having proved itself the final form of human government — is the most widely discussed application of Hegelian political philosophy in the 20th century. Fukuyama drew explicitly on Hegel's argument that history moves toward freedom's realization and on Alexandre Kojève's reading of Hegel. The thesis was triumphalist in 1989 and was immediately contested; September 11, 2001, the 2008 financial crisis, and the rise of authoritarian nationalism seemed to many critics to have refuted it. Fukuyama himself subsequently revised the argument substantially. The debate about whether history has a direction and an endpoint remains one of the most consequential in political theory."
     },
     {
-      "type": "Concept",
+      "type": "Philosophical Concept",
       "title": "Thesis, antithesis, synthesis",
-      "description": "The formula 'thesis, antithesis, synthesis' is universally attributed to Hegel but was never used by him in that form. It was popularized by Heinrich Moritz Chalybäus as a summary of Hegel's method and became the standard shorthand. The actual dialectical movement in Hegel is more complex and more interesting than the formula suggests — the 'synthesis' does not simply split the difference between thesis and antithesis but transforms both in ways that could not have been predicted from either starting point. The persistence of the formula as a summary of Hegel illustrates how philosophical ideas get simplified in transmission."
+      "description": "The formula 'thesis, antithesis, synthesis' — universally attributed to Hegel as the description of his dialectical method — was not used by Hegel in this form and was in fact coined by Fichte and popularized by Heinrich Moritz Chalybäus. What Hegel actually argued is more complex: contradictions are not resolved by synthesis but by Aufhebung — a word that means simultaneously to cancel, to preserve, and to elevate. The misattribution has been so consequential that it has shaped how three generations of readers misunderstood Hegel. The simplified thesis-antithesis-synthesis formula has been applied to everything from business strategy to political rhetoric. The gap between the formula and Hegel's actual dialectical method is one of the most instructive examples of how philosophical ideas are absorbed and transformed by popular culture."
+    },
+    {
+      "type": "Political Legacy",
+      "title": "Hegel's influence on Marx and the socialist tradition",
+      "description": "Marx's claim to have turned Hegel 'right side up' — taking Hegel's idealist dialectic (driven by Geist, Spirit) and replacing it with a materialist dialectic (driven by economic relations and class struggle) — is the most consequential philosophical transformation in modern political thought. The entire socialist and communist tradition runs through this Hegelian inheritance: the idea that history develops through contradiction and resolution, that each social formation contains within it the seeds of its own supersession, and that political transformation follows necessary structural laws rather than contingent individual decisions. Without Hegel, Marxism is unintelligible; with Hegel, its claim to be a science of history becomes comprehensible as a philosophical project, whether or not the project succeeds."
+    },
+    {
+      "type": "Philosophical Concept",
+      "title": "The Master-Slave dialectic and theories of recognition",
+      "description": "Hegel's account in the Phenomenology of the struggle for recognition between two self-consciousnesses — in which one (the Master) risks death and achieves recognition, while the other (the Slave) submits and achieves only alienated existence — has been the most politically productive section of Hegel's most difficult book. Alexandre Kojève's lectures on Hegel in Paris in the 1930s made the Master-Slave dialectic central to 20th-century French thought; it influenced Sartre, Fanon, Lacan, and Beauvoir. Frantz Fanon applied it directly to colonial relations: the colonizer is the Master who does not actually risk death; the colonized is the Slave whose labor transforms the world without recognition. Contemporary recognition theory (Axel Honneth) extends it to social movements and identity politics."
+    },
+    {
+      "type": "Intellectual Tradition",
+      "title": "Right Hegelians and Left Hegelians",
+      "description": "After Hegel's death in 1831, his followers immediately split into 'Old Hegelians' (or Right Hegelians) — who read the Phenomenology as justifying the Prussian state and orthodox Christianity — and 'Young Hegelians' (Left Hegelians) — who read it as implying radical political and religious criticism. Marx, Engels, Bruno Bauer, and Ludwig Feuerbach were all Young Hegelians before developing their own positions through and against Hegel. The split illustrates a genuine ambiguity in Hegel's system: his claim that 'the real is rational and the rational is real' can be read as conservative (whatever exists is justified) or as critical (only what is truly rational deserves to exist). The right-left split in Hegelian interpretation has never been resolved and continues to structure debates about what Hegel's philosophy requires politically."
     }
   ]
 }

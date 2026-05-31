@@ -216,25 +216,58 @@
       "type": "Book",
       "title": "A Theory of Justice",
       "author": "John Rawls",
-      "note": "The foundational text — demanding but essential. The revised edition (1999) is preferred."
+      "note": "Start with the primary source — A Theory of Justice is demanding but more readable than its reputation suggests; the original position, veil of ignorance, and two principles of justice are explained clearly in Part One, which can be read independently."
     },
     {
       "type": "Book",
       "title": "Justice: What's the Right Thing to Do?",
       "author": "Michael Sandel",
-      "note": "The most accessible introduction to the major theories of justice — Sandel covers Rawls, Nozick, and others with great clarity."
+      "note": "The best introduction for readers not yet ready for Rawls directly — Sandel's Harvard lectures situate Rawls alongside utilitarianism and communitarianism in a way that makes the stakes of each position clear; the most widely read political philosophy introduction in print."
+    },
+    {
+      "type": "Book",
+      "title": "Anarchy, State, and Utopia",
+      "author": "Robert Nozick",
+      "note": "The essential libertarian response — Nozick wrote Anarchy, State, and Utopia explicitly to answer Rawls; reading them together is the most efficient way to understand the liberal-libertarian debate about distributive justice; Nozick's 'Wilt Chamberlain argument' is the sharpest challenge to Rawlsian redistribution."
+    },
+    {
+      "type": "Book",
+      "title": "Liberalism and the Limits of Justice",
+      "author": "Michael Sandel",
+      "note": "The essential communitarian critique — Sandel's argument that Rawls's 'unencumbered self' is philosophically incoherent and politically dangerous is the most important challenge from the left; essential for understanding why communitarians find liberal neutrality impossible."
+    },
+    {
+      "type": "Book",
+      "title": "The Law of Peoples",
+      "author": "John Rawls",
+      "note": "The essential extension — Rawls's later attempt to apply his principles to international relations is more conservative than A Theory of Justice and has generated the most critical literature; essential for understanding both the scope and limits of Rawlsian liberalism."
     }
   ],
   "popularCulture": [
     {
-      "type": "Concept",
+      "type": "Thought Experiment",
       "title": "The veil of ignorance",
-      "description": "Rawls's veil of ignorance — the thought experiment in which you choose principles of justice without knowing your position in the resulting society — has entered popular moral and political discourse as a tool for thinking about fairness. It appears in discussions of tax policy, immigration, healthcare, and criminal justice. Its intuitive appeal — if you don't know whether you'll be rich or poor, you'll choose fairer rules — has made it one of the most accessible tools in political philosophy. Rawls's specific conclusions (the difference principle) are less widely known than the thought experiment itself."
+      "description": "The veil of ignorance — Rawls's device for deriving principles of justice by imagining that we choose social arrangements without knowing our place in them (our class, race, gender, talents, or conception of the good) — is the most widely taught philosophical thought experiment since Plato's Ring of Gyges. It has entered business ethics courses, constitutional law pedagogy, and policy analysis as a tool for testing the fairness of social arrangements: would you accept this rule if you didn't know which side of it you'd be on? The thought experiment has been criticized for producing principles that rational self-interest would actually choose (Rawls's critics argue this makes it circular) and for ignoring relational and communal aspects of justice that the individual choice-theoretic framework cannot capture."
     },
     {
-      "type": "Concept",
+      "type": "Policy Concept",
       "title": "The difference principle in practice",
-      "description": "The difference principle — permitting inequality only when it benefits the least advantaged — is frequently invoked in debates about taxation and redistribution, often by people who have not read Rawls. The principle does not require equality but demands justification for inequality: any arrangement that makes the worst-off better off than they would be under a more equal arrangement is permitted. This is a sophisticated position that is neither purely egalitarian (any inequality is unjust) nor libertarian (any distribution from free exchange is just). Its application to specific policy questions requires empirical judgments that philosophy alone cannot resolve."
+      "description": "Rawls's difference principle — that inequalities are just only if they benefit the least advantaged members of society — has become the most widely used philosophical standard in debates about redistribution, progressive taxation, and social policy. Politicians, judges, and policy analysts invoke it (often without attribution) whenever they argue that a policy is just if it improves the position of the worst-off. The principle has been applied to debates about minimum wage, inheritance tax, healthcare access, and educational opportunity. What is contested: Rawls defines 'least advantaged' in terms of social primary goods (income, wealth, opportunities, the social bases of self-respect), not in terms of actual welfare or capabilities — a restriction that critics argue produces the wrong answer in cases involving disability or global justice."
+    },
+    {
+      "type": "Academic Impact",
+      "title": "A Theory of Justice and the revival of political philosophy",
+      "description": "When A Theory of Justice appeared in 1971, professional philosophy had largely abandoned substantive political theory in favor of meta-ethics and linguistic analysis. Rawls's systematic reconstruction of liberal theory — drawing on Kant's moral philosophy and social contract tradition — is credited with single-handedly reviving political philosophy as an academic discipline. Every major political philosopher working after 1971 defines their position in relation to Rawls: Nozick's libertarianism, Dworkin's rights theory, Walzer's communitarianism, Sen's capabilities approach, and Habermas's discourse ethics are all developed in explicit dialogue with him. The book's academic influence is unparalleled in postwar philosophy."
+    },
+    {
+      "type": "International Application",
+      "title": "Global justice and Rawls's limits",
+      "description": "The debate about whether Rawlsian principles of justice apply globally — whether the veil of ignorance should include not knowing what country you were born in — has produced one of the most productive literatures in contemporary political philosophy. Rawls himself, in The Law of Peoples (1999), argued that global justice does not require global redistribution: wealthy nations owe poor ones 'assistance' but not the kind of distributive equality that domestic justice requires. Thomas Pogge, Charles Beitz, and cosmopolitan liberals have argued that this is arbitrary — that the accident of birth nation is as morally irrelevant as the accident of birth class, so the veil should extend globally. The debate has direct implications for immigration policy, international aid, climate justice, and the obligations of wealthy nations to poor ones."
+    },
+    {
+      "type": "Critical Response",
+      "title": "Rawls and the communitarian challenge",
+      "description": "Michael Sandel's critique of Rawls — that the 'unencumbered self' behind the veil of ignorance is a philosophical fiction, that persons are constituted by their communities and commitments in ways that cannot be stripped away, and that liberal neutrality between conceptions of the good is both incoherent and undesirable — is the most influential challenge to Rawlsian liberalism in academic political theory. Alasdair MacIntyre, Charles Taylor, and Michael Walzer developed related communitarian arguments. The debate shaped 1980s political philosophy and continues in debates about multiculturalism, civic republicanism, and whether liberal democracy can remain neutral between religious and secular conceptions of the good life. The communitarian challenge has not refuted Rawls but it has identified the liberal framework's genuine limits."
     }
   ]
 }

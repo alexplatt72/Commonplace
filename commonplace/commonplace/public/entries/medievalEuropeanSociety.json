@@ -216,27 +216,60 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Feudal Society",
-      "author": "Marc Bloch",
-      "note": "The foundational account — demanding but essential for understanding medieval social life as more than political and ecclesiastical history."
+      "title": "The Medieval World",
+      "author": "Friedrich Heer",
+      "note": "Start here for the cultural sweep — Heer's account of medieval civilization as a living whole (theology, politics, art, daily life) is the most readable single-volume introduction; gives the texture that political history alone cannot."
     },
     {
       "type": "Book",
       "title": "Medieval People",
       "author": "Eileen Power",
-      "note": "The most accessible introduction — Power's portraits of individual medieval people bring the period to life more vividly than any survey."
+      "note": "The ideal companion — Power's profiles of six medieval people (a peasant, a merchant, a prioress, a traveler, a wool merchant, a Paris housewife) humanize the period in ways that structural history cannot; written in 1924 but still the best entry point into ordinary medieval life."
+    },
+    {
+      "type": "Book",
+      "title": "Feudal Society",
+      "author": "Marc Bloch",
+      "note": "The essential scholarly treatment — Bloch's two-volume analysis of feudalism as a social system remains the most important work in medieval social history; demanding but the foundation of everything written since."
+    },
+    {
+      "type": "Book",
+      "title": "The Autumn of the Middle Ages",
+      "author": "Johan Huizinga",
+      "note": "For readers who want the cultural and psychological texture — Huizinga's account of 15th-century Burgundian culture as a civilization in decline captures the emotional and aesthetic life of the late Middle Ages in a way no social historian has matched."
+    },
+    {
+      "type": "Book",
+      "title": "Europe in the High Middle Ages",
+      "author": "William Chester Jordan",
+      "note": "The best modern scholarly overview — Jordan's account of the 11th–13th century period of expansion, urbanization, and institutional development provides the revisionist context that replaces the 'dark ages' narrative with actual medieval complexity."
     }
   ],
   "popularCulture": [
     {
       "type": "Concept",
-      "title": "The 'dark ages' myth",
-      "description": "The phrase 'dark ages' — used to describe the period after Rome's fall as one of intellectual and cultural regression — was coined by Petrarch in the 14th century and amplified by Enlightenment thinkers who needed a negative foil for their own age of reason. Modern historians have largely abandoned the term: the period saw the founding of universities, the building of cathedrals, the development of common law, and the transmission of Greek philosophy through Arabic translations. The persistence of 'dark ages' in popular usage reflects the power of the self-serving narrative that Enlightenment thinkers constructed — and the genuine losses of Roman material culture and literacy that followed the Empire's fragmentation."
+      "title": "The 'Dark Ages' myth",
+      "description": "The phrase 'Dark Ages' — originating with Petrarch in the 14th century to describe the period between classical Rome and his own Renaissance — is one of the most consequential historical misnomers in Western culture. It implies a period of barbarism, ignorance, and cultural stagnation between two periods of civilization. Medieval scholars have spent decades dismantling it: the period produced Gothic cathedrals, Scholastic philosophy, the university, common law, and a sophisticated agricultural and commercial economy. The myth persists in popular culture because it serves a narrative function (the Renaissance as rebirth requires a preceding death) and because it flatters modernity by contrast with a supposedly ignorant past. Every use of 'medieval' as a synonym for 'barbaric' or 'primitive' perpetuates it."
     },
     {
-      "type": "Fact",
+      "type": "Cultural Achievement",
+      "title": "The Gothic cathedral as medieval technology",
+      "description": "The Gothic cathedral — with its pointed arches, flying buttresses, and unprecedented stained glass windows — is the most visible surviving achievement of medieval civilization and one of the great engineering accomplishments of any era. Chartres, Notre-Dame, Salisbury, Cologne: built by communities that devoted generations of labor and resources to structures that would take centuries to complete, using engineering principles worked out empirically by master builders who left no written theory. The cathedrals disprove the 'Dark Ages' narrative more eloquently than any scholarly argument: they are evidence of sophisticated mathematical knowledge, organizational capacity, aesthetic ambition, and theological seriousness. They were also instruments of power — built partly to impress, control, and extract."
+    },
+    {
+      "type": "Institutional Legacy",
       "title": "The university as medieval invention",
-      "description": "The university — one of the most durable institutional inventions in human history — was a medieval creation. Bologna (1088), Paris (c. 1150), and Oxford (c. 1167) were the first. The medieval university's specific features — academic freedom, degrees, faculties, the concept of a corporate scholarly community with self-governance — were developed in the 12th and 13th centuries and have persisted with remarkable continuity. The fact that Harvard, Oxford, and Tokyo University all grant degrees organized around similar disciplines reflects the medieval institutional template."
+      "description": "The university — one of the most consequential institutional inventions in human history — was created in medieval Europe between roughly 1088 (Bologna) and 1209 (Cambridge). The medieval university's basic structure (degrees, faculties, academic freedom, the lecture system) has proved extraordinarily durable: 21st-century universities still operate within a framework invented in the 12th and 13th centuries. This is the medieval period's most direct contribution to modern life — more consequential in daily terms than feudalism, chivalry, or Gothic architecture. The university emerged from the cathedral schools and was shaped by the Church, but it quickly developed a degree of autonomy that made it capable of generating knowledge the Church did not control."
+    },
+    {
+      "type": "Popular Fiction",
+      "title": "The Name of the Rose — Umberto Eco (1980)",
+      "description": "Eco's murder mystery set in a 14th-century Italian monastery is the most intellectually serious popular engagement with medieval culture — using the detective plot as a vehicle for exploring medieval epistemology, the politics of heresy, the economics of the Church, and the relationship between laughter and power. Eco was a medieval scholar before he was a novelist, and the novel's detailed recreation of a Benedictine scriptorium, its account of the theological debates of the period, and its portrait of the Inquisition are historically grounded in ways unusual for popular fiction. It has introduced more readers to medieval intellectual culture than any academic study."
+    },
+    {
+      "type": "Political Concept",
+      "title": "Feudalism and its modern misuse",
+      "description": "'Feudal' and 'feudalism' are among the most misused concepts in popular political discourse — regularly applied to describe any hierarchical, exploitative, or archaic arrangement, from corporate structures to land tenure in developing countries. The medieval feudalism that historians analyze was a specific set of relationships between lords and vassals in a particular time and place; its extension to describe unrelated phenomena in other societies (Japanese feudalism, Russian serfdom) is contested by historians who argue the concept loses meaning when extended so broadly. The popular use of 'feudal' as a synonym for 'unjust hierarchy' is even further from the historical reality — it says more about modern assumptions than about medieval arrangements."
     }
   ]
 }

@@ -241,27 +241,60 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Capital Volume 1",
-      "author": "Karl Marx (trans. Ben Fowkes)",
-      "note": "The essential primary text — demanding but indispensable. Harvey's Companion should be read alongside."
+      "title": "The Communist Manifesto",
+      "author": "Karl Marx and Friedrich Engels",
+      "note": "Start here — at 40 pages, the most widely read political document in history is the right entry point; its diagnosis of capitalism's dynamism and its prediction of its collapse are still worth engaging on their merits, whatever you conclude."
     },
     {
       "type": "Book",
       "title": "Karl Marx: Greatness and Illusion",
       "author": "Gareth Stedman Jones",
-      "note": "The best scholarly biography — rigorous and revisionist."
+      "note": "The essential scholarly biography — Stedman Jones situates Marx in his intellectual context and challenges standard readings; the most historically rigorous account of what Marx actually argued versus what has been attributed to him."
+    },
+    {
+      "type": "Book",
+      "title": "A Companion to Marx's Capital",
+      "author": "David Harvey",
+      "note": "The essential guide to reading Capital — Harvey's close reading makes the argument of Marx's masterwork accessible without simplifying it; the necessary companion to the primary text for any serious reader."
+    },
+    {
+      "type": "Book",
+      "title": "Capital: A Critique of Political Economy, Vol. 1",
+      "author": "Karl Marx (trans. Ben Fowkes)",
+      "note": "The essential primary source — the most systematic analysis of how capitalism works ever written; the Fowkes Penguin translation is the standard. Read chapters 1–3 and 25–33 first; return to the middle with Harvey's guide."
+    },
+    {
+      "type": "Book",
+      "title": "Black Marxism: The Making of the Black Radical Tradition",
+      "author": "Cedric Robinson",
+      "note": "The essential extension and critique — Robinson's argument that capitalism has always been racial capitalism, and that the Black radical tradition represents an alternative to both Marxism and liberalism, is the most important recent development in the Marxist tradition."
     }
   ],
   "popularCulture": [
     {
       "type": "Concept",
       "title": "Alienation",
-      "description": "Marx's concept of alienation — the separation of workers from the products of their labor, from the process of production, from other workers, and from their own human potential — has entered broad cultural currency well beyond Marxist circles. Existentialist philosophy, humanist psychology, and everyday talk of feeling 'alienated' at work all draw on this concept, usually without explicit acknowledgment of Marx. The concept's popularity reflects something real: industrial and post-industrial capitalism does organize work in ways that feel meaningless and dehumanizing to many who perform it. Whether this is an inevitable feature of market economies or a correctable dysfunction is one of the most productive questions the concept generates."
+      "description": "Marx's concept of alienation — the separation of workers from the products of their labor, from the process of production, from other workers, and from their own human potential — has entered broad cultural currency well beyond Marxist circles. Existentialist philosophy, humanist psychology, and everyday talk of feeling 'alienated' at work all draw on this concept, usually without acknowledging Marx. The concept's persistence reflects something real: industrial and post-industrial capitalism does organize work in ways that feel meaningless and dehumanizing. Whether this is an inevitable feature of market economies or a correctable dysfunction — and whether Marx's concept of 'species-being' (what genuinely human self-realization would look like) is coherent — are the productive questions the concept generates."
     },
     {
-      "type": "Concept",
+      "type": "Cultural Reference",
       "title": "The specter of communism",
-      "description": "The Communist Manifesto opens: 'A specter is haunting Europe — the specter of communism.' Written in 1848, it was describing the anxieties of European ruling classes about the labor movement. After 1917, the specter became literal: communist parties governed countries containing a third of the world's population. After 1991, with the Soviet collapse, commentators declared Marx buried. But the 2008 financial crisis, rising inequality, and the political upheavals of the 2010s produced a substantial revival of interest in Marx's analysis. Time magazine put him on its cover; Capital sold out; 'late capitalism' became internet shorthand for capitalism's absurdities. The specter, apparently, is hard to exorcise."
+      "description": "The Communist Manifesto opens: 'A specter is haunting Europe — the specter of communism.' Written in 1848, it described the anxieties of European ruling classes about the labor movement. After 1917, the specter became literal. After 1991, commentators declared Marx buried. But the 2008 financial crisis, rising inequality, and the political upheavals of the 2010s produced a substantial revival: Time magazine put Marx on its cover; Capital sold out in Germany; 'late capitalism' became internet shorthand for the system's absurdities. The persistence of the metaphor — that Marxist critique keeps returning even when it has been declared dead — is itself evidence for the endurance of the contradictions Marx identified."
+    },
+    {
+      "type": "Film",
+      "title": "The Young Karl Marx — Raoul Peck (2017)",
+      "description": "Peck's film about Marx and Engels in the 1840s — covering the period of the Manifesto's composition and the 1848 revolutions — is the most serious recent cinematic engagement with Marx as a historical figure. It portrays Marx as a difficult, driven, intellectually voracious figure rather than an icon, and shows the collaborative relationship with Engels, the poverty of the exile years, and the political ferment of revolutionary Europe. What it achieves: Marx as a person with contradictions rather than a monument. What it necessarily simplifies: the intellectual development is compressed and the theoretical content is presented at a level accessible to a general audience."
+    },
+    {
+      "type": "Political Legacy",
+      "title": "20th-century communism and the question of responsibility",
+      "description": "The regimes that claimed Marx's authority — Soviet Union, Maoist China, Cambodia under the Khmer Rouge — produced some of the worst mass violence in human history. The question of Marx's responsibility for this violence is one of the most contested in political philosophy. The defenses: Marx never endorsed authoritarian governance; Leninism was a specific historical adaptation, not a logical development; the specific conditions of backward economies attempting socialist construction are not what Marx's analysis addressed. The prosecutions: the logic of revolutionary vanguardism, the suppression of markets, and the concept of the dictatorship of the proletariat all have roots in Marx's texts. Whether the gap between Marx and 20th-century communism represents betrayal or development determines how you assess both."
+    },
+    {
+      "type": "Contemporary Relevance",
+      "title": "Marx after 2008",
+      "description": "The 2008 financial crisis produced a substantial Marx revival in academic economics, political theory, and journalism. His analysis of financial crises as expressions of capitalism's structural contradictions — the tendency of the rate of profit to fall, the instability of financial capital, the gap between productive and fictitious capital — seemed more prescient than the mainstream economics that had failed to predict the crisis. David Harvey's lectures on Capital attracted millions of viewers on YouTube. Thomas Piketty's Capital in the Twenty-First Century (2013) — a deliberate echo of Marx's title — used empirical data to document the return of wealth concentration that Marx had predicted. Whether this represents vindication of Marx's analysis or merely its revival in a specific historical moment is itself a live debate."
     }
   ]
 }

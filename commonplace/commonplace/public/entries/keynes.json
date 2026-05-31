@@ -221,27 +221,60 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "John Maynard Keynes: Economist, Philosopher, Statesman",
+      "title": "Keynes: The Return of the Master",
       "author": "Robert Skidelsky",
-      "note": "The essential biography — comprehensive and graceful."
+      "note": "Start here — Skidelsky's accessible account written in response to the 2008 crisis explains what Keynes actually argued and why it matters now; the right entry point before the full biography or the primary source."
     },
     {
       "type": "Book",
-      "title": "Keynes: The Return of the Master",
+      "title": "John Maynard Keynes: Economist, Philosopher, Statesman",
       "author": "Robert Skidelsky",
-      "note": "The accessible account oriented toward the 2008 crisis — the best starting point."
+      "note": "The essential scholarly biography — Skidelsky's one-volume abridgement of his three-volume masterwork is comprehensive, scholarly, and beautifully written; the standard account of Keynes as a person and thinker."
+    },
+    {
+      "type": "Book",
+      "title": "The General Theory of Employment, Interest and Money",
+      "author": "John Maynard Keynes",
+      "note": "The essential primary source — demanding but important to read directly; Chapters 12 (on animal spirits and long-term expectation) and 24 (concluding notes on the social philosophy) are the most accessible and the most revealing of what Keynes actually thought."
+    },
+    {
+      "type": "Book",
+      "title": "The Economic Consequences of the Peace",
+      "author": "John Maynard Keynes",
+      "note": "Read as primary source and historical document — Keynes's 1919 polemic against the Versailles reparations is his most readable book and the one that made his reputation; essential for understanding the economist as public intellectual."
+    },
+    {
+      "type": "Book",
+      "title": "John Maynard Keynes",
+      "author": "Hyman Minsky",
+      "note": "The essential post-Keynesian reading — Minsky's account of what Keynes actually argued (and what was lost in the mainstream synthesis) is the foundation for his financial instability hypothesis; essential for understanding why the 2008 crisis was a 'Minsky moment.'"
     }
   ],
   "popularCulture": [
     {
-      "type": "Concept",
+      "type": "Policy Concept",
       "title": "'In the long run we are all dead'",
-      "description": "This phrase — from Keynes's A Tract on Monetary Reform (1923) — has become the most quoted line in economics, usually to characterize Keynesian short-termism. The original context was an argument against the quantity theory of money's prediction that prices would return to equilibrium in the long run: 'In the long run we are all dead. Economists set themselves too easy, too useless a task if in tempestuous seasons they can only tell us that when the storm is long past the ocean is flat again.' The phrase captures a genuine methodological commitment: economics should address real problems of real people in real time, not counsel passive acceptance of markets' eventual self-correction."
+      "description": "This phrase — from Keynes's 1923 A Tract on Monetary Reform, directed at economists who counseled waiting for markets to self-correct — has become the most quoted line in economics. Its original context: 'In the long run we are all dead. Economists set themselves too easy, too useless a task if in tempestuous seasons they can only tell us that when the storm is long past the ocean is flat again.' The phrase captures a genuine methodological commitment: economics should address real problems of real people in real time, not counsel passive acceptance of market correction. It has been appropriated both as a defense of short-term thinking ('why worry about the future?') and as the proper rebuke to economists who offer long-run equilibrium as consolation to people suffering now. Both uses say something real about Keynes's priorities."
     },
     {
-      "type": "Debate",
+      "type": "Intellectual Debate",
       "title": "The Keynes-Hayek debate",
-      "description": "The debate between Keynes and Friedrich Hayek in the 1930s — about whether government spending could cure the Depression or would only make it worse — is the most consequential theoretical dispute in modern economics. It was conducted in academic journals, in public lectures, and in private correspondence. It was resumed in the 1970s stagflation debate (Hayek's position vindicated), in the 2008 crisis response (Keynes's position vindicated), and in the 2010s austerity debate (both sides claimed vindication from the evidence). The Keynes-Hayek debate has been popularized in a series of YouTube rap videos ('Fear the Boom and Bust') that have been viewed millions of times — an unusual fate for an academic dispute about macroeconomic theory."
+      "description": "The debate between Keynes and Friedrich Hayek in the 1930s — about whether government spending could cure the Depression or would only create distortions that would worsen the eventual correction — is the most consequential theoretical dispute in modern economics. Conducted in academic journals, public lectures, and private correspondence, it has been resumed in every major economic crisis since: in the 1970s stagflation (Hayek's position seemed vindicated), in the 2008 crisis response (Keynes's position seemed vindicated), and in the 2010s austerity debate (both sides claimed vindication). The debate was popularized in YouTube rap videos ('Fear the Boom and Bust') that attracted millions of viewers — an unusual fate for an argument about macroeconomic theory. The fact that the debate has never been settled reflects genuine uncertainty about how economies work under crisis conditions."
+    },
+    {
+      "type": "Policy Legacy",
+      "title": "The New Deal and Keynesian fiscal policy",
+      "description": "The New Deal — Roosevelt's response to the Great Depression — is the most consequential application of Keynesian-adjacent thinking in American history, and also the most complicated. Roosevelt was not a consistent Keynesian: he balanced the budget in 1937, triggering a sharp recession within the Depression. The scale of fiscal stimulus that actually ended the Depression was the military spending of World War II. But the New Deal's institutional legacy — the FDIC, the Securities and Exchange Commission, Social Security, the Wagner Act — represented the institutional framework for managed capitalism that Keynes's theory justified. The relationship between Keynes's analysis and the New Deal's actual policy is more complicated than the textbook account, and the complication is itself instructive about how economic theory and political decision-making interact."
+    },
+    {
+      "type": "Contemporary Relevance",
+      "title": "Keynesianism after 2008",
+      "description": "The 2008 financial crisis was the most direct test of Keynesian theory since the 1930s — and produced the most direct application of Keynesian policy since the New Deal. The G20 coordinated fiscal stimulus packages in 2008–09 explicitly justified in Keynesian terms; Ben Bernanke's Federal Reserve cited Keynes and Depression-era analysis in designing its response. The subsequent turn to austerity in 2010–12 — which Keynesian economists argued prolonged the recession, and which IMF research later suggested had underestimated fiscal multipliers — reopened the Keynes-Hayek debate. The Eurozone crisis and its management through austerity rather than stimulus provided the closest thing to a natural experiment. The debate about what the 2008 crisis and its aftermath proved about Keynesian theory is ongoing and has become one of the central disputes in macroeconomics."
+    },
+    {
+      "type": "Biographical Paradox",
+      "title": "Keynes the speculator",
+      "description": "Keynes's personal investment career — he managed the endowment of King's College Cambridge and his own portfolios, made and lost several fortunes, and eventually died wealthy — is the most counterintuitive aspect of his biography. The theorist who argued that financial markets are driven by 'animal spirits' and irrational conventions, who compared the stock market to a beauty contest where investors try to predict what other investors will find attractive, was himself a successful long-term investor who developed a value investing philosophy decades before Warren Buffett. Keynes's practical investment approach (buy undervalued assets and hold them, ignore short-term fluctuations) is in tension with his theoretical account of financial markets as inherently unstable and convention-driven. The tension is productive: it suggests that market irrationality creates opportunities for the patient investor even as it creates systemic risk."
     }
   ]
 }
