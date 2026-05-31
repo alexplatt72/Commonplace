@@ -223,6 +223,17 @@
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The best accessible account of AI's current capabilities and limitations — Mitchell explains what current systems actually do, why they succeed where they do, and where they fail in ways that illuminate the deeper questions about the nature of intelligence."
+    },
+    {
+      "author": "Russell, Stuart and Norvig, Peter",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "year": "1995",
+      "type": "Textbook",
+      "reliability": "foundational",
+      "contribution": "foundational; standard technical reference",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The standard technical reference for AI — covers the field's history, methods, and state of the art across multiple editions. Essential for understanding what AI researchers actually do rather than what popular accounts describe."
     }
   ],
   "commerce": [
@@ -243,6 +254,27 @@
       "title": "The Coming Wave",
       "author": "Mustafa Suleyman",
       "note": "Suleyman's account of AI and synthetic biology as transformative technologies — written by a founder of DeepMind, it combines insider perspective with genuine concern about governance."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "Human Compatible: Artificial Intelligence and the Problem of Control",
+      "author": "Stuart Russell",
+      "note": "Start here for the clearest account of AI's current state and its risks — Russell co-wrote the standard AI textbook but writes here for a general audience, focused on the alignment problem."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Alignment Problem",
+      "author": "Brian Christian",
+      "note": "The most thorough accessible account of why making AI systems do what we want is harder than it looks — Christian covers the technical and philosophical dimensions without requiring specialist background."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell and Peter Norvig",
+      "note": "The standard technical reference — demanding, but the essential resource for understanding what AI researchers actually study and build."
     }
   ],
   "popularCulture": [
@@ -265,6 +297,11 @@
       "type": "Breakthrough",
       "title": "AlphaFold and the protein folding problem",
       "description": "DeepMind's AlphaFold system solved the protein structure prediction problem in 2020 — predicting the three-dimensional structure of proteins from their amino acid sequence with accuracy comparable to experimental determination. A problem that had resisted 50 years of scientific effort was solved by a machine learning system trained on known protein structures. The database of AlphaFold predictions (covering virtually all known proteins) has been made freely available, and the potential applications for drug discovery and biology are still being realized."
+    },
+    {
+      "type": "Film",
+      "title": "2001: A Space Odyssey (1968)",
+      "description": "Kubrick's HAL 9000 remains the canonical cinematic AI — a system that pursues its mission objective in ways its creators did not intend and cannot control. What it gets right: the alignment problem avant la lettre, the difficulty of specifying what we actually want from an intelligent system. What it distorts: HAL's consciousness and malevolence are depicted as dramatic certainties rather than the genuinely open questions they remain."
     }
   ]
 }

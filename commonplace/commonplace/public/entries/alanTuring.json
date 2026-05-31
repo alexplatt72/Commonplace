@@ -146,6 +146,11 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "The internet runs on computers, and computers are built on the theoretical foundations Turing established — the stored-program computer, software as data, and the theoretical limits of computation all derive from his work."
+    },
+    {
+      "label": "Alan Turing: The Enigma — Andrew Hodges (1983)",
+      "relationship": "Gateway",
+      "reason": "The definitive biography of Turing — Hodges's account of his mathematics, his war work, and his persecution remains the essential starting point for understanding the man and his significance."
     }
   ],
   "reference": [
@@ -181,6 +186,28 @@
       "originLanguage": null,
       "domainAuthority": "Mind",
       "annotation": "The foundational paper — Turing's 1950 paper remains the most important single text in the philosophy of AI. Freely available online."
+    },
+    {
+      "author": "Hodges, Andrew",
+      "title": "Alan Turing: The Enigma",
+      "year": "1983",
+      "type": "Monograph",
+      "reliability": "foundational",
+      "contribution": "foundational; definitive scientific biography",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The definitive biography. Hodges provides the fullest account of Turing's mathematical work, his contribution to breaking Enigma, and his persecution — written with both technical authority and biographical depth."
+    },
+    {
+      "author": "Turing, Alan",
+      "title": "Computing Machinery and Intelligence",
+      "year": "1950",
+      "type": "Journal article",
+      "reliability": "foundational primary source",
+      "contribution": "foundational primary source; Turing test proposal",
+      "originLanguage": null,
+      "domainAuthority": "Mind",
+      "annotation": "The paper that introduced what became the Turing Test — Turing's argument that the question 'can machines think?' should be replaced by asking whether machines can imitate human responses indistinguishably. The founding document of philosophy of mind as applied to computing."
     }
   ],
   "commerce": [
@@ -189,6 +216,34 @@
       "title": "Alan Turing: The Enigma",
       "author": "Andrew Hodges",
       "note": "The essential biography — comprehensive, mathematically literate, and deeply humane."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "Alan Turing: The Enigma",
+      "author": "Andrew Hodges",
+      "note": "Start here — the definitive biography is readable as well as rigorous, and covers both the mathematics and the human story with equal seriousness."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Innovators",
+      "author": "Walter Isaacson",
+      "note": "Places Turing within the broader history of computing — useful for understanding his contribution in context of the machines and people that followed."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Computing Machinery and Intelligence",
+      "author": "Alan Turing",
+      "note": "The 1950 paper itself — short enough to read in an hour, foundational enough to repay careful attention. The origin of the Turing Test and the philosophy of artificial intelligence."
+    },
+    {
+      "type": "Film",
+      "level": "Introductory",
+      "title": "The Imitation Game (2014)",
+      "author": "Morten Tyldum (dir.)",
+      "note": "The accessible entry point — historically simplified but captures the Enigma work and Turing's persecution. Read Hodges afterward to understand what the film changed."
     }
   ],
   "popularCulture": [
@@ -206,6 +261,16 @@
       "type": "Concept",
       "title": "The Turing test in popular culture",
       "description": "The Turing test appears in films (Ex Machina, Her), television (Westworld), and technology discussions as the benchmark by which AI is assessed. Its popular use strips it of the philosophical precision Turing intended, treating it as a simple question of whether a machine can fool a human."
+    },
+    {
+      "type": "Film",
+      "title": "The Imitation Game (2014)",
+      "description": "Benedict Cumberbatch's portrayal of Turing brought his story to mass audiences. What it gets right: the significance of Bletchley Park, the injustice of his prosecution. What it distorts: the timeline, his relationships, and the nature of the mathematical work — the film makes code-breaking look more like puzzle-solving and less like statistical inference than it actually was."
+    },
+    {
+      "type": "Concept",
+      "title": "The Turing Test as cultural shorthand",
+      "description": "The imitation game Turing proposed in 1950 has become the default popular framework for asking whether machines can think — appearing in films, novels, and everyday AI discourse. What it reveals: that the question of machine intelligence has never been settled and that Turing's framing — behavioral indistinguishability rather than internal states — remains productively contested. What it distorts: the test is often invoked as if passing it would prove machine consciousness, which Turing himself did not claim."
     }
   ]
 }
