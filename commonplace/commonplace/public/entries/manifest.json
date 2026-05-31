@@ -1863,5 +1863,146 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "humanRights",
+    "title": "Human Rights",
+    "summary": "The doctrine that all human beings possess inherent rights by virtue of their humanity — rights that governments cannot legitimately violate and that the international community has a responsibility to protect — institutionalized after World War II in the Universal Declaration of Human Rights and subsequent treaties, and contested ever since on questions of universality, enforceability, cultural specificity, and political instrumentalization.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 1948–present",
+    "themes": [
+      "politics",
+      "law",
+      "history",
+      "ethics",
+      "globalHistory",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "socialContract",
+    "title": "The Social Contract",
+    "summary": "The political theory that legitimate government rests on agreement — explicit or implicit — among the people it governs, developed by Hobbes, Locke, and Rousseau into the foundational framework of modern constitutional democracy, and contested ever since on questions of who actually agreed, what was agreed to, and whether the theory can justify political obligation at all.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 1650–present",
+    "themes": [
+      "philosophy",
+      "politics",
+      "history",
+      "ethics",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "feminism",
+    "title": "Feminism",
+    "summary": "The political and intellectual movement demanding equal rights, opportunities, and social power for women — organized in three historical 'waves' from the suffrage campaigns of the 19th century through second-wave liberal and radical feminism to contemporary intersectional feminism — and a philosophical tradition that has transformed every discipline it has touched by asking whose experience was left out of the dominant account.",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1792–present",
+    "themes": [
+      "politics",
+      "history",
+      "philosophy",
+      "society",
+      "modernity",
+      "ethics"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "trotsky",
+    "title": "Leon Trotsky",
+    "summary": "The Russian revolutionary, theorist of permanent revolution, organizer of the Red Army, and founder of the Fourth International — expelled by Stalin, exiled across three continents, and assassinated in Mexico in 1940 — and the most potent symbol of the Stalinist betrayal of the Russian Revolution.",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1879-1940",
+    "themes": [
+      "russia",
+      "history",
+      "20thCentury",
+      "politics"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "timekeeping",
+    "title": "Timekeeping",
+    "summary": "The technology of measuring, standardizing, and organizing time — from the first astronomical calendars of ancient Mesopotamia through the mechanical clock's transformation of medieval Europe to the atomic clock's precision that enables GPS and global finance — a technology so fundamental to modern civilization that its absence is unimaginable, and whose history reveals how deeply the organization of time is bound up with the organization of power.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "history",
+      "science",
+      "economics",
+      "globalHistory",
+      "modernity",
+      "religion"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "migration",
+    "title": "Migration",
+    "summary": "The movement of people across space in search of better conditions — the most ancient and most consequential human behavior after reproduction itself, the process through which Homo sapiens populated the entire planet, built every civilization, and continues to shape the demographics and politics of every country on earth — and the subject of the most consequential political conflicts of the contemporary world.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 70,000 BCE–present",
+    "themes": [
+      "globalHistory",
+      "history",
+      "politics",
+      "economics",
+      "society",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "diaspora",
+    "title": "Diaspora",
+    "summary": "The dispersion of a people from their original homeland, maintaining collective identity across generations in a foreign land — a concept originating with the Jewish exile in Babylon, extended to the African diaspora produced by the slave trade, and now applied to dozens of dispersed communities worldwide, raising fundamental questions about the relationship between identity, territory, and belonging.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 6th century BCE–present",
+    "themes": [
+      "globalHistory",
+      "history",
+      "religion",
+      "politics",
+      "society",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "measurement",
+    "title": "Measurement",
+    "summary": "The technology of assigning numbers to properties of the world — one of the oldest and most consequential cognitive tools in human history, the foundation of science, commerce, and administration, and a technology whose apparent neutrality conceals the power embedded in who measures, what gets measured, and how the results are used.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "science",
+      "history",
+      "economics",
+      "globalHistory",
+      "modernity",
+      "philosophy"
+    ],
+    "status": "published",
+    "qualityTier": "A"
   }
 ]
