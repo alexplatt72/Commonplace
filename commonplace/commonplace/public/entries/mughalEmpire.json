@@ -171,7 +171,7 @@
       "year": "1993",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "standard scholarly introduction to Mughal political history",
+      "contribution": "scholarly consensus",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most reliable single-volume scholarly introduction to the Mughal Empire. Richards covers political history, administrative structure, and economic organization with clarity and authority. The essential starting point for any serious engagement with Mughal history."
@@ -182,7 +182,7 @@
       "year": "1963",
       "type": "Monograph",
       "reliability": "foundational",
-      "contribution": "foundational analysis of Mughal revenue system and agrarian economy",
+      "contribution": "foundational; Mughal revenue and agrarian economy",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The foundational work on Mughal political economy. Habib’s argument that Mughal revenue demands approached biological limits for the peasant population remains influential despite subsequent revisions. Essential for understanding why the Mughal fiscal system was structurally unsustainable."
@@ -193,7 +193,7 @@
       "year": "2017",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "revisionist account of Aurangzeb that challenges Hindu nationalist and colonial historiography",
+      "contribution": "scholarly consensus; Aurangzeb revisionist account",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most recent serious scholarly attempt to recover Aurangzeb from the distortions of both Hindu nationalist and colonial historiography. Truschke argues that the standard portrait reflects ideological agendas more than historical reality. Controversial but essential for understanding the historiographical stakes of the Aurangzeb debate."
@@ -204,7 +204,7 @@
       "year": "1986",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "successor-states framework for the post-Aurangzeb eighteenth century",
+      "contribution": "established; post-Aurangzeb successor-states framework",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The foundational work for the successor-states reinterpretation of eighteenth-century South Asia. Alam argues that post-Aurangzeb fragmentation was not merely decline but the emergence of active regional political formation. Essential for any argument about Mughal collapse that goes beyond the Aurangzeb morality narrative."
@@ -215,7 +215,7 @@
       "year": "c. 1590",
       "type": "Primary source",
       "reliability": "primary source with propagandistic dimensions",
-      "contribution": "comprehensive statistical and administrative record of Akbar’s empire",
+      "contribution": "foundational primary source; Akbar's empire record",
       "originLanguage": "Persian",
       "domainAuthority": null,
       "annotation": "Commissioned by Akbar and compiled by his court historian, this is the most detailed statistical record of any pre-modern empire outside China. Contains revenue figures, military organization, population estimates, and cultural description. Essential primary source for Mughal political economy; must be read with attention to its function as imperial self-presentation."
@@ -224,21 +224,38 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Mughal Empire",
-      "author": "John F. Richards",
-      "note": "Start here for a reliable, concise scholarly introduction that covers political history, administration, and economy without requiring prior knowledge of South Asian history."
-    },
-    {
-      "type": "Book",
-      "title": "Aurangzeb: The Life and Legacy of India’s Most Controversial King",
-      "author": "Audrey Truschke",
-      "note": "For readers who want to engage with the Aurangzeb debate directly — Truschke provides the revisionist case against the standard portrait with scholarly rigor."
-    },
-    {
-      "type": "Book",
+      "level": "Introductory",
       "title": "The Anarchy: The East India Company, Corporate Violence, and the Pillage of an Empire",
       "author": "William Dalrymple",
-      "note": "For readers who want a narrative account of how the East India Company displaced Mughal authority — readable, well-researched, and attentive to the Mughal context the Company operated within."
+      "note": "Start here for a vivid narrative account of how the East India Company dismantled Mughal power — Dalrymple's storytelling makes the empire's collapse and its causes immediate and accessible without requiring prior background."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "The Mughal Empire",
+      "author": "John F. Richards",
+      "note": "A reliable and concise scholarly introduction that covers the dynasty's full arc — the best starting point for readers who want an overview before engaging the specialist debates."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Aurangzeb: The Life and Legacy of India's Most Controversial King",
+      "author": "Audrey Truschke",
+      "note": "For readers who want to engage the Aurangzeb debate directly — Truschke's revisionist account challenges both Hindu nationalist and colonial characterizations and is readable while being rigorously argued."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Last Mughal: The Fall of a Dynasty, Delhi 1857",
+      "author": "William Dalrymple",
+      "note": "For readers who want the human-scale account of the empire's final collapse — Dalrymple's narrative of the 1857 uprising and its aftermath draws on Mughal archives to reconstruct what the end of the dynasty felt like from the inside."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "The Agrarian System of Mughal India",
+      "author": "Irfan Habib",
+      "note": "The foundational analysis of the Mughal revenue system and agrarian economy — Habib's rigorous account of how the empire extracted resources from its agricultural base is essential for understanding what held the empire together and what broke it."
     }
   ],
   "popularCulture": [

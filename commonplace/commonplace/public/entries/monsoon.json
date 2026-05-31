@@ -173,7 +173,7 @@
       "year": "1985",
       "type": "Monograph",
       "reliability": "foundational",
-      "contribution": "foundational treatment of the Indian Ocean as a monsoon-organized world-historical region",
+      "contribution": "foundational; Indian Ocean monsoon world history",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The foundational scholarly work establishing the Indian Ocean world as a distinct analytical framework organized around the monsoon’s commercial calendar. Chaudhuri’s combination of economic history and structural analysis remains the essential starting point for Indian Ocean studies. Essential for understanding what the monsoon built."
@@ -184,7 +184,7 @@
       "year": "2006",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "synthetic treatment of the Indian Ocean world as an integrated historical region",
+      "contribution": "scholarly consensus; Indian Ocean integrated history",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The best single-volume synthetic treatment of the Indian Ocean world across the pre-modern and modern periods. Bose maintains the monsoon’s centrality as an organizing framework while extending the analysis into the colonial and post-colonial periods. The essential companion to Chaudhuri for a complete picture."
@@ -195,7 +195,7 @@
       "year": "2000",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "established the framework for understanding Swahili cities as Indian Ocean commercial nodes",
+      "contribution": "established; Swahili cities Indian Ocean commerce",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential scholarly work on the Swahili coast as a product of monsoon-organized Indian Ocean commerce. Horton and Middleton use archaeology and documentary sources to establish that Swahili cities were African communities that built an Indian Ocean commercial civilization rather than merchant colonies of foreign origin."
@@ -206,7 +206,7 @@
       "year": "2001",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "connected monsoon variability (via ENSO) to colonial-period famine and political economy",
+      "contribution": "scholarly consensus; ENSO monsoon variability and famine",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "Davis’s argument that the great famines of the late nineteenth century were produced by the coincidence of El Niño-driven monsoon failures with colonial political economies transformed how historians think about the relationship between monsoon variability and political outcomes. Essential for the political economy of monsoon failure."
@@ -217,7 +217,7 @@
       "year": "1989",
       "type": "Primary source with commentary",
       "reliability": "primary source",
-      "contribution": "first-century Greek commercial manual documenting the monsoon trade system",
+      "contribution": "foundational primary source; first-century monsoon trade",
       "originLanguage": "Greek",
       "domainAuthority": null,
       "annotation": "The Periplus of the Erythraean Sea is the earliest detailed commercial manual for Indian Ocean trade, documenting the monsoon routes, ports, and goods of the first century CE. Casson’s edition with commentary is the standard scholarly text. Essential primary source evidence that the monsoon commercial system was already elaborately organized in antiquity."
@@ -226,21 +226,38 @@
   "commerce": [
     {
       "type": "Book",
+      "level": "Introductory",
       "title": "A Hundred Horizons: The Indian Ocean in the Age of Global Empire",
       "author": "Sugata Bose",
-      "note": "Start here for a readable and analytically rich account of the Indian Ocean world as an integrated historical region — Bose maintains the monsoon’s centrality while covering the full sweep from pre-modern to contemporary."
+      "note": "Start here for a readable and analytically rich account of the Indian Ocean world — Bose shows how the monsoon organized human connection across the region's history, requiring no prior background in Indian Ocean studies."
     },
     {
       "type": "Book",
+      "level": "Introductory",
+      "title": "Late Victorian Holocausts: El Niño Famines and the Making of the Third World",
+      "author": "Mike Davis",
+      "note": "A powerful entry point for understanding the monsoon's political economy — Davis connects monsoon variability through ENSO to the colonial-era famines that killed tens of millions, showing how climate and empire interacted with devastating consequences."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Monsoon: The Indian Ocean and the Future of American Power",
+      "author": "Robert Kaplan",
+      "note": "For readers who want to connect monsoon geography to contemporary geopolitics — Kaplan traces how the Indian Ocean's physical structure continues to shape strategic competition, bridging historical and current analysis."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
       "title": "Trade and Civilisation in the Indian Ocean",
       "author": "K.N. Chaudhuri",
-      "note": "For readers who want the foundational scholarly treatment of the Indian Ocean as a monsoon-organized world-historical region — denser than Bose but essential for serious engagement with the analytical framework."
+      "note": "For readers ready to engage the foundational scholarly treatment of the Indian Ocean as a monsoon-organized world-historical system — Chaudhuri's structural analysis is demanding but essential for understanding the monsoon's long-run civilizational role."
     },
     {
       "type": "Book",
-      "title": "Late Victorian Holocausts",
-      "author": "Mike Davis",
-      "note": "For readers who want to understand the monsoon’s political economy in the colonial period — Davis’s account of how El Niño-driven monsoon failures interacted with colonial governance to produce mass famine is essential for understanding what monsoon failure actually means."
+      "level": "Scholarly",
+      "title": "The Periplus of the Erythraean Sea",
+      "author": "Lionel Casson (ed. and trans.)",
+      "note": "A first-century Greek commercial manual documenting the monsoon trade system as it operated at the height of Roman-Indian commerce — the essential primary source for the ancient monsoon economy, with Casson's translation and notes making it accessible to non-specialists."
     }
   ],
   "popularCulture": [

@@ -171,7 +171,7 @@
       "year": "1982",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "standard introduction to Aztec political economy and social organization",
+      "contribution": "established; Aztec political economy and society",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most reliable and accessible scholarly introduction to the Aztec state as a functioning political-economic system. Berdan’s focus on tribute, commerce, and social organization rather than religion and conquest produces the analytical account the entry requires."
@@ -182,7 +182,7 @@
       "year": "1992",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "New Philology reconstruction of Nahua social life using Nahuatl-language colonial documents",
+      "contribution": "foundational; New Philology Nahua social reconstruction",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The foundational work of the New Philology tradition. Lockhart uses Nahuatl-language colonial documents to reconstruct both the pre-conquest Nahua world and its transformation under colonialism. Essential for any argument about Aztec social organization that goes beyond the conquest narrative."
@@ -193,7 +193,7 @@
       "year": "2003",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "revisionist account of the conquest emphasizing indigenous agency",
+      "contribution": "scholarly consensus; conquest indigenous agency",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential revisionist account of the Spanish conquest, demonstrating that the standard narrative’s emphasis on Spanish military brilliance obscures the decisive role of indigenous coalition-building. Readable and accessible without sacrificing analytical rigor."
@@ -204,7 +204,7 @@
       "year": "1991",
       "type": "Monograph",
       "reliability": "established",
-      "contribution": "empathetic reconstruction of Aztec religious and cultural logic",
+      "contribution": "established; Aztec religious and cultural logic",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most sustained attempt to understand Aztec religious practice — including sacrifice — from within the logic of the culture rather than from outside it. Clendinnen’s empathetic approach is analytically productive even where it has been challenged by subsequent scholarship."
@@ -224,21 +224,38 @@
   "commerce": [
     {
       "type": "Book",
+      "level": "Introductory",
       "title": "Seven Myths of the Spanish Conquest",
       "author": "Matthew Restall",
-      "note": "Start here if you want to understand why the standard conquest narrative is wrong and what actually produced the fall of Tenochtitlan — Restall’s revisionist account is accessible and convincing."
+      "note": "Start here — Restall dismantles the standard conquest narrative concisely and readably, showing why the story of a handful of Spaniards defeating a vast empire through superior courage and technology is wrong on almost every count."
     },
     {
       "type": "Book",
+      "level": "Introductory",
+      "title": "The Aztecs of Central Mexico: An Imperial Society",
+      "author": "Frances F. Berdan",
+      "note": "The most accessible systematic account of Aztec political economy and social organization — Berdan covers tribute, markets, the calpulli system, and daily life in a way that requires no prior background in Mesoamerican history."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
       "title": "Aztecs: An Interpretation",
       "author": "Inga Clendinnen",
-      "note": "For readers who want to understand Aztec religious culture from the inside — Clendinnen’s attempt to reconstruct the logic of Aztec ritual and sacrifice without resort to either condemnation or romanticization."
+      "note": "For readers who want to understand Aztec religious culture from the inside — Clendinnen's empathetic reconstruction of ritual logic, sacrifice, and cosmology is demanding but essential for understanding the empire as its participants understood it."
     },
     {
       "type": "Book",
-      "title": "The Aztecs of Central Mexico",
-      "author": "Frances Berdan",
-      "note": "For a systematic account of Aztec political economy, social organization, and tribute system — the scholarly introduction that treats the Aztec state as a functioning system rather than a conquest narrative."
+      "level": "Intermediate",
+      "title": "When Montezuma Met Cortés",
+      "author": "Matthew Restall",
+      "note": "Restall's full account of the conquest that goes beyond the myths — for readers who want the complete revisionist narrative after the introductory Seven Myths, showing how indigenous agency shaped the outcome at every stage."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "The Nahuas After the Conquest",
+      "author": "James Lockhart",
+      "note": "The foundational New Philology work reconstructing Nahua social life using Nahuatl-language colonial documents — Lockhart's account of how Aztec social structures persisted and transformed under Spanish rule is essential for serious engagement with the empire's long-run history."
     }
   ],
   "popularCulture": [

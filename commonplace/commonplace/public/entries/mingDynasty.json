@@ -170,7 +170,7 @@
       "year": "2010",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "political economy and environmental history of the Ming",
+      "contribution": "scholarly consensus",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The best single-volume treatment of the Ming Dynasty in English. Brook integrates political, economic, and environmental analysis, including the role of climate change in the dynasty’s late decline. Accessible without sacrificing analytical depth."
@@ -181,7 +181,7 @@
       "year": "2007",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "definitive scholarly account of the Zheng He voyages",
+      "contribution": "established",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most reliable scholarly account of the Zheng He voyages. Dreyer cuts through the popular mythology — including Gavin Menzies’ extravagant claims — and provides a careful reconstruction of what the voyages actually accomplished and why they ended."
@@ -203,7 +203,7 @@
       "year": "1988",
       "type": "Edited volume",
       "reliability": "scholarly consensus",
-      "contribution": "comprehensive reference on Ming political and institutional history",
+      "contribution": "foundational; Ming political and institutional history",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The authoritative reference work for Ming institutional history. The chapters on the eunuch-bureaucracy conflict and on the haijin’s enforcement are the essential starting points for serious engagement with these questions."
@@ -214,7 +214,7 @@
       "year": "2010",
       "type": "Monograph",
       "reliability": "established",
-      "contribution": "Ming porcelain as a window onto Ming commercial networks and global trade",
+      "contribution": "established; Ming porcelain and global trade",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "Uses Ming porcelain — the most globally traded Ming export — to illuminate the commercial networks that persisted despite the official haijin. Demonstrates that Ming China remained commercially connected to the world even as its official ideology proclaimed otherwise."
@@ -223,21 +223,38 @@
   "commerce": [
     {
       "type": "Book",
+      "level": "Introductory",
       "title": "The Troubled Empire: China in the Yuan and Ming Dynasties",
       "author": "Timothy Brook",
-      "note": "Start here for a readable, analytically rich account of the Ming that goes well beyond the Zheng He story to explain the dynasty’s political economy and eventual collapse."
+      "note": "Start here for a readable, analytically rich account of the Ming that situates the dynasty in its Mongol aftermath and tracks its internal tensions across three centuries. Requires no prior knowledge of Chinese history."
     },
     {
       "type": "Book",
+      "level": "Introductory",
+      "title": "Mr. China's Son: A Villager's Life",
+      "author": "He Liyi",
+      "note": "A memoir that brings Ming village life to ground level — while not exclusively about the Ming period, He Liyi's account of rural Chinese life through the twentieth century illuminates the agrarian foundations that persisted from Ming times."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
       "title": "Zheng He: China and the Oceans in the Early Ming Dynasty",
-      "author": "Edward Dreyer",
-      "note": "For readers who want the scholarly account of the Zheng He voyages free from popular mythology — Dreyer establishes what actually happened and why it ended."
+      "author": "Edward L. Dreyer",
+      "note": "For readers who want the scholarly account of the Zheng He voyages free of the popular mythology — Dreyer establishes what actually happened, what the voyages were for, and why China subsequently withdrew from oceanic projection."
     },
     {
       "type": "Book",
+      "level": "Intermediate",
       "title": "1421: The Year China Discovered the World",
       "author": "Gavin Menzies",
-      "note": "Not recommended as history — its claims that Zheng He circumnavigated the globe and discovered America have no scholarly support — but widely read and useful for understanding how the Zheng He voyages have been mythologized in popular culture."
+      "note": "Not recommended as history — Menzies's claims that Zheng He circumnavigated the globe and reached America are rejected by historians. Included because readers encounter it frequently; use Dreyer's account instead for what the voyages actually accomplished."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "The Cambridge History of China, Vols. 7–8: The Ming Dynasty",
+      "author": "Frederick W. Mote and Denis Twitchett (eds.)",
+      "note": "The comprehensive scholarly reference for Ming political and institutional history — the starting point for any serious research into the dynasty's governance, economy, and cultural life."
     }
   ],
   "popularCulture": [

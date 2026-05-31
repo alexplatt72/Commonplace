@@ -170,7 +170,7 @@
       "year": "1973",
       "type": "Monograph",
       "reliability": "foundational",
-      "contribution": "foundational synthesis of medieval West African state history",
+      "contribution": "foundational; medieval West African state synthesis",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The foundational scholarly synthesis of medieval West African state history, covering the Ghana and Mali Empires as precursors to the Songhai. Levtzion’s careful use of Arabic sources established the methodological standards for the field. Essential for situating Songhai in the longer sequence of Sahelian state formation."
@@ -181,7 +181,7 @@
       "year": "1999",
       "type": "Edited volume / translation",
       "reliability": "scholarly consensus",
-      "contribution": "translation and analysis of the primary Timbuktu chronicle",
+      "contribution": "established",
       "originLanguage": "Arabic",
       "domainAuthority": null,
       "annotation": "The essential scholarly access point to the primary Timbuktu chronicle. Hunwick’s translations and annotations make the Tarikh al-Sudan available to non-Arabic readers with the apparatus necessary to use it critically. The essential starting point for any serious engagement with Songhai history in its own sources."
@@ -192,7 +192,7 @@
       "year": "2008",
       "type": "Edited volume",
       "reliability": "scholarly consensus",
-      "contribution": "post-colonial analysis of the Timbuktu manuscript tradition and its significance",
+      "contribution": "established; Timbuktu manuscript tradition analysis",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential scholarly reference for the Timbuktu manuscript tradition, covering both the historical content of the manuscripts and the politics of their preservation and interpretation. Brings the manuscript scholarship into contemporary post-colonial and African studies frameworks."
@@ -203,7 +203,7 @@
       "year": "1983",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "situates Songhai in the longer political economy of African slavery and trade",
+      "contribution": "scholarly consensus; West African slavery political economy",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "Essential for understanding the relationship between the Songhai commercial system and the slave trade — both the trans-Saharan slave trade that was part of the Songhai economy and the Atlantic slave trade that reshaped West Africa after the empire’s collapse."
@@ -214,7 +214,7 @@
       "year": "1526",
       "type": "Primary source",
       "reliability": "primary source requiring critical reading",
-      "contribution": "first detailed European-accessible account of Timbuktu and the Songhai Empire",
+      "contribution": "foundational primary source; Timbuktu firsthand account",
       "originLanguage": "Italian (originally Arabic/Castilian oral testimony)",
       "domainAuthority": null,
       "annotation": "Leo Africanus’s account of West Africa, including his description of Timbuktu and the Songhai Empire at its height, is the most important early external source for the civilization. It requires critical reading: Leo was a North African Muslim convert to Christianity writing for a European audience, and his emphasis on gold and urban wealth reflects what his patrons and publishers wanted to know. The account is valuable but not neutral."
@@ -223,21 +223,38 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Meanings of Timbuktu",
-      "author": "Shamil Jeppie and Souleymane Bachir Diagne (eds.)",
-      "note": "Start here for a serious scholarly engagement with what Timbuktu was and what its manuscript tradition means — the essential reference for the intellectual history dimension of Songhai civilization."
-    },
-    {
-      "type": "Book",
-      "title": "Timbuktu and the Songhay Empire",
-      "author": "John Hunwick",
-      "note": "For readers who want direct access to the Timbuktu chronicles in translation — Hunwick’s edition of the Tarikh al-Sudan is the scholarly foundation for Songhai political and intellectual history."
-    },
-    {
-      "type": "Book",
+      "level": "Introductory",
       "title": "The Bad-Ass Librarians of Timbuktu",
       "author": "Joshua Hammer",
-      "note": "For a readable account of the 2012–2013 manuscript crisis and the covert operation to save the Timbuktu manuscripts from Islamist destruction — the best popular entry point to understanding why these documents matter."
+      "note": "Start here for a readable account of the 2012–2013 Islamist occupation of Timbuktu and the covert effort to save the manuscript collection — the crisis makes vivid what the Timbuktu scholarly tradition was and why it mattered enough to risk lives protecting."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "Timbuktu: The Sahara's Fabled City of Gold",
+      "author": "Marq de Villiers and Sheila Hirtle",
+      "note": "An accessible narrative history of Timbuktu from its founding through the Songhai period and beyond — the best entry point for readers who want the city's story before engaging the scholarly literature on the empire."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Timbuktu and the Songhay Empire",
+      "author": "John O. Hunwick",
+      "note": "For readers who want direct access to the Timbuktu chronicles in translation — Hunwick's edition of the Tarikh al-Sudan provides the primary sources for Songhai history with essential scholarly apparatus."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Meanings of Timbuktu",
+      "author": "Shamil Jeppie and Souleymane Bachir Diagne (eds.)",
+      "note": "For a serious scholarly engagement with what Timbuktu was and what it has meant — this collection addresses the manuscript tradition, the city's symbolic role in African intellectual history, and the politics of its representation."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Ancient Ghana and Mali",
+      "author": "Nehemia Levtzion",
+      "note": "The foundational synthesis of medieval West African state history that situates Songhai within the longer sequence of Sahelian empires — essential for understanding what made the Songhai state distinctive and what it inherited."
     }
   ],
   "popularCulture": [

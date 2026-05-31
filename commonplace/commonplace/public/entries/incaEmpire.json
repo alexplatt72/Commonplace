@@ -172,7 +172,7 @@
       "year": "1980",
       "type": "Monograph",
       "reliability": "foundational",
-      "contribution": "foundational analysis of the mit’a system and Andean vertical ecology",
+      "contribution": "foundational; mit'a system and Andean vertical ecology",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The foundational work in Inca economic studies. Murra’s analysis of the mit’a as a labor-tax economy and his vertical archipelago model of Andean ecological management remain the essential analytical frameworks for the Inca economy. Essential reading for any argument about what the Inca economic system was and how it worked."
@@ -183,7 +183,7 @@
       "year": "2003",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "systematic analysis of quipu encoding demonstrating complexity beyond numerical recording",
+      "contribution": "established; quipu complexity analysis",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential scholarly work on quipu encoding. Urton’s analysis of the binary coding system in quipu construction established that the encoding capacity exceeds numerical recording and opened the possibility of phonetic encoding. The foundation for all subsequent quipu decipherment work."
@@ -194,7 +194,7 @@
       "year": "1992",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "archaeological investigation of pre-imperial Inca period around Cuzco",
+      "contribution": "established; pre-imperial Inca archaeology",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential archaeological complement to the chronicle-based political history. Bauer’s survey of the Cuzco region establishes that the Inca were a significant regional power before the Pachacuti expansion, complicating the rapid-expansion narrative of the standard dynastic account."
@@ -205,7 +205,7 @@
       "year": "1987",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "gendered analysis of Inca imperial organization and its colonial transformation",
+      "contribution": "scholarly consensus; gendered Inca imperial analysis",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The essential work on gender in the Inca Empire. Silverblatt demonstrates that Inca imperial extraction was gendered — men owed labor, women owed textile production and ritual service — and that the colonial Spanish system retained this gendering while transforming its content. Essential for any complete account of how the mit’a worked."
@@ -216,7 +216,7 @@
       "year": "2002",
       "type": "Monograph",
       "reliability": "scholarly consensus",
-      "contribution": "comprehensive synthesis of Inca political history, administration, and material culture",
+      "contribution": "foundational; comprehensive Inca political synthesis",
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The most comprehensive single-volume scholarly synthesis of Inca civilization. D’Altroy integrates archaeological and documentary evidence with analytical clarity. The essential reference for any specific claim about Inca institutions, geography, or political history."
@@ -225,21 +225,38 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Incas",
-      "author": "Terence D'Altroy",
-      "note": "Start here for a comprehensive and reliable scholarly introduction to Inca civilization that integrates archaeology and documentary sources without requiring prior knowledge of Andean history."
-    },
-    {
-      "type": "Book",
-      "title": "The Economic Organization of the Inka State",
-      "author": "John Murra",
-      "note": "For readers who want to understand the mit’a system and the Inca economy on analytical terms — Murra’s foundational work remains the essential framework even after four decades of subsequent scholarship."
-    },
-    {
-      "type": "Book",
+      "level": "Introductory",
       "title": "Turn Right at Machu Picchu",
       "author": "Mark Adams",
-      "note": "For readers who want a readable narrative entry into Inca history and the story of Hiram Bingham’s ‘rediscovery’ of Machu Picchu — a popular account that takes the archaeology seriously without pretending to be a scholarly work."
+      "note": "Start here for a readable narrative entry into Inca history and archaeology — Adams retraces Hiram Bingham's early twentieth-century expeditions while weaving in what contemporary scholarship has established about the empire. Requires no prior background."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "The Incas",
+      "author": "Terence N. D'Altroy",
+      "note": "A comprehensive and reliable scholarly introduction that covers the empire's full arc from origins to collapse — the best single-volume overview before engaging the specialist literature."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "At the Crossroads of the Earth and the Sky: An Andean Cosmology",
+      "author": "Gary Urton",
+      "note": "For readers who want to understand the Inca conceptual world — Urton's account of Andean spatial and cosmological organization illuminates how the empire's administrative geography reflected its religious logic."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Economic Organization of the Inka State",
+      "author": "John V. Murra",
+      "note": "For readers who want to understand the mit'a system and the Inca economy on its own terms — Murra's foundational analysis of Andean vertical ecology and reciprocity shows how the Inca organized production without money or markets."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Moon, Sun, and Witches: Gender Ideologies and Class in Inca and Colonial Peru",
+      "author": "Irene Silverblatt",
+      "note": "The foundational gendered analysis of Inca imperial organization and its colonial transformation — Silverblatt shows how gender hierarchy was central to Inca state structure in ways that mainstream administrative histories miss."
     }
   ],
   "popularCulture": [
