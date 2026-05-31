@@ -1718,5 +1718,150 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "persianEmpire",
+    "title": "The Persian Empire",
+    "summary": "The Achaemenid Persian Empire — founded by Cyrus the Great around 550 BCE and destroyed by Alexander the Great in 330 BCE — was the largest empire the ancient world had yet seen, stretching from the Aegean to the Indus, governing perhaps 40 percent of the world's population through a system of administrative tolerance, royal roads, and satrapal governance that became the template for empire across the ancient world.",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 550–330 BCE",
+    "themes": [
+      "history",
+      "middleEast",
+      "empire",
+      "globalHistory",
+      "greece",
+      "religion"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "slavery",
+    "title": "Slavery",
+    "summary": "The institution of owning human beings as property — one of the most widespread and durable institutions in human history, practiced on every inhabited continent, powering the ancient economies of Greece, Rome, and the Near East, and reaching its most systematic modern form in the Atlantic plantation complex that built the wealth of the early capitalist world — and one of the central subjects of moral and political philosophy, whose abolition required a reconception of what it means to be human.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 3500 BCE–present",
+    "themes": [
+      "history",
+      "politics",
+      "economics",
+      "ethics",
+      "globalHistory",
+      "society",
+      "america"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "nietzsche",
+    "title": "Friedrich Nietzsche",
+    "summary": "The German philosopher whose radical critique of morality, religion, and truth — developed in works including Thus Spoke Zarathustra, Beyond Good and Evil, and On the Genealogy of Morality — declared the death of God, introduced the concepts of the will to power, eternal recurrence, and the Übermensch, and became one of the most influential and most misappropriated thinkers in modern history.",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1844–1900",
+    "themes": [
+      "philosophy",
+      "germany",
+      "19thCentury",
+      "history",
+      "modernity",
+      "ethics"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "liberalism",
+    "title": "Liberalism",
+    "summary": "The political philosophy that places individual liberty, limited government, the rule of law, and equal rights at the center of political life — the foundational ideology of Western constitutional democracy, the intellectual tradition that produced both the American and French revolutions, and the framework within which the most consequential political arguments of the modern era have been conducted, even by those who reject it.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 1600–present",
+    "themes": [
+      "politics",
+      "philosophy",
+      "history",
+      "economics",
+      "modernity",
+      "ethics"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "translation",
+    "title": "Translation",
+    "summary": "The practice of rendering meaning across language boundaries — which preserved ancient Greek philosophy for the Islamic world, returned it to Europe for the Renaissance, transmitted the Bible across civilizations, and enabled the Reformation, the Scientific Revolution, and every subsequent exchange of ideas across cultural borders — and without which the connected world we inhabit would be impossible.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "language",
+      "history",
+      "religion",
+      "globalHistory",
+      "philosophy",
+      "science"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "census",
+    "title": "The Census",
+    "summary": "The systematic counting and categorization of populations by the state — which began in ancient Mesopotamia and Egypt as a tool of taxation and military conscription, became the instrument through which modern states know, administer, and govern their populations, and reveals in its categories (race, religion, language, occupation) how states define who belongs, who counts, and on what terms.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "politics",
+      "history",
+      "society",
+      "economics",
+      "globalHistory",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "maps",
+    "title": "Maps",
+    "summary": "The technology of representing spatial relationships on a surface — one of the oldest cognitive and political tools in human history, a technology that does not merely describe territory but creates it: setting borders, asserting sovereignty, enabling navigation, organizing colonial space, and shaping how people understand their place in the world.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 6200 BCE–present",
+    "themes": [
+      "history",
+      "globalHistory",
+      "science",
+      "politics",
+      "empire",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
+  },
+  {
+    "id": "universities",
+    "title": "The University",
+    "summary": "The institutional form created in medieval Europe between roughly 1088 and the 13th century — a corporation of scholars with the right to grant degrees, protected by royal or papal charter — that became the primary institution for the production, preservation, and transmission of knowledge in the modern world, and whose basic structure has proved remarkably durable across nine centuries of radical social change.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1088–present",
+    "themes": [
+      "history",
+      "education",
+      "europe",
+      "middleAges",
+      "science",
+      "modernity"
+    ],
+    "status": "published",
+    "qualityTier": "A"
   }
 ]
