@@ -8,6 +8,14 @@
     "summary": "The organized campaign to end the transatlantic slave trade and slavery itself, spanning roughly a century from the 1780s through Brazilian emancipation in 1888."
   },
   {
+    "id": "agriculturalRevolution",
+    "title": "The Agricultural Revolution",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 10,000–3,000 BCE",
+    "status": "published"
+  },
+  {
     "id": "alanTuring",
     "title": "Alan Turing",
     "template": "People",
@@ -38,6 +46,14 @@
     "subtype": "Site",
     "period": "331 BCE – present",
     "summary": "The city Alexander the Great founded at the mouth of the Nile in 331 BCE — which became the ancient world's greatest center of knowledge, the meeting point of Greek, Egyptian, Jewish, and later Christian and Islamic intellectual traditions, and the site of the most famous library ever destroyed"
+  },
+  {
+    "id": "ambedkar",
+    "title": "B.R. Ambedkar",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1891–1956",
+    "status": "published"
   },
   {
     "id": "americanCivilWar",
@@ -114,14 +130,6 @@
     "summary": "The philosopher who invented the categories through which Western and global intellectual culture organized knowledge for two millennia"
   },
   {
-    "id": "artOfWar",
-    "title": "The Art of War",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
-    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history."
-  },
-  {
     "id": "artificialIntelligence",
     "title": "Artificial Intelligence",
     "template": "Foundations",
@@ -136,6 +144,14 @@
       "20thCentury"
     ],
     "summary": "The project of building machines that can perform tasks requiring human-like intelligence — now the most rapidly developing technology in human history and the subject of the most consequential unresolved questions about the future of work, knowledge, and civilization."
+  },
+  {
+    "id": "artOfWar",
+    "title": "The Art of War",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
+    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history."
   },
   {
     "id": "ashoka",
@@ -240,6 +256,22 @@
     "subtype": "Site",
     "period": "c. 814 BCE – 146 BCE (Punic); 44 BCE – 698 CE (Roman and late antique)",
     "summary": "The Phoenician trading city that became Rome's most dangerous rival and was completely destroyed — the paradigm case of the losers' civilization in Western historical memory, known almost entirely through the accounts of those who destroyed it."
+  },
+  {
+    "id": "charlemagne",
+    "title": "Charlemagne",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 748–814 CE",
+    "status": "published"
+  },
+  {
+    "id": "cleopatra",
+    "title": "Cleopatra VII",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "69–30 BCE",
+    "status": "published"
   },
   {
     "id": "climateChange",
@@ -566,6 +598,14 @@
     "summary": "The Mongol leader who unified the nomadic tribes of the steppe and conquered the largest contiguous land empire in history — bringing catastrophic destruction to settled civilizations while creating the Pax Mongolica that opened Eurasia to trade, ideas, and plague on an unprecedented scale."
   },
   {
+    "id": "greatDepression",
+    "title": "The Great Depression",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1929–1939",
+    "status": "published"
+  },
+  {
     "id": "guptaEmpire",
     "title": "The Gupta Empire",
     "template": "Periods",
@@ -622,6 +662,14 @@
     "summary": "The collection of ancient Israelite and Jewish texts that became the founding scripture of Judaism, the Old Testament of Christianity, and a primary source for Islam — shaping the moral and literary imagination of Western civilization more than any other single work."
   },
   {
+    "id": "hegel",
+    "title": "Georg Wilhelm Friedrich Hegel",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1770–1831",
+    "status": "published"
+  },
+  {
     "id": "hobbes",
     "title": "Thomas Hobbes",
     "template": "People",
@@ -660,6 +708,14 @@
     "subtype": "System",
     "period": "c. 2000 BCE – 1500 CE",
     "summary": "The maritime trading network that connected East Africa, the Arabian Peninsula, South Asia, Southeast Asia, and China for over three thousand years — the world's most durable commercial system and the mechanism through which Buddhism, Islam, crops, and technologies spread across half the globe."
+  },
+  {
+    "id": "industrialRevolution",
+    "title": "The Industrial Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
+    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate"
   },
   {
     "id": "indusValleyCivilization",
@@ -702,14 +758,6 @@
       "Punjab",
       "Mesopotamia"
     ]
-  },
-  {
-    "id": "industrialRevolution",
-    "title": "The Industrial Revolution",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
-    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate"
   },
   {
     "id": "inequality",
@@ -798,6 +846,14 @@
     "subtype": "System",
     "period": "586 BCE – present",
     "summary": "The dispersal of Jewish communities across the world following successive exiles and expulsions — and the remarkable development of institutions, texts, and practices that allowed a people to survive, maintain identity, and produce civilization-shaping intellectual and cultural achievements without a homeland for nearly two thousand years."
+  },
+  {
+    "id": "johnRawls",
+    "title": "John Rawls",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1921–2002",
+    "status": "published"
   },
   {
     "id": "juliusCaesar",
@@ -942,6 +998,14 @@
     "subtype": "Non-narrative",
     "period": "1848",
     "summary": "The argument that compressed a theory of history, a critique of capitalism, and a political programme into 23 pages — and then became more powerful as a symbol than as a text"
+  },
+  {
+    "id": "martinLutherKing",
+    "title": "Martin Luther King Jr.",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1929–1968",
+    "status": "published"
   },
   {
     "id": "mecca",
