@@ -1,0 +1,286 @@
+{
+  "id": "evolution",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Concepts & Ideas",
+  "subtype": "Analytical Concept",
+  "period": "1859–present",
+  "title": "Evolution",
+  "summary": "The process by which populations of organisms change over successive generations through the differential survival and reproduction of heritable traits — the foundational explanatory framework of modern biology, and one of the most contested scientific ideas in the history of human culture.",
+  "hook": "Evolution is the only scientific theory that has been simultaneously accepted as fact by essentially the entire scientific community and rejected by a majority of citizens in one of the world's most scientifically advanced nations. This gap between scientific consensus and public acceptance is not a failure of communication. It is the product of a collision between an explanatory framework and beliefs about human origin, moral status, and divine order that evolution touches more directly than any other scientific idea. Understanding evolution requires understanding both what it explains and why it has been used as a weapon in conflicts it did not create.",
+  "themes": [
+    "science",
+    "biology",
+    "natural world",
+    "religion",
+    "philosophy of science",
+    "social Darwinism",
+    "cultural history"
+  ],
+  "interpretiveInfluences": [
+    "Ernst Mayr",
+    "Stephen Jay Gould",
+    "Richard Dawkins",
+    "Daniel Dennett",
+    "Elliott Sober"
+  ],
+  "comparativeSummary": "For biologists, evolution by natural selection is the organizing framework of their discipline — not a theory in the colloquial sense (a guess) but a theory in the scientific sense (an explanatory framework supported by overwhelming evidence). For religious believers in the Abrahamic traditions, it presents challenges to literal readings of scripture and to human uniqueness that range from irresolvable conflict to productive dialogue depending on theological commitment. For social scientists and humanists, evolutionary thinking has been both a powerful analytical tool and a source of dangerous ideological distortion when applied to social organization.",
+  "content": {
+    "beginner": {
+      "theConcept": "Evolution means that living things change over time. Species alive today descended from different species that lived in the past. All life on Earth is related — humans and mushrooms share a common ancestor, if you go back far enough.\n\nThe mechanism driving this change is natural selection. In any population, some individuals have traits that help them survive and reproduce better than others. Those individuals pass their traits to offspring. Over many generations, the traits that help survival become more common. Traits that hurt survival become rarer. Over enough time, populations change so much that they become new species.\n\nThis is not a guess. The evidence comes from fossils, from genetics, from direct observation of evolution happening in real time in bacteria and insects and birds, and from the logical consistency of the framework itself.",
+      "problemItSolves": "Before evolution, the diversity of life had one available explanation: each species was designed and created that way. This explanation had a problem. It could not explain why life was organized hierarchically. Whales have vestigial hip bones. Humans have tailbones. The wing of a bat, the flipper of a dolphin, and the arm of a human use the same bones. A designer making everything from scratch would not build this way.\n\nEvolution explained the pattern. Life is structured the way it is because all organisms are modified descendants of earlier organisms. The whale's hip bone is a remnant of an ancestor's pelvis. The bat's wing and the human arm use the same bones because both descend from the same ancestor. The apparent messiness of biological design is the signature of modification over time, not creation from nothing.",
+      "howItWorks": "Evolution requires three things. First, variation: individuals must differ from each other in heritable ways. Second, differential reproduction: some variants must leave more offspring than others, consistently enough to matter. Third, time: large changes require large numbers of generations.\n\nNatural selection is the main mechanism, but not the only one. Genetic drift — random changes in gene frequencies in small populations — also drives evolution. Sexual selection explains the peacock's tail. Mutation is the original source of new variation. All of these processes operate simultaneously.",
+      "whatItExplains": "Evolution explains the structure of the living world. Why are there more species of beetles than mammals? Why do islands have endemic species found nowhere else? Why do viruses evolve resistance to drugs? Why do humans and chimpanzees share 98% of their DNA?\n\nAll of these patterns are explained by evolutionary theory and were puzzling before it. Darwin proposed a mechanism and it turned out to explain things he wasn't trying to explain. The distribution of species, the behavior of parasites, the progression of antibiotic resistance — all follow from the same underlying logic.",
+      "whereItBreaksDown": "Evolution does not explain everything about life. It does not explain the origin of life itself — natural selection operates on replicating molecules, but how the first replicating molecules arose is a separate question with genuine uncertainty.\n\nMore importantly: evolution explains how organisms come to be suited to their environments. It says nothing about whether this is good, just, or meaningful. The 19th-century mistake of Social Darwinism — using evolution to justify social hierarchies and eugenics — was not an extension of evolutionary theory but a misapplication of it. Natural selection describes what happens in populations. It does not say what should happen in societies.",
+      "usedAndMisusedC": "The history of evolutionary theory is also a history of ideological misuse. Social Darwinism used the phrase 'survival of the fittest' — Herbert Spencer's coinage, not Darwin's — to argue that social inequality was natural and therefore justified. Eugenics programs in the early 20th century, including in the United States and Nazi Germany, claimed evolutionary authority for coerced sterilization and mass murder. These were not applications of evolutionary theory. They were political programs that borrowed scientific language for legitimacy.\n\nIn the other direction, evolutionary thinking has been cautiously applied to psychology, economics, and linguistics. These applications are productive where they stick to testable claims. They are contested where they make broader claims about human nature."
+    },
+    "general": {
+      "theConcept": "The modern evolutionary synthesis, consolidated between the 1930s and 1950s, unified Darwin's natural selection with Mendelian genetics. The synthesis resolved a genuine problem in Darwin's original theory: he had no explanation for how heritable variation was maintained across generations. The rediscovery of Mendel's work showed that inheritance was particulate — genes, not blended traits — which meant variation was preserved rather than diluted over generations. The synthesis produced the neo-Darwinian framework that is the current scientific consensus.\n\nThe synthesis was the product of specific scientists: Theodosius Dobzhansky, Ernst Mayr, George Gaylord Simpson, and Julian Huxley, among others. Mayr's contribution was particularly important for the concept of speciation — his biological species concept (species are reproductively isolated populations) gave the central evolutionary unit a precise definition that Darwin had left intuitive.",
+      "problemItSolves": "The puzzle of biological complexity — the eye, the immune system, the bacterial flagellum — is the standard challenge to evolutionary explanation. The argument, classically made by William Paley and later by intelligent design theorists, is that complex structures requiring multiple coordinated parts could not have arisen by gradual selection. Richard Dawkins's The Blind Watchmaker (1986) and The Selfish Gene (1976) represent the most influential popular defenses of the gradualist position: complex structures evolve through sequences of steps, each producing a slight advantage, so 'half an eye' is not useless — it is better than no eye.\n\nThe serious scientific response to complexity arguments — beyond Dawkins's popularization — is the exaptation concept developed by Stephen Jay Gould and Elisabeth Vrba: structures originally selected for one function can be co-opted for another. The bacterial flagellum's components have homologs in other functional systems; they were not selected originally as a flagellum. This does not make the evolutionary explanation easy, but it makes the 'irreducible complexity' argument much weaker than its proponents claim.",
+      "howItWorks": "The dispute between adaptationism and the pluralist view of evolutionary mechanisms is one of the most important live debates in evolutionary biology. Adaptationism — associated with Dawkins and John Maynard Smith — holds that most biological features can be explained as adaptations produced by natural selection. Gould and Richard Lewontin's 'The Spandrels of San Marco' (1979) challenged this, arguing that adaptationists routinely construct 'just-so stories' — plausible-sounding adaptive explanations for traits that may have no adaptive explanation or may be structural byproducts of other selections.\n\nThis is not a debate about whether evolution is true — both sides accept natural selection as the primary mechanism. It is a debate about how much of biological structure is directly adaptive versus how much is developmental constraint, historical accident, or byproduct. The stakes are methodological: adaptationism makes specific predictions about biological function that can be tested; the pluralist view requires a more complex evidentiary standard.",
+      "whatItExplains": "Evolutionary medicine — the application of evolutionary theory to understanding disease — is one of the most productive recent applications of the framework. Why do we have the immune system we do? Because pathogens and hosts co-evolve, with hosts evolving defenses and pathogens evolving to evade them. Why do cancer cells behave as they do? Because they undergo natural selection within the body — the same processes that drive organismal evolution drive tumor evolution, which is why tumors become drug-resistant. Why does senescence happen? Because natural selection acts primarily on organisms during reproductive years — post-reproductive survival is not strongly selected for.\n\nThese are not speculative applications. Evolutionary principles are now integrated into cancer treatment protocols (avoiding resistance by rotating drugs) and public health programs (modeling pathogen evolution for vaccine design). Evolution is not just an explanation of the past — it is a predictive tool for the present.",
+      "whereItBreaksDown": "The extension of evolutionary reasoning to human behavior — evolutionary psychology — is methodologically contested in ways that pure biology is not. Evolutionary psychology's core method is reverse engineering: observe a behavioral tendency, hypothesize the ancestral environment in which it would have been adaptive, construct a narrative explaining why it was selected. The problem is that this method generates unfalsifiable hypotheses. If almost any behavior can be given a plausible evolutionary story, the framework has low predictive power. Its defenders argue that testable predictions can be derived from evolutionary models; its critics (David Buller, for example) argue that the empirical base is much weaker than the field's confidence implies.\n\nThis is a genuine methodological disagreement within science, not a challenge to evolution itself. Evolutionary biology — genetics, paleontology, ecology — is not in dispute. Whether evolutionary psychology's specific hypotheses are well-supported is a separate empirical question.",
+      "usedAndMisusedC": "The creationism and intelligent design movements, primarily in the United States, represent the most sustained public challenge to evolutionary theory in any liberal democracy. These movements are not scientifically credible — the scientific consensus on evolution is as strong as on climate change or the germ theory of disease — but they have been politically effective in shaping science education policy in specific American states.\n\nThe intelligent design movement, which emerged in the 1990s, attempted to present itself as scientific by avoiding explicit religious language and focusing on arguments about biological complexity. The 2005 Kitzmiller v. Dover case — in which a federal judge ruled that intelligent design was not science and could not be taught in public school science classes — produced extensive expert testimony establishing both the scientific consensus on evolution and the religious origins of intelligent design. The ruling did not end the public controversy."
+    },
+    "advanced": {
+      "theConcept": "The most important unresolved conceptual question in evolutionary theory is the unit of selection: what does natural selection act on? The gene-centric view (Dawkins's The Selfish Gene, building on William Hamilton and George Williams) holds that the gene is the fundamental unit — organisms are 'survival machines' built by genes to propagate themselves. The multi-level selection view (Gould, Lewontin, David Sloan Wilson, Elliott Sober) holds that selection operates simultaneously at multiple levels — gene, organism, group, perhaps species — and that gene-level selection cannot explain all biological phenomena.\n\nThis is not a trivial dispute. The unit-of-selection question determines how evolutionary theory explains cooperation, altruism, and social behavior. Kin selection (Hamilton's inclusive fitness) explains altruism within genetic lineages — an organism will sacrifice itself for close relatives because the same genes propagate. Group selection explains altruism across genetic lines — groups of cooperators can outcompete groups of defectors even when defectors outcompete cooperators within groups. Whether group selection is real, reducible to gene selection, or necessary for complete explanation is the live debate. Nowak, Tarnita, and Wilson's 2010 challenge to inclusive fitness (arguing it is mathematically redundant) produced one of the sharpest recent exchanges in evolutionary biology.",
+      "problemItSolves": "Evo-devo — evolutionary developmental biology — has transformed understanding of how evolution works mechanically by showing that developmental genes are conserved across enormously distant lineages. The same Hox genes that pattern the body axis in fruit flies pattern it in mice and humans. This conservation is puzzling on a strict adaptationist view — if selection optimizes independently in each lineage, why do they all use the same developmental toolkit? The evo-devo answer is that developmental genes are under extremely strong constraint — any mutation affecting them is catastrophic — so they are conserved not because they are optimal but because they cannot be changed without destroying the organism.\n\nThis has significant implications for evolutionary theory's mechanistic claims. If developmental constraint severely limits the space of possible forms, then the distribution of biological diversity is partly explained by history and constraint rather than adaptation alone. Sean Carroll's Endless Forms Most Beautiful synthesizes this evidence accessibly. The implication is that large-scale evolutionary change — macroevolution — may have different dynamics than the small-scale change within populations that genetics models most precisely.",
+      "howItWorks": "The relationship between microevolution and macroevolution is the deepest unresolved question about evolution's scope. Microevolution — changes within populations over generations — is experimentally well-documented and theoretically well-understood. Macroevolution — the origin of new body plans, the major transitions in the history of life — is inferred from the fossil record and comparative anatomy. The question is whether macroevolution is just accumulated microevolution (the standard neo-Darwinian view) or whether it involves additional processes not captured by population genetics.\n\nGould's punctuated equilibrium hypothesis — that the fossil record shows long periods of stasis interrupted by rapid change, rather than gradual continuous change — was presented as a challenge to the standard view. The current consensus is that punctuated equilibrium is real as a paleontological pattern but does not require departing from standard evolutionary mechanisms — rapid change in geological terms is still slow in ecological terms. But the deeper question of whether macroevolutionary transitions require new theoretical principles (extended synthesis, developmental constraints, niche construction) remains open and is actively researched.",
+      "whatItExplains": "The 'extended evolutionary synthesis' proposed by Massimo Pigliucci, Gerd Müller, and others argues that standard neo-Darwinism is insufficient to explain several phenomena that don't fit its assumptions: epigenetic inheritance (where environmental effects can be inherited without genetic change), niche construction (where organisms alter selective environments), developmental plasticity (where the same genotype can produce different phenotypes), and cultural inheritance. These phenomena are real; the debate is whether they require extending the theoretical framework or can be accommodated within it.\n\nThe defenders of the standard synthesis argue that these phenomena are interesting but don't require new theory — population genetics can accommodate epigenetics, niche construction is just another form of environment change, and cultural inheritance is studied perfectly adequately by cultural evolution theory. The extended synthesis proponents argue that accommodating these phenomena within standard theory requires ignoring their distinctive features. This is a productive scientific debate, not a challenge to evolution itself.",
+      "whereItBreaksDown": "The origin of life — abiogenesis — is the boundary condition of evolutionary theory. Natural selection can explain how populations change once self-replicating molecules exist. It cannot explain how self-replicating molecules arose from chemistry. This is not a gap that evolution should be expected to fill — it is a different scientific question with different methods. The RNA world hypothesis (RNA molecules preceded DNA and could both carry information and catalyze reactions) is the leading framework, but the origin of life remains genuinely unresolved. This uncertainty is sometimes used by critics of evolution to suggest that evolution itself is uncertain — a category error, since the origin of life and the mechanism of evolution are separate questions.",
+      "usedAndMisusedC": "The deepest philosophical challenge to evolutionary theory concerns the status of human beings. If evolution is true, humans are modified animals — continuous with other life, not specially created, the product of the same processes that produced beetles and bacteria. This conflicts with several religious traditions' accounts of human dignity and moral status. The conflict is real and cannot be dissolved by saying that evolution and religion address different questions, because some religious claims are empirical claims about human origins that evolution contradicts.\n\nThe philosophical question is whether human moral status — the belief that humans deserve special consideration, have rights, have dignity — requires a biological discontinuity between humans and other animals. If it does, evolution poses a genuine challenge. If human moral status can be grounded on functional or relational grounds rather than biological uniqueness, the conflict is substantially reduced. Philosophers including Peter Singer and Christine Korsgaard have argued opposite sides of this question without either resting their argument on evolutionary facts — which suggests the moral status question may be separable from the evolutionary one, though the relationship is contested."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "Evolution matters as the foundational framework of modern biology and as one of the most culturally contested scientific ideas in history. Understanding it requires grasping both its scientific content — the mechanism, the evidence, the explanatory power — and the history of its cultural reception, which is as much about human identity as about biology.",
+        "theDebate": "The scientific debates within evolutionary theory concern the unit of selection, the relationship between microevolution and macroevolution, the role of non-adaptive processes (drift, constraint, developmental limitation), and whether the extended synthesis is necessary or sufficient. The cultural debates concern the relationship between evolution and religious belief, the misapplication of evolutionary reasoning to social organization, and the political contestation of science education. These are very different kinds of debates.",
+        "whyItMatters": "Evolution matters for understanding biology and medicine directly (antibiotic resistance, cancer biology, vaccine design), for understanding the history of life on Earth, for understanding the relationship between science and religion in modern societies, and for evaluating claims about human nature made in the name of evolutionary authority.",
+        "questions": [
+          "Evolutionary psychology proposes that specific human behavioral tendencies — mate preferences, parental investment, in-group/out-group bias — evolved because they improved reproductive fitness in ancestral environments. What kind of evidence would confirm or disconfirm such a hypothesis? And if the hypothesis is true, does it say anything about whether those tendencies are good or should be encouraged?",
+          "Evolution and several religious traditions make apparently conflicting claims about human origins. Some religious thinkers argue the conflict is illusory — evolution is the mechanism God used. Others argue the conflict is genuine and evolution must be rejected. What are the actual points of conflict, and which are genuinely irresolvable versus which can be accommodated by one side or the other?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "The key scientific works for understanding evolutionary theory are: Ernst Mayr's Animal Species and Evolution (1963) for the species concept; Dawkins's The Selfish Gene (1976) for the gene-centric view; Gould and Lewontin's 'Spandrels' paper (1979) for the pluralist challenge; Elliott Sober and David Sloan Wilson's Unto Others (1998) for multi-level selection. For the extended synthesis debate, Pigliucci and Müller's Evolution: The Extended Synthesis (2010) is the key text. For cultural and historical understanding, Peter Bowler's Evolution: The History of an Idea (1983) is essential.",
+        "evidenceAndLimits": "The evidentiary base for evolution is among the strongest in science: fossil record, comparative anatomy, biogeography, molecular genetics, and direct experimental observation in model organisms all converge on the same framework. The limits are in the areas the framework does not fully address: macroevolutionary transitions (where the fossil record is incomplete), the origin of life (a different question), and the application of evolutionary reasoning to complex human behaviors (where reverse-engineering the past from present behavior is methodologically weak). These limits do not threaten the core theory; they mark its boundaries.",
+        "takingAPosition": "A defensible position on the cultural controversy over evolution must distinguish between the scientific question — is evolution true? — and the philosophical question — what follows from it being true? The scientific question has a clear answer: yes, with overwhelming evidence. Pretending scientific uncertainty exists where it doesn't, to accommodate public controversy, is epistemic dishonesty. The philosophical question is genuinely open: what evolution implies about human moral status, the relationship between science and religion, and the appropriate scope of evolutionary reasoning in social science are questions where serious thinkers disagree. The most defensible position acknowledges both the scientific certainty and the genuine philosophical open questions — refusing the false choice between 'evolution threatens all meaning' and 'evolution is compatible with everything.'",
+        "questions": [
+          "The naturalistic fallacy — inferring ought from is — applies to evolution: the fact that certain traits evolved tells us nothing directly about whether they are good or should be preserved. But evolutionary biology can tell us facts about human capacities and tendencies that are relevant to ethics. Where is the line between legitimate application of evolutionary insights to ethics and the naturalistic fallacy?",
+          "Some philosophers and scientists argue that evolution makes the concept of 'human nature' meaningful — there are species-typical tendencies that characterize our lineage. Others argue that human behavioral flexibility is so great that 'human nature' is an abstraction that conceals more than it reveals. What evidence would distinguish between these positions?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "The genetic mechanism of evolution and the modern synthesis",
+      "content": "The integration of Mendelian genetics with Darwinian natural selection — consolidated in the 1930s-1950s by Dobzhansky, Mayr, Simpson, and others — is the foundation of modern evolutionary biology and is not in scientific dispute. Population genetics provides the mathematical framework for how allele frequencies change under selection, drift, mutation, and migration. Molecular genetics has added the mechanism of inheritance at the biochemical level. The core framework is established; active research concerns its extensions and limits."
+    },
+    {
+      "status": "emerging",
+      "topic": "Epigenetic inheritance and its implications for evolutionary theory",
+      "content": "Research on epigenetic inheritance — the transmission of heritable information not encoded in DNA sequence, including methylation patterns and histone modification — has documented cases where environmental effects on gene expression can be transmitted across generations. If confirmed as a general mechanism, this challenges the neo-Darwinian assumption that heritable variation comes only from genetic mutation. The evidence for some forms of transgenerational epigenetic inheritance is solid in plants and some animals; its generality and implications for evolutionary theory are actively debated."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The evolutionary history of complex behavioral traits",
+      "content": "Specific hypotheses about why particular human behavioral tendencies evolved — mate preferences, parental investment strategies, linguistic capacities — cannot be directly tested against the ancestral environments in which they supposedly arose. The ancestral environments are gone; the selection pressures are inferred rather than observed; the behavioral traits are measured in contemporary populations very different from ancestral ones. What can be studied: comparative evidence across species, variation within human populations, and the genetic architecture of traits. What cannot be recovered: direct evidence of selection on behavioral traits in hominin evolution, making specific evolutionary psychological hypotheses about human behavior inherently underdetermined by available evidence."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "Biological science",
+      "name": "The Working Framework",
+      "content": "Within biology, evolution is not a controversy but the framework within which all other biological research is conducted. Theodosius Dobzhansky's famous aphorism — 'Nothing in biology makes sense except in the light of evolution' — is a summary of professional practice, not a claim that needs defending. Cancer biologists, epidemiologists, ecologists, and molecular geneticists all use evolutionary reasoning as a tool, not an ideology. The scientific culture of biology treats evolution as settled and treats the public controversy as an external political problem rather than a scientific one."
+    },
+    {
+      "perspective": "Religious traditions",
+      "name": "Conflict, Accommodation, and Dialogue",
+      "content": "Religious response to evolution is not monolithic. Young-Earth creationists read Genesis literally and reject evolutionary science entirely. Old-Earth creationists accept an ancient Earth but reject common descent. Theistic evolutionists accept evolution as the mechanism of creation. Most mainstream Protestant denominations, the Catholic Church (since John Paul II's 1996 statement accepting evolution), and many Jewish and Muslim thinkers have found accommodation with evolutionary science. The conflict is sharpest where scriptural literalism requires specific biological claims that evolutionary biology contradicts — and where both sides treat this as non-negotiable."
+    },
+    {
+      "perspective": "Social and political ideology",
+      "name": "The Misuse History",
+      "content": "The most consequential applications of evolutionary thinking to social organization — Social Darwinism and eugenics — had catastrophic human consequences. The eugenics programs of the early 20th century, reaching their extreme in Nazi racial science, killed millions and sterilized hundreds of thousands in the name of evolutionary improvement. This history creates a legitimate reason to be suspicious of applications of evolutionary reasoning to social policy, even when the science is genuine. The appropriate response is not to abandon evolutionary thinking but to be extremely careful about the move from biological fact to social prescription — and to note that this move is almost always the point where science ends and ideology begins."
+    }
+  ],
+  "rabbitHole": [
+    {
+      "label": "Charles Darwin",
+      "entryId": "darwin",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Darwin proposed natural selection as the mechanism of evolution — his intellectual biography and the historical context of On the Origin of Species are essential for understanding how the concept was established."
+    },
+    {
+      "label": "On the Origin of Species",
+      "entryId": "originOfSpecies",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The foundational text of evolutionary biology — its argument, its evidence, and its cultural reception are the starting point for understanding how evolution was established as scientific theory."
+    },
+    {
+      "label": "Social Darwinism",
+      "entryId": "socialDarwinism",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "The ideological distortion of evolutionary theory — using 'survival of the fittest' to justify social hierarchy and eugenics — is the most consequential misapplication of evolutionary thinking in history."
+    },
+    {
+      "label": "DNA",
+      "entryId": "dna",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The molecular mechanism of inheritance — how genetic information is stored, transmitted, and expressed — provides the physical basis for the heritability that evolution requires."
+    },
+    {
+      "label": "Germ Theory",
+      "entryId": "germTheory",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Like evolution, germ theory was a 19th-century scientific revolution that replaced supernatural explanation with naturalistic mechanism — and like evolution, it had massive implications for how humans understand their relationship to the natural world."
+    },
+    {
+      "label": "The Scientific Revolution",
+      "entryId": "scientificRevolution",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "The intellectual tradition that made evolution possible — the commitment to naturalistic explanation, empirical evidence, and the rejection of supernatural causes in explanations of natural phenomena."
+    },
+    {
+      "label": "Free Will",
+      "entryId": "freeWill",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "If human mental life and behavior are products of evolutionary processes, this has implications for how we understand agency, moral responsibility, and freedom — the same naturalistic turn that evolution represents for biology."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Mayr, Ernst",
+      "title": "What Evolution Is",
+      "year": "2001",
+      "type": "Monograph",
+      "reliability": "Scholarly consensus",
+      "contribution": "The clearest exposition of evolutionary theory by its most important 20th-century systematizer. Written for a general audience by the architect of the modern synthesis.",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The essential scientific statement of what evolution is, written by someone who spent a career defining its terms."
+    },
+    {
+      "author": "Dawkins, Richard",
+      "title": "The Selfish Gene",
+      "year": "1976",
+      "type": "Monograph",
+      "reliability": "Dominant interpretation",
+      "contribution": "The most influential popular account of the gene-centric view of evolution — introduced the meme concept and provided the most accessible statement of adaptationist neo-Darwinism.",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Essential for understanding the gene-centric view; contested by multi-level selection theorists. Read alongside Gould for balance."
+    },
+    {
+      "author": "Gould, Stephen Jay",
+      "title": "The Structure of Evolutionary Theory",
+      "year": "2002",
+      "type": "Monograph",
+      "reliability": "Contested",
+      "contribution": "The most comprehensive statement of the pluralist challenge to adaptationism — argues for punctuated equilibrium, spandrels, and constraints as significant forces alongside natural selection.",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Monumental and contested. Gould's challenges have been partially absorbed into the mainstream, partially rejected."
+    },
+    {
+      "author": "Sober, Elliott",
+      "title": "Evidence and Evolution: The Logic of Darwinism",
+      "year": "2008",
+      "type": "Monograph",
+      "reliability": "Scholarly consensus",
+      "contribution": "The most rigorous philosophical analysis of what counts as evidence for evolutionary theory and how its competing claims should be evaluated.",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "For anyone who wants to understand the epistemology of evolutionary evidence rather than just its content."
+    },
+    {
+      "author": "Bowler, Peter",
+      "title": "Evolution: The History of an Idea",
+      "year": "1983",
+      "type": "Monograph",
+      "reliability": "Scholarly consensus",
+      "contribution": "The essential history of evolutionary thinking from pre-Darwin to the modern synthesis — establishes the intellectual context without which the theory's content cannot be fully understood.",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The standard history of evolutionary ideas. Essential for understanding how the concept developed before and after Darwin."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "author": "Dawkins, Richard",
+      "title": "The Blind Watchmaker",
+      "note": "Start here for how natural selection builds complexity — the most readable defense of gradual adaptation as the explanation for biological design."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "author": "Mayr, Ernst",
+      "title": "What Evolution Is",
+      "note": "Start here if you want the scientific framework from its most authoritative exponent — clearer and less polemical than Dawkins."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "author": "Dawkins, Richard",
+      "title": "The Selfish Gene",
+      "note": "For the gene-centric view and its implications — the most influential book in popularizing evolutionary thinking in the late 20th century."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "author": "Carroll, Sean",
+      "title": "Endless Forms Most Beautiful",
+      "note": "For evo-devo — how developmental genes shape evolution and why the same toolkit appears across wildly different lineages."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "author": "Gould, Stephen Jay",
+      "title": "The Structure of Evolutionary Theory",
+      "note": "For the pluralist challenge to standard neo-Darwinism — Gould's final and most complete statement of his views. Long, but essential for understanding the internal debates."
+    },
+    {
+      "type": "Documentary",
+      "title": "Evolution (PBS, 2001)",
+      "note": "Seven-part series — the best documentary treatment of both the science and the cultural controversy, with serious attention to both."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Film",
+      "title": "Creation (2009)",
+      "description": "Dramatizes Darwin's struggle to write On the Origin of Species against personal grief and religious anxiety. Gets right the emotional weight of what Darwin understood he was doing to the Victorian worldview. Distorts by psychologizing the delay in publication — Darwin's caution was primarily about scientific completeness, not only personal crisis."
+    },
+    {
+      "type": "Concept",
+      "title": "The Scopes 'Monkey Trial' (1925)",
+      "description": "The trial of John Scopes for teaching evolution in Tennessee remains the defining American evolution controversy. The Inherit the Wind version is substantially false: Scopes was convicted, the ACLU arranged the case deliberately, and Darrow's cross-examination of Bryan was less decisive than the play suggests. The trial's real lesson is the persistence of the conflict — its legal resolution did not end the public debate."
+    },
+    {
+      "type": "Novel",
+      "title": "Galapagos — Kurt Vonnegut (1985)",
+      "description": "A darkly comic novel set over a million years of human evolution after an apocalypse. Gets right the arbitrariness of what traits get selected and the absence of purpose in evolutionary change. Uses the evolutionary frame to satirize human self-importance rather than to explain biology accurately."
+    },
+    {
+      "type": "Concept",
+      "title": "The Meme",
+      "description": "Richard Dawkins coined 'meme' in The Selfish Gene (1976) as an analogy for cultural evolution — units of culture that replicate and are selected like genes. Enormously productive in popular discourse. Its scientific status is contested: memetics has not produced the predictive framework its proponents hoped for, and the analogy to genetics may conceal more than it reveals about cultural transmission."
+    },
+    {
+      "type": "Film",
+      "title": "Inherit the Wind (1960)",
+      "description": "The dramatization of the Scopes trial. Important as a cultural artifact of American liberalism's self-understanding — the scientist versus the bigot, reason versus faith. Historically misleading: it substantially misrepresents William Jennings Bryan, who was not anti-science generally but specifically opposed to social Darwinism, and whose concerns about the political uses of evolutionary theory were not entirely wrong."
+    }
+  ]
+}
