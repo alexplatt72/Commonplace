@@ -310,6 +310,14 @@
     "status": "published"
   },
   {
+    "id": "buddhism",
+    "title": "Buddhism",
+    "template": "Periods & Movements",
+    "subtype": "Movement",
+    "period": "c. 5th century BCE \u2013 present",
+    "status": "published"
+  },
+  {
     "id": "bureaucracy",
     "title": "Bureaucracy",
     "summary": "The system of administration through specialized officials, written records, hierarchical authority, and impersonal rules \u2014 independently invented by every large civilization in history, from Han China to the Roman Empire to the Ottoman devshirme to the modern nation-state \u2014 and the concept through which Max Weber understood modernity itself: the 'iron cage' of rationalized, impersonal rule that modern societies cannot escape.",
@@ -397,6 +405,14 @@
     "period": "c. 748\u2013814 CE",
     "status": "published",
     "summary": "The Frankish king crowned Emperor of the Romans on Christmas Day 800 CE who unified most of Western Europe under a single ruler for the first time since the Roman Empire's fall, promoted literacy and learning in the Carolingian Renaissance, and whose empire \u2014 despite fragmenting within a generation of his death \u2014 became the template for European political and religious identity that persisted for a thousand years."
+  },
+  {
+    "id": "christianity",
+    "title": "Christianity",
+    "template": "Periods & Movements",
+    "subtype": "Period",
+    "period": "c. 30 CE \u2013 present",
+    "status": "published"
   },
   {
     "id": "citizenship",
@@ -836,6 +852,14 @@
     "summary": "Escaped enslaved person, abolitionist, orator, journalist, and statesman who became the most prominent Black American public figure of the nineteenth century \u2014 and whose life and writings remain foundational documents of American democracy's promise and betrayal."
   },
   {
+    "id": "freeWill",
+    "title": "Free Will",
+    "template": "Concepts & Ideas",
+    "subtype": "Analytical Concept",
+    "period": "antiquity \u2013 present",
+    "status": "published"
+  },
+  {
     "id": "frenchRevolution",
     "title": "The French Revolution",
     "template": "Events",
@@ -1073,6 +1097,14 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "hume",
+    "title": "David Hume",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1711\u20131776",
+    "status": "published"
   },
   {
     "id": "ibnKhaldun",
@@ -1569,6 +1601,14 @@
     "template": "Foundations",
     "subtype": "Conceptual Foundation",
     "period": "c. 3000 BCE \u2013 present",
+    "status": "published"
+  },
+  {
+    "id": "maxWeber",
+    "title": "Max Weber",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1864\u20131920",
     "status": "published"
   },
   {
@@ -2243,6 +2283,14 @@
     "summary": "The application of evolutionary ideas \u2014 competition, survival of the fittest, natural selection \u2014 to human societies, used to justify inequality, empire, and eugenics."
   },
   {
+    "id": "socialism",
+    "title": "Socialism",
+    "template": "Concepts & Ideas",
+    "subtype": "Normative Concept",
+    "period": "1820s \u2013 present",
+    "status": "published"
+  },
+  {
     "id": "socrates",
     "title": "Socrates",
     "template": "People",
@@ -2385,6 +2433,14 @@
     "summary": "The writing system in which a small set of symbols \u2014 typically 20 to 30 \u2014 represents the sounds of a language rather than its syllables or words, enabling literacy at a scale and speed that no earlier writing system achieved \u2014 and reorganizing what could be thought, recorded, traded, governed, and believed."
   },
   {
+    "id": "theDivineComedy",
+    "title": "The Divine Comedy",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 1308\u20131321",
+    "status": "published"
+  },
+  {
     "id": "theForest",
     "title": "The Forest",
     "template": "Foundations",
@@ -2484,6 +2540,14 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "totalitarianism",
+    "title": "Totalitarianism",
+    "template": "Concepts & Ideas",
+    "subtype": "Normative Concept",
+    "period": "1920s \u2013 present",
+    "status": "published"
   },
   {
     "id": "translation",
