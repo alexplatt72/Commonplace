@@ -5,9 +5,9 @@
   "qualityTier": "A",
   "template": "Foundations",
   "subtype": "Material Foundation",
-  "period": "c. 1830–present",
+  "period": "c. 1830\u2013present",
   "title": "Computing",
-  "summary": "The infrastructure for processing and transforming information at scale — from Babbage's mechanical difference engine through the first electronic computers to the networked systems that now mediate commerce, communication, science, and government worldwide. Computing is the story of how humanity built infrastructure that amplifies information processing as roads amplify movement and electricity amplifies energy.",
+  "summary": "The infrastructure for processing and transforming information at scale \u2014 from Babbage's mechanical difference engine through the first electronic computers to the networked systems that now mediate commerce, communication, science, and government worldwide. Computing is the story of how humanity built infrastructure that amplifies information processing as roads amplify movement and electricity amplifies energy.",
   "themes": [
     "science",
     "history",
@@ -16,7 +16,7 @@
     "globalHistory",
     "technology"
   ],
-  "hook": "Agriculture amplified food production. Industrialization amplified energy production. Computing amplified information processing. Each amplification reorganized civilization around its new capability. The Agricultural Revolution made cities possible. The Industrial Revolution made industrial economies possible. Computing has made the information economy possible — and is now enabling forms of scientific discovery, economic organization, and political power we are still working out. The difference: the first two amplifications were physical. This one is cognitive. For the first time, a technology can manipulate symbols — and through symbols, everything that symbols represent.",
+  "hook": "Agriculture amplified food production. Industrialization amplified energy production. Computing amplified information processing. Each amplification reorganized civilization around its new capability. The Agricultural Revolution made cities possible. The Industrial Revolution made industrial economies possible. Computing has made the information economy possible \u2014 and is now enabling forms of scientific discovery, economic organization, and political power we are still working out. The difference: the first two amplifications were physical. This one is cognitive. For the first time, a technology can manipulate symbols \u2014 and through symbols, everything that symbols represent.",
   "aliases": [
     "computing",
     "computers",
@@ -70,45 +70,45 @@
   ],
   "content": {
     "beginner": {
-      "theFoundation": "Computing is the infrastructure for processing information. A computer takes information as input, applies a set of rules — a program — and produces transformed information as output. The rules can be anything that can be stated precisely: addition, comparison, sorting, pattern matching. Because almost any information-handling task can be expressed as a program, computing can amplify an extraordinary range of cognitive work.\n\nThis is what distinguishes computing from earlier machines. A steam engine amplifies physical energy — it does mechanical work. A computer amplifies cognitive work — it processes symbols. The transistors in a modern chip perform the same logical operations a mathematician performs by hand, but billions of times per second. That amplification ratio is what makes computing civilizationally consequential.",
-      "howItArrived": "Charles Babbage designed two mechanical computing machines in the 1820s–1840s: the Difference Engine (for calculating mathematical tables) and the Analytical Engine (a general-purpose programmable machine). Ada Lovelace wrote what is now recognized as the first computer program — an algorithm for the Analytical Engine. Neither machine was completed in Babbage's lifetime; the engineering precision required exceeded 19th-century manufacturing capability.\n\nThe first electronic computers emerged during and after World War II. ENIAC (1945) used 18,000 vacuum tubes and filled a room. John von Neumann's stored-program architecture established the design that virtually every subsequent computer has followed. Both program and data are held in memory, allowing programs to change without rewiring. The transistor, invented at Bell Labs in 1947, replaced the vacuum tube with a smaller, faster, more reliable switch. The integrated circuit followed in 1958, placing multiple transistors on a single chip.",
-      "whatItReorganized": "Moore's Law — Gordon Moore's 1965 observation that transistor density doubled approximately every two years — held for fifty years. A modern smartphone contains more computing power than all the computers in existence in 1969, when humans first landed on the moon. This exponential growth reorganized finance, communication, logistics, science, and government.\n\nFinancial markets became automated — trades executed in microseconds. Supply chains became globally coordinated. Scientific simulations that would have taken years on 1980s computers run in hours. The World Wide Web, invented at CERN by Tim Berners-Lee in 1989 and released without patent, built a global information layer on top of the internet. Every domain that handles information has been restructured by computing. The reorganization is still underway.",
-      "thePoliticalEconomy": "Computing's political economy is dominated by network effects and platform concentration. A platform becomes more valuable as more people use it. This is why Facebook, Google, and Amazon have achieved market positions that would be considered monopolistic in any other industry. The marginal cost of serving an additional user approaches zero; the fixed costs of building the platform are already sunk. Winner-take-all markets result.\n\nThe concentration of computing infrastructure in a small number of companies creates vulnerabilities that did not previously exist. A software flaw in widely used code can simultaneously affect millions of systems. A platform company's policy decision affects the speech and commerce of billions. Critical systems — financial, governmental, medical, military — now depend on infrastructure controlled by a handful of private firms.",
-      "theFeedback": "Computing accelerates scientific discovery, and scientific discovery produces better computing. Genomics required computing — sequencing a genome generates terabytes of data. Climate modeling requires computing — simulating the atmosphere at useful resolution requires supercomputers. Drug discovery increasingly requires computing — searching the space of possible molecules for those with desired properties.\n\nThe feedback loop is most visible in artificial intelligence. Machine learning algorithms improve when trained on more data with more computing power. Better models make new applications possible. New applications generate more data. The feedback between data, computing, and model capability is the primary driver of AI progress. Each generation of hardware enables a more capable generation of models.",
-      "presentAndFuture": "Moore's Law has slowed as transistors have shrunk to atomic scales — quantum effects become significant at a few atoms, and heat dissipation limits packing density. The industry is responding with new chip architectures, specialized processors, and three-dimensional stacking. Quantum computing offers a different computational paradigm but has not yet achieved practical advantage over classical computers for most problems.\n\nThe more important current challenge is governance. Cloud computing has concentrated infrastructure in three companies — Amazon, Microsoft, Google. AI development is similarly concentrated. The gap between those who control computing infrastructure and those who do not is becoming a new dimension of global inequality — a digital divide at the infrastructure level, not only the access level."
+      "theFoundation": "Computing is the infrastructure for processing information. A computer takes information as input, applies a set of rules \u2014 a program \u2014 and produces transformed information as output. The rules can be anything that can be stated precisely: addition, comparison, sorting, pattern matching. Because almost any information-handling task can be expressed as a program, computing can amplify an extraordinary range of cognitive work.\n\nThis is what distinguishes computing from earlier machines. A steam engine amplifies physical energy \u2014 it does mechanical work. A computer amplifies cognitive work \u2014 it processes symbols. The transistors in a modern chip perform the same logical operations a mathematician performs by hand, but billions of times per second. That amplification ratio is what makes computing civilizationally consequential.",
+      "howItArrived": "Charles Babbage designed two mechanical computing machines in the 1820s\u20131840s: the Difference Engine (for calculating mathematical tables) and the Analytical Engine (a general-purpose programmable machine). Ada Lovelace wrote what is now recognized as the first computer program \u2014 an algorithm for the Analytical Engine. Neither machine was completed in Babbage's lifetime; the engineering precision required exceeded 19th-century manufacturing capability.\n\nThe first electronic computers emerged during and after World War II. ENIAC (1945) used 18,000 vacuum tubes and filled a room. John von Neumann's stored-program architecture established the design that virtually every subsequent computer has followed. Both program and data are held in memory, allowing programs to change without rewiring. The transistor, invented at Bell Labs in 1947, replaced the vacuum tube with a smaller, faster, more reliable switch. The integrated circuit followed in 1958, placing multiple transistors on a single chip.",
+      "whatItReorganized": "Moore's Law \u2014 Gordon Moore's 1965 observation that transistor density doubled approximately every two years \u2014 held for fifty years. A modern smartphone contains more computing power than all the computers in existence in 1969, when humans first landed on the moon. This exponential growth reorganized finance, communication, logistics, science, and government.\n\nFinancial markets became automated \u2014 trades executed in microseconds. Supply chains became globally coordinated. Scientific simulations that would have taken years on 1980s computers run in hours. The World Wide Web, invented at CERN by Tim Berners-Lee in 1989 and released without patent, built a global information layer on top of the internet. Every domain that handles information has been restructured by computing. The reorganization is still underway.",
+      "thePoliticalEconomy": "Computing's political economy is dominated by network effects and platform concentration. A platform becomes more valuable as more people use it. This is why Facebook, Google, and Amazon have achieved market positions that would be considered monopolistic in any other industry. The marginal cost of serving an additional user approaches zero; the fixed costs of building the platform are already sunk. Winner-take-all markets result.\n\nThe concentration of computing infrastructure in a small number of companies creates vulnerabilities that did not previously exist. A software flaw in widely used code can simultaneously affect millions of systems. A platform company's policy decision affects the speech and commerce of billions. Critical systems \u2014 financial, governmental, medical, military \u2014 now depend on infrastructure controlled by a handful of private firms.",
+      "theFeedback": "Computing accelerates scientific discovery, and scientific discovery produces better computing. Genomics required computing \u2014 sequencing a genome generates terabytes of data. Climate modeling requires computing \u2014 simulating the atmosphere at useful resolution requires supercomputers. Drug discovery increasingly requires computing \u2014 searching the space of possible molecules for those with desired properties.\n\nThe feedback loop is most visible in artificial intelligence. Machine learning algorithms improve when trained on more data with more computing power. Better models make new applications possible. New applications generate more data. The feedback between data, computing, and model capability is the primary driver of AI progress. Each generation of hardware enables a more capable generation of models.",
+      "presentAndFuture": "Moore's Law has slowed as transistors have shrunk to atomic scales \u2014 quantum effects become significant at a few atoms, and heat dissipation limits packing density. The industry is responding with new chip architectures, specialized processors, and three-dimensional stacking. Quantum computing offers a different computational paradigm but has not yet achieved practical advantage over classical computers for most problems.\n\nThe more important current challenge is governance. Cloud computing has concentrated infrastructure in three companies \u2014 Amazon, Microsoft, Google. AI development is similarly concentrated. The gap between those who control computing infrastructure and those who do not is becoming a new dimension of global inequality \u2014 a digital divide at the infrastructure level, not only the access level."
     },
     "general": {
-      "theFoundation": "The information corridor — language, writing, paper, printing press, libraries, translation, computing — is the sequence of technologies through which humanity has amplified its ability to store, reproduce, and transmit information. Each technology extends the previous. Writing stores language outside the mind. Paper makes writing portable and cheap. The printing press reproduces writing at scale. Libraries organize accumulated writing. Translation moves information across language boundaries. Computing processes and transforms information at speeds no previous technology could match. Computing is the corridor's latest and most powerful extension.",
-      "howItArrived": "Claude Shannon's information theory (1948) provided computing's mathematical foundation. Shannon showed that information could be measured in bits and transmitted reliably across noisy channels. The concept of the bit — the binary digit, the fundamental unit of information — unified communication, computing, and storage under a single theoretical framework. Every subsequent development in computing — data compression, error correction, encryption, network protocols — builds on Shannon's foundation. Information theory established that communication and computation are mathematical problems with optimal solutions, not just engineering challenges.",
-      "whatItReorganized": "The open-source software movement reorganized the economics of software production. Linux, developed by Linus Torvalds beginning in 1991, now runs the majority of the world's servers, smartphones (through Android), and supercomputers. The Apache web server, the Python and JavaScript programming languages, the Git version control system — most of the internet's infrastructure is open source. Distributed volunteer communities, without centralized control or direct financial incentive, produced software that outcompeted proprietary alternatives. This challenged assumptions about how complex coordination problems can be solved.",
-      "thePoliticalEconomy": "The digital divide — the gap between populations with access to digital computing and those without — is a significant dimension of contemporary global inequality. High-speed internet access is nearly universal in wealthy countries and limited in many poor ones. The gap affects economic opportunity, educational access, political participation, and healthcare information access. Computing's geographic concentration mirrors the industrial era's pattern: some locations gain enormously from the infrastructure, others are disrupted by automation without capturing equivalent gains.",
-      "theFeedback": "The economic geography of computing has concentrated in a small number of clusters — Silicon Valley, Seattle, New York, London, Beijing, Shenzhen — that capture a disproportionate share of computing's value. Knowledge spillovers, venture capital, specialized labor, and network effects all reward proximity to existing concentrations. The political economy of place in the computing era reproduces the political economy of place in the industrial era. What has changed is the speed of concentration and the extent to which computing infrastructure — unlike factories — is invisible to those who depend on it.",
-      "presentAndFuture": "Large language models — AI systems trained on vast text corpora that can generate fluent prose, answer questions, write code, and perform a wide range of cognitive tasks — represent the most significant development in computing since the smartphone. They raise questions no previous computing technology raised in the same form: whether machines can understand language or only simulate understanding, what cognitive tasks can be automated, how the labor market will be reorganized, and what the implications are for education, truth, and democratic discourse. The technology is less than five years old in its current form. The answers are not yet available."
+      "theFoundation": "The information corridor \u2014 language, writing, paper, printing press, libraries, translation, computing \u2014 is the sequence of technologies through which humanity has amplified its ability to store, reproduce, and transmit information. Each technology extends the previous. Writing stores language outside the mind. Paper makes writing portable and cheap. The printing press reproduces writing at scale. Libraries organize accumulated writing. Translation moves information across language boundaries. Computing processes and transforms information at speeds no previous technology could match. Computing is the corridor's latest and most powerful extension.",
+      "howItArrived": "Claude Shannon's information theory (1948) provided computing's mathematical foundation. Shannon showed that information could be measured in bits and transmitted reliably across noisy channels. The concept of the bit \u2014 the binary digit, the fundamental unit of information \u2014 unified communication, computing, and storage under a single theoretical framework. Every subsequent development in computing \u2014 data compression, error correction, encryption, network protocols \u2014 builds on Shannon's foundation. Information theory established that communication and computation are mathematical problems with optimal solutions, not just engineering challenges.",
+      "whatItReorganized": "The open-source software movement reorganized the economics of software production. Linux, developed by Linus Torvalds beginning in 1991, now runs the majority of the world's servers, smartphones (through Android), and supercomputers. The Apache web server, the Python and JavaScript programming languages, the Git version control system \u2014 most of the internet's infrastructure is open source. Distributed volunteer communities, without centralized control or direct financial incentive, produced software that outcompeted proprietary alternatives. This challenged assumptions about how complex coordination problems can be solved.",
+      "thePoliticalEconomy": "The digital divide \u2014 the gap between populations with access to digital computing and those without \u2014 is a significant dimension of contemporary global inequality. High-speed internet access is nearly universal in wealthy countries and limited in many poor ones. The gap affects economic opportunity, educational access, political participation, and healthcare information access. Computing's geographic concentration mirrors the industrial era's pattern: some locations gain enormously from the infrastructure, others are disrupted by automation without capturing equivalent gains.",
+      "theFeedback": "The economic geography of computing has concentrated in a small number of clusters \u2014 Silicon Valley, Seattle, New York, London, Beijing, Shenzhen \u2014 that capture a disproportionate share of computing's value. Knowledge spillovers, venture capital, specialized labor, and network effects all reward proximity to existing concentrations. The political economy of place in the computing era reproduces the political economy of place in the industrial era. What has changed is the speed of concentration and the extent to which computing infrastructure \u2014 unlike factories \u2014 is invisible to those who depend on it.",
+      "presentAndFuture": "Large language models \u2014 AI systems trained on vast text corpora that can generate fluent prose, answer questions, write code, and perform a wide range of cognitive tasks \u2014 represent the most significant development in computing since the smartphone. They raise questions no previous computing technology raised in the same form: whether machines can understand language or only simulate understanding, what cognitive tasks can be automated, how the labor market will be reorganized, and what the implications are for education, truth, and democratic discourse. The technology is less than five years old in its current form. The answers are not yet available."
     },
     "advanced": {
-      "theFoundation": "The Church-Turing thesis — the conjecture that any effectively computable function can be computed by a Turing machine — establishes what computing can in principle do. Any problem solvable by a finite procedure can be solved by a computer. But it also establishes limits: some problems are provably uncomputable. The halting problem (whether a given program will ever terminate) cannot be solved by any algorithm. Gödel's incompleteness theorems and Turing's halting problem are related: both establish that formal systems have limits that cannot be overcome by more powerful formal systems. The limits of computing are as theoretically important as its capabilities.",
-      "howItArrived": "The development of the internet — from ARPANET (1969) through TCP/IP protocols (1974), the domain name system (1983), and the World Wide Web (1989) — is a case study in how federally funded research produces civilian infrastructure whose value vastly exceeds its cost. ARPANET was funded by the US Department of Defense as a network that could survive partial destruction. The resulting packet-switching architecture proved extraordinarily robust and scalable. Tim Berners-Lee's Web, invented at CERN and released without patent, built the application layer that made the internet accessible to non-specialists. Both inventions were given away; the companies that captured most of their value did so at the application layer.",
-      "whatItReorganized": "The economics of software differ fundamentally from physical goods. Physical goods have marginal costs — the millionth unit costs approximately as much as the first. Software has near-zero marginal costs — distributing the millionth copy costs virtually nothing. This produces winner-take-all outcomes, the economic rationale for free software funded by advertising or data, and the extreme profitability of successful platforms. The economic structure of the software industry explains much of computing's political economy: why platforms become monopolistic, why the value of computing is geographically concentrated, and why public infrastructure (the internet, TCP/IP, the Web) has been captured by private companies.",
-      "thePoliticalEconomy": "Computing infrastructure has become critical infrastructure — essential to the functioning of the economy, government, and society. Cyberattacks on critical infrastructure represent a new domain of geopolitical conflict. State-sponsored operations — Stuxnet (US-Israeli attack on Iranian nuclear centrifuges), Russian interference in electoral systems, Chinese industrial espionage — use computing infrastructure as both weapon and target. Existing international law does not adequately address what constitutes an act of war in cyberspace, what norms should govern state behavior, or how attribution should work when attacks are designed to be deniable.",
-      "theFeedback": "The concentration of AI development in a small number of large companies reproduces at the AI layer the concentration that already exists at the cloud infrastructure layer. Training the largest models costs hundreds of millions of dollars and requires access to vast datasets — requirements that create barriers to entry favoring large, well-capitalized organizations. The technology with the most significant potential impact on the economy and society is being developed by a small number of companies with limited democratic accountability. Whether this concentration is an inevitable feature of AI development or a contingent outcome of current policy choices is actively debated.",
-      "presentAndFuture": "The question of whether AI systems will achieve artificial general intelligence — the ability to perform any cognitive task a human can perform — is genuinely contested. Current large language models perform impressively on many tasks and fail in ways suggesting they lack genuine understanding. Whether scaling will produce qualitatively new capabilities or merely quantitative improvements is debated among researchers. The policy and governance challenges — safety, accountability, labor displacement, military applications — are being addressed by an emerging regulatory framework whose adequacy to the actual challenges is uncertain. Computing has consistently surprised its observers; confident predictions about its trajectory have consistently proved wrong."
+      "theFoundation": "The Church-Turing thesis \u2014 the conjecture that any effectively computable function can be computed by a Turing machine \u2014 establishes what computing can in principle do. Any problem solvable by a finite procedure can be solved by a computer. But it also establishes limits: some problems are provably uncomputable. The halting problem (whether a given program will ever terminate) cannot be solved by any algorithm. G\u00f6del's incompleteness theorems and Turing's halting problem are related: both establish that formal systems have limits that cannot be overcome by more powerful formal systems. The limits of computing are as theoretically important as its capabilities.",
+      "howItArrived": "The development of the internet \u2014 from ARPANET (1969) through TCP/IP protocols (1974), the domain name system (1983), and the World Wide Web (1989) \u2014 is a case study in how federally funded research produces civilian infrastructure whose value vastly exceeds its cost. ARPANET was funded by the US Department of Defense as a network that could survive partial destruction. The resulting packet-switching architecture proved extraordinarily robust and scalable. Tim Berners-Lee's Web, invented at CERN and released without patent, built the application layer that made the internet accessible to non-specialists. Both inventions were given away; the companies that captured most of their value did so at the application layer.",
+      "whatItReorganized": "The economics of software differ fundamentally from physical goods. Physical goods have marginal costs \u2014 the millionth unit costs approximately as much as the first. Software has near-zero marginal costs \u2014 distributing the millionth copy costs virtually nothing. This produces winner-take-all outcomes, the economic rationale for free software funded by advertising or data, and the extreme profitability of successful platforms. The economic structure of the software industry explains much of computing's political economy: why platforms become monopolistic, why the value of computing is geographically concentrated, and why public infrastructure (the internet, TCP/IP, the Web) has been captured by private companies.",
+      "thePoliticalEconomy": "Computing infrastructure has become critical infrastructure \u2014 essential to the functioning of the economy, government, and society. Cyberattacks on critical infrastructure represent a new domain of geopolitical conflict. State-sponsored operations \u2014 Stuxnet (US-Israeli attack on Iranian nuclear centrifuges), Russian interference in electoral systems, Chinese industrial espionage \u2014 use computing infrastructure as both weapon and target. Existing international law does not adequately address what constitutes an act of war in cyberspace, what norms should govern state behavior, or how attribution should work when attacks are designed to be deniable.",
+      "theFeedback": "The concentration of AI development in a small number of large companies reproduces at the AI layer the concentration that already exists at the cloud infrastructure layer. Training the largest models costs hundreds of millions of dollars and requires access to vast datasets \u2014 requirements that create barriers to entry favoring large, well-capitalized organizations. The technology with the most significant potential impact on the economy and society is being developed by a small number of companies with limited democratic accountability. Whether this concentration is an inevitable feature of AI development or a contingent outcome of current policy choices is actively debated.",
+      "presentAndFuture": "The question of whether AI systems will achieve artificial general intelligence \u2014 the ability to perform any cognitive task a human can perform \u2014 is genuinely contested. Current large language models perform impressively on many tasks and fail in ways suggesting they lack genuine understanding. Whether scaling will produce qualitatively new capabilities or merely quantitative improvements is debated among researchers. The policy and governance challenges \u2014 safety, accountability, labor displacement, military applications \u2014 are being addressed by an emerging regulatory framework whose adequacy to the actual challenges is uncertain. Computing has consistently surprised its observers; confident predictions about its trajectory have consistently proved wrong."
     },
     "educational": {
       "foundation": {
-        "theStory": "Computing matters as the latest and most powerful technology in the information corridor — the sequence through which humanity has amplified its ability to store, process, and transmit information. Understanding it requires engaging with both its civilizational significance (what it has made possible) and its political economy (how infrastructure concentration, network effects, and the digital divide distribute its benefits and burdens).",
+        "theStory": "Computing matters as the latest and most powerful technology in the information corridor \u2014 the sequence through which humanity has amplified its ability to store, process, and transmit information. Understanding it requires engaging with both its civilizational significance (what it has made possible) and its political economy (how infrastructure concentration, network effects, and the digital divide distribute its benefits and burdens).",
         "theDebate": "The central debates concern the governance of computing infrastructure, the labor market effects of automation, the digital divide and global computing inequality, the safety and accountability of AI systems, and the geopolitics of computing infrastructure.",
         "whyItMatters": "Computing matters for understanding the information corridor, the transition from physical to cognitive amplification, platform political economy, AI development, the internet's origins in public funding, and the contemporary governance challenges of digital infrastructure.",
         "questions": [
-          "The internet was developed with public funding (ARPANET), the World Wide Web was invented at a public institution (CERN) and released without patent, and much of the internet's infrastructure runs on open-source software. Yet the value created by the internet has been captured primarily by private companies. What does this pattern reveal about how public investment and private capture interact — and what different governance choices could have produced different outcomes?",
-          "Moore's Law — the doubling of transistor density approximately every two years — held for fifty years and shaped expectations about exponential technological progress. It has now slowed. What happens to an industry and a culture organized around exponential improvement when that improvement decelerates? And what does the slowdown imply for AI, which has depended on exponential increases in computing power?"
+          "The internet was developed with public funding (ARPANET), the World Wide Web was invented at a public institution (CERN) and released without patent, and much of the internet's infrastructure runs on open-source software. Yet the value created by the internet has been captured primarily by private companies. What does this pattern reveal about how public investment and private capture interact \u2014 and what different governance choices could have produced different outcomes?",
+          "Moore's Law \u2014 the doubling of transistor density approximately every two years \u2014 held for fifty years and shaped expectations about exponential technological progress. It has now slowed. What happens to an industry and a culture organized around exponential improvement when that improvement decelerates? And what does the slowdown imply for AI, which has depended on exponential increases in computing power?"
         ]
       },
       "interpretation": {
         "scholarlyConversation": "Walter Isaacson's The Innovators is the most accessible history of computing's development. Claude Shannon's 1948 paper 'A Mathematical Theory of Communication' is the foundational text of information theory. Shoshana Zuboff's The Age of Surveillance Capitalism is the essential critical account of computing's political economy. Stuart Russell's Human Compatible provides the most rigorous account of AI safety challenges.",
-        "evidenceAndLimits": "The history of computing benefits from extensive documentation — technical papers, corporate records, oral histories — alongside the observable effects of computing on the economy and society. The main challenge is attributing causation: separating computing's specific effects from the broader forces of globalization, financialization, and deindustrialization reshaping the economy simultaneously.",
-        "takingAPosition": "A strong scholarly argument about computing must engage with the infrastructure question — whether computing platforms should be regulated as utilities given their critical infrastructure status. It must address the AI question — what large language models imply for labor, education, and democratic discourse. And it must engage with the global equity question — whether the digital divide represents a temporary gap development will close or a structural feature of how computing value is captured.",
+        "evidenceAndLimits": "The history of computing benefits from extensive documentation \u2014 technical papers, corporate records, oral histories \u2014 alongside the observable effects of computing on the economy and society. The main challenge is attributing causation: separating computing's specific effects from the broader forces of globalization, financialization, and deindustrialization reshaping the economy simultaneously.",
+        "takingAPosition": "A strong scholarly argument about computing must engage with the infrastructure question \u2014 whether computing platforms should be regulated as utilities given their critical infrastructure status. It must address the AI question \u2014 what large language models imply for labor, education, and democratic discourse. And it must engage with the global equity question \u2014 whether the digital divide represents a temporary gap development will close or a structural feature of how computing value is captured.",
         "questions": [
-          "Platform companies achieve dominant market positions through network effects — the platform becomes more valuable as more people use it, making displacement by competitors extremely difficult. Does this represent monopoly that antitrust law should address, or a natural outcome of information economics that benefits consumers through better products? What policy framework is appropriate for markets with these characteristics?",
+          "Platform companies achieve dominant market positions through network effects \u2014 the platform becomes more valuable as more people use it, making displacement by competitors extremely difficult. Does this represent monopoly that antitrust law should address, or a natural outcome of information economics that benefits consumers through better products? What policy framework is appropriate for markets with these characteristics?",
           "Large language models generate plausible-sounding text on virtually any subject, including subjects where they have no reliable knowledge, and produce false information confidently. How should education, journalism, and democratic discourse adapt to a world in which generating persuasive text requires no expertise and no research? And who bears responsibility for the consequences of deploying systems with these properties at scale?"
         ]
       }
@@ -118,34 +118,34 @@
     {
       "status": "established",
       "topic": "Moore's Law and the history of semiconductor scaling",
-      "content": "Gordon Moore's 1965 observation that transistor density on integrated circuits doubled approximately every two years has been the most accurate technological forecast in history. The law held for approximately fifty years, enabling the exponential growth in computing capability that made modern computing possible. It has now slowed: physical limits at atomic scales — quantum tunneling, heat dissipation — have made it increasingly difficult to maintain the historical rate. The semiconductor industry has responded with architectural innovations including 3D chip stacking, specialized processors (GPUs for machine learning), and new materials. Performance improvements continue but through different means than classical transistor scaling."
+      "content": "Gordon Moore's 1965 observation that transistor density on integrated circuits doubled approximately every two years has been the most accurate technological forecast in history. The law held for approximately fifty years, enabling the exponential growth in computing capability that made modern computing possible. It has now slowed: physical limits at atomic scales \u2014 quantum tunneling, heat dissipation \u2014 have made it increasingly difficult to maintain the historical rate. The semiconductor industry has responded with architectural innovations including 3D chip stacking, specialized processors (GPUs for machine learning), and new materials. Performance improvements continue but through different means than classical transistor scaling."
     },
     {
       "status": "emerging",
       "topic": "The capabilities and limitations of large language models",
-      "content": "Large language models — transformer-based neural networks trained on vast text corpora — have achieved impressive performance on a wide range of language tasks including professional licensing examinations, code generation, and mathematical problem solving. They also fail in characteristic ways: producing false information confidently, failing on simple arithmetic, and being sensitive to prompt phrasing. Whether scaling (more parameters, more data, more compute) will produce qualitatively new capabilities or merely quantitative improvements is actively debated. The empirical evidence on scaling laws is extensive; the theoretical understanding of why scaling produces capability improvements is limited."
+      "content": "Large language models \u2014 transformer-based neural networks trained on vast text corpora \u2014 have achieved impressive performance on a wide range of language tasks including professional licensing examinations, code generation, and mathematical problem solving. They also fail in characteristic ways: producing false information confidently, failing on simple arithmetic, and being sensitive to prompt phrasing. Whether scaling (more parameters, more data, more compute) will produce qualitatively new capabilities or merely quantitative improvements is actively debated. The empirical evidence on scaling laws is extensive; the theoretical understanding of why scaling produces capability improvements is limited."
     },
     {
       "status": "unrecoverable",
       "topic": "The lived experience of pre-digital information work",
-      "content": "What evidence would resolve this: systematic first-person accounts from workers who performed information processing tasks before computing — accountants doing ledgers by hand, typists producing documents, researchers searching card catalogues — describing what the work involved and what changed when computers arrived. Why partly unavailable: the transition to computing happened over decades at different rates in different industries; workers who performed pre-digital information work left limited systematic records of their experience; and the transition's effects were often gradual, making before-and-after comparisons difficult. What can be established: productivity statistics, employment figures, and some first-person accounts from oral history projects. What cannot be established: the full texture of information work before computing."
+      "content": "What evidence would resolve this: systematic first-person accounts from workers who performed information processing tasks before computing \u2014 accountants doing ledgers by hand, typists producing documents, researchers searching card catalogues \u2014 describing what the work involved and what changed when computers arrived. Why partly unavailable: the transition to computing happened over decades at different rates in different industries; workers who performed pre-digital information work left limited systematic records of their experience; and the transition's effects were often gradual, making before-and-after comparisons difficult. What can be established: productivity statistics, employment figures, and some first-person accounts from oral history projects. What cannot be established: the full texture of information work before computing."
     }
   ],
   "comparativeNarrative": [
     {
       "perspective": "Information corridor tradition",
       "name": "The Latest Amplifier",
-      "content": "The information corridor tradition reads computing as the latest technology in the sequence — language, writing, paper, printing, libraries, translation, computing — through which humanity has amplified its ability to store, reproduce, and transmit information. Each technology extends the previous. Computing extends the sequence to its most powerful point: not just storing or reproducing information but processing and transforming it at speeds and scales that no human mind can match. Computing is not a rupture but a continuation — the most powerful expression yet of the fundamental human drive to extend cognitive capability beyond biological limits."
+      "content": "The information corridor tradition reads computing as the latest technology in the sequence \u2014 language, writing, paper, printing, libraries, translation, computing \u2014 through which humanity has amplified its ability to store, reproduce, and transmit information. Each technology extends the previous. Computing extends the sequence to its most powerful point: not just storing or reproducing information but processing and transforming it at speeds and scales that no human mind can match. Computing is not a rupture but a continuation \u2014 the most powerful expression yet of the fundamental human drive to extend cognitive capability beyond biological limits."
     },
     {
       "perspective": "Political economy tradition",
       "name": "The Platform Capture",
-      "content": "The political economy tradition reads computing through the lens of who captures the value it creates. Public investment (ARPANET, CERN, university research) has been captured by private companies. Network effects and zero marginal costs produce winner-take-all dynamics. The workers whose data trains AI models are not compensated. Computing's economic effects are not neutral — they redistribute value upward and geographically, concentrating gains in a small number of firms and locations while distributing disruption broadly."
+      "content": "The political economy tradition reads computing through the lens of who captures the value it creates. Public investment (ARPANET, CERN, university research) has been captured by private companies. Network effects and zero marginal costs produce winner-take-all dynamics. The workers whose data trains AI models are not compensated. Computing's economic effects are not neutral \u2014 they redistribute value upward and geographically, concentrating gains in a small number of firms and locations while distributing disruption broadly."
     },
     {
       "perspective": "Cognitive amplification tradition",
       "name": "The Mind Extended",
-      "content": "The cognitive amplification tradition reads computing as an extension of human cognitive capability. The calculator extends arithmetic; the database extends memory; the search engine extends recall; AI extends judgment and pattern recognition. Computing is not replacing human cognition but augmenting it. The most productive uses are human-AI collaboration rather than AI autonomy. The appropriate question is not 'will computing replace humans' but 'what new cognitive capabilities does augmented human intelligence make possible — and how do we ensure those capabilities are broadly distributed.'"
+      "content": "The cognitive amplification tradition reads computing as an extension of human cognitive capability. The calculator extends arithmetic; the database extends memory; the search engine extends recall; AI extends judgment and pattern recognition. Computing is not replacing human cognition but augmenting it. The most productive uses are human-AI collaboration rather than AI autonomy. The appropriate question is not 'will computing replace humans' but 'what new cognitive capabilities does augmented human intelligence make possible \u2014 and how do we ensure those capabilities are broadly distributed.'"
     }
   ],
   "rabbitHole": [
@@ -154,70 +154,70 @@
       "entryId": "writing",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "Computing is the latest technology in the information corridor that writing began — the sequence through which humanity has amplified its ability to store, process, and transmit information."
+      "reason": "Computing is the latest technology in the information corridor that writing began \u2014 the sequence through which humanity has amplified its ability to store, process, and transmit information."
     },
     {
       "label": "Language",
       "entryId": "language",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "Large language models process and generate human language — computing's most ambitious current applications are in the domain of language, bringing the information corridor full circle."
+      "reason": "Large language models process and generate human language \u2014 computing's most ambitious current applications are in the domain of language, bringing the information corridor full circle."
     },
     {
       "label": "The Internet",
       "entryId": "internet",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "The internet is computing's communication infrastructure — the network through which computing resources and information are distributed globally; computing and the internet are inseparable in their current form."
+      "reason": "The internet is computing's communication infrastructure \u2014 the network through which computing resources and information are distributed globally; computing and the internet are inseparable in their current form."
     },
     {
       "label": "Alan Turing",
       "entryId": "alanTuring",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "Turing's theoretical work — the Turing machine, the computability proofs, the Turing test — provided computing's mathematical and conceptual foundations."
+      "reason": "Turing's theoretical work \u2014 the Turing machine, the computability proofs, the Turing test \u2014 provided computing's mathematical and conceptual foundations."
     },
     {
       "label": "Artificial Intelligence",
       "entryId": "artificialIntelligence",
       "status": "published",
       "relationship": "Consequential",
-      "reason": "AI is computing's most transformative current application — the development of systems that can perform cognitive tasks previously requiring human intelligence; AI is the branch growing from the computing tree."
+      "reason": "AI is computing's most transformative current application \u2014 the development of systems that can perform cognitive tasks previously requiring human intelligence; AI is the branch growing from the computing tree."
     },
     {
       "label": "The Steam Engine",
       "entryId": "steamEngine",
       "status": "published",
       "relationship": "Thematic",
-      "reason": "The steam engine amplified physical energy as computing amplifies cognitive work — the Industrial Revolution and the Information Revolution are structurally parallel civilizational transitions organized around different kinds of amplification."
+      "reason": "The steam engine amplified physical energy as computing amplifies cognitive work \u2014 the Industrial Revolution and the Information Revolution are structurally parallel civilizational transitions organized around different kinds of amplification."
     },
     {
       "label": "Electricity",
       "entryId": "electricity",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "Computing requires electricity — semiconductor transistors are electrical switches; without the electrical infrastructure built in the 20th century, the computing infrastructure of the 21st would be impossible."
+      "reason": "Computing requires electricity \u2014 semiconductor transistors are electrical switches; without the electrical infrastructure built in the 20th century, the computing infrastructure of the 21st would be impossible."
     },
     {
       "label": "Libraries",
       "entryId": "libraries",
       "status": "published",
       "relationship": "Thematic",
-      "reason": "Libraries and computing both address the problem of organizing accumulated knowledge for use — the digital library project is the computing era's attempt to extend the library's mission."
+      "reason": "Libraries and computing both address the problem of organizing accumulated knowledge for use \u2014 the digital library project is the computing era's attempt to extend the library's mission."
     },
     {
       "label": "Statistics",
       "entryId": "statistics",
       "status": "published",
       "relationship": "Thematic",
-      "reason": "Computing enabled statistical analysis of datasets too large for manual calculation — genomics, epidemiology, economics, and climate science all depend on the combination of statistical methods and computing power."
+      "reason": "Computing enabled statistical analysis of datasets too large for manual calculation \u2014 genomics, epidemiology, economics, and climate science all depend on the combination of statistical methods and computing power."
     },
     {
       "label": "DNA",
       "entryId": "dna",
       "status": "published",
       "relationship": "Thematic",
-      "reason": "Genomics required computing — sequencing and analyzing a human genome generates terabytes of data; the Human Genome Project was as much a computing challenge as a biological one."
+      "reason": "Genomics required computing \u2014 sequencing and analyzing a human genome generates terabytes of data; the Human Genome Project was as much a computing challenge as a biological one."
     }
   ],
   "reference": [
@@ -230,7 +230,7 @@
       "contribution": "Accessible",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The most accessible history of computing — Isaacson traces development from Babbage and Lovelace through the internet and AI with engaging narrative and genuine technical engagement."
+      "annotation": "The most accessible history of computing \u2014 Isaacson traces development from Babbage and Lovelace through the internet and AI with engaging narrative and genuine technical engagement."
     },
     {
       "author": "Shannon, Claude E.",
@@ -241,7 +241,7 @@
       "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": "Bell System Technical Journal",
-      "annotation": "The foundational text of information theory — Shannon's paper established the mathematical framework for measuring and transmitting information; every subsequent development in computing builds on this foundation."
+      "annotation": "The foundational text of information theory \u2014 Shannon's paper established the mathematical framework for measuring and transmitting information; every subsequent development in computing builds on this foundation."
     },
     {
       "author": "Zuboff, Shoshana",
@@ -252,7 +252,7 @@
       "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The essential critical account of computing's political economy — Zuboff's analysis of how platform companies extract behavioral data as raw material for prediction products is the most rigorous treatment of computing's social consequences."
+      "annotation": "The essential critical account of computing's political economy \u2014 Zuboff's analysis of how platform companies extract behavioral data as raw material for prediction products is the most rigorous treatment of computing's social consequences."
     },
     {
       "author": "Ceruzzi, Paul E.",
@@ -263,7 +263,7 @@
       "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The essential scholarly history — Ceruzzi's account of computing from ENIAC through the internet era provides technical and historical depth that popular accounts lack."
+      "annotation": "The essential scholarly history \u2014 Ceruzzi's account of computing from ENIAC through the internet era provides technical and historical depth that popular accounts lack."
     },
     {
       "author": "Russell, Stuart",
@@ -274,7 +274,7 @@
       "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The essential AI safety account — Russell's argument for why current approaches to AI development are misaligned with human values is the most rigorous treatment of AI's most important challenge."
+      "annotation": "The essential AI safety account \u2014 Russell's argument for why current approaches to AI development are misaligned with human values is the most rigorous treatment of AI's most important challenge."
     }
   ],
   "commerce": [
@@ -282,58 +282,58 @@
       "type": "Book",
       "title": "The Innovators",
       "author": "Walter Isaacson",
-      "note": "Start here — Isaacson traces computing from Babbage through the internet; the most accessible single-volume history of how computing developed."
+      "note": "Start here \u2014 Isaacson traces computing from Babbage through the internet; the most accessible single-volume history of how computing developed."
     },
     {
       "type": "Book",
       "title": "The Age of Surveillance Capitalism",
       "author": "Shoshana Zuboff",
-      "note": "The essential critical account — Zuboff's analysis of how platform companies extract and monetize behavioral data is demanding but the most rigorous treatment of computing's social consequences."
+      "note": "The essential critical account \u2014 Zuboff's analysis of how platform companies extract and monetize behavioral data is demanding but the most rigorous treatment of computing's social consequences."
     },
     {
       "type": "Book",
       "title": "Hackers: Heroes of the Computer Revolution",
       "author": "Steven Levy",
-      "note": "The essential cultural history — Levy's account of the hacker ethic and open-source culture captures the values that shaped computing's development."
+      "note": "The essential cultural history \u2014 Levy's account of the hacker ethic and open-source culture captures the values that shaped computing's development."
     },
     {
       "type": "Book",
       "title": "The Dream Machine",
       "author": "M. Mitchell Waldrop",
-      "note": "The biography of J.C.R. Licklider — the ARPA program manager whose vision of human-computer interaction shaped the internet and personal computing; essential for computing's institutional history."
+      "note": "The biography of J.C.R. Licklider \u2014 the ARPA program manager whose vision of human-computer interaction shaped the internet and personal computing; essential for computing's institutional history."
     },
     {
       "type": "Book",
       "title": "Human Compatible",
       "author": "Stuart Russell",
-      "note": "The essential AI account — Russell's argument for aligned AI is the most rigorous treatment of where computing is going and what challenges it poses."
+      "note": "The essential AI account \u2014 Russell's argument for aligned AI is the most rigorous treatment of where computing is going and what challenges it poses."
     }
   ],
   "popularCulture": [
     {
-      "type": "Historical Achievement",
-      "title": "The Apollo guidance computer and the Moon landing (1969)",
-      "description": "The Apollo 11 guidance computer had 4 kilobytes of RAM and operated at 0.043 MHz. A modern smartphone has more than a million times the memory and more than a billion times the processing speed. The comparison illustrates Moore's Law's fifty-year compounding. The Apollo guidance computer also represents something else: the first safety-critical embedded computing system, designed to perform reliably with no opportunity for a software update in lunar orbit. The software engineering practices developed for Apollo — formal verification, fault tolerance, graceful degradation — shaped the field of safety-critical software and remain foundations of aerospace, medical, and nuclear computing."
+      "type": "Event",
+      "title": "The Apollo guidance computer and the Moon landing",
+      "description": "The Apollo 11 guidance computer had less processing power than a modern digital watch. The Moon landing is computing's creation myth: the demonstration that sufficiently focused software engineering could accomplish what seemed physically impossible. Every subsequent generation of programmers has cited it when arguing that constraints produce creativity."
     },
     {
-      "type": "Cultural Phenomenon",
-      "title": "The personal computer and the democratization of computing",
-      "description": "The Apple II (1977), IBM PC (1981), and Macintosh (1984) moved computing from mainframes controlled by specialists to devices individuals owned and used directly. The shift was cultural as much as technological: computers became associated with individual empowerment rather than institutional control. Steve Jobs's vision of the computer as a 'bicycle for the mind' captured the democratizing aspiration. The actual democratization was partial — personal computers were expensive and skills unevenly distributed — but the aspiration shaped computing's rhetoric and culture for decades, and the smartphone eventually realized something closer to the original vision at global scale."
+      "type": "Concept",
+      "title": "The personal computer and democratized computing",
+      "description": "The shift from mainframes shared by institutions to computers owned by individuals \u2014 driven by the Apple II, the IBM PC, and eventually the Macintosh \u2014 changed what computing was for. It moved from calculation to communication, from institutional tool to personal medium. The home computer was the infrastructure on which every subsequent digital transformation was built."
     },
     {
-      "type": "Historical Achievement",
-      "title": "Tim Berners-Lee and the gift of the Web (1991)",
-      "description": "Tim Berners-Lee invented the World Wide Web at CERN in 1989–1991 — hyperlinked documents accessible through the internet, implemented using HTML, HTTP, and URLs — and released the technology without patent. The decision meant the Web's infrastructure was not controlled by any company, enabling the extraordinary diversity of applications built on top of it. The companies that captured most of the Web's economic value did so at the application layer, not the infrastructure layer. Berners-Lee's gift is the most consequential act of technological philanthropy in history, and it is why the internet became what it became rather than a collection of proprietary networks."
+      "type": "Concept",
+      "title": "Tim Berners-Lee and the gift of the Web",
+      "description": "Berners-Lee invented the World Wide Web in 1991 and deliberately refused to patent it \u2014 giving it away as a public good. The decision shaped the internet's character: open, decentralized, and interoperable. The contrast with subsequent platform monopolies that enclosed the open web is now a standard reference point in debates about digital governance."
     },
     {
-      "type": "Contemporary Issue",
-      "title": "Large language models and the future of cognitive work",
-      "description": "The release of ChatGPT in November 2022 — followed by Gemini, Claude, Llama, and other large language models — brought AI-generated text to mass audiences for the first time. The models write fluent essays, debug code, translate languages, and conduct plausible conversations on virtually any subject. They also produce false information confidently, lack persistent memory, and have no grounded understanding of the world. Whether these systems are on a path to general intelligence or are sophisticated pattern matchers that will reach limits, what cognitive work they will automate, and how education and professional practice should adapt are questions being worked out in real time — by the same civilization that built the systems."
+      "type": "Concept",
+      "title": "Large language models and cognitive work",
+      "description": "The emergence of large language models capable of producing coherent text, code, and analysis has made computing's implications for cognitive work viscerally immediate in ways that previous automation waves did not. The question \u2014 what work remains distinctively human? \u2014 is now mainstream rather than speculative, and the answers are genuinely uncertain."
     },
     {
-      "type": "Technical Achievement",
-      "title": "The transistor and fifty years of Moore's Law",
-      "description": "The transistor, invented at Bell Labs in December 1947 by John Bardeen, Walter Brattain, and William Shockley, replaced the vacuum tube with a smaller, more reliable, lower-power electronic switch. The integrated circuit (1958) placed multiple transistors on a single silicon chip. The subsequent fifty years of Moore's Law compounding produced the most sustained technological advance in history: from thousands of transistors on a chip in the 1960s to tens of billions today. The transistor is the most manufactured object in human history — more transistors have been produced than any other artifact, by many orders of magnitude. Every smartphone, every server, every digital camera contains billions of them. Computing's physical foundation is a switch the size of a few atoms."
+      "type": "Concept",
+      "title": "The transistor and Moore's Law",
+      "description": "Gordon Moore's 1965 observation that transistor density doubled roughly every two years \u2014 and would continue to \u2014 turned out to be a self-fulfilling prophecy that organized the entire semiconductor industry for fifty years. Moore's Law is ending: physical limits on miniaturization are real. What replaces it as computing's organizing principle is the defining technological question of the current decade."
     }
   ]
 }
