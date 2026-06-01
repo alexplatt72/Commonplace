@@ -5,9 +5,9 @@
   "qualityTier": "A",
   "template": "People",
   "subtype": "Thinker",
-  "period": "1912\u20131954",
+  "period": "1912–1954",
   "title": "Alan Turing",
-  "summary": "The British mathematician who founded theoretical computer science, broke the Enigma cipher during the Second World War, and asked 'Can machines think?' \u2014 defining the questions that artificial intelligence has pursued ever since \u2014 before being prosecuted for homosexuality and dying at 41.",
+  "summary": "The British mathematician who founded theoretical computer science, broke the Enigma cipher during the Second World War, and asked 'Can machines think?' — defining the questions that artificial intelligence has pursued ever since — before being prosecuted for homosexuality and dying at 41.",
   "themes": [
     "science",
     "mathematics",
@@ -44,39 +44,39 @@
   "content": {
     "beginner": {
       "theFigure": "Alan Turing was born in London in 1912. He was a mathematician who possessed an unusual capacity to ask fundamental questions about what mathematics and machines could do. In 1936, before electronic computers existed, he defined what a computer is. In 1939, he went to Bletchley Park and helped break the German Enigma cipher. In 1950, he asked whether machines could think. He was prosecuted for homosexuality in 1952, underwent chemical castration, and died in 1954.",
-      "worldOfIdeas": "Turing entered mathematics at a moment when its foundations were being questioned. David Hilbert had asked whether mathematics was complete, consistent, and decidable \u2014 whether there was a procedure that could determine if any statement was provable. Kurt G\u00f6del had answered the first two questions in the negative in 1931. Turing answered the third in 1936.\n\nTo answer Hilbert's decision problem, Turing first had to define precisely what a 'procedure' was. His answer \u2014 the Turing machine, an abstract device reading and writing symbols on a tape \u2014 is the foundational definition of computation. A problem is computable if and only if a Turing machine can solve it.",
-      "centralIdea": "Turing's 1936 paper proved two things. First, a universal Turing machine exists \u2014 a single machine that can simulate any other Turing machine given a description of it. This is the theoretical blueprint for the programmable computer: one machine, running different programs. Second, some problems are not computable \u2014 the halting problem cannot be solved by any Turing machine.\n\nHis 1950 paper 'Computing Machinery and Intelligence' asked whether machines could think, proposed the Turing test, and addressed objections with philosophical sophistication that most subsequent AI debate has not surpassed. He predicted that by 2000 a machine would pass his test \u2014 wrong on timing, but the question remains central.",
-      "howSpread": "Turing's theoretical work was foundational for the computer science that emerged in the 1950s. John von Neumann, who designed the architecture of most modern computers, was directly influenced by Turing's universal machine concept. The stored-program computer \u2014 in which the program is stored in the same memory as the data \u2014 is Turing's theoretical insight realized in hardware.\n\nBletchley Park remained classified until the 1970s. When the story emerged, Turing's role in breaking Enigma transformed how the Second World War was understood.",
-      "contestedInheritance": "Turing's death at 41 left a legacy still being fully assessed. His mathematical work \u2014 the Turing machine, computability theory, the halting problem \u2014 is foundational and uncontested. His role at Bletchley Park has been recovered. His 1950 paper has generated fifty years of philosophical debate.\n\nThe British government formally apologized for his prosecution in 2009 and issued a royal pardon in 2013. The pardon was controversial \u2014 many argued that pardoning Turing alone, without pardoning the thousands convicted under the same law, was symbolic rather than substantive."
+      "worldOfIdeas": "Turing entered mathematics at a moment when its foundations were being questioned. David Hilbert had asked whether mathematics was complete, consistent, and decidable — whether there was a procedure that could determine if any statement was provable. Kurt Gödel had answered the first two questions in the negative in 1931. Turing answered the third in 1936.\n\nTo answer Hilbert's decision problem, Turing first had to define precisely what a 'procedure' was. His answer — the Turing machine, an abstract device reading and writing symbols on a tape — is the foundational definition of computation. A problem is computable if and only if a Turing machine can solve it.",
+      "centralIdea": "Turing's 1936 paper proved two things. First, a universal Turing machine exists — a single machine that can simulate any other Turing machine given a description of it. This is the theoretical blueprint for the programmable computer: one machine, running different programs. Second, some problems are not computable — the halting problem cannot be solved by any Turing machine.\n\nHis 1950 paper 'Computing Machinery and Intelligence' asked whether machines could think, proposed the Turing test, and addressed objections with philosophical sophistication that most subsequent AI debate has not surpassed. He predicted that by 2000 a machine would pass his test — wrong on timing, but the question remains central.",
+      "howSpread": "Turing's theoretical work was foundational for the computer science that emerged in the 1950s. John von Neumann, who designed the architecture of most modern computers, was directly influenced by Turing's universal machine concept. The stored-program computer — in which the program is stored in the same memory as the data — is Turing's theoretical insight realized in hardware.\n\nBletchley Park remained classified until the 1970s. When the story emerged, Turing's role in breaking Enigma transformed how the Second World War was understood.",
+      "contestedInheritance": "Turing's death at 41 left a legacy still being fully assessed. His mathematical work — the Turing machine, computability theory, the halting problem — is foundational and uncontested. His role at Bletchley Park has been recovered. His 1950 paper has generated fifty years of philosophical debate.\n\nThe British government formally apologized for his prosecution in 2009 and issued a royal pardon in 2013. The pardon was controversial — many argued that pardoning Turing alone, without pardoning the thousands convicted under the same law, was symbolic rather than substantive."
     },
     "general": {
-      "theFigure": "Andrew Hodges's Alan Turing: The Enigma (1983) is the essential biography \u2014 recovering Turing's story before the Bletchley Park records were fully available, combining mathematical sophistication with biographical sensitivity. Jack Copeland's subsequent archival research demonstrated that Turing's practical contributions to computing \u2014 at Bletchley, at the National Physical Laboratory, at Manchester \u2014 were more substantial than the standard account recognized.",
-      "worldOfIdeas": "The Church-Turing thesis \u2014 that any function computable by an algorithm can be computed by a Turing machine \u2014 is the foundational claim of theoretical computer science. Alonzo Church, working independently at Princeton on lambda calculus, reached the same conclusion about computability in 1936. The equivalence of their approaches established the thesis on firmer ground.\n\nThe relationship between Turing's mathematical work and his philosophical interests is one of the most interesting dimensions of his intellectual biography. His 1950 paper is not simply a technical proposal but philosophical argumentation \u2014 engaging with objections from consciousness, G\u00f6del's incompleteness, theological arguments, and the argument from human fallibility.",
-      "centralIdea": "The Turing test has been substantially misunderstood in subsequent discussions. Turing did not claim that passing the test would prove machine intelligence \u2014 he proposed it as an operational substitute for the question 'can machines think?', which he regarded as too ambiguous to answer directly. Whether the answerable question captures what matters is exactly what has been debated ever since.\n\nJohn Searle's Chinese Room argument (1980) \u2014 that a system can pass behavioral tests for understanding without understanding anything \u2014 is the most influential philosophical challenge. Turing anticipated versions of this objection in his 1950 paper and answered them, but his answers have not satisfied everyone.",
-      "howSpread": "The Turing Award \u2014 computing's equivalent of the Nobel Prize \u2014 is named after him. The theoretical framework he established is the foundation of theoretical computer science. The concept of the universal machine \u2014 one machine that can simulate any other \u2014 is the theoretical justification for the generality of modern computers.\n\nThe recovery of Turing's wartime work transformed the historiography of the Second World War. Breaking Enigma \u2014 giving the Allies an intelligence advantage historians have argued shortened the war by perhaps two years \u2014 was one of the most consequential intellectual achievements of the 20th century.",
-      "contestedInheritance": "The extent of Turing's contribution to the actual development of electronic computers has been debated. Copeland's research revised the standard account by showing his practical contributions were more significant than previously recognized. His 1952 morphogenesis paper \u2014 on the mathematical basis of biological pattern formation \u2014 anticipated developments in mathematical biology that were confirmed experimentally only decades later.\n\nThe question of Turing's death remains genuinely unresolved. The cyanide poisoning was ruled suicide, but Turing's mother believed it was an accident during chemistry experiments. Copeland has argued the evidence for suicide is weaker than the standard account suggests."
+      "theFigure": "Andrew Hodges's Alan Turing: The Enigma (1983) is the essential biography — recovering Turing's story before the Bletchley Park records were fully available, combining mathematical sophistication with biographical sensitivity. Jack Copeland's subsequent archival research demonstrated that Turing's practical contributions to computing — at Bletchley, at the National Physical Laboratory, at Manchester — were more substantial than the standard account recognized.",
+      "worldOfIdeas": "The Church-Turing thesis — that any function computable by an algorithm can be computed by a Turing machine — is the foundational claim of theoretical computer science. Alonzo Church, working independently at Princeton on lambda calculus, reached the same conclusion about computability in 1936. The equivalence of their approaches established the thesis on firmer ground.\n\nThe relationship between Turing's mathematical work and his philosophical interests is one of the most interesting dimensions of his intellectual biography. His 1950 paper is not simply a technical proposal but philosophical argumentation — engaging with objections from consciousness, Gödel's incompleteness, theological arguments, and the argument from human fallibility.",
+      "centralIdea": "The Turing test has been substantially misunderstood in subsequent discussions. Turing did not claim that passing the test would prove machine intelligence — he proposed it as an operational substitute for the question 'can machines think?', which he regarded as too ambiguous to answer directly. Whether the answerable question captures what matters is exactly what has been debated ever since.\n\nJohn Searle's Chinese Room argument (1980) — that a system can pass behavioral tests for understanding without understanding anything — is the most influential philosophical challenge. Turing anticipated versions of this objection in his 1950 paper and answered them, but his answers have not satisfied everyone.",
+      "howSpread": "The Turing Award — computing's equivalent of the Nobel Prize — is named after him. The theoretical framework he established is the foundation of theoretical computer science. The concept of the universal machine — one machine that can simulate any other — is the theoretical justification for the generality of modern computers.\n\nThe recovery of Turing's wartime work transformed the historiography of the Second World War. Breaking Enigma — giving the Allies an intelligence advantage historians have argued shortened the war by perhaps two years — was one of the most consequential intellectual achievements of the 20th century.",
+      "contestedInheritance": "The extent of Turing's contribution to the actual development of electronic computers has been debated. Copeland's research revised the standard account by showing his practical contributions were more significant than previously recognized. His 1952 morphogenesis paper — on the mathematical basis of biological pattern formation — anticipated developments in mathematical biology that were confirmed experimentally only decades later.\n\nThe question of Turing's death remains genuinely unresolved. The cyanide poisoning was ruled suicide, but Turing's mother believed it was an accident during chemistry experiments. Copeland has argued the evidence for suicide is weaker than the standard account suggests."
     },
     "advanced": {
-      "theFigure": "The historical recovery of Turing's classified wartime work has established a richer picture. His specific technical contributions \u2014 the statistical approach to breaking Enigma (Banburismus), the design of the Bombe, the development of Turingery for the Lorenz cipher \u2014 have been documented in detail. The question of his death remains genuinely unresolved: British authorities destroyed his personal papers shortly after his death, eliminating evidence that might have clarified the circumstances.",
-      "worldOfIdeas": "The relationship between Turing's work and G\u00f6del's incompleteness theorems is one of the most important connections in the history of mathematics. G\u00f6del proved any sufficiently powerful formal system is either incomplete or inconsistent. Turing's proof of the undecidability of the halting problem showed there is no general algorithm for determining whether a computation will terminate \u2014 closely related to G\u00f6del's result and proved using similar diagonal argument techniques.\n\nRoger Penrose's The Emperor's New Mind (1989) argued that these results show human mathematical understanding cannot be simulated by any Turing machine \u2014 that consciousness involves something non-computational. This argument has been extensively criticized but illustrates how Turing's mathematical results connect to fundamental questions about the nature of mind.",
-      "centralIdea": "Complexity theory \u2014 asking not just whether a problem is computable but how efficiently \u2014 grew from Turing's computability theory. The P versus NP problem \u2014 whether problems whose solutions can be quickly verified can also be quickly solved \u2014 is the most important unsolved problem in theoretical computer science. Its resolution would have major implications for cryptography and AI.\n\nLarge language models can produce text indistinguishable from human writing in many contexts. Whether this constitutes passing the Turing test depends on how strictly the test is applied and what we take it to measure. Turing's question \u2014 what would count as machine intelligence? \u2014 has never been more relevant.",
+      "theFigure": "The historical recovery of Turing's classified wartime work has established a richer picture. His specific technical contributions — the statistical approach to breaking Enigma (Banburismus), the design of the Bombe, the development of Turingery for the Lorenz cipher — have been documented in detail. The question of his death remains genuinely unresolved: British authorities destroyed his personal papers shortly after his death, eliminating evidence that might have clarified the circumstances.",
+      "worldOfIdeas": "The relationship between Turing's work and Gödel's incompleteness theorems is one of the most important connections in the history of mathematics. Gödel proved any sufficiently powerful formal system is either incomplete or inconsistent. Turing's proof of the undecidability of the halting problem showed there is no general algorithm for determining whether a computation will terminate — closely related to Gödel's result and proved using similar diagonal argument techniques.\n\nRoger Penrose's The Emperor's New Mind (1989) argued that these results show human mathematical understanding cannot be simulated by any Turing machine — that consciousness involves something non-computational. This argument has been extensively criticized but illustrates how Turing's mathematical results connect to fundamental questions about the nature of mind.",
+      "centralIdea": "Complexity theory — asking not just whether a problem is computable but how efficiently — grew from Turing's computability theory. The P versus NP problem — whether problems whose solutions can be quickly verified can also be quickly solved — is the most important unsolved problem in theoretical computer science. Its resolution would have major implications for cryptography and AI.\n\nLarge language models can produce text indistinguishable from human writing in many contexts. Whether this constitutes passing the Turing test depends on how strictly the test is applied and what we take it to measure. Turing's question — what would count as machine intelligence? — has never been more relevant.",
       "howSpread": "The influence of Turing's 1950 paper on AI is foundational. John McCarthy, who organized the 1956 Dartmouth Conference founding AI, was directly influenced by Turing's paper. The early AI programs were attempts to implement the general reasoning ability Turing's test presupposed. The Loebner Prize, awarded since 1990 for programs closest to passing a Turing test, has been criticized but kept Turing's question in public view.",
-      "contestedInheritance": "The Turing Award has been given to every major contributor to theoretical computer science, reflecting a consensus about Turing's foundational importance not significantly contested within the field. The contested dimensions concern what his work implies for questions about mind and consciousness that remain unresolved \u2014 Penrose's non-computability argument, Searle's Chinese Room, and the debate about whether behavioral criteria establish intelligence are all downstream of questions Turing raised."
+      "contestedInheritance": "The Turing Award has been given to every major contributor to theoretical computer science, reflecting a consensus about Turing's foundational importance not significantly contested within the field. The contested dimensions concern what his work implies for questions about mind and consciousness that remain unresolved — Penrose's non-computability argument, Searle's Chinese Room, and the debate about whether behavioral criteria establish intelligence are all downstream of questions Turing raised."
     },
     "educational": {
       "foundation": {
-        "theStory": "Turing matters for three reinforcing reasons. He defined computation before computers existed. He applied that understanding to win a war. And he asked the foundational question of AI \u2014 can machines think? \u2014 with philosophical sophistication the field has not always matched. His treatment by the British government adds moral significance to intellectual significance.",
-        "theDebate": "The central debates concern the Turing test and what it measures, the relationship between G\u00f6del's incompleteness and human mathematical understanding, the extent of Turing's contribution to the practical development of computers, and the circumstances of his death.",
+        "theStory": "Turing matters for three reinforcing reasons. He defined computation before computers existed. He applied that understanding to win a war. And he asked the foundational question of AI — can machines think? — with philosophical sophistication the field has not always matched. His treatment by the British government adds moral significance to intellectual significance.",
+        "theDebate": "The central debates concern the Turing test and what it measures, the relationship between Gödel's incompleteness and human mathematical understanding, the extent of Turing's contribution to the practical development of computers, and the circumstances of his death.",
         "whyItMatters": "Turing matters for understanding theoretical computer science, the history of the Second World War, the foundational questions of AI, and the historical treatment of gay scientists by governments that benefited from their work.",
         "questions": [
           "Turing proposed the Turing test as an operational substitute for 'can machines think?' Searle's Chinese Room argues a system can pass behavioral tests without understanding. Is the Turing test an adequate criterion of machine intelligence?",
-          "Penrose argues G\u00f6del's incompleteness shows human mathematical understanding cannot be simulated by any Turing machine. Is this argument convincing, and what would count as evidence against it?"
+          "Penrose argues Gödel's incompleteness shows human mathematical understanding cannot be simulated by any Turing machine. Is this argument convincing, and what would count as evidence against it?"
         ]
       },
       "interpretation": {
         "scholarlyConversation": "The essential texts are Hodges's biography for the life, Copeland's work for the technical history, and Turing's 1936 and 1950 papers as primary sources. For the philosophical debate: Searle's 'Minds, Brains, and Programs' (1980) and Penrose's The Emperor's New Mind represent the main positions.",
-        "evidenceAndLimits": "The evidence for Turing's mathematical and wartime work is well established. The circumstances of his death remain uncertain \u2014 key documents were destroyed. The philosophical questions his work raises are not resolvable by historical evidence.",
-        "takingAPosition": "A strong argument about Turing must engage with the Turing test specifically \u2014 analyzing whether it measures what Turing claimed and whether subsequent systems have passed it in the relevant sense. It must take a position on Penrose's non-computability argument. And it must engage with the historiography of his wartime work.",
+        "evidenceAndLimits": "The evidence for Turing's mathematical and wartime work is well established. The circumstances of his death remain uncertain — key documents were destroyed. The philosophical questions his work raises are not resolvable by historical evidence.",
+        "takingAPosition": "A strong argument about Turing must engage with the Turing test specifically — analyzing whether it measures what Turing claimed and whether subsequent systems have passed it in the relevant sense. It must take a position on Penrose's non-computability argument. And it must engage with the historiography of his wartime work.",
         "questions": [
           "Turing's 1936 paper proved the existence of problems no Turing machine can solve. Does this imply human mathematical understanding exceeds what any computer can do, as Penrose argues?",
           "The British government's treatment of Turing raises questions about states and the scientists who serve them. Was the royal pardon adequate, and what would adequate recognition of this injustice look like?"
@@ -105,7 +105,7 @@
     {
       "perspective": "Computer science tradition",
       "name": "The Father of Computing",
-      "content": "Within computer science, Turing is honored as the field's founding figure \u2014 the person who defined computation before computers existed and whose theoretical framework has remained foundational for eighty years. The Turing Award, the Church-Turing thesis, the Turing machine, and the Turing test are all named after him. This recognition came fully only after the Bletchley Park secrets were released in the 1970s and represents a genuine intellectual debt acknowledged by a field whose development Turing's theoretical work made possible."
+      "content": "Within computer science, Turing is honored as the field's founding figure — the person who defined computation before computers existed and whose theoretical framework has remained foundational for eighty years. The Turing Award, the Church-Turing thesis, the Turing machine, and the Turing test are all named after him. This recognition came fully only after the Bletchley Park secrets were released in the 1970s and represents a genuine intellectual debt acknowledged by a field whose development Turing's theoretical work made possible."
     },
     {
       "perspective": "Philosophical tradition",
@@ -115,7 +115,7 @@
     {
       "perspective": "LGBTQ+ history",
       "name": "The Martyr of the State",
-      "content": "Turing has become an important figure in LGBTQ+ history \u2014 a gay man of extraordinary achievement whose persecution by the state represents one of the starkest examples of institutionalized homophobia's human cost. The 2009 government apology, the 2013 royal pardon, and his image on the \u00a350 note represent official recognition that would have been inconceivable during his lifetime. The question of whether the pardon was adequate \u2014 extended to Turing alone rather than to the thousands convicted under the same law \u2014 has been taken up as a continuing concern."
+      "content": "Turing has become an important figure in LGBTQ+ history — a gay man of extraordinary achievement whose persecution by the state represents one of the starkest examples of institutionalized homophobia's human cost. The 2009 government apology, the 2013 royal pardon, and his image on the £50 note represent official recognition that would have been inconceivable during his lifetime. The question of whether the pardon was adequate — extended to Turing alone rather than to the thousands convicted under the same law — has been taken up as a continuing concern."
     }
   ],
   "rabbitHole": [
@@ -124,7 +124,7 @@
       "entryId": "artificialIntelligence",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "Turing's 1950 paper founded the theoretical framework within which AI has been developed \u2014 his question 'can machines think?' and the Turing test remain the reference points for discussions of machine intelligence."
+      "reason": "Turing's 1950 paper founded the theoretical framework within which AI has been developed — his question 'can machines think?' and the Turing test remain the reference points for discussions of machine intelligence."
     },
     {
       "label": "Quantum Mechanics",
@@ -138,14 +138,14 @@
       "entryId": "worldWarII",
       "status": "published",
       "relationship": "Consequential",
-      "reason": "Turing's work at Bletchley Park breaking Enigma may have shortened the war by two years and saved millions of lives \u2014 one of the most consequential intellectual achievements of the 20th century."
+      "reason": "Turing's work at Bletchley Park breaking Enigma may have shortened the war by two years and saved millions of lives — one of the most consequential intellectual achievements of the 20th century."
     },
     {
       "label": "The Internet",
       "entryId": "internet",
       "status": "published",
       "relationship": "Foundational",
-      "reason": "The internet runs on computers, and computers are built on the theoretical foundations Turing established \u2014 the stored-program computer, software as data, and the theoretical limits of computation all derive from his work."
+      "reason": "The internet runs on computers, and computers are built on the theoretical foundations Turing established — the stored-program computer, software as data, and the theoretical limits of computation all derive from his work."
     }
   ],
   "reference": [
@@ -158,7 +158,7 @@
       "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The essential biography \u2014 Hodges combined mathematical understanding with biographical sensitivity to recover Turing's story. Still the foundational account."
+      "annotation": "The essential biography — Hodges combined mathematical understanding with biographical sensitivity to recover Turing's story. Still the foundational account."
     },
     {
       "author": "Copeland, B. Jack",
@@ -169,7 +169,7 @@
       "contribution": "Essential",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The essential technical account \u2014 Copeland's archival research substantially revised understanding of Turing's wartime and postwar contributions."
+      "annotation": "The essential technical account — Copeland's archival research substantially revised understanding of Turing's wartime and postwar contributions."
     },
     {
       "author": "Turing, Alan",
@@ -180,29 +180,29 @@
       "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": "Mind",
-      "annotation": "The foundational paper \u2014 Turing's 1950 paper remains the most important single text in the philosophy of AI. Freely available online."
+      "annotation": "The foundational paper — Turing's 1950 paper remains the most important single text in the philosophy of AI. Freely available online."
     },
     {
       "author": "Hodges, Andrew",
       "title": "Alan Turing: The Enigma",
       "year": "1983",
       "type": "Monograph",
-      "reliability": "foundational",
-      "contribution": "foundational; definitive scientific biography",
+      "reliability": "Primary",
+      "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": null,
-      "annotation": "The definitive biography. Hodges provides the fullest account of Turing's mathematical work, his contribution to breaking Enigma, and his persecution \u2014 written with both technical authority and biographical depth."
+      "annotation": "The definitive biography. Hodges provides the fullest account of Turing's mathematical work, his contribution to breaking Enigma, and his persecution — written with both technical authority and biographical depth."
     },
     {
       "author": "Turing, Alan",
       "title": "Computing Machinery and Intelligence",
       "year": "1950",
       "type": "Journal article",
-      "reliability": "foundational primary source",
-      "contribution": "foundational primary source; Turing test proposal",
+      "reliability": "Primary",
+      "contribution": "Foundational",
       "originLanguage": null,
       "domainAuthority": "Mind",
-      "annotation": "The paper that introduced what became the Turing Test \u2014 Turing's argument that the question 'can machines think?' should be replaced by asking whether machines can imitate human responses indistinguishably. The founding document of philosophy of mind as applied to computing."
+      "annotation": "The paper that introduced what became the Turing Test — Turing's argument that the question 'can machines think?' should be replaced by asking whether machines can imitate human responses indistinguishably. The founding document of philosophy of mind as applied to computing."
     }
   ],
   "commerce": [
@@ -210,35 +210,35 @@
       "type": "Book",
       "title": "Alan Turing: The Enigma",
       "author": "Andrew Hodges",
-      "note": "The essential biography \u2014 comprehensive, mathematically literate, and deeply humane."
+      "note": "The essential biography — comprehensive, mathematically literate, and deeply humane."
     },
     {
       "type": "Book",
       "level": "Introductory",
       "title": "Alan Turing: The Enigma",
       "author": "Andrew Hodges",
-      "note": "Start here \u2014 the definitive biography is readable as well as rigorous, and covers both the mathematics and the human story with equal seriousness."
+      "note": "Start here — the definitive biography is readable as well as rigorous, and covers both the mathematics and the human story with equal seriousness."
     },
     {
       "type": "Book",
       "level": "Intermediate",
       "title": "The Innovators",
       "author": "Walter Isaacson",
-      "note": "Places Turing within the broader history of computing \u2014 useful for understanding his contribution in context of the machines and people that followed."
+      "note": "Places Turing within the broader history of computing — useful for understanding his contribution in context of the machines and people that followed."
     },
     {
       "type": "Book",
       "level": "Scholarly",
       "title": "Computing Machinery and Intelligence",
       "author": "Alan Turing",
-      "note": "The 1950 paper itself \u2014 short enough to read in an hour, foundational enough to repay careful attention. The origin of the Turing Test and the philosophy of artificial intelligence."
+      "note": "The 1950 paper itself — short enough to read in an hour, foundational enough to repay careful attention. The origin of the Turing Test and the philosophy of artificial intelligence."
     },
     {
       "type": "Film",
       "level": "Introductory",
       "title": "The Imitation Game (2014)",
       "author": "Morten Tyldum (dir.)",
-      "note": "The accessible entry point \u2014 historically simplified but captures the Enigma work and Turing's persecution. Read Hodges afterward to understand what the film changed."
+      "note": "The accessible entry point — historically simplified but captures the Enigma work and Turing's persecution. Read Hodges afterward to understand what the film changed."
     }
   ],
   "popularCulture": [
@@ -249,8 +249,8 @@
     },
     {
       "type": "Symbol",
-      "title": "The \u00a350 note",
-      "description": "The Bank of England's \u00a350 note issued from 2021 features Turing's image alongside mathematical work and a depiction of the Manchester Baby. The choice reflects official recognition of his importance and an implicit acknowledgment of the injustice done to him."
+      "title": "The £50 note",
+      "description": "The Bank of England's £50 note issued from 2021 features Turing's image alongside mathematical work and a depiction of the Manchester Baby. The choice reflects official recognition of his importance and an implicit acknowledgment of the injustice done to him."
     },
     {
       "type": "Concept",
@@ -260,12 +260,12 @@
     {
       "type": "Film",
       "title": "The Imitation Game (2014)",
-      "description": "Benedict Cumberbatch's portrayal of Turing brought his story to mass audiences. What it gets right: the significance of Bletchley Park, the injustice of his prosecution. What it distorts: the timeline, his relationships, and the nature of the mathematical work \u2014 the film makes code-breaking look more like puzzle-solving and less like statistical inference than it actually was."
+      "description": "Benedict Cumberbatch's portrayal of Turing brought his story to mass audiences. What it gets right: the significance of Bletchley Park, the injustice of his prosecution. What it distorts: the timeline, his relationships, and the nature of the mathematical work — the film makes code-breaking look more like puzzle-solving and less like statistical inference than it actually was."
     },
     {
       "type": "Concept",
       "title": "The Turing Test as cultural shorthand",
-      "description": "The Turing Test has become cultural shorthand for the question of machine consciousness \u2014 invoked in films, novels, and AI ethics debates far beyond its original technical scope. What the popular use misses: Turing proposed it as a practical criterion for intelligent behavior, not a philosophical definition of consciousness or personhood."
+      "description": "The Turing Test has become cultural shorthand for the question of machine consciousness — invoked in films, novels, and AI ethics debates far beyond its original technical scope. What the popular use misses: Turing proposed it as a practical criterion for intelligent behavior, not a philosophical definition of consciousness or personhood."
     }
   ]
 }
