@@ -118,8 +118,9 @@
     {
       "label": "Nelson Mandela",
       "relationship": "Consequential",
-      "status": "planned",
-      "reason": "Mandela spent twenty-seven years in prison for his resistance to apartheid and became the symbol of the struggle against it — and the first democratically elected president of post-apartheid South Africa."
+      "status": "published",
+      "reason": "Mandela spent twenty-seven years in prison for his resistance to apartheid and became the symbol of the struggle against it — and the first democratically elected president of post-apartheid South Africa.",
+      "entryId": "nelsonMandela"
     },
     {
       "label": "Race",
@@ -146,7 +147,8 @@
       "label": "Transitional Justice",
       "relationship": "Consequential",
       "status": "planned",
-      "reason": "The Truth and Reconciliation Commission was one of the most significant experiments in transitional justice of the twentieth century — its achievements and limitations have shaped the field ever since."
+      "reason": "The Truth and Reconciliation Commission was one of the most significant experiments in transitional justice of the twentieth century — its achievements and limitations have shaped the field ever since.",
+      "entryId": "transitionalJustice"
     },
     {
       "label": "The Partition of India",
@@ -154,6 +156,13 @@
       "relationship": "Parallel",
       "status": "published",
       "reason": "Both apartheid and the Partition were products of the mid-twentieth century crisis of racial and communal categorization — both organized entire societies around the distinction between groups, with catastrophic human consequences."
+    },
+    {
+      "label": "Memory and Commemoration",
+      "entryId": "memoryCommemoration",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "South Africa's TRC is the paradigmatic case of institutionalized memory work — and the most extensively studied test of whether public memory of atrocity can produce reconciliation."
     }
   ],
   "reference": [

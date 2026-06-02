@@ -1,11 +1,27 @@
 [
   {
+    "id": "abbasidCaliphate",
+    "title": "The Abbasid Caliphate",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "750–1258 CE",
+    "status": "published"
+  },
+  {
     "id": "abolitionMovement",
     "template": "Periods",
     "subtype": "Movement",
     "period": "1780s–1888",
     "title": "The Abolition Movement",
     "summary": "The organized campaign to end the transatlantic slave trade and slavery itself, spanning roughly a century from the 1780s through Brazilian emancipation in 1888.",
+    "status": "published"
+  },
+  {
+    "id": "abrahamLincoln",
+    "title": "Abraham Lincoln",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1809–1865",
     "status": "published"
   },
   {
@@ -158,15 +174,6 @@
     "status": "published"
   },
   {
-    "id": "artOfWar",
-    "title": "The Art of War",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
-    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
-    "status": "published"
-  },
-  {
     "id": "artificialIntelligence",
     "title": "Artificial Intelligence",
     "template": "Foundations",
@@ -181,6 +188,15 @@
       "20thCentury"
     ],
     "summary": "The project of building machines that can perform tasks requiring human-like intelligence — now the most rapidly developing technology in human history and the subject of the most consequential unresolved questions about the future of work, knowledge, and civilization.",
+    "status": "published"
+  },
+  {
+    "id": "artOfWar",
+    "title": "The Art of War",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
+    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
     "status": "published"
   },
   {
@@ -439,6 +455,14 @@
     "status": "published"
   },
   {
+    "id": "cicero",
+    "title": "Cicero",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "106–43 BCE",
+    "status": "published"
+  },
+  {
     "id": "citizenship",
     "template": "Concepts",
     "subtype": "Normative Concept",
@@ -572,6 +596,14 @@
     "status": "published"
   },
   {
+    "id": "contract",
+    "title": "The Contract",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published"
+  },
+  {
     "id": "copper",
     "title": "Copper",
     "template": "Foundations",
@@ -613,6 +645,14 @@
     "subtype": "Thinker",
     "period": "1809–1882",
     "summary": "The naturalist who proposed natural selection as the mechanism of evolution, producing a theory so coherent and so well-evidenced that it made divine creation scientifically unnecessary within biology, and permanently transformed how humans understand the relationship between life and time, and established biology as a historical science",
+    "status": "published"
+  },
+  {
+    "id": "debt",
+    "title": "Debt",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
     "status": "published"
   },
   {
@@ -735,6 +775,14 @@
     "status": "published"
   },
   {
+    "id": "dutchRepublic",
+    "title": "The Dutch Republic",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1581–1795",
+    "status": "published"
+  },
+  {
     "id": "einstein",
     "title": "Albert Einstein",
     "template": "People",
@@ -820,6 +868,22 @@
       "Bull of Heaven",
       "Cedar Forest"
     ]
+  },
+  {
+    "id": "evolution",
+    "title": "Evolution",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1859–present",
+    "status": "published"
+  },
+  {
+    "id": "fallOfTheBerlinWall",
+    "title": "The Fall of the Berlin Wall",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1989",
+    "status": "published"
   },
   {
     "id": "fascism",
@@ -916,6 +980,14 @@
     "subtype": "Threshold Moment — Restructured",
     "period": "1789–1799",
     "summary": "The decade that relocated sovereignty from monarch to nation, invented the left-right political spectrum, produced the first systematic justification of state terror in the name of popular sovereignty, and established the template for every political revolution that followed",
+    "status": "published"
+  },
+  {
+    "id": "freud",
+    "title": "Sigmund Freud",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1856–1939",
     "status": "published"
   },
   {
@@ -1083,6 +1155,14 @@
     "status": "published"
   },
   {
+    "id": "harrietTubman",
+    "title": "Harriet Tubman",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 1822–1913",
+    "status": "published"
+  },
+  {
     "id": "healthcarePolicy",
     "title": "Healthcare Policy",
     "template": "Policy",
@@ -1118,6 +1198,14 @@
     "summary": "The German philosopher whose dialectical idealism — the idea that history unfolds through the conflict and resolution of opposing forces, driven by the development of Spirit toward freedom — shaped Marx, Nietzsche, existentialism, and 20th-century political thought more profoundly than almost any other thinker."
   },
   {
+    "id": "hiroshimaNagasaki",
+    "title": "The Atomic Bombings of Hiroshima and Nagasaki",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "August 6–9, 1945",
+    "status": "published"
+  },
+  {
     "id": "hobbes",
     "title": "Thomas Hobbes",
     "template": "People",
@@ -1141,6 +1229,14 @@
     "subtype": "Material Foundation",
     "period": "c. 3500 BCE-present",
     "summary": "The domestication of the horse around 3500 BCE on the Eurasian steppe was among the most consequential events in human history -- transforming warfare, trade, agriculture, and political organization across Eurasia, enabling the steppe empires that repeatedly reshaped the ancient and medieval world, and reverberating through the Columbian Exchange to transform the Americas.",
+    "status": "published"
+  },
+  {
+    "id": "humanitarianIntervention",
+    "title": "Humanitarian Intervention",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "1990s–present",
     "status": "published"
   },
   {
@@ -1188,6 +1284,14 @@
     "qualityTier": "A"
   },
   {
+    "id": "icelandicSagas",
+    "title": "The Icelandic Sagas",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 1200–1400 CE",
+    "status": "published"
+  },
+  {
     "id": "ideology",
     "template": "Concepts",
     "subtype": "Analytical Concept",
@@ -1224,12 +1328,29 @@
     "status": "published"
   },
   {
+    "id": "indianIndependenceMovement",
+    "title": "The Indian Independence Movement",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1857–1947",
+    "status": "published"
+  },
+  {
     "id": "indianOceanTrade",
     "title": "Indian Ocean Trade System",
     "template": "Places",
     "subtype": "System",
     "period": "c. 2000 BCE – 1500 CE",
     "summary": "The maritime trading network that connected East Africa, the Arabian Peninsula, South Asia, Southeast Asia, and China for over three thousand years — the world's most durable commercial system and the mechanism through which Buddhism, Islam, crops, and technologies spread across half the globe.",
+    "status": "published"
+  },
+  {
+    "id": "industrialRevolution",
+    "title": "The Industrial Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
+    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
     "status": "published"
   },
   {
@@ -1275,21 +1396,28 @@
     ]
   },
   {
-    "id": "industrialRevolution",
-    "title": "The Industrial Revolution",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
-    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
-    "status": "published"
-  },
-  {
     "id": "inequality",
     "template": "Concepts",
     "subtype": "Normative Concept",
     "title": "Inequality",
     "period": "Ancient–present",
     "summary": "The unequal distribution of income, wealth, opportunity, and status among individuals and groups — a feature of every known society, whose causes, consequences, and moral significance are among the most contested questions in politics and economics.",
+    "status": "published"
+  },
+  {
+    "id": "influenzaPandemic1918",
+    "title": "The Influenza Pandemic of 1918",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1918–1920",
+    "status": "published"
+  },
+  {
+    "id": "internationalLaw",
+    "title": "International Law",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1648–present",
     "status": "published"
   },
   {
@@ -1324,6 +1452,14 @@
       "democracy"
     ],
     "summary": "The twenty years between the two World Wars — democratic experimentation, fascist and communist revolution, economic catastrophe, and the failure of the international order — that ended with the most destructive war in human history.",
+    "status": "published"
+  },
+  {
+    "id": "iranianRevolution",
+    "title": "The Iranian Revolution",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1979",
     "status": "published"
   },
   {
@@ -1424,6 +1560,14 @@
     "status": "published"
   },
   {
+    "id": "justWarTheory",
+    "title": "Just War Theory",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century CE–present",
+    "status": "published"
+  },
+  {
     "id": "kant",
     "title": "Immanuel Kant",
     "summary": "The Prussian philosopher who attempted to reconcile rationalism and empiricism, established the Categorical Imperative as the foundation of moral philosophy, argued for the conditions of possible experience in the Critique of Pure Reason, and shaped every major philosophical tradition that followed — from German idealism to analytic philosophy to contemporary ethics.",
@@ -1458,6 +1602,14 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "koreanWar",
+    "title": "The Korean War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1950–1953",
+    "status": "published"
   },
   {
     "id": "language",
@@ -1627,6 +1779,14 @@
     "status": "published"
   },
   {
+    "id": "maoZedong",
+    "title": "Mao Zedong",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1893–1976",
+    "status": "published"
+  },
+  {
     "id": "maps",
     "title": "Maps",
     "summary": "The technology of representing spatial relationships on a surface — one of the oldest cognitive and political tools in human history, a technology that does not merely describe territory but creates it: setting borders, asserting sovereignty, enabling navigation, organizing colonial space, and shaping how people understand their place in the world.",
@@ -1748,6 +1908,14 @@
     "period": "1868–1912",
     "title": "The Meiji Restoration",
     "summary": "The transformation of Japan between 1868 and 1912 from a feudal society closed to the outside world into an industrialized nation-state with a constitution, a modern military, and imperial ambitions — the most rapid and comprehensive modernization in history, achieved on Japan's own terms.",
+    "status": "published"
+  },
+  {
+    "id": "memoryCommemoration",
+    "title": "Memory and Commemoration",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1920s–present",
     "status": "published"
   },
   {
@@ -1895,12 +2063,28 @@
     "status": "published"
   },
   {
+    "id": "naturalLaw",
+    "title": "Natural Law",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century BCE–present",
+    "status": "published"
+  },
+  {
     "id": "navigation",
     "title": "Navigation",
     "template": "Foundations",
     "subtype": "Material Foundation",
     "period": "c. 40,000 BCE – present",
     "summary": "The technology of controlled movement across open water — from Polynesian star-path wayfinding to Arab dhow routes across the Indian Ocean to European oceanic exploration — that connected distant civilizations, enabled global trade and empire, and made the modern world's geographic integration possible",
+    "status": "published"
+  },
+  {
+    "id": "nelsonMandela",
+    "title": "Nelson Mandela",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1918–2013",
     "status": "published"
   },
   {
@@ -1937,6 +2121,14 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "nuclearDeterrence",
+    "title": "Nuclear Deterrence",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1945–present",
+    "status": "published"
   },
   {
     "id": "odyssey",
@@ -2067,6 +2259,14 @@
     "subtype": "Conceptual Foundation",
     "period": "c. 1654 CE – present",
     "summary": "The mathematics of uncertainty — which transformed how civilization manages risk, enabled the insurance industry, statistical medicine, quantum mechanics, and machine learning, and produced an intellectual foreclosure that made prior frameworks for reasoning about uncertain futures permanently inadequate",
+    "status": "published"
+  },
+  {
+    "id": "propaganda",
+    "title": "Propaganda",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
     "status": "published"
   },
   {
@@ -2244,6 +2444,14 @@
     "status": "published"
   },
   {
+    "id": "rwandanGenocide",
+    "title": "The Rwandan Genocide",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "April–July 1994",
+    "status": "published"
+  },
+  {
     "id": "salt",
     "title": "Salt",
     "template": "Foundations",
@@ -2313,6 +2521,14 @@
     "summary": "The infrastructure for removing human waste from populated areas — one of the oldest public health technologies, a system whose presence or absence has determined whether cities could grow beyond a few thousand people, and whose massive construction in the 19th century transformed European and American cities from places where epidemics were normal into places where they were exceptional."
   },
   {
+    "id": "shakespeare",
+    "title": "Shakespeare",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1564–1616",
+    "status": "published"
+  },
+  {
     "id": "siddharthaGautama",
     "title": "Siddhartha Gautama",
     "template": "People",
@@ -2340,6 +2556,14 @@
     "status": "published"
   },
   {
+    "id": "simonBolivar",
+    "title": "Simón Bolívar",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1783–1830",
+    "status": "published"
+  },
+  {
     "id": "simoneDeBeauvoir",
     "title": "Simone de Beauvoir",
     "template": "People",
@@ -2347,15 +2571,6 @@
     "period": "1908–1986",
     "status": "published",
     "qualityTier": "A"
-  },
-  {
-    "id": "slaveTrade",
-    "title": "The Transatlantic Slave Trade",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "c. 1500–1867",
-    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
-    "status": "published"
   },
   {
     "id": "slavery",
@@ -2375,6 +2590,15 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "slaveTrade",
+    "title": "The Transatlantic Slave Trade",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1500–1867",
+    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
+    "status": "published"
   },
   {
     "id": "socialClass",
@@ -2473,6 +2697,14 @@
     "status": "published"
   },
   {
+    "id": "spanishCivilWar",
+    "title": "The Spanish Civil War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1936–1939",
+    "status": "published"
+  },
+  {
     "id": "sparta",
     "title": "Sparta",
     "summary": "The Greek city-state that subordinated all life to military excellence, produced the most feared army in the ancient world, and invented a social system so extreme — the agoge, the helot system, the suppression of individual life — that it has fascinated and disturbed observers from Plato to the present.",
@@ -2488,6 +2720,14 @@
     ],
     "period": "c. 900–146 BCE",
     "qualityTier": "A",
+    "status": "published"
+  },
+  {
+    "id": "spinoza",
+    "title": "Spinoza",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1632–1677",
     "status": "published"
   },
   {
@@ -2569,6 +2809,14 @@
     "status": "published"
   },
   {
+    "id": "theArchive",
+    "title": "The Archive",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published"
+  },
+  {
     "id": "theDivineComedy",
     "title": "The Divine Comedy",
     "template": "Works",
@@ -2595,6 +2843,22 @@
     "status": "published"
   },
   {
+    "id": "theHospital",
+    "title": "The Hospital",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published"
+  },
+  {
+    "id": "theJury",
+    "title": "The Jury",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "12th century–present",
+    "status": "published"
+  },
+  {
     "id": "theMongolConquests",
     "title": "The Mongol Conquests",
     "template": "Events",
@@ -2602,6 +2866,14 @@
     "period": "1206–1368",
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "theNewspaper",
+    "title": "The Newspaper",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1605–present",
+    "status": "published"
   },
   {
     "id": "thePartition",
@@ -2649,6 +2921,22 @@
     "status": "published"
   },
   {
+    "id": "thomasAquinas",
+    "title": "Thomas Aquinas",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1225–1274",
+    "status": "published"
+  },
+  {
+    "id": "thomasJefferson",
+    "title": "Thomas Jefferson",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1743–1826",
+    "status": "published"
+  },
+  {
     "id": "thucydides",
     "title": "Thucydides",
     "summary": "The Athenian general and historian whose account of the Peloponnesian War invented the discipline of history as rigorous political and military analysis — insisting on accurate evidence, rejecting mythological causation, and identifying the deep structural forces that drive states to war in ways that political scientists and strategists still use today.",
@@ -2690,6 +2978,14 @@
     "template": "Concepts",
     "subtype": "Normative Concept",
     "period": "1920s – present",
+    "status": "published"
+  },
+  {
+    "id": "transitionalJustice",
+    "title": "Transitional Justice",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1945–present",
     "status": "published"
   },
   {
@@ -2788,12 +3084,28 @@
     "status": "published"
   },
   {
+    "id": "venice",
+    "title": "Venice",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "697–present",
+    "status": "published"
+  },
+  {
     "id": "vietnamWar",
     "title": "The Vietnam War",
     "template": "Events",
     "subtype": "Extended Process",
     "period": "1955–1975",
     "summary": "A conflict in Southeast Asia in which North Vietnam and its southern allies fought South Vietnam and the United States for two decades, ending in 1975 with communist victory — demonstrating the limits of conventional military superiority against determined guerrilla resistance and transforming American politics, society, and foreign policy.",
+    "status": "published"
+  },
+  {
+    "id": "vladimirLenin",
+    "title": "Vladimir Lenin",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1870–1924",
     "status": "published"
   },
   {
@@ -2838,6 +3150,14 @@
     "subtype": "Material Foundation",
     "period": "c. 10,000 BCE – present",
     "summary": "The grass that made civilization possible — by enabling the settled surplus agriculture that produced cities, writing, mathematics, states, and the civilizational dependency structure that still governs global food security",
+    "status": "published"
+  },
+  {
+    "id": "winstonChurchill",
+    "title": "Winston Churchill",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1874–1965",
     "status": "published"
   },
   {
@@ -2890,254 +3210,6 @@
     "subtype": "Conceptual Foundation",
     "period": "c. 628 CE (arithmetic) – present",
     "summary": "The concept that transformed mathematics from a tool for counting into a tool for describing the physical world — making algebra, calculus, and computing structurally possible, and sitting invisibly at the foundation of every calculation that modern civilization performs",
-    "status": "published"
-  },
-  {
-    "id": "vladimirLenin",
-    "title": "Vladimir Lenin",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1870–1924",
-    "status": "published"
-  },
-  {
-    "id": "abrahamLincoln",
-    "title": "Abraham Lincoln",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1809–1865",
-    "status": "published"
-  },
-  {
-    "id": "spanishCivilWar",
-    "title": "The Spanish Civil War",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1936–1939",
-    "status": "published"
-  },
-  {
-    "id": "evolution",
-    "title": "Evolution",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "1859–present",
-    "status": "published"
-  },
-  {
-    "id": "theNewspaper",
-    "title": "The Newspaper",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 1605–present",
-    "status": "published"
-  },
-  {
-    "id": "maoZedong",
-    "title": "Mao Zedong",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1893–1976",
-    "status": "published"
-  },
-  {
-    "id": "fallOfTheBerlinWall",
-    "title": "The Fall of the Berlin Wall",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1989",
-    "status": "published"
-  },
-  {
-    "id": "venice",
-    "title": "Venice",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "697–present",
-    "status": "published"
-  },
-  {
-    "id": "freud",
-    "title": "Sigmund Freud",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1856–1939",
-    "status": "published"
-  },
-  {
-    "id": "theJury",
-    "title": "The Jury",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "12th century–present",
-    "status": "published"
-  },
-  {
-    "id": "winstonChurchill",
-    "title": "Winston Churchill",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1874–1965",
-    "status": "published"
-  },
-  {
-    "id": "thomasJefferson",
-    "title": "Thomas Jefferson",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1743–1826",
-    "status": "published"
-  },
-  {
-    "id": "koreanWar",
-    "title": "The Korean War",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1950–1953",
-    "status": "published"
-  },
-  {
-    "id": "debt",
-    "title": "Debt",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published"
-  },
-  {
-    "id": "dutchRepublic",
-    "title": "The Dutch Republic",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "1581–1795",
-    "status": "published"
-  },
-  {
-    "id": "icelandicSagas",
-    "title": "The Icelandic Sagas",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 1200–1400 CE",
-    "status": "published"
-  },
-  {
-    "id": "iranianRevolution",
-    "title": "The Iranian Revolution",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1979",
-    "status": "published"
-  },
-  {
-    "id": "abbasidCaliphate",
-    "title": "The Abbasid Caliphate",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "750–1258 CE",
-    "status": "published"
-  },
-  {
-    "id": "propaganda",
-    "title": "Propaganda",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published"
-  },
-  {
-    "id": "contract",
-    "title": "The Contract",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published"
-  },
-  {
-    "id": "nelsonMandela",
-    "title": "Nelson Mandela",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1918–2013",
-    "status": "published"
-  },
-  {
-    "id": "simonBolivar",
-    "title": "Simón Bolívar",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1783–1830",
-    "status": "published"
-  },
-  {
-    "id": "rwandanGenocide",
-    "title": "The Rwandan Genocide",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "April–July 1994",
-    "status": "published"
-  },
-  {
-    "id": "theHospital",
-    "title": "The Hospital",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
-    "status": "published"
-  },
-  {
-    "id": "cicero",
-    "title": "Cicero",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "106–43 BCE",
-    "status": "published"
-  },
-  {
-    "id": "humanitarianIntervention",
-    "title": "Humanitarian Intervention",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "1990s–present",
-    "status": "published"
-  },
-  {
-    "id": "hiroshimaNagasaki",
-    "title": "The Atomic Bombings of Hiroshima and Nagasaki",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "August 6–9, 1945",
-    "status": "published"
-  },
-  {
-    "id": "indianIndependenceMovement",
-    "title": "The Indian Independence Movement",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1857–1947",
-    "status": "published"
-  },
-  {
-    "id": "shakespeare",
-    "title": "Shakespeare",
-    "template": "People",
-    "subtype": "Creative Figure",
-    "period": "1564–1616",
-    "status": "published"
-  },
-  {
-    "id": "thomasAquinas",
-    "title": "Thomas Aquinas",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1225–1274",
-    "status": "published"
-  },
-  {
-    "id": "theArchive",
-    "title": "The Archive",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
     "status": "published"
   }
 ]
