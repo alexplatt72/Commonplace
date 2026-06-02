@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "status": "published",
   "qualityTier": "B",
-  "template": "Periods",
+  "template": "Events",
   "subtype": "Period",
   "period": "1947–1991",
   "title": "The Cold War",
@@ -132,6 +132,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "The bombings inaugurated the nuclear age that defined the Cold War — demonstrating what the superpower competition would be about and establishing the logic of deterrence that governed international security for four decades."
+    },
+    {
+      "label": "Nuclear Deterrence",
+      "entryId": "nuclearDeterrence",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Nuclear deterrence was the organizing logic of Cold War strategy — shaping the arms race, alliance systems, crisis management protocols, and the political relationship between the superpowers for four decades."
     }
   ],
   "reference": [
