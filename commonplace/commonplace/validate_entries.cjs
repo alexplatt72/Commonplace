@@ -1,261 +1,816 @@
-// validate_entries_v2.js — Commonplace entry validator
-// Rabbit hole schema: { label, entryId, status, relationship, reason }
-// status: "published" | "planned"
-// relationship: Foundational | Consequential | Thematic | Parallel | Gateway
-// Gateway entries have no entryId or status
+// validate_entries.cjs — Commonplace entry validator
+// Version 2.0 — Restructured per updated specification
+//
+// Priority hierarchy:
+//   FAIL    — blocks publication (schema, layer structure, layer collapse, beginner limits, broken links)
+//   WARNING — should be reviewed before publication (layer progression, AI failure modes, graph health)
+//   ADVISORY — useful diagnostics, track across sessions
+//
+// Run:  node validate_entries.cjs <entries_dir> [--verbose] [--entry <id>]
 
-const fs = require('fs');
+'use strict';
+
+const fs   = require('fs');
 const path = require('path');
 
-const ENTRIES_DIR = process.argv[2] || 'public/entries';
+const ENTRIES_DIR   = process.argv[2] || 'public/entries';
+const VERBOSE       = process.argv.includes('--verbose');
+const SINGLE_ENTRY  = (() => {
+  const i = process.argv.indexOf('--entry');
+  return i !== -1 ? process.argv[i + 1] : null;
+})();
 
-const manifest = JSON.parse(fs.readFileSync(path.join(ENTRIES_DIR, 'manifest.json'), 'utf8'));
-const manifestIds = new Set(manifest.map(e => e.id));
+// ── Manifest ──────────────────────────────────────────────────────────────────
+const manifestPath = path.join(ENTRIES_DIR, 'manifest.json');
+const manifest     = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+const manifestIds  = new Set(manifest.map(e => e.id));
 
-// ── Template section maps ────────────────────────────────────────────────────
+// ── Template → subtype → section keys ────────────────────────────────────────
 const SUBTYPE_SECTIONS = {
-  'Period':            ['thePeriod','theBoundaries','theConditions','internalDiversity','longConsequences','periodizationDebate'],
-  'Movement':          ['theMovement','theOrigins','howItOrganized','whatItAchieved','contestedLegacy','whyItEnded'],
-  'Extended Process':  ['theEvent','context','theRecord','phases','mechanics','transformation','causation','significance'],
-  'Single Event':      ['theEvent','context','theRecord','immediateOutcome','longConsequences','causation'],
-  'Historical Actor':  ['theFigure','worldInherited','howExercisedPower','whatTheyChanged','legendVsRecord'],
-  'Intellectual':      ['theFigure','theFormativeWorld','theCoreIdeas','theInfluence','theDisputes'],
-  'Material Foundation':['theFoundation','howItArrived','whatItReorganized','thePoliticalEconomy','theFeedback','presentAndFuture'],
-  'Technology':        ['theTechnology','origins','howItSpread','whatItReplaced','consequences','presentState'],
-  'Concept':           ['theConcept','origins','howItSpread','coreVariants','inPractice','theDisputes'],
-  'Narrative':         ['theWork','momentOfMaking','whatItDoes','whatItChanged','howBeenRead'],
-  'Argument':          ['theArgument','context','theCase','theCountercase','influence'],
-  'Philosophical Text':['theWork','theContext','theCoreArgument','theInfluence','enduring'],
+  // People
+  'Historical Actor':                ['theFigure','worldInherited','howExercisedPower','whatTheyChanged','legendVsRecord'],
+  'Thinker':                         ['theFigure','worldOfIdeas','centralIdea','howSpread','contestedInheritance'],
+  'Creative Figure':                 ['theFigure','bodyOfWork','howBeenRead','whyItEndured','contestedInheritance'],
+  // Events
+  'Discrete Event':                  ['theEvent','context','theMoment','theRecord','causation','significance'],
+  'Extended Process':                ['theEvent','context','theRecord','phases','mechanics','transformation','causation','significance'],
+  'Threshold Moment — Restructured': ['thePivot','theRecord','context','secondOrderEffects','longShadow','causation'],
+  // Concepts
+  'Analytical Concept':              ['theConcept','problemItSolves','howItWorks','whatItExplains','whereItBreaksDown','usedAndMisusedC'],
+  'Normative Concept':               ['theConcept','problemItAddresses','competingTraditions','politicalStakes','contestedHistoryC','whereDebateStands'],
+  // Periods & Movements
+  'Period':                          ['thePeriod','theBoundaries','theConditions','internalDiversity','longConsequences','periodizationDebate'],
+  'Movement':                        ['theMovement','origins','coreCommitments','internalTensions','whatItChanged','legacyAndLimits'],
+  // Places
+  'Site':                            ['thePlace','physicalWorld','theLayers','whatItBecame','whoClaimsIt','theLongLife'],
+  'System':                          ['theSystem','physicalLogic','whatMovedThroughIt','whoOrganizedIt','whatItMadePossible','theLongLife'],
+  // Works
+  'Foundational Text':               ['theText','momentOfMaking','whatItClaims','interpretiveEcosystem','usedAndWeaponized'],
+  'Narrative':                       ['theWork','momentOfMaking','whatItDoes','whatItChanged','howBeenRead'],
+  // Natural Phenomena — unified template (both subtypes share identical section keys)
+  // Subtype ('Natural Event', 'Natural Force') preserved for browse/filter but does not alter keys
+  'Natural Event':                   ['theForce','theRecord','howPeopleKnew','whatItDidToSocieties','theUnequal','theLongConsequence'],
+  'Natural Force':                   ['theForce','theRecord','howPeopleKnew','whatItDidToSocieties','theUnequal','theLongConsequence'],
+  // Foundations
+  'Material Foundation':             ['theFoundation','howItArrived','whatItReorganized','thePoliticalEconomy','theFeedback','presentAndFuture'],
+  'Conceptual Foundation':           ['theFoundation','howItArrived','whatItReorganized','thePoliticalEconomy','theFeedback','presentAndFuture'],
+  'Biological Foundation':           ['theFoundation','howItArrived','whatItReorganized','thePoliticalEconomy','theFeedback','presentAndFuture'],
+  // Policy
+  'Policy Landscape':                ['theLandscape','theHistoricalArc','theValueFramework','theEvidenceEcosystem','theInternationalComparison','theCurrentDebates'],
+  'Policy Question':                 ['theQuestion','theStakes','theValueFramework','theEvidence','theOptions','theInternationalEvidence'],
 };
 
-const VALID_RELATIONSHIPS = new Set(['Foundational','Consequential','Thematic','Parallel','Gateway']);
-const VALID_STATUSES = new Set(['published','planned']);
+const VALID_RELATIONSHIPS = new Set([
+  'Foundational','Consequential','Thematic','Parallel','Gateway','Contrasting','Precursor','Descendant'
+]);
+const VALID_RH_STATUSES = new Set(['published','planned']);
 
-// ── Readability helpers ──────────────────────────────────────────────────────
+// ── Text helpers ──────────────────────────────────────────────────────────────
+
+/** Split text into sentences. Handles BCE/CE, abbreviations, decimals. */
+function splitSentences(text) {
+  // Protect known abbreviations and patterns before splitting
+  const protected_ = text
+    .replace(/\b(c\.|ca\.|vs\.|etc\.|Dr\.|Mr\.|Mrs\.|St\.|Jr\.|Sr\.|Prof\.|e\.g\.|i\.e\.|cf\.)/g, m => m.replace(/\./g, '⊙'))
+    .replace(/\b(\d+)\.(BCE|CE|AD|BC)\b/g, '$1⊙$2')
+    .replace(/(\d)\.(\d)/g, '$1⊙$2');  // decimals
+
+  const raw = protected_.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [protected_];
+  return raw.map(s => s.replace(/⊙/g, '.').trim()).filter(s => s.length > 0);
+}
+
 function avgSentenceLength(text) {
-  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-  const words = sentences.map(s => s.trim().split(/\s+/).length);
-  return words.reduce((a,b)=>a+b,0) / words.length;
+  const sents = splitSentences(text);
+  if (!sents.length) return 0;
+  return sents.reduce((a, s) => a + wordCount(s), 0) / sents.length;
 }
+
 function maxSentenceLength(text) {
-  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-  return Math.max(...sentences.map(s => s.trim().split(/\s+/).length));
+  const sents = splitSentences(text);
+  if (!sents.length) return 0;
+  return Math.max(...sents.map(s => wordCount(s)));
 }
-function wordCount(text) { return text.trim().split(/\s+/).length; }
 
-// ── Main validator ───────────────────────────────────────────────────────────
-const results = { pass:0, fail:0, fatal:[], required:[], advisory:[] };
-let totalPlanned = 0, totalReadabilityAdvisory = 0, totalQualityAdvisory = 0;
+function longestSentence(text) {
+  const sents = splitSentences(text);
+  if (!sents.length) return '';
+  return sents.reduce((a, s) => wordCount(s) > wordCount(a) ? s : a, '');
+}
 
-const files = fs.readdirSync(ENTRIES_DIR)
+function wordCount(text) {
+  return (text || '').trim().split(/\s+/).filter(w => w.length > 0).length;
+}
+
+/** Compute word-level bigram Jaccard similarity between two texts. */
+function similarity(textA, textB) {
+  if (!textA || !textB) return 0;
+  const bigrams = t => {
+    const words = t.toLowerCase().split(/\s+/);
+    const set = new Set();
+    for (let i = 0; i < words.length - 1; i++) set.add(words[i] + '_' + words[i+1]);
+    return set;
+  };
+  const a = bigrams(textA);
+  const b = bigrams(textB);
+  let intersection = 0;
+  for (const bg of a) if (b.has(bg)) intersection++;
+  const union = a.size + b.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
+
+/** Get all section text from a layer as flat string. */
+function layerText(layerObj, sectionKeys) {
+  if (!layerObj || !sectionKeys) return '';
+  return sectionKeys.map(k => layerObj[k] || '').join(' ');
+}
+
+/** Get per-section text map for a layer. */
+function sectionTexts(layerObj, sectionKeys) {
+  const out = {};
+  if (!layerObj || !sectionKeys) return out;
+  for (const k of sectionKeys) out[k] = layerObj[k] || '';
+  return out;
+}
+
+// ── AI failure mode phrase lists ──────────────────────────────────────────────
+const PROCEDURAL_NARRATION_PHRASES = [
+  'what makes this analytically interesting',
+  'it is worth noting that',
+  'this is significant because',
+  'in order to understand',
+  'to understand x, we must',
+  'this entry will',
+  'there are several key',
+  'in what follows',
+  'as we will see',
+];
+
+const ANTI_DECLARATIVE_PHRASES = [
+  'one of the most important',
+  'one of the most significant',
+  'one of the most consequential',
+  'one of the most influential',
+  'cannot be overstated',
+  'profoundly shaped',
+  'had a profound impact',
+  'fundamentally transformed',
+  'fundamentally changed',
+  'fundamentally altered',
+  'revolutionized',
+];
+
+const FORMULAIC_CN_OPENERS = [
+  /^for [a-z][\w\s]+,\s+[a-z]/i,         // "For the X tradition, Y was..."
+  /^from (within|the perspective)/i,       // "From within the X tradition..."
+  /^(the|this) [a-z][\w\s]+ (saw|viewed|understood|experienced)/i,
+];
+
+const COMMERCE_NOTE_TEMPLATES = [
+  'a comprehensive history',
+  'a complete account',
+  'an essential overview',
+  'a detailed examination',
+  'covers all aspects',
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MAIN VALIDATION LOOP
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Track per-file results for the final report
+const allResults = [];
+let globalFails = 0, globalPasses = 0;
+let totalPlannedLinks = 0;
+
+const allFiles = fs.readdirSync(ENTRIES_DIR)
   .filter(f => f.endsWith('.json') && f !== 'manifest.json' && f !== 'searchIndex.json');
 
-for (const fname of files) {
+const filesToProcess = SINGLE_ENTRY
+  ? allFiles.filter(f => f === `${SINGLE_ENTRY}.json`)
+  : allFiles;
+
+// Track all IDs seen for duplicate detection
+const seenIds = new Map(); // id → filename
+
+for (const fname of filesToProcess) {
   const raw = fs.readFileSync(path.join(ENTRIES_DIR, fname), 'utf8');
   let entry;
   try { entry = JSON.parse(raw); }
-  catch(e) { results.fatal.push(`${fname}: invalid JSON — ${e.message}`); results.fail++; continue; }
-
-  const id = entry.id || fname.replace('.json','');
-  const issues = { fatal:[], required:[], advisory:[] };
-
-  // ── Required top-level fields ──────────────────────────────────────────────
-  for (const f of ['id','title','template','subtype','period','summary','hook',
-                   'themes','content','research','comparativeNarrative',
-                   'rabbitHole','reference','commerce','popularCulture']) {
-    if (!entry[f]) issues.required.push(`${id}: missing required field: ${f}`);
+  catch (e) {
+    allResults.push({
+      id: fname,
+      fname,
+      fails: [`PARSE ERROR: ${e.message}`],
+      warnings: [],
+      advisories: [],
+      stats: null,
+    });
+    globalFails++;
+    continue;
   }
-  if (entry.schemaVersion !== 1) issues.required.push(`${id}: schemaVersion must be 1`);
-  if (!['published','draft'].includes(entry.status)) issues.required.push(`${id}: status must be "published" or "draft"`);
-  if (!['A','B','C'].includes(entry.qualityTier)) issues.advisory.push(`${id}: qualityTier should be A, B, or C`);
 
-  // ── Content layers ─────────────────────────────────────────────────────────
+  const id       = entry.id || fname.replace('.json', '');
+  const fails    = [];
+  const warnings = [];
+  const advisories = [];
+
+  // ── 1. SCHEMA INTEGRITY ────────────────────────────────────────────────────
+
+  // 1.1 Required top-level fields
+  const REQUIRED_FIELDS = [
+    'id','schemaVersion','status','qualityTier','template','subtype',
+    'period','title','summary','hook','themes','content',
+    'research','comparativeNarrative','rabbitHole','reference','commerce','popularCulture'
+  ];
+  for (const f of REQUIRED_FIELDS) {
+    if (entry[f] === undefined || entry[f] === null || entry[f] === '')
+      fails.push(`Missing required field: ${f}`);
+  }
+
+  // 1.2 Schema version
+  if (entry.schemaVersion !== 1)
+    fails.push(`schemaVersion must be 1 (got: ${entry.schemaVersion})`);
+
+  // 1.3 Status
+  if (!['published','draft'].includes(entry.status))
+    fails.push(`status must be "published" or "draft" (got: "${entry.status}")`);
+
+  // 1.4 Quality tier (advisory only)
+  if (!['A','B','C'].includes(entry.qualityTier))
+    advisories.push(`qualityTier should be A, B, or C (got: "${entry.qualityTier}")`);
+
+  // 1.5 Template/subtype pairing
+  const sectionKeys = SUBTYPE_SECTIONS[entry.subtype];
+  if (!sectionKeys)
+    warnings.push(`Unknown subtype: "${entry.subtype}" — section key validation skipped`);
+
+  // 1.6 ID format: camelCase, no spaces or special chars
+  if (entry.id && !/^[a-zA-Z][a-zA-Z0-9]*$/.test(entry.id))
+    fails.push(`id "${entry.id}" is not valid camelCase (no spaces or special chars)`);
+
+  // 1.7 ID matches filename
+  const expectedId = fname.replace('.json', '');
+  if (entry.id && entry.id !== expectedId)
+    fails.push(`id "${entry.id}" does not match filename "${fname}"`);
+
+  // 1.8 ID uniqueness (across this run)
+  if (entry.id) {
+    if (seenIds.has(entry.id))
+      fails.push(`Duplicate id "${entry.id}" — also in ${seenIds.get(entry.id)}`);
+    else
+      seenIds.set(entry.id, fname);
+  }
+
+  // 1.9 Manifest synchronization
+  if (entry.id && entry.status === 'published' && !manifestIds.has(entry.id))
+    fails.push(`Entry "${entry.id}" is status:published but not in manifest.json`);
+
+  // ── 2. LAYER ARCHITECTURE ─────────────────────────────────────────────────
+
   const content = entry.content || {};
+
+  // 2.1 All four content layers present
   for (const layer of ['beginner','general','advanced']) {
-    if (!content[layer]) { issues.required.push(`${id}: missing content.${layer}`); continue; }
+    if (!content[layer])
+      fails.push(`Missing content.${layer}`);
   }
   const edu = content.educational;
-  if (!edu) { issues.required.push(`${id}: missing content.educational`); }
-  else {
+  if (!edu) {
+    fails.push(`Missing content.educational`);
+  } else {
+    // 2.2 Educational foundation + interpretation sublayers
     for (const sec of ['foundation','interpretation']) {
-      if (!edu[sec]) issues.required.push(`${id}: missing content.educational.${sec}`);
-      else {
-        const fSec = edu[sec];
-        const secFields = sec === 'foundation' ? ['theStory','theDebate','whyItMatters','questions'] : ['scholarlyConversation','evidenceAndLimits','takingAPosition','questions'];
-        for (const f of secFields) {
-          if (!fSec[f]) issues.required.push(`${id}: missing content.educational.${sec}.${f}`);
-        }
-        if (Array.isArray(fSec.questions) && fSec.questions.length < 2)
-          issues.required.push(`${id}: content.educational.${sec}.questions must have at least 2 items`);
+      if (!edu[sec]) {
+        fails.push(`Missing content.educational.${sec}`);
+        continue;
       }
+      const expectedFields = sec === 'foundation'
+        ? ['theStory','theDebate','whyItMatters','questions']
+        : ['scholarlyConversation','evidenceAndLimits','takingAPosition','questions'];
+      for (const f of expectedFields) {
+        if (!edu[sec][f])
+          fails.push(`Missing content.educational.${sec}.${f}`);
+      }
+      // 2.3 Questions array: exactly 2 items
+      const qs = edu[sec]?.questions;
+      if (!Array.isArray(qs) || qs.length < 2)
+        fails.push(`content.educational.${sec}.questions must have at least 2 items (has ${Array.isArray(qs) ? qs.length : 0})`);
     }
   }
 
-  // ── Subtype sections ───────────────────────────────────────────────────────
-  const expectedSections = SUBTYPE_SECTIONS[entry.subtype];
-  if (!expectedSections) {
-    issues.advisory.push(`${id}: unknown subtype "${entry.subtype}"`);
-  } else {
+  // 2.4 Required section keys in all three content tiers
+  if (sectionKeys) {
     for (const layer of ['beginner','general','advanced']) {
       if (!content[layer]) continue;
-      for (const sec of expectedSections) {
+      for (const sec of sectionKeys) {
         const val = content[layer][sec];
-        if (!val || val.length < 80)
-          issues.required.push(`${id}: missing or too short: content.${layer}.${sec}`);
+        if (!val || wordCount(val) < 30)
+          fails.push(`Missing or too short: content.${layer}.${sec} (${wordCount(val || '')} words, min 30)`);
       }
     }
   }
 
-  // ── Research ───────────────────────────────────────────────────────────────
+  // ── 3. BEGINNER LAYER QUALITY ─────────────────────────────────────────────
+
+  const beginnerStats = { avg: 0, max: 0, totalWords: 0, maxSent: '', sectionWords: {} };
+
+  if (content.beginner && sectionKeys) {
+    const beginnerSections = sectionKeys.map(k => content.beginner[k] || '');
+
+    // Per-section word count (tracked for stats, no hard limit)
+    for (const k of sectionKeys) {
+      const secText = content.beginner[k] || '';
+      const secWc = wordCount(secText);
+      beginnerStats.sectionWords[k] = secWc;
+    }
+
+    const allBeginnerText = beginnerSections.join(' ');
+    const avg = avgSentenceLength(allBeginnerText);
+    const max = maxSentenceLength(allBeginnerText);
+    const totalWc = wordCount(allBeginnerText);
+    const longest = longestSentence(allBeginnerText);
+
+    beginnerStats.avg = avg;
+    beginnerStats.max = max;
+    beginnerStats.totalWords = totalWc;
+    beginnerStats.maxSent = longest;
+
+    // 3.2 Average sentence length > 18 = FAIL
+    if (avg > 18)
+      fails.push(`Beginner avg sentence length ${avg.toFixed(1)} words — hard limit is 18`);
+
+    // 3.3 Any sentence > 35 words = FAIL
+    if (max > 35)
+      fails.push(`Beginner has sentence >35 words (max: ${max}) — "${longest.substring(0,80)}..."`);
+
+    // 3.4 Total word count > 700 = FAIL
+    if (totalWc > 700)
+      fails.push(`Beginner total word count ${totalWc} — hard limit is 700`);
+
+    // 3.5 Total word count < 400 = WARNING
+    if (totalWc < 400)
+      warnings.push(`Beginner total word count ${totalWc} is low (target 400–700)`);
+  }
+
+  // ── 4. LAYER COLLAPSE DETECTION ───────────────────────────────────────────
+
+  const layerStats = { bwc: 0, gwc: 0, awc: 0, bgSim: 0, gaSim: 0, baSim: 0, sectionSims: {} };
+
+  if (sectionKeys && content.beginner && content.general && content.advanced) {
+    const bText = layerText(content.beginner, sectionKeys);
+    const gText = layerText(content.general, sectionKeys);
+    const aText = layerText(content.advanced, sectionKeys);
+
+    layerStats.bwc = wordCount(bText);
+    layerStats.gwc = wordCount(gText);
+    layerStats.awc = wordCount(aText);
+
+    // Whole-layer similarities
+    const bgSim = similarity(bText, gText);
+    const gaSim = similarity(gText, aText);
+    const baSim = similarity(bText, aText);
+
+    layerStats.bgSim = bgSim;
+    layerStats.gaSim = gaSim;
+    layerStats.baSim = baSim;
+
+    // 4.1 Whole-layer collapse: Hard Fail at > 0.85
+    if (bgSim > 0.85)
+      fails.push(`Layer collapse: Beginner ↔ General similarity ${(bgSim*100).toFixed(0)}% (hard limit 85%) — layers are effectively identical`);
+    else if (bgSim > 0.65)
+      warnings.push(`Layer similarity warning: Beginner ↔ General ${(bgSim*100).toFixed(0)}% (warn above 65%)`);
+
+    if (gaSim > 0.85)
+      fails.push(`Layer collapse: General ↔ Advanced similarity ${(gaSim*100).toFixed(0)}% (hard limit 85%)`);
+    else if (gaSim > 0.65)
+      warnings.push(`Layer similarity warning: General ↔ Advanced ${(gaSim*100).toFixed(0)}%`);
+
+    if (baSim > 0.85)
+      fails.push(`Layer collapse: Beginner ↔ Advanced similarity ${(baSim*100).toFixed(0)}% (hard limit 85%)`);
+    else if (baSim > 0.65)
+      warnings.push(`Layer similarity warning: Beginner ↔ Advanced ${(baSim*100).toFixed(0)}%`);
+
+    // 4.2 Section-level collapse detection (more granular)
+    for (const k of sectionKeys) {
+      const bSec = (content.beginner[k] || '');
+      const gSec = (content.general[k] || '');
+      const aSec = (content.advanced[k] || '');
+
+      // Only check sections with enough content to be meaningful
+      if (wordCount(bSec) < 40 || wordCount(gSec) < 40) continue;
+
+      const secBG = similarity(bSec, gSec);
+      const secGA = wordCount(aSec) >= 40 ? similarity(gSec, aSec) : 0;
+
+      layerStats.sectionSims[k] = { bg: secBG, ga: secGA };
+
+      if (secBG > 0.85)
+        fails.push(`Section collapse [${k}]: Beginner ↔ General ${(secBG*100).toFixed(0)}% — section is effectively copied across layers`);
+      else if (secBG > 0.65)
+        warnings.push(`Section similarity [${k}]: Beginner ↔ General ${(secBG*100).toFixed(0)}%`);
+
+      if (secGA > 0.85)
+        fails.push(`Section collapse [${k}]: General ↔ Advanced ${(secGA*100).toFixed(0)}%`);
+      else if (secGA > 0.65)
+        warnings.push(`Section similarity [${k}]: General ↔ Advanced ${(secGA*100).toFixed(0)}%`);
+    }
+
+    // 4.3 Layer progression ratios removed — fired on 91% of corpus at median ~1.0.
+    //     Depth quality is caught by similarity detection (4.2) and the Coherence Check.
+
+    // 4.4 Within-layer duplicate passage detection
+    // Splits each layer into paragraphs and checks pairwise similarity.
+    // Catches near-verbatim repetition within a single layer (assembly errors).
+    // Threshold: 0.6 similarity between paragraphs of >= 30 words each.
+    // Join sections with \n\n (not space) to preserve paragraph boundaries between sections.
+    const splitParagraphs = (text) =>
+      text.split(/\n\n+/).map(p => p.trim()).filter(p => wordCount(p) >= 30);
+
+    const layerTextWithBreaks = (layerObj, keys) =>
+      keys.map(k => layerObj[k] || '').join('\n\n');
+
+    for (const [layerName, layerObj] of [['beginner', content.beginner], ['general', content.general], ['advanced', content.advanced]]) {
+      if (!layerObj) continue;
+      const fullText = layerTextWithBreaks(layerObj, sectionKeys);
+      const paras = splitParagraphs(fullText);
+      for (let i = 0; i < paras.length; i++) {
+        for (let j = i + 1; j < paras.length; j++) {
+          const sim = similarity(paras[i], paras[j]);
+          if (sim > 0.6) {
+            const preview = paras[i].substring(0, 60).replace(/\n/g, ' ');
+            fails.push(`Duplicate passage [${layerName}]: paragraphs ${i+1} and ${j+1} share ${(sim*100).toFixed(0)}% similarity — "${preview}..."`);
+          }
+        }
+      }
+    }
+  }
+
+  // ── 5. RESEARCH ───────────────────────────────────────────────────────────
+
   const research = entry.research || [];
-  if (research.length < 3) issues.required.push(`${id}: research needs at least 3 items`);
-  const hasUnrecoverable = research.some(r => r.status === 'unrecoverable');
-  if (!hasUnrecoverable) issues.required.push(`${id}: research must include at least one "unrecoverable" item`);
-  for (const [i,r] of research.entries()) {
+
+  // 5.1 Minimum count: 3
+  if (research.length < 3)
+    fails.push(`research needs at least 3 items (has ${research.length})`);
+
+  // 5.2 Required fields per item
+  for (const [i, r] of research.entries()) {
     if (!r.status || !r.topic || !r.content)
-      issues.required.push(`${id}: research[${i}] missing status, topic, or content`);
-    if (!['established','emerging','unrecoverable'].includes(r.status))
-      issues.required.push(`${id}: research[${i}] invalid status "${r.status}"`);
+      fails.push(`research[${i}] missing required field (status, topic, or content)`);
+    if (r.status && !['established','emerging','unrecoverable'].includes(r.status))
+      fails.push(`research[${i}] invalid status "${r.status}" (must be established|emerging|unrecoverable)`);
   }
 
-  // ── Comparative narrative ──────────────────────────────────────────────────
+  // 5.3 Unrecoverable advisory
+  if (research.length >= 3 && !research.some(r => r.status === 'unrecoverable'))
+    advisories.push(`research: no "unrecoverable" item — consider adding limits-of-knowledge item`);
+
+  // ── 6. COMPARATIVE NARRATIVE ──────────────────────────────────────────────
+
   const cn = entry.comparativeNarrative || [];
-  if (cn.length < 3) issues.required.push(`${id}: comparativeNarrative needs at least 3 items`);
-  for (const [i,c] of cn.entries()) {
+
+  // 6.1 Minimum count: 3
+  if (cn.length < 3)
+    fails.push(`comparativeNarrative needs at least 3 items (has ${cn.length})`);
+
+  // 6.2 Required fields per item
+  for (const [i, c] of cn.entries()) {
     if (!c.perspective || !c.name || !c.content)
-      issues.required.push(`${id}: comparativeNarrative[${i}] missing perspective, name, or content`);
+      fails.push(`comparativeNarrative[${i}] missing required field (perspective, name, or content)`);
   }
 
-  // ── Rabbit holes (new schema) ──────────────────────────────────────────────
-  const rhs = entry.rabbitHole || [];
-  if (rhs.length < 4) issues.required.push(`${id}: rabbitHole needs at least 4 items`);
-  let entryPlanned = 0;
-  for (const [i,rh] of rhs.entries()) {
-    if (!rh.label) { issues.required.push(`${id}: rabbitHole[${i}] missing label`); continue; }
-    if (!rh.reason) issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.label}" missing reason`);
+  // 6.3 Comparative narrative quality is an editorial judgment, not a word count.
+  //     No automated check beyond required fields (6.2 above).
 
+  // ── 7. RABBIT HOLES ───────────────────────────────────────────────────────
+
+  const rhs = entry.rabbitHole || [];
+  let entryPlannedCount = 0;
+
+  // 7.1 Minimum count: 4 (was 5, reduced after Gateway items removed from rabbit holes)
+  if (rhs.length < 4)
+    fails.push(`rabbitHole needs at least 4 items (has ${rhs.length})`);
+
+  // 7.2 Gateway relationship type removed — reading recommendations belong in Commerce.
+
+  // 7.3 Self-referential link
+  for (const [i, rh] of rhs.entries()) {
+    if (rh.entryId && rh.entryId === entry.id)
+      fails.push(`rabbitHole[${i}] "${rh.label}" is self-referential (entryId === entry id)`);
+  }
+
+  // 7.4 Per-item validation
+  for (const [i, rh] of rhs.entries()) {
+    if (!rh.label)
+      fails.push(`rabbitHole[${i}] missing label`);
+    if (!rh.reason)
+      warnings.push(`rabbitHole[${i}] "${rh.label || '?'}" missing reason field`);
     if (!rh.relationship) {
-      issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.label}" missing relationship`);
+      fails.push(`rabbitHole[${i}] "${rh.label || '?'}" missing relationship`);
       continue;
     }
     if (!VALID_RELATIONSHIPS.has(rh.relationship)) {
-      issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.label}" invalid relationship "${rh.relationship}"`);
+      fails.push(`rabbitHole[${i}] "${rh.label || '?'}" invalid relationship "${rh.relationship}"`);
       continue;
     }
 
-    if (rh.relationship === 'Gateway') {
-      // Gateway: no entryId or status needed
-      if (rh.entryId) issues.advisory.push(`${id}: rabbitHole[${i}] Gateway should not have entryId`);
-      continue;
-    }
+    // Gateway: valid for backward compatibility but no longer recommended.
+    // Commerce section handles reading recommendations better.
+    if (rh.relationship === 'Gateway') continue; // no entryId required
 
-    // Non-Gateway: must have entryId and status
+    // entryId + status required for all non-Gateway relationship types
     if (!rh.entryId) {
-      issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.label}" missing entryId`);
+      warnings.push(`rabbitHole[${i}] "${rh.label}" missing entryId (use status:planned if entry doesn't exist yet)`);
       continue;
     }
     if (!rh.status) {
-      issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.label}" missing status`);
+      warnings.push(`rabbitHole[${i}] "${rh.label}" missing status field`);
       continue;
     }
-    if (!VALID_STATUSES.has(rh.status)) {
-      issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.label}" invalid status "${rh.status}"`);
+    if (!VALID_RH_STATUSES.has(rh.status)) {
+      warnings.push(`rabbitHole[${i}] "${rh.label}" invalid status "${rh.status}"`);
       continue;
     }
 
-    const inManifest = manifestIds.has(rh.entryId);
-    if (rh.status === 'published' && !inManifest) {
-      // Broken link — published but not in manifest
-      issues.required.push(`${id}: rabbitHole[${i}] broken link — "${rh.entryId}" is status:published but not in manifest`);
-    } else if (rh.status === 'planned' && inManifest) {
-      // Stale planned — entry now exists, update to published
-      issues.advisory.push(`${id}: rabbitHole[${i}] "${rh.entryId}" is in manifest — update status to "published"`);
-      entryPlanned++;
-    } else if (rh.status === 'planned') {
-      entryPlanned++;
-    }
+    // Published link integrity
+    if (rh.status === 'published' && !manifestIds.has(rh.entryId))
+      fails.push(`rabbitHole[${i}] broken link — "${rh.entryId}" is status:published but not in manifest`);
+
+    // Stale planned link (exists in manifest but still marked planned)
+    if (rh.status === 'planned' && manifestIds.has(rh.entryId))
+      warnings.push(`rabbitHole[${i}] "${rh.entryId}" is now in manifest — upgrade status from "planned" to "published"`);
+
+    if (rh.status === 'planned') entryPlannedCount++;
   }
-  if (entryPlanned > 0) totalPlanned += entryPlanned;
+  totalPlannedLinks += entryPlannedCount;
 
-  // ── References (Tier A: 5+) ────────────────────────────────────────────────
+  // ── 8. REFERENCES ─────────────────────────────────────────────────────────
+
   const refs = entry.reference || [];
-  if (entry.qualityTier === 'A' && refs.length < 5)
-    issues.advisory.push(`${id}: Tier A entry should have 5+ references (has ${refs.length})`);
-  else if (refs.length < 3)
-    issues.required.push(`${id}: references needs at least 3 items`);
-  for (const [i,r] of refs.entries()) {
-    if (!r.author || !r.title || !r.year || !r.annotation)
-      issues.required.push(`${id}: reference[${i}] missing author, title, year, or annotation`);
+  const isTierA = entry.qualityTier === 'A';
+
+  // 8.1 Minimum count
+  const minRefs = isTierA ? 5 : 3;
+  if (refs.length < minRefs)
+    fails.push(`${isTierA ? 'Tier A entry' : 'Entry'} requires ${minRefs}+ references (has ${refs.length})`);
+
+  // 8.2 Required fields per item
+  for (const [i, r] of refs.entries()) {
+    const missing = [];
+    if (!r.author) missing.push('author');
+    if (!r.title)  missing.push('title');
+    if (!r.year)   missing.push('year');
+    if (!r.annotation) missing.push('annotation');
+    if (missing.length)
+      fails.push(`reference[${i}] missing required field(s): ${missing.join(', ')}`);
+    // Annotation quality is editorial judgment — no automated length check.
   }
 
-  // ── Commerce (Tier A: 4+) ──────────────────────────────────────────────────
+  // ── 9. COMMERCE ───────────────────────────────────────────────────────────
+
   const commerce = entry.commerce || [];
-  if (entry.qualityTier === 'A' && commerce.length < 4)
-    issues.advisory.push(`${id}: Tier A entry should have 4+ commerce items (has ${commerce.length})`);
-  else if (commerce.length < 3)
-    issues.required.push(`${id}: commerce needs at least 3 items`);
+  const minCommerce = isTierA ? 5 : 3;
 
-  // ── Popular culture (Tier A: 4+) ──────────────────────────────────────────
-  const pc = entry.popularCulture || [];
-  if (entry.qualityTier === 'A' && pc.length < 4)
-    issues.advisory.push(`${id}: Tier A entry should have 4+ popularCulture items (has ${pc.length})`);
-  else if (pc.length < 3)
-    issues.required.push(`${id}: popularCulture needs at least 3 items`);
+  // 9.1 Minimum count
+  if (commerce.length < minCommerce)
+    fails.push(`${isTierA ? 'Tier A entry' : 'Entry'} requires ${minCommerce}+ commerce items (has ${commerce.length})`);
 
-  // ── Beginner readability ───────────────────────────────────────────────────
-  if (content.beginner) {
-    const sections = expectedSections || Object.keys(content.beginner);
-    const allText = sections.map(s => content.beginner[s] || '').join(' ');
-    if (allText.trim()) {
-      const avg = avgSentenceLength(allText);
-      const max = maxSentenceLength(allText);
-      const wc = wordCount(allText);
-      let readAdvisory = false;
-      if (avg > 18) { issues.required.push(`${id}: beginner avg sentence length ${avg.toFixed(1)} words (target ≤18)`); }
-      if (max > 35) { issues.required.push(`${id}: beginner has sentence >${35} words (max: ${max})`); }
-      if (wc < 400) { issues.advisory.push(`${id}: beginner word count ${wc} (target 400-700)`); readAdvisory = true; }
-      if (wc > 700) { issues.advisory.push(`${id}: beginner word count ${wc} (target 400-700)`); readAdvisory = true; }
-      if (readAdvisory) totalReadabilityAdvisory++;
+  // 9.2 Required fields
+  // Author is required for text-based types; optional for media types
+  const COMMERCE_AUTHOR_REQUIRED_TYPES = new Set(['Book','Novel','Report','Essay','Article','Monograph']);
+  for (const [i, c] of commerce.entries()) {
+    const authorRequired = !c.type || COMMERCE_AUTHOR_REQUIRED_TYPES.has(c.type);
+    const missing = [];
+    if (!c.type)  missing.push('type');
+    if (!c.title) missing.push('title');
+    if (authorRequired && !c.author) missing.push('author');
+    if (!c.note)  missing.push('note');
+    if (missing.length)
+      fails.push(`commerce[${i}] missing required field(s): ${missing.join(', ')}`);
+    // Templated note warning
+    if (c.note) {
+      const noteLower = c.note.toLowerCase();
+      if (COMMERCE_NOTE_TEMPLATES.some(t => noteLower.includes(t)))
+        warnings.push(`commerce[${i}] "${c.title || '?'}" note sounds templated — should direct the reader ("start here if..."), not describe the book`);
     }
   }
 
-  // ── interpretiveInfluences ─────────────────────────────────────────────────
-  if (!entry.interpretiveInfluences || entry.interpretiveInfluences.length < 3)
-    issues.advisory.push(`${id}: interpretiveInfluences should have 3+ names`);
+  // ── 10. POPULAR CULTURE ───────────────────────────────────────────────────
 
-  // ── Aggregate ──────────────────────────────────────────────────────────────
-  const hasIssues = issues.fatal.length + issues.required.length > 0;
-  if (hasIssues) results.fail++;
-  else results.pass++;
+  const pc = entry.popularCulture || [];
+  const minPc = isTierA ? 5 : 3;
 
-  results.fatal.push(...issues.fatal);
-  results.required.push(...issues.required);
-  results.advisory.push(...issues.advisory);
-  if (issues.advisory.length > 0 && issues.fatal.length === 0 && issues.required.length === 0)
-    totalQualityAdvisory += issues.advisory.length;
+  // 10.1 Minimum count
+  if (pc.length < minPc)
+    fails.push(`${isTierA ? 'Tier A entry' : 'Entry'} requires ${minPc}+ popularCulture items (has ${pc.length})`);
+
+  // 10.2 Required fields + description length
+  for (const [i, item] of pc.entries()) {
+    if (!item.type || !item.title || !item.description)
+      fails.push(`popularCulture[${i}] missing required field (type, title, or description)`);
+    const descWc = wordCount(item.description || '');
+    if (descWc > 75)
+      fails.push(`popularCulture[${i}] "${item.title || '?'}" description is ${descWc} words — hard limit is 75`);
+  }
+
+  // ── 11. AI FAILURE MODE WARNINGS ──────────────────────────────────────────
+  // Procedural self-narration: kept as warning — distinctive pattern, low false positive rate.
+  // Anti-declarative inflation phrases removed — too context-dependent, high false positive rate.
+
+  if (content.beginner && sectionKeys) {
+    const allBeginnerText = layerText(content.beginner, sectionKeys).toLowerCase();
+
+    // 11.1 Procedural self-narration
+    for (const phrase of PROCEDURAL_NARRATION_PHRASES) {
+      if (allBeginnerText.includes(phrase))
+        warnings.push(`AI pattern [beginner]: procedural self-narration — "${phrase}"`);
+    }
+  }
+
+  // 11.3 Summary duplicates hook
+  if (entry.summary && entry.hook) {
+    const hookSim = similarity(entry.summary, entry.hook);
+    if (hookSim > 0.6)
+      warnings.push(`Summary/hook similarity ${(hookSim*100).toFixed(0)}% — summary may be repeating the hook rather than complementing it`);
+  }
+
+  // ── 12. MISC ADVISORIES ───────────────────────────────────────────────────
+
+  // 12.1 interpretiveInfluences present
+  if (!entry.interpretiveInfluences || !Array.isArray(entry.interpretiveInfluences) || entry.interpretiveInfluences.length < 3)
+    advisories.push(`interpretiveInfluences should have 3+ names (has ${(entry.interpretiveInfluences || []).length})`);
+
+  // ── Aggregate result ───────────────────────────────────────────────────────
+
+  const hasFails = fails.length > 0;
+  if (hasFails) globalFails++;
+  else globalPasses++;
+
+  allResults.push({
+    id,
+    fname,
+    fails,
+    warnings,
+    advisories,
+    stats: {
+      beginner: beginnerStats,
+      layers: layerStats,
+    },
+  });
 }
 
-// ── Report ───────────────────────────────────────────────────────────────────
-const total = results.pass + results.fail;
-console.log(`\n  FATAL = app breaks  |  REQUIRED = schema violation  |  ADVISORY = quality/roadmap`);
+// ─────────────────────────────────────────────────────────────────────────────
+// OUTPUT REPORT
+// ─────────────────────────────────────────────────────────────────────────────
 
-if (results.fatal.length) {
-  console.log(`\n── FATAL ───────────────────────────────────────────────────────────────`);
-  results.fatal.forEach(m => console.log(`  FATAL ${m}`));
-}
-if (results.required.length) {
-  console.log(`\n── REQUIRED (schema violation — fix before publishing) ─────────────────`);
-  results.required.forEach(m => console.log(`  REQUIRED ${m}`));
-}
-if (results.advisory.length && process.argv.includes('--verbose')) {
-  console.log(`\n── ADVISORY (quality goals — fix when possible) ────────────────────────`);
-  results.advisory.forEach(m => console.log(`  ADVISORY ${m}`));
+const totalEntries = globalPasses + globalFails;
+
+// Helper to display layer stats block
+function layerStatsBlock(result) {
+  const { beginner, layers } = result.stats;
+  const lines = [];
+
+  // Word counts
+  if (layers.bwc || layers.gwc || layers.awc) {
+    lines.push(`    Word counts  — Beginner: ${layers.bwc}  General: ${layers.gwc}  Advanced: ${layers.awc}`);
+  }
+
+  // Similarity scores
+  if (layers.bgSim > 0 || layers.gaSim > 0 || layers.baSim > 0) {
+    lines.push(`    Similarity   — B↔G: ${(layers.bgSim*100).toFixed(0)}%  G↔A: ${(layers.gaSim*100).toFixed(0)}%  B↔A: ${(layers.baSim*100).toFixed(0)}%`);
+  }
+
+  // Section-level sims if any are notable
+  const notableSections = Object.entries(layers.sectionSims || {})
+    .filter(([, v]) => v.bg > 0.4 || v.ga > 0.4);
+  if (notableSections.length) {
+    lines.push(`    Section sims:`);
+    for (const [k, v] of notableSections) {
+      lines.push(`      ${k.padEnd(26)} B↔G: ${(v.bg*100).toFixed(0)}%  G↔A: ${(v.ga*100).toFixed(0)}%`);
+    }
+  }
+
+  // Beginner sentence stats
+  if (beginner.totalWords > 0) {
+    lines.push(`    Beginner     — ${beginner.totalWords} words  avg: ${beginner.avg.toFixed(1)}w/sent  max: ${beginner.max}w/sent`);
+  }
+
+  return lines.join('\n');
 }
 
-console.log(`\n  Passed:   ${results.pass} / ${total} entries`);
-console.log(`  Fatal:    ${results.fatal.length}`);
-console.log(`  Required: ${results.required.length}`);
-console.log(`  Advisory: ${results.advisory.length}`);
+// Count totals
+let totalFails = 0, totalWarnings = 0, totalAdvisories = 0;
+for (const r of allResults) {
+  totalFails     += r.fails.length;
+  totalWarnings  += r.warnings.length;
+  totalAdvisories += r.advisories.length;
+}
 
-const otherAdvisory = results.advisory.length - totalPlanned - totalReadabilityAdvisory;
-console.log(`\n  Advisory breakdown: ${totalPlanned} planned links, ${totalReadabilityAdvisory} readability, ${Math.max(0,otherAdvisory)} other`);
+// ── FAIL section ──────────────────────────────────────────────────────────────
+const failEntries = allResults.filter(r => r.fails.length > 0);
+if (failEntries.length) {
+  console.log(`\n${'═'.repeat(72)}`);
+  console.log(`  FAIL  (${failEntries.length} entries with publication-blocking errors)`);
+  console.log(`${'═'.repeat(72)}`);
+  for (const r of failEntries) {
+    console.log(`\n  ── ${r.id} (${r.fname})`);
+    if (r.stats) {
+      const statsBlock = layerStatsBlock(r);
+      if (statsBlock) console.log(statsBlock);
+    }
+    for (const f of r.fails) {
+      console.log(`    FAIL  ${f}`);
+    }
+    if (r.warnings.length) {
+      for (const w of r.warnings) {
+        console.log(`    WARN  ${w}`);
+      }
+    }
+  }
+}
+
+// ── WARNING section (entries with warnings but no fails) ─────────────────────
+const warnOnlyEntries = allResults.filter(r => r.fails.length === 0 && r.warnings.length > 0);
+if (warnOnlyEntries.length && VERBOSE) {
+  console.log(`\n${'─'.repeat(72)}`);
+  console.log(`  WARNING  (${warnOnlyEntries.length} entries with warnings — review before publishing)`);
+  console.log(`${'─'.repeat(72)}`);
+  for (const r of warnOnlyEntries) {
+    console.log(`\n  ── ${r.id}`);
+    if (r.stats) {
+      const statsBlock = layerStatsBlock(r);
+      if (statsBlock) console.log(statsBlock);
+    }
+    for (const w of r.warnings) {
+      console.log(`    WARN  ${w}`);
+    }
+  }
+} else if (warnOnlyEntries.length && !VERBOSE) {
+  // Show just a summary of warning-only entries
+  console.log(`\n${'─'.repeat(72)}`);
+  console.log(`  WARNING  (${warnOnlyEntries.length} entries with warnings — run --verbose to see)`);
+  console.log(`${'─'.repeat(72)}`);
+  // Still print entries that have layer similarity warnings since those are important
+  const layerWarnEntries = warnOnlyEntries.filter(r =>
+    r.warnings.some(w => w.startsWith('Layer') || w.startsWith('Section'))
+  );
+  for (const r of layerWarnEntries) {
+    console.log(`\n  ── ${r.id}`);
+    const statsBlock = layerStatsBlock(r);
+    if (statsBlock) console.log(statsBlock);
+    for (const w of r.warnings.filter(w => w.startsWith('Layer') || w.startsWith('Section'))) {
+      console.log(`    WARN  ${w}`);
+    }
+  }
+}
+
+// ── ADVISORY section (verbose only) ──────────────────────────────────────────
+const advisoryEntries = allResults.filter(r => r.advisories.length > 0);
+if (advisoryEntries.length && VERBOSE) {
+  console.log(`\n${'─'.repeat(72)}`);
+  console.log(`  ADVISORY  (${advisoryEntries.length} entries — diagnostic, does not block)`);
+  console.log(`${'─'.repeat(72)}`);
+  for (const r of advisoryEntries) {
+    if (!r.advisories.length) continue;
+    console.log(`\n  ── ${r.id}`);
+    for (const a of r.advisories) {
+      console.log(`    ADV   ${a}`);
+    }
+  }
+}
+
+// ── SINGLE ENTRY DETAIL (when --entry is used) ───────────────────────────────
+if (SINGLE_ENTRY) {
+  const r = allResults.find(x => x.id === SINGLE_ENTRY);
+  if (r) {
+    console.log(`\n${'═'.repeat(72)}`);
+    console.log(`  FULL REPORT: ${r.id}`);
+    console.log(`${'═'.repeat(72)}`);
+    if (r.stats) console.log(layerStatsBlock(r));
+
+    if (r.fails.length)
+      console.log(`\n  FAILS (${r.fails.length}):\n` + r.fails.map(f => `    ✗ ${f}`).join('\n'));
+    if (r.warnings.length)
+      console.log(`\n  WARNINGS (${r.warnings.length}):\n` + r.warnings.map(w => `    ⚠ ${w}`).join('\n'));
+    if (r.advisories.length)
+      console.log(`\n  ADVISORIES (${r.advisories.length}):\n` + r.advisories.map(a => `    · ${a}`).join('\n'));
+    if (!r.fails.length && !r.warnings.length && !r.advisories.length)
+      console.log(`\n  ✓ Entry passes all checks.`);
+  } else {
+    console.log(`\n  No entry found with id "${SINGLE_ENTRY}"`);
+  }
+}
+
+// ── SUMMARY ───────────────────────────────────────────────────────────────────
+console.log(`\n${'═'.repeat(72)}`);
+console.log(`  SUMMARY`);
+console.log(`${'─'.repeat(72)}`);
+console.log(`  Entries:    ${totalEntries}  (${globalPasses} passed, ${globalFails} failed)`);
+console.log(`  Fails:      ${totalFails}  — publication blocked`);
+console.log(`  Warnings:   ${totalWarnings}  — review before publishing`);
+console.log(`  Advisories: ${totalAdvisories}  — diagnostic`);
+console.log(`  Planned:    ${totalPlannedLinks} rabbit hole links still marked planned`);
+console.log(`${'═'.repeat(72)}\n`);
+
+// Exit code: non-zero if any hard fails
+process.exit(globalFails > 0 ? 1 : 0);
