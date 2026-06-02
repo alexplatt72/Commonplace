@@ -639,11 +639,11 @@ const TEMPLATE_META = {
 function initFuse() {
   FUSE = new Fuse(SEARCH_INDEX, {
     keys: [
-      { name: "title",      weight: 0.40 },
-      { name: "aliases",    weight: 0.30 },
-      { name: "indexTerms", weight: 0.15 },
-      { name: "themes",     weight: 0.10 },
-      { name: "summary",    weight: 0.05 },
+      { name: "title",      weight: 0.70 },
+      { name: "aliases",    weight: 0.15 },
+      { name: "indexTerms", weight: 0.08 },
+      { name: "themes",     weight: 0.05 },
+      { name: "summary",    weight: 0.02 },
     ],
     threshold:        0.35,  // 0 = exact, 1 = match anything — 0.35 tolerates typos
     ignoreLocation:   true,  // match anywhere in the string, not just start
