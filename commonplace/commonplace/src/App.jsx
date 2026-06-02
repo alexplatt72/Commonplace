@@ -641,7 +641,7 @@ function initFuse() {
     keys: [
       { name: "title",       weight: 0.65 },
       { name: "aliases",     weight: 0.15 },
-      { name: "searchTerms", weight: 0.12 },
+      { name: "associatedWorks", weight: 0.12 },
       { name: "indexTerms",  weight: 0.05 },
       { name: "themes",      weight: 0.02 },
       { name: "summary",     weight: 0.01 },
@@ -669,12 +669,13 @@ function scoreEntry(entry, terms) {
   if (terms.length && terms.every(t => title.includes(t)))   return 800;
   if (terms.length && terms.some(t => title.startsWith(t)))  return 750;
   if (terms.length && terms.some(t => bare.startsWith(t)))   return 700;
-  if (terms.length && terms.some(t => title.includes(t)))    return 650;
-  // searchTerms: associated works/plays/books — e.g. "hamlet" → Shakespeare
-  const searchTerms = (siRec?.searchTerms || []).map(s => s.toLowerCase());
-  if (searchTerms.some(s => s === q))                         return 580;
-  if (terms.length && searchTerms.some(s => terms.some(t => s.startsWith(t)))) return 550;
-  if (terms.length && searchTerms.some(s => terms.some(t => s.includes(t))))   return 520;
+  if (terms.length === 1 && terms.some(t => title.includes(t)))    return 650;
+  // associatedWorks: works by People-entry creators — e.g. "hamlet" → Shakespeare
+  const assocWorks = (siRec?.associatedWorks || []).map(s => s.toLowerCase());
+  if (assocWorks.some(s => s === q))                         return 580;
+  if (terms.length && assocWorks.some(s => terms.every(t => s.includes(t)))) return 570;
+  if (terms.length && assocWorks.some(s => terms.some(t => s.startsWith(t)))) return 550;
+  if (terms.length && assocWorks.some(s => terms.some(t => s.includes(t))))   return 520;
 
   // Fall back to Fuse for typo tolerance
   if (!FUSE || !terms.length) return 0;
@@ -709,12 +710,13 @@ function searchEntries(query) {
     if (terms.length && terms.every(t => title.includes(t)))   return { id: entry.id, entry, score: 800 };  // all terms in title
     if (terms.length && terms.some(t => title.startsWith(t)))  return { id: entry.id, entry, score: 750 };  // word prefix
     if (terms.length && terms.some(t => bare.startsWith(t)))   return { id: entry.id, entry, score: 700 };  // bare word prefix
-    if (terms.length && terms.some(t => title.includes(t)))    return { id: entry.id, entry, score: 650 };  // word anywhere
-    // searchTerms: associated works/plays/books — score below title matches but above Fuse
-    const searchTerms = (siRec?.searchTerms || []).map(s => s.toLowerCase());
-    if (searchTerms.some(s => s === q))                                          return { id: entry.id, entry, score: 580 };
-    if (terms.length && searchTerms.some(s => terms.some(t => s.startsWith(t)))) return { id: entry.id, entry, score: 550 };
-    if (terms.length && searchTerms.some(s => terms.some(t => s.includes(t))))   return { id: entry.id, entry, score: 520 };
+    if (terms.length === 1 && terms.some(t => title.includes(t)))    return { id: entry.id, entry, score: 650 };  // word anywhere (single-term only)
+    // associatedWorks: deterministic match, always beats Fuse
+    const assocWorks = (siRec?.associatedWorks || []).map(s => s.toLowerCase());
+    if (assocWorks.some(s => s === q))                                          return { id: entry.id, entry, score: 580 };
+    if (terms.length && assocWorks.some(s => terms.every(t => s.includes(t)))) return { id: entry.id, entry, score: 570 };
+    if (terms.length && assocWorks.some(s => terms.some(t => s.startsWith(t)))) return { id: entry.id, entry, score: 550 };
+    if (terms.length && assocWorks.some(s => terms.some(t => s.includes(t))))   return { id: entry.id, entry, score: 520 };
     return null;
   }).filter(Boolean).sort((a, b) => b.score - a.score);
 
@@ -727,10 +729,10 @@ function searchEntries(query) {
       .filter(r => !pinnedIds.has(r.item.id))
       .map(r => {
         const manifest = MANIFEST.find(e => e.id === r.item.id);
-        return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
+        return { id: r.item.id, entry: manifest || r.item, score: Math.min(499, Math.round((1 - r.score) * 100)) };
       }).filter(x => x.entry);
 
-    const combined = [...scoredByTitle, ...fuseExtra].slice(0, 12);
+    const combined = [...scoredByTitle, ...fuseExtra].sort((a,b) => b.score - a.score).slice(0, 12);
     if (combined.length > 0) return { results: combined, query, empty: false };
     return { results: [], suggestions: [], query, empty: true };
   }
@@ -1189,12 +1191,13 @@ export default function CommonplaceApp() {
       if (terms.length && terms.every(t => title.includes(t)))   return { entry, score: 800 };
       if (terms.length && terms.some(t => title.startsWith(t)))  return { entry, score: 750 };
       if (terms.length && terms.some(t => bare.startsWith(t)))   return { entry, score: 700 };
-      if (terms.length && terms.some(t => title.includes(t)))    return { entry, score: 650 };
-      // searchTerms: associated works — e.g. "hamlet" → Shakespeare
-      const searchTerms = (siRec?.searchTerms || []).map(s => s.toLowerCase());
-      if (searchTerms.some(s => s === q))                                          return { entry, score: 580 };
-      if (terms.length && searchTerms.some(s => terms.some(t => s.startsWith(t)))) return { entry, score: 550 };
-      if (terms.length && searchTerms.some(s => terms.some(t => s.includes(t))))   return { entry, score: 520 };
+      if (terms.length === 1 && terms.some(t => title.includes(t)))    return { entry, score: 650 };
+      // associatedWorks: deterministic match, always beats Fuse
+      const assocWorks = (siRec?.associatedWorks || []).map(s => s.toLowerCase());
+      if (assocWorks.some(s => s === q))                                          return { entry, score: 580 };
+    if (terms.length && assocWorks.some(s => terms.every(t => s.includes(t)))) return { entry, score: 570 };
+      if (terms.length && assocWorks.some(s => terms.some(t => s.startsWith(t)))) return { entry, score: 550 };
+      if (terms.length && assocWorks.some(s => terms.some(t => s.includes(t))))   return { entry, score: 520 };
       return null;
     }).filter(Boolean).sort((a, b) => b.score - a.score);
 
@@ -1207,11 +1210,11 @@ export default function CommonplaceApp() {
         .filter(r => !pinnedIds.has(r.item.id))
         .map(r => {
           const entry = MANIFEST.find(m => m.id === r.item.id) || r.item;
-          return { entry, score: Math.round((1 - r.score) * 100) };
+          return { entry, score: Math.min(499, Math.round((1 - r.score) * 100)) };
         }).filter(x => x.entry);
     }
 
-    const scored = [...pinned, ...fuseExtra].slice(0, 6);
+    const scored = [...pinned, ...fuseExtra].sort((a,b) => b.score - a.score).slice(0, 6);
     setAcResults(scored);
     setAcOpen(scored.length > 0);
   };
