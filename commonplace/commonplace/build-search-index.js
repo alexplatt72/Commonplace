@@ -58,6 +58,26 @@ function buildRecord(entry) {
     subtype,
   ]);
 
+  // searchTerms: associated works, plays, books, key outputs — lets users find
+  // entries by related titles (e.g. "Hamlet" → Shakespeare, "Manifesto" → Marx).
+  // Strips parenthetical metadata from titles so "Hamlet (Arden...)" → "Hamlet".
+  function cleanTitle(t) { return (t || '').split(' (')[0].split(' —')[0].trim(); }
+  // For People entries, themes now includes associated works added explicitly.
+  // We include these as searchTerms so "hamlet" → Shakespeare, not Aristotle.
+  // The "People" template check ensures work titles are sourced from their author entry.
+  const isPeople = (entry.template || '').toLowerCase() === 'people';
+  const themeWorks = isPeople
+    ? uniq((entry.themes || []).filter(t => /^[A-Z]/.test(t) && t.length > 3))
+    : [];
+  const searchTerms = uniq([
+    ...themeWorks,
+    ...( commerce       || []).map(c => cleanTitle(c?.title)).filter(t => t.length > 2),
+    ...( popularCulture || []).map(p => cleanTitle(p?.title)).filter(t => t.length > 2),
+    ...( rabbitHole     || [])
+          .filter(r => ['Consequential','Descendant'].includes(r?.relationship))
+          .map(r => r?.label).filter(Boolean),
+  ]).filter(t => t !== (title || ''));
+
   const themes = uniq([
     template,
     subtype,
@@ -66,7 +86,7 @@ function buildRecord(entry) {
     ...pluck(reference,      'type'),
   ]);
 
-  return { id, title, summary: summary || '', aliases, indexTerms, themes };
+  return { id, title, summary: summary || '', aliases, indexTerms, searchTerms, themes };
 }
 
 const files = readdirSync(ENTRIES_DIR)
