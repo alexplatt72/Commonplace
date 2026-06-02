@@ -42,8 +42,10 @@ function buildRecord(entry) {
           rabbitHole, comparativeNarrative, reference,
           commerce, popularCulture } = entry;
 
+  // aliases = genuine alternate names for THIS entry only.
+  // Rabbit hole labels are names of OTHER entries — including them caused
+  // those other entries to surface when searching for this entry's title.
   const aliases = uniq([
-    ...pluck(rabbitHole,           'label'),
     ...pluck(comparativeNarrative, 'name'),
   ]);
 
