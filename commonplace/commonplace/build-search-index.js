@@ -3,15 +3,18 @@
  * build-search-index.js
  * Run from the repo root: node build-search-index.js
  *
- * Reads every entry JSON from public/entries/ (except manifest.json),
- * extracts fields used by Fuse.js, and writes public/searchIndex.json.
+ * Output fields (must match App.jsx initFuse keys):
+ *   title           — entry title
+ *   aliases         — genuine alternate names (comparative narrative names only)
+ *   associatedWorks — works by this person (People entries only); used for "hamlet → Shakespeare"
+ *   indexTerms      — author names; used for Fuse typo tolerance on scholarly names
+ *   themes          — conceptual tags only (power, tragedy, etc.) — NEVER entry types or work titles
+ *   summary         — entry summary for fuzzy fallback
  *
- * Fuse keys (must match App.jsx initFuse):
- *   title      weight 0.40
- *   aliases    weight 0.30
- *   indexTerms weight 0.15
- *   themes     weight 0.10
- *   summary    weight 0.05
+ * Data model rules enforced here:
+ *   themes must contain conceptual tags. Types (Book, Film, Monograph) are NOT themes.
+ *   associatedWorks is the correct container for works by People-template creators.
+ *   Commerce/popularCulture titles are NOT indexed — they caused false cross-entry matches.
  */
 
 import { readFileSync, readdirSync, writeFileSync } from 'fs';
@@ -32,61 +35,54 @@ function pluck(arr, key) {
   return arr.map(item => item?.[key]).filter(s => typeof s === 'string' && s.trim());
 }
 
-function firstWords(str, n = 6) {
-  if (typeof str !== 'string') return '';
-  return str.split(/\s+/).slice(0, n).join(' ');
-}
+// Types that should never appear in themes
+const TYPE_GARBAGE = new Set([
+  'Book','Novel','Film','TV','Documentary','Monograph','Essay','Article','Report',
+  'Biography','Autobiography','Album','Play','Museum','Concept','Event',
+  'Historical Actor','Creative Figure','Thinker','People','Places','Events',
+  'Concepts','Periods','Foundations','Natural Phenomena','Policy',
+  'Analytical Concept','Normative Concept','Material Foundation',
+  'Biological Foundation','Conceptual Foundation','Discrete Event',
+  'Extended Process','Threshold Moment — Restructured','Period','Movement',
+  'Site','System','Foundational Text','Narrative','Natural Event','Natural Force',
+  'Policy Landscape','Policy Question',
+]);
 
 function buildRecord(entry) {
   const { id, title, summary, template, subtype,
-          rabbitHole, comparativeNarrative, reference,
-          commerce, popularCulture } = entry;
+          comparativeNarrative, reference, commerce,
+          themes, associatedWorks } = entry;
 
-  // aliases = genuine alternate names for THIS entry only.
-  // Rabbit hole labels are names of OTHER entries — including them caused
-  // those other entries to surface when searching for this entry's title.
+  // aliases: genuine alternate names for THIS entry only
   const aliases = uniq([
     ...pluck(comparativeNarrative, 'name'),
   ]);
 
-  // indexTerms = author names only. Reference/commerce titles and rabbit hole
-  // reason snippets caused false matches (e.g. searching 'shakespe' surfaced
-  // Hamlet because its commerce items mention 'Hamlet (Arden Shakespeare...)').
+  // associatedWorks: works by this person — drives "hamlet → Shakespeare" search
+  // Source of truth is the dedicated associatedWorks field on the entry (People template only)
+  const works = Array.isArray(associatedWorks) ? associatedWorks : [];
+
+  // indexTerms: author names for Fuse typo tolerance on scholarly references
   const indexTerms = uniq([
     ...pluck(reference, 'author'),
     ...pluck(commerce,  'author'),
     subtype,
   ]);
 
-  // searchTerms: associated works, plays, books, key outputs — lets users find
-  // entries by related titles (e.g. "Hamlet" → Shakespeare, "Manifesto" → Marx).
-  // Strips parenthetical metadata from titles so "Hamlet (Arden...)" → "Hamlet".
-  function cleanTitle(t) { return (t || '').split(' (')[0].split(' —')[0].trim(); }
-  // For People entries, themes now includes associated works added explicitly.
-  // We include these as searchTerms so "hamlet" → Shakespeare, not Aristotle.
-  // The "People" template check ensures work titles are sourced from their author entry.
-  const isPeople = (entry.template || '').toLowerCase() === 'people';
-  const themeWorks = isPeople
-    ? uniq((entry.themes || []).filter(t => /^[A-Z]/.test(t) && t.length > 3))
-    : [];
-  const searchTerms = uniq([
-    ...themeWorks,
-    ...( commerce       || []).map(c => cleanTitle(c?.title)).filter(t => t.length > 2),
-    ...( popularCulture || []).map(p => cleanTitle(p?.title)).filter(t => t.length > 2),
-    ...( rabbitHole     || [])
-          .filter(r => ['Consequential','Descendant'].includes(r?.relationship))
-          .map(r => r?.label).filter(Boolean),
-  ]).filter(t => t !== (title || ''));
+  // themes: conceptual tags only — filter out any type garbage that slipped through
+  const cleanThemes = uniq(
+    (Array.isArray(themes) ? themes : []).filter(t => !TYPE_GARBAGE.has(t))
+  );
 
-  const themes = uniq([
-    template,
-    subtype,
-    ...pluck(commerce,       'type'),
-    ...pluck(popularCulture, 'type'),
-    ...pluck(reference,      'type'),
-  ]);
-
-  return { id, title, summary: summary || '', aliases, indexTerms, searchTerms, themes };
+  return {
+    id,
+    title,
+    summary: summary || '',
+    aliases,
+    associatedWorks: uniq(works),
+    indexTerms,
+    themes: cleanThemes,
+  };
 }
 
 const files = readdirSync(ENTRIES_DIR)
