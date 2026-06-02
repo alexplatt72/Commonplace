@@ -857,14 +857,12 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 
       {/* Platform statement */}
       <div style={{ textAlign:"center", marginBottom:44 }}>
-        <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:20, marginBottom:16 }}>
-          <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo" height="72"
-            style={{ display:"block", objectFit:"contain" }} />
-          <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:48, fontWeight:400,
-            color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:0 }}>
-            TheCommonPlace
-          </h1>
-        </div>
+        <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo" height="120"
+          style={{ display:"block", margin:"0 auto 16px", objectFit:"contain" }} />
+        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:52, fontWeight:400,
+          color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 16px" }}>
+          TheCommonPlace
+        </h1>
         <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7,
           maxWidth:560, margin:"0 auto 6px" }}>
           Every subject here changed what was possible — what could be built, thought, governed, or understood.
