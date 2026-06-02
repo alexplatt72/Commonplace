@@ -845,43 +845,30 @@ function SearchBar({ value, onChange, onSubmit, placeholder, large }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function HomeView({ onSearch, onTemplate, onEntry }) {
-  const [query, setQuery] = React.useState('');
 
   const totalEntries = MANIFEST.length;
-  const featured = ['wheat', 'slaveTrade', 'democracy', 'hamlet', 'mosquitoes', 'zero']
-    .filter(id => MANIFEST.find(e=>e.id===id)).slice(0, 4);
+
+  // Featured: placeholder selection — will be replaced by date-driven editorial rotation
+  const featuredIds = ['wheat', 'slaveTrade', 'democracy', 'mosquitoes']
+    .filter(id => MANIFEST.find(e => e.id === id));
 
   return (
-    <div style={{ maxWidth:960, margin:"0 auto", padding:"48px 40px 80px" }}>
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
 
       {/* Platform statement */}
-      <div style={{ textAlign:"center", marginBottom:52 }}>
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.14em",
-          textTransform:"uppercase", color:C.muted, marginBottom:16 }}>
-          A curated canon · {totalEntries} entries · structured analytical depth
-        </div>
-        <h1 style={{ fontFamily:"'Playfair Display',serif", fontSize:36, fontWeight:700,
-          color:C.text, marginBottom:16, lineHeight:1.2 }}>
-          The Commonplace
-        </h1>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:16, color:C.muted, lineHeight:1.7,
-          maxWidth:580, margin:"0 auto 8px" }}>
-          Each subject selected because it changed what was possible — what could be built, thought, governed, or understood. Not a catalogue of everything. A canon of what matters most, analyzed at depth.
+      <div style={{ textAlign:"center", marginBottom:44 }}>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7,
+          maxWidth:560, margin:"0 auto 6px" }}>
+          Every subject here changed what was possible — what could be built, thought, governed, or understood.
         </p>
         <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.light, fontStyle:"italic",
-          maxWidth:520, margin:"0 auto" }}>
-          This is not Wikipedia. You won't find everything here. You'll find the things that reward serious attention.
+          maxWidth:480, margin:"0 auto" }}>
+          Not a catalogue. A canon. {totalEntries} subjects selected for the understanding they unlock.
         </p>
       </div>
 
-      {/* Search */}
-      <div style={{ maxWidth:640, margin:"0 auto 56px" }}>
-        <SearchBar value={query} onChange={setQuery} onSubmit={onSearch} large
-          placeholder="Search by name, concept, period, or theme…" />
-      </div>
-
-      {/* Template grid */}
-      <div style={{ marginBottom:56 }}>
+      {/* Category grid */}
+      <section aria-label="Browse by category" style={{ marginBottom:52 }}>
         <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
           textTransform:"uppercase", color:C.light, marginBottom:20 }}>
           Browse by category
@@ -892,6 +879,7 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
             const count = MANIFEST.filter(e => e.template === name).length;
             return (
               <button key={name} onClick={() => onTemplate(name)}
+                aria-label={`Browse ${name} — ${count} entries`}
                 style={{ padding:"18px 20px", background:C.surface, border:`1px solid ${C.border}`,
                   borderTop:`3px solid ${cfg.accent}`, borderRadius:6, cursor:"pointer",
                   textAlign:"left", transition:"all 0.12s" }}>
@@ -900,8 +888,8 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
                     letterSpacing:"0.08em", textTransform:"uppercase", color:cfg.accent }}>
                     {name}
                   </span>
-                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:C.light,
-                    background:C.bg, padding:"2px 7px", borderRadius:10 }}>
+                  <span aria-hidden="true" style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9,
+                    color:C.light, background:C.bg, padding:"2px 7px", borderRadius:10 }}>
                     {count}
                   </span>
                 </div>
@@ -913,21 +901,28 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
             );
           })}
         </div>
-      </div>
+      </section>
 
-      {/* Featured entries */}
-      <div>
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
-          textTransform:"uppercase", color:C.light, marginBottom:16 }}>
-          Start here
+      {/* Featured entries — placeholder for date-driven editorial rotation */}
+      <section aria-label="Featured entries">
+        <div style={{ display:"flex", alignItems:"baseline", gap:12, marginBottom:16 }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
+            textTransform:"uppercase", color:C.light }}>
+            Featured
+          </div>
+          <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.light, fontStyle:"italic" }}>
+            Selections rotate with the calendar
+          </div>
         </div>
         <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
-          {featured.map(id => MANIFEST.find(e=>e.id===id) && (
-            <EntryCard key={id} id={id} entry={MANIFEST.find(e=>e.id===id)} onClick={onEntry} />
-          ))}
+          {featuredIds.map(id => {
+            const entry = MANIFEST.find(e => e.id === id);
+            return entry ? <EntryCard key={id} id={id} entry={entry} onClick={onEntry} /> : null;
+          })}
         </div>
-      </div>
-    </div>
+      </section>
+
+    </main>
   );
 }
 
@@ -1037,7 +1032,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
             </div>
             <p style={{ fontFamily:"'Lora',serif", fontSize:14.5, color:C.muted, lineHeight:1.7,
               marginBottom:12 }}>
-              The Commonplace covers {totalEntries} subjects currently — and is building toward approximately 7,000. Every entry is selected because it changed what was possible: what could be built, thought, governed, or understood. Not every important topic is here yet, and not every important topic will ever be here. The canon is finite and curated by design.
+              TheCommonPlace covers {totalEntries} subjects currently — and is building toward approximately 7,000. Every entry is selected because it changed what was possible: what could be built, thought, governed, or understood. Not every important topic is here yet, and not every important topic will ever be here. The canon is finite and curated by design.
             </p>
             <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.light, lineHeight:1.6,
               fontStyle:"italic" }}>
@@ -1106,7 +1101,7 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry }) {
   // Update page title and meta tags when entry loads; reset to site defaults on unmount
   React.useEffect(() => {
     if (!entry) return;
-    const siteTitle = 'The Commonplace';
+    const siteTitle = 'TheCommonPlace';
     const siteDesc  = 'A curated canon of civilizational significance — structured analytical depth across history, ideas, and the world.';
     const entryTitle = `${entry.title} — ${siteTitle}`;
     const entryDesc  = entry.summary || siteDesc;
@@ -1278,7 +1273,7 @@ export default function CommonplaceApp() {
   if (!manifestLoaded) return (
     <div style={{ minHeight:"100vh", background:C.bg, display:"flex", alignItems:"center", justifyContent:"center" }}>
       <style>{FONTS}</style>
-      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:24, color:C.muted }}>The Commonplace</div>
+      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:24, color:C.muted }}>TheCommonPlace</div>
     </div>
   );
 
@@ -1287,21 +1282,36 @@ export default function CommonplaceApp() {
       <style>{FONTS}</style>
 
       {/* Header */}
-      <div style={{ background:C.navy, borderBottom:`3px solid ${accent}`, transition:"border-color 0.3s",
-        position:"sticky", top:0, zIndex:100 }}>
+      <header role="banner" style={{ background:C.navy, borderBottom:`3px solid ${accent}`,
+        transition:"border-color 0.3s", position:"sticky", top:0, zIndex:100 }}>
         <div style={{ maxWidth:960, margin:"0 auto", padding:"0 40px", display:"flex",
-          alignItems:"center", gap:16, height:54 }}>
-          <span onClick={goHome}
-            style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700,
-              color:"#ffffff", cursor:"pointer", flexShrink:0, letterSpacing:"0.01em" }}>
-            The Commonplace
-          </span>
-          {/* Header search — always visible */}
-          {/* Header search with autocomplete */}
-          <div style={{ flex:1, maxWidth:420, position:"relative" }}>
-            <form onSubmit={e => { e.preventDefault(); setAcOpen(false); doSearch(headerQuery); }}
+          alignItems:"center", gap:14, height:54 }}>
+
+          {/* Logo + wordmark */}
+          <button onClick={goHome} aria-label="TheCommonPlace — go to homepage"
+            style={{ display:"flex", alignItems:"center", gap:10, background:"transparent",
+              border:"none", cursor:"pointer", flexShrink:0, padding:0 }}>
+            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="26" height="26" rx="4" stroke="rgba(255,255,255,0.25)" strokeWidth="1.2"/>
+              <line x1="7" y1="8" x2="21" y2="8" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round"/>
+              <line x1="7" y1="12" x2="21" y2="12" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2" strokeLinecap="round"/>
+              <line x1="7" y1="16" x2="16" y2="16" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2" strokeLinecap="round"/>
+              <line x1="7" y1="20" x2="19" y2="20" stroke="rgba(255,255,255,0.35)" strokeWidth="1.2" strokeLinecap="round"/>
+            </svg>
+            <span style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700,
+              color:"#ffffff", letterSpacing:"0.01em", userSelect:"none" }}>
+              TheCommonPlace
+            </span>
+          </button>
+
+          {/* Search — fuzzy, always visible */}
+          <div style={{ flex:1, maxWidth:440, position:"relative" }}>
+            <form role="search" onSubmit={e => { e.preventDefault(); setAcOpen(false); doSearch(headerQuery); }}
               style={{ display:"flex", gap:6 }}>
-              <input value={headerQuery}
+              <input
+                aria-label="Search the canon"
+                value={headerQuery}
                 onChange={handleHeaderChange}
                 onFocus={() => acResults.length > 0 && setAcOpen(true)}
                 onBlur={() => setTimeout(() => setAcOpen(false), 150)}
@@ -1309,7 +1319,7 @@ export default function CommonplaceApp() {
                 style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
                   color:"#f8f8f0", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)",
                   borderRadius:4, outline:"none" }} />
-              <button type="submit"
+              <button type="submit" aria-label="Submit search"
                 style={{ padding:"7px 12px", background:"rgba(255,255,255,0.12)", color:"#cbd5e1",
                   border:"1px solid rgba(255,255,255,0.15)", borderRadius:4, cursor:"pointer",
                   fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.05em" }}>
@@ -1317,20 +1327,21 @@ export default function CommonplaceApp() {
               </button>
             </form>
             {acOpen && acResults.length > 0 && (
-              <div style={{ position:"absolute", top:"calc(100% + 4px)", left:0, right:0,
+              <div role="listbox" aria-label="Search suggestions"
+                style={{ position:"absolute", top:"calc(100% + 4px)", left:0, right:0,
                 background:"#1e2d3d", border:"1px solid rgba(255,255,255,0.15)", borderRadius:6,
                 boxShadow:"0 8px 24px rgba(0,0,0,0.4)", zIndex:200, overflow:"hidden" }}>
                 {acResults.map(({ entry }, i) => {
                   const cfg = TEMPLATE_CONFIG[entry.template] || {};
                   return (
-                    <div key={entry.id}
+                    <div key={entry.id} role="option"
                       onMouseDown={() => { goToEntry(entry.id); setHeaderQuery(''); setAcOpen(false); }}
                       style={{ padding:"10px 14px", cursor:"pointer",
                         borderBottom: i < acResults.length-1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}
                       onMouseEnter={e => e.currentTarget.style.background = "rgba(255,255,255,0.08)"}
                       onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
                       <div style={{ display:"flex", alignItems:"center", gap:8 }}>
-                        <span style={{ width:8, height:8, borderRadius:"50%",
+                        <span aria-hidden="true" style={{ width:8, height:8, borderRadius:"50%",
                           background: cfg.accent || "#8b4513", flexShrink:0 }} />
                         <span style={{ fontFamily:"'Playfair Display',serif", fontSize:13,
                           color:"#f8f8f0", fontWeight:600 }}>{entry.title}</span>
@@ -1348,22 +1359,9 @@ export default function CommonplaceApp() {
               </div>
             )}
           </div>
-          {/* Template pills */}
-          <div style={{ display:"flex", gap:4, flexShrink:0 }}>
-            {Object.entries(TEMPLATE_CONFIG).filter(([_,c]) => c.active).slice(0,5).map(([name, cfg]) => (
-              <button key={name} onClick={() => goToTemplate(name)}
-                style={{ padding:"4px 8px", background:"transparent",
-                  border:`1px solid ${view === 'template' && activeTemplate === name ? cfg.accent : 'rgba(255,255,255,0.12)'}`,
-                  borderRadius:3, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
-                  fontSize:9, letterSpacing:"0.07em", textTransform:"uppercase",
-                  color: view === 'template' && activeTemplate === name ? cfg.accent : 'rgba(255,255,255,0.5)',
-                  transition:"all 0.12s" }}>
-                {name.length > 7 ? name.slice(0,7) : name}
-              </button>
-            ))}
-          </div>
+
         </div>
-      </div>
+      </header>
 
       {/* Views */}
       {view === 'home' && (
