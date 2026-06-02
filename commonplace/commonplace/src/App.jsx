@@ -639,11 +639,12 @@ const TEMPLATE_META = {
 function initFuse() {
   FUSE = new Fuse(SEARCH_INDEX, {
     keys: [
-      { name: "title",      weight: 0.70 },
-      { name: "aliases",    weight: 0.15 },
-      { name: "indexTerms", weight: 0.08 },
-      { name: "themes",     weight: 0.05 },
-      { name: "summary",    weight: 0.02 },
+      { name: "title",       weight: 0.65 },
+      { name: "aliases",     weight: 0.15 },
+      { name: "searchTerms", weight: 0.12 },
+      { name: "indexTerms",  weight: 0.05 },
+      { name: "themes",      weight: 0.02 },
+      { name: "summary",     weight: 0.01 },
     ],
     threshold:        0.35,  // 0 = exact, 1 = match anything — 0.35 tolerates typos
     ignoreLocation:   true,  // match anywhere in the string, not just start
@@ -669,6 +670,11 @@ function scoreEntry(entry, terms) {
   if (terms.length && terms.some(t => title.startsWith(t)))  return 750;
   if (terms.length && terms.some(t => bare.startsWith(t)))   return 700;
   if (terms.length && terms.some(t => title.includes(t)))    return 650;
+  // searchTerms: associated works/plays/books — e.g. "hamlet" → Shakespeare
+  const searchTerms = (siRec?.searchTerms || []).map(s => s.toLowerCase());
+  if (searchTerms.some(s => s === q))                         return 580;
+  if (terms.length && searchTerms.some(s => terms.some(t => s.startsWith(t)))) return 550;
+  if (terms.length && searchTerms.some(s => terms.some(t => s.includes(t))))   return 520;
 
   // Fall back to Fuse for typo tolerance
   if (!FUSE || !terms.length) return 0;
@@ -704,6 +710,11 @@ function searchEntries(query) {
     if (terms.length && terms.some(t => title.startsWith(t)))  return { id: entry.id, entry, score: 750 };  // word prefix
     if (terms.length && terms.some(t => bare.startsWith(t)))   return { id: entry.id, entry, score: 700 };  // bare word prefix
     if (terms.length && terms.some(t => title.includes(t)))    return { id: entry.id, entry, score: 650 };  // word anywhere
+    // searchTerms: associated works/plays/books — score below title matches but above Fuse
+    const searchTerms = (siRec?.searchTerms || []).map(s => s.toLowerCase());
+    if (searchTerms.some(s => s === q))                                          return { id: entry.id, entry, score: 580 };
+    if (terms.length && searchTerms.some(s => terms.some(t => s.startsWith(t)))) return { id: entry.id, entry, score: 550 };
+    if (terms.length && searchTerms.some(s => terms.some(t => s.includes(t))))   return { id: entry.id, entry, score: 520 };
     return null;
   }).filter(Boolean).sort((a, b) => b.score - a.score);
 
@@ -1179,6 +1190,11 @@ export default function CommonplaceApp() {
       if (terms.length && terms.some(t => title.startsWith(t)))  return { entry, score: 750 };
       if (terms.length && terms.some(t => bare.startsWith(t)))   return { entry, score: 700 };
       if (terms.length && terms.some(t => title.includes(t)))    return { entry, score: 650 };
+      // searchTerms: associated works — e.g. "hamlet" → Shakespeare
+      const searchTerms = (siRec?.searchTerms || []).map(s => s.toLowerCase());
+      if (searchTerms.some(s => s === q))                                          return { entry, score: 580 };
+      if (terms.length && searchTerms.some(s => terms.some(t => s.startsWith(t)))) return { entry, score: 550 };
+      if (terms.length && searchTerms.some(s => terms.some(t => s.includes(t))))   return { entry, score: 520 };
       return null;
     }).filter(Boolean).sort((a, b) => b.score - a.score);
 
