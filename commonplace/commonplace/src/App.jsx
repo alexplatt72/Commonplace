@@ -57,16 +57,14 @@ const SUBTYPE_SECTIONS = {
   "Analytical Concept":["theConcept","problemItSolves","howItWorks","whatItExplains","whereItBreaksDown","usedAndMisusedC"],
   "Normative Concept": ["theConcept","problemItAddresses","competingTraditions","politicalStakes","contestedHistoryC","whereDebateStands"],
   "Period":   ["thePeriod","theBoundaries","theConditions","internalDiversity","longConsequences","periodizationDebate"],
-  "Movement": ["theMovement","origins","coreCommitments","internalTensions","whatItChanged","legacyAndLimits"],
+  "Movement": ["theMovement","theOrigins","howItOrganized","whatItAchieved","contestedLegacy","whyItEnded"],
   "Site":     ["thePlace","physicalWorld","theLayers","whatItBecame","whoClaimsIt","theLongLife"],
   "System":   ["theSystem","physicalLogic","whatMovedThrough","whoOrganizedIt","whatItMadePossible","theLongLifeS"],
-  // Natural Phenomena — unified template (both subtypes share identical section keys)
-  "Natural Event": ["theForce","theRecord","howPeopleKnew","whatItDidToSocieties","theUnequal","theLongConsequence"],
-  "Natural Force": ["theForce","theRecord","howPeopleKnew","whatItDidToSocieties","theUnequal","theLongConsequence"],
+  "Natural Event": ["thePhenomenon","theScience","whatItDid","howHumansUnderstoodIt","whatChanged","theLongShadow"],
+  "Natural Force": ["theForce","theScience","howItShaped","humanResponse","whatItMadeImpossible","presentAndFuture"],
   "Policy Landscape": ["theLandscape","theHistoricalArc","theValueFramework","theEvidenceEcosystem","theInternationalComparison","theCurrentDebates"],
   "Policy Question": ["theQuestion","theStakes","theValueFramework","theEvidence","theOptions","theInternationalEvidence"],
   "Material Foundation":    ["theFoundation","howItArrived","whatItReorganized","thePoliticalEconomy","theFeedback","presentAndFuture"],
-  "Biological Foundation":  ["theFoundation","howItArrived","whatItReorganized","thePoliticalEconomy","theFeedback","presentAndFuture"],
   "Conceptual Foundation":  ["theFoundation","howItArrived","whatItReorganized","theTransmission","theFeedback","presentAndFuture"],
 };
 
@@ -97,22 +95,22 @@ const SECTION_LABELS = {
   thePeriod:"The Period", theBoundaries:"The Boundaries", theConditions:"The Conditions",
   internalDiversity:"The Internal Diversity", longConsequences:"The Long Consequences",
   periodizationDebate:"The Periodization Debate",
-  theMovement:"The Movement",
+  theMovement:"The Movement", theOrigins:"The Origins", howItOrganized:"How It Organized",
+  whatItAchieved:"What It Achieved", contestedLegacy:"The Contested Legacy",
+  whyItEnded:"Why It Ended or Transformed",
   thePlace:"The Place", physicalWorld:"The Physical World", theLayers:"The Layers",
   whatItBecame:"What It Became", whoClaimsIt:"Who Claims It", theLongLife:"The Long Life",
   theSystem:"The System", physicalLogic:"The Physical Logic",
   whatMovedThrough:"What Moved Through It", whoOrganizedIt:"Who Organized It",
   whatItMadePossible:"What It Made Possible", theLongLifeS:"The Long Life",
-  // Natural Phenomena — unified template labels
-  theForce:"The Force",
-  theRecord:"The Record",
-  howPeopleKnew:"How People Knew — The History of Understanding",
-  whatItDidToSocieties:"What It Did to Societies",
-  theUnequal:"Who Bore the Costs",
-  theLongConsequence:"The Long Consequence",
-  // Movement section labels
-  origins:"The Origins", coreCommitments:"The Core Commitments",
-  internalTensions:"Internal Tensions", legacyAndLimits:"Legacy and Limits",
+  thePhenomenon:"The Phenomenon", theScience:"The Science",
+  whatItDid:"What It Did to Human Civilization",
+  howHumansUnderstoodIt:"How Humans Understood It",
+  whatChanged:"What Changed Because of It", theLongShadow:"The Long Shadow",
+  theForce:"The Force", howItShaped:"How It Shaped Human History",
+  humanResponse:"Human Response and Adaptation",
+  whatItMadeImpossible:"What It Made Impossible or Inevitable",
+  presentAndFuture:"The Present and Future",
   theLandscape:"The Landscape", theHistoricalArc:"The Historical Arc",
   theValueFramework:"The Value Framework", theEvidenceEcosystem:"The Evidence Ecosystem",
   theInternationalComparison:"The International Comparison", theCurrentDebates:"The Current Debates",
@@ -427,26 +425,32 @@ function RabbitHole({ links, depth, navigateTo }) {
           padding:gs.padding,
           background:gs.bg,
           border:gs.border,
-          borderLeft:`${gs.borderWidth}px solid ${tc}`,
+          borderLeft:`${gs.borderWidth}px solid ${hasEntry ? tc : C.light}`,
           borderRadius:7,
           cursor: hasEntry ? "pointer" : "default",
           boxShadow: gs.shadow,
           transition:"all 0.15s",
           marginBottom: link._gravity === "high" ? 8 : 4,
+          opacity: hasEntry ? 1 : 0.6,
         }}
       >
         {/* Type label: prominent chip for high gravity, inline text for medium/low */}
         {gs.typeVisible ? (
-          <span style={{ display:"inline-flex", alignItems:"center", padding:"3px 8px", borderRadius:4, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:600, letterSpacing:"0.05em", textTransform:"uppercase", whiteSpace:"nowrap", marginTop:2, color:"#fff", background:tc, flexShrink:0 }}>{link.type}</span>
+          <span style={{ display:"inline-flex", alignItems:"center", padding:"3px 8px", borderRadius:4, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:600, letterSpacing:"0.05em", textTransform:"uppercase", whiteSpace:"nowrap", marginTop:2, color:"#fff", background: hasEntry ? tc : C.light, flexShrink:0 }}>{link.type}</span>
         ) : (
-          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, color:tc, fontWeight:500, letterSpacing:"0.05em", textTransform:"uppercase", whiteSpace:"nowrap", marginTop:3, minWidth:72, flexShrink:0 }}>{link.type}</span>
+          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, color: hasEntry ? tc : C.light, fontWeight:500, letterSpacing:"0.05em", textTransform:"uppercase", whiteSpace:"nowrap", marginTop:3, minWidth:72, flexShrink:0 }}>{link.type}</span>
         )}
         <div style={{ flex:1 }}>
           <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom: link._gravity === "high" ? 5 : 2 }}>
-            <span style={{ fontFamily:"'Lora',serif", fontSize:gs.labelSize, fontWeight:gs.labelWeight, color:C.text }}>{link.label}</span>
+            <span style={{ fontFamily:"'Lora',serif", fontSize:gs.labelSize, fontWeight:gs.labelWeight, color: hasEntry ? C.text : C.muted, fontStyle: hasEntry ? "normal" : "italic" }}>{link.label}</span>
             {targetTemplate && (
               <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.06em", textTransform:"uppercase", padding:"1px 6px", borderRadius:2, color:"#fff", background:TEMPLATE_CONFIG[targetTemplate]?.accent || C.navy }}>
                 → {targetTemplate}
+              </span>
+            )}
+            {!hasEntry && (
+              <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.05em", textTransform:"uppercase", padding:"1px 7px", borderRadius:3, color:C.muted, background:C.border, whiteSpace:"nowrap" }}>
+                In progress
               </span>
             )}
             {hasEntry && link._gravity === "high" && (
