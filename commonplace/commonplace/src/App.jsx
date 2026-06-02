@@ -9,7 +9,7 @@ let FUSE = null;        // Fuse.js instance, initialised after searchIndex loads
 
 
 const FONTS = `
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #f4f1eb; }
 `;
@@ -1273,7 +1273,7 @@ export default function CommonplaceApp() {
   if (!manifestLoaded) return (
     <div style={{ minHeight:"100vh", background:C.bg, display:"flex", alignItems:"center", justifyContent:"center" }}>
       <style>{FONTS}</style>
-      <div style={{ fontFamily:"'Playfair Display',serif", fontSize:24, color:C.muted }}>TheCommonPlace</div>
+      <div style={{ fontFamily:"'DM Serif Display',serif", fontSize:24, color:C.muted }}>TheCommonPlace</div>
     </div>
   );
 
@@ -1291,15 +1291,9 @@ export default function CommonplaceApp() {
           <button onClick={goHome} aria-label="TheCommonPlace — go to homepage"
             style={{ display:"flex", alignItems:"center", gap:10, background:"transparent",
               border:"none", cursor:"pointer", flexShrink:0, padding:0 }}>
-            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="26" height="26" rx="4" stroke="rgba(255,255,255,0.25)" strokeWidth="1.2"/>
-              <line x1="7" y1="8" x2="21" y2="8" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round"/>
-              <line x1="7" y1="12" x2="21" y2="12" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2" strokeLinecap="round"/>
-              <line x1="7" y1="16" x2="16" y2="16" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2" strokeLinecap="round"/>
-              <line x1="7" y1="20" x2="19" y2="20" stroke="rgba(255,255,255,0.35)" strokeWidth="1.2" strokeLinecap="round"/>
-            </svg>
-            <span style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700,
+            <img src="/tcp_logo_transparent.png" alt="" aria-hidden="true" height="36"
+              style={{ display:"block", objectFit:"contain" }} />
+            <span style={{ fontFamily:"'DM Serif Display',serif", fontSize:20,
               color:"#ffffff", letterSpacing:"0.01em", userSelect:"none" }}>
               TheCommonPlace
             </span>
