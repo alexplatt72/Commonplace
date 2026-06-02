@@ -49,13 +49,12 @@ function buildRecord(entry) {
     ...pluck(comparativeNarrative, 'name'),
   ]);
 
+  // indexTerms = author names only. Reference/commerce titles and rabbit hole
+  // reason snippets caused false matches (e.g. searching 'shakespe' surfaced
+  // Hamlet because its commerce items mention 'Hamlet (Arden Shakespeare...)').
   const indexTerms = uniq([
-    ...pluck(reference,      'author'),
-    ...pluck(reference,      'title'),
-    ...pluck(commerce,       'title'),
-    ...pluck(commerce,       'author'),
-    ...pluck(popularCulture, 'title'),
-    ...(Array.isArray(rabbitHole) ? rabbitHole.map(r => firstWords(r?.reason, 5)) : []),
+    ...pluck(reference, 'author'),
+    ...pluck(commerce,  'author'),
     subtype,
   ]);
 
