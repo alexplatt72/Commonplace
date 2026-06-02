@@ -98,39 +98,25 @@
       "reason": "The closest historical analogue — what a smaller temperature shift did to civilization over centuries, and the key calibration point for climate models"
     },
     {
-      "label": "The Keeling Curve",
-      "entryId": "keelingCurve",
-      "status": "planned",
-      "relationship": "Foundational",
-      "reason": "The direct measurement of atmospheric CO2 since 1958 — the single most important scientific dataset for establishing the reality and pace of the change"
-    },
-    {
-      "label": "The Paris Agreement",
-      "entryId": "parisAgreement",
-      "status": "planned",
-      "relationship": "Consequential",
-      "reason": "The current international governance framework — what it commits to, what current trajectories imply, and where the gap between commitment and implementation lies"
-    },
-    {
-      "label": "The IPCC Assessment Reports",
-      "entryId": "iPCCAssessmentReports",
-      "status": "planned",
-      "relationship": "Consequential",
-      "reason": "The periodic synthesis of climate science — essential for understanding both what the science establishes and how that consensus is produced"
-    },
-    {
-      "label": "The Ozone Crisis",
-      "entryId": "ozoneCrisis",
-      "status": "planned",
-      "relationship": "Thematic",
-      "reason": "The successful international response to stratospheric ozone depletion — the closest analogue to a collective response to a global atmospheric problem, and instructive about what made it possible"
-    },
-    {
       "label": "The Black Death",
       "entryId": "blackDeath",
       "status": "published",
       "relationship": "Parallel",
       "reason": "The paradigm case of a natural force exposing civilizational inequality and overwhelming institutional capacity — the structural comparison is more illuminating than the obvious differences"
+    },
+    {
+      "label": "Industrialization",
+      "entryId": "industrialRevolution",
+      "relationship": "Foundational",
+      "reason": "The Industrial Revolution initiated the fossil fuel combustion that produced anthropogenic climate change — the causal chain from coal-powered industrialization to atmospheric warming is the foundation of climate science.",
+      "status": "published"
+    },
+    {
+      "label": "Oil",
+      "entryId": "oil",
+      "relationship": "Foundational",
+      "reason": "Oil is the primary fossil fuel driving contemporary climate change and the economic foundation of the political resistance to decarbonization — the political economy of oil shapes every dimension of climate policy.",
+      "status": "published"
     }
   ],
   "reference": [

@@ -85,13 +85,6 @@
   ],
   "rabbitHole": [
     {
-      "label": "The War on Drugs",
-      "entryId": "warOnDrugs",
-      "status": "planned",
-      "relationship": "Foundational",
-      "reason": "The policy framework that has governed US drug enforcement since 1971 — understanding its origins reveals the political and moral context in which current alternatives are debated"
-    },
-    {
       "label": "Mass Incarceration",
       "entryId": "massIncarceration",
       "status": "planned",
@@ -99,25 +92,25 @@
       "reason": "Drug enforcement has been a major driver of the US incarceration rate — understanding the connection contextualizes the stakes of reform"
     },
     {
-      "label": "Alcohol Prohibition",
-      "entryId": "alcoholProhibition",
-      "status": "planned",
-      "relationship": "Parallel",
-      "reason": "The closest US historical analogue — the 18th Amendment and its repeal — raises directly comparable questions about prohibition, enforcement, and consequences"
-    },
-    {
-      "label": "Portugal Drug Policy",
-      "entryId": "portugalDrugPolicy",
-      "status": "planned",
-      "relationship": "Thematic",
-      "reason": "The most studied decriminalization experiment — 20 years of data on what actually happened"
-    },
-    {
-      "label": "The Opioid Crisis",
-      "entryId": "opioidCrisis",
-      "status": "planned",
+      "label": "Prohibition",
+      "entryId": "prohibition",
       "relationship": "Foundational",
-      "reason": "The specific crisis driving current drug policy urgency — understanding the pharmaceutical industry origins clarifies what enforcement can and cannot address"
+      "reason": "American alcohol prohibition is the founding case study in criminalization as drug policy — its failure established the template for debates about what happens when states attempt to eliminate drug markets by force.",
+      "status": "planned"
+    },
+    {
+      "label": "Inequality",
+      "entryId": "inequality",
+      "relationship": "Thematic",
+      "reason": "Drug policy's effects fall disproportionately on low-income and minority communities — the gap between who uses drugs and who is prosecuted for drug offenses is one of the clearest expressions of structural inequality in criminal justice.",
+      "status": "published"
+    },
+    {
+      "label": "The State",
+      "entryId": "theState",
+      "relationship": "Foundational",
+      "reason": "Drug policy reveals the limits and mechanisms of state power — what the state can and cannot control through prohibition, how criminalization reshapes state-citizen relations, and what enforcement costs in legitimacy.",
+      "status": "published"
     }
   ],
   "reference": [

@@ -92,32 +92,25 @@
       "reason": "The field within which the employment effects debate takes place — understanding the basic models helps you evaluate the competing claims"
     },
     {
-      "label": "The Earned Income Tax Credit",
-      "entryId": "earnedIncomeTaxCredit",
-      "status": "planned",
-      "relationship": "Foundational",
-      "reason": "The major alternative tool for raising incomes of low-wage workers — understanding the EITC clarifies what the minimum wage does that the EITC doesn't, and vice versa"
-    },
-    {
-      "label": "Tipped Worker Wages",
-      "entryId": "tippedWorkerWages",
-      "status": "planned",
-      "relationship": "Consequential",
-      "reason": "The federal tipped minimum ($2.13/hr since 1991) is a distinct policy with distinct politics — often discussed alongside the minimum wage but with different dynamics"
-    },
-    {
-      "label": "UK Living Wage",
-      "entryId": "uKLivingWage",
-      "status": "planned",
-      "relationship": "Parallel",
-      "reason": "The most comparable international case — significant increases with modest employment effects — and the closest test of what US advocates predict"
-    },
-    {
       "label": "Universal Basic Income",
       "entryId": "universalBasicIncome",
       "status": "planned",
       "relationship": "Thematic",
       "reason": "An alternative approach to addressing low-income workers' needs that sidesteps the employment effects concern entirely"
+    },
+    {
+      "label": "Inequality",
+      "entryId": "inequality",
+      "relationship": "Thematic",
+      "reason": "Minimum wage policy is one of the primary policy instruments for addressing wage inequality — the debate about its effects is inseparable from the broader debate about what causes and sustains income inequality.",
+      "status": "published"
+    },
+    {
+      "label": "Capitalism",
+      "entryId": "capitalism",
+      "relationship": "Foundational",
+      "reason": "Minimum wage debates reveal fundamental disagreements about how labor markets work under capitalism — whether wages are set by supply and demand or by power relations between employers and workers.",
+      "status": "published"
     }
   ],
   "reference": [

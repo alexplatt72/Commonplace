@@ -85,39 +85,32 @@
   ],
   "rabbitHole": [
     {
-      "label": "The Affordable Care Act",
-      "entryId": "affordableCareAct",
-      "status": "planned",
+      "label": "The Hospital",
+      "entryId": "theHospital",
       "relationship": "Foundational",
-      "reason": "The most significant recent structural change â€” understanding what it did, what it didn't do, and why tells you what the current baseline is"
+      "reason": "The hospital is the primary institutional site where healthcare policy is implemented and contested — its transformation from charitable institution to medical center tracks the history of healthcare as a public good.",
+      "status": "published"
     },
     {
-      "label": "Medicare and Medicaid",
-      "entryId": "medicareAndMedicaid",
-      "status": "planned",
-      "relationship": "Consequential",
-      "reason": "The largest public programs â€” understanding their structure explains what 'expanding Medicare' would mean and what 'Medicaid work requirements' would change"
+      "label": "Inequality",
+      "entryId": "inequality",
+      "relationship": "Foundational",
+      "reason": "Healthcare access and health outcomes are among the most direct expressions of economic inequality — the gap between what different income levels can access is both cause and consequence of broader social stratification.",
+      "status": "published"
     },
     {
-      "label": "Canadian Healthcare System",
-      "entryId": "canadianHealthcareSystem",
-      "status": "planned",
-      "relationship": "Parallel",
-      "reason": "The most-discussed international comparison â€” single-payer with private delivery, universal coverage, lower costs, longer waits"
-    },
-    {
-      "label": "Singapore's Healthcare System",
-      "entryId": "singaporesHealthcareSystem",
-      "status": "planned",
+      "label": "The Welfare State",
+      "entryId": "welfareState",
       "relationship": "Thematic",
-      "reason": "The most market-oriented universal system â€” mandatory savings accounts with catastrophic coverage â€” represents a genuinely different model from both the US and European approaches"
+      "reason": "Healthcare systems are the most expensive and contested component of the welfare state — the debate about whether healthcare is a public good or a market commodity is the central fault line of welfare state politics.",
+      "status": "planned"
     },
     {
-      "label": "Health Insurance",
-      "entryId": "healthInsurance",
-      "status": "planned",
+      "label": "Public Health",
+      "entryId": "publicHealth",
       "relationship": "Foundational",
-      "reason": "Understanding how insurance actually works â€” adverse selection, moral hazard, risk pooling â€” is prerequisite to evaluating any reform proposal"
+      "reason": "Public health and healthcare policy operate on different logics — population-level prevention versus individual treatment — and their relationship defines how health systems are organized and funded.",
+      "status": "planned"
     }
   ],
   "reference": [

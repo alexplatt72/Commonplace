@@ -83,13 +83,6 @@
   ],
   "rabbitHole": [
     {
-      "label": "Natural Theology — Paley's Watchmaker",
-      "entryId": "naturalTheologyPaleysWatchmaker",
-      "status": "planned",
-      "relationship": "Foundational",
-      "reason": "The framework the Origin was dismantling — understanding it makes Darwin's achievement specific"
-    },
-    {
       "label": "The Modern Synthesis",
       "entryId": "modernSynthesis",
       "status": "planned",
@@ -111,18 +104,11 @@
       "reason": "Aristotle's teleological approach to biology — understanding organisms through their purposes — was precisely what Darwin's mechanism of natural selection made unnecessary as an explanation"
     },
     {
-      "label": "Copernicus — De Revolutionibus",
-      "entryId": "copernicusDeRevolutionibus",
-      "status": "planned",
-      "relationship": "Parallel",
-      "reason": "The closest structural parallel: a scientific text that displaced an entrenched cosmology and generated sustained cultural conflict"
-    },
-    {
-      "label": "The Selfish Gene — Richard Dawkins",
-      "entryId": "selfishGeneRichardDawkins",
-      "status": "planned",
-      "relationship": "Thematic",
-      "reason": "The most influential popular elaboration of Darwinian thinking — and a source of some of the most contested extensions of evolutionary logic to human behavior"
+      "label": "Darwin",
+      "entryId": "darwin",
+      "relationship": "Foundational",
+      "reason": "Darwin's biography and intellectual development — his voyage on the Beagle, his long delay before publication, his private religious doubts — illuminate how the Origin came to be and why it arrived when it did.",
+      "status": "published"
     }
   ],
   "reference": [
