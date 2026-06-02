@@ -176,6 +176,15 @@
     "status": "published"
   },
   {
+    "id": "artOfWar",
+    "title": "The Art of War",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
+    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
+    "status": "published"
+  },
+  {
     "id": "artificialIntelligence",
     "title": "Artificial Intelligence",
     "template": "Foundations",
@@ -190,15 +199,6 @@
       "20thCentury"
     ],
     "summary": "The project of building machines that can perform tasks requiring human-like intelligence — now the most rapidly developing technology in human history and the subject of the most consequential unresolved questions about the future of work, knowledge, and civilization.",
-    "status": "published"
-  },
-  {
-    "id": "artOfWar",
-    "title": "The Art of War",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
-    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
     "status": "published"
   },
   {
@@ -1279,15 +1279,6 @@
     "status": "published"
   },
   {
-    "id": "humanitarianIntervention",
-    "title": "Humanitarian Intervention",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "1990s–present",
-    "status": "published",
-    "summary": "The question of whether states or international bodies are morally and legally permitted — or obligated — to use military force against a sovereign state to protect that state's population from mass atrocities, genocide, or crimes against humanity — a question that pits two foundational principles of international order against each other: the sovereignty of states and the protection of human beings from their own governments."
-  },
-  {
     "id": "humanRights",
     "title": "Human Rights",
     "summary": "The doctrine that all human beings possess inherent rights by virtue of their humanity — rights that governments cannot legitimately violate and that the international community has a responsibility to protect — institutionalized after World War II in the Universal Declaration of Human Rights and subsequent treaties, and contested ever since on questions of universality, enforceability, cultural specificity, and political instrumentalization.",
@@ -1304,6 +1295,15 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "humanitarianIntervention",
+    "title": "Humanitarian Intervention",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "1990s–present",
+    "status": "published",
+    "summary": "The question of whether states or international bodies are morally and legally permitted — or obligated — to use military force against a sovereign state to protect that state's population from mass atrocities, genocide, or crimes against humanity — a question that pits two foundational principles of international order against each other: the sovereignty of states and the protection of human beings from their own governments."
   },
   {
     "id": "hume",
@@ -1405,15 +1405,6 @@
     "status": "published"
   },
   {
-    "id": "industrialRevolution",
-    "title": "The Industrial Revolution",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
-    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
-    "status": "published"
-  },
-  {
     "id": "indusValleyCivilization",
     "title": "The Indus Valley Civilization",
     "template": "Places",
@@ -1454,6 +1445,15 @@
       "Punjab",
       "Mesopotamia"
     ]
+  },
+  {
+    "id": "industrialRevolution",
+    "title": "The Industrial Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
+    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
+    "status": "published"
   },
   {
     "id": "inequality",
@@ -1606,6 +1606,15 @@
     "status": "published"
   },
   {
+    "id": "justWarTheory",
+    "title": "Just War Theory",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century CE–present",
+    "status": "published",
+    "summary": "The tradition in moral and political philosophy that attempts to specify when the resort to war is morally permissible (jus ad bellum) and how war, once begun, must be conducted (jus in bello) — developed through Augustine, Aquinas, Grotius, and Vitoria, and now institutionalized in international humanitarian law, while remaining contested by both pacifists who reject its permissive conclusions and realists who reject its moral constraints."
+  },
+  {
     "id": "justice",
     "title": "Justice",
     "template": "Concepts",
@@ -1622,15 +1631,6 @@
     "period": "541–750 CE",
     "status": "published",
     "summary": "The first pandemic of bubonic plague, which struck the Byzantine Empire in 541 CE and recurred across the Mediterranean and Near East for two centuries — killing millions, disrupting Justinian's attempt to reunify the Roman Empire, and establishing plague as the defining catastrophe of the ancient world's final era."
-  },
-  {
-    "id": "justWarTheory",
-    "title": "Just War Theory",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "4th century CE–present",
-    "status": "published",
-    "summary": "The tradition in moral and political philosophy that attempts to specify when the resort to war is morally permissible (jus ad bellum) and how war, once begun, must be conducted (jus in bello) — developed through Augustine, Aquinas, Grotius, and Vitoria, and now institutionalized in international humanitarian law, while remaining contested by both pacifists who reject its permissive conclusions and realists who reject its moral constraints."
   },
   {
     "id": "kant",
@@ -2196,6 +2196,15 @@
     "qualityTier": "A"
   },
   {
+    "id": "nonviolence",
+    "title": "Nonviolence",
+    "template": "Concepts & Ideas",
+    "subtype": "Normative Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The principle and practice of refusing to use violence in pursuit of political or social change, grounded in diverse philosophical and religious traditions and developed as a systematic political strategy in the 20th century through the work of Gandhi and King. Nonviolence is both a moral claim and a strategic claim about effective resistance against entrenched power."
+  },
+  {
     "id": "nuclearDeterrence",
     "title": "Nuclear Deterrence",
     "template": "Concepts",
@@ -2364,6 +2373,24 @@
     "status": "published"
   },
   {
+    "id": "publicHealth",
+    "title": "Public Health",
+    "template": "Concepts & Ideas",
+    "subtype": "Analytical Concept",
+    "period": "1840s–present",
+    "status": "published",
+    "summary": "The organized effort of societies to protect and improve the health of populations as a whole, rather than treating individuals one at a time. Public health rests on the insight that the conditions in which people live — water, air, housing, food, income — shape health outcomes more powerfully than medicine alone."
+  },
+  {
+    "id": "qingDynasty",
+    "title": "The Qing Dynasty",
+    "template": "Periods & Movements",
+    "subtype": "Period",
+    "period": "1644–1912",
+    "status": "published",
+    "summary": "The last imperial dynasty of China, founded by the Manchu Aisin Gioro clan in 1644 and ruling for 268 years until its collapse in 1912. At its height, the Qing Empire was the largest state in Chinese history and among the most populous on Earth, controlling a territory that included present-day China, Mongolia, Tibet, and Xinjiang."
+  },
+  {
     "id": "quantumMechanics",
     "title": "Quantum Mechanics",
     "template": "Foundations",
@@ -2397,6 +2424,15 @@
     "title": "Race",
     "summary": "The concept of dividing humanity into distinct biological groups based on physical characteristics — a system of classification whose scientific validity is rejected by contemporary biology but whose social and political consequences have been, and remain, thoroughly real.",
     "status": "published"
+  },
+  {
+    "id": "railways",
+    "title": "Railways",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1820s–present",
+    "status": "published",
+    "summary": "The network of iron and steel tracks that reorganized the movement of goods, people, and armies across land surfaces, collapsing distance and time in ways that restructured economies, empires, and daily life. Railways did not merely accelerate existing patterns of movement — they created new geographies of production, settlement, and power."
   },
   {
     "id": "renaissance",
@@ -2547,6 +2583,15 @@
     "summary": "The mineral sodium chloride — essential for human survival, one of the oldest trade commodities in the world, a driver of civilizational development across every inhabited continent, and a substance whose history illuminates how the most basic biological necessities become instruments of commerce, taxation, and political power."
   },
   {
+    "id": "scholasticism",
+    "title": "Scholasticism",
+    "template": "Periods & Movements",
+    "subtype": "Movement",
+    "period": "c. 1050–1350",
+    "status": "published",
+    "summary": "The dominant intellectual method of medieval European universities from roughly 1050 to 1350, organized around the systematic reconciliation of Christian theology with ancient philosophy — above all Aristotle — through rigorous logical analysis. Scholasticism produced the first institutionalized tradition of rational inquiry in the Western world."
+  },
+  {
     "id": "scientificRevolution",
     "title": "The Scientific Revolution",
     "template": "Periods",
@@ -2655,6 +2700,15 @@
     "summary": "French existentialist philosopher whose The Second Sex (1949) provided the twentieth century's foundational analysis of women's oppression — arguing that 'woman' is not a biological fact but a social construction imposed by a male-defined world — and whose life as a public intellectual, writer, and activist embodied the freedom she theorized."
   },
   {
+    "id": "slaveTrade",
+    "title": "The Transatlantic Slave Trade",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1500–1867",
+    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
+    "status": "published"
+  },
+  {
     "id": "slavery",
     "title": "Slavery",
     "summary": "The institution of owning human beings as property — one of the most widespread and durable institutions in human history, practiced on every inhabited continent, powering the ancient economies of Greece, Rome, and the Near East, and reaching its most systematic modern form in the Atlantic plantation complex that built the wealth of the early capitalist world — and one of the central subjects of moral and political philosophy, whose abolition required a reconception of what it means to be human.",
@@ -2672,15 +2726,6 @@
     ],
     "status": "published",
     "qualityTier": "A"
-  },
-  {
-    "id": "slaveTrade",
-    "title": "The Transatlantic Slave Trade",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "c. 1500–1867",
-    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
-    "status": "published"
   },
   {
     "id": "socialClass",
