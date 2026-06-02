@@ -1102,6 +1102,37 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry }) {
         .catch(() => setLoading(false));
     }
   }, [entryId]);
+
+  // Update page title and meta tags when entry loads; reset to site defaults on unmount
+  React.useEffect(() => {
+    if (!entry) return;
+    const siteTitle = 'The Commonplace';
+    const siteDesc  = 'A curated canon of civilizational significance — structured analytical depth across history, ideas, and the world.';
+    const entryTitle = `${entry.title} — ${siteTitle}`;
+    const entryDesc  = entry.summary || siteDesc;
+    const entryUrl   = `https://www.thecommonplace.dev/entry/${entryId}`;
+
+    const setMeta = (sel, attr, val) => {
+      const el = document.querySelector(sel);
+      if (el) el.setAttribute(attr, val);
+    };
+
+    document.title = entryTitle;
+    setMeta('meta[name="description"]',        'content', entryDesc);
+    setMeta('meta[property="og:title"]',       'content', entryTitle);
+    setMeta('meta[property="og:description"]', 'content', entryDesc);
+    setMeta('meta[property="og:url"]',         'content', entryUrl);
+    setMeta('meta[property="og:type"]',        'content', 'article');
+
+    return () => {
+      document.title = siteTitle;
+      setMeta('meta[name="description"]',        'content', siteDesc);
+      setMeta('meta[property="og:title"]',       'content', siteTitle);
+      setMeta('meta[property="og:description"]', 'content', siteDesc);
+      setMeta('meta[property="og:url"]',         'content', 'https://www.thecommonplace.dev');
+      setMeta('meta[property="og:type"]',        'content', 'website');
+    };
+  }, [entry, entryId]);
   if (loading) return <div style={{padding:60,textAlign:'center',fontFamily:"'Lora',serif",color:C.muted}}>Loading…</div>;
   if (!entry) return null;
   const cfg = TEMPLATE_CONFIG[entry.template] || {};
