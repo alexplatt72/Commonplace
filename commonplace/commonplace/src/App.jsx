@@ -777,6 +777,7 @@ function getMatchSnippet(entry, terms) {
 
 function EntryCard({ id, entry, onClick, compact, snippet }) {
   const cfg = TEMPLATE_CONFIG[entry.template] || {};
+  const summary = entry.summary || '';
   const accent = cfg.accent || '#555';
   return (
     <button onClick={() => onClick(id)}
@@ -806,7 +807,7 @@ function EntryCard({ id, entry, onClick, compact, snippet }) {
       {!compact && !snippet && (
         <div style={{ fontFamily:"'Lora',serif", fontSize:12.5, color:C.muted, lineHeight:1.5,
           display:"-webkit-box", WebkitLineClamp:2, WebkitBoxOrient:"vertical", overflow:"hidden" }}>
-          {entry.summary}
+          {summary}
         </div>
       )}
     </button>
