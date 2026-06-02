@@ -668,38 +668,44 @@ function scoreEntry(entry, terms) {
 function searchEntries(query) {
   if (!query.trim()) return { results: [], query: '', empty: false };
 
-  // Use Fuse.js if available
+  const q = query.trim().toLowerCase();
+  const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
+  const terms = q.split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
+
+  // ── Step 1: exact and prefix title matches, always ranked first ──────────
+  // Fuse fuzzy scoring can deprioritise the searched entry in favour of entries
+  // that mention it by name in their content. Pin direct title matches to top.
+  const titleMatched = MANIFEST
+    .map(entry => {
+      const title = (entry.title || '').toLowerCase();
+      if (title === q)                          return { id: entry.id, entry, score: 1000 }; // exact
+      if (title.startsWith(q))                  return { id: entry.id, entry, score: 900 };  // prefix
+      if (terms.every(t => title.includes(t)))  return { id: entry.id, entry, score: 800 };  // all terms
+      if (terms.some(t => title.startsWith(t))) return { id: entry.id, entry, score: 700 };  // word prefix
+      if (terms.some(t => title.includes(t)))   return { id: entry.id, entry, score: 600 };  // word contains
+      return null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.score - a.score);
+
+  const titleMatchedIds = new Set(titleMatched.map(r => r.id));
+
+  // ── Step 2: Fuse for fuzzy/typo matching on everything not already matched ─
   if (FUSE) {
     const fuseResults = FUSE.search(query, { limit: 12 });
-    // Build set of ids already covered by Fuse
-    const fuseIds = new Set(fuseResults.map(r => r.item.id));
-    const fuseResultsMapped = fuseResults.map(r => {
-      const manifest = MANIFEST.find(e => e.id === r.item.id);
-      return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
-    }).filter(x => x.entry);
+    const fuseResultsMapped = fuseResults
+      .filter(r => !titleMatchedIds.has(r.item.id))
+      .map(r => {
+        const manifest = MANIFEST.find(e => e.id === r.item.id);
+        return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
+      }).filter(x => x.entry);
 
-    // Also search MANIFEST directly for entries not in the search index (new entries)
-    const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
-    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
-    const manifestFallback = MANIFEST
-      .filter(e => !fuseIds.has(e.id))
-      .map(entry => {
-        const title = (entry.title || '').toLowerCase();
-        const summary = (entry.summary || '').toLowerCase();
-        const score = terms.reduce((s, t) => s + (title.includes(t) ? 15 : 0) + (summary.includes(t) ? 5 : 0), 0);
-        return { id: entry.id, entry, score };
-      }).filter(x => x.score > 0);
-
-    const combined = [...fuseResultsMapped, ...manifestFallback]
-      .sort((a, b) => b.score - a.score).slice(0, 12);
-
+    const combined = [...titleMatched, ...fuseResultsMapped].slice(0, 12);
     if (combined.length > 0) return { results: combined, query, empty: false };
     return { results: [], suggestions: [], query, empty: true };
   }
 
-  // Fallback: simple keyword search before Fuse loads
-  const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
-  const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
+  // Fallback: simple keyword search before Fuse loads (terms already defined above)
   if (!terms.length) return { results: [], query, empty: false };
   const scored = MANIFEST.map(entry => {
     const title = (entry.title || '').toLowerCase();
