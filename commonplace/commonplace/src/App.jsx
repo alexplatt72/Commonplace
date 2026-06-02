@@ -450,7 +450,7 @@ function RabbitHole({ links, depth, navigateTo }) {
             )}
             {!hasEntry && (
               <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.05em", textTransform:"uppercase", padding:"1px 7px", borderRadius:3, color:C.muted, background:C.border, whiteSpace:"nowrap" }}>
-                In progress
+                Coming soon
               </span>
             )}
             {hasEntry && link._gravity === "high" && (
