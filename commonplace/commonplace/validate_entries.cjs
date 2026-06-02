@@ -25,6 +25,18 @@ const manifestPath = path.join(ENTRIES_DIR, 'manifest.json');
 const manifest     = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 const manifestIds  = new Set(manifest.map(e => e.id));
 
+// ── Label → entryId lookup (for resolving planned links with missing entryId) ──
+// Builds a map from normalised label strings to manifest IDs so the validator
+// can detect when a planned link's label matches a published entry even though
+// the entryId field was stripped.  Normalisation: lowercase, strip leading
+// "the ", collapse whitespace.
+const normalise = s => s.toLowerCase().replace(/^the\s+/, '').replace(/\s+/g, ' ').trim();
+const labelToId = new Map();
+for (const e of manifest) {
+  labelToId.set(normalise(e.title), e.id);
+  labelToId.set(normalise(e.id),    e.id);   // camelCase label e.g. "printingPress"
+}
+
 // ── Template → subtype → section keys ────────────────────────────────────────
 const SUBTYPE_SECTIONS = {
   // People
@@ -552,7 +564,14 @@ for (const fname of filesToProcess) {
 
     // entryId + status required for all non-Gateway relationship types
     if (!rh.entryId) {
-      warnings.push(`rabbitHole[${i}] "${rh.label}" missing entryId (use status:planned if entry doesn't exist yet)`);
+      // Check whether the label resolves to a published entry — if so, the
+      // entryId was stripped rather than genuinely unknown.
+      const resolvedId = rh.label ? labelToId.get(normalise(rh.label)) : undefined;
+      if (resolvedId) {
+        warnings.push(`rabbitHole[${i}] "${rh.label}" missing entryId but label resolves to published entry "${resolvedId}" — set entryId and upgrade status to "published"`);
+      } else {
+        warnings.push(`rabbitHole[${i}] "${rh.label}" missing entryId (use status:planned if entry doesn't exist yet)`);
+      }
       continue;
     }
     if (!rh.status) {
