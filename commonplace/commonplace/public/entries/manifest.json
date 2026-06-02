@@ -107,6 +107,15 @@
     "status": "published"
   },
   {
+    "id": "analects",
+    "title": "The Analects",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 479–221 BCE (compilation)",
+    "status": "published",
+    "summary": "The collected sayings and conversations of Confucius, compiled by his disciples after his death. The Analects is the foundational text of Confucianism and the most influential book in East Asian history — not primarily as philosophy but as a technology of governance. For fourteen centuries, the civil service examination system that governed China, Korea, Vietnam, and Japan required mastery of the Analects and its commentaries."
+  },
+  {
     "id": "ancientEgypt",
     "title": "Ancient Egypt",
     "template": "Periods",
@@ -396,6 +405,15 @@
     ],
     "status": "published",
     "qualityTier": "A"
+  },
+  {
+    "id": "capitalMarx",
+    "title": "Capital",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1867",
+    "status": "published",
+    "summary": "Karl Marx's three-volume analysis of the capitalist mode of production which provided the theoretical foundation for socialist and communist movements worldwide. Capital argued that capitalism systematically exploits labour through surplus value extraction, and that capitalism contains internal contradictions producing eventual crisis. The book's world effect ran through the states and movements it founded rather than through academic economics."
   },
   {
     "id": "capitalism",
@@ -2436,6 +2454,15 @@
     "status": "published"
   },
   {
+    "id": "quran",
+    "title": "The Quran",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 610–632 CE (revelation); compiled c. 650 CE",
+    "status": "published",
+    "summary": "The central religious text of Islam, believed by Muslims to be the direct word of God revealed to the Prophet Muhammad. The Quran is the foundation of Islamic theology, law, and ethics; the model for classical Arabic; the text memorized in its entirety by millions of hafiz; and the constitution of Islamic civilization in a sense that goes beyond any analogy to scripture in other traditions."
+  },
+  {
     "id": "rabbinicJudaism",
     "title": "Rabbinic Judaism",
     "template": "Foundations",
@@ -2968,6 +2995,15 @@
     "status": "published"
   },
   {
+    "id": "theAeneid",
+    "title": "The Aeneid",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "29–19 BCE",
+    "status": "published",
+    "summary": "Virgil's epic poem recounting the journey of Aeneas from the fall of Troy to the founding of the line that would produce Rome, composed between 29 and 19 BCE at the request of Augustus. The Aeneid gave Rome a mythological origin equal in prestige to the Greek tradition while making Roman imperium seem divinely destined. Its world effect ran through the medieval and Renaissance imagination of empire and Dante's Commedia."
+  },
+  {
     "id": "theAlphabet",
     "template": "Foundations",
     "subtype": "Conceptual Foundation",
@@ -3092,15 +3128,6 @@
     "period": "1947",
     "title": "The Partition of India",
     "summary": "The division of British India in August 1947 into the independent states of India and Pakistan — accompanied by the largest mass migration in human history, between one and two million deaths, and the displacement of fifteen million people — that shaped the subcontinent's politics for generations.",
-    "status": "published"
-  },
-  {
-    "id": "thePrince",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "title": "The Prince",
-    "period": "1513 (written); 1532 (published)",
-    "summary": "Niccolò Machiavelli's short treatise on political power, written in 1513, which set aside the question of how rulers ought to behave and asked instead how power is actually acquired, maintained, and lost.",
     "status": "published"
   },
   {
