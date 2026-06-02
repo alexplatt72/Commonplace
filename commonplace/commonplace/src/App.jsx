@@ -857,6 +857,14 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 
       {/* Platform statement */}
       <div style={{ textAlign:"center", marginBottom:44 }}>
+        <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:20, marginBottom:16 }}>
+          <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo" height="72"
+            style={{ display:"block", objectFit:"contain" }} />
+          <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:48, fontWeight:400,
+            color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:0 }}>
+            TheCommonPlace
+          </h1>
+        </div>
         <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7,
           maxWidth:560, margin:"0 auto 6px" }}>
           Every subject here changed what was possible — what could be built, thought, governed, or understood.
@@ -1287,16 +1295,13 @@ export default function CommonplaceApp() {
         <div style={{ maxWidth:960, margin:"0 auto", padding:"0 40px", display:"flex",
           alignItems:"center", gap:14, height:54 }}>
 
-          {/* Logo + wordmark */}
-          <button onClick={goHome} aria-label="TheCommonPlace — go to homepage"
-            style={{ display:"flex", alignItems:"center", gap:10, background:"transparent",
-              border:"none", cursor:"pointer", flexShrink:0, padding:0 }}>
-            <img src="/tcp_logo_transparent.png" alt="" aria-hidden="true" height="36"
-              style={{ display:"block", objectFit:"contain" }} />
-            <span style={{ fontFamily:"'DM Serif Display',serif", fontSize:20,
-              color:"#ffffff", letterSpacing:"0.01em", userSelect:"none" }}>
-              TheCommonPlace
-            </span>
+          {/* Home button — minimal, no wordmark */}
+          <button onClick={goHome} aria-label="Go to homepage"
+            style={{ background:"transparent", border:"none", cursor:"pointer",
+              flexShrink:0, padding:"4px 8px", color:"rgba(255,255,255,0.5)",
+              fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+              letterSpacing:"0.08em", textTransform:"uppercase" }}>
+            Home
           </button>
 
           {/* Search — fuzzy, always visible */}
