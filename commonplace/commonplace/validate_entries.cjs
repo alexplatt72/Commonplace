@@ -443,6 +443,38 @@ for (const fname of filesToProcess) {
         }
       }
     }
+
+    // 4.5 Section-opening similarity check
+    // Extracts the first two sentences of each section and checks pairwise similarity
+    // across all sections within the same layer.
+    // Targets the assembly error where two sections open with the same introductory move:
+    // same scholar introduced, same claim restated, same framing repeated.
+    // Catches cross-section duplication that paragraph-level detection misses because
+    // the overlap is concentrated at the opening rather than spread across a full paragraph.
+    // Threshold: 0.4 similarity between openings of >= 10 words each.
+    // Severity: WARNING (not FAIL) — some shared vocabulary at section openings is legitimate.
+    const getOpening = (text) => {
+      if (!text || typeof text !== 'string') return '';
+      const sentences = text.match(/[^.!?]+[.!?]+/g) || [];
+      return sentences.slice(0, 2).join(' ').trim();
+    };
+
+    for (const [layerName, layerObj] of [['beginner', content.beginner], ['general', content.general], ['advanced', content.advanced]]) {
+      if (!layerObj || !sectionKeys) continue;
+      const openings = sectionKeys
+        .map(k => ({ key: k, text: getOpening(layerObj[k] || '') }))
+        .filter(o => wordCount(o.text) >= 10);
+      for (let i = 0; i < openings.length; i++) {
+        for (let j = i + 1; j < openings.length; j++) {
+          const sim = similarity(openings[i].text, openings[j].text);
+          if (sim > 0.4) {
+            warnings.push(
+              `Section opening similarity [${layerName}]: ${openings[i].key} ↔ ${openings[j].key} share ${(sim*100).toFixed(0)}% — both sections may open with the same move`
+            );
+          }
+        }
+      }
+    }
   }
 
   // ── 5. RESEARCH ───────────────────────────────────────────────────────────
