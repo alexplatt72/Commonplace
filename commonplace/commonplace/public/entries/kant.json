@@ -10,13 +10,14 @@
   "summary": "The Prussian philosopher who attempted to reconcile rationalism and empiricism, established the Categorical Imperative as the foundation of moral philosophy, argued for the conditions of possible experience in the Critique of Pure Reason, and shaped every major philosophical tradition that followed — from German idealism to analytic philosophy to contemporary ethics.",
   "themes": [
     "ethics",
+    "reason",
+    "morality",
     "knowledge",
-    "politics",
-    "germany",
+    "duty",
+    "metaphysics",
+    "aesthetics",
     "Enlightenment",
-    "philosophy",
-    "Critique of Pure Reason",
-    "Groundwork of the Metaphysics of Morals"
+    "political philosophy"
   ],
   "hook": "Kant said that Hume woke him from his 'dogmatic slumber.' He then spent eleven years writing nothing, and produced the Critique of Pure Reason — one of the most difficult and consequential books in the history of philosophy. He also invented the Categorical Imperative: act only according to the principle by which you could will that everyone act. The moral rule that underlies modern human rights law came from a bachelor in Königsberg who never traveled more than a hundred miles from home.",
   "aliases": [
@@ -165,13 +166,6 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "Hegel's philosophy is the most important response to Kant — his dialectical idealism developed by arguing that Kant had not gone far enough in recognizing the mind's constitutive role, and that the thing-in-itself was a philosophical mistake."
-    },
-    {
-      "label": "Natural Law",
-      "entryId": "naturalLaw",
-      "status": "published",
-      "relationship": "Parallel",
-      "reason": "Kant's moral philosophy shares natural law's universalism while grounding it differently, in the structure of rational agency rather than human nature — the comparison illuminates what is and isn't essential to natural law's project."
     }
   ],
   "reference": [
@@ -289,5 +283,12 @@
       "title": "Kant as the archetype of philosophical difficulty",
       "description": "Kant has become the cultural archetype of philosophy that is important but nearly unreadable. The cultural image of Kant as impenetrable has had real consequences: it has made Kantian ethics seem more alien to ordinary moral intuition than it is, and his political philosophy less widely read than it deserves."
     }
+  ],
+  "associatedWorks": [
+    "Critique of Pure Reason",
+    "Groundwork of the Metaphysics of Morals",
+    "Critique of Practical Reason",
+    "Critique of Judgment",
+    "Prolegomena"
   ]
 }

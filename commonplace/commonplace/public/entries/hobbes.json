@@ -9,13 +9,13 @@
   "title": "Thomas Hobbes",
   "summary": "The English philosopher whose Leviathan (1651) argued that human beings in their natural condition face a war of all against all, and that the only escape is an absolute sovereign — founding modern political theory, the social contract tradition, and the realist account of international relations.",
   "themes": [
+    "political philosophy",
+    "sovereignty",
+    "social contract",
+    "human nature",
     "war",
-    "politics",
-    "england",
     "power",
-    "science",
-    "philosophy",
-    "Leviathan"
+    "materialism"
   ],
   "hook": "Hobbes wrote Leviathan during the English Civil War, having watched his country tear itself apart over religion and sovereignty. His answer was radical: give up everything to a sovereign who will keep the peace. It was a dark vision — and it became the foundation of modern political philosophy.",
   "aliases": [
@@ -174,13 +174,6 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "Rousseau's social contract theory is the third great response to Hobbes — after Locke — arguing that the state of nature was actually peaceful and that corruption came from society rather than from human nature, generating a very different account of political authority."
-    },
-    {
-      "label": "Natural Law",
-      "entryId": "naturalLaw",
-      "status": "published",
-      "relationship": "Contrasting",
-      "reason": "Hobbes accepts natural law in name while transforming it substantially — his laws of nature are rational maxims for self-preservation that require a sovereign to enforce them, collapsing the distinction between natural law and positive law."
     }
   ],
   "reference": [
@@ -318,5 +311,10 @@
       "title": "Leviathan as the image of the state",
       "description": "The frontispiece of the 1651 edition — showing the sovereign's body composed of the bodies of his subjects, holding sword and crozier — is one of the most analyzed images in political iconography. It captures Hobbes's central argument: the state is an artificial person made of natural persons, a mortal god whose authority derives from the transfer of natural rights. The image has been reproduced and reinterpreted across four centuries."
     }
+  ],
+  "associatedWorks": [
+    "Leviathan",
+    "De Cive",
+    "Behemoth"
   ]
 }

@@ -9,14 +9,14 @@
   "title": "John Locke",
   "summary": "The English philosopher whose Two Treatises of Government argued that legitimate political authority derives from consent of the governed, that natural rights to life, liberty, and property are inalienable, and that revolution is justified when governments violate those rights — providing the philosophical foundation of liberal democracy and the American Revolution.",
   "themes": [
-    "politics",
-    "law",
-    "england",
-    "democracy",
-    "Enlightenment",
-    "philosophy",
-    "Two Treatises of Government",
-    "An Essay Concerning Human Understanding"
+    "political philosophy",
+    "liberty",
+    "property",
+    "government",
+    "knowledge",
+    "religion",
+    "natural rights",
+    "Enlightenment"
   ],
   "hook": "When Jefferson wrote 'life, liberty, and the pursuit of happiness' he was paraphrasing Locke's 'life, liberty, and estate.' The American founders read Locke as carefully as any text outside the Bible. His argument that government derives its authority from the consent of the governed — and that revolution is justified when government betrays that trust — is the founding document of liberal political philosophy and the most influential political text of the modern world.",
   "aliases": [
@@ -168,13 +168,6 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Locke's labor theory of property — which justified colonial appropriation of 'unimproved' land — provided the philosophical foundation for the colonial land appropriation that the Scramble for Africa exemplified at its most extreme."
-    },
-    {
-      "label": "Natural Law",
-      "entryId": "naturalLaw",
-      "status": "published",
-      "relationship": "Consequential",
-      "reason": "Locke's translation of natural law into the language of individual natural rights — to life, liberty, and property — gave natural law its direct connection to constitutional government and the rights traditions of the democratic revolutions."
     }
   ],
   "reference": [
@@ -292,5 +285,10 @@
       "title": "Locke and the justification of colonial dispossession",
       "description": "Locke's theory of property was explicitly used to justify the dispossession of Indigenous peoples in North America: Indigenous peoples did not 'improve' their land in the Lockean sense, so European settlers had a superior property right. Locke himself was involved with the Carolina colony and invested in the slave trade. The connection between liberal philosophical foundations and colonial dispossession is among the most important revisionist arguments in political theory."
     }
+  ],
+  "associatedWorks": [
+    "Two Treatises of Government",
+    "An Essay Concerning Human Understanding",
+    "A Letter Concerning Toleration"
   ]
 }

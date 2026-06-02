@@ -9,14 +9,14 @@
   "title": "Isaac Newton",
   "summary": "The English mathematician and natural philosopher whose Principia Mathematica (1687) unified terrestrial and celestial mechanics under universal gravitation, whose development of calculus provided the mathematical language of modern science, and whose optical discoveries established the nature of light — making him the dominant figure of the Scientific Revolution and the foundation of classical physics.",
   "themes": [
-    "enlightenment",
-    "knowledge",
-    "mathematics",
-    "astronomy",
-    "england",
     "science",
-    "Principia Mathematica",
-    "Opticks"
+    "physics",
+    "gravity",
+    "mathematics",
+    "optics",
+    "religion",
+    "calculus",
+    "Scientific Revolution"
   ],
   "hook": "Newton did not just discover gravity — he showed that the same force pulling an apple to the ground also holds the moon in its orbit and governs the planets. He unified the heavens and the earth under a single mathematical law. This was one of the greatest intellectual achievements in human history. He also spent more time on alchemy and biblical prophecy than on physics.",
   "aliases": [
@@ -285,5 +285,10 @@
       "title": "The falling apple as origin myth",
       "description": "The story of Newton discovering gravity by watching an apple fall has served as the canonical image of scientific discovery — a flash of insight from an ordinary observation. What it reveals about scientific mythology: that we prefer origin stories of genius to the actual history of prolonged mathematical labor. Newton himself, late in life, did not discourage the story."
     }
+  ],
+  "associatedWorks": [
+    "Principia Mathematica",
+    "Opticks",
+    "Mathematical Principles of Natural Philosophy"
   ]
 }
