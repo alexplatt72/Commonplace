@@ -652,16 +652,28 @@ function initFuse() {
   });
 }
 
-// scoreEntry used for autocomplete — looks up Fuse result by id
+// scoreEntry used for autocomplete dropdown — must use same ranking as searchEntries.
+// Title/alias prefix matches always outrank Fuse fuzzy matches.
 function scoreEntry(entry, terms) {
-  if (!FUSE || !terms.length) {
-    // Fallback before Fuse is ready: basic title match
-    const title = (entry.title || '').toLowerCase();
-    return terms.some(t => title.includes(t)) ? 10 : 0;
-  }
-  const results = FUSE.search(terms.join(' '));
+  const q     = terms.join(' ').toLowerCase();
+  const title = (entry.title || '').toLowerCase();
+  const bare  = title.replace(/^(the |a |an )/, '');
+  const siRec   = SEARCH_INDEX.find(s => s.id === entry.id);
+  const aliases = (siRec?.aliases || []).map(a => a.toLowerCase());
+
+  if (title === q || bare === q)                              return 1000;
+  if (title.startsWith(q) || bare.startsWith(q))             return 950;
+  if (aliases.some(a => a === q))                             return 900;
+  if (aliases.some(a => a.startsWith(q)))                     return 850;
+  if (terms.length && terms.every(t => title.includes(t)))   return 800;
+  if (terms.length && terms.some(t => title.startsWith(t)))  return 750;
+  if (terms.length && terms.some(t => bare.startsWith(t)))   return 700;
+  if (terms.length && terms.some(t => title.includes(t)))    return 650;
+
+  // Fall back to Fuse for typo tolerance
+  if (!FUSE || !terms.length) return 0;
+  const results = FUSE.search(q);
   const match = results.find(r => r.item.id === entry.id);
-  // Fuse score is 0 (perfect) to 1 (no match) — invert for our convention
   return match ? Math.round((1 - match.score) * 100) : 0;
 }
 
@@ -672,35 +684,42 @@ function searchEntries(query) {
   const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
   const terms = q.split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
 
-  // ── Step 1: exact and prefix title matches, always ranked first ──────────
-  // Fuse fuzzy scoring can deprioritise the searched entry in favour of entries
-  // that mention it by name in their content. Pin direct title matches to top.
-  const titleMatched = MANIFEST
-    .map(entry => {
-      const title = (entry.title || '').toLowerCase();
-      if (title === q)                          return { id: entry.id, entry, score: 1000 }; // exact
-      if (title.startsWith(q))                  return { id: entry.id, entry, score: 900 };  // prefix
-      if (terms.every(t => title.includes(t)))  return { id: entry.id, entry, score: 800 };  // all terms
-      if (terms.some(t => title.startsWith(t))) return { id: entry.id, entry, score: 700 };  // word prefix
-      if (terms.some(t => title.includes(t)))   return { id: entry.id, entry, score: 600 };  // word contains
-      return null;
-    })
-    .filter(Boolean)
-    .sort((a, b) => b.score - a.score);
+  // ── Step 1: deterministic title/alias ranking — always beats Fuse ───────────
+  // Scoring tiers (600–1000) always outrank Fuse scores (0–100).
+  // "sha" matches Shakespeare because title.startsWith(q) fires on the full
+  // lowercased title string, not just on word boundaries.
+  const scoredByTitle = MANIFEST.map(entry => {
+    const title   = (entry.title   || '').toLowerCase();
+    // Strip leading articles for matching ("The British Empire" → "british empire")
+    const bare    = title.replace(/^(the |a |an )/, '');
+    // Aliases from search index (comparative narrative names)
+    const siRec   = SEARCH_INDEX.find(s => s.id === entry.id);
+    const aliases = (siRec?.aliases || []).map(a => a.toLowerCase());
 
-  const titleMatchedIds = new Set(titleMatched.map(r => r.id));
+    if (title === q || bare === q)                        return { id: entry.id, entry, score: 1000 }; // exact
+    if (title.startsWith(q) || bare.startsWith(q))       return { id: entry.id, entry, score: 950 };  // title prefix
+    if (aliases.some(a => a === q))                       return { id: entry.id, entry, score: 900 };  // exact alias
+    if (aliases.some(a => a.startsWith(q)))               return { id: entry.id, entry, score: 850 };  // alias prefix
+    if (terms.length && terms.every(t => title.includes(t)))   return { id: entry.id, entry, score: 800 };  // all terms in title
+    if (terms.length && terms.some(t => title.startsWith(t)))  return { id: entry.id, entry, score: 750 };  // word prefix
+    if (terms.length && terms.some(t => bare.startsWith(t)))   return { id: entry.id, entry, score: 700 };  // bare word prefix
+    if (terms.length && terms.some(t => title.includes(t)))    return { id: entry.id, entry, score: 650 };  // word anywhere
+    return null;
+  }).filter(Boolean).sort((a, b) => b.score - a.score);
 
-  // ── Step 2: Fuse for fuzzy/typo matching on everything not already matched ─
+  const pinnedIds = new Set(scoredByTitle.map(r => r.id));
+
+  // ── Step 2: Fuse fills remaining slots for typo/fuzzy tolerance ──────────
   if (FUSE) {
     const fuseResults = FUSE.search(query, { limit: 12 });
-    const fuseResultsMapped = fuseResults
-      .filter(r => !titleMatchedIds.has(r.item.id))
+    const fuseExtra = fuseResults
+      .filter(r => !pinnedIds.has(r.item.id))
       .map(r => {
         const manifest = MANIFEST.find(e => e.id === r.item.id);
         return { id: r.item.id, entry: manifest || r.item, score: Math.round((1 - r.score) * 100) };
       }).filter(x => x.entry);
 
-    const combined = [...titleMatched, ...fuseResultsMapped].slice(0, 12);
+    const combined = [...scoredByTitle, ...fuseExtra].slice(0, 12);
     if (combined.length > 0) return { results: combined, query, empty: false };
     return { results: [], suggestions: [], query, empty: true };
   }
@@ -1133,32 +1152,50 @@ export default function CommonplaceApp() {
     }).catch(() => setManifestLoaded(true));
   }, []);
 
-  // Live autocomplete as user types in header
+  // Live autocomplete as user types in header.
+  // Uses the same deterministic prefix ranking as searchEntries/scoreEntry —
+  // title prefix matches always appear before Fuse fuzzy matches.
   const handleHeaderChange = (e) => {
-    const q = e.target.value;
-    setHeaderQuery(q);
-    if (q.trim().length < 2) { setAcResults([]); setAcOpen(false); return; }
-    let scored = [];
+    const raw = e.target.value;
+    setHeaderQuery(raw);
+    if (raw.trim().length < 2) { setAcResults([]); setAcOpen(false); return; }
+
+    const q       = raw.trim().toLowerCase();
+    const stopWords = new Set(['the','a','an','is','are','was','were','of','in','on','at','to','for','with','by','from','and','or','that','this','it','as']);
+    const terms   = q.split(/\s+/).filter(t => t.length > 1 && !stopWords.has(t));
+
+    // Step 1 — deterministic prefix scoring (same tiers as scoreEntry)
+    const pinned = MANIFEST.map(entry => {
+      const title = (entry.title || '').toLowerCase();
+      const bare  = title.replace(/^(the |a |an )/, '');
+      const siRec   = SEARCH_INDEX.find(s => s.id === entry.id);
+      const aliases = (siRec?.aliases || []).map(a => a.toLowerCase());
+
+      if (title === q || bare === q)                              return { entry, score: 1000 };
+      if (title.startsWith(q) || bare.startsWith(q))             return { entry, score: 950 };
+      if (aliases.some(a => a === q))                             return { entry, score: 900 };
+      if (aliases.some(a => a.startsWith(q)))                     return { entry, score: 850 };
+      if (terms.length && terms.every(t => title.includes(t)))   return { entry, score: 800 };
+      if (terms.length && terms.some(t => title.startsWith(t)))  return { entry, score: 750 };
+      if (terms.length && terms.some(t => bare.startsWith(t)))   return { entry, score: 700 };
+      if (terms.length && terms.some(t => title.includes(t)))    return { entry, score: 650 };
+      return null;
+    }).filter(Boolean).sort((a, b) => b.score - a.score);
+
+    const pinnedIds = new Set(pinned.map(r => r.entry.id));
+
+    // Step 2 — Fuse fills remaining slots for typo tolerance
+    let fuseExtra = [];
     if (FUSE) {
-      const fuseIds = new Set();
-      scored = FUSE.search(q, { limit: 6 }).map(r => {
-        fuseIds.add(r.item.id);
-        const entry = MANIFEST.find(m => m.id === r.item.id) || r.item;
-        return { entry, score: Math.round((1 - r.score) * 100) };
-      }).filter(x => x.entry);
-      // Supplement with manifest entries not in Fuse index
-      const terms = q.toLowerCase().split(/\s+/).filter(t => t.length > 1);
-      const extra = MANIFEST.filter(e => !fuseIds.has(e.id)).map(entry => {
-        const title = (entry.title || '').toLowerCase();
-        const score = terms.some(t => title.includes(t)) ? 10 : 0;
-        return { entry, score };
-      }).filter(x => x.score > 0);
-      scored = [...scored, ...extra].sort((a,b) => b.score - a.score).slice(0, 6);
-    } else {
-      const terms = q.toLowerCase().split(/\s+/).filter(t => t.length > 1);
-      scored = MANIFEST.map(entry => ({ entry, score: scoreEntry(entry, terms) }))
-        .filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0, 6);
+      fuseExtra = FUSE.search(raw, { limit: 8 })
+        .filter(r => !pinnedIds.has(r.item.id))
+        .map(r => {
+          const entry = MANIFEST.find(m => m.id === r.item.id) || r.item;
+          return { entry, score: Math.round((1 - r.score) * 100) };
+        }).filter(x => x.entry);
     }
+
+    const scored = [...pinned, ...fuseExtra].slice(0, 6);
     setAcResults(scored);
     setAcOpen(scored.length > 0);
   };
