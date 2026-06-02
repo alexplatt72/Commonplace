@@ -116,7 +116,7 @@
     {
       "label": "Public Health",
       "entryId": "publicHealth",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "The hospital and public health represent two different institutional responses to illness — the hospital treats individuals after they become sick; public health prevents illness at the population level. The tension between these approaches is the central resource allocation question in health policy."
     },
@@ -138,19 +138,22 @@
       "label": "Death",
       "status": "planned",
       "relationship": "Thematic",
-      "reason": "The hospital has become the primary site of death in wealthy societies — most people in the United States, United Kingdom, and similar countries die in hospitals or other institutional settings. The institution that was built to sustain life now primarily organizes dying, with profound consequences for the cultural meaning of death."
+      "reason": "The hospital has become the primary site of death in wealthy societies — most people in the United States, United Kingdom, and similar countries die in hospitals or other institutional settings. The institution that was built to sustain life now primarily organizes dying, with profound consequences for the cultural meaning of death.",
+      "entryId": "death"
     },
     {
       "label": "Anatomy",
       "status": "planned",
       "relationship": "Foundational",
-      "reason": "The hospital's role in clinical teaching required access to cadavers for anatomical study and to patients for clinical observation — both raised profound ethical questions about the use of the sick and dead as educational material. The history of anatomy is inseparable from the history of the teaching hospital."
+      "reason": "The hospital's role in clinical teaching required access to cadavers for anatomical study and to patients for clinical observation — both raised profound ethical questions about the use of the sick and dead as educational material. The history of anatomy is inseparable from the history of the teaching hospital.",
+      "entryId": "anatomy"
     },
     {
       "label": "Architecture",
       "status": "planned",
       "relationship": "Thematic",
-      "reason": "Hospital architecture is one of the richest cases in the history of how buildings encode theories of disease, social hierarchy, and institutional purpose. The pavilion ward, the panopticon-influenced circular hospital, and the modern tower block each encoded a different theory of healing and a different relationship between patient, healer, and institution."
+      "reason": "Hospital architecture is one of the richest cases in the history of how buildings encode theories of disease, social hierarchy, and institutional purpose. The pavilion ward, the panopticon-influenced circular hospital, and the modern tower block each encoded a different theory of healing and a different relationship between patient, healer, and institution.",
+      "entryId": "architecture"
     },
     {
       "label": "Anesthesia",
