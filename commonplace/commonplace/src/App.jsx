@@ -1251,7 +1251,7 @@ function ToursView({ onEntry, onHome }) {
                   {/* Card + note */}
                   <div style={{ flex:1 }}>
                     {/* Object name + note inline */}
-                    <div style={{ marginBottom:8, lineHeight:1.6 }}>
+                    <div style={{ marginBottom:8, lineHeight:1.6, width:"72%", maxWidth:680, minWidth:420 }}>
                       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
                         letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
                         marginRight:6 }}>
