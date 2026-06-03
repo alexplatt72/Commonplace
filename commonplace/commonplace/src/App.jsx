@@ -627,15 +627,15 @@ function EntryView({ entry, accent, navigateTo }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const TEMPLATE_META = {
-  Events:            { question:"What happened, and what did it set in motion?",      desc:"Moments that altered the structure of what followed",               icon:"◈" },
-  People:            { question:"How did this person exercise power, and what did it change?", desc:"Figures whose exercise of power changed what was possible", icon:"◉" },
-  Works:             { question:"What did this work do to the people who encountered it?", desc:"Texts and creations that reorganized thought and culture",       icon:"◇" },
-  "Concepts":        { question:"How did this idea alter what was thinkable?",         desc:"Ideas that changed what people could think, argue, or do",          icon:"◎" },
-  Periods:           { question:"What made this moment coherent, and what did it produce?", desc:"Epochs and movements with coherent internal logic",            icon:"◫" },
-  Places:            { question:"How has this location been inhabited and remembered?", desc:"Locations whose significance exceeds their geography",             icon:"◬" },
-  "Natural Phenomena":{ question:"How did this force shape what civilization could do?", desc:"Forces of nature that shaped the conditions of civilization",     icon:"◭" },
-  Policy:            { question:"What values are in genuine tension here?",            desc:"Live questions where values, evidence, and institutions collide",    icon:"◮" },
-  Foundations:       { question:"Did this substrate fundamentally reorganize what civilization could do?", desc:"The substrates — material and conceptual — that civilization was built on", icon:"◯" },
+  Events:             { question:"What happened, and what it set in motion.",          desc:"Moments that altered the structure of what followed",               icon:"◈" },
+  People:             { question:"Who they were, and what they made possible.",        desc:"The people who changed what was possible",                          icon:"◉" },
+  Works:              { question:"The creations that shape the world.",                desc:"Texts and creations that outlasted their moment",                   icon:"◇" },
+  "Concepts":         { question:"How an idea alters what's possible.",               desc:"Ideas that changed what people could think, argue, or do",          icon:"◎" },
+  Periods:            { question:"Epochs, eras, and ages.",                            desc:"The ages that made the world what it is",                           icon:"◫" },
+  Places:             { question:"The places where history happened.",                 desc:"Locations whose significance exceeds their geography",              icon:"◬" },
+  "Natural Phenomena":{ question:"The forces that steer civilization.",                desc:"The natural forces that shaped what civilization could do",          icon:"◭" },
+  Policy:             { question:"Where reasonable people disagree.",                  desc:"Live questions where values, evidence, and institutions collide",    icon:"◮" },
+  Foundations:        { question:"The building blocks of civilization.",               desc:"The materials, organisms, and ideas civilization was built on",      icon:"◯" },
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
