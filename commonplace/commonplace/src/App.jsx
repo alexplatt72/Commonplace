@@ -67,7 +67,8 @@ const SUBTYPE_SECTIONS = {
   "Policy Landscape": ["theLandscape","theHistoricalArc","theValueFramework","theEvidenceEcosystem","theInternationalComparison","theCurrentDebates"],
   "Policy Question": ["theQuestion","theStakes","theValueFramework","theEvidence","theOptions","theInternationalEvidence"],
   "Material Foundation":    ["theFoundation","howItArrived","whatItReorganized","thePoliticalEconomy","theFeedback","presentAndFuture"],
-  "Conceptual Foundation":  ["theFoundation","howItArrived","whatItReorganized","theTransmission","theFeedback","presentAndFuture"],
+  "Biological Foundation":  ["theFoundation","howItArrived","whatItReorganized","thePoliticalEconomy","theFeedback","presentAndFuture"],
+  "Conceptual Foundation":  ["theFoundation","howItArrived","whatItReorganized","thePoliticalEconomy","theFeedback","presentAndFuture"],
 };
 
 const SECTION_LABELS = {
@@ -1206,13 +1207,10 @@ function EntryViewer({ entry, accent, navigateTo }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function ToursView({ onEntry, onHome, restoreId }) {
-  const [selectedId, setSelectedId] = React.useState(
-    restoreId || (COLLECTIONS.length > 0 ? COLLECTIONS[0].id : null)
-  );
+  const [selectedId, setSelectedId] = React.useState(restoreId || null);
   React.useEffect(() => {
-    if (restoreId) setSelectedId(restoreId);
-    else if (!selectedId && COLLECTIONS.length > 0) setSelectedId(COLLECTIONS[0].id);
-  }, [restoreId, selectedId]);
+    if (COLLECTIONS.length > 0) setSelectedId(restoreId || COLLECTIONS[0].id);
+  }, []);
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
@@ -1335,14 +1333,11 @@ function ToursView({ onEntry, onHome, restoreId }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function PathwaysView({ onEntry, onHome, restoreId }) {
-  const [selectedId, setSelectedId] = React.useState(
-    restoreId || (PATHWAYS.length > 0 ? PATHWAYS[0].id : null)
-  );
+  const [selectedId, setSelectedId] = React.useState(restoreId || null);
   const selected = PATHWAYS.find(p => p.id === selectedId);
   React.useEffect(() => {
-    if (restoreId) setSelectedId(restoreId);
-    else if (!selectedId && PATHWAYS.length > 0) setSelectedId(PATHWAYS[0].id);
-  }, [restoreId, selectedId]);
+    if (PATHWAYS.length > 0) setSelectedId(restoreId || PATHWAYS[0].id);
+  }, []);
   if (!PATHWAYS.length) return (
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
       <button onClick={onHome} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, cursor:"pointer" }}>← Home</button>
