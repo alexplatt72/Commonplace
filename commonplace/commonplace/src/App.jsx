@@ -865,7 +865,7 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
         </h1>
         <p style={{ fontFamily:"'Lora',serif", fontSize:16, color:C.muted, lineHeight:1.8,
           maxWidth:600, margin:"0 auto" }}>
-          How a mosquito defeated an empire. Why debt existed before money. Who reforested a continent without planting a single tree.
+          How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
         </p>
       </div>
 
