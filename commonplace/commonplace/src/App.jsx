@@ -1213,7 +1213,7 @@ function ToursView({ onEntry, onHome }) {
           onChange={e => setSelectedId(e.target.value)}
           style={{ padding:"12px 16px", fontFamily:"'Lora',serif", fontSize:15,
             color:C.text, background:C.surface, border:`1.5px solid ${C.borderStrong}`,
-            borderRadius:6, cursor:"pointer", width:"100%", maxWidth:480,
+            borderRadius:6, cursor:"pointer", width:"100%",
             outline:"none", appearance:"none",
             backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6356' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")`,
             backgroundRepeat:"no-repeat", backgroundPosition:"right 14px center",
@@ -1228,14 +1228,12 @@ function ToursView({ onEntry, onHome }) {
       {selected && (
         <div>
           <div style={{ marginBottom:32, paddingBottom:24, borderBottom:`1px solid ${C.border}` }}>
-            <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:24, fontWeight:700,
-              color:C.text, marginBottom:8 }}>{selected.title}</h2>
             <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7 }}>
               {selected.description}
             </p>
           </div>
 
-          <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+          <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
             {selected.entries.map((item, i) => {
               const entry = MANIFEST.find(e => e.id === item.entryId);
               if (!entry) return null;
@@ -1253,14 +1251,14 @@ function ToursView({ onEntry, onHome }) {
                   {/* Card + note */}
                   <div style={{ flex:1 }}>
                     {/* Object name + note inline */}
-                    <div style={{ display:"flex", alignItems:"baseline", gap:8, marginBottom:8, flexWrap:"wrap" }}>
+                    <div style={{ marginBottom:8, lineHeight:1.6 }}>
                       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
                         letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
-                        flexShrink:0 }}>
+                        whiteSpace:"nowrap", marginRight:6 }}>
                         {item.object}
                       </span>
                       <span style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
-                        fontStyle:"italic", lineHeight:1.5 }}>
+                        fontStyle:"italic" }}>
                         — {item.note}
                       </span>
                     </div>
@@ -1268,24 +1266,24 @@ function ToursView({ onEntry, onHome }) {
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId)}
                       style={{ background:C.surface, border:`1px solid ${C.border}`,
-                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"14px 18px",
+                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"10px 14px",
                         cursor:"pointer", transition:"all 0.12s" }}
                       onMouseEnter={e => e.currentTarget.style.borderColor = accent}
                       onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
-                      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
+                      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
                         <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9,
                           fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase",
                           color:"#fff", background:accent, padding:"2px 7px", borderRadius:3 }}>
                           {entry.template}
                         </span>
-                        <span style={{ fontFamily:"'Playfair Display',serif", fontSize:16,
+                        <span style={{ fontFamily:"'Playfair Display',serif", fontSize:15,
                           fontWeight:700, color:C.text }}>
                           {entry.title}
                         </span>
                       </div>
-                      <div style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
+                      <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted,
                         lineHeight:1.5 }}>
-                        {entry.summary ? entry.summary.slice(0, 120) + '…' : ''}
+                        {entry.summary ? (() => { const s = entry.summary.slice(0,100); const i = s.lastIndexOf(' '); return (i > 60 ? s.slice(0,i) : s) + '…'; })() : ''}
                       </div>
                     </div>
                   </div>
