@@ -60,8 +60,8 @@ const SUBTYPE_SECTIONS = {
   "Movement": ["theMovement","theOrigins","howItOrganized","whatItAchieved","contestedLegacy","whyItEnded"],
   "Site":     ["thePlace","physicalWorld","theLayers","whatItBecame","whoClaimsIt","theLongLife"],
   "System":   ["theSystem","physicalLogic","whatMovedThrough","whoOrganizedIt","whatItMadePossible","theLongLifeS"],
-  "Natural Event": ["thePhenomenon","theScience","whatItDid","howHumansUnderstoodIt","whatChanged","theLongShadow"],
-  "Natural Force": ["theForce","theScience","howItShaped","humanResponse","whatItMadeImpossible","presentAndFuture"],
+  "Natural Event": ["theForce","theRecord","howPeopleKnew","whatItDidToSocieties","theUnequal","theLongConsequence"],
+  "Natural Force": ["theForce","theRecord","howPeopleKnew","whatItDidToSocieties","theUnequal","theLongConsequence"],
   "Policy Landscape": ["theLandscape","theHistoricalArc","theValueFramework","theEvidenceEcosystem","theInternationalComparison","theCurrentDebates"],
   "Policy Question": ["theQuestion","theStakes","theValueFramework","theEvidence","theOptions","theInternationalEvidence"],
   "Material Foundation":    ["theFoundation","howItArrived","whatItReorganized","thePoliticalEconomy","theFeedback","presentAndFuture"],
@@ -107,7 +107,7 @@ const SECTION_LABELS = {
   whatItDid:"What It Did to Human Civilization",
   howHumansUnderstoodIt:"How Humans Understood It",
   whatChanged:"What Changed Because of It", theLongShadow:"The Long Shadow",
-  theForce:"The Force", howItShaped:"How It Shaped Human History",
+  theForce:"The Force", theRecord:"The Record", howPeopleKnew:"How People Knew", whatItDidToSocieties:"What It Did to Societies", theUnequal:"The Unequal", theLongConsequence:"The Long Consequence",
   humanResponse:"Human Response and Adaptation",
   whatItMadeImpossible:"What It Made Impossible or Inevitable",
   presentAndFuture:"The Present and Future",
@@ -863,13 +863,9 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 16px" }}>
           TheCommonPlace
         </h1>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7,
-          maxWidth:560, margin:"0 auto 6px" }}>
-          Every subject here changed what was possible — what could be built, thought, governed, or understood.
-        </p>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.light, fontStyle:"italic",
-          maxWidth:480, margin:"0 auto" }}>
-          Not a catalogue. A canon. {totalEntries} subjects selected for the understanding they unlock.
+        <p style={{ fontFamily:"'Lora',serif", fontSize:16, color:C.muted, lineHeight:1.8,
+          maxWidth:600, margin:"0 auto" }}>
+          How a mosquito defeated an empire. Who reforested a continent without planting a single tree. Why debt existed before money.
         </p>
       </div>
 
