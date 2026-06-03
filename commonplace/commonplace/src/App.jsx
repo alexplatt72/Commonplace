@@ -867,6 +867,10 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
           maxWidth:600, margin:"0 auto" }}>
           How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
         </p>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.light, fontStyle:"italic",
+          maxWidth:600, margin:"12px auto 0" }}>
+          {totalEntries} paths, they all lead somewhere unexpected.
+        </p>
       </div>
 
       {/* Category grid */}
