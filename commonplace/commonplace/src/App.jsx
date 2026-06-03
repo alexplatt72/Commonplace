@@ -6,6 +6,7 @@ let MANIFEST = [];      // loaded once from /entries/manifest.json
 let ENTRY_CACHE = {};   // full entries loaded on demand
 let SEARCH_INDEX = [];  // richer search data: aliases, themes, indexTerms
 let FUSE = null;        // Fuse.js instance, initialised after searchIndex loads
+let COLLECTIONS = [];   // curated tours, loaded once from /collections.json
 
 
 const FONTS = `
@@ -1178,12 +1179,133 @@ function EntryViewer({ entry, accent, navigateTo }) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// TOURS VIEW
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function ToursView({ onEntry, onHome }) {
+  const [selectedId, setSelectedId] = React.useState(COLLECTIONS.length > 0 ? COLLECTIONS[0].id : null);
+  const selected = COLLECTIONS.find(c => c.id === selectedId);
+
+  return (
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
+
+      <button onClick={onHome}
+        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
+          padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
+          borderRadius:4, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+          fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
+        ← Home
+      </button>
+
+      {/* Header */}
+      <div style={{ marginBottom:32 }}>
+        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:36, fontWeight:400,
+          color:C.text, marginBottom:8 }}>Tours</h1>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic" }}>
+          Curated paths through the canon. Each tour connects a place to the entries it unlocks.
+        </p>
+      </div>
+
+      {/* Dropdown */}
+      <div style={{ marginBottom:40 }}>
+        <select
+          value={selectedId || ''}
+          onChange={e => setSelectedId(e.target.value)}
+          style={{ padding:"12px 16px", fontFamily:"'Lora',serif", fontSize:15,
+            color:C.text, background:C.surface, border:`1.5px solid ${C.borderStrong}`,
+            borderRadius:6, cursor:"pointer", width:"100%", maxWidth:480,
+            outline:"none", appearance:"none",
+            backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6356' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")`,
+            backgroundRepeat:"no-repeat", backgroundPosition:"right 14px center",
+            paddingRight:40 }}>
+          {COLLECTIONS.map(c => (
+            <option key={c.id} value={c.id}>{c.title}</option>
+          ))}
+        </select>
+      </div>
+
+      {/* Selected tour */}
+      {selected && (
+        <div>
+          <div style={{ marginBottom:32, paddingBottom:24, borderBottom:`1px solid ${C.border}` }}>
+            <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:24, fontWeight:700,
+              color:C.text, marginBottom:8 }}>{selected.title}</h2>
+            <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7 }}>
+              {selected.description}
+            </p>
+          </div>
+
+          <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+            {selected.entries.map((item, i) => {
+              const entry = MANIFEST.find(e => e.id === item.entryId);
+              if (!entry) return null;
+              const cfg = TEMPLATE_CONFIG[entry.template] || {};
+              const accent = cfg.accent || C.navy;
+              return (
+                <div key={item.entryId} style={{ display:"flex", gap:20, alignItems:"flex-start" }}>
+
+                  {/* Number */}
+                  <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11,
+                    color:C.light, flexShrink:0, paddingTop:20, minWidth:20, textAlign:"right" }}>
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+
+                  {/* Card + note */}
+                  <div style={{ flex:1 }}>
+                    {/* Object name */}
+                    <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+                      letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
+                      marginBottom:6 }}>
+                      {item.object}
+                    </div>
+
+                    {/* Entry card */}
+                    <div onClick={() => onEntry(item.entryId)}
+                      style={{ background:C.surface, border:`1px solid ${C.border}`,
+                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"14px 18px",
+                        cursor:"pointer", marginBottom:8, transition:"all 0.12s" }}
+                      onMouseEnter={e => e.currentTarget.style.borderColor = accent}
+                      onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
+                      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
+                        <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9,
+                          fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase",
+                          color:"#fff", background:accent, padding:"2px 7px", borderRadius:3 }}>
+                          {entry.template}
+                        </span>
+                        <span style={{ fontFamily:"'Playfair Display',serif", fontSize:16,
+                          fontWeight:700, color:C.text }}>
+                          {entry.title}
+                        </span>
+                      </div>
+                      <div style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
+                        lineHeight:1.5 }}>
+                        {entry.summary ? entry.summary.slice(0, 120) + '…' : ''}
+                      </div>
+                    </div>
+
+                    {/* Connection note */}
+                    <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
+                      fontStyle:"italic", lineHeight:1.6, paddingLeft:4 }}>
+                      {item.note}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </main>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // MAIN APP
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export default function CommonplaceApp() {
   const [manifestLoaded, setManifestLoaded] = React.useState(false);
-  const [view, setView] = React.useState('home'); // 'home' | 'template' | 'search' | 'entry'
+  const [view, setView] = React.useState('home'); // 'home' | 'template' | 'search' | 'entry' | 'tours'
   const [activeTemplate, setActiveTemplate] = React.useState(null);
   const [activeEntryId, setActiveEntryId] = React.useState(null);
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -1196,10 +1318,12 @@ export default function CommonplaceApp() {
     Promise.all([
       fetch('/entries/manifest.json').then(r => r.json()),
       fetch('/searchIndex.json').then(r => r.json()).catch(() => []),
-    ]).then(([manifest, searchIdx]) => {
+      fetch('/entries/collections.json').then(r => r.json()).catch(() => []),
+    ]).then(([manifest, searchIdx, collections]) => {
       MANIFEST = manifest;
       SEARCH_INDEX = searchIdx;
-      if (searchIdx.length > 0) initFuse(); // initialise Fuse once data is ready
+      COLLECTIONS = collections;
+      if (searchIdx.length > 0) initFuse();
       setManifestLoaded(true);
     }).catch(() => setManifestLoaded(true));
   }, []);
@@ -1259,6 +1383,7 @@ export default function CommonplaceApp() {
   };
 
   const goHome = () => setView('home');
+  const goToTours = () => setView('tours');
   const goToTemplate = (t) => { setActiveTemplate(t); setView('template'); };
   const goToEntry = (id) => {
     if (!MANIFEST.find(e=>e.id===id)) return;
@@ -1348,12 +1473,27 @@ export default function CommonplaceApp() {
             )}
           </div>
 
+          {/* Tours nav link */}
+          <button onClick={goToTours}
+            style={{ background:"transparent", border:"none", cursor:"pointer",
+              flexShrink:0, padding:"4px 10px",
+              color: view === 'tours' ? "#c8a96e" : "rgba(255,255,255,0.6)",
+              fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+              letterSpacing:"0.08em", textTransform:"uppercase",
+              borderBottom: view === 'tours' ? "1px solid #c8a96e" : "1px solid transparent",
+              transition:"all 0.15s" }}>
+            Tours
+          </button>
+
         </div>
       </header>
 
       {/* Views */}
       {view === 'home' && (
         <HomeView onSearch={doSearch} onTemplate={goToTemplate} onEntry={goToEntry} />
+      )}
+      {view === 'tours' && (
+        <ToursView onEntry={goToEntry} onHome={goHome} />
       )}
       {view === 'template' && activeTemplate && (
         <TemplateGallery templateName={activeTemplate} onEntry={goToEntry} onHome={goHome} />
