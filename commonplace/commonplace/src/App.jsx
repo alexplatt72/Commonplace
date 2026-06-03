@@ -1205,9 +1205,14 @@ function EntryViewer({ entry, accent, navigateTo }) {
 // TOURS VIEW
 // ═══════════════════════════════════════════════════════════════════════════════
 
-function ToursView({ onEntry, onHome }) {
-  const [selectedId, setSelectedId] = React.useState(null);
-  React.useEffect(() => { if (COLLECTIONS.length > 0 && !selectedId) setSelectedId(COLLECTIONS[0].id); }, []);
+function ToursView({ onEntry, onHome, restoreId }) {
+  const [selectedId, setSelectedId] = React.useState(
+    restoreId || (COLLECTIONS.length > 0 ? COLLECTIONS[0].id : null)
+  );
+  React.useEffect(() => {
+    if (restoreId) setSelectedId(restoreId);
+    else if (!selectedId && COLLECTIONS.length > 0) setSelectedId(COLLECTIONS[0].id);
+  }, [restoreId, selectedId]);
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
@@ -1288,7 +1293,7 @@ function ToursView({ onEntry, onHome }) {
                     </div>
 
                     {/* Entry card */}
-                    <div onClick={() => onEntry(item.entryId, 'tours', selectedId)}
+                    <div onClick={() => onEntry(item.entryId, selectedId)}
                       style={{ width:"78%", maxWidth:760, minWidth:420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
@@ -1329,10 +1334,15 @@ function ToursView({ onEntry, onHome }) {
 // PATHWAYS VIEW
 // ═══════════════════════════════════════════════════════════════════════════════
 
-function PathwaysView({ onEntry, onHome }) {
-  const [selectedId, setSelectedId] = React.useState(() => PATHWAYS[0]?.id || '');
+function PathwaysView({ onEntry, onHome, restoreId }) {
+  const [selectedId, setSelectedId] = React.useState(
+    restoreId || (PATHWAYS.length > 0 ? PATHWAYS[0].id : null)
+  );
   const selected = PATHWAYS.find(p => p.id === selectedId);
-  React.useEffect(() => { if (!selectedId && PATHWAYS.length > 0) setSelectedId(PATHWAYS[0].id); }, [selectedId]);
+  React.useEffect(() => {
+    if (restoreId) setSelectedId(restoreId);
+    else if (!selectedId && PATHWAYS.length > 0) setSelectedId(PATHWAYS[0].id);
+  }, [restoreId, selectedId]);
   if (!PATHWAYS.length) return (
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
       <button onClick={onHome} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, cursor:"pointer" }}>← Home</button>
@@ -1433,7 +1443,7 @@ function PathwaysView({ onEntry, onHome }) {
                     </div>
 
                     {/* Entry card */}
-                    <div onClick={() => onEntry(item.entryId, 'pathways', selectedId)}
+                    <div onClick={() => onEntry(item.entryId, selectedId)}
                       style={{ width:"78%", maxWidth:760, minWidth:420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
@@ -1559,11 +1569,15 @@ export default function CommonplaceApp() {
   const [returnToId, setReturnToId] = React.useState(null); // which collection/pathway to restore
 
   const goHome = () => { setReturnTo(null); setReturnToId(null); setView('home'); };
-  const goToTours = (restoreId=null) => { if (restoreId) setReturnToId(restoreId); setView('tours'); };
-  const goToPathways = (restoreId=null) => { if (restoreId) setReturnToId(restoreId); setView('pathways'); };
+  const goToTours = (restoreId=null) => { setReturnTo(null); setReturnToId(restoreId); setView('tours'); };
+  const goToPathways = (restoreId=null) => { setReturnTo(null); setReturnToId(restoreId); setView('pathways'); };
   const goToTemplate = (t) => { setActiveTemplate(t); setView('template'); };
-  const goToEntry = (id) => {
-    if (!MANIFEST.find(e=>e.id===id)) return;
+  const goToEntry = (id, source=null, sourceId=null, preserveReturn=false) => {
+    if (!MANIFEST.find(e => e.id === id)) return;
+    if (!preserveReturn) {
+      setReturnTo(source);
+      setReturnToId(sourceId);
+    }
     setActiveEntryId(id);
     setView('entry');
   };
@@ -1682,10 +1696,18 @@ export default function CommonplaceApp() {
         <HomeView onSearch={doSearch} onTemplate={goToTemplate} onEntry={goToEntry} />
       )}
       {view === 'tours' && (
-        <ToursView onEntry={goToEntry} onHome={goHome} />
+        <ToursView
+          onEntry={(entryId, tourId) => goToEntry(entryId, 'tours', tourId)}
+          onHome={goHome}
+          restoreId={returnToId}
+        />
       )}
       {view === 'pathways' && (
-        <PathwaysView onEntry={goToEntry} onHome={goHome} />
+        <PathwaysView
+          onEntry={(entryId, pathwayId) => goToEntry(entryId, 'pathways', pathwayId)}
+          onHome={goHome}
+          restoreId={returnToId}
+        />
       )}
       {view === 'template' && activeTemplate && (
         <TemplateGallery templateName={activeTemplate} onEntry={goToEntry} onHome={goHome} />
@@ -1698,6 +1720,7 @@ export default function CommonplaceApp() {
         <EntryViewWrapper entryId={activeEntryId} onHome={goHome}
           onTours={goToTours} onPathways={goToPathways}
           returnTo={returnTo} returnToId={returnToId}
+          onEntry={(id) => goToEntry(id, null, null, true)}
           onTemplate={goToTemplate} onEntry={goToEntry} />
       )}
     </div>
