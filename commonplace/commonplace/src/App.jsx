@@ -401,8 +401,7 @@ function ComparativeNarrative({ perspectives, summary }) {
   );
 }
 
-function RabbitHole({ links, depth, navigateTo }) {
-  const dl = depth === "beginner" ? "Beginner" : "General";
+function RabbitHole({ links, navigateTo }) {
 
   // Assign gravity and sort: high → medium → low
   const GRAVITY_ORDER = { high:0, medium:1, low:2 };
@@ -472,7 +471,7 @@ function RabbitHole({ links, depth, navigateTo }) {
         <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700, color:C.text }}>Down the Rabbit Hole</h3>
       </div>
       <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.light, fontStyle:"italic", marginBottom:14 }}>
-        Links open at <strong style={{ color:C.muted }}>{dl}</strong> — matching where you are now. Heavier connections first.
+
       </div>
 
       {/* High gravity: essential connections */}
@@ -572,7 +571,7 @@ function PopularCulture({ items }) {
 }
 
 function EntryView({ entry, accent, navigateTo }) {
-  const [depth, setDepth] = useState("general");
+  const [depth, setDepth] = useState("beginner");
   const [tab, setTab] = useState("content");
   const showPopularCulture = depth === "beginner" && entry.popularCulture;
   const showComparative = depth === "general" || depth === "educational";
@@ -609,7 +608,7 @@ function EntryView({ entry, accent, navigateTo }) {
             <div style={{ borderTop:`1px solid ${C.border}`, marginTop:44, paddingTop:36 }}>
               {showPopularCulture && <PopularCulture items={entry.popularCulture} />}
               {showComparative && <ComparativeNarrative perspectives={entry.comparativeNarrative} summary={entry.comparativeSummary} />}
-              {showRabbitHole && <RabbitHole links={entry.rabbitHole} depth={depth} navigateTo={navigateTo} />}
+              {showRabbitHole && <RabbitHole links={entry.rabbitHole} navigateTo={navigateTo} />}
               {showCommerce && <CommerceSection items={entry.commerce} />}
             </div>
           </>
@@ -873,6 +872,22 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
           maxWidth:600, margin:"12px auto 0" }}>
           {totalEntries} paths, they all lead somewhere unexpected.
         </p>
+        <div style={{ marginTop:20 }}>
+          <button onClick={() => {
+            const published = MANIFEST.filter(e => e.status === 'published');
+            const random = published[Math.floor(Math.random() * published.length)];
+            if (random) onEntry(random.id);
+          }}
+            style={{ fontFamily:"'Lora',serif", fontSize:15, fontStyle:"italic",
+              color:C.navy, background:"transparent",
+              border:`1.5px solid ${C.navy}`, borderRadius:4,
+              padding:"8px 22px", cursor:"pointer",
+              transition:"all 0.15s" }}
+            onMouseEnter={e => { e.currentTarget.style.background = C.navy; e.currentTarget.style.color = '#fff'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = C.navy; }}>
+            Chase the rabbit →
+          </button>
+        </div>
       </div>
 
       {/* Category grid */}
@@ -1618,6 +1633,16 @@ export default function CommonplaceApp() {
         transition:"border-color 0.3s", position:"sticky", top:0, zIndex:100 }}>
         <div style={{ maxWidth:960, margin:"0 auto", padding:"0 40px", display:"flex",
           alignItems:"center", gap:14, height:54 }}>
+
+          {/* Home button — always visible in header */}
+          <button onClick={goHome}
+            style={{ background:"transparent", border:"none", cursor:"pointer",
+              flexShrink:0, padding:"4px 10px",
+              color:"rgba(255,255,255,0.6)",
+              fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+              letterSpacing:"0.08em", textTransform:"uppercase" }}>
+            Home
+          </button>
 
           {/* Search — fuzzy, always visible */}
           <div style={{ flex:1, maxWidth:440, position:"relative" }}>
