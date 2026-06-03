@@ -1187,7 +1187,7 @@ function ToursView({ onEntry, onHome }) {
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px", overflowX:"hidden" }}>
 
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
@@ -1254,7 +1254,7 @@ function ToursView({ onEntry, onHome }) {
                     <div style={{ marginBottom:8, lineHeight:1.6 }}>
                       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
                         letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
-                        whiteSpace:"nowrap", marginRight:6 }}>
+                        marginRight:6 }}>
                         {item.object}
                       </span>
                       <span style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
@@ -1281,10 +1281,7 @@ function ToursView({ onEntry, onHome }) {
                           {entry.title}
                         </span>
                       </div>
-                      <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted,
-                        lineHeight:1.5 }}>
-                        {entry.summary ? (() => { const s = entry.summary.slice(0,100); const i = s.lastIndexOf(' '); return (i > 60 ? s.slice(0,i) : s) + '…'; })() : ''}
-                      </div>
+
                     </div>
                   </div>
                 </div>
