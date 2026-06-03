@@ -858,7 +858,7 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
       {/* Platform statement */}
       <div style={{ textAlign:"center", marginBottom:44 }}>
         <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo"
-          style={{ display:"block", margin:"0 auto 16px", width:"360px", maxWidth:"90%", objectFit:"contain" }} />
+          style={{ display:"block", margin:"0 auto 8px", width:"360px", maxWidth:"90%", objectFit:"contain" }} />
         <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:52, fontWeight:400,
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 16px" }}>
           TheCommonPlace
@@ -1292,15 +1292,6 @@ export default function CommonplaceApp() {
         transition:"border-color 0.3s", position:"sticky", top:0, zIndex:100 }}>
         <div style={{ maxWidth:960, margin:"0 auto", padding:"0 40px", display:"flex",
           alignItems:"center", gap:14, height:54 }}>
-
-          {/* Home button — minimal, no wordmark */}
-          <button onClick={goHome} aria-label="Go to homepage"
-            style={{ background:"transparent", border:"none", cursor:"pointer",
-              flexShrink:0, padding:"4px 8px", color:"rgba(255,255,255,0.5)",
-              fontFamily:"'JetBrains Mono',monospace", fontSize:10,
-              letterSpacing:"0.08em", textTransform:"uppercase" }}>
-            Home
-          </button>
 
           {/* Search — fuzzy, always visible */}
           <div style={{ flex:1, maxWidth:440, position:"relative" }}>
