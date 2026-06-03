@@ -1089,7 +1089,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
 // ENTRY VIEW WRAPPER (existing viewer with nav)
 // ═══════════════════════════════════════════════════════════════════════════════
 
-function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry }) {
+function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPathways, returnTo, returnToId }) {
   const [entry, setEntry] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
@@ -1151,6 +1151,28 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry }) {
             fontSize:9, letterSpacing:"0.06em", color:C.muted }}>
           Home
         </button>
+        {returnTo === 'tours' && (
+          <>
+            <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:C.light }}>›</span>
+            <button onClick={() => onTours(returnToId)}
+              style={{ padding:"4px 10px", background:"transparent", border:`1px solid ${C.border}`,
+                borderRadius:3, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+                fontSize:9, letterSpacing:"0.06em", color:C.muted }}>
+              Tours
+            </button>
+          </>
+        )}
+        {returnTo === 'pathways' && (
+          <>
+            <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:C.light }}>›</span>
+            <button onClick={() => onPathways(returnToId)}
+              style={{ padding:"4px 10px", background:"transparent", border:`1px solid ${C.border}`,
+                borderRadius:3, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+                fontSize:9, letterSpacing:"0.06em", color:C.muted }}>
+              Pathways
+            </button>
+          </>
+        )}
         <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:C.light }}>›</span>
         <button onClick={() => onTemplate(entry.template)}
           style={{ padding:"4px 10px", background:"transparent", border:`1px solid ${accent}`,
@@ -1264,7 +1286,145 @@ function ToursView({ onEntry, onHome }) {
                     </div>
 
                     {/* Entry card */}
-                    <div onClick={() => onEntry(item.entryId)}
+                    <div onClick={() => onEntry(item.entryId, 'tours', selectedId)}
+                      style={{ width:"78%", maxWidth:760, minWidth:420,
+                        background:C.surface, border:`1px solid ${C.border}`,
+                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
+                        cursor:"pointer", transition:"all 0.12s", overflow:"hidden" }}
+                      onMouseEnter={e => e.currentTarget.style.borderColor = accent}
+                      onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
+                      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
+                        <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9,
+                          fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase",
+                          color:"#fff", background:accent, padding:"2px 7px", borderRadius:3,
+                          flexShrink:0 }}>
+                          {entry.template}
+                        </span>
+                        <span style={{ fontFamily:"'Playfair Display',serif", fontSize:15,
+                          fontWeight:700, color:C.text, whiteSpace:"nowrap",
+                          overflow:"hidden", textOverflow:"ellipsis" }}>
+                          {entry.title}
+                        </span>
+                      </div>
+                      <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted,
+                        lineHeight:1.5, whiteSpace:"nowrap", overflow:"hidden",
+                        textOverflow:"ellipsis" }}>
+                        {entry.summary || ''}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </main>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PATHWAYS VIEW
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function PathwaysView({ onEntry, onHome }) {
+  const [selectedId, setSelectedId] = React.useState(PATHWAYS.length > 0 ? PATHWAYS[0].id : null);
+  const selected = PATHWAYS.find(p => p.id === selectedId);
+
+  return (
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px", overflowX:"hidden" }}>
+
+      <button onClick={onHome}
+        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
+          padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
+          borderRadius:4, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+          fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
+        ← Home
+      </button>
+
+      <div style={{ marginBottom:32 }}>
+        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:36, fontWeight:400,
+          color:C.text, marginBottom:8 }}>Pathways</h1>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic" }}>
+          Curated reading sequences. Each pathway builds toward understanding a subject from the ground up.
+        </p>
+      </div>
+
+      {/* Dropdown */}
+      <div style={{ marginBottom:24 }}>
+        <select
+          value={selectedId || ''}
+          onChange={e => setSelectedId(e.target.value)}
+          style={{ padding:"12px 16px", fontFamily:"'Lora',serif", fontSize:15,
+            color:C.text, background:C.surface, border:`1.5px solid ${C.borderStrong}`,
+            borderRadius:6, cursor:"pointer", width:"100%", maxWidth:480,
+            outline:"none", appearance:"none",
+            backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6356' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")`,
+            backgroundRepeat:"no-repeat", backgroundPosition:"right 14px center",
+            paddingRight:40 }}>
+          {PATHWAYS.map(p => (
+            <option key={p.id} value={p.id}>{p.title}</option>
+          ))}
+        </select>
+      </div>
+
+      {selected && (
+        <div>
+          {/* Arrow chain */}
+          <div style={{ display:"flex", alignItems:"center", flexWrap:"wrap", gap:6,
+            marginBottom:12 }}>
+            {selected.entries.map((item, i) => {
+              const entry = MANIFEST.find(e => e.id === item.entryId);
+              if (!entry) return null;
+              const cfg = TEMPLATE_CONFIG[entry.template] || {};
+              return (
+                <React.Fragment key={item.entryId}>
+                  <span style={{ fontFamily:"'Playfair Display',serif", fontSize:13,
+                    fontWeight:700, color:C.text }}>
+                    {entry.title}
+                  </span>
+                  {i < selected.entries.length - 1 && (
+                    <span style={{ color:C.light, fontSize:13, fontFamily:"'JetBrains Mono',monospace" }}>→</span>
+                  )}
+                </React.Fragment>
+              );
+            })}
+          </div>
+
+          {/* Description */}
+          <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted,
+            fontStyle:"italic", lineHeight:1.7, marginBottom:32 }}>
+            {selected.description}
+          </p>
+
+          <div style={{ borderTop:`1px solid ${C.border}`, paddingTop:24 }} />
+
+          {/* Entry cards */}
+          <div style={{ display:"flex", flexDirection:"column", gap:12, marginTop:24 }}>
+            {selected.entries.map((item, i) => {
+              const entry = MANIFEST.find(e => e.id === item.entryId);
+              if (!entry) return null;
+              const cfg = TEMPLATE_CONFIG[entry.template] || {};
+              const accent = cfg.accent || C.navy;
+              return (
+                <div key={item.entryId} style={{ display:"flex", gap:20, alignItems:"flex-start" }}>
+
+                  {/* Number */}
+                  <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11,
+                    color:C.light, flexShrink:0, paddingTop:10, minWidth:20, textAlign:"right" }}>
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+
+                  <div style={{ flex:1 }}>
+                    {/* Note */}
+                    <div style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
+                      fontStyle:"italic", marginBottom:8, lineHeight:1.6,
+                      width:"78%", maxWidth:760, minWidth:420 }}>
+                      {item.note}
+                    </div>
+
+                    {/* Entry card */}
+                    <div onClick={() => onEntry(item.entryId, 'pathways', selectedId)}
                       style={{ width:"78%", maxWidth:760, minWidth:420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
@@ -1307,7 +1467,7 @@ function ToursView({ onEntry, onHome }) {
 
 export default function CommonplaceApp() {
   const [manifestLoaded, setManifestLoaded] = React.useState(false);
-  const [view, setView] = React.useState('home'); // 'home' | 'template' | 'search' | 'entry' | 'tours'
+  const [view, setView] = React.useState('home'); // 'home' | 'template' | 'search' | 'entry' | 'tours' | 'pathways'
   const [activeTemplate, setActiveTemplate] = React.useState(null);
   const [activeEntryId, setActiveEntryId] = React.useState(null);
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -1321,10 +1481,12 @@ export default function CommonplaceApp() {
       fetch('/entries/manifest.json').then(r => r.json()),
       fetch('/searchIndex.json').then(r => r.json()).catch(() => []),
       fetch('/entries/collections.json').then(r => r.json()).catch(() => []),
-    ]).then(([manifest, searchIdx, collections]) => {
+      fetch('/entries/pathways.json').then(r => r.json()).catch(() => []),
+    ]).then(([manifest, searchIdx, collections, pathways]) => {
       MANIFEST = manifest;
       SEARCH_INDEX = searchIdx;
       COLLECTIONS = collections;
+      PATHWAYS = pathways;
       if (searchIdx.length > 0) initFuse();
       setManifestLoaded(true);
     }).catch(() => setManifestLoaded(true));
@@ -1384,8 +1546,12 @@ export default function CommonplaceApp() {
     setAcOpen(scored.length > 0);
   };
 
-  const goHome = () => setView('home');
-  const goToTours = () => setView('tours');
+  const [returnTo, setReturnTo] = React.useState(null);     // 'tours' | 'pathways' | null
+  const [returnToId, setReturnToId] = React.useState(null); // which collection/pathway to restore
+
+  const goHome = () => { setReturnTo(null); setReturnToId(null); setView('home'); };
+  const goToTours = (restoreId=null) => { if (restoreId) setReturnToId(restoreId); setView('tours'); };
+  const goToPathways = (restoreId=null) => { if (restoreId) setReturnToId(restoreId); setView('pathways'); };
   const goToTemplate = (t) => { setActiveTemplate(t); setView('template'); };
   const goToEntry = (id) => {
     if (!MANIFEST.find(e=>e.id===id)) return;
@@ -1487,6 +1653,18 @@ export default function CommonplaceApp() {
             Tours
           </button>
 
+          {/* Pathways nav link */}
+          <button onClick={goToPathways}
+            style={{ background:"transparent", border:"none", cursor:"pointer",
+              flexShrink:0, padding:"4px 10px",
+              color: view === 'pathways' ? "#c8a96e" : "rgba(255,255,255,0.6)",
+              fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+              letterSpacing:"0.08em", textTransform:"uppercase",
+              borderBottom: view === 'pathways' ? "1px solid #c8a96e" : "1px solid transparent",
+              transition:"all 0.15s" }}>
+            Pathways
+          </button>
+
         </div>
       </header>
 
@@ -1497,6 +1675,9 @@ export default function CommonplaceApp() {
       {view === 'tours' && (
         <ToursView onEntry={goToEntry} onHome={goHome} />
       )}
+      {view === 'pathways' && (
+        <PathwaysView onEntry={goToEntry} onHome={goHome} />
+      )}
       {view === 'template' && activeTemplate && (
         <TemplateGallery templateName={activeTemplate} onEntry={goToEntry} onHome={goHome} />
       )}
@@ -1506,6 +1687,8 @@ export default function CommonplaceApp() {
       )}
       {view === 'entry' && activeEntryId && (
         <EntryViewWrapper entryId={activeEntryId} onHome={goHome}
+          onTours={goToTours} onPathways={goToPathways}
+          returnTo={returnTo} returnToId={returnToId}
           onTemplate={goToTemplate} onEntry={goToEntry} />
       )}
     </div>
