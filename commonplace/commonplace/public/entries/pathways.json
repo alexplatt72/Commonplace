@@ -1,0 +1,41 @@
+[
+  {
+    "id": "capitalism",
+    "title": "How did capitalism happen?",
+    "description": "Six entries that trace the path from the first ledger to the modern economy.",
+    "entries": [
+      { "entryId": "debt",               "note": "Start here. Debt is older than money — the ledger came before the coin." },
+      { "entryId": "money",              "note": "Money was invented to settle debts, not to enable trade." },
+      { "entryId": "theMarket",          "note": "How the logic of exchange became the organizing principle of civilization." },
+      { "entryId": "industrialRevolution","note": "The moment capital began consuming labor at scale." },
+      { "entryId": "marx",               "note": "The man who read capitalism most carefully and predicted its end." },
+      { "entryId": "capitalism",         "note": "The system that emerged from all of the above — and what it actually is." }
+    ]
+  },
+  {
+    "id": "democracy",
+    "title": "How democracy was built",
+    "description": "Six entries across 2,500 years — from the first assembly to the modern constitution.",
+    "entries": [
+      { "entryId": "athenianDemocracy",  "note": "The first experiment. More radical than anything that followed." },
+      { "entryId": "romanRepublic",      "note": "How Athens became Rome — and what was lost in translation." },
+      { "entryId": "enlightenment",      "note": "The ideas that made modern democracy thinkable." },
+      { "entryId": "frenchRevolution",   "note": "The moment those ideas met reality — violently." },
+      { "entryId": "democracy",          "note": "What the concept actually means, and why it's still contested." },
+      { "entryId": "constitution",       "note": "The technology that tries to make democracy permanent." }
+    ]
+  },
+  {
+    "id": "disease",
+    "title": "How disease shaped civilization",
+    "description": "Six entries on the organisms and epidemics that redirected human history.",
+    "entries": [
+      { "entryId": "mosquitoes",         "note": "The insect that shaped where civilization could and couldn't go." },
+      { "entryId": "smallpox",           "note": "The disease that made European conquest of the Americas possible." },
+      { "entryId": "blackDeath",         "note": "The plague that killed a third of Europe and ended the medieval world." },
+      { "entryId": "cholera",            "note": "The epidemic that invented epidemiology and the modern city." },
+      { "entryId": "germTheory",         "note": "The idea that changed everything — and took decades to be believed." },
+      { "entryId": "publicHealth",       "note": "What civilization built once it understood what was killing it." }
+    ]
+  }
+]
