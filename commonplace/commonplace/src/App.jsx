@@ -1265,8 +1265,9 @@ function ToursView({ onEntry, onHome }) {
 
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId)}
-                      style={{ background:C.surface, border:`1px solid ${C.border}`,
-                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"10px 14px",
+                      style={{ width:"72%", maxWidth:680, minWidth:420,
+                        background:C.surface, border:`1px solid ${C.border}`,
+                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
                         cursor:"pointer", transition:"all 0.12s" }}
                       onMouseEnter={e => e.currentTarget.style.borderColor = accent}
                       onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
