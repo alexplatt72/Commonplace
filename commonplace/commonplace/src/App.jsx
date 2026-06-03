@@ -1213,7 +1213,7 @@ function ToursView({ onEntry, onHome }) {
           onChange={e => setSelectedId(e.target.value)}
           style={{ padding:"12px 16px", fontFamily:"'Lora',serif", fontSize:15,
             color:C.text, background:C.surface, border:`1.5px solid ${C.borderStrong}`,
-            borderRadius:6, cursor:"pointer", width:"100%",
+            borderRadius:6, cursor:"pointer", width:"100%", maxWidth:480,
             outline:"none", appearance:"none",
             backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6356' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")`,
             backgroundRepeat:"no-repeat", backgroundPosition:"right 14px center",
@@ -1266,7 +1266,7 @@ function ToursView({ onEntry, onHome }) {
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId)}
                       style={{ background:C.surface, border:`1px solid ${C.border}`,
-                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"10px 14px",
+                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"6px 12px",
                         cursor:"pointer", transition:"all 0.12s" }}
                       onMouseEnter={e => e.currentTarget.style.borderColor = accent}
                       onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
