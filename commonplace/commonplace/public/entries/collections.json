@@ -1,0 +1,47 @@
+[
+  {
+    "id": "britishMuseum",
+    "title": "The British Museum",
+    "description": "The British Museum holds two million years of human history. These eight entries explain what you're actually looking at.",
+    "entries": [
+      { "entryId": "writing",       "object": "The Rosetta Stone",               "note": "The stone that cracked Egyptian hieroglyphics — and revealed how writing systems encode power, not just meaning." },
+      { "entryId": "athens",        "object": "The Elgin Marbles",               "note": "Sculptures removed from the Parthenon in 1801. The debate over whether they should be returned has never been more alive." },
+      { "entryId": "colonialism",   "object": "The Benin Bronzes",               "note": "Looted from the Kingdom of Benin in 1897. Their presence in London is one of the defining arguments about what museums are for." },
+      { "entryId": "beowulf",       "object": "The Sutton Hoo Helmet",           "note": "The face of an Anglo-Saxon warrior king. The world Beowulf was written about, made suddenly real." },
+      { "entryId": "icelandicSagas","object": "The Lewis Chessmen",              "note": "Carved in 12th-century Norway, found on a Scottish beach. The medieval Norse world in ivory." },
+      { "entryId": "mesopotamia",   "object": "The Assyrian Lion Hunt Reliefs",  "note": "Carved 2,600 years ago for a king who no longer exists. The oldest royal propaganda ever made." },
+      { "entryId": "ancientEgypt",  "object": "The Egyptian Mummies",            "note": "The most visited objects in the museum. What they reveal about death, belief, and preservation is still being decoded." },
+      { "entryId": "iron",          "object": "Lindow Man",                      "note": "An Iron Age man preserved in a bog for 2,000 years. His last meal, his last morning, still visible." }
+    ]
+  },
+  {
+    "id": "istanbul",
+    "title": "Istanbul",
+    "description": "Three empires built on the same hill. Istanbul is where the ancient world became the modern one.",
+    "entries": [
+      { "entryId": "byzantineEmpire","object": "Hagia Sophia",                   "note": "Built in 537 CE, converted to a mosque in 1453, a museum in 1934, a mosque again in 2020. Every conversion is a history lesson." },
+      { "entryId": "ottomanEmpire", "object": "Topkapi Palace",                  "note": "The administrative heart of an empire that lasted six centuries. The bureaucracy that ran the world is still visible in its archives." },
+      { "entryId": "constantinople","object": "The Hippodrome",                  "note": "Once the social and political centre of the Byzantine world. The obelisks still stand where emperors once watched chariot races." },
+      { "entryId": "theMarket",     "object": "The Grand Bazaar",                "note": "One of the world's oldest covered markets, continuously trading since 1461. The logic of the market, made physical." },
+      { "entryId": "silk",          "object": "Galata Tower",                    "note": "Built by Genoese merchants at the western end of the Silk Road. Trade made this city; this tower marked where it arrived." },
+      { "entryId": "cholera",       "object": "Dolmabahçe Palace",               "note": "Built as the Ottoman Empire modernized — and as cholera swept through its cities. The palace and the epidemic are the same story." },
+      { "entryId": "gunpowder",     "object": "The Land Walls",                  "note": "The walls that protected Constantinople for a thousand years. Breached in 1453 by Ottoman cannon. Gunpowder ended a civilization." },
+      { "entryId": "salt",          "object": "The Spice Bazaar",                "note": "Salt, pepper, saffron — the commodities that made this city the hinge of the world. The smell hasn't changed in five centuries." }
+    ]
+  },
+  {
+    "id": "athens",
+    "title": "Athens",
+    "description": "Democracy, philosophy, and the idea of the citizen were all invented within walking distance of each other. Here's what each site unlocks.",
+    "entries": [
+      { "entryId": "athens",           "object": "The Acropolis",               "note": "The hill that defined a city. What the Parthenon meant to the Athenians, and what it means now, are two entirely different things." },
+      { "entryId": "athenianDemocracy","object": "The Pnyx",                    "note": "The hill where Athenian citizens voted. The first assembly. The template every democracy since has either followed or rejected." },
+      { "entryId": "democracy",        "object": "The Ancient Agora",           "note": "The marketplace where democratic life happened — argument, commerce, jury service. The agora is where democracy lived day to day." },
+      { "entryId": "socrates",         "object": "The Prison of Socrates",      "note": "The cave where Socrates waited to die rather than abandon his principles. Philosophy's founding act of conscience." },
+      { "entryId": "plato",            "object": "The Academy",                 "note": "The garden where Plato taught for forty years. The word academy comes from this place." },
+      { "entryId": "aristotle",        "object": "The Lyceum",                  "note": "Where Aristotle walked while teaching — the Peripatetics. The systematic study of everything began here." },
+      { "entryId": "theRepublic",      "object": "The National Archaeological Museum", "note": "The objects that Plato's world was built around. The Republic was written for people who lived among these things." },
+      { "entryId": "stoicism",         "object": "The Stoa of Attalos",         "note": "A reconstructed ancient stoa — the covered walkway where Stoic philosophy was first taught. The name comes from this building." }
+    ]
+  }
+]
