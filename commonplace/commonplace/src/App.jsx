@@ -635,7 +635,7 @@ const TEMPLATE_META = {
   Places:             { question:"The places where history happened.",                 desc:"Locations whose significance exceeds their geography",              icon:"◬" },
   "Natural Phenomena":{ question:"The forces that steer civilization.",                desc:"The natural forces that shaped what civilization could do",          icon:"◭" },
   Policy:             { question:"Where reasonable people disagree.",                  desc:"Live questions where values, evidence, and institutions collide",    icon:"◮" },
-  Foundations:        { question:"The building blocks of civilization.",               desc:"The materials, organisms, and ideas civilization was built on",      icon:"◯" },
+  Foundations:        { question:"The building blocks of human history.",               desc:"The materials, organisms, and ideas civilization was built on",      icon:"◯" },
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
