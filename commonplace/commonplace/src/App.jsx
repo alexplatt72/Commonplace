@@ -857,8 +857,8 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 
       {/* Platform statement */}
       <div style={{ textAlign:"center", marginBottom:44 }}>
-        <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo" height="120"
-          style={{ display:"block", margin:"0 auto 16px", objectFit:"contain" }} />
+        <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo"
+          style={{ display:"block", margin:"0 auto 16px", width:"360px", maxWidth:"90%", objectFit:"contain" }} />
         <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:52, fontWeight:400,
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 16px" }}>
           TheCommonPlace
