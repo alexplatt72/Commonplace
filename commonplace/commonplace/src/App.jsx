@@ -1283,7 +1283,7 @@ function ToursView({ onEntry, onHome }) {
                         </span>
                       </div>
                       <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted, lineHeight:1.5 }}>
-                        {entry.summary ? (() => { const words = entry.summary.split(' '); let out = ''; for (const w of words) { if ((out+' '+w).trim().length > 75) break; out = (out+' '+w).trim(); } return out + '…'; })() : ''}
+                        {entry.summary ? (() => { const words = entry.summary.split(' '); let out = ''; for (const w of words) { if ((out+' '+w).trim().length > 120) break; out = (out+' '+w).trim(); } return out + '…'; })() : ''}
                       </div>
                     </div>
                   </div>
