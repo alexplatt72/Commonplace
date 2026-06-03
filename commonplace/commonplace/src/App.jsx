@@ -1266,11 +1266,11 @@ function ToursView({ onEntry, onHome }) {
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId)}
                       style={{ background:C.surface, border:`1px solid ${C.border}`,
-                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"6px 12px",
+                        borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"10px 14px",
                         cursor:"pointer", transition:"all 0.12s" }}
                       onMouseEnter={e => e.currentTarget.style.borderColor = accent}
                       onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
-                      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
+                      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
                         <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9,
                           fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase",
                           color:"#fff", background:accent, padding:"2px 7px", borderRadius:3 }}>
@@ -1281,7 +1281,9 @@ function ToursView({ onEntry, onHome }) {
                           {entry.title}
                         </span>
                       </div>
-
+                      <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted, lineHeight:1.5 }}>
+                        {entry.summary ? (() => { const words = entry.summary.split(' '); let out = ''; for (const w of words) { if ((out+' '+w).trim().length > 75) break; out = (out+' '+w).trim(); } return out + '…'; })() : ''}
+                      </div>
                     </div>
                   </div>
                 </div>
