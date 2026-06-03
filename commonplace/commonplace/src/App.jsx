@@ -6,7 +6,8 @@ let MANIFEST = [];      // loaded once from /entries/manifest.json
 let ENTRY_CACHE = {};   // full entries loaded on demand
 let SEARCH_INDEX = [];  // richer search data: aliases, themes, indexTerms
 let FUSE = null;        // Fuse.js instance, initialised after searchIndex loads
-let COLLECTIONS = [];   // curated tours, loaded once from /collections.json
+let COLLECTIONS = [];   // curated tours, loaded once from /entries/collections.json
+let PATHWAYS = [];      // learning pathways, loaded once from /entries/pathways.json
 
 
 const FONTS = `
@@ -1329,9 +1330,15 @@ function ToursView({ onEntry, onHome }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function PathwaysView({ onEntry, onHome }) {
-  const [selectedId, setSelectedId] = React.useState(null);
-  React.useEffect(() => { if (PATHWAYS.length > 0 && !selectedId) setSelectedId(PATHWAYS[0].id); }, []);
+  const [selectedId, setSelectedId] = React.useState(() => PATHWAYS[0]?.id || '');
   const selected = PATHWAYS.find(p => p.id === selectedId);
+  React.useEffect(() => { if (!selectedId && PATHWAYS.length > 0) setSelectedId(PATHWAYS[0].id); }, [selectedId]);
+  if (!PATHWAYS.length) return (
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
+      <button onClick={onHome} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, cursor:"pointer" }}>← Home</button>
+      <p style={{ fontFamily:"'Lora',serif", color:C.muted, marginTop:20 }}>No pathways loaded.</p>
+    </main>
+  );
 
   return (
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px", overflowX:"hidden" }}>
