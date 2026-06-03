@@ -1205,7 +1205,8 @@ function EntryViewer({ entry, accent, navigateTo }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function ToursView({ onEntry, onHome }) {
-  const [selectedId, setSelectedId] = React.useState(COLLECTIONS.length > 0 ? COLLECTIONS[0].id : null);
+  const [selectedId, setSelectedId] = React.useState(null);
+  React.useEffect(() => { if (COLLECTIONS.length > 0 && !selectedId) setSelectedId(COLLECTIONS[0].id); }, []);
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
@@ -1328,7 +1329,8 @@ function ToursView({ onEntry, onHome }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function PathwaysView({ onEntry, onHome }) {
-  const [selectedId, setSelectedId] = React.useState(PATHWAYS.length > 0 ? PATHWAYS[0].id : null);
+  const [selectedId, setSelectedId] = React.useState(null);
+  React.useEffect(() => { if (PATHWAYS.length > 0 && !selectedId) setSelectedId(PATHWAYS[0].id); }, []);
   const selected = PATHWAYS.find(p => p.id === selectedId);
 
   return (
