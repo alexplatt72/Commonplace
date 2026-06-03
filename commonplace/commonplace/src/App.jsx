@@ -1252,18 +1252,24 @@ function ToursView({ onEntry, onHome }) {
 
                   {/* Card + note */}
                   <div style={{ flex:1 }}>
-                    {/* Object name */}
-                    <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
-                      letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
-                      marginBottom:6 }}>
-                      {item.object}
+                    {/* Object name + note inline */}
+                    <div style={{ display:"flex", alignItems:"baseline", gap:8, marginBottom:8, flexWrap:"wrap" }}>
+                      <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+                        letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
+                        flexShrink:0 }}>
+                        {item.object}
+                      </span>
+                      <span style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
+                        fontStyle:"italic", lineHeight:1.5 }}>
+                        — {item.note}
+                      </span>
                     </div>
 
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId)}
                       style={{ background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"14px 18px",
-                        cursor:"pointer", marginBottom:8, transition:"all 0.12s" }}
+                        cursor:"pointer", transition:"all 0.12s" }}
                       onMouseEnter={e => e.currentTarget.style.borderColor = accent}
                       onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
                       <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
@@ -1282,12 +1288,6 @@ function ToursView({ onEntry, onHome }) {
                         {entry.summary ? entry.summary.slice(0, 120) + '…' : ''}
                       </div>
                     </div>
-
-                    {/* Connection note */}
-                    <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
-                      fontStyle:"italic", lineHeight:1.6, paddingLeft:4 }}>
-                      {item.note}
-                    </p>
                   </div>
                 </div>
               );
