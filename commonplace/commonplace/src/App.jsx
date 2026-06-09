@@ -1921,7 +1921,7 @@ function ToursView({ onEntry, onHome, restoreId }) {
             backgroundRepeat:"no-repeat", backgroundPosition:"right 14px center",
             paddingRight:40 }}>
           {COLLECTIONS.map(c => (
-            <option key={c.id} value={c.id}>{c.title}</option>
+            <option key={c.id} value={c.id}>{c.title}{c.location ? ` — ${c.location}` : ''}</option>
           ))}
         </select>
       </div>
@@ -1930,6 +1930,12 @@ function ToursView({ onEntry, onHome, restoreId }) {
       {selected && (
         <div>
           <div style={{ marginBottom:32, paddingBottom:24, borderBottom:`1px solid ${C.border}` }}>
+            {selected.location && (
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, letterSpacing:"0.1em",
+                textTransform:"uppercase", color:"#8a6d3b", marginBottom:6 }}>{selected.location}</div>
+            )}
+            <h2 style={{ fontFamily:"'DM Serif Display',serif", fontSize: isMobile?24:30, fontWeight:400,
+              color:C.text, margin:"0 0 10px" }}>{selected.title}</h2>
             <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7 }}>
               {selected.description}
             </p>
