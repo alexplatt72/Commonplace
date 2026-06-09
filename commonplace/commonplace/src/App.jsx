@@ -1879,13 +1879,14 @@ function ToursView({ onEntry, onHome, restoreId }) {
   const isMobile = useIsMobile();
   const validRestoreId = typeof restoreId === "string" && COLLECTIONS.some(c => c.id === restoreId) ? restoreId : null;
   const [selectedId, setSelectedId] = React.useState(validRestoreId || COLLECTIONS[0]?.id || "");
+  // The tour to restore is applied by the useState initializer above (this view
+  // remounts on every entry → tours return). Here we only keep the value valid —
+  // do NOT force it back to restoreId, or the user couldn't switch tours.
   React.useEffect(() => {
-    if (typeof restoreId === "string" && COLLECTIONS.some(c => c.id === restoreId)) {
-      setSelectedId(restoreId);
-    } else if (!COLLECTIONS.some(c => c.id === selectedId)) {
+    if (!COLLECTIONS.some(c => c.id === selectedId)) {
       setSelectedId(COLLECTIONS[0]?.id || "");
     }
-  }, [restoreId, selectedId]);
+  }, [selectedId]);
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
@@ -2017,13 +2018,13 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
   const isMobile = useIsMobile();
   const validRestoreId = typeof restoreId === "string" && PATHWAYS.some(p => p.id === restoreId) ? restoreId : null;
   const [selectedId, setSelectedId] = React.useState(validRestoreId || PATHWAYS[0]?.id || "");
+  // Restore is applied by the initializer above (this view remounts on return);
+  // here we only keep the value valid, never force it back to restoreId.
   React.useEffect(() => {
-    if (typeof restoreId === "string" && PATHWAYS.some(p => p.id === restoreId)) {
-      setSelectedId(restoreId);
-    } else if (!PATHWAYS.some(p => p.id === selectedId)) {
+    if (!PATHWAYS.some(p => p.id === selectedId)) {
       setSelectedId(PATHWAYS[0]?.id || "");
     }
-  }, [restoreId, selectedId]);
+  }, [selectedId]);
   const selected = PATHWAYS.find(p => p.id === selectedId);
   if (!PATHWAYS.length) return (
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
@@ -2555,8 +2556,8 @@ export default function CommonplaceApp() {
             Explore
           </button>
 
-          {/* Tours nav link */}
-          <button onClick={() => goToTours()}
+          {/* Tours nav link — restore the tour if returning from a tour-opened entry */}
+          <button onClick={() => goToTours(returnTo === 'tours' ? returnToId : null)}
             style={{ background:"transparent", border:"none", cursor:"pointer",
               flexShrink:0, padding:"4px 10px",
               color: view === 'tours' ? "#c8a96e" : "rgba(255,255,255,0.6)",
@@ -2567,8 +2568,8 @@ export default function CommonplaceApp() {
             Tours
           </button>
 
-          {/* Pathways nav link */}
-          <button onClick={() => goToPathways()}
+          {/* Pathways nav link — restore the pathway if returning from a pathway-opened entry */}
+          <button onClick={() => goToPathways(returnTo === 'pathways' ? returnToId : null)}
             style={{ background:"transparent", border:"none", cursor:"pointer",
               flexShrink:0, padding:"4px 10px",
               color: view === 'pathways' ? "#c8a96e" : "rgba(255,255,255,0.6)",
@@ -2601,14 +2602,14 @@ export default function CommonplaceApp() {
         <ToursView
           onEntry={(entryId, tourId) => goToEntry(entryId, 'tours', tourId)}
           onHome={goHome}
-          restoreId={returnTo === 'tours' ? returnToId : null}
+          restoreId={returnToId}
         />
       )}
       {view === 'pathways' && (
         <PathwaysView
           onEntry={(entryId, pathwayId) => goToEntry(entryId, 'pathways', pathwayId)}
           onHome={goHome}
-          restoreId={returnTo === 'pathways' ? returnToId : null}
+          restoreId={returnToId}
         />
       )}
       {view === 'template' && activeTemplate && (
