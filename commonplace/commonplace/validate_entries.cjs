@@ -2,8 +2,10 @@
 // Version 2.0 — Restructured per updated specification
 //
 // Priority hierarchy:
-//   FAIL    — blocks publication (schema, layer structure, layer collapse, beginner limits, broken links)
-//   WARNING — should be reviewed before publication (layer progression, AI failure modes, graph health)
+//   FAIL    — blocks publication (schema, layer structure, layer collapse, cross-layer sentence
+//             repetition [Advanced must advance; hook not re-narrated], beginner limits, broken links)
+//   WARNING — should be reviewed before publication (layer progression, AI failure modes,
+//             Beginner↔General verbatim reuse, graph health)
 //   ADVISORY — useful diagnostics, track across sessions
 //
 // Run:  node validate_entries.cjs <entries_dir> [--verbose] [--entry <id>]
@@ -180,6 +182,51 @@ function sectionTexts(layerObj, sectionKeys) {
   if (!layerObj || !sectionKeys) return out;
   for (const k of sectionKeys) out[k] = layerObj[k] || '';
   return out;
+}
+
+// ── Cross-layer sentence-repetition helpers (check 4.6) ───────────────────────
+// Whole-layer Jaccard (4.1) misses a single signature anecdote/quote/stat reused
+// across depths while the rest of the layer differs. These power a sentence-level
+// check: a genuinely consecutive copied phrase (run) OR high content-word overlap.
+const REP_STOP = new Set(('a an the and or but nor for so yet of to in on at by with from as into about ' +
+  'over under is are was were be been being am do does did have has had having will would shall should ' +
+  'can could may might must this that these those it its they them their he she his her him we us our you ' +
+  'your i me my not no than then there which who whom whose what when where why how all any both each few ' +
+  'more most other some such only own same too very').split(/\s+/));
+function repTokens(s) {
+  return String(s).toLowerCase().replace(/[‘’“”]/g, "'").replace(/[^a-z0-9'\s-]/g, ' ')
+    .split(/\s+/).filter(Boolean);
+}
+function repContent(s) { return repTokens(s).filter(t => !REP_STOP.has(t) && t.length > 1); }
+function repJaccard(a, b) {
+  const A = new Set(a), B = new Set(b); let inter = 0;
+  for (const t of A) if (B.has(t)) inter++;
+  const uni = A.size + B.size - inter; return uni === 0 ? 0 : inter / uni;
+}
+function repLongestRun(a, b) {           // longest shared contiguous run = real copied phrase
+  const n = a.length, m = b.length; if (!n || !m) return { len: 0, text: '' };
+  let best = 0, bestEnd = 0; const prev = new Array(m + 1).fill(0);
+  for (let i = 1; i <= n; i++) {
+    let diag = 0;
+    for (let j = 1; j <= m; j++) {
+      const tmp = prev[j];
+      if (a[i - 1] === b[j - 1]) { prev[j] = diag + 1; if (prev[j] > best) { best = prev[j]; bestEnd = i; } }
+      else prev[j] = 0;
+      diag = tmp;
+    }
+  }
+  return { len: best, text: a.slice(bestEnd - best, bestEnd).join(' ') };
+}
+/** Match descriptor if two sentences substantially overlap, else null.
+ *  lenient=true (Beginner↔General) requires near-verbatim; strict catches reuse. */
+function repMatch(sa, sb, lenient) {
+  const ca = repContent(sa), cb = repContent(sb);
+  if (ca.length < 5 || cb.length < 5) return null;
+  const jac = repJaccard(ca, cb);
+  const run = repLongestRun(repTokens(sa), repTokens(sb));
+  if (run.len >= (lenient ? 10 : 6) || jac >= (lenient ? 0.72 : 0.50))
+    return { jac, run: run.len, runText: run.text };
+  return null;
 }
 
 // ── AI failure mode phrase lists ──────────────────────────────────────────────
@@ -559,6 +606,51 @@ for (const fname of filesToProcess) {
               `Section opening similarity [${layerName}]: ${openings[i].key} ↔ ${openings[j].key} share ${(sim*100).toFixed(0)}% — both sections may open with the same move`
             );
           }
+        }
+      }
+    }
+
+    // 4.6 Cross-layer sentence repetition (targeted — see helpers above)
+    // Catches the signature anecdote/quote/stat reused across depths that whole-layer
+    // similarity (4.1) misses. Severity follows the depth rule:
+    //   * Advanced must ADVANCE — reusing a shallower layer's sentence, or re-narrating the
+    //     hook in any body layer, is a FAIL.
+    //   * Beginner is a lower register than General — parallel is allowed, so only
+    //     near-VERBATIM reuse between them is a WARNING.
+    const repHookSents = splitSentences(entry.hook || '');
+    const repLayerSents = {};
+    for (const L of ['beginner', 'general', 'advanced']) {
+      repLayerSents[L] = {};
+      for (const k of sectionKeys) repLayerSents[L][k] = splitSentences((content[L] && content[L][k]) || '');
+    }
+    const repSeen = new Set();
+
+    // Hook re-narrated inside a body layer => FAIL
+    for (const L of ['beginner', 'general', 'advanced']) {
+      for (const k of sectionKeys) for (const sent of repLayerSents[L][k]) {
+        for (const h of repHookSents) {
+          const m = repMatch(sent, h, false);
+          if (!m) continue;
+          const dk = 'hook|' + L + '|' + m.runText;
+          if (repSeen.has(dk)) continue; repSeen.add(dk);
+          fails.push(`Hook re-narrated [${L}.${k}]: body restates the hook (shared "${m.runText.slice(0, 50)}") — the hook should anchor one entry point, not reappear in a layer`);
+        }
+      }
+    }
+
+    // Same-section reuse across layers: Advanced echo => FAIL ; Beginner↔General verbatim => WARNING
+    const repPairs = [['beginner', 'general', true], ['beginner', 'advanced', false], ['general', 'advanced', false]];
+    for (const [LA, LB, lenient] of repPairs) {
+      for (const k of sectionKeys) {
+        for (const sa of repLayerSents[LA][k]) for (const sb of repLayerSents[LB][k]) {
+          const m = repMatch(sa, sb, lenient);
+          if (!m) continue;
+          const dk = LA + LB + k + m.runText;
+          if (repSeen.has(dk)) continue; repSeen.add(dk);
+          if (LB === 'advanced')
+            fails.push(`Advanced echoes ${LA} [${k}]: Advanced reuses a shallower sentence (shared "${m.runText.slice(0, 50)}", ${(m.jac*100).toFixed(0)}% overlap) — Advanced must advance, not reword`);
+          else
+            warnings.push(`Verbatim reuse [${k}]: Beginner ↔ General share a near-identical sentence (shared "${m.runText.slice(0, 50)}") — parallel is fine, but rewrite the duplicate`);
         }
       }
     }
