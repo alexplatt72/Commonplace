@@ -3,7 +3,8 @@
 //
 // Priority hierarchy:
 //   FAIL    — blocks publication (schema, layer structure, layer collapse, cross-layer sentence
-//             repetition [Advanced must advance; hook not re-narrated], beginner limits, broken links)
+//             repetition [Advanced must advance; hook not re-narrated], duplicate commerce/
+//             popularCulture items, beginner limits, broken links)
 //   WARNING — should be reviewed before publication (layer progression, AI failure modes,
 //             Beginner↔General verbatim reuse, graph health)
 //   ADVISORY — useful diagnostics, track across sessions
@@ -227,6 +228,20 @@ function repMatch(sa, sb, lenient) {
   if (run.len >= (lenient ? 10 : 6) || jac >= (lenient ? 0.72 : 0.50))
     return { jac, run: run.len, runText: run.text };
   return null;
+}
+
+// ── Media duplicate helpers (commerce / popularCulture, checks 9.3 / 10.3) ────
+// Same logic as the dedup tool: strip parenthetical edition/translator notes so
+// "Arrian (Penguin Classics edition)" matches "Arrian", but distinct authors of a
+// same-titled book (Isaacson vs Clark on "Leonardo da Vinci") stay distinct.
+const mediaNorm = s => (s || '').toString().toLowerCase().replace(/[^a-z0-9]/g, '');
+const mediaStripParen = s => (s || '').replace(/\([^)]*\)/g, ' ');
+function commerceSig(c) {
+  const sigs = [];
+  if (c.isbn) sigs.push('i:' + String(c.isbn).replace(/[^0-9xX]/g, ''));
+  const t = mediaNorm(mediaStripParen(c.title));
+  if (t) sigs.push('t:' + t + '|' + mediaNorm(mediaStripParen(c.author)));
+  return sigs;
 }
 
 // ── AI failure mode phrase lists ──────────────────────────────────────────────
@@ -817,6 +832,21 @@ for (const fname of filesToProcess) {
     }
   }
 
+  // 9.3 Duplicate detection — a repeated book pads the min-count check (9.1) and
+  // renders twice in the "Find it" row. Same book = shared ISBN OR title+author.
+  {
+    const seen = new Map(); // signature -> first index
+    for (const [i, c] of commerce.entries()) {
+      const sigs = commerceSig(c);
+      let dupOf = -1;
+      for (const s of sigs) if (seen.has(s)) { dupOf = seen.get(s); break; }
+      if (dupOf >= 0)
+        fails.push(`commerce[${i}] "${c.title || '?'}" duplicates commerce[${dupOf}] "${commerce[dupOf].title || '?'}" — same book (shared ISBN or title+author); remove the duplicate`);
+      else
+        sigs.forEach(s => seen.set(s, i));
+    }
+  }
+
   // ── 10. POPULAR CULTURE ───────────────────────────────────────────────────
 
   const pc = entry.popularCulture || [];
@@ -833,6 +863,19 @@ for (const fname of filesToProcess) {
     const descWc = wordCount(item.description || '');
     if (descWc > 75)
       fails.push(`popularCulture[${i}] "${item.title || '?'}" description is ${descWc} words — hard limit is 75`);
+  }
+
+  // 10.3 Duplicate detection — a repeated item pads the min-count check (10.1)
+  // and renders twice on the page. Same item = shared normalized title.
+  {
+    const seen = new Map();
+    for (const [i, item] of pc.entries()) {
+      const key = mediaNorm(item.title);
+      if (!key) continue;
+      if (seen.has(key))
+        fails.push(`popularCulture[${i}] "${item.title || '?'}" duplicates popularCulture[${seen.get(key)}] — same item; remove the duplicate`);
+      else seen.set(key, i);
+    }
   }
 
   // ── 11. AI FAILURE MODE WARNINGS ──────────────────────────────────────────
