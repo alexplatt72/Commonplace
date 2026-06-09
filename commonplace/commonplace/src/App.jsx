@@ -976,6 +976,27 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
         </div>
       </div>
 
+      {/* Explore by thread — search shortcuts (not filters) */}
+      <div style={{ textAlign:"center", marginBottom:44 }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:600,
+          letterSpacing:"0.12em", textTransform:"uppercase", color:C.light, marginBottom:13 }}>
+          Explore by thread
+        </div>
+        <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:8,
+          maxWidth:700, margin:"0 auto" }}>
+          {THREADS.map(t => (
+            <button key={t} onClick={() => onSearch(t)}
+              style={{ fontFamily:"'Lora',serif", fontSize:13.5, color:C.navy, background:"transparent",
+                border:`1px solid ${C.borderStrong}`, borderRadius:20, padding:"5px 15px",
+                cursor:"pointer", transition:"all 0.12s" }}
+              onMouseEnter={e => { e.currentTarget.style.background = "#9a6a00"; e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "#9a6a00"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.navy; e.currentTarget.style.borderColor = C.borderStrong; }}>
+              {t}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Reading levels */}
       <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center",
         gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
@@ -1079,15 +1100,16 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 // TEMPLATE GALLERY VIEW
 // ═══════════════════════════════════════════════════════════════════════════════
 
-// ─── Era buckets (derived from startYear) ────────────────────────────────────
+// ─── Reader-facing facet derivations (all computed from existing fields) ──────
+
+// Era — 6 buckets from startYear (Classical folded into Ancient)
 const ERAS = [
-  { key:"Prehistory",   max:-3000 },
-  { key:"Ancient",      max:-800  },
-  { key:"Classical",    max:500   },
-  { key:"Medieval",     max:1500  },
-  { key:"Early Modern", max:1800  },
-  { key:"Modern",       max:1945  },
-  { key:"Contemporary", max:Infinity },
+  { key:"Prehistory",   max:-3000 },   // before 3000 BCE
+  { key:"Ancient",      max:500   },   // 3000 BCE – 500 CE
+  { key:"Medieval",     max:1500  },   // 500 – 1500
+  { key:"Early Modern", max:1800  },   // 1500 – 1800
+  { key:"Modern",       max:1945  },   // 1800 – 1945
+  { key:"Contemporary", max:Infinity },// 1945 – present
 ];
 function eraOf(year) {
   if (year == null) return null;
@@ -1096,30 +1118,85 @@ function eraOf(year) {
 }
 const ERA_ORDER = ERAS.reduce((m, e, i) => { m[e.key] = i; return m; }, {});
 
-function FilterChip({ label, count, active, accent, onClick }) {
+// Region — collapse granular stored regions into 7 reader-facing buckets (display only)
+const REGION_DISPLAY = {
+  "Europe":"Europe", "The Americas":"The Americas",
+  "North Africa & Middle East":"Middle East & North Africa",
+  "Sub-Saharan Africa":"Sub-Saharan Africa",
+  "East Asia":"East Asia", "Southeast Asia":"East Asia", "Central Asia & the Steppe":"East Asia",
+  "South Asia":"South Asia",
+  "Oceania":"Global / Transregional", "Global / Transregional":"Global / Transregional",
+};
+const REGION_ORDER = {
+  "Europe":0, "The Americas":1, "Middle East & North Africa":2,
+  "East Asia":3, "South Asia":4, "Sub-Saharan Africa":5, "Global / Transregional":6,
+};
+const displayRegions = (regions) => [...new Set((regions || []).map(r => REGION_DISPLAY[r] || r))];
+
+// Connectedness — buckets from degree
+function connOf(d) { return d == null ? null : d >= 30 ? "Major hub" : d >= 12 ? "Well connected" : "Specialized"; }
+const CONN_ORDER = { "Major hub":0, "Well connected":1, "Specialized":2 };
+
+// Duration — buckets from startYear/endYear
+function durationOf(e) {
+  if (e.startYear == null || e.endYear == null) return null;
+  const span = e.endYear - e.startYear;
+  if (e.endYear >= 2000 && span > 10) return "Ongoing";      // runs to present
+  if (span === 0) return "Single event";
+  if (span <= 10) return "Under a decade";
+  if (span <= 150) return "Decades";
+  return "Centuries";
+}
+const DUR_ORDER = { "Single event":0, "Under a decade":1, "Decades":2, "Centuries":3, "Ongoing":4 };
+
+// Entry shape — friendly 1:1 relabel of subtype (editor jargon → reader words)
+const SHAPE_LABEL = {
+  "Extended Process":"Long Transformation", "Threshold Moment":"Turning Point",
+  "Threshold Moment — Restructured":"Turning Point", "Discrete Event":"Single Event",
+  "Movement":"Movement", "Period":"Period",
+  "Historical Actor":"Figure", "Thinker":"Thinker", "Creative Figure":"Creator",
+  "Material Foundation":"Material", "Conceptual Foundation":"Idea", "Biological Foundation":"Organism",
+  "Normative Concept":"Ideal", "Analytical Concept":"Analytical lens",
+  "Site":"Place", "System":"System", "Natural Event":"Event", "Natural Force":"Force",
+  "Policy Question":"Open Question", "Policy Landscape":"Landscape",
+};
+const shapeOf = (st) => SHAPE_LABEL[st] || st;
+
+// Threads — search shortcuts (NOT filters); clicking runs the existing search
+const THREADS = ["War","Empire","Religion","Science","Trade","Democracy","Slavery",
+  "Capitalism","Colonialism","Technology","Philosophy","Migration","Disease","Agriculture","Literature"];
+
+function FilterChip({ label, count, active, disabled, accent, onClick }) {
   return (
-    <button onClick={onClick}
-      style={{ padding:"5px 11px", borderRadius:14, cursor:"pointer",
+    <button onClick={disabled ? undefined : onClick} disabled={disabled}
+      style={{ padding:"5px 11px", borderRadius:14, cursor: disabled ? "default" : "pointer",
         fontFamily:"'JetBrains Mono',monospace", fontSize:10.5, letterSpacing:"0.02em",
         border:`1px solid ${active ? accent : C.border}`,
-        background: active ? accent : C.surface, color: active ? "#fff" : C.muted,
-        transition:"all 0.12s", whiteSpace:"nowrap" }}>
+        background: active ? accent : C.surface,
+        color: active ? "#fff" : (disabled ? C.light : C.muted),
+        opacity: disabled ? 0.45 : 1, transition:"all 0.12s", whiteSpace:"nowrap" }}>
       {label}{count != null && <span style={{ opacity:0.6, marginLeft:5 }}>{count}</span>}
     </button>
   );
 }
 
+// Disjunctive faceting: chips show contextual counts; a 0-count option (given the
+// OTHER active filters) is disabled so you can never click into a dead end.
 function FacetRow({ title, keys, counts, selected, accent, onToggle }) {
   if (!keys || keys.length <= 1) return null; // no point filtering on a single value
   return (
     <div style={{ display:"flex", alignItems:"baseline", gap:10, flexWrap:"wrap", marginTop:12 }}>
       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.1em",
-        textTransform:"uppercase", color:C.light, minWidth:50, paddingTop:2 }}>{title}</span>
+        textTransform:"uppercase", color:C.light, minWidth:54, paddingTop:2 }}>{title}</span>
       <div style={{ display:"flex", gap:6, flexWrap:"wrap" }}>
-        {keys.map(k => (
-          <FilterChip key={k} label={k} count={counts[k]} active={selected.has(k)}
-            accent={accent} onClick={() => onToggle(k)} />
-        ))}
+        {keys.map(k => {
+          const c = counts[k] || 0;
+          const active = selected.has(k);
+          return (
+            <FilterChip key={k} label={k} count={c} active={active}
+              disabled={c === 0 && !active} accent={accent} onClick={() => onToggle(k)} />
+          );
+        })}
       </div>
     </div>
   );
@@ -1132,55 +1209,80 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
 
   const all = React.useMemo(() => MANIFEST.filter(e => e.template === templateName), [templateName]);
 
-  const [sort, setSort]           = React.useState('az');
-  const [subFilter, setSubFilter] = React.useState(() => new Set());
-  const [eraFilter, setEraFilter] = React.useState(() => new Set());
-  const [regFilter, setRegFilter] = React.useState(() => new Set());
-  const [text, setText]           = React.useState('');
+  const [sort, setSort]     = React.useState('az');
+  const [text, setText]     = React.useState('');
+  const [eraF, setEraF]     = React.useState(() => new Set());
+  const [regF, setRegF]     = React.useState(() => new Set());
+  const [shapeF, setShapeF] = React.useState(() => new Set());
+  const [connF, setConnF]   = React.useState(() => new Set());
+  const [durF, setDurF]     = React.useState(() => new Set());
+  const [showMore, setShowMore] = React.useState(false);
 
   // reset everything when the category changes
   React.useEffect(() => {
-    setSort('az'); setSubFilter(new Set()); setEraFilter(new Set());
-    setRegFilter(new Set()); setText('');
+    setSort('az'); setText(''); setShowMore(false);
+    setEraF(new Set()); setRegF(new Set()); setShapeF(new Set()); setConnF(new Set()); setDurF(new Set());
   }, [templateName]);
 
-  // facet option counts (from the full category set, so counts are stable)
-  const facetCounts = (getVals) => {
+  const matchText = (e) => {
+    const q = text.trim().toLowerCase();
+    return !q || (e.title || '').toLowerCase().includes(q) || (e.summary || '').toLowerCase().includes(q);
+  };
+  // one predicate per facet (within a facet = OR; across facets = AND)
+  const preds = {
+    era:    (e) => !eraF.size   || eraF.has(eraOf(e.startYear)),
+    region: (e) => !regF.size   || displayRegions(e.regions).some(r => regF.has(r)),
+    shape:  (e) => !shapeF.size || shapeF.has(shapeOf(e.subtype)),
+    conn:   (e) => !connF.size  || connF.has(connOf(e.degree)),
+    dur:    (e) => !durF.size   || durF.has(durationOf(e)),
+  };
+  // entries passing text + every facet EXCEPT the named one → for disjunctive counts
+  const passingExcept = (except) =>
+    all.filter(e => matchText(e) && Object.keys(preds).every(k => k === except || preds[k](e)));
+
+  const countMap = (rows, getVal) => {
     const m = {};
-    for (const e of all) for (const v of [].concat(getVals(e) || [])) if (v != null) m[v] = (m[v] || 0) + 1;
+    for (const e of rows) for (const v of [].concat(getVal(e) || [])) if (v != null) m[v] = (m[v] || 0) + 1;
     return m;
   };
-  const subCounts = facetCounts(e => e.subtype);
-  const eraCounts = facetCounts(e => eraOf(e.startYear));
-  const regCounts = facetCounts(e => e.regions);
+  const eraCounts   = countMap(passingExcept('era'),    e => eraOf(e.startYear));
+  const regCounts   = countMap(passingExcept('region'), e => displayRegions(e.regions));
+  const shapeCounts = countMap(passingExcept('shape'),  e => shapeOf(e.subtype));
+  const connCounts  = countMap(passingExcept('conn'),   e => connOf(e.degree));
+  const durCounts   = countMap(passingExcept('dur'),    e => durationOf(e));
 
-  const subKeys = Object.keys(subCounts).sort((a, b) => subCounts[b] - subCounts[a]);
-  const eraKeys = Object.keys(eraCounts).sort((a, b) => ERA_ORDER[a] - ERA_ORDER[b]);
-  const regKeys = Object.keys(regCounts).sort((a, b) => regCounts[b] - regCounts[a]);
+  // full ordered vocabulary per facet (so 0-count options still render, greyed)
+  const vocab = (getVal) => {
+    const s = new Set();
+    for (const e of all) for (const v of [].concat(getVal(e) || [])) if (v != null) s.add(v);
+    return [...s];
+  };
+  const shapeTotals = countMap(all, e => shapeOf(e.subtype));
+  const eraKeys   = vocab(e => eraOf(e.startYear)).sort((a, b) => ERA_ORDER[a] - ERA_ORDER[b]);
+  const regKeys   = vocab(e => displayRegions(e.regions)).sort((a, b) => (REGION_ORDER[a] ?? 9) - (REGION_ORDER[b] ?? 9));
+  const shapeKeys = vocab(e => shapeOf(e.subtype)).sort((a, b) => (shapeTotals[b] || 0) - (shapeTotals[a] || 0));
+  const connKeys  = vocab(e => connOf(e.degree)).sort((a, b) => CONN_ORDER[a] - CONN_ORDER[b]);
+  const durKeys   = vocab(e => durationOf(e)).sort((a, b) => DUR_ORDER[a] - DUR_ORDER[b]);
 
   const toggle = (set, setter) => (v) => {
     const n = new Set(set); n.has(v) ? n.delete(v) : n.add(v); setter(n);
   };
 
   const titleKey = t => (t || '').replace(/^the\s+/i, '').toLowerCase();
-  const filtered = all.filter(e => {
-    if (subFilter.size && !subFilter.has(e.subtype)) return false;
-    if (eraFilter.size && !eraFilter.has(eraOf(e.startYear))) return false;
-    if (regFilter.size && !(e.regions || []).some(r => regFilter.has(r))) return false;
-    if (text.trim()) {
-      const q = text.toLowerCase();
-      if (!((e.title || '').toLowerCase().includes(q) || (e.summary || '').toLowerCase().includes(q))) return false;
-    }
-    return true;
-  }).sort((a, b) => {
-    if (sort === 'chrono')    return (a.startYear ?? 0) - (b.startYear ?? 0);
-    if (sort === 'connected') return (b.degree ?? 0) - (a.degree ?? 0);
-    return titleKey(a.title).localeCompare(titleKey(b.title));
-  });
+  const filtered = all
+    .filter(e => matchText(e) && Object.values(preds).every(p => p(e)))
+    .sort((a, b) => {
+      if (sort === 'chrono')    return (a.startYear ?? 0) - (b.startYear ?? 0);
+      if (sort === 'connected') return (b.degree ?? 0) - (a.degree ?? 0);
+      return titleKey(a.title).localeCompare(titleKey(b.title));
+    });
 
-  const anyFilter = subFilter.size || eraFilter.size || regFilter.size || text.trim();
-  const clearAll = () => { setSubFilter(new Set()); setEraFilter(new Set()); setRegFilter(new Set()); setText(''); };
-  const hasFacets = subKeys.length > 1 || eraKeys.length > 1 || regKeys.length > 1;
+  const anyFilter = eraF.size + regF.size + shapeF.size + connF.size + durF.size + (text.trim() ? 1 : 0);
+  const clearAll = () => {
+    setEraF(new Set()); setRegF(new Set()); setShapeF(new Set()); setConnF(new Set()); setDurF(new Set()); setText('');
+  };
+  const hasPrimary = eraKeys.length > 1 || regKeys.length > 1;
+  const hasMore = shapeKeys.length > 1 || connKeys.length > 1 || durKeys.length > 1;
 
   return (
     <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
@@ -1227,11 +1329,27 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
             ))}
           </div>
         </div>
-        {hasFacets && (
+        {hasPrimary && (
           <div style={{ borderTop:`1px solid ${C.border}`, marginTop:12, paddingTop:2 }}>
-            <FacetRow title="Type"   keys={subKeys} counts={subCounts} selected={subFilter} accent={accent} onToggle={toggle(subFilter, setSubFilter)} />
-            <FacetRow title="Era"    keys={eraKeys} counts={eraCounts} selected={eraFilter} accent={accent} onToggle={toggle(eraFilter, setEraFilter)} />
-            <FacetRow title="Region" keys={regKeys} counts={regCounts} selected={regFilter} accent={accent} onToggle={toggle(regFilter, setRegFilter)} />
+            <FacetRow title="Era"    keys={eraKeys} counts={eraCounts} selected={eraF} accent={accent} onToggle={toggle(eraF, setEraF)} />
+            <FacetRow title="Region" keys={regKeys} counts={regCounts} selected={regF} accent={accent} onToggle={toggle(regF, setRegF)} />
+          </div>
+        )}
+        {hasMore && (
+          <div style={{ marginTop:12 }}>
+            <button onClick={() => setShowMore(v => !v)}
+              style={{ background:"none", border:"none", cursor:"pointer", padding:0,
+                fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.08em",
+                textTransform:"uppercase", color:C.muted }}>
+              {showMore ? "Less ▴" : "More filters ▾"}
+            </button>
+            {showMore && (
+              <div>
+                <FacetRow title="Connections" keys={connKeys}  counts={connCounts}  selected={connF}  accent={accent} onToggle={toggle(connF, setConnF)} />
+                <FacetRow title="Duration"    keys={durKeys}   counts={durCounts}   selected={durF}   accent={accent} onToggle={toggle(durF, setDurF)} />
+                <FacetRow title="Shape"       keys={shapeKeys} counts={shapeCounts} selected={shapeF} accent={accent} onToggle={toggle(shapeF, setShapeF)} />
+              </div>
+            )}
           </div>
         )}
       </div>
