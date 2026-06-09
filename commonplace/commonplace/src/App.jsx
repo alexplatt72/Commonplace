@@ -845,6 +845,85 @@ function SearchBar({ value, onChange, onSubmit, placeholder, large }) {
 // HOME VIEW
 // ═══════════════════════════════════════════════════════════════════════════════
 
+// ─── Category icons (inline SVG, single-stroke) ──────────────────────────────
+function CatIcon({ name, color = "#333", size = 22 }) {
+  const paths = {
+    "Events": <><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></>,
+    "People": <><path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></>,
+    "Works": <><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></>,
+    "Concepts": <><path d="M9 18h6M10 22h4"/><path d="M15.1 14c.2-1 .7-1.7 1.4-2.5A4.6 4.6 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.8 1.2 1.5 1.4 2.5"/></>,
+    "Periods": <><path d="M5 22h14M5 2h14"/><path d="M17 22v-4.2a2 2 0 0 0-.6-1.4L12 12l-4.4 4.4a2 2 0 0 0-.6 1.4V22M7 2v4.2a2 2 0 0 0 .6 1.4L12 12l4.4-4.4A2 2 0 0 0 17 6.2V2"/></>,
+    "Places": <><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></>,
+    "Natural Phenomena": <><path d="M6 16.3A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 2.5 8.2"/><path d="m13 12-3 5h4l-3 5"/></>,
+    "Policy": <><path d="M16 16l3-8 3 8c-.9.6-1.9 1-3 1s-2.1-.4-3-1zM2 16l3-8 3 8c-.9.6-1.9 1-3 1s-2.1-.4-3-1zM7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></>,
+    "Foundations": <><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M4 11l8-7 8 7"/></>,
+  };
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color}
+      strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      {paths[name] || <circle cx="12" cy="12" r="9"/>}
+    </svg>
+  );
+}
+
+// ─── Reading levels (mirrors the entry depth system) ─────────────────────────
+const READING_LEVELS = [
+  { label:"Beginner",    color:"#2d5a3d" },
+  { label:"General",     color:"#1e3a5f" },
+  { label:"Educational", color:"#9a6a00" },
+  { label:"Advanced",    color:"#5c2d6e" },
+];
+
+// ─── Per-category hero image (ONE image per category, shown on featured cards) ─
+// Place nine images in /public/category-images/ named by the slugs below
+// (e.g. events.jpg). Missing images fall back to a tinted panel — nothing breaks.
+const CATEGORY_SLUG = {
+  "Events":"events", "People":"people", "Works":"works", "Concepts":"concepts",
+  "Periods":"periods", "Places":"places", "Natural Phenomena":"naturalPhenomena",
+  "Policy":"policy", "Foundations":"foundations",
+};
+const categoryImage = (template) => `/category-images/${CATEGORY_SLUG[template] || 'default'}.jpg`;
+
+// ─── Featured card (image keyed to category; calendar rotation set later) ─────
+function FeaturedCard({ id, entry, onClick }) {
+  const cfg = TEMPLATE_CONFIG[entry.template] || {};
+  const accent = cfg.accent || "#555";
+  return (
+    <button onClick={() => onClick(id)}
+      style={{ display:"flex", flexDirection:"column", textAlign:"left", padding:0, overflow:"hidden",
+        background:C.surface, border:`1px solid ${C.border}`, borderTop:`3px solid ${accent}`,
+        borderRadius:8, cursor:"pointer", boxShadow:"0 1px 3px rgba(0,0,0,0.05)" }}>
+      <div style={{ width:"100%", aspectRatio:"16 / 9",
+        background:`linear-gradient(135deg, ${accent}26, ${accent}0a)` }}>
+        <img src={categoryImage(entry.template)} alt=""
+          onError={e => { e.currentTarget.style.display = 'none'; }}
+          style={{ width:"100%", height:"100%", objectFit:"cover", display:"block" }} />
+      </div>
+      <div style={{ padding:"14px 16px 16px" }}>
+        <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:8 }}>
+          <span style={{ padding:"2px 7px", borderRadius:2, fontSize:9, fontFamily:"'JetBrains Mono',monospace",
+            fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", color:"#fff", background:accent }}>
+            {entry.template}
+          </span>
+          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:C.light }}>{entry.period}</span>
+        </div>
+        <div style={{ fontFamily:"'Playfair Display',serif", fontSize:17, fontWeight:700,
+          color:C.text, lineHeight:1.25, marginBottom:6 }}>{entry.title}</div>
+        <div style={{ fontFamily:"'Lora',serif", fontSize:12.5, color:C.muted, lineHeight:1.5,
+          display:"-webkit-box", WebkitLineClamp:3, WebkitBoxOrient:"vertical", overflow:"hidden" }}>
+          {entry.summary}
+        </div>
+        <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between",
+          marginTop:12, paddingTop:10, borderTop:`1px solid ${C.border}` }}>
+          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9.5, color:C.light,
+            letterSpacing:"0.04em" }}>4 reading levels</span>
+          <span style={{ fontFamily:"'Lora',serif", fontSize:12.5, fontWeight:500, color:accent }}>Read entry →</span>
+        </div>
+      </div>
+    </button>
+  );
+}
+
 function HomeView({ onSearch, onTemplate, onEntry }) {
 
   const totalEntries = MANIFEST.length;
@@ -857,44 +936,75 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
 
       {/* Platform statement */}
-      <div style={{ textAlign:"center", marginBottom:44 }}>
+      <div style={{ textAlign:"center", marginBottom:36 }}>
         <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo"
-          style={{ display:"block", margin:"0 auto 8px", width:"360px", maxWidth:"90%", objectFit:"contain" }} />
-        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:52, fontWeight:400,
-          color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 16px" }}>
+          style={{ display:"block", margin:"0 auto 6px", width:"340px", maxWidth:"86%", objectFit:"contain" }} />
+        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:50, fontWeight:400,
+          color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 18px" }}>
           TheCommonPlace
         </h1>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:16, color:C.muted, lineHeight:1.8,
-          maxWidth:600, margin:"0 auto" }}>
-          How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
+        <p style={{ fontFamily:"'Playfair Display',serif", fontSize:22, color:"#9a6a00", lineHeight:1.4,
+          maxWidth:640, margin:"0 auto" }}>
+          {totalEntries} pathways through the ideas, people, events, and forces that built the world.
         </p>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.light, fontStyle:"italic",
-          maxWidth:600, margin:"12px auto 0" }}>
-          {totalEntries} paths, they all lead somewhere unexpected.
+        <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7,
+          maxWidth:600, margin:"14px auto 0" }}>
+          Discover why debt came before money, how a mosquito changed empire, and how a continent was reforested without planting a single tree.
         </p>
-        <div style={{ marginTop:20 }}>
+        <div style={{ marginTop:26, display:"flex", flexDirection:"column", alignItems:"center", gap:14 }}>
+          <button onClick={() => document.getElementById('browse-categories')?.scrollIntoView({ behavior:'smooth', block:'start' })}
+            style={{ fontFamily:"'Playfair Display',serif", fontSize:16, color:"#fff", background:C.navy,
+              border:"none", borderRadius:6, padding:"13px 32px", cursor:"pointer", letterSpacing:"0.01em",
+              boxShadow:"0 2px 6px rgba(36,52,71,0.25)" }}>
+            Start exploring  →
+          </button>
           <button onClick={() => {
             const published = MANIFEST.filter(e => e.status === 'published');
             const random = published[Math.floor(Math.random() * published.length)];
             if (random) onEntry(random.id);
           }}
-            style={{ fontFamily:"'Lora',serif", fontSize:15, fontStyle:"italic",
-              color:C.navy, background:"transparent",
-              border:`1.5px solid ${C.navy}`, borderRadius:4,
-              padding:"8px 22px", cursor:"pointer",
-              transition:"all 0.15s" }}
-            onMouseEnter={e => { e.currentTarget.style.background = C.navy; e.currentTarget.style.color = '#fff'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = C.navy; }}>
-            Chase the rabbit →
+            style={{ fontFamily:"'Lora',serif", fontSize:13.5, fontStyle:"italic", color:C.navy,
+              background:"transparent", border:"none", cursor:"pointer", padding:"2px 6px" }}>
+            Prefer a hint of whimsy? Chase the rabbit →
           </button>
         </div>
       </div>
 
+      {/* Reading levels */}
+      <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center",
+        gap:"10px 18px", background:C.surface, border:`1px solid ${C.border}`, borderRadius:10,
+        padding:"16px 22px", marginBottom:48 }}>
+        <span style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
+          Every entry has <strong style={{ fontWeight:600 }}>four reading levels</strong>
+        </span>
+        <div style={{ display:"flex", gap:8, flexWrap:"wrap" }}>
+          {READING_LEVELS.map(l => (
+            <span key={l.label} style={{ display:"inline-flex", alignItems:"center", gap:6,
+              fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:l.color,
+              border:`1px solid ${l.color}55`, borderRadius:20, padding:"5px 12px" }}>
+              <span style={{ width:6, height:6, borderRadius:"50%", background:l.color }} />
+              {l.label}
+            </span>
+          ))}
+        </div>
+        <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
+          color:C.light, fontStyle:"italic" }}>
+          Choose the depth that fits you. Grow your understanding at your own pace.
+        </span>
+      </div>
+
       {/* Category grid */}
-      <section aria-label="Browse by category" style={{ marginBottom:52 }}>
+      <section id="browse-categories" aria-label="Browse by category"
+        style={{ marginBottom:52, scrollMarginTop:70 }}>
         <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
-          textTransform:"uppercase", color:C.light, marginBottom:20 }}>
+          textTransform:"uppercase", color:C.light, marginBottom:6 }}>
           Browse by category
+        </div>
+        <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:20 }}>
+          <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:700, color:C.text }}>
+            Find what fascinates you
+          </h2>
+          <div style={{ flex:1, height:1, background:C.border }} />
         </div>
         <div style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:12 }}>
           {Object.entries(TEMPLATE_CONFIG).filter(([_, cfg]) => cfg.active).map(([name, cfg]) => {
@@ -903,44 +1013,51 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
             return (
               <button key={name} onClick={() => onTemplate(name)}
                 aria-label={`Browse ${name} — ${count} entries`}
-                style={{ padding:"18px 20px", background:C.surface, border:`1px solid ${C.border}`,
-                  borderTop:`3px solid ${cfg.accent}`, borderRadius:6, cursor:"pointer",
-                  textAlign:"left", transition:"all 0.12s" }}>
-                <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:8 }}>
-                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:700,
-                    letterSpacing:"0.08em", textTransform:"uppercase", color:cfg.accent }}>
-                    {name}
+                style={{ display:"flex", gap:14, padding:"18px 18px", background:C.surface,
+                  border:`1px solid ${C.border}`, borderTop:`3px solid ${cfg.accent}`, borderRadius:8,
+                  cursor:"pointer", textAlign:"left", transition:"all 0.12s" }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 3px 10px rgba(0,0,0,0.07)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}>
+                <span style={{ flexShrink:0, width:42, height:42, borderRadius:"50%",
+                  display:"flex", alignItems:"center", justifyContent:"center", background:`${cfg.accent}14` }}>
+                  <CatIcon name={name} color={cfg.accent} size={21} />
+                </span>
+                <span style={{ flex:1, minWidth:0 }}>
+                  <span style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:4 }}>
+                    <span style={{ fontFamily:"'Playfair Display',serif", fontSize:15.5, fontWeight:700, color:C.text }}>
+                      {name}
+                    </span>
+                    <span aria-hidden="true" style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
+                      color:C.muted, background:C.bg, padding:"2px 8px", borderRadius:10 }}>
+                      {count}
+                    </span>
                   </span>
-                  <span aria-hidden="true" style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9,
-                    color:C.light, background:C.bg, padding:"2px 7px", borderRadius:10 }}>
-                    {count}
+                  <span style={{ display:"block", fontFamily:"'Lora',serif", fontSize:12.5, color:C.muted, lineHeight:1.5 }}>
+                    {meta.question || ''}
                   </span>
-                </div>
-                <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted, lineHeight:1.5,
-                  fontStyle:"italic" }}>
-                  {meta.question || ''}
-                </div>
+                </span>
               </button>
             );
           })}
         </div>
       </section>
 
-      {/* Featured entries — placeholder for date-driven editorial rotation */}
+      {/* Featured entries — image keyed to category; calendar rotation set later */}
       <section aria-label="Featured entries">
-        <div style={{ display:"flex", alignItems:"baseline", gap:12, marginBottom:16 }}>
-          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
-            textTransform:"uppercase", color:C.light }}>
-            Featured
-          </div>
-          <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.light, fontStyle:"italic" }}>
-            Selections rotate with the calendar
-          </div>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
+          textTransform:"uppercase", color:C.light, marginBottom:6 }}>
+          Featured entries
         </div>
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
-          {featuredIds.map(id => {
+        <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:18 }}>
+          <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700, color:C.text }}>
+            Selections rotate with the calendar
+          </h2>
+          <div style={{ flex:1, height:1, background:C.border }} />
+        </div>
+        <div style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:14 }}>
+          {featuredIds.slice(0, 3).map(id => {
             const entry = MANIFEST.find(e => e.id === id);
-            return entry ? <EntryCard key={id} id={id} entry={entry} onClick={onEntry} /> : null;
+            return entry ? <FeaturedCard key={id} id={id} entry={entry} onClick={onEntry} /> : null;
           })}
         </div>
       </section>
@@ -1634,14 +1751,14 @@ export default function CommonplaceApp() {
         <div style={{ maxWidth:960, margin:"0 auto", padding:"0 40px", display:"flex",
           alignItems:"center", gap:14, height:54 }}>
 
-          {/* Home button — always visible in header */}
-          <button onClick={goHome}
-            style={{ background:"transparent", border:"none", cursor:"pointer",
-              flexShrink:0, padding:"4px 10px",
-              color:"rgba(255,255,255,0.6)",
-              fontFamily:"'JetBrains Mono',monospace", fontSize:10,
-              letterSpacing:"0.08em", textTransform:"uppercase" }}>
-            Home
+          {/* Brand — home */}
+          <button onClick={goHome} aria-label="Home"
+            style={{ display:"flex", alignItems:"center", gap:9, background:"transparent",
+              border:"none", cursor:"pointer", flexShrink:0, padding:"4px 2px" }}>
+            <img src="/tcp_logo_transparent.png" alt=""
+              style={{ height:28, width:"auto", objectFit:"contain" }} />
+            <span style={{ fontFamily:"'DM Serif Display',serif", fontSize:18, color:"#f6f3ec",
+              letterSpacing:"0.01em", whiteSpace:"nowrap" }}>TheCommonPlace</span>
           </button>
 
           {/* Search — fuzzy, always visible */}
@@ -1654,7 +1771,7 @@ export default function CommonplaceApp() {
                 onChange={handleHeaderChange}
                 onFocus={() => acResults.length > 0 && setAcOpen(true)}
                 onBlur={() => setTimeout(() => setAcOpen(false), 150)}
-                placeholder="Search the canon…"
+                placeholder={`Search ${MANIFEST.length} entries…`}
                 style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
                   color:"#f8f8f0", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)",
                   borderRadius:4, outline:"none" }} />
@@ -1699,6 +1816,15 @@ export default function CommonplaceApp() {
             )}
           </div>
 
+          {/* Explore nav link */}
+          <button onClick={goHome}
+            style={{ background:"transparent", border:"none", cursor:"pointer", flexShrink:0, padding:"4px 10px",
+              color: view === 'home' ? "#c8a96e" : "rgba(255,255,255,0.6)",
+              fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.08em", textTransform:"uppercase",
+              borderBottom: view === 'home' ? "1px solid #c8a96e" : "1px solid transparent", transition:"all 0.15s" }}>
+            Explore
+          </button>
+
           {/* Tours nav link */}
           <button onClick={() => goToTours()}
             style={{ background:"transparent", border:"none", cursor:"pointer",
@@ -1722,6 +1848,13 @@ export default function CommonplaceApp() {
               transition:"all 0.15s" }}>
             Pathways
           </button>
+
+          {/* Compass mark */}
+          <span aria-hidden="true" style={{ flexShrink:0, marginLeft:4, width:30, height:30, borderRadius:"50%",
+            border:"1px solid rgba(200,169,110,0.5)", display:"flex", alignItems:"center", justifyContent:"center" }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" strokeWidth="1.6"
+              strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
+          </span>
 
         </div>
       </header>
