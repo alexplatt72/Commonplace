@@ -10,9 +10,21 @@ let COLLECTIONS = [];   // curated tours, loaded once from /entries/collections.
 let PATHWAYS = [];      // learning pathways, loaded once from /entries/pathways.json
 
 
+// Reactive viewport check for responsive inline styles (phone breakpoint).
+function useIsMobile(bp = 680) {
+  const [m, setM] = React.useState(() => typeof window !== 'undefined' && window.innerWidth < bp);
+  React.useEffect(() => {
+    const f = () => setM(window.innerWidth < bp);
+    window.addEventListener('resize', f); f();
+    return () => window.removeEventListener('resize', f);
+  }, [bp]);
+  return m;
+}
+
 const FONTS = `
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { overflow-x: hidden; max-width: 100%; }
   body { background: #f4f1eb; }
   .hdr-search::placeholder { color: rgba(234,240,247,0.78); opacity: 1; }
   .commerce-find { color: #243447; text-decoration: none; }
@@ -534,10 +546,23 @@ function ReferenceTab({ items }) {
 
 // Affiliate IDs — empty until accounts are set up. When populated, links gain tags
 // automatically; WorldCat is always a free, non-commercial library link.
-const AFFILIATES = { amazonTag: '', bookshopId: '' };
+const AFFILIATES = { amazonTag: '', bookshopId: '125011' };
 
 const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
 const isBookLike = (type) => /^(book|novel)$/i.test(type || '');
+
+// Convert ISBN-13 (978 prefix) to ISBN-10. Amazon keys products to the ISBN-10/ASIN,
+// so /dp/{isbn10} is a direct product page. 979-prefix ISBNs have no ISBN-10 → null.
+function isbn13to10(value) {
+  const s = cleanISBN(value);
+  if (s.length === 10) return s.toUpperCase();
+  if (s.length !== 13 || !s.startsWith('978')) return null;
+  const core = s.slice(3, 12);
+  let sum = 0;
+  for (let i = 0; i < 9; i++) sum += (10 - i) * parseInt(core[i], 10);
+  const c = (11 - (sum % 11)) % 11;
+  return core + (c === 10 ? 'X' : String(c));
+}
 
 // Resolve a "find it" link.
 // WorldCat resolves ISBNs reliably to the right library record. Bookshop and Amazon
@@ -548,13 +573,22 @@ function resolveCommerceLink(item, provider) {
   const isbn = cleanISBN(item.isbn);
   const titleAuthor = [item.title, item.author].filter(Boolean).join(' ');
   const ta = encodeURIComponent(titleAuthor);
+  const trusted = !!item.isbnUS && !!isbn;   // US edition confirmed → safe for direct ISBN links
   if (provider === 'worldcat') {
+    // WorldCat resolves any edition's ISBN to the right library record.
     return `https://search.worldcat.org/search?q=${encodeURIComponent(isbn || titleAuthor)}`;
   }
   if (provider === 'bookshop') {
-    return (AFFILIATES.bookshopId && isbn)
+    // Direct affiliate ISBN link only when the US edition is confirmed; else title+author.
+    return (AFFILIATES.bookshopId && trusted)
       ? `https://bookshop.org/a/${AFFILIATES.bookshopId}/${isbn}`
       : `https://bookshop.org/search?keywords=${ta}`;
+  }
+  // amazon — direct /dp/{isbn10} only for confirmed US editions; else title+author search
+  const isbn10 = trusted ? isbn13to10(isbn) : null;
+  if (isbn10) {
+    const dp = `https://www.amazon.com/dp/${isbn10}`;
+    return AFFILIATES.amazonTag ? `${dp}?tag=${AFFILIATES.amazonTag}` : dp;
   }
   const base = `https://www.amazon.com/s?k=${ta}&i=stripbooks`;
   return AFFILIATES.amazonTag ? `${base}&tag=${AFFILIATES.amazonTag}` : base;
@@ -610,7 +644,7 @@ function CommerceSection({ items }) {
       {hasBooks && (
         <div style={{ fontFamily:"'Lora',serif", fontSize:11.5, fontStyle:"italic", color:C.light,
           lineHeight:1.6, marginBottom:14 }}>
-          Library links are free to use. (Bookstore links may support the site — affiliate program not yet active.)
+          Library links are free to use. As a Bookshop.org affiliate, the site may earn a commission from Bookshop purchases.
         </div>
       )}
       <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(220px,1fr))", gap:8 }}>
@@ -655,6 +689,10 @@ function PopularCulture({ items }) {
 function EntryView({ entry, accent, navigateTo }) {
   const [depth, setDepth] = useState("beginner");
   const [tab, setTab] = useState("content");
+  // Switching layer should start the reader at the top of the new layer, not leave
+  // them at the bottom where the "go deeper" link was.
+  const changeDepth = (d) => { setDepth(d); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const isMobile = useIsMobile();
   const showPopularCulture = depth === "beginner" && entry.popularCulture;
   const showComparative = depth === "general" || depth === "educational";
   const showRabbitHole = depth === "beginner" || depth === "general";
@@ -662,7 +700,7 @@ function EntryView({ entry, accent, navigateTo }) {
   return (
     <div>
       <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, overflow:"hidden", borderTop:`4px solid ${accent}`, marginBottom:2 }}>
-        <div style={{ padding:"24px 40px 0" }}>
+        <div style={{ padding: isMobile ? "18px 16px 0" : "24px 40px 0" }}>
           <div style={{ display:"flex", gap:7, marginBottom:10, flexWrap:"wrap" }}>
             <span style={{ display:"inline-block", padding:"2px 10px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.05em", textTransform:"uppercase", color:"#fff", background:accent }}>{entry.template}</span>
             <span style={{ display:"inline-block", padding:"2px 10px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.05em", textTransform:"uppercase", color:C.navy, background:"#eef2f7", border:`1px solid ${C.border}` }}>{entry.subtype}</span>
@@ -678,15 +716,15 @@ function EntryView({ entry, accent, navigateTo }) {
             <button key={t} onClick={() => setTab(t)} style={{ padding:"12px 24px", border:"none", borderBottom: tab === t ? `2px solid ${accent}` : "2px solid transparent", background: tab === t ? C.surface : C.warm, color: tab === t ? accent : C.muted, fontFamily:"'Lora',serif", fontSize:14, fontWeight: tab === t ? 600 : 400, cursor:"pointer", transition:"all 0.15s", textTransform:"capitalize" }}>{t}</button>
           ))}
           <div style={{ marginLeft:"auto", display:"flex", alignItems:"center", paddingRight:24, opacity: tab === "reference" ? 0.3 : 1, pointerEvents: tab === "reference" ? "none" : "auto" }}>
-            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={setDepth} />
+            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={changeDepth} />
           </div>
         </div>
       </div>
-      <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, padding:"36px 40px" }}>
+      <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, padding: isMobile ? "24px 16px" : "36px 40px" }}>
         {tab === "content" ? (
           <>
             <ContentView entry={entry} depth={depth} />
-            {depth !== "research" && <GoDeeper currentDepth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={setDepth} accent={accent} />}
+            {depth !== "research" && <GoDeeper currentDepth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={changeDepth} accent={accent} />}
             <div style={{ borderTop:`1px solid ${C.border}`, marginTop:44, paddingTop:36 }}>
               {showPopularCulture && <PopularCulture items={entry.popularCulture} />}
               {showComparative && <ComparativeNarrative perspectives={entry.comparativeNarrative} summary={entry.comparativeSummary} />}
@@ -1012,6 +1050,7 @@ function FeaturedCard({ id, entry, onClick }) {
 }
 
 function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
+  const isMobile = useIsMobile();
 
   const totalEntries = MANIFEST.length;
 
@@ -1020,13 +1059,13 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
     .filter(id => MANIFEST.find(e => e.id === id));
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
 
       {/* Platform statement */}
       <div style={{ textAlign:"center", marginBottom:36 }}>
         <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo"
           style={{ display:"block", margin:"0 auto 6px", width:"340px", maxWidth:"86%", objectFit:"contain" }} />
-        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize:50, fontWeight:400,
+        <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize: isMobile ? 34 : 50, fontWeight:400,
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 18px" }}>
           TheCommonPlace
         </h1>
@@ -1115,7 +1154,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
           <div style={{ flex:1, height:1, background:"linear-gradient(to right, #c8a96e, rgba(200,169,110,0.12))" }} />
           <span aria-hidden="true" style={{ color:"#9a6a00", fontSize:13, lineHeight:1, marginLeft:-4 }}>✦</span>
         </div>
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:12 }}>
+        <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap:12 }}>
           {Object.entries(TEMPLATE_CONFIG).filter(([_, cfg]) => cfg.active).map(([name, cfg]) => {
             const meta = TEMPLATE_META[name] || {};
             const count = MANIFEST.filter(e => e.template === name).length;
@@ -1165,7 +1204,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
           <div style={{ flex:1, height:1, background:"linear-gradient(to right, #c8a96e, rgba(200,169,110,0.12))" }} />
           <span aria-hidden="true" style={{ color:"#9a6a00", fontSize:13, lineHeight:1, marginLeft:-4 }}>✦</span>
         </div>
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:14 }}>
+        <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap:14 }}>
           {featuredIds.slice(0, 3).map(id => {
             const entry = MANIFEST.find(e => e.id === id);
             return entry ? <FeaturedCard key={id} id={id} entry={entry} onClick={onEntry} /> : null;
@@ -1287,6 +1326,7 @@ const CATEGORY_ORDER = Object.keys(TEMPLATE_CONFIG).reduce((m, k, i) => { m[k] =
 
 // Shared filterable/sortable grid. Used by both the category page and Browse-everything.
 function EntryBrowser({ entries, accent, showCategory, placeholder, pageSize, onEntry }) {
+  const isMobile = useIsMobile();
   const all = entries;
 
   const [sort, setSort]     = React.useState('az');
@@ -1433,7 +1473,7 @@ function EntryBrowser({ entries, accent, showCategory, placeholder, pageSize, on
       {/* Entry grid */}
       {sorted.length ? (
         <>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
+          <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)", gap:10 }}>
             {shown.map(e => (
               <EntryCard key={e.id} id={e.id} entry={e} onClick={onEntry} />
             ))}
@@ -1466,13 +1506,14 @@ function EntryBrowser({ entries, accent, showCategory, placeholder, pageSize, on
 
 // ─── Category page = header + browser scoped to one category ─────────────────
 function TemplateGallery({ templateName, onEntry, onHome }) {
+  const isMobile = useIsMobile();
   const cfg = TEMPLATE_CONFIG[templateName] || {};
   const meta = TEMPLATE_META[templateName] || {};
   const accent = cfg.accent || '#555';
   const all = React.useMemo(() => MANIFEST.filter(e => e.template === templateName), [templateName]);
 
   return (
-    <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
+    <div style={{ maxWidth:980, margin:"0 auto", padding: isMobile ? "20px 14px 60px" : "32px 40px 80px" }}>
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:24,
           padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
@@ -1502,9 +1543,10 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
 
 // ─── Browse everything = all entries with Category as the first facet ────────
 function BrowseAllView({ onEntry, onHome }) {
+  const isMobile = useIsMobile();
   const all = React.useMemo(() => MANIFEST.slice(), []);
   return (
-    <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
+    <div style={{ maxWidth:980, margin:"0 auto", padding: isMobile ? "20px 14px 60px" : "32px 40px 80px" }}>
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:24,
           padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
@@ -1537,6 +1579,7 @@ function BrowseAllView({ onEntry, onHome }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
+  const isMobile = useIsMobile();
   const [query, setQuery] = React.useState(initialQuery);
   const [results, setResults] = React.useState(() => searchEntries(initialQuery));
 
@@ -1548,7 +1591,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
   const totalEntries = MANIFEST.length;
 
   return (
-    <div style={{ maxWidth:960, margin:"0 auto", padding:"32px 40px 80px" }}>
+    <div style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "20px 14px 60px" : "32px 40px 80px" }}>
 
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:28,
@@ -1569,7 +1612,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
             textTransform:"uppercase", color:C.light, marginBottom:16 }}>
             {results.results.length} result{results.results.length !== 1 ? 's' : ''} for "{results.query}"
           </div>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
+          <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)", gap:10 }}>
             {results.results.map(({ id, entry, snippet }) => (
               <EntryCard key={id} id={id} entry={entry} onClick={onEntry} snippet={snippet} />
             ))}
@@ -1602,7 +1645,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
                 textTransform:"uppercase", color:C.light, marginBottom:16 }}>
                 Related entries you might find useful
               </div>
-              <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
+              <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)", gap:10 }}>
                 {results.suggestions.map(({ id, entry }) => (
                   <EntryCard key={id} id={id} entry={entry} onClick={onEntry} />
                 ))}
@@ -1639,6 +1682,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPathways, returnTo, returnToId }) {
+  const isMobile = useIsMobile();
   const [entry, setEntry] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
@@ -1690,7 +1734,7 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPat
   const accent = cfg.accent || '#555';
 
   return (
-    <div style={{ maxWidth:960, margin:"0 auto", padding:"24px 40px 80px" }}>
+    <div style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "16px 14px 60px" : "24px 40px 80px" }}>
 
       {/* Breadcrumb */}
       <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:20, flexWrap:"wrap" }}>
@@ -1754,6 +1798,7 @@ function EntryViewer({ entry, accent, navigateTo }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function ToursView({ onEntry, onHome, restoreId }) {
+  const isMobile = useIsMobile();
   const validRestoreId = typeof restoreId === "string" && COLLECTIONS.some(c => c.id === restoreId) ? restoreId : null;
   const [selectedId, setSelectedId] = React.useState(validRestoreId || COLLECTIONS[0]?.id || "");
   React.useEffect(() => {
@@ -1766,7 +1811,7 @@ function ToursView({ onEntry, onHome, restoreId }) {
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px", overflowX:"hidden" }}>
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px", overflowX:"hidden" }}>
 
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
@@ -1885,6 +1930,7 @@ function ToursView({ onEntry, onHome, restoreId }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 function PathwaysView({ onEntry, onHome, restoreId }) {
+  const isMobile = useIsMobile();
   const validRestoreId = typeof restoreId === "string" && PATHWAYS.some(p => p.id === restoreId) ? restoreId : null;
   const [selectedId, setSelectedId] = React.useState(validRestoreId || PATHWAYS[0]?.id || "");
   React.useEffect(() => {
@@ -1896,14 +1942,14 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
   }, [restoreId, selectedId]);
   const selected = PATHWAYS.find(p => p.id === selectedId);
   if (!PATHWAYS.length) return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px" }}>
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
       <button onClick={onHome} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, cursor:"pointer" }}>← Home</button>
       <p style={{ fontFamily:"'Lora',serif", color:C.muted, marginTop:20 }}>No pathways loaded.</p>
     </main>
   );
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding:"40px 40px 80px", overflowX:"hidden" }}>
+    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px", overflowX:"hidden" }}>
 
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
@@ -2037,6 +2083,7 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export default function CommonplaceApp() {
+  const isMobile = useIsMobile();
   const [manifestLoaded, setManifestLoaded] = React.useState(false);
   const [view, setView] = React.useState('home'); // 'home' | 'template' | 'search' | 'entry' | 'tours' | 'pathways'
   const [activeTemplate, setActiveTemplate] = React.useState(null);
@@ -2168,8 +2215,9 @@ export default function CommonplaceApp() {
       {/* Header */}
       <header role="banner" style={{ background:C.navy, borderBottom:`3px solid ${accent}`,
         transition:"border-color 0.3s", position:"sticky", top:0, zIndex:100 }}>
-        <div style={{ maxWidth:960, margin:"0 auto", padding:"0 40px", display:"flex",
-          alignItems:"center", gap:14, height:54 }}>
+        <div style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "7px 14px" : "0 40px", display:"flex",
+          alignItems:"center", gap: isMobile ? 8 : 14, height: isMobile ? "auto" : 54,
+          flexWrap: isMobile ? "wrap" : "nowrap" }}>
 
           {/* Brand — home */}
           <button onClick={goHome} aria-label="Home"
@@ -2178,11 +2226,11 @@ export default function CommonplaceApp() {
             <img src="/tcp_logo_transparent.png" alt=""
               style={{ height:28, width:"auto", objectFit:"contain" }} />
             <span style={{ fontFamily:"'DM Serif Display',serif", fontSize:18, color:"#f6f3ec",
-              letterSpacing:"0.01em", whiteSpace:"nowrap" }}>TheCommonPlace</span>
+              letterSpacing:"0.01em", whiteSpace:"nowrap", display: isMobile ? "none" : "inline" }}>TheCommonPlace</span>
           </button>
 
           {/* Search — fuzzy, always visible */}
-          <div style={{ flex:1, maxWidth:440, position:"relative" }}>
+          <div style={{ flex:1, minWidth:0, maxWidth: isMobile ? "none" : 440, position:"relative" }}>
             <form role="search" onSubmit={e => { e.preventDefault(); setAcOpen(false); doSearch(headerQuery); }}
               style={{ display:"flex", gap:6 }}>
               <input
@@ -2237,6 +2285,8 @@ export default function CommonplaceApp() {
             )}
           </div>
 
+          <div style={{ display:"flex", alignItems:"center", gap: isMobile ? 2 : 14,
+            flexBasis: isMobile ? "100%" : "auto", justifyContent: isMobile ? "center" : "flex-start" }}>
           {/* Explore nav link → Browse everything */}
           <button onClick={goToBrowse}
             style={{ background:"transparent", border:"none", cursor:"pointer", flexShrink:0, padding:"4px 10px",
@@ -2272,10 +2322,11 @@ export default function CommonplaceApp() {
 
           {/* Compass mark */}
           <span aria-hidden="true" style={{ flexShrink:0, marginLeft:4, width:30, height:30, borderRadius:"50%",
-            border:"1px solid rgba(200,169,110,0.5)", display:"flex", alignItems:"center", justifyContent:"center" }}>
+            border:"1px solid rgba(200,169,110,0.5)", display: isMobile ? "none" : "flex", alignItems:"center", justifyContent:"center" }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" strokeWidth="1.6"
               strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
           </span>
+          </div>
 
         </div>
       </header>

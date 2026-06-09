@@ -174,9 +174,10 @@
     {
       "type": "Book",
       "title": "The Guns of August",
-      "isbn": "9788490061626",
+      "isbn": "9780307567628",
       "author": "Barbara Tuchman",
-      "note": "Essential entry point — readable and historically solid"
+      "note": "Essential entry point — readable and historically solid",
+      "isbnUS": true
     },
     {
       "type": "Documentary",
@@ -188,7 +189,8 @@
       "title": "July 1914: Countdown to War",
       "isbn": "9780465031450",
       "author": "Sean McMeekin",
-      "note": "Day-by-day reconstruction of the July Crisis — essential for understanding the specific decisions"
+      "note": "Day-by-day reconstruction of the July Crisis — essential for understanding the specific decisions",
+      "isbnUS": true
     },
     {
       "type": "Film",
@@ -200,7 +202,8 @@
       "title": "The War That Ended Peace",
       "isbn": "9780804127424",
       "author": "Margaret MacMillan",
-      "note": "How Europe chose war — strong on the longer structural conditions"
+      "note": "How Europe chose war — strong on the longer structural conditions",
+      "isbnUS": true
     }
   ],
   "popularCulture": [

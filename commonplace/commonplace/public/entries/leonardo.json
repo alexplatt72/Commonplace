@@ -171,23 +171,26 @@
     {
       "type": "Book",
       "title": "Leonardo da Vinci",
-      "isbn": "9781508267294",
+      "isbn": "9781947783737",
       "author": "Walter Isaacson",
-      "note": "Best general-audience biography"
+      "note": "Best general-audience biography",
+      "isbnUS": true
     },
     {
       "type": "Book",
       "title": "Leonardo da Vinci",
       "isbn": "9780140169829",
       "author": "Kenneth Clark",
-      "note": "The foundational formal analysis of the paintings"
+      "note": "The foundational formal analysis of the paintings",
+      "isbnUS": true
     },
     {
       "type": "Book",
       "title": "Leonardo da Vinci: The Marvellous Works of Nature and Man",
-      "isbn": "9780674524606",
+      "isbn": "9780192807250",
       "author": "Martin Kemp",
-      "note": "The most rigorous scholarly integration of science and art"
+      "note": "The most rigorous scholarly integration of science and art",
+      "isbnUS": true
     },
     {
       "type": "Museum",
@@ -202,9 +205,10 @@
     {
       "type": "Novel",
       "title": "The Da Vinci Code",
-      "isbn": "9782709628532",
+      "isbn": "9780385504201",
       "author": "Dan Brown",
-      "note": "Historically unreliable but the reason many people first encountered Leonardo — useful as a negative example of how mythologization works"
+      "note": "Historically unreliable but the reason many people first encountered Leonardo — useful as a negative example of how mythologization works",
+      "isbnUS": true
     },
     {
       "type": "TV",
