@@ -1744,7 +1744,10 @@ export default function CommonplaceApp() {
   );
 
   return (
-    <div style={{ minHeight:"100vh", background:C.bg }}>
+    <div style={{ minHeight:"100vh", backgroundColor:C.bg,
+      backgroundImage:`linear-gradient(rgba(244,241,235,0.88), rgba(244,241,235,0.90)), url('/Backgroundmap.png')`,
+      backgroundSize:"cover", backgroundPosition:"center top",
+      backgroundAttachment:"fixed", backgroundRepeat:"no-repeat" }}>
       <style>{FONTS}</style>
 
       {/* Header */}
