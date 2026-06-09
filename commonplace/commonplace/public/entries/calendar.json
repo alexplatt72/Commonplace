@@ -5,6 +5,7 @@
       "week": 1,
       "theme": "Beginnings, Calendars & Time",
       "hook": "How societies learned to measure and master time.",
+      "anchor": "New Year — how the world keeps time (Jan 1)",
       "cards": [
         "juliusCaesar",
         "timekeeping",
@@ -15,6 +16,7 @@
       "week": 2,
       "theme": "Revolutions of Thought",
       "hook": "The century the West learned to doubt, test, and see anew.",
+      "anchor": "The new year's impulse to rethink everything",
       "cards": [
         "darwin",
         "scientificRevolution",
@@ -25,6 +27,7 @@
       "week": 3,
       "theme": "Civil Rights & Moral Courage",
       "hook": "The slow, dangerous work of making freedom undeniable.",
+      "anchor": "Martin Luther King Jr. Day",
       "cards": [
         "martinLutherKing",
         "nonviolence",
@@ -35,6 +38,7 @@
       "week": 4,
       "theme": "Memory, Genocide & Fragility",
       "hook": "How advanced societies talked themselves into atrocity.",
+      "anchor": "International Holocaust Remembrance Day (Jan 27)",
       "cards": [
         "hannahArendt",
         "totalitarianism",
@@ -45,6 +49,7 @@
       "week": 5,
       "theme": "Black History: Freedom Before Victory",
       "hook": "Freedom was argued and fought for long before it was won.",
+      "anchor": "Black History Month begins (Feb 1)",
       "cards": [
         "frederickDouglass",
         "slavery",
@@ -55,6 +60,7 @@
       "week": 6,
       "theme": "The Atlantic World",
       "hook": "Sugar, cotton, and human cargo built the modern Atlantic.",
+      "anchor": "Black History Month — the Atlantic story",
       "cards": [
         "slaveTrade",
         "colonialism",
@@ -65,6 +71,7 @@
       "week": 7,
       "theme": "Presidents, Republics & Power",
       "hook": "Who holds executive power — and what restrains it.",
+      "anchor": "Presidents' Day / Washington's Birthday",
       "cards": [
         "abrahamLincoln",
         "constitution",
@@ -75,6 +82,7 @@
       "week": 8,
       "theme": "The Invention of the State",
       "hook": "Someone had to invent counting, taxing, and ruling at scale.",
+      "anchor": "Late winter — the machinery of governing",
       "cards": [
         "maxWeber",
         "theState",
@@ -85,26 +93,29 @@
       "week": 9,
       "theme": "Women Who Changed the Terms",
       "hook": "The women who rewrote the terms of who counts.",
+      "anchor": "Women's History Month begins (Mar 1)",
       "cards": [
         "maryWollstonecraft",
         "feminism",
-        "cleopatra"
+        "gender"
       ]
     },
     {
       "week": 10,
       "theme": "Women, Power & Public Life",
       "hook": "Power, the vote, and the long argument over public life.",
+      "anchor": "International Women's Day (Mar 8)",
       "cards": [
         "simoneDeBeauvoir",
-        "gender",
-        "citizenship"
+        "citizenship",
+        "theRepublic"
       ]
     },
     {
       "week": 11,
       "theme": "Poetry, Language & the Written World",
       "hook": "From the first alphabets to Shakespeare.",
+      "anchor": "World Poetry Day (Mar 21)",
       "cards": [
         "shakespeare",
         "writing",
@@ -115,26 +126,29 @@
       "week": 12,
       "theme": "Water, Weather & Civilizations",
       "hook": "Civilizations rise and fall on water they can't control.",
+      "anchor": "World Water Day (Mar 22)",
       "cards": [
         "irrigation",
         "monsoon",
-        "cholera"
+        "indusValleyCivilization"
       ]
     },
     {
       "week": 13,
       "theme": "Spring, Renewal & Agricultural Worlds",
       "hook": "Renewal, planting, and the worlds that feed us.",
+      "anchor": "The spring equinox & Nowruz — renewal",
       "cards": [
         "agriculturalRevolution",
         "wheat",
-        "rice"
+        "ancientEgypt"
       ]
     },
     {
       "week": 14,
       "theme": "Health, Disease & Public Knowledge",
       "hook": "How humanity learned to see and fight invisible killers.",
+      "anchor": "World Health Day (Apr 7)",
       "cards": [
         "publicHealth",
         "germTheory",
@@ -145,6 +159,7 @@
       "week": 15,
       "theme": "Space, Science & Human Reach",
       "hook": "The reach for the stars, and the machines that got us there.",
+      "anchor": "Int'l Day of Human Space Flight (Apr 12)",
       "cards": [
         "einstein",
         "computing",
@@ -155,16 +170,18 @@
       "week": 16,
       "theme": "Earth, Extraction & Consequence",
       "hook": "The fuels that powered modern life — and the bill now due.",
+      "anchor": "Earth Day (Apr 22)",
       "cards": [
         "coal",
-        "oil",
-        "climateChange"
+        "climateChange",
+        "industrialRevolution"
       ]
     },
     {
       "week": 17,
       "theme": "Books, Libraries & the Memory Machine",
       "hook": "The institutions that remember so we don't have to.",
+      "anchor": "World Book Day season (Apr 23)",
       "cards": [
         "theLibrary",
         "printingPress",
@@ -175,6 +192,7 @@
       "week": 18,
       "theme": "Labor, Class & the Working World",
       "hook": "Who works, who profits, and the long fight over both.",
+      "anchor": "May Day — International Workers' Day (May 1)",
       "cards": [
         "marx",
         "capitalism",
@@ -185,16 +203,18 @@
       "week": 19,
       "theme": "Motherhood, Family & Social Order",
       "hook": "Kinship, inheritance, and the oldest social order.",
+      "anchor": "Mother's Day season",
       "cards": [
-        "gender",
-        "property",
-        "socialClass"
+        "confucius",
+        "socialClass",
+        "medievalEuropeanSociety"
       ]
     },
     {
       "week": 20,
       "theme": "Empire at Sea",
       "hook": "Empires that ruled by mastering the sea.",
+      "anchor": "Late spring — the age of sea exploration",
       "cards": [
         "navigation",
         "britishEmpire",
@@ -205,46 +225,51 @@
       "week": 21,
       "theme": "War, Memory & the Dead",
       "hook": "War, the dead, and how we choose to remember them.",
+      "anchor": "Memorial Day — remembering the war dead",
       "cards": [
         "firstWorldWar",
         "nationalism",
-        "worldWarII"
+        "guernica"
       ]
     },
     {
       "week": 22,
       "theme": "Environment & the Human Future",
       "hook": "The systems we depend on, and the future we're spending.",
+      "anchor": "World Environment Day (Jun 5)",
       "cards": [
         "climateChange",
         "theForest",
-        "coal"
+        "globalization"
       ]
     },
     {
       "week": 23,
       "theme": "Oceans, Trade & Connected Worlds",
       "hook": "Oceans as the highways of connected worlds.",
+      "anchor": "World Oceans Day (Jun 8)",
       "cards": [
-        "indianOceanTrade",
+        "ibnBattuta",
         "maps",
-        "silkRoad"
+        "indianOceanTrade"
       ]
     },
     {
       "week": 24,
       "theme": "Law, Rights & Constraint on Power",
       "hook": "The slow invention of limits on power.",
+      "anchor": "Magna Carta sealed (Jun 15)",
       "cards": [
         "locke",
         "law",
-        "constitution"
+        "romanRepublic"
       ]
     },
     {
       "week": 25,
       "theme": "Freedom Delayed",
       "hook": "Some freedoms are declared long before they're delivered.",
+      "anchor": "Juneteenth (Jun 19)",
       "cards": [
         "harrietTubman",
         "slavery",
@@ -255,8 +280,9 @@
       "week": 26,
       "theme": "Revolutions in the Atlantic World",
       "hook": "When the Atlantic world remade government by force.",
+      "anchor": "The revolutionary season — US, French, Haitian",
       "cards": [
-        "americanRevolution",
+        "simonBolivar",
         "revolution",
         "haitianRevolution"
       ]
@@ -265,6 +291,7 @@
       "week": 27,
       "theme": "Independence & Its Contradictions",
       "hook": "A republic founded on liberty — and on slavery.",
+      "anchor": "U.S. Independence Day (Jul 4)",
       "cards": [
         "thomasJefferson",
         "slavery",
@@ -275,6 +302,7 @@
       "week": 28,
       "theme": "Revolution Becomes Government",
       "hook": "How revolution hardens into a new state.",
+      "anchor": "Bastille Day (Jul 14)",
       "cards": [
         "napoleon",
         "frenchRevolution",
@@ -285,6 +313,7 @@
       "week": 29,
       "theme": "Moon, Machines & Modern Wonder",
       "hook": "The Moon, the machine, and the modern sense of wonder.",
+      "anchor": "Apollo 11's Moon landing (Jul 20)",
       "cards": [
         "alanTuring",
         "computing",
@@ -295,18 +324,20 @@
       "week": 30,
       "theme": "Cities, Heat & Human Crowding",
       "hook": "The systems that keep crowded cities alive.",
+      "anchor": "Deep summer — heat and the crowded city",
       "cards": [
         "theCity",
-        "sewers",
-        "electricity"
+        "rome",
+        "cholera"
       ]
     },
     {
       "week": 31,
       "theme": "The Nuclear Age",
       "hook": "The weapon that changed what war could mean.",
+      "anchor": "Hiroshima & Nagasaki (Aug 6–9)",
       "cards": [
-        "manhattanProject",
+        "einstein",
         "nuclearDeterrence",
         "hiroshimaNagasaki"
       ]
@@ -315,16 +346,18 @@
       "week": 32,
       "theme": "Migration, Exile & Diaspora",
       "hook": "Why people leave, and what they carry.",
+      "anchor": "Late summer — the season of displacement",
       "cards": [
         "migration",
-        "diaspora",
-        "thePartition"
+        "thePartition",
+        "jewishDiaspora"
       ]
     },
     {
       "week": 33,
       "theme": "Education, Learning & Transmission",
       "hook": "How knowledge is preserved and passed on.",
+      "anchor": "Back-to-school — Int'l Literacy Day (Sep 8)",
       "cards": [
         "confucius",
         "universities",
@@ -335,16 +368,18 @@
       "week": 34,
       "theme": "Food, Harvest & Civilization",
       "hook": "The harvest that made civilization possible — and fragile.",
+      "anchor": "The northern harvest",
       "cards": [
         "wheat",
         "agriculturalRevolution",
-        "greatIrishFamine"
+        "drought"
       ]
     },
     {
       "week": 35,
       "theme": "Labor, Machines & Modern Life",
       "hook": "Machines, factories, and the rhythm of modern work.",
+      "anchor": "Labor Day (US & Canada)",
       "cards": [
         "socialism",
         "railways",
@@ -355,9 +390,10 @@
       "week": 36,
       "theme": "Democracy Under Pressure",
       "hook": "Democracy is never finished, and never safe.",
+      "anchor": "International Day of Democracy (Sep 15)",
       "cards": [
         "democracy",
-        "authoritarianism",
+        "weimarRepublic",
         "athenianDemocracy"
       ]
     },
@@ -365,26 +401,29 @@
       "week": 37,
       "theme": "Peace, War & Failed Settlements",
       "hook": "The peace settlements that failed, and what tried to replace them.",
+      "anchor": "International Day of Peace (Sep 21)",
       "cards": [
+        "keynes",
         "internationalLaw",
-        "treatyOfVersailles",
-        "coldWar"
+        "treatyOfVersailles"
       ]
     },
     {
       "week": 38,
       "theme": "Hispanic & Latin American Worlds",
       "hook": "The civilizations and revolutions of the Latin world.",
+      "anchor": "Hispanic Heritage Month (Sep 15–Oct 15)",
       "cards": [
         "simonBolivar",
         "aztecEmpire",
-        "mayaCivilization"
+        "columbianExchange"
       ]
     },
     {
       "week": 39,
       "theme": "Translation, Language & Cultural Contact",
       "hook": "Ideas travel only as far as translation carries them.",
+      "anchor": "International Translation Day (Sep 30)",
       "cards": [
         "ibnSina",
         "translation",
@@ -395,6 +434,7 @@
       "week": 40,
       "theme": "Nonviolence, Empire & Resistance",
       "hook": "Resistance without violence, against empire.",
+      "anchor": "Gandhi's birthday / Day of Non-Violence (Oct 2)",
       "cards": [
         "mahatmaGandhi",
         "nonviolence",
@@ -405,6 +445,7 @@
       "week": 41,
       "theme": "Indigenous Worlds & Contact",
       "hook": "The worlds that existed before contact — and what it destroyed.",
+      "anchor": "Columbus Day / Indigenous Peoples' Day (Oct 12)",
       "cards": [
         "columbianExchange",
         "incaEmpire",
@@ -415,16 +456,18 @@
       "week": 42,
       "theme": "Reformation, Heresy & Conscience",
       "hook": "Conscience, heresy, and the splitting of Christendom.",
+      "anchor": "Reformation Day (Oct 31)",
       "cards": [
         "protestantReformation",
-        "christianity",
-        "printingPress"
+        "printingPress",
+        "bible"
       ]
     },
     {
       "week": 43,
       "theme": "Death, Memory & the Afterlife",
       "hook": "How the living have always bargained with the dead.",
+      "anchor": "Halloween & Día de los Muertos",
       "cards": [
         "ancientEgypt",
         "monotheism",
@@ -435,9 +478,10 @@
       "week": 44,
       "theme": "Native American & Indigenous Histories",
       "hook": "Indigenous histories before and beyond colonization.",
+      "anchor": "Native American Heritage Month (November)",
       "cards": [
         "mayaCivilization",
-        "incaEmpire",
+        "sovereignty",
         "columbianExchange"
       ]
     },
@@ -445,56 +489,62 @@
       "week": 45,
       "theme": "Veterans, Armistice & the Cost of War",
       "hook": "The armistice, the veterans, and the true cost of war.",
+      "anchor": "Armistice / Veterans / Remembrance Day (Nov 11)",
       "cards": [
         "firstWorldWar",
         "memoryCommemoration",
-        "treatyOfVersailles"
+        "winstonChurchill"
       ]
     },
     {
       "week": 46,
       "theme": "Revolutions of Information",
       "hook": "Every leap in how information moves remakes the world.",
+      "anchor": "Mid-autumn — how information moves",
       "cards": [
+        "alanTuring",
         "printingPress",
-        "internet",
-        "artificialIntelligence"
+        "internet"
       ]
     },
     {
       "week": 47,
       "theme": "Gratitude, Food & Mythmaking",
       "hook": "Gratitude, harvest, and the myths a nation tells itself.",
+      "anchor": "Thanksgiving — food, gratitude, and myth",
       "cards": [
         "columbianExchange",
-        "agriculturalRevolution",
-        "colonialism"
+        "colonialism",
+        "wheat"
       ]
     },
     {
       "week": 48,
       "theme": "Rights, Law & Human Dignity",
       "hook": "The hard-won idea that every person has dignity and rights.",
+      "anchor": "Human Rights Day (Dec 10)",
       "cards": [
         "johnRawls",
         "humanRights",
-        "internationalLaw"
+        "theHolocaust"
       ]
     },
     {
       "week": 49,
       "theme": "Empires in Winter",
       "hook": "Even the greatest empires meet their winter.",
+      "anchor": "Year's end — empires in decline",
       "cards": [
         "romanEmpire",
-        "byzantineEmpire",
-        "ottomanEmpire"
+        "ottomanEmpire",
+        "bronzeAgeCollapse"
       ]
     },
     {
       "week": 50,
       "theme": "Light, Darkness & Sacred Time",
       "hook": "Light against darkness, and the festivals of sacred time.",
+      "anchor": "Winter solstice — festivals of light",
       "cards": [
         "monotheism",
         "christianity",
@@ -505,6 +555,7 @@
       "week": 51,
       "theme": "The Year Christianity Remembers",
       "hook": "The historical world that produced Christianity.",
+      "anchor": "Christmas week",
       "cards": [
         "augustineOfHippo",
         "christianity",
@@ -515,6 +566,7 @@
       "week": 52,
       "theme": "Endings, Reckonings & What Comes Next",
       "hook": "Where the forces that built the world are taking it next.",
+      "anchor": "The turn of the year — reckonings",
       "cards": [
         "artificialIntelligence",
         "climateChange",

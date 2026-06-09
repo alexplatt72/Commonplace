@@ -1261,10 +1261,16 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
             </>
           ) : (
             <>
-              <div style={{ marginBottom:18 }}>
+              <div style={{ marginBottom:6 }}>
                 <span style={{ fontFamily:"'Playfair Display',serif", fontSize:17, fontWeight:700, color:C.text }}>{featured.week.theme}</span>
                 <span style={{ fontFamily:"'Lora',serif", fontSize:14.5, fontStyle:"italic", color:C.muted }}>{' — ' + featured.week.hook}</span>
               </div>
+              {featured.week.anchor && (
+                <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.07em",
+                  textTransform:"uppercase", color:"#9a6a00", marginBottom:18 }}>
+                  Why this week&nbsp;·&nbsp;{featured.week.anchor}
+                </div>
+              )}
               <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap:14 }}>
                 {featured.cards.map(c => <FeaturedCard key={c.id} id={c.id} entry={c} onClick={onEntry} />)}
               </div>
