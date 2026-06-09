@@ -15,6 +15,10 @@ const FONTS = `
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #f4f1eb; }
   .hdr-search::placeholder { color: rgba(234,240,247,0.78); opacity: 1; }
+  .commerce-find { color: #243447; text-decoration: none; }
+  .commerce-find .cf-circle { border: 1px solid rgba(44,101,242,0.32); background: rgba(255,255,255,0.55); transition: all .12s; }
+  .commerce-find:hover { color: #9a6a00; }
+  .commerce-find:hover .cf-circle { border-color: #c8a96e; background: #fffaf0; }
 `;
 
 // ─── TEMPLATE CONFIGURATION ───────────────────────────────────────────────────
@@ -528,21 +532,92 @@ function ReferenceTab({ items }) {
   );
 }
 
+// Affiliate IDs — empty until accounts are set up. When populated, links gain tags
+// automatically; WorldCat is always a free, non-commercial library link.
+const AFFILIATES = { amazonTag: '', bookshopId: '' };
+
+const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
+const isBookLike = (type) => /^(book|novel)$/i.test(type || '');
+
+// Resolve a "find it" link. Uses ISBN when present; otherwise title+author search,
+// so every book resolves somewhere.
+function resolveCommerceLink(item, provider) {
+  const isbn = cleanISBN(item.isbn);
+  const q = encodeURIComponent(isbn || [item.title, item.author].filter(Boolean).join(' '));
+  if (provider === 'worldcat') return `https://search.worldcat.org/search?q=${q}`;
+  if (provider === 'bookshop') {
+    return (AFFILIATES.bookshopId && isbn)
+      ? `https://bookshop.org/a/${AFFILIATES.bookshopId}/${isbn}`
+      : `https://bookshop.org/search?keywords=${q}`;
+  }
+  const base = `https://www.amazon.com/s?k=${q}&i=stripbooks`;
+  return AFFILIATES.amazonTag ? `${base}&tag=${AFFILIATES.amazonTag}` : base;
+}
+
+const COMMERCE_PROVIDERS = [
+  { key:'worldcat', label:'Library', aria:'Find in libraries via WorldCat' },
+  { key:'bookshop', label:'Indie',   aria:'Find at independent bookstores via Bookshop.org' },
+  { key:'amazon',   label:'Amazon',  aria:'Find on Amazon' },
+];
+
+function ProviderIcon({ name }) {
+  const p = { width:14, height:14, viewBox:"0 0 24 24", fill:"none", stroke:"currentColor",
+    strokeWidth:1.7, strokeLinecap:"round", strokeLinejoin:"round" };
+  if (name === 'worldcat') return <svg {...p}><path d="M3 21h18"/><path d="M5 21V9.5l7-4.5 7 4.5V21"/><path d="M9.5 21v-5h5v5"/></svg>;
+  if (name === 'bookshop') return <svg {...p}><path d="M3.5 9 5 4h14l1.5 5"/><path d="M4.5 9v11h15V9"/><path d="M10 20v-5h4v5"/></svg>;
+  return <svg {...p}><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M2.5 4H5l2.2 11h10.5"/><path d="M7 7.5h13l-1.3 6H8.2"/></svg>;
+}
+
+function FindItRow({ item }) {
+  return (
+    <div style={{ marginTop:"auto", paddingTop:10, borderTop:"1px solid rgba(44,101,242,0.18)",
+      display:"flex", alignItems:"center", justifyContent:"space-between", gap:8 }}>
+      <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8.5, letterSpacing:"0.08em",
+        textTransform:"uppercase", color:"#5f6b7a" }}>Find it</span>
+      <div style={{ display:"flex", gap:7 }}>
+        {COMMERCE_PROVIDERS.map(p => (
+          <a key={p.key} className="commerce-find" href={resolveCommerceLink(item, p.key)}
+            target="_blank" rel="noopener noreferrer sponsored" aria-label={p.aria} title={p.aria}
+            style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:2 }}>
+            <span className="cf-circle" style={{ width:26, height:26, borderRadius:"50%",
+              display:"grid", placeItems:"center" }}>
+              <ProviderIcon name={p.key} />
+            </span>
+            <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:7.5,
+              letterSpacing:"0.03em", color:"inherit" }}>{p.label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function CommerceSection({ items }) {
   if (!items || !items.length) return null;
+  const hasBooks = items.some(it => isBookLike(it.type));
   return (
     <div style={{ marginTop:36 }}>
-      <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:14 }}>
+      <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom: hasBooks ? 6 : 14 }}>
         <div style={{ width:3, height:20, background:"#1d4ed8", borderRadius:2 }} />
-        <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700, color:C.text }}>Books, Documentaries & Resources</h3>
+        <h3 style={{ fontFamily:"'Playfair Display',serif", fontSize:18, fontWeight:700, color:C.text }}>Books, Documentaries &amp; Resources</h3>
       </div>
+      {hasBooks && (
+        <div style={{ fontFamily:"'Lora',serif", fontSize:11.5, fontStyle:"italic", color:C.light,
+          lineHeight:1.6, marginBottom:14 }}>
+          Library links are free to use. (Bookstore links may support the site — affiliate program not yet active.)
+        </div>
+      )}
       <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(220px,1fr))", gap:8 }}>
         {items.map((item,i) => (
-          <div key={i} style={{ padding:"14px 16px", background:"#eff6ff", border:"1px solid #93c5fd", borderRadius:6 }}>
-            <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:"#1d4ed8", letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:5 }}>{item.type}</div>
-            <div style={{ fontFamily:"'Lora',serif", fontSize:14, fontStyle:"italic", fontWeight:600, color:C.text, marginBottom:3 }}>{item.title}</div>
-            {item.author && <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted, marginBottom:4 }}>{item.author}</div>}
-            <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted }}>{item.note}</div>
+          <div key={i} style={{ display:"flex", flexDirection:"column", padding:"14px 16px",
+            background:"#eff6ff", border:"1px solid #93c5fd", borderRadius:6 }}>
+            <div style={{ flex:1 }}>
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:"#1d4ed8", letterSpacing:"0.08em", textTransform:"uppercase", marginBottom:5 }}>{item.type}</div>
+              <div style={{ fontFamily:"'Lora',serif", fontSize:14, fontStyle:"italic", fontWeight:600, color:C.text, marginBottom:3 }}>{item.title}</div>
+              {item.author && <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted, marginBottom:4 }}>{item.author}</div>}
+              <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.muted }}>{item.note}</div>
+            </div>
+            {isBookLike(item.type) && <FindItRow item={item} />}
           </div>
         ))}
       </div>
