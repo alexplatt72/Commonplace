@@ -875,14 +875,14 @@ const READING_LEVELS = [
 ];
 
 // ─── Per-category hero image (ONE image per category, shown on featured cards) ─
-// Place nine images in /public/category-images/ named by the slugs below
-// (e.g. events.jpg). Missing images fall back to a tinted panel — nothing breaks.
+// Files live in /public/category-images/ as Title-case .png (≈3:1 banners).
+// Missing images fall back to a tinted panel — nothing breaks.
 const CATEGORY_SLUG = {
-  "Events":"events", "People":"people", "Works":"works", "Concepts":"concepts",
-  "Periods":"periods", "Places":"places", "Natural Phenomena":"naturalPhenomena",
-  "Policy":"policy", "Foundations":"foundations",
+  "Events":"Events", "People":"People", "Works":"Works", "Concepts":"Concepts",
+  "Periods":"Periods", "Places":"Places", "Natural Phenomena":"Natural",
+  "Policy":"Policy", "Foundations":"Foundations",
 };
-const categoryImage = (template) => `/category-images/${CATEGORY_SLUG[template] || 'default'}.jpg`;
+const categoryImage = (template) => `/category-images/${CATEGORY_SLUG[template] || 'Events'}.png`;
 
 // ─── Featured card (image keyed to category; calendar rotation set later) ─────
 function FeaturedCard({ id, entry, onClick }) {
@@ -893,8 +893,8 @@ function FeaturedCard({ id, entry, onClick }) {
       style={{ display:"flex", flexDirection:"column", textAlign:"left", padding:0, overflow:"hidden",
         background:C.surface, border:`1px solid ${C.border}`, borderTop:`3px solid ${accent}`,
         borderRadius:8, cursor:"pointer", boxShadow:"0 1px 3px rgba(0,0,0,0.05)" }}>
-      <div style={{ width:"100%", aspectRatio:"16 / 9",
-        background:`linear-gradient(135deg, ${accent}26, ${accent}0a)` }}>
+      <div style={{ width:"100%", aspectRatio:"3 / 1",
+        background:`linear-gradient(135deg, ${accent}26, ${accent}0a)`, borderBottom:`1px solid ${C.border}` }}>
         <img src={categoryImage(entry.template)} alt=""
           onError={e => { e.currentTarget.style.display = 'none'; }}
           style={{ width:"100%", height:"100%", objectFit:"cover", display:"block" }} />
@@ -943,13 +943,13 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 18px" }}>
           TheCommonPlace
         </h1>
-        <p style={{ fontFamily:"'Playfair Display',serif", fontSize:22, color:"#9a6a00", lineHeight:1.4,
-          maxWidth:640, margin:"0 auto" }}>
-          {totalEntries} pathways through the ideas, people, events, and forces that built the world.
+        <p style={{ fontFamily:"'Lora',serif", fontSize:16, color:C.muted, lineHeight:1.8,
+          maxWidth:600, margin:"0 auto" }}>
+          How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
         </p>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:15, color:C.muted, lineHeight:1.7,
-          maxWidth:600, margin:"14px auto 0" }}>
-          Discover why debt came before money, how a mosquito changed empire, and how a continent was reforested without planting a single tree.
+        <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.light, fontStyle:"italic",
+          maxWidth:600, margin:"12px auto 0" }}>
+          {totalEntries} paths, they all lead somewhere unexpected.
         </p>
         <div style={{ marginTop:26, display:"flex", flexDirection:"column", alignItems:"center", gap:14 }}>
           <button onClick={() => document.getElementById('browse-categories')?.scrollIntoView({ behavior:'smooth', block:'start' })}
