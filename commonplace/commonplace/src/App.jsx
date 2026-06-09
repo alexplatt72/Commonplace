@@ -25,7 +25,9 @@ function useIsMobile(bp = 680) {
 const FONTS = `
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { overflow-x: hidden; max-width: 100%; }
+  /* overflow-x: clip (not hidden) guards against horizontal scroll WITHOUT making
+     body a scroll container — hidden would break the sticky header's position. */
+  html, body { overflow-x: clip; max-width: 100%; }
   body { background: #f4f1eb; }
   .hdr-search::placeholder { color: rgba(234,240,247,0.78); opacity: 1; }
   .commerce-find { color: #243447; text-decoration: none; }
