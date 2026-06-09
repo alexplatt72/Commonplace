@@ -28,6 +28,11 @@ const FONTS = `
   /* overflow-x: clip (not hidden) guards against horizontal scroll WITHOUT making
      body a scroll container — hidden would break the sticky header's position. */
   html, body { overflow-x: clip; max-width: 100%; }
+  .compass-btn { transition: border-color .2s, background .2s; }
+  .compass-btn svg { transition: transform .35s ease; }
+  .compass-btn:hover { border-color: rgba(200,169,110,0.95) !important; background: rgba(200,169,110,0.14); }
+  .compass-btn:hover svg { transform: rotate(20deg); }
+  .compass-btn:active svg { transform: rotate(160deg); }
   body { background: #f4f1eb; }
   .hdr-search::placeholder { color: rgba(234,240,247,0.78); opacity: 1; }
   .commerce-find { color: #243447; text-decoration: none; }
@@ -2416,6 +2421,12 @@ export default function CommonplaceApp() {
     setHeaderQuery(q);
     setView('search');
   };
+  // Compass = serendipity: jump to a random published entry from anywhere.
+  const goToRandomEntry = () => {
+    const pool = MANIFEST.filter(e => e.status === 'published');
+    const r = pool[Math.floor(Math.random() * pool.length)];
+    if (r) goToEntry(r.id);
+  };
 
   // ── Hash routing sync ──────────────────────────────────────────────────────
   // suppress one hashchange immediately after we write the hash ourselves, so an
@@ -2580,12 +2591,15 @@ export default function CommonplaceApp() {
             Pathways
           </button>
 
-          {/* Compass mark */}
-          <span aria-hidden="true" style={{ flexShrink:0, marginLeft:4, width:30, height:30, borderRadius:"50%",
-            border:"1px solid rgba(200,169,110,0.5)", display: isMobile ? "none" : "flex", alignItems:"center", justifyContent:"center" }}>
+          {/* Compass = jump to a random entry (serendipity) */}
+          <button onClick={goToRandomEntry} className="compass-btn"
+            aria-label="Jump to a random entry" title="Surprise me — jump to a random entry"
+            style={{ flexShrink:0, marginLeft:4, width:30, height:30, borderRadius:"50%", padding:0,
+              border:"1px solid rgba(200,169,110,0.5)", background:"transparent", cursor:"pointer",
+              display:"flex", alignItems:"center", justifyContent:"center" }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" strokeWidth="1.6"
               strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
-          </span>
+          </button>
           </div>
 
         </div>
