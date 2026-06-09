@@ -943,13 +943,13 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 18px" }}>
           TheCommonPlace
         </h1>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:16, color:C.muted, lineHeight:1.8,
+        <p style={{ fontFamily:"'Playfair Display',serif", fontSize:24, fontWeight:600, color:"#9a6a00",
+          lineHeight:1.35, maxWidth:660, margin:"0 auto 16px" }}>
+          {totalEntries} pathways through the ideas, people, events, and forces that built the world.
+        </p>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:15.5, color:C.muted, lineHeight:1.8,
           maxWidth:600, margin:"0 auto" }}>
           How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
-        </p>
-        <p style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.light, fontStyle:"italic",
-          maxWidth:600, margin:"12px auto 0" }}>
-          {totalEntries} paths, they all lead somewhere unexpected.
         </p>
         <div style={{ marginTop:26, display:"flex", flexDirection:"column", alignItems:"center", gap:14 }}>
           <button onClick={() => document.getElementById('browse-categories')?.scrollIntoView({ behavior:'smooth', block:'start' })}
@@ -996,15 +996,16 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
       {/* Category grid */}
       <section id="browse-categories" aria-label="Browse by category"
         style={{ marginBottom:52, scrollMarginTop:70 }}>
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
-          textTransform:"uppercase", color:C.light, marginBottom:6 }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:600, letterSpacing:"0.12em",
+          textTransform:"uppercase", color:"#9a6a00", marginBottom:6 }}>
           Browse by category
         </div>
-        <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:20 }}>
+        <div style={{ display:"flex", alignItems:"center", gap:14, marginBottom:20 }}>
           <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:26, fontWeight:700, color:C.text }}>
             Find what fascinates you
           </h2>
-          <div style={{ flex:1, height:1, background:C.border }} />
+          <div style={{ flex:1, height:1, background:"linear-gradient(to right, #c8a96e, rgba(200,169,110,0.12))" }} />
+          <span aria-hidden="true" style={{ color:"#9a6a00", fontSize:13, lineHeight:1, marginLeft:-4 }}>✦</span>
         </div>
         <div style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:12 }}>
           {Object.entries(TEMPLATE_CONFIG).filter(([_, cfg]) => cfg.active).map(([name, cfg]) => {
@@ -1044,15 +1045,16 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 
       {/* Featured entries — image keyed to category; calendar rotation set later */}
       <section aria-label="Featured entries">
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
-          textTransform:"uppercase", color:C.light, marginBottom:6 }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:600, letterSpacing:"0.12em",
+          textTransform:"uppercase", color:"#9a6a00", marginBottom:6 }}>
           Featured entries
         </div>
-        <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:18 }}>
+        <div style={{ display:"flex", alignItems:"center", gap:14, marginBottom:18 }}>
           <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700, color:C.text }}>
             Selections rotate with the calendar
           </h2>
-          <div style={{ flex:1, height:1, background:C.border }} />
+          <div style={{ flex:1, height:1, background:"linear-gradient(to right, #c8a96e, rgba(200,169,110,0.12))" }} />
+          <span aria-hidden="true" style={{ color:"#9a6a00", fontSize:13, lineHeight:1, marginLeft:-4 }}>✦</span>
         </div>
         <div style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:14 }}>
           {featuredIds.slice(0, 3).map(id => {
