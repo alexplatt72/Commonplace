@@ -975,5 +975,381 @@
       "salutation": "Happy New Year's Eve!"
     }
   ],
-  "floating": {}
+  "floating": {
+    "2026": [
+      {
+        "key": "mlkDay",
+        "md": "01-19",
+        "label": "Martin Luther King Jr. Day",
+        "dateLabel": "January 19, 2026",
+        "type": "observance",
+        "entryId": "martinLutherKing",
+        "suppressIfTheme": [
+          "Civil Rights & Moral Courage"
+        ]
+      },
+      {
+        "key": "lunarNewYear",
+        "md": "02-17",
+        "label": "Lunar New Year",
+        "dateLabel": "February 17, 2026",
+        "type": "celebration",
+        "entryId": "timekeeping",
+        "suppressIfTheme": [],
+        "salutation": "Happy Lunar New Year!",
+        "build": "Lunar New Year"
+      },
+      {
+        "key": "ramadan",
+        "md": "02-18",
+        "label": "Ramadan begins",
+        "dateLabel": "February 18, 2026",
+        "type": "observance",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Ramadan Mubarak!"
+      },
+      {
+        "key": "eidAlFitr",
+        "md": "03-20",
+        "label": "Eid al-Fitr",
+        "dateLabel": "March 20, 2026",
+        "type": "celebration",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Eid Mubarak!"
+      },
+      {
+        "key": "easter",
+        "md": "04-05",
+        "label": "Easter",
+        "dateLabel": "April 5, 2026",
+        "type": "celebration",
+        "entryId": "christianity",
+        "suppressIfTheme": [],
+        "salutation": "Happy Easter!"
+      },
+      {
+        "key": "passover",
+        "md": "04-01",
+        "label": "Passover begins",
+        "dateLabel": "April 1, 2026",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": []
+      },
+      {
+        "key": "vesak",
+        "md": "05-01",
+        "label": "Vesak / Buddha Day",
+        "dateLabel": "May 1, 2026",
+        "type": "celebration",
+        "entryId": "buddhism",
+        "suppressIfTheme": [],
+        "salutation": "Happy Vesak!"
+      },
+      {
+        "key": "eidAlAdha",
+        "md": "05-27",
+        "label": "Eid al-Adha",
+        "dateLabel": "May 27, 2026",
+        "type": "celebration",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Eid Mubarak!"
+      },
+      {
+        "key": "roshHashanah",
+        "md": "09-11",
+        "label": "Rosh Hashanah",
+        "dateLabel": "September 11, 2026",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": [],
+        "salutation": "Shanah Tovah!"
+      },
+      {
+        "key": "yomKippur",
+        "md": "09-20",
+        "label": "Yom Kippur",
+        "dateLabel": "September 20, 2026",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": []
+      },
+      {
+        "key": "diwali",
+        "md": "11-08",
+        "label": "Diwali",
+        "dateLabel": "November 8, 2026",
+        "type": "celebration",
+        "entryId": null,
+        "suppressIfTheme": [],
+        "salutation": "Happy Diwali!",
+        "build": "Hinduism"
+      },
+      {
+        "key": "hanukkah",
+        "md": "12-04",
+        "label": "Hanukkah begins",
+        "dateLabel": "December 4, 2026",
+        "type": "celebration",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": [
+          "Light, Darkness & Sacred Time"
+        ],
+        "salutation": "Happy Hanukkah!"
+      }
+    ],
+    "2027": [
+      {
+        "key": "mlkDay",
+        "md": "01-18",
+        "label": "Martin Luther King Jr. Day",
+        "dateLabel": "January 18, 2027",
+        "type": "observance",
+        "entryId": "martinLutherKing",
+        "suppressIfTheme": [
+          "Civil Rights & Moral Courage"
+        ]
+      },
+      {
+        "key": "lunarNewYear",
+        "md": "02-06",
+        "label": "Lunar New Year",
+        "dateLabel": "February 6, 2027",
+        "type": "celebration",
+        "entryId": "timekeeping",
+        "suppressIfTheme": [],
+        "salutation": "Happy Lunar New Year!",
+        "build": "Lunar New Year"
+      },
+      {
+        "key": "ramadan",
+        "md": "02-08",
+        "label": "Ramadan begins",
+        "dateLabel": "February 8, 2027",
+        "type": "observance",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Ramadan Mubarak!"
+      },
+      {
+        "key": "eidAlFitr",
+        "md": "03-09",
+        "label": "Eid al-Fitr",
+        "dateLabel": "March 9, 2027",
+        "type": "celebration",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Eid Mubarak!"
+      },
+      {
+        "key": "easter",
+        "md": "03-28",
+        "label": "Easter",
+        "dateLabel": "March 28, 2027",
+        "type": "celebration",
+        "entryId": "christianity",
+        "suppressIfTheme": [],
+        "salutation": "Happy Easter!"
+      },
+      {
+        "key": "passover",
+        "md": "04-21",
+        "label": "Passover begins",
+        "dateLabel": "April 21, 2027",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": []
+      },
+      {
+        "key": "vesak",
+        "md": "05-20",
+        "label": "Vesak / Buddha Day",
+        "dateLabel": "May 20, 2027",
+        "type": "celebration",
+        "entryId": "buddhism",
+        "suppressIfTheme": [],
+        "salutation": "Happy Vesak!"
+      },
+      {
+        "key": "eidAlAdha",
+        "md": "05-16",
+        "label": "Eid al-Adha",
+        "dateLabel": "May 16, 2027",
+        "type": "celebration",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Eid Mubarak!"
+      },
+      {
+        "key": "roshHashanah",
+        "md": "10-01",
+        "label": "Rosh Hashanah",
+        "dateLabel": "October 1, 2027",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": [],
+        "salutation": "Shanah Tovah!"
+      },
+      {
+        "key": "yomKippur",
+        "md": "10-10",
+        "label": "Yom Kippur",
+        "dateLabel": "October 10, 2027",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": []
+      },
+      {
+        "key": "diwali",
+        "md": "10-29",
+        "label": "Diwali",
+        "dateLabel": "October 29, 2027",
+        "type": "celebration",
+        "entryId": null,
+        "suppressIfTheme": [],
+        "salutation": "Happy Diwali!",
+        "build": "Hinduism"
+      },
+      {
+        "key": "hanukkah",
+        "md": "12-24",
+        "label": "Hanukkah begins",
+        "dateLabel": "December 24, 2027",
+        "type": "celebration",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": [
+          "Light, Darkness & Sacred Time"
+        ],
+        "salutation": "Happy Hanukkah!"
+      }
+    ],
+    "2028": [
+      {
+        "key": "mlkDay",
+        "md": "01-17",
+        "label": "Martin Luther King Jr. Day",
+        "dateLabel": "January 17, 2028",
+        "type": "observance",
+        "entryId": "martinLutherKing",
+        "suppressIfTheme": [
+          "Civil Rights & Moral Courage"
+        ]
+      },
+      {
+        "key": "lunarNewYear",
+        "md": "01-26",
+        "label": "Lunar New Year",
+        "dateLabel": "January 26, 2028",
+        "type": "celebration",
+        "entryId": "timekeeping",
+        "suppressIfTheme": [],
+        "salutation": "Happy Lunar New Year!",
+        "build": "Lunar New Year"
+      },
+      {
+        "key": "ramadan",
+        "md": "01-28",
+        "label": "Ramadan begins",
+        "dateLabel": "January 28, 2028",
+        "type": "observance",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Ramadan Mubarak!"
+      },
+      {
+        "key": "eidAlFitr",
+        "md": "02-26",
+        "label": "Eid al-Fitr",
+        "dateLabel": "February 26, 2028",
+        "type": "celebration",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Eid Mubarak!"
+      },
+      {
+        "key": "easter",
+        "md": "04-16",
+        "label": "Easter",
+        "dateLabel": "April 16, 2028",
+        "type": "celebration",
+        "entryId": "christianity",
+        "suppressIfTheme": [],
+        "salutation": "Happy Easter!"
+      },
+      {
+        "key": "passover",
+        "md": "04-10",
+        "label": "Passover begins",
+        "dateLabel": "April 10, 2028",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": []
+      },
+      {
+        "key": "vesak",
+        "md": "05-08",
+        "label": "Vesak / Buddha Day",
+        "dateLabel": "May 8, 2028",
+        "type": "celebration",
+        "entryId": "buddhism",
+        "suppressIfTheme": [],
+        "salutation": "Happy Vesak!"
+      },
+      {
+        "key": "eidAlAdha",
+        "md": "05-04",
+        "label": "Eid al-Adha",
+        "dateLabel": "May 4, 2028",
+        "type": "celebration",
+        "entryId": "islam",
+        "suppressIfTheme": [],
+        "salutation": "Eid Mubarak!"
+      },
+      {
+        "key": "roshHashanah",
+        "md": "09-20",
+        "label": "Rosh Hashanah",
+        "dateLabel": "September 20, 2028",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": [],
+        "salutation": "Shanah Tovah!"
+      },
+      {
+        "key": "yomKippur",
+        "md": "09-29",
+        "label": "Yom Kippur",
+        "dateLabel": "September 29, 2028",
+        "type": "observance",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": []
+      },
+      {
+        "key": "diwali",
+        "md": "10-17",
+        "label": "Diwali",
+        "dateLabel": "October 17, 2028",
+        "type": "celebration",
+        "entryId": null,
+        "suppressIfTheme": [],
+        "salutation": "Happy Diwali!",
+        "build": "Hinduism"
+      },
+      {
+        "key": "hanukkah",
+        "md": "12-12",
+        "label": "Hanukkah begins",
+        "dateLabel": "December 12, 2028",
+        "type": "celebration",
+        "entryId": "rabbinicJudaism",
+        "suppressIfTheme": [
+          "Light, Darkness & Sacred Time"
+        ],
+        "salutation": "Happy Hanukkah!"
+      }
+    ]
+  }
 }
