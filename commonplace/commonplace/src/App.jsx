@@ -2177,6 +2177,7 @@ function parseHash(hash) {
     case 'pathways': return { view: 'pathways' };
     case 'about':    return { view: 'about' };
     case 'method':   return { view: 'method' };
+    case 'privacy':  return { view: 'privacy' };
     case 'category': return (arg && TEMPLATE_CONFIG[arg]) ? { view: 'template', template: arg } : { view: 'home' };
     case 'search':   return arg ? { view: 'search', query: arg } : { view: 'home' };
     case 'entry':    return arg ? { view: 'entry', entryId: arg } : { view: 'home' };
@@ -2190,6 +2191,7 @@ function routeToHash(view, s) {
     case 'pathways': return '#/pathways';
     case 'about':    return '#/about';
     case 'method':   return '#/method';
+    case 'privacy':  return '#/privacy';
     case 'template': return s.activeTemplate ? '#/category/' + encodeURIComponent(s.activeTemplate) : '#/';
     case 'search':   return s.searchQuery ? '#/search/' + encodeURIComponent(s.searchQuery) : '#/';
     case 'entry':    return s.activeEntryId ? '#/entry/' + encodeURIComponent(s.activeEntryId) : '#/';
@@ -2197,12 +2199,11 @@ function routeToHash(view, s) {
   }
 }
 
-// Feedback / contact destination. CHANGE THIS to a mailbox you actually monitor
-// (or swap the mailto links for a Google Form URL). Defaults to the site domain.
-const CONTACT_EMAIL = 'feedback@thecommonplace.dev';
+// Feedback / contact destination. Monitored mailbox for all feedback/contact links.
+const CONTACT_EMAIL = 'TCPFeedback@pm.me';
 
 // ── Footer (shown on every view) ─────────────────────────────────────────────
-function Footer({ onHome, onBrowse, onAbout, onMethod }) {
+function Footer({ onHome, onBrowse, onAbout, onMethod, onPrivacy }) {
   const isMobile = useIsMobile();
   const link = (label, onClick, href) => href
     ? <a href={href} style={{ color: C.muted, textDecoration: 'none', fontSize: 13, fontFamily: "'Lora',serif" }}>{label}</a>
@@ -2222,6 +2223,7 @@ function Footer({ onHome, onBrowse, onAbout, onMethod }) {
       <nav style={{ display: 'flex', flexWrap: 'wrap', gap: isMobile ? 16 : 20, alignItems: 'center' }}>
         {link('About', onAbout)}
         {link('Method', onMethod)}
+        {link('Privacy', onPrivacy)}
         {link('Browse', onBrowse)}
         {link('Feedback', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — beta feedback')}`)}
         {link('Suggest an entry', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — entry suggestion')}`)}
@@ -2237,12 +2239,13 @@ function InfoPage({ kind, onHome, onBrowse }) {
     color: C.text, margin: '30px 0 10px' }}>{children}</h2>;
   const P = ({ children }) => <p style={{ fontFamily: "'Lora',serif", fontSize: isMobile ? 15 : 16, lineHeight: 1.7,
     color: C.text, margin: '0 0 14px' }}>{children}</p>;
+  const mailLink = <a href={`mailto:${CONTACT_EMAIL}`} style={{ color: C.text, textDecoration: 'underline' }}>{CONTACT_EMAIL}</a>;
   return (
     <div style={{ maxWidth: 740, margin: '0 auto', padding: isMobile ? '28px 20px 0' : '44px 40px 0' }}>
       <button onClick={onHome} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer',
         color: C.muted, fontSize: 13, fontFamily: "'JetBrains Mono',monospace", letterSpacing: '0.08em', marginBottom: 18 }}>← HOME</button>
       <h1 style={{ fontFamily: "'DM Serif Display',serif", fontWeight: 400, fontSize: isMobile ? 30 : 38, color: C.text, margin: '0 0 6px' }}>
-        {kind === 'about' ? 'About' : 'Method'}
+        {kind === 'about' ? 'About' : kind === 'privacy' ? 'Privacy & Notices' : 'Method'}
       </h1>
       {kind === 'about' ? (
         <>
@@ -2256,7 +2259,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <P><button onClick={onBrowse} style={{ background: 'none', border: `1px solid ${C.borderStrong}`, color: C.text,
             padding: '9px 18px', borderRadius: 4, cursor: 'pointer', fontFamily: "'Lora',serif", fontSize: 15 }}>Start exploring →</button></P>
         </>
-      ) : (
+      ) : kind === 'method' ? (
         <>
           <P>This page explains how the canon is built and how to read it. It uses a few loaded words — “canon,” “threshold,” “significance” — and they deserve a frame.</P>
           <H>What qualifies as an entry</H>
@@ -2271,6 +2274,17 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. This is an open beta, and that process is still being tuned.</P>
           <H>How to read omissions</H>
           <P>If something is missing, that is not a verdict that it does not matter. The canon is finite and still expanding, and many worthy subjects simply have not been built yet. Tell us what you would add — the footer’s Suggest link is exactly for that.</P>
+        </>
+      ) : (
+        <>
+          <P>Short version: The Commonplace is a reading site. It needs no account and asks you for nothing to use it. Last updated for the open beta.</P>
+          <H>Privacy</H>
+          <P>The site is static and currently sets no advertising or tracking cookies. Our host keeps standard server logs — things like IP address, browser type, and the pages requested — to operate and secure the site. If we add usage analytics during the beta, we will use a privacy-friendly, cookieless tool and update this page to name it.</P>
+          <P>If you email us through the Feedback or Suggest-an-entry links, we keep your message and email address so we can reply and improve the site. We do not sell personal information. Questions or requests about your data: {mailLink}.</P>
+          <H>An educational project</H>
+          <P>The Commonplace is an educational and editorial project. Entries are provided for general learning and exploration — not as legal, medical, financial, professional, or academic advice. The site may contain errors or omissions, especially during the beta. Corrections are welcome at {mailLink}.</P>
+          <H>Sources & rights</H>
+          <P>Quotations, references, and images are used for educational and editorial purposes. Where possible, The Commonplace uses public-domain, openly licensed, or attributed material. If you believe something has been used incorrectly, contact us at {mailLink} and we will review it.</P>
         </>
       )}
     </div>
@@ -2416,6 +2430,7 @@ export default function CommonplaceApp() {
       else if (r.view === 'pathways') goToPathways();
       else if (r.view === 'about')    { setReturnTo(null); setReturnToId(null); setView('about'); }
       else if (r.view === 'method')   { setReturnTo(null); setReturnToId(null); setView('method'); }
+      else if (r.view === 'privacy')  { setReturnTo(null); setReturnToId(null); setView('privacy'); }
       else                            goHome();
     };
     window.addEventListener('hashchange', onHash);
@@ -2610,8 +2625,12 @@ export default function CommonplaceApp() {
       {view === 'method' && (
         <InfoPage kind="method" onHome={goHome} onBrowse={goToBrowse} />
       )}
+      {view === 'privacy' && (
+        <InfoPage kind="privacy" onHome={goHome} onBrowse={goToBrowse} />
+      )}
       <Footer onHome={goHome} onBrowse={goToBrowse}
-        onAbout={() => setView('about')} onMethod={() => setView('method')} />
+        onAbout={() => setView('about')} onMethod={() => setView('method')}
+        onPrivacy={() => setView('privacy')} />
     </div>
   );
 }
