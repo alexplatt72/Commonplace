@@ -1012,7 +1012,7 @@ const CATEGORY_SLUG = {
   "Periods":"Periods", "Places":"Places", "Natural Phenomena":"Natural",
   "Policy":"Policy", "Foundations":"Foundations",
 };
-const categoryImage = (template) => `/category-images/${CATEGORY_SLUG[template] || 'Events'}.png`;
+const categoryImage = (template) => `/category-images/${CATEGORY_SLUG[template] || 'Events'}.webp`;
 
 // ─── Featured card (image keyed to category; calendar rotation set later) ─────
 function FeaturedCard({ id, entry, onClick }) {
@@ -1106,7 +1106,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
 
       {/* Platform statement */}
       <div style={{ textAlign:"center", marginBottom:36 }}>
-        <img src="/tcp_logo_transparent.png" alt="TheCommonPlace logo"
+        <img src="/tcp_logo_transparent.webp" alt="TheCommonPlace logo"
           style={{ display:"block", margin:"0 auto 6px", width:"340px", maxWidth:"86%", objectFit:"contain" }} />
         <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize: isMobile ? 34 : 50, fontWeight:400,
           color:C.text, lineHeight:1, letterSpacing:"-0.01em", margin:"0 auto 18px" }}>
@@ -2478,7 +2478,7 @@ export default function CommonplaceApp() {
 
   return (
     <div style={{ minHeight:"100vh", backgroundColor:C.bg,
-      backgroundImage:`linear-gradient(rgba(244,241,235,0.88), rgba(244,241,235,0.90)), url('/Backgroundmap.png')`,
+      backgroundImage:`linear-gradient(rgba(244,241,235,0.88), rgba(244,241,235,0.90)), url('/Backgroundmap.webp')`,
       backgroundSize:"cover", backgroundPosition:"center top",
       backgroundAttachment: isMobile ? "scroll" : "fixed", backgroundRepeat:"no-repeat" }}>
       <style>{FONTS}</style>
@@ -2494,7 +2494,7 @@ export default function CommonplaceApp() {
           <button onClick={goHome} aria-label="Home"
             style={{ display:"flex", alignItems:"center", gap:9, background:"transparent",
               border:"none", cursor:"pointer", flexShrink:0, padding:"4px 2px" }}>
-            <img src="/tcp_logo_transparent.png" alt=""
+            <img src="/tcp_logo_transparent.webp" alt=""
               style={{ height:28, width:"auto", objectFit:"contain" }} />
             <span style={{ fontFamily:"'DM Serif Display',serif", fontSize:18, color:"#f6f3ec",
               letterSpacing:"0.01em", whiteSpace:"nowrap", display: isMobile ? "none" : "inline" }}>TheCommonPlace</span>
