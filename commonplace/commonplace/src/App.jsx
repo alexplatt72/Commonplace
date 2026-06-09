@@ -14,6 +14,7 @@ const FONTS = `
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #f4f1eb; }
+  .hdr-search::placeholder { color: rgba(234,240,247,0.78); opacity: 1; }
 `;
 
 // ─── TEMPLATE CONFIGURATION ───────────────────────────────────────────────────
@@ -1783,8 +1784,9 @@ export default function CommonplaceApp() {
                 onFocus={() => acResults.length > 0 && setAcOpen(true)}
                 onBlur={() => setTimeout(() => setAcOpen(false), 150)}
                 placeholder={`Search ${MANIFEST.length} entries…`}
+                className="hdr-search"
                 style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
-                  color:"#1c1917", background:"rgba(243,239,231,0.93)", border:"1px solid rgba(255,255,255,0.3)",
+                  color:"#f4f1e8", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.18)",
                   borderRadius:4, outline:"none" }} />
               <button type="submit" aria-label="Submit search"
                 style={{ padding:"7px 12px", background:"rgba(255,255,255,0.12)", color:"#cbd5e1",
