@@ -1949,9 +1949,9 @@ function ToursView({ onEntry, onHome, restoreId }) {
                   </div>
 
                   {/* Card + note */}
-                  <div style={{ flex:1 }}>
+                  <div style={{ flex:1, minWidth:0 }}>
                     {/* Object name + note inline */}
-                    <div style={{ marginBottom:8, lineHeight:1.6, width:"78%", maxWidth:760, minWidth:420 }}>
+                    <div style={{ marginBottom:8, lineHeight:1.6, width: isMobile ? "100%" : "78%", maxWidth:760, minWidth: isMobile ? 0 : 420 }}>
                       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10,
                         letterSpacing:"0.08em", textTransform:"uppercase", color:accent,
                         marginRight:6 }}>
@@ -1965,7 +1965,7 @@ function ToursView({ onEntry, onHome, restoreId }) {
 
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId, selectedId)}
-                      style={{ width:"78%", maxWidth:760, minWidth:420,
+                      style={{ width: isMobile ? "100%" : "78%", maxWidth:760, minWidth: isMobile ? 0 : 420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
                         cursor:"pointer", transition:"all 0.12s", overflow:"hidden" }}
@@ -2108,17 +2108,17 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
                     {String(i + 1).padStart(2, '0')}
                   </div>
 
-                  <div style={{ flex:1 }}>
+                  <div style={{ flex:1, minWidth:0 }}>
                     {/* Note */}
                     <div style={{ fontFamily:"'Lora',serif", fontSize:13, color:C.muted,
                       fontStyle:"italic", marginBottom:8, lineHeight:1.6,
-                      width:"78%", maxWidth:760, minWidth:420 }}>
+                      width: isMobile ? "100%" : "78%", maxWidth:760, minWidth: isMobile ? 0 : 420 }}>
                       {item.note}
                     </div>
 
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId, selectedId)}
-                      style={{ width:"78%", maxWidth:760, minWidth:420,
+                      style={{ width: isMobile ? "100%" : "78%", maxWidth:760, minWidth: isMobile ? 0 : 420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
                         cursor:"pointer", transition:"all 0.12s", overflow:"hidden" }}
@@ -2173,6 +2173,8 @@ function parseHash(hash) {
     case 'browse':   return { view: 'browse' };
     case 'tours':    return { view: 'tours' };
     case 'pathways': return { view: 'pathways' };
+    case 'about':    return { view: 'about' };
+    case 'method':   return { view: 'method' };
     case 'category': return (arg && TEMPLATE_CONFIG[arg]) ? { view: 'template', template: arg } : { view: 'home' };
     case 'search':   return arg ? { view: 'search', query: arg } : { view: 'home' };
     case 'entry':    return arg ? { view: 'entry', entryId: arg } : { view: 'home' };
@@ -2184,11 +2186,93 @@ function routeToHash(view, s) {
     case 'browse':   return '#/browse';
     case 'tours':    return '#/tours';
     case 'pathways': return '#/pathways';
+    case 'about':    return '#/about';
+    case 'method':   return '#/method';
     case 'template': return s.activeTemplate ? '#/category/' + encodeURIComponent(s.activeTemplate) : '#/';
     case 'search':   return s.searchQuery ? '#/search/' + encodeURIComponent(s.searchQuery) : '#/';
     case 'entry':    return s.activeEntryId ? '#/entry/' + encodeURIComponent(s.activeEntryId) : '#/';
     default:         return '#/';
   }
+}
+
+// Feedback / contact destination. CHANGE THIS to a mailbox you actually monitor
+// (or swap the mailto links for a Google Form URL). Defaults to the site domain.
+const CONTACT_EMAIL = 'feedback@thecommonplace.dev';
+
+// ── Footer (shown on every view) ─────────────────────────────────────────────
+function Footer({ onHome, onBrowse, onAbout, onMethod }) {
+  const isMobile = useIsMobile();
+  const link = (label, onClick, href) => href
+    ? <a href={href} style={{ color: C.muted, textDecoration: 'none', fontSize: 13, fontFamily: "'Lora',serif" }}>{label}</a>
+    : <button onClick={onClick} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+        color: C.muted, fontSize: 13, fontFamily: "'Lora',serif" }}>{label}</button>;
+  return (
+    <footer style={{ borderTop: `1px solid ${C.border}`, marginTop: 64, padding: isMobile ? '28px 20px 40px' : '32px 40px 48px',
+      display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: isMobile ? 14 : 24,
+      alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between' }}>
+      <div>
+        <button onClick={onHome} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+          color: C.text, fontFamily: "'DM Serif Display',serif", fontSize: 18 }}>TheCommonPlace</button>
+        <div style={{ color: C.light, fontSize: 12, fontStyle: 'italic', fontFamily: "'Lora',serif", marginTop: 2 }}>
+          A curated atlas of civilization, ideas, and power. Open beta.
+        </div>
+      </div>
+      <nav style={{ display: 'flex', flexWrap: 'wrap', gap: isMobile ? 16 : 20, alignItems: 'center' }}>
+        {link('About', onAbout)}
+        {link('Method', onMethod)}
+        {link('Browse', onBrowse)}
+        {link('Feedback', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — beta feedback')}`)}
+        {link('Suggest an entry', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — entry suggestion')}`)}
+      </nav>
+    </footer>
+  );
+}
+
+// ── About / Method content pages ─────────────────────────────────────────────
+function InfoPage({ kind, onHome, onBrowse }) {
+  const isMobile = useIsMobile();
+  const H = ({ children }) => <h2 style={{ fontFamily: "'DM Serif Display',serif", fontWeight: 400, fontSize: isMobile ? 19 : 21,
+    color: C.text, margin: '30px 0 10px' }}>{children}</h2>;
+  const P = ({ children }) => <p style={{ fontFamily: "'Lora',serif", fontSize: isMobile ? 15 : 16, lineHeight: 1.7,
+    color: C.text, margin: '0 0 14px' }}>{children}</p>;
+  return (
+    <div style={{ maxWidth: 740, margin: '0 auto', padding: isMobile ? '28px 20px 0' : '44px 40px 0' }}>
+      <button onClick={onHome} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+        color: C.muted, fontSize: 13, fontFamily: "'JetBrains Mono',monospace", letterSpacing: '0.08em', marginBottom: 18 }}>← HOME</button>
+      <h1 style={{ fontFamily: "'DM Serif Display',serif", fontWeight: 400, fontSize: isMobile ? 30 : 38, color: C.text, margin: '0 0 6px' }}>
+        {kind === 'about' ? 'About' : 'Method'}
+      </h1>
+      {kind === 'about' ? (
+        <>
+          <P>TheCommonPlace is a curated atlas of the people, ideas, events, and forces that built the world — not an encyclopedia that aims to cover everything, but a deliberately finite canon of subjects that genuinely warrant deep, structured treatment.</P>
+          <H>Four ways to read every entry</H>
+          <P>Each entry is written at several reading levels — Beginner, General, and Advanced, alongside Educational and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
+          <H>Find your way in</H>
+          <P>Browse the whole canon and filter it by era, region, category, and more; follow a Tour that connects a place to the entries it unlocks; or take a Pathway — a curated sequence that builds toward a big question like “how capitalism happened.” If you prefer to wander, search anything or chase a rabbit hole between related entries.</P>
+          <H>This is an open beta</H>
+          <P>The canon currently holds 302 entries and is still expanding. Things will change, and some subjects you expect are not here yet. If you find an error or want to suggest an entry, the Feedback and Suggest links in the footer go straight to us — beta readers are the best source of both.</P>
+          <P><button onClick={onBrowse} style={{ background: 'none', border: `1px solid ${C.borderStrong}`, color: C.text,
+            padding: '9px 18px', borderRadius: 4, cursor: 'pointer', fontFamily: "'Lora',serif", fontSize: 15 }}>Start exploring →</button></P>
+        </>
+      ) : (
+        <>
+          <P>This page explains how the canon is built and how to read it. It uses a few loaded words — “canon,” “threshold,” “significance” — and they deserve a frame.</P>
+          <H>What qualifies as an entry</H>
+          <P>An entry has to clear a threshold of civilizational significance: it must have genuinely shaped how the world works, and it must reward structured, multi-level treatment. The test is not fame or popularity but consequence and depth. That makes the canon finite by design — the goal is the subjects that matter most, treated well, rather than exhaustive coverage.</P>
+          <H>Why 302 now, and what a larger canon means</H>
+          <P>The current 302 entries are an early, deliberately curated core. Growth is gated on quality and balance, not volume: a larger canon should mean more of the world represented — more regions, eras, and traditions — not simply more pages. Expansion is a series of intentional decisions, each with the same threshold.</P>
+          <H>What the reading levels mean</H>
+          <P>Beginner grounds the subject in plain language and concrete scenes. General adds the mechanisms, named figures, and live debates. Advanced develops the scholarly tension — the questions specialists actually argue about. Educational and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
+          <H>How sources are handled</H>
+          <P>References are rated on two axes — Reliability (the trustworthiness of the method) and Contribution (how much the source adds to this particular subject) — so you can see not just what was cited but why it carries weight here.</P>
+          <H>How entries are made</H>
+          <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. This is an open beta, and that process is still being tuned.</P>
+          <H>How to read omissions</H>
+          <P>If something is missing, that is not a verdict that it does not matter. The canon is finite and still expanding, and many worthy subjects simply have not been built yet. Tell us what you would add — the footer’s Suggest link is exactly for that.</P>
+        </>
+      )}
+    </div>
+  );
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -2328,6 +2412,8 @@ export default function CommonplaceApp() {
       else if (r.view === 'browse')   goToBrowse();
       else if (r.view === 'tours')    goToTours();
       else if (r.view === 'pathways') goToPathways();
+      else if (r.view === 'about')    { setReturnTo(null); setReturnToId(null); setView('about'); }
+      else if (r.view === 'method')   { setReturnTo(null); setReturnToId(null); setView('method'); }
       else                            goHome();
     };
     window.addEventListener('hashchange', onHash);
@@ -2359,7 +2445,7 @@ export default function CommonplaceApp() {
     <div style={{ minHeight:"100vh", backgroundColor:C.bg,
       backgroundImage:`linear-gradient(rgba(244,241,235,0.88), rgba(244,241,235,0.90)), url('/Backgroundmap.png')`,
       backgroundSize:"cover", backgroundPosition:"center top",
-      backgroundAttachment:"fixed", backgroundRepeat:"no-repeat" }}>
+      backgroundAttachment: isMobile ? "scroll" : "fixed", backgroundRepeat:"no-repeat" }}>
       <style>{FONTS}</style>
 
       {/* Header */}
@@ -2516,6 +2602,14 @@ export default function CommonplaceApp() {
           onTemplate={goToTemplate}
           onEntry={(id) => goToEntry(id, null, null, true)} />
       )}
+      {view === 'about' && (
+        <InfoPage kind="about" onHome={goHome} onBrowse={goToBrowse} />
+      )}
+      {view === 'method' && (
+        <InfoPage kind="method" onHome={goHome} onBrowse={goToBrowse} />
+      )}
+      <Footer onHome={goHome} onBrowse={goToBrowse}
+        onAbout={() => setView('about')} onMethod={() => setView('method')} />
     </div>
   );
 }

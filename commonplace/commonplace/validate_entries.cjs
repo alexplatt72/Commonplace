@@ -279,8 +279,12 @@ const allResults = [];
 let globalFails = 0, globalPasses = 0;
 let totalPlannedLinks = 0;
 
+// Support files that live in the entries dir but are NOT entries (app data, not canon).
+const NON_ENTRY_FILES = new Set([
+  'manifest.json', 'searchIndex.json', 'calendar.json', 'collections.json', 'pathways.json',
+]);
 const allFiles = fs.readdirSync(ENTRIES_DIR)
-  .filter(f => f.endsWith('.json') && f !== 'manifest.json' && f !== 'searchIndex.json');
+  .filter(f => f.endsWith('.json') && !NON_ENTRY_FILES.has(f));
 
 const filesToProcess = SINGLE_ENTRY
   ? allFiles.filter(f => f === `${SINGLE_ENTRY}.json`)
