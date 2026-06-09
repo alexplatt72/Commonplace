@@ -930,7 +930,7 @@ function FeaturedCard({ id, entry, onClick }) {
   );
 }
 
-function HomeView({ onSearch, onTemplate, onEntry }) {
+function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
 
   const totalEntries = MANIFEST.length;
 
@@ -958,7 +958,7 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
           How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
         </p>
         <div style={{ marginTop:26, display:"flex", flexDirection:"column", alignItems:"center", gap:14 }}>
-          <button onClick={() => document.getElementById('browse-categories')?.scrollIntoView({ behavior:'smooth', block:'start' })}
+          <button onClick={() => onBrowse()}
             style={{ fontFamily:"'Playfair Display',serif", fontSize:16, color:"#fff", background:C.navy,
               border:"none", borderRadius:6, padding:"13px 32px", cursor:"pointer", letterSpacing:"0.01em",
               boxShadow:"0 2px 6px rgba(36,52,71,0.25)" }}>
@@ -1202,27 +1202,28 @@ function FacetRow({ title, keys, counts, selected, accent, onToggle }) {
   );
 }
 
-function TemplateGallery({ templateName, onEntry, onHome }) {
-  const cfg = TEMPLATE_CONFIG[templateName] || {};
-  const meta = TEMPLATE_META[templateName] || {};
-  const accent = cfg.accent || '#555';
+const CATEGORY_ORDER = Object.keys(TEMPLATE_CONFIG).reduce((m, k, i) => { m[k] = i; return m; }, {});
 
-  const all = React.useMemo(() => MANIFEST.filter(e => e.template === templateName), [templateName]);
+// Shared filterable/sortable grid. Used by both the category page and Browse-everything.
+function EntryBrowser({ entries, accent, showCategory, placeholder, pageSize, onEntry }) {
+  const all = entries;
 
   const [sort, setSort]     = React.useState('az');
   const [text, setText]     = React.useState('');
+  const [catF, setCatF]     = React.useState(() => new Set());
   const [eraF, setEraF]     = React.useState(() => new Set());
   const [regF, setRegF]     = React.useState(() => new Set());
   const [shapeF, setShapeF] = React.useState(() => new Set());
-  const [connF, setConnF]   = React.useState(() => new Set());
   const [durF, setDurF]     = React.useState(() => new Set());
   const [showMore, setShowMore] = React.useState(false);
+  const [shuffleMap, setShuffleMap] = React.useState({});
+  const [visible, setVisible] = React.useState(pageSize);
 
-  // reset everything when the category changes
+  // reset all filters when the entry set changes (category switch / view switch)
   React.useEffect(() => {
-    setSort('az'); setText(''); setShowMore(false);
-    setEraF(new Set()); setRegF(new Set()); setShapeF(new Set()); setConnF(new Set()); setDurF(new Set());
-  }, [templateName]);
+    setSort('az'); setText(''); setShowMore(false); setVisible(pageSize);
+    setCatF(new Set()); setEraF(new Set()); setRegF(new Set()); setShapeF(new Set()); setDurF(new Set());
+  }, [entries, pageSize]);
 
   const matchText = (e) => {
     const q = text.trim().toLowerCase();
@@ -1230,10 +1231,10 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
   };
   // one predicate per facet (within a facet = OR; across facets = AND)
   const preds = {
+    cat:    (e) => !showCategory || !catF.size || catF.has(e.template),
     era:    (e) => !eraF.size   || eraF.has(eraOf(e.startYear)),
     region: (e) => !regF.size   || displayRegions(e.regions).some(r => regF.has(r)),
     shape:  (e) => !shapeF.size || shapeF.has(shapeOf(e.subtype)),
-    conn:   (e) => !connF.size  || connF.has(connOf(e.degree)),
     dur:    (e) => !durF.size   || durF.has(durationOf(e)),
   };
   // entries passing text + every facet EXCEPT the named one → for disjunctive counts
@@ -1245,10 +1246,10 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
     for (const e of rows) for (const v of [].concat(getVal(e) || [])) if (v != null) m[v] = (m[v] || 0) + 1;
     return m;
   };
+  const catCounts   = showCategory ? countMap(passingExcept('cat'), e => e.template) : {};
   const eraCounts   = countMap(passingExcept('era'),    e => eraOf(e.startYear));
   const regCounts   = countMap(passingExcept('region'), e => displayRegions(e.regions));
   const shapeCounts = countMap(passingExcept('shape'),  e => shapeOf(e.subtype));
-  const connCounts  = countMap(passingExcept('conn'),   e => connOf(e.degree));
   const durCounts   = countMap(passingExcept('dur'),    e => durationOf(e));
 
   // full ordered vocabulary per facet (so 0-count options still render, greyed)
@@ -1258,10 +1259,10 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
     return [...s];
   };
   const shapeTotals = countMap(all, e => shapeOf(e.subtype));
+  const catKeys   = showCategory ? vocab(e => e.template).sort((a, b) => (CATEGORY_ORDER[a] ?? 99) - (CATEGORY_ORDER[b] ?? 99)) : [];
   const eraKeys   = vocab(e => eraOf(e.startYear)).sort((a, b) => ERA_ORDER[a] - ERA_ORDER[b]);
   const regKeys   = vocab(e => displayRegions(e.regions)).sort((a, b) => (REGION_ORDER[a] ?? 9) - (REGION_ORDER[b] ?? 9));
   const shapeKeys = vocab(e => shapeOf(e.subtype)).sort((a, b) => (shapeTotals[b] || 0) - (shapeTotals[a] || 0));
-  const connKeys  = vocab(e => connOf(e.degree)).sort((a, b) => CONN_ORDER[a] - CONN_ORDER[b]);
   const durKeys   = vocab(e => durationOf(e)).sort((a, b) => DUR_ORDER[a] - DUR_ORDER[b]);
 
   const toggle = (set, setter) => (v) => {
@@ -1269,68 +1270,49 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
   };
 
   const titleKey = t => (t || '').replace(/^the\s+/i, '').toLowerCase();
-  const filtered = all
+  const sorted = all
     .filter(e => matchText(e) && Object.values(preds).every(p => p(e)))
     .sort((a, b) => {
-      if (sort === 'chrono')    return (a.startYear ?? 0) - (b.startYear ?? 0);
-      if (sort === 'connected') return (b.degree ?? 0) - (a.degree ?? 0);
+      if (sort === 'chrono')  return (a.startYear ?? 0) - (b.startYear ?? 0);
+      if (sort === 'recent')  return (b.added || '').localeCompare(a.added || '') || titleKey(a.title).localeCompare(titleKey(b.title));
+      if (sort === 'shuffle') return (shuffleMap[a.id] ?? 0) - (shuffleMap[b.id] ?? 0);
       return titleKey(a.title).localeCompare(titleKey(b.title));
     });
+  const shown = sorted.slice(0, visible);
 
-  const anyFilter = eraF.size + regF.size + shapeF.size + connF.size + durF.size + (text.trim() ? 1 : 0);
+  // reset paging whenever the filter/sort signature changes
+  React.useEffect(() => { setVisible(pageSize); }, [text, sort, catF, eraF, regF, shapeF, durF]); // eslint-disable-line
+
+  const anyFilter = catF.size + eraF.size + regF.size + shapeF.size + durF.size + (text.trim() ? 1 : 0);
   const clearAll = () => {
-    setEraF(new Set()); setRegF(new Set()); setShapeF(new Set()); setConnF(new Set()); setDurF(new Set()); setText('');
+    setCatF(new Set()); setEraF(new Set()); setRegF(new Set()); setShapeF(new Set()); setDurF(new Set()); setText('');
   };
-  const hasPrimary = eraKeys.length > 1 || regKeys.length > 1;
-  const hasMore = shapeKeys.length > 1 || connKeys.length > 1 || durKeys.length > 1;
+  const hasPrimary = (showCategory && catKeys.length > 1) || eraKeys.length > 1 || regKeys.length > 1;
+  const hasMore = shapeKeys.length > 1 || durKeys.length > 1;
 
   return (
-    <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
-
-      {/* Back */}
-      <button onClick={onHome}
-        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:24,
-          padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
-          borderRadius:4, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
-          fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
-        ← Home
-      </button>
-
-      {/* Header */}
-      <div style={{ borderLeft:`4px solid ${accent}`, paddingLeft:20, marginBottom:24 }}>
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
-          textTransform:"uppercase", color:accent, marginBottom:6 }}>
-          {templateName} · {all.length} {all.length === 1 ? 'entry' : 'entries'}
-        </div>
-        <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700,
-          color:C.text, marginBottom:8 }}>
-          {meta.desc || templateName}
-        </div>
-        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic",
-          lineHeight:1.6 }}>
-          {meta.question}
-        </div>
-      </div>
-
+    <>
       {/* Filter / sort panel */}
       <div style={{ background:C.warm, border:`1px solid ${C.border}`, borderRadius:8,
         padding:"15px 18px", marginBottom:20, boxShadow:"0 1px 4px rgba(0,0,0,0.04)" }}>
         <div style={{ display:"flex", gap:12, flexWrap:"wrap", alignItems:"center" }}>
           <input value={text} onChange={e => setText(e.target.value)}
-            placeholder={`Filter ${templateName}…`}
+            placeholder={placeholder || "Filter…"}
             style={{ flex:"1 1 200px", padding:"8px 12px", fontFamily:"'Lora',serif", fontSize:13.5,
               color:C.text, background:C.surface, border:`1px solid ${C.border}`, borderRadius:6,
               outline:"none" }} />
-          <div style={{ display:"flex", gap:6, alignItems:"center" }}>
+          <div style={{ display:"flex", gap:6, alignItems:"center", flexWrap:"wrap" }}>
             <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.1em",
               textTransform:"uppercase", color:C.light }}>Sort</span>
-            {[['az','A–Z'], ['chrono','Chronological'], ['connected','Most connected']].map(([k, lbl]) => (
-              <FilterChip key={k} label={lbl} active={sort === k} accent={C.navy} onClick={() => setSort(k)} />
+            {[['az','A–Z'], ['chrono','Chronological'], ['recent','Recently Added'], ['shuffle','Shuffle']].map(([k, lbl]) => (
+              <FilterChip key={k} label={lbl} active={sort === k} accent={C.navy}
+                onClick={() => { if (k === 'shuffle') { const m = {}; for (const e of all) m[e.id] = Math.random(); setShuffleMap(m); } setSort(k); }} />
             ))}
           </div>
         </div>
         {hasPrimary && (
           <div style={{ borderTop:`1px solid ${C.border}`, marginTop:12, paddingTop:2 }}>
+            {showCategory && <FacetRow title="Category" keys={catKeys} counts={catCounts} selected={catF} accent={accent} onToggle={toggle(catF, setCatF)} />}
             <FacetRow title="Era"    keys={eraKeys} counts={eraCounts} selected={eraF} accent={accent} onToggle={toggle(eraF, setEraF)} />
             <FacetRow title="Region" keys={regKeys} counts={regCounts} selected={regF} accent={accent} onToggle={toggle(regF, setRegF)} />
           </div>
@@ -1345,7 +1327,6 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
             </button>
             {showMore && (
               <div>
-                <FacetRow title="Connections" keys={connKeys}  counts={connCounts}  selected={connF}  accent={accent} onToggle={toggle(connF, setConnF)} />
                 <FacetRow title="Duration"    keys={durKeys}   counts={durCounts}   selected={durF}   accent={accent} onToggle={toggle(durF, setDurF)} />
                 <FacetRow title="Shape"       keys={shapeKeys} counts={shapeCounts} selected={shapeF} accent={accent} onToggle={toggle(shapeF, setShapeF)} />
               </div>
@@ -1357,7 +1338,7 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
       {/* Result count + clear */}
       <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:14 }}>
         <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
-          {filtered.length} {filtered.length === 1 ? 'entry' : 'entries'}{anyFilter ? ` of ${all.length}` : ''}
+          {sorted.length} {sorted.length === 1 ? 'entry' : 'entries'}{anyFilter ? ` of ${all.length}` : ''}
         </span>
         {anyFilter ? (
           <button onClick={clearAll}
@@ -1369,12 +1350,24 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
       </div>
 
       {/* Entry grid */}
-      {filtered.length ? (
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
-          {filtered.map(e => (
-            <EntryCard key={e.id} id={e.id} entry={e} onClick={onEntry} />
-          ))}
-        </div>
+      {sorted.length ? (
+        <>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
+            {shown.map(e => (
+              <EntryCard key={e.id} id={e.id} entry={e} onClick={onEntry} />
+            ))}
+          </div>
+          {visible < sorted.length && (
+            <div style={{ textAlign:"center", marginTop:26 }}>
+              <button onClick={() => setVisible(v => v + pageSize)}
+                style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, letterSpacing:"0.06em",
+                  color:C.navy, background:C.surface, border:`1px solid ${C.borderStrong}`,
+                  borderRadius:6, padding:"10px 24px", cursor:"pointer" }}>
+                Load more  ·  {sorted.length - visible} more
+              </button>
+            </div>
+          )}
+        </>
       ) : (
         <div style={{ padding:"48px 20px", textAlign:"center", fontFamily:"'Lora',serif",
           fontSize:14.5, color:C.muted, fontStyle:"italic" }}>
@@ -1386,6 +1379,74 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
           </button>
         </div>
       )}
+    </>
+  );
+}
+
+// ─── Category page = header + browser scoped to one category ─────────────────
+function TemplateGallery({ templateName, onEntry, onHome }) {
+  const cfg = TEMPLATE_CONFIG[templateName] || {};
+  const meta = TEMPLATE_META[templateName] || {};
+  const accent = cfg.accent || '#555';
+  const all = React.useMemo(() => MANIFEST.filter(e => e.template === templateName), [templateName]);
+
+  return (
+    <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
+      <button onClick={onHome}
+        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:24,
+          padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
+          borderRadius:4, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+          fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
+        ← Home
+      </button>
+      <div style={{ borderLeft:`4px solid ${accent}`, paddingLeft:20, marginBottom:24 }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
+          textTransform:"uppercase", color:accent, marginBottom:6 }}>
+          {templateName} · {all.length} {all.length === 1 ? 'entry' : 'entries'}
+        </div>
+        <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700,
+          color:C.text, marginBottom:8 }}>
+          {meta.desc || templateName}
+        </div>
+        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic",
+          lineHeight:1.6 }}>
+          {meta.question}
+        </div>
+      </div>
+      <EntryBrowser entries={all} accent={accent} showCategory={false}
+        placeholder={`Filter ${templateName}…`} pageSize={9999} onEntry={onEntry} />
+    </div>
+  );
+}
+
+// ─── Browse everything = all entries with Category as the first facet ────────
+function BrowseAllView({ onEntry, onHome }) {
+  const all = React.useMemo(() => MANIFEST.slice(), []);
+  return (
+    <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
+      <button onClick={onHome}
+        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:24,
+          padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
+          borderRadius:4, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+          fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
+        ← Home
+      </button>
+      <div style={{ borderLeft:"4px solid #9a6a00", paddingLeft:20, marginBottom:24 }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
+          textTransform:"uppercase", color:"#9a6a00", marginBottom:6 }}>
+          Browse everything · {all.length} entries
+        </div>
+        <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700,
+          color:C.text, marginBottom:8 }}>
+          The whole canon, filtered your way
+        </div>
+        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic",
+          lineHeight:1.6 }}>
+          Every entry, across all categories. Narrow by category, time, and place — or chase a thread from the home page.
+        </div>
+      </div>
+      <EntryBrowser entries={all} accent="#9a6a00" showCategory={true}
+        placeholder={`Filter all ${all.length} entries…`} pageSize={60} onEntry={onEntry} />
     </div>
   );
 }
@@ -1988,6 +2049,7 @@ export default function CommonplaceApp() {
     setReturnTo(null); setReturnToId(validRestoreId); setView('pathways');
   };
   const goToTemplate = (t) => { setActiveTemplate(t); setView('template'); };
+  const goToBrowse = () => { setReturnTo(null); setReturnToId(null); setView('browse'); };
   const goToEntry = (id, source=null, sourceId=null, preserveReturn=false) => {
     if (!MANIFEST.find(e => e.id === id)) return;
     if (!preserveReturn) {
@@ -2094,12 +2156,12 @@ export default function CommonplaceApp() {
             )}
           </div>
 
-          {/* Explore nav link */}
-          <button onClick={goHome}
+          {/* Explore nav link → Browse everything */}
+          <button onClick={goToBrowse}
             style={{ background:"transparent", border:"none", cursor:"pointer", flexShrink:0, padding:"4px 10px",
-              color: view === 'home' ? "#c8a96e" : "rgba(255,255,255,0.6)",
+              color: view === 'browse' ? "#c8a96e" : "rgba(255,255,255,0.6)",
               fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.08em", textTransform:"uppercase",
-              borderBottom: view === 'home' ? "1px solid #c8a96e" : "1px solid transparent", transition:"all 0.15s" }}>
+              borderBottom: view === 'browse' ? "1px solid #c8a96e" : "1px solid transparent", transition:"all 0.15s" }}>
             Explore
           </button>
 
@@ -2139,7 +2201,10 @@ export default function CommonplaceApp() {
 
       {/* Views */}
       {view === 'home' && (
-        <HomeView onSearch={doSearch} onTemplate={goToTemplate} onEntry={goToEntry} />
+        <HomeView onSearch={doSearch} onTemplate={goToTemplate} onEntry={goToEntry} onBrowse={goToBrowse} />
+      )}
+      {view === 'browse' && (
+        <BrowseAllView onEntry={goToEntry} onHome={goHome} />
       )}
       {view === 'tours' && (
         <ToursView
