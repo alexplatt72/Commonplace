@@ -236,21 +236,6 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "How Democracies Die",
-      "isbn": "9780241381359",
-      "author": "Steven Levitsky and Daniel Ziblatt",
-      "note": "The essential accessible account — readable, historically grounded, and directly relevant to understanding contemporary democratic erosion."
-    },
-    {
-      "type": "Book",
-      "title": "The Origins of Totalitarianism",
-      "isbn": "9780805242256",
-      "author": "Hannah Arendt",
-      "note": "The foundational text — demanding but essential for understanding the 20th century's experience of totalitarian politics and its implications for how we think about political authority.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
       "level": "Introductory",
       "title": "How Democracies Die",
       "isbn": "9780241381359",
@@ -259,20 +244,20 @@
     },
     {
       "type": "Book",
-      "level": "Intermediate",
-      "title": "Twilight of Democracy",
-      "isbn": "9781984899507",
-      "author": "Anne Applebaum",
-      "note": "A readable account of the intellectual appeal of authoritarianism in contemporary Europe and America — Applebaum traces why educated people who once supported liberal democracy have turned toward strongman politics.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
       "level": "Scholarly",
       "title": "The Origins of Totalitarianism",
       "isbn": "9780805242256",
       "author": "Hannah Arendt",
       "note": "The essential scholarly account of totalitarianism as a distinct political form — demanding but indispensable for understanding what separates modern authoritarianism from traditional despotism.",
+      "isbnUS": true
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Twilight of Democracy",
+      "isbn": "9781984899507",
+      "author": "Anne Applebaum",
+      "note": "A readable account of the intellectual appeal of authoritarianism in contemporary Europe and America — Applebaum traces why educated people who once supported liberal democracy have turned toward strongman politics.",
       "isbnUS": true
     }
   ],

@@ -237,10 +237,11 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "SPQR",
+      "level": "Introductory",
+      "title": "SPQR: A History of Ancient Rome",
       "isbn": "9780871404237",
       "author": "Mary Beard",
-      "note": "The essential starting point — accessible, authoritative, and admirably skeptical of the myths that have accumulated around Rome.",
+      "note": "Start here — Beard's account of Rome from its origins through the late Republic is the most accessible serious introduction, written with wit and attention to what we cannot know as well as what we can.",
       "isbnUS": true
     },
     {
@@ -253,18 +254,10 @@
     },
     {
       "type": "Book",
+      "level": "Scholarly",
       "title": "The Roman Revolution",
       "author": "Ronald Syme",
-      "note": "The essential scholarly account of the republic's fall — demanding but essential for anyone who wants to understand how Augustus actually came to power."
-    },
-    {
-      "type": "Book",
-      "level": "Introductory",
-      "title": "SPQR: A History of Ancient Rome",
-      "isbn": "9780871404237",
-      "author": "Mary Beard",
-      "note": "Start here — Beard's account of Rome from its origins through the late Republic is the most accessible serious introduction, written with wit and attention to what we cannot know as well as what we can.",
-      "isbnUS": true
+      "note": "The foundational scholarly account of how the Republic became the Principate — Syme's deliberately Tacitean style and his focus on oligarchic competition behind constitutional change made this the essential work on Republican decline."
     },
     {
       "type": "Book",
@@ -274,20 +267,13 @@
       "author": "Plutarch",
       "note": "Plutarch's Lives of the late Republican figures — Caesar, Pompey, Cicero, Crassus — remain essential reading for understanding the personalities and events of the Republic's collapse. Accessible as primary source narrative.",
       "isbnUS": true
-    },
-    {
-      "type": "Book",
-      "level": "Scholarly",
-      "title": "The Roman Revolution",
-      "author": "Ronald Syme",
-      "note": "The foundational scholarly account of how the Republic became the Principate — Syme's deliberately Tacitean style and his focus on oligarchic competition behind constitutional change made this the essential work on Republican decline."
     }
   ],
   "popularCulture": [
     {
       "type": "Television",
-      "title": "Rome (HBO, 2005–2007)",
-      "description": "HBO's drama covering the late republic from Caesar's Gallic wars through Octavian's consolidation of power is the most ambitious dramatic recreation of republican Rome — following two fictional common soldiers alongside the historical figures. Its depiction of Roman violence, political culture, and social life has shaped how a generation of viewers imagines the late republic."
+      "title": "Rome (HBO, 2005-2007)",
+      "description": "HBO's drama about the late Republic follows fictional soldiers alongside historical figures through the final decades of Republican government. What it gets right: the violence, sexuality, and transactionality of Roman political life, and the way class differences shaped experience of the same historical events. What it distorts: the compression of events and invented personal connections between characters create a more dramatic arc than history provides."
     },
     {
       "type": "Cultural Reference",
@@ -298,11 +284,6 @@
       "type": "Concept",
       "title": "Crossing the Rubicon",
       "description": "When Julius Caesar crossed the Rubicon in 49 BCE — violating the law that forbade generals from bringing armies into Italy — he made an irrevocable choice: civil war. 'Crossing the Rubicon' has entered English as a metaphor for a point of no return. It captures something essential about political crisis: the moment when the informal norms that had maintained peace are broken."
-    },
-    {
-      "type": "Television",
-      "title": "Rome (HBO, 2005-2007)",
-      "description": "HBO's drama about the late Republic follows fictional soldiers alongside historical figures through the final decades of Republican government. What it gets right: the violence, sexuality, and transactionality of Roman political life, and the way class differences shaped experience of the same historical events. What it distorts: the compression of events and invented personal connections between characters create a more dramatic arc than history provides."
     },
     {
       "type": "Concept",

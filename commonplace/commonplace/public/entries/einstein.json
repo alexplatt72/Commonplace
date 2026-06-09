@@ -232,26 +232,11 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Subtle Is the Lord",
+      "level": "Intermediate",
+      "title": "Subtle Is the Lord: The Science and Life of Albert Einstein",
       "isbn": "9780198539070",
       "author": "Abraham Pais",
-      "note": "The essential scientific biography — requires some mathematical background but is irreplaceable for understanding what Einstein actually did and how he did it.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
-      "title": "Einstein: His Life and Universe",
-      "isbn": "9780739489031",
-      "author": "Walter Isaacson",
-      "note": "The most accessible complete biography for general readers — comprehensive, well-written, and draws on the full Einstein Papers Project.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
-      "title": "Relativity: The Special and General Theory",
-      "isbn": "9781486145188",
-      "author": "Albert Einstein",
-      "note": "Einstein's own popular account of his theories — written for non-specialists, it captures his characteristic way of explaining physics through thought experiments.",
+      "note": "For readers who want genuine engagement with the physics — Pais was a physicist who knew Einstein personally, and his account of the scientific work is more rigorous than any popularization.",
       "isbnUS": true
     },
     {
@@ -265,11 +250,10 @@
     },
     {
       "type": "Book",
-      "level": "Intermediate",
-      "title": "Subtle Is the Lord: The Science and Life of Albert Einstein",
-      "isbn": "9780198539070",
-      "author": "Abraham Pais",
-      "note": "For readers who want genuine engagement with the physics — Pais was a physicist who knew Einstein personally, and his account of the scientific work is more rigorous than any popularization.",
+      "title": "Relativity: The Special and General Theory",
+      "isbn": "9781486145188",
+      "author": "Albert Einstein",
+      "note": "Einstein's own popular account of his theories — written for non-specialists, it captures his characteristic way of explaining physics through thought experiments.",
       "isbnUS": true
     },
     {

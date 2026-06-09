@@ -229,10 +229,11 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Never at Rest",
+      "level": "Scholarly",
+      "title": "Never at Rest: A Biography of Isaac Newton",
       "isbn": "9780521231435",
       "author": "Richard Westfall",
-      "note": "The definitive biography — exhaustive and essential. The Newton that emerges is far more interesting than the legend. Essential reading for anyone who wants to understand what Newton was actually like.",
+      "note": "The definitive scholarly biography — Westfall's thousand-page account of Newton's life and work is the essential reference for serious engagement with the man and his science.",
       "isbnUS": true
     },
     {
@@ -257,15 +258,6 @@
       "isbn": "9780199995356",
       "author": "Rob Iliffe",
       "note": "The essential account of Newton’s secret theological life — his Antitrinitarianism and his biblical prophecy writings. Opens the part of Newton that the heroic narrative systematically suppresses.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
-      "level": "Scholarly",
-      "title": "Never at Rest: A Biography of Isaac Newton",
-      "isbn": "9780521231435",
-      "author": "Richard Westfall",
-      "note": "The definitive scholarly biography — Westfall's thousand-page account of Newton's life and work is the essential reference for serious engagement with the man and his science.",
       "isbnUS": true
     }
   ],

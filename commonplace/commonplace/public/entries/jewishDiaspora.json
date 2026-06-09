@@ -186,10 +186,11 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Story of the Jews",
+      "level": "Introductory",
+      "title": "The Story of the Jews: Finding the Words (1000 BCE-1492 CE)",
       "isbn": "9780060539184",
       "author": "Simon Schama",
-      "note": "Start here — Schama's two-volume narrative history is the most readable serious account of the Jewish diaspora from antiquity to the present, with a companion BBC documentary series that is equally accessible",
+      "note": "Start here — Schama's narrative history brings the ancient and medieval Jewish world to life with both scholarly rigor and storytelling drive.",
       "isbnUS": true
     },
     {
@@ -203,15 +204,6 @@
       "title": "The Story of the Jews — BBC (2013)",
       "author": null,
       "note": "Simon Schama's five-part documentary series covering Jewish history from ancient Egypt to the present — visually rich, intellectually serious, and genuinely moving; the best visual introduction to the subject"
-    },
-    {
-      "type": "Book",
-      "level": "Introductory",
-      "title": "The Story of the Jews: Finding the Words (1000 BCE-1492 CE)",
-      "isbn": "9780060539184",
-      "author": "Simon Schama",
-      "note": "Start here — Schama's narrative history brings the ancient and medieval Jewish world to life with both scholarly rigor and storytelling drive.",
-      "isbnUS": true
     },
     {
       "type": "Book",
@@ -232,7 +224,7 @@
     {
       "type": "Film",
       "title": "Fiddler on the Roof (1971)",
-      "description": "Jewison's film follows Tevye the milkman as his Russian shtetl is destroyed by a Tsarist expulsion. It is the most widely seen depiction of Eastern European Jewish life just before its destruction. 'Tradition' is the film's central claim: that diaspora survival rested on the practices that gave life structure across generations of displacement."
+      "description": "Norman Jewison's adaptation of the Sholem Aleichem stories is the most-watched depiction of Eastern European Jewish life before the Holocaust. What it gets right: the texture of shtetl life, the pressure of tradition against modernity, the violence of pogroms. What it distorts: the musical's warmth necessarily softens the poverty, precarity, and violence that characterized actual shtetl life under the Tsarist Pale of Settlement."
     },
     {
       "type": "Novel",
@@ -243,11 +235,6 @@
       "type": "Historical place",
       "title": "The Jewish Quarter of Prague (Josefov)",
       "description": "The Jewish Quarter of Prague makes the diaspora's physical reality visible. The Old Jewish Cemetery — where bodies were buried in layers because the community could not expand its burial ground — and the Old-New Synagogue (13th century, still in use) give concrete form to what diaspora life looked like at the community level."
-    },
-    {
-      "type": "Film",
-      "title": "Fiddler on the Roof (1971)",
-      "description": "Norman Jewison's adaptation of the Sholem Aleichem stories is the most-watched depiction of Eastern European Jewish life before the Holocaust. What it gets right: the texture of shtetl life, the pressure of tradition against modernity, the violence of pogroms. What it distorts: the musical's warmth necessarily softens the poverty, precarity, and violence that characterized actual shtetl life under the Tsarist Pale of Settlement."
     },
     {
       "type": "Concept",

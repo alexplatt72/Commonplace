@@ -208,14 +208,6 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "Alan Turing: The Enigma",
-      "isbn": "9780691155647",
-      "author": "Andrew Hodges",
-      "note": "The essential biography — comprehensive, mathematically literate, and deeply humane.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
       "level": "Introductory",
       "title": "Alan Turing: The Enigma",
       "isbn": "9780691155647",
@@ -253,7 +245,7 @@
     {
       "type": "Film",
       "title": "The Imitation Game (2014)",
-      "description": "Benedict Cumberbatch's portrayal brought Turing's story to mass audiences. Historians have documented its significant historical inaccuracies, but it remains the primary source of popular knowledge about Turing."
+      "description": "Benedict Cumberbatch's portrayal of Turing brought his story to mass audiences. What it gets right: the significance of Bletchley Park, the injustice of his prosecution. What it distorts: the timeline, his relationships, and the nature of the mathematical work — the film makes code-breaking look more like puzzle-solving and less like statistical inference than it actually was."
     },
     {
       "type": "Symbol",
@@ -264,11 +256,6 @@
       "type": "Concept",
       "title": "The Turing test in popular culture",
       "description": "The Turing test appears in films (Ex Machina, Her), television (Westworld), and technology discussions as the benchmark by which AI is assessed. Its popular use strips it of the philosophical precision Turing intended, treating it as a simple question of whether a machine can fool a human."
-    },
-    {
-      "type": "Film",
-      "title": "The Imitation Game (2014)",
-      "description": "Benedict Cumberbatch's portrayal of Turing brought his story to mass audiences. What it gets right: the significance of Bletchley Park, the injustice of his prosecution. What it distorts: the timeline, his relationships, and the nature of the mathematical work — the film makes code-breaking look more like puzzle-solving and less like statistical inference than it actually was."
     },
     {
       "type": "Concept",

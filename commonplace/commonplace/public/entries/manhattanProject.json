@@ -251,27 +251,6 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Making of the Atomic Bomb",
-      "isbn": "9781451677614",
-      "author": "Richard Rhodes",
-      "note": "The essential account — comprehensive, rigorously researched, and compulsively readable. The necessary starting point.",
-      "isbnUS": true
-    },
-    {
-      "type": "Book",
-      "title": "American Prometheus",
-      "isbn": "9781299003743",
-      "author": "Kai Bird and Martin Sherwin",
-      "note": "The essential Oppenheimer biography — the basis for the 2023 Nolan film and the indispensable account of the project's scientific leadership and its aftermath."
-    },
-    {
-      "type": "Film",
-      "title": "Oppenheimer (2023)",
-      "author": "Christopher Nolan",
-      "note": "Nolan's film brought the story to mass audiences with historical seriousness — read American Prometheus alongside or instead for the documentary record."
-    },
-    {
-      "type": "Book",
       "level": "Introductory",
       "title": "The Making of the Atomic Bomb",
       "isbn": "9781451677614",
@@ -288,6 +267,12 @@
       "note": "For readers who want the full story of the project's director — Bird and Sherwin's Pulitzer-winning biography is the essential account of Oppenheimer's life, the bomb, and the subsequent security hearing."
     },
     {
+      "type": "Film",
+      "title": "Oppenheimer (2023)",
+      "author": "Christopher Nolan",
+      "note": "Nolan's film brought the story to mass audiences with historical seriousness — read American Prometheus alongside or instead for the documentary record."
+    },
+    {
       "type": "Book",
       "level": "Scholarly",
       "title": "The Decision to Use the Atomic Bomb",
@@ -301,7 +286,7 @@
     {
       "type": "Film",
       "title": "Oppenheimer (2023)",
-      "description": "Christopher Nolan's three-hour film on the Manhattan Project and Oppenheimer's subsequent security hearing grossed over 950 million dollars worldwide and won seven Academy Awards. Its commercial success demonstrated sustained public interest in the ethical and historical dimensions of nuclear weapons. The film's treatment of the bombing decision — largely elided in favor of the security hearing drama — and its focus on Oppenheimer rather than the broader project have been noted by historians."
+      "description": "Christopher Nolan's three-hour film about Oppenheimer and the Manhattan Project is the most ambitious cinematic treatment of atomic weapons development. What it gets right: the moral complexity of the scientists' choices, the political dynamics of the security hearing. What it distorts: the film is told almost entirely from the American perspective, with the Japanese experience of the bombs largely absent — a choice that reflects interest in the perpetrators' psychology rather than the bombs' effects."
     },
     {
       "type": "Fact",
@@ -312,11 +297,6 @@
       "type": "Concept",
       "title": "The Doomsday Clock",
       "description": "The Bulletin of the Atomic Scientists — founded by Manhattan Project veterans — established the Doomsday Clock in 1947 as a symbol of the danger of nuclear annihilation. In 2023 the clock was set to 90 seconds to midnight, the closest it has ever been. The clock's cultural power reflects the Manhattan Project scientists' success in keeping nuclear danger visible in public consciousness."
-    },
-    {
-      "type": "Film",
-      "title": "Oppenheimer (2023)",
-      "description": "Christopher Nolan's three-hour film about Oppenheimer and the Manhattan Project is the most ambitious cinematic treatment of atomic weapons development. What it gets right: the moral complexity of the scientists' choices, the political dynamics of the security hearing. What it distorts: the film is told almost entirely from the American perspective, with the Japanese experience of the bombs largely absent — a choice that reflects interest in the perpetrators' psychology rather than the bombs' effects."
     },
     {
       "type": "Concept",

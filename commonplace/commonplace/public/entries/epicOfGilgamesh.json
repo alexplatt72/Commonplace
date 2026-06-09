@@ -240,9 +240,10 @@
   "commerce": [
     {
       "type": "Book",
-      "title": "The Epic of Gilgamesh (Penguin Classics, trans. Andrew George)",
-      "author": "Andrew George",
-      "note": "The current standard English translation — authoritative, readable, and well annotated. The essential starting point for any reader.",
+      "level": "Scholarly",
+      "title": "The Epic of Gilgamesh",
+      "author": "Andrew George (trans.)",
+      "note": "The standard scholarly translation — George's edition, based on the most complete surviving tablets, is the essential text for serious engagement with the epic alongside his detailed philological commentary.",
       "isbn": "9780131925946",
       "isbnUS": true
     },
@@ -269,13 +270,6 @@
       "author": "Stephen Mitchell",
       "note": "A literary retelling rather than a scholarly translation — Mitchell’s version reads beautifully and is accessible to readers who want the epic as living literature rather than academic text.",
       "isbnUS": true
-    },
-    {
-      "type": "Book",
-      "level": "Scholarly",
-      "title": "The Epic of Gilgamesh",
-      "author": "Andrew George (trans.)",
-      "note": "The standard scholarly translation — George's edition, based on the most complete surviving tablets, is the essential text for serious engagement with the epic alongside his detailed philological commentary."
     }
   ],
   "popularCulture": [
