@@ -1772,7 +1772,7 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPat
     const siteDesc  = 'A curated canon of civilizational significance — structured analytical depth across history, ideas, and the world.';
     const entryTitle = `${entry.title} — ${siteTitle}`;
     const entryDesc  = entry.summary || siteDesc;
-    const entryUrl   = `https://www.thecommonplace.dev/entry/${entryId}`;
+    const entryUrl   = `https://www.thecommonplace.dev/#/entry/${entryId}`;
 
     const setMeta = (sel, attr, val) => {
       const el = document.querySelector(sel);
@@ -1796,7 +1796,16 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPat
     };
   }, [entry, entryId]);
   if (loading) return <div style={{padding:60,textAlign:'center',fontFamily:"'Lora',serif",color:C.muted}}>Loading…</div>;
-  if (!entry) return null;
+  if (!entry) return (
+    <div style={{padding:"80px 24px",textAlign:'center',fontFamily:"'Lora',serif",color:C.muted}}>
+      <div style={{fontSize:20,color:C.text,marginBottom:8}}>Entry not found</div>
+      <div style={{marginBottom:24}}>This link doesn’t match anything in the canon (yet).</div>
+      <button onClick={onHome} style={{background:'none',border:`1px solid ${C.muted}`,color:C.text,
+        padding:"8px 18px",borderRadius:4,cursor:'pointer',fontFamily:"'Lora',serif",fontSize:14}}>
+        ← Back to home
+      </button>
+    </div>
+  );
   const cfg = TEMPLATE_CONFIG[entry.template] || {};
   const accent = cfg.accent || '#555';
 
@@ -2146,17 +2155,55 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// HASH ROUTING  —  shareable / refreshable / back-button URLs without a server
+//   #/                         home
+//   #/browse                   browse everything
+//   #/tours  #/pathways        tours / pathways
+//   #/category/People          a category (template) gallery
+//   #/search/democracy         a search
+//   #/entry/johnLocke          an entry (deep link)
+// ═══════════════════════════════════════════════════════════════════════════════
+function parseHash(hash) {
+  const h = (hash || '').replace(/^#\/?/, '');
+  const parts = h.split('/').filter(Boolean);
+  if (parts.length === 0) return { view: 'home' };
+  const seg = parts[0];
+  const arg = parts.length > 1 ? decodeURIComponent(parts.slice(1).join('/')) : null;
+  switch (seg) {
+    case 'browse':   return { view: 'browse' };
+    case 'tours':    return { view: 'tours' };
+    case 'pathways': return { view: 'pathways' };
+    case 'category': return (arg && TEMPLATE_CONFIG[arg]) ? { view: 'template', template: arg } : { view: 'home' };
+    case 'search':   return arg ? { view: 'search', query: arg } : { view: 'home' };
+    case 'entry':    return arg ? { view: 'entry', entryId: arg } : { view: 'home' };
+    default:         return { view: 'home' };
+  }
+}
+function routeToHash(view, s) {
+  switch (view) {
+    case 'browse':   return '#/browse';
+    case 'tours':    return '#/tours';
+    case 'pathways': return '#/pathways';
+    case 'template': return s.activeTemplate ? '#/category/' + encodeURIComponent(s.activeTemplate) : '#/';
+    case 'search':   return s.searchQuery ? '#/search/' + encodeURIComponent(s.searchQuery) : '#/';
+    case 'entry':    return s.activeEntryId ? '#/entry/' + encodeURIComponent(s.activeEntryId) : '#/';
+    default:         return '#/';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // MAIN APP
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export default function CommonplaceApp() {
+  const initialRoute = parseHash(typeof window !== 'undefined' ? window.location.hash : '');
   const isMobile = useIsMobile();
   const [manifestLoaded, setManifestLoaded] = React.useState(false);
-  const [view, setView] = React.useState('home'); // 'home' | 'template' | 'search' | 'entry' | 'tours' | 'pathways'
-  const [activeTemplate, setActiveTemplate] = React.useState(null);
-  const [activeEntryId, setActiveEntryId] = React.useState(null);
-  const [searchQuery, setSearchQuery] = React.useState('');
-  const [headerQuery, setHeaderQuery] = React.useState('');
+  const [view, setView] = React.useState(initialRoute.view || 'home'); // 'home' | 'template' | 'search' | 'entry' | 'tours' | 'pathways' | 'browse'
+  const [activeTemplate, setActiveTemplate] = React.useState(initialRoute.template || null);
+  const [activeEntryId, setActiveEntryId] = React.useState(initialRoute.entryId || null);
+  const [searchQuery, setSearchQuery] = React.useState(initialRoute.query || '');
+  const [headerQuery, setHeaderQuery] = React.useState(initialRoute.query || '');
   const [acResults, setAcResults] = React.useState([]); // autocomplete suggestions
   const [acOpen, setAcOpen] = React.useState(false);
 
@@ -2262,6 +2309,40 @@ export default function CommonplaceApp() {
     setHeaderQuery(q);
     setView('search');
   };
+
+  // ── Hash routing sync ──────────────────────────────────────────────────────
+  // suppress one hashchange immediately after we write the hash ourselves, so an
+  // in-app navigation does not bounce back through applyHash and clobber context
+  // (e.g. the returnTo set when an entry was opened from a tour).
+  const suppressNextHashApply = React.useRef(false);
+
+  // hash -> state (browser back/forward, or a manually edited/shared URL)
+  useEffect(() => {
+    if (!manifestLoaded) return;
+    const onHash = () => {
+      if (suppressNextHashApply.current) { suppressNextHashApply.current = false; return; }
+      const r = parseHash(window.location.hash);
+      if (r.view === 'entry')         goToEntry(r.entryId);
+      else if (r.view === 'template') goToTemplate(r.template);
+      else if (r.view === 'search')   doSearch(r.query);
+      else if (r.view === 'browse')   goToBrowse();
+      else if (r.view === 'tours')    goToTours();
+      else if (r.view === 'pathways') goToPathways();
+      else                            goHome();
+    };
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, [manifestLoaded]);
+
+  // state -> hash (in-app navigation), guarded so it never fights the listener
+  useEffect(() => {
+    if (!manifestLoaded) return;
+    const desired = routeToHash(view, { activeTemplate, activeEntryId, searchQuery });
+    if ((window.location.hash || '#/') !== desired) {
+      suppressNextHashApply.current = true;
+      window.location.hash = desired;
+    }
+  }, [manifestLoaded, view, activeEntryId, activeTemplate, searchQuery]);
 
   const accent = view === 'entry' && activeEntryId
     ? (TEMPLATE_CONFIG[MANIFEST.find(e=>e.id===activeEntryId)?.template]?.accent || '#8b4513')
@@ -2432,8 +2513,8 @@ export default function CommonplaceApp() {
         <EntryViewWrapper entryId={activeEntryId} onHome={goHome}
           onTours={goToTours} onPathways={goToPathways}
           returnTo={returnTo} returnToId={returnToId}
-          onEntry={(id) => goToEntry(id, null, null, true)}
-          onTemplate={goToTemplate} onEntry={goToEntry} />
+          onTemplate={goToTemplate}
+          onEntry={(id) => goToEntry(id, null, null, true)} />
       )}
     </div>
   );
