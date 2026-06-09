@@ -8,6 +8,7 @@ let SEARCH_INDEX = [];  // richer search data: aliases, themes, indexTerms
 let FUSE = null;        // Fuse.js instance, initialised after searchIndex loads
 let COLLECTIONS = [];   // curated tours, loaded once from /entries/collections.json
 let PATHWAYS = [];      // learning pathways, loaded once from /entries/pathways.json
+let CALENDAR = null;    // Featured-Entries almanac, loaded once from /entries/calendar.json
 
 
 // Reactive viewport check for responsive inline styles (phone breakpoint).
@@ -1049,14 +1050,49 @@ function FeaturedCard({ id, entry, onClick }) {
   );
 }
 
+// ─── Featured Entries — calendar engine (weekly pathway + daily/floating override) ──
+function centralTodayParts() {
+  const fmt = new Intl.DateTimeFormat('en-US', { timeZone:'America/Chicago', year:'numeric', month:'2-digit', day:'2-digit' });
+  const p = {}; for (const x of fmt.formatToParts(new Date())) p[x.type] = x.value;
+  return { y: +p.year, m: p.month, d: p.day };
+}
+function isoWeekOf(y, mm, dd) {
+  const date = new Date(Date.UTC(y, +mm - 1, +dd));
+  date.setUTCDate(date.getUTCDate() - ((date.getUTCDay() + 6) % 7) + 3); // nearest Thursday
+  const firstThu = new Date(Date.UTC(date.getUTCFullYear(), 0, 4));
+  firstThu.setUTCDate(firstThu.getUTCDate() - ((firstThu.getUTCDay() + 6) % 7) + 3);
+  return 1 + Math.round((date - firstThu) / 604800000);
+}
+function getFeatured() {
+  if (!CALENDAR || !CALENDAR.weeks) return null;
+  let { y, m, d } = centralTodayParts();
+  // ?day=MM-DD (or YYYY-MM-DD) previews any date's featured selection
+  const ov = typeof location !== 'undefined' && new URLSearchParams(location.search).get('day');
+  if (ov && /^(\d{4}-)?\d{2}-\d{2}$/.test(ov)) {
+    const p = ov.split('-');
+    if (p.length === 3) { y = +p[0]; m = p[1]; d = p[2]; } else { m = p[0]; d = p[1]; }
+  }
+  const md = `${m}-${d}`;
+  const wk = Math.min(52, Math.max(1, isoWeekOf(y, m, d)));
+  const weekObj = CALENDAR.weeks.find(w => w.week === wk) || CALENDAR.weeks[0];
+  const floats = (CALENDAR.floating && CALENDAR.floating[String(y)]) || [];
+  const todays = [...floats, ...(CALENDAR.daily || [])].filter(o => o.md === md);
+  for (const o of todays) {
+    if (o.suppressIfTheme && o.suppressIfTheme.includes(weekObj.theme)) continue; // covered by this week
+    if (!o.entryId) continue;                                                      // [BUILD]/planned — inactive
+    const entry = MANIFEST.find(e => e.id === o.entryId);
+    if (entry) return { mode:'daily', override:o, entry };
+  }
+  const cards = (weekObj.cards || []).map(id => MANIFEST.find(e => e.id === id)).filter(Boolean);
+  return { mode:'weekly', week:weekObj, cards };
+}
+
 function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
   const isMobile = useIsMobile();
 
   const totalEntries = MANIFEST.length;
 
-  // Featured: placeholder selection — will be replaced by date-driven editorial rotation
-  const featuredIds = ['wheat', 'slaveTrade', 'democracy', 'mosquitoes']
-    .filter(id => MANIFEST.find(e => e.id === id));
+  const featured = getFeatured();
 
   return (
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
@@ -1191,26 +1227,51 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         </div>
       </section>
 
-      {/* Featured entries — image keyed to category; calendar rotation set later */}
-      <section aria-label="Featured entries">
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:600, letterSpacing:"0.12em",
-          textTransform:"uppercase", color:"#9a6a00", marginBottom:6 }}>
-          Featured entries
-        </div>
-        <div style={{ display:"flex", alignItems:"center", gap:14, marginBottom:18 }}>
-          <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700, color:C.text }}>
-            Selections rotate with the calendar
-          </h2>
-          <div style={{ flex:1, height:1, background:"linear-gradient(to right, #c8a96e, rgba(200,169,110,0.12))" }} />
-          <span aria-hidden="true" style={{ color:"#9a6a00", fontSize:13, lineHeight:1, marginLeft:-4 }}>✦</span>
-        </div>
-        <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap:14 }}>
-          {featuredIds.slice(0, 3).map(id => {
-            const entry = MANIFEST.find(e => e.id === id);
-            return entry ? <FeaturedCard key={id} id={id} entry={entry} onClick={onEntry} /> : null;
-          })}
-        </div>
-      </section>
+      {/* Featured Entries — calendar-driven: weekly pathway, or daily/floating override */}
+      {featured && (
+        <section aria-label="Featured entries">
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:600, letterSpacing:"0.12em",
+            textTransform:"uppercase", color:"#9a6a00", marginBottom:6 }}>
+            Featured Entries
+          </div>
+          <div style={{ display:"flex", alignItems:"center", gap:14, marginBottom:14 }}>
+            <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700, color:C.text, whiteSpace:"nowrap" }}>
+              {featured.mode === 'daily' ? 'On This Day' : 'This Week in The Commonplace'}
+            </h2>
+            <div style={{ flex:1, height:1, background:"linear-gradient(to right, #c8a96e, rgba(200,169,110,0.12))" }} />
+            <span aria-hidden="true" style={{ color:"#9a6a00", fontSize:13, lineHeight:1, marginLeft:-4 }}>✦</span>
+          </div>
+
+          {featured.mode === 'daily' ? (
+            <>
+              {featured.override.salutation && (
+                <div style={{ fontFamily:"'Playfair Display',serif", fontSize:21, fontWeight:600, color:"#9a6a00", marginBottom:4 }}>
+                  {featured.override.salutation}
+                </div>
+              )}
+              <div style={{ fontFamily:"'Lora',serif", fontSize:17, fontStyle:"italic", color:C.text }}>
+                {featured.override.label}
+              </div>
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.light, letterSpacing:"0.04em", marginBottom:16 }}>
+                {featured.override.dateLabel}
+              </div>
+              <div style={{ maxWidth: isMobile ? "none" : 430 }}>
+                <FeaturedCard id={featured.entry.id} entry={featured.entry} onClick={onEntry} />
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={{ marginBottom:18 }}>
+                <span style={{ fontFamily:"'Playfair Display',serif", fontSize:17, fontWeight:700, color:C.text }}>{featured.week.theme}</span>
+                <span style={{ fontFamily:"'Lora',serif", fontSize:14.5, fontStyle:"italic", color:C.muted }}>{' — ' + featured.week.hook}</span>
+              </div>
+              <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap:14 }}>
+                {featured.cards.map(c => <FeaturedCard key={c.id} id={c.id} entry={c} onClick={onEntry} />)}
+              </div>
+            </>
+          )}
+        </section>
+      )}
 
     </main>
   );
@@ -2100,11 +2161,13 @@ export default function CommonplaceApp() {
       fetch('/searchIndex.json').then(r => r.json()).catch(() => []),
       fetch('/entries/collections.json').then(r => r.json()).catch(() => []),
       fetch('/entries/pathways.json').then(r => r.json()).catch(() => []),
-    ]).then(([manifest, searchIdx, collections, pathways]) => {
+      fetch('/entries/calendar.json').then(r => r.json()).catch(() => null),
+    ]).then(([manifest, searchIdx, collections, pathways, calendar]) => {
       MANIFEST = manifest;
       SEARCH_INDEX = searchIdx;
       COLLECTIONS = collections;
       PATHWAYS = pathways;
+      CALENDAR = calendar;
       if (searchIdx.length > 0) initFuse();
       setManifestLoaded(true);
     }).catch(() => setManifestLoaded(true));

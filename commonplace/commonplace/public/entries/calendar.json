@@ -1,0 +1,979 @@
+{
+  "version": 1,
+  "weeks": [
+    {
+      "week": 1,
+      "theme": "Beginnings, Calendars & Time",
+      "hook": "How societies learned to measure and master time.",
+      "cards": [
+        "juliusCaesar",
+        "timekeeping",
+        "ancientEgypt"
+      ]
+    },
+    {
+      "week": 2,
+      "theme": "Revolutions of Thought",
+      "hook": "The century the West learned to doubt, test, and see anew.",
+      "cards": [
+        "darwin",
+        "scientificRevolution",
+        "originOfSpecies"
+      ]
+    },
+    {
+      "week": 3,
+      "theme": "Civil Rights & Moral Courage",
+      "hook": "The slow, dangerous work of making freedom undeniable.",
+      "cards": [
+        "martinLutherKing",
+        "nonviolence",
+        "civilRightsMovement"
+      ]
+    },
+    {
+      "week": 4,
+      "theme": "Memory, Genocide & Fragility",
+      "hook": "How advanced societies talked themselves into atrocity.",
+      "cards": [
+        "hannahArendt",
+        "totalitarianism",
+        "theHolocaust"
+      ]
+    },
+    {
+      "week": 5,
+      "theme": "Black History: Freedom Before Victory",
+      "hook": "Freedom was argued and fought for long before it was won.",
+      "cards": [
+        "frederickDouglass",
+        "slavery",
+        "abolitionMovement"
+      ]
+    },
+    {
+      "week": 6,
+      "theme": "The Atlantic World",
+      "hook": "Sugar, cotton, and human cargo built the modern Atlantic.",
+      "cards": [
+        "slaveTrade",
+        "colonialism",
+        "cotton"
+      ]
+    },
+    {
+      "week": 7,
+      "theme": "Presidents, Republics & Power",
+      "hook": "Who holds executive power — and what restrains it.",
+      "cards": [
+        "abrahamLincoln",
+        "constitution",
+        "romanRepublic"
+      ]
+    },
+    {
+      "week": 8,
+      "theme": "The Invention of the State",
+      "hook": "Someone had to invent counting, taxing, and ruling at scale.",
+      "cards": [
+        "maxWeber",
+        "theState",
+        "census"
+      ]
+    },
+    {
+      "week": 9,
+      "theme": "Women Who Changed the Terms",
+      "hook": "The women who rewrote the terms of who counts.",
+      "cards": [
+        "maryWollstonecraft",
+        "feminism",
+        "cleopatra"
+      ]
+    },
+    {
+      "week": 10,
+      "theme": "Women, Power & Public Life",
+      "hook": "Power, the vote, and the long argument over public life.",
+      "cards": [
+        "simoneDeBeauvoir",
+        "gender",
+        "citizenship"
+      ]
+    },
+    {
+      "week": 11,
+      "theme": "Poetry, Language & the Written World",
+      "hook": "From the first alphabets to Shakespeare.",
+      "cards": [
+        "shakespeare",
+        "writing",
+        "iliad"
+      ]
+    },
+    {
+      "week": 12,
+      "theme": "Water, Weather & Civilizations",
+      "hook": "Civilizations rise and fall on water they can't control.",
+      "cards": [
+        "irrigation",
+        "monsoon",
+        "cholera"
+      ]
+    },
+    {
+      "week": 13,
+      "theme": "Spring, Renewal & Agricultural Worlds",
+      "hook": "Renewal, planting, and the worlds that feed us.",
+      "cards": [
+        "agriculturalRevolution",
+        "wheat",
+        "rice"
+      ]
+    },
+    {
+      "week": 14,
+      "theme": "Health, Disease & Public Knowledge",
+      "hook": "How humanity learned to see and fight invisible killers.",
+      "cards": [
+        "publicHealth",
+        "germTheory",
+        "smallpox"
+      ]
+    },
+    {
+      "week": 15,
+      "theme": "Space, Science & Human Reach",
+      "hook": "The reach for the stars, and the machines that got us there.",
+      "cards": [
+        "einstein",
+        "computing",
+        "coldWar"
+      ]
+    },
+    {
+      "week": 16,
+      "theme": "Earth, Extraction & Consequence",
+      "hook": "The fuels that powered modern life — and the bill now due.",
+      "cards": [
+        "coal",
+        "oil",
+        "climateChange"
+      ]
+    },
+    {
+      "week": 17,
+      "theme": "Books, Libraries & the Memory Machine",
+      "hook": "The institutions that remember so we don't have to.",
+      "cards": [
+        "theLibrary",
+        "printingPress",
+        "alexandria"
+      ]
+    },
+    {
+      "week": 18,
+      "theme": "Labor, Class & the Working World",
+      "hook": "Who works, who profits, and the long fight over both.",
+      "cards": [
+        "marx",
+        "capitalism",
+        "industrialRevolution"
+      ]
+    },
+    {
+      "week": 19,
+      "theme": "Motherhood, Family & Social Order",
+      "hook": "Kinship, inheritance, and the oldest social order.",
+      "cards": [
+        "gender",
+        "property",
+        "socialClass"
+      ]
+    },
+    {
+      "week": 20,
+      "theme": "Empire at Sea",
+      "hook": "Empires that ruled by mastering the sea.",
+      "cards": [
+        "navigation",
+        "britishEmpire",
+        "indianOceanTrade"
+      ]
+    },
+    {
+      "week": 21,
+      "theme": "War, Memory & the Dead",
+      "hook": "War, the dead, and how we choose to remember them.",
+      "cards": [
+        "firstWorldWar",
+        "nationalism",
+        "worldWarII"
+      ]
+    },
+    {
+      "week": 22,
+      "theme": "Environment & the Human Future",
+      "hook": "The systems we depend on, and the future we're spending.",
+      "cards": [
+        "climateChange",
+        "theForest",
+        "coal"
+      ]
+    },
+    {
+      "week": 23,
+      "theme": "Oceans, Trade & Connected Worlds",
+      "hook": "Oceans as the highways of connected worlds.",
+      "cards": [
+        "indianOceanTrade",
+        "maps",
+        "silkRoad"
+      ]
+    },
+    {
+      "week": 24,
+      "theme": "Law, Rights & Constraint on Power",
+      "hook": "The slow invention of limits on power.",
+      "cards": [
+        "locke",
+        "law",
+        "constitution"
+      ]
+    },
+    {
+      "week": 25,
+      "theme": "Freedom Delayed",
+      "hook": "Some freedoms are declared long before they're delivered.",
+      "cards": [
+        "harrietTubman",
+        "slavery",
+        "abolitionMovement"
+      ]
+    },
+    {
+      "week": 26,
+      "theme": "Revolutions in the Atlantic World",
+      "hook": "When the Atlantic world remade government by force.",
+      "cards": [
+        "americanRevolution",
+        "revolution",
+        "haitianRevolution"
+      ]
+    },
+    {
+      "week": 27,
+      "theme": "Independence & Its Contradictions",
+      "hook": "A republic founded on liberty — and on slavery.",
+      "cards": [
+        "thomasJefferson",
+        "slavery",
+        "americanRevolution"
+      ]
+    },
+    {
+      "week": 28,
+      "theme": "Revolution Becomes Government",
+      "hook": "How revolution hardens into a new state.",
+      "cards": [
+        "napoleon",
+        "frenchRevolution",
+        "theState"
+      ]
+    },
+    {
+      "week": 29,
+      "theme": "Moon, Machines & Modern Wonder",
+      "hook": "The Moon, the machine, and the modern sense of wonder.",
+      "cards": [
+        "alanTuring",
+        "computing",
+        "coldWar"
+      ]
+    },
+    {
+      "week": 30,
+      "theme": "Cities, Heat & Human Crowding",
+      "hook": "The systems that keep crowded cities alive.",
+      "cards": [
+        "theCity",
+        "sewers",
+        "electricity"
+      ]
+    },
+    {
+      "week": 31,
+      "theme": "The Nuclear Age",
+      "hook": "The weapon that changed what war could mean.",
+      "cards": [
+        "manhattanProject",
+        "nuclearDeterrence",
+        "hiroshimaNagasaki"
+      ]
+    },
+    {
+      "week": 32,
+      "theme": "Migration, Exile & Diaspora",
+      "hook": "Why people leave, and what they carry.",
+      "cards": [
+        "migration",
+        "diaspora",
+        "thePartition"
+      ]
+    },
+    {
+      "week": 33,
+      "theme": "Education, Learning & Transmission",
+      "hook": "How knowledge is preserved and passed on.",
+      "cards": [
+        "confucius",
+        "universities",
+        "scholasticism"
+      ]
+    },
+    {
+      "week": 34,
+      "theme": "Food, Harvest & Civilization",
+      "hook": "The harvest that made civilization possible — and fragile.",
+      "cards": [
+        "wheat",
+        "agriculturalRevolution",
+        "greatIrishFamine"
+      ]
+    },
+    {
+      "week": 35,
+      "theme": "Labor, Machines & Modern Life",
+      "hook": "Machines, factories, and the rhythm of modern work.",
+      "cards": [
+        "socialism",
+        "railways",
+        "industrialRevolution"
+      ]
+    },
+    {
+      "week": 36,
+      "theme": "Democracy Under Pressure",
+      "hook": "Democracy is never finished, and never safe.",
+      "cards": [
+        "democracy",
+        "authoritarianism",
+        "athenianDemocracy"
+      ]
+    },
+    {
+      "week": 37,
+      "theme": "Peace, War & Failed Settlements",
+      "hook": "The peace settlements that failed, and what tried to replace them.",
+      "cards": [
+        "internationalLaw",
+        "treatyOfVersailles",
+        "coldWar"
+      ]
+    },
+    {
+      "week": 38,
+      "theme": "Hispanic & Latin American Worlds",
+      "hook": "The civilizations and revolutions of the Latin world.",
+      "cards": [
+        "simonBolivar",
+        "aztecEmpire",
+        "mayaCivilization"
+      ]
+    },
+    {
+      "week": 39,
+      "theme": "Translation, Language & Cultural Contact",
+      "hook": "Ideas travel only as far as translation carries them.",
+      "cards": [
+        "ibnSina",
+        "translation",
+        "islamicGoldenAge"
+      ]
+    },
+    {
+      "week": 40,
+      "theme": "Nonviolence, Empire & Resistance",
+      "hook": "Resistance without violence, against empire.",
+      "cards": [
+        "mahatmaGandhi",
+        "nonviolence",
+        "indianIndependenceMovement"
+      ]
+    },
+    {
+      "week": 41,
+      "theme": "Indigenous Worlds & Contact",
+      "hook": "The worlds that existed before contact — and what it destroyed.",
+      "cards": [
+        "columbianExchange",
+        "incaEmpire",
+        "smallpox"
+      ]
+    },
+    {
+      "week": 42,
+      "theme": "Reformation, Heresy & Conscience",
+      "hook": "Conscience, heresy, and the splitting of Christendom.",
+      "cards": [
+        "protestantReformation",
+        "christianity",
+        "printingPress"
+      ]
+    },
+    {
+      "week": 43,
+      "theme": "Death, Memory & the Afterlife",
+      "hook": "How the living have always bargained with the dead.",
+      "cards": [
+        "ancientEgypt",
+        "monotheism",
+        "blackDeath"
+      ]
+    },
+    {
+      "week": 44,
+      "theme": "Native American & Indigenous Histories",
+      "hook": "Indigenous histories before and beyond colonization.",
+      "cards": [
+        "mayaCivilization",
+        "incaEmpire",
+        "columbianExchange"
+      ]
+    },
+    {
+      "week": 45,
+      "theme": "Veterans, Armistice & the Cost of War",
+      "hook": "The armistice, the veterans, and the true cost of war.",
+      "cards": [
+        "firstWorldWar",
+        "memoryCommemoration",
+        "treatyOfVersailles"
+      ]
+    },
+    {
+      "week": 46,
+      "theme": "Revolutions of Information",
+      "hook": "Every leap in how information moves remakes the world.",
+      "cards": [
+        "printingPress",
+        "internet",
+        "artificialIntelligence"
+      ]
+    },
+    {
+      "week": 47,
+      "theme": "Gratitude, Food & Mythmaking",
+      "hook": "Gratitude, harvest, and the myths a nation tells itself.",
+      "cards": [
+        "columbianExchange",
+        "agriculturalRevolution",
+        "colonialism"
+      ]
+    },
+    {
+      "week": 48,
+      "theme": "Rights, Law & Human Dignity",
+      "hook": "The hard-won idea that every person has dignity and rights.",
+      "cards": [
+        "johnRawls",
+        "humanRights",
+        "internationalLaw"
+      ]
+    },
+    {
+      "week": 49,
+      "theme": "Empires in Winter",
+      "hook": "Even the greatest empires meet their winter.",
+      "cards": [
+        "romanEmpire",
+        "byzantineEmpire",
+        "ottomanEmpire"
+      ]
+    },
+    {
+      "week": 50,
+      "theme": "Light, Darkness & Sacred Time",
+      "hook": "Light against darkness, and the festivals of sacred time.",
+      "cards": [
+        "monotheism",
+        "christianity",
+        "rabbinicJudaism"
+      ]
+    },
+    {
+      "week": 51,
+      "theme": "The Year Christianity Remembers",
+      "hook": "The historical world that produced Christianity.",
+      "cards": [
+        "augustineOfHippo",
+        "christianity",
+        "bible"
+      ]
+    },
+    {
+      "week": 52,
+      "theme": "Endings, Reckonings & What Comes Next",
+      "hook": "Where the forces that built the world are taking it next.",
+      "cards": [
+        "artificialIntelligence",
+        "climateChange",
+        "nuclearDeterrence"
+      ]
+    }
+  ],
+  "daily": [
+    {
+      "md": "01-01",
+      "label": "New Year's Day",
+      "dateLabel": "January 1",
+      "type": "celebration",
+      "entryId": "timekeeping",
+      "suppressIfTheme": [
+        "Beginnings, Calendars & Time"
+      ],
+      "salutation": "Happy New Year!"
+    },
+    {
+      "md": "01-27",
+      "label": "International Holocaust Remembrance Day",
+      "dateLabel": "January 27",
+      "type": "observance",
+      "entryId": "theHolocaust",
+      "suppressIfTheme": [
+        "Memory, Genocide & Fragility"
+      ]
+    },
+    {
+      "md": "02-11",
+      "label": "Nelson Mandela is released from prison",
+      "dateLabel": "February 11",
+      "type": "anniversary",
+      "entryId": "nelsonMandela",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "02-12",
+      "label": "Charles Darwin is born",
+      "dateLabel": "February 12",
+      "type": "anniversary",
+      "entryId": "darwin",
+      "suppressIfTheme": [
+        "Revolutions of Thought"
+      ]
+    },
+    {
+      "md": "02-21",
+      "label": "International Mother Language Day",
+      "dateLabel": "February 21",
+      "type": "observance",
+      "entryId": "language",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "03-08",
+      "label": "International Women's Day",
+      "dateLabel": "March 8",
+      "type": "observance",
+      "entryId": "feminism",
+      "suppressIfTheme": [
+        "Women Who Changed the Terms",
+        "Women, Power & Public Life"
+      ],
+      "salutation": "Happy International Women's Day!"
+    },
+    {
+      "md": "03-12",
+      "label": "Gandhi begins the Salt March",
+      "dateLabel": "March 12",
+      "type": "anniversary",
+      "entryId": "indianIndependenceMovement",
+      "suppressIfTheme": [
+        "Nonviolence, Empire & Resistance"
+      ]
+    },
+    {
+      "md": "03-21",
+      "label": "Nowruz",
+      "dateLabel": "March 21",
+      "type": "celebration",
+      "entryId": "timekeeping",
+      "suppressIfTheme": [],
+      "salutation": "Nowruz Mubarak!",
+      "build": "Nowruz"
+    },
+    {
+      "md": "03-22",
+      "label": "World Water Day",
+      "dateLabel": "March 22",
+      "type": "observance",
+      "entryId": "irrigation",
+      "suppressIfTheme": [
+        "Water, Weather & Civilizations"
+      ]
+    },
+    {
+      "md": "04-12",
+      "label": "Yuri Gagarin becomes the first human in space",
+      "dateLabel": "April 12",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "The Space Race"
+    },
+    {
+      "md": "04-23",
+      "label": "Shakespeare dies / World Book Day",
+      "dateLabel": "April 23",
+      "type": "observance",
+      "entryId": "shakespeare",
+      "suppressIfTheme": [
+        "Poetry, Language & the Written World"
+      ]
+    },
+    {
+      "md": "04-25",
+      "label": "The DNA double-helix papers are published",
+      "dateLabel": "April 25",
+      "type": "anniversary",
+      "entryId": "dna",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "04-26",
+      "label": "The Chernobyl disaster",
+      "dateLabel": "April 26",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "The Chernobyl Disaster"
+    },
+    {
+      "md": "05-01",
+      "label": "International Workers' Day",
+      "dateLabel": "May 1",
+      "type": "observance",
+      "entryId": "socialism",
+      "suppressIfTheme": [
+        "Labor, Class & the Working World"
+      ]
+    },
+    {
+      "md": "05-25",
+      "label": "Africa Day",
+      "dateLabel": "May 25",
+      "type": "observance",
+      "entryId": "decolonization",
+      "suppressIfTheme": [],
+      "salutation": "Happy Africa Day!"
+    },
+    {
+      "md": "05-29",
+      "label": "Constantinople falls to the Ottomans",
+      "dateLabel": "May 29",
+      "type": "anniversary",
+      "entryId": "constantinople",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "06-04",
+      "label": "The Tiananmen Square crackdown",
+      "dateLabel": "June 4",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "Tiananmen Square Protests"
+    },
+    {
+      "md": "06-05",
+      "label": "World Environment Day",
+      "dateLabel": "June 5",
+      "type": "observance",
+      "entryId": "climateChange",
+      "suppressIfTheme": [
+        "Environment & the Human Future"
+      ]
+    },
+    {
+      "md": "06-06",
+      "label": "The D-Day landings",
+      "dateLabel": "June 6",
+      "type": "anniversary",
+      "entryId": "worldWarII",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "06-12",
+      "label": "Anne Frank is born",
+      "dateLabel": "June 12",
+      "type": "anniversary",
+      "entryId": "theHolocaust",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "06-16",
+      "label": "Soweto Uprising / Day of the African Child",
+      "dateLabel": "June 16",
+      "type": "observance",
+      "entryId": "apartheid",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "06-26",
+      "label": "The UN Charter is signed",
+      "dateLabel": "June 26",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "The United Nations"
+    },
+    {
+      "md": "07-14",
+      "label": "Bastille Day",
+      "dateLabel": "July 14",
+      "type": "national",
+      "entryId": "frenchRevolution",
+      "suppressIfTheme": [
+        "Revolution Becomes Government"
+      ],
+      "salutation": "Happy Bastille Day!"
+    },
+    {
+      "md": "07-20",
+      "label": "Apollo 11 lands on the Moon",
+      "dateLabel": "July 20",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [
+        "Moon, Machines & Modern Wonder"
+      ],
+      "build": "The Space Race"
+    },
+    {
+      "md": "07-24",
+      "label": "Simón Bolívar is born",
+      "dateLabel": "July 24",
+      "type": "anniversary",
+      "entryId": "simonBolivar",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "07-28",
+      "label": "The First World War begins",
+      "dateLabel": "July 28",
+      "type": "anniversary",
+      "entryId": "firstWorldWar",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "08-06",
+      "label": "The atomic bombing of Hiroshima",
+      "dateLabel": "August 6",
+      "type": "anniversary",
+      "entryId": "hiroshimaNagasaki",
+      "suppressIfTheme": [
+        "The Nuclear Age"
+      ]
+    },
+    {
+      "md": "08-09",
+      "label": "International Day of the World's Indigenous Peoples",
+      "dateLabel": "August 9",
+      "type": "observance",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "Indigenous Peoples"
+    },
+    {
+      "md": "08-15",
+      "label": "India's Independence Day",
+      "dateLabel": "August 15",
+      "type": "national",
+      "entryId": "indianIndependenceMovement",
+      "suppressIfTheme": [],
+      "salutation": "Happy Independence Day, India!"
+    },
+    {
+      "md": "08-23",
+      "label": "Int'l Day for Remembrance of the Slave Trade",
+      "dateLabel": "August 23",
+      "type": "observance",
+      "entryId": "slaveTrade",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "09-01",
+      "label": "Germany invades Poland",
+      "dateLabel": "September 1",
+      "type": "anniversary",
+      "entryId": "worldWarII",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "09-11",
+      "label": "The September 11 attacks",
+      "dateLabel": "September 11",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "The September 11 Attacks"
+    },
+    {
+      "md": "09-15",
+      "label": "International Day of Democracy",
+      "dateLabel": "September 15",
+      "type": "observance",
+      "entryId": "democracy",
+      "suppressIfTheme": [
+        "Democracy Under Pressure"
+      ]
+    },
+    {
+      "md": "09-21",
+      "label": "International Day of Peace",
+      "dateLabel": "September 21",
+      "type": "observance",
+      "entryId": "nonviolence",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "09-30",
+      "label": "International Translation Day",
+      "dateLabel": "September 30",
+      "type": "observance",
+      "entryId": "translation",
+      "suppressIfTheme": [
+        "Translation, Language & Cultural Contact"
+      ]
+    },
+    {
+      "md": "10-01",
+      "label": "The People's Republic of China is founded",
+      "dateLabel": "October 1",
+      "type": "national",
+      "entryId": "maoZedong",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "10-02",
+      "label": "Gandhi is born / Int'l Day of Non-Violence",
+      "dateLabel": "October 2",
+      "type": "observance",
+      "entryId": "nonviolence",
+      "suppressIfTheme": [
+        "Nonviolence, Empire & Resistance"
+      ]
+    },
+    {
+      "md": "10-16",
+      "label": "World Food Day",
+      "dateLabel": "October 16",
+      "type": "observance",
+      "entryId": "agriculturalRevolution",
+      "suppressIfTheme": [
+        "Food, Harvest & Civilization"
+      ]
+    },
+    {
+      "md": "10-24",
+      "label": "United Nations Day",
+      "dateLabel": "October 24",
+      "type": "observance",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "The United Nations"
+    },
+    {
+      "md": "10-29",
+      "label": "The Stock Market Crash of 1929",
+      "dateLabel": "October 29",
+      "type": "anniversary",
+      "entryId": "greatDepression",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "10-31",
+      "label": "Reformation Day",
+      "dateLabel": "October 31",
+      "type": "anniversary",
+      "entryId": "protestantReformation",
+      "suppressIfTheme": [
+        "Reformation, Heresy & Conscience"
+      ]
+    },
+    {
+      "md": "11-09",
+      "label": "The Berlin Wall falls",
+      "dateLabel": "November 9",
+      "type": "anniversary",
+      "entryId": "fallOfTheBerlinWall",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "11-11",
+      "label": "Armistice Day / Remembrance Day",
+      "dateLabel": "November 11",
+      "type": "observance",
+      "entryId": "firstWorldWar",
+      "suppressIfTheme": [
+        "Veterans, Armistice & the Cost of War"
+      ]
+    },
+    {
+      "md": "11-24",
+      "label": "On the Origin of Species is published",
+      "dateLabel": "November 24",
+      "type": "anniversary",
+      "entryId": "originOfSpecies",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "12-01",
+      "label": "World AIDS Day",
+      "dateLabel": "December 1",
+      "type": "observance",
+      "entryId": "publicHealth",
+      "suppressIfTheme": []
+    },
+    {
+      "md": "12-10",
+      "label": "Human Rights Day",
+      "dateLabel": "December 10",
+      "type": "observance",
+      "entryId": "humanRights",
+      "suppressIfTheme": [
+        "Rights, Law & Human Dignity"
+      ]
+    },
+    {
+      "md": "12-17",
+      "label": "The Wright brothers' first powered flight",
+      "dateLabel": "December 17",
+      "type": "anniversary",
+      "entryId": null,
+      "suppressIfTheme": [],
+      "build": "Aviation"
+    },
+    {
+      "md": "12-25",
+      "label": "Christmas",
+      "dateLabel": "December 25",
+      "type": "celebration",
+      "entryId": "christianity",
+      "suppressIfTheme": [
+        "The Year Christianity Remembers"
+      ],
+      "salutation": "Merry Christmas!"
+    },
+    {
+      "md": "12-31",
+      "label": "New Year's Eve",
+      "dateLabel": "December 31",
+      "type": "celebration",
+      "entryId": "timekeeping",
+      "suppressIfTheme": [],
+      "salutation": "Happy New Year's Eve!"
+    }
+  ],
+  "floating": {}
+}
