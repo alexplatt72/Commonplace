@@ -539,18 +539,24 @@ const AFFILIATES = { amazonTag: '', bookshopId: '' };
 const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
 const isBookLike = (type) => /^(book|novel)$/i.test(type || '');
 
-// Resolve a "find it" link. Uses ISBN when present; otherwise title+author search,
-// so every book resolves somewhere.
+// Resolve a "find it" link.
+// WorldCat resolves ISBNs reliably to the right library record. Bookshop and Amazon
+// do NOT (Bookshop's search misses ISBN-13/EAN; Amazon keys products to ISBN-10/ASIN),
+// so they search by title+author — which also stays correct when an ISBN is missing or
+// wrong. An affiliate Bookshop link uses the official ISBN resolver once configured.
 function resolveCommerceLink(item, provider) {
   const isbn = cleanISBN(item.isbn);
-  const q = encodeURIComponent(isbn || [item.title, item.author].filter(Boolean).join(' '));
-  if (provider === 'worldcat') return `https://search.worldcat.org/search?q=${q}`;
+  const titleAuthor = [item.title, item.author].filter(Boolean).join(' ');
+  const ta = encodeURIComponent(titleAuthor);
+  if (provider === 'worldcat') {
+    return `https://search.worldcat.org/search?q=${encodeURIComponent(isbn || titleAuthor)}`;
+  }
   if (provider === 'bookshop') {
     return (AFFILIATES.bookshopId && isbn)
       ? `https://bookshop.org/a/${AFFILIATES.bookshopId}/${isbn}`
-      : `https://bookshop.org/search?keywords=${q}`;
+      : `https://bookshop.org/search?keywords=${ta}`;
   }
-  const base = `https://www.amazon.com/s?k=${q}&i=stripbooks`;
+  const base = `https://www.amazon.com/s?k=${ta}&i=stripbooks`;
   return AFFILIATES.amazonTag ? `${base}&tag=${AFFILIATES.amazonTag}` : base;
 }
 
