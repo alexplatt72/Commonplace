@@ -2310,6 +2310,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
 export default function CommonplaceApp() {
   const initialRoute = parseHash(typeof window !== 'undefined' ? window.location.hash : '');
   const isMobile = useIsMobile();
+  const compactHeader = useIsMobile(880); // tablet: hide the wordmark text so the search keeps room
   const [manifestLoaded, setManifestLoaded] = React.useState(false);
   const [view, setView] = React.useState(initialRoute.view || 'home'); // 'home' | 'template' | 'search' | 'entry' | 'tours' | 'pathways' | 'browse'
   const [activeTemplate, setActiveTemplate] = React.useState(initialRoute.template || null);
@@ -2497,7 +2498,7 @@ export default function CommonplaceApp() {
             <img src="/tcp_logo_transparent.webp" alt=""
               style={{ height:28, width:"auto", objectFit:"contain" }} />
             <span style={{ fontFamily:"'DM Serif Display',serif", fontSize:18, color:"#f6f3ec",
-              letterSpacing:"0.01em", whiteSpace:"nowrap", display: isMobile ? "none" : "inline" }}>TheCommonPlace</span>
+              letterSpacing:"0.01em", whiteSpace:"nowrap", display: compactHeader ? "none" : "inline" }}>TheCommonPlace</span>
           </button>
 
           {/* Search — fuzzy, always visible */}
@@ -2512,7 +2513,7 @@ export default function CommonplaceApp() {
                 onBlur={() => setTimeout(() => setAcOpen(false), 150)}
                 placeholder={`Search ${MANIFEST.length} entries…`}
                 className="hdr-search"
-                style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
+                style={{ flex:1, minWidth:0, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
                   color:"#f4f1e8", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.18)",
                   borderRadius:4, outline:"none" }} />
               <button type="submit" aria-label="Submit search"
