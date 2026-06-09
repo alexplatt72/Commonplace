@@ -2,40 +2,156 @@
   {
     "id": "capitalism",
     "title": "How did capitalism happen?",
-    "description": "Six entries that trace the path from the first ledger to the modern economy.",
+    "description": "Six entries that trace the machine from the first ledger to its sharpest critic.",
     "entries": [
-      { "entryId": "debt",               "note": "Start here. Debt is older than money — the ledger came before the coin." },
-      { "entryId": "money",              "note": "Money was invented to settle debts, not to enable trade." },
-      { "entryId": "theMarket",          "note": "How the logic of exchange became the organizing principle of civilization." },
-      { "entryId": "industrialRevolution","note": "The moment capital began consuming labor at scale." },
-      { "entryId": "marx",               "note": "The man who read capitalism most carefully and predicted its end." },
-      { "entryId": "capitalism",         "note": "The system that emerged from all of the above — and what it actually is." }
+      {
+        "entryId": "debt",
+        "note": "Start here. Debt is older than money — the ledger came before the coin."
+      },
+      {
+        "entryId": "money",
+        "note": "Money was invented to settle debts, not to enable trade."
+      },
+      {
+        "entryId": "theMarket",
+        "note": "How the logic of exchange became the organizing principle of civilization."
+      },
+      {
+        "entryId": "property",
+        "note": "Before there was capital there was the radical idea that a thing — an acre, a tool, a person — could be owned, and the owning enforced by law."
+      },
+      {
+        "entryId": "wealthOfNations",
+        "note": "Adam Smith's attempt to explain why the whole machine produces wealth without anyone intending it to."
+      },
+      {
+        "entryId": "marx",
+        "note": "The man who read capitalism most carefully — and predicted its end."
+      }
     ]
   },
   {
     "id": "democracy",
     "title": "How democracy was built",
-    "description": "Six entries across 2,500 years — from the first assembly to the modern constitution.",
+    "description": "Six entries across 2,500 years — from the first assembly to the framework meant to keep it.",
     "entries": [
-      { "entryId": "athenianDemocracy",  "note": "The first experiment. More radical than anything that followed." },
-      { "entryId": "romanRepublic",      "note": "How Athens became Rome — and what was lost in translation." },
-      { "entryId": "enlightenment",      "note": "The ideas that made modern democracy thinkable." },
-      { "entryId": "frenchRevolution",   "note": "The moment those ideas met reality — violently." },
-      { "entryId": "democracy",          "note": "What the concept actually means, and why it's still contested." },
-      { "entryId": "constitution",       "note": "The technology that tries to make democracy permanent." }
+      {
+        "entryId": "athenianDemocracy",
+        "note": "The first experiment. More radical than anything that followed."
+      },
+      {
+        "entryId": "romanRepublic",
+        "note": "How Athens became Rome — and what was lost in translation."
+      },
+      {
+        "entryId": "enlightenment",
+        "note": "The ideas that made modern democracy thinkable."
+      },
+      {
+        "entryId": "frenchRevolution",
+        "note": "The moment those ideas met reality — violently."
+      },
+      {
+        "entryId": "democracy",
+        "note": "What the concept actually means, and why it's still contested."
+      },
+      {
+        "entryId": "liberalism",
+        "note": "The framework built to make democracy survivable: rights that limit the majority, and the rule of law that limits the state."
+      }
     ]
   },
   {
     "id": "disease",
     "title": "How disease shaped civilization",
-    "description": "Six entries on the organisms and epidemics that redirected human history.",
+    "description": "Six entries on the organisms and epidemics that redirected human history — and how we fought back.",
     "entries": [
-      { "entryId": "mosquitoes",         "note": "The insect that shaped where civilization could and couldn't go." },
-      { "entryId": "smallpox",           "note": "The disease that made European conquest of the Americas possible." },
-      { "entryId": "blackDeath",         "note": "The plague that killed a third of Europe and ended the medieval world." },
-      { "entryId": "cholera",            "note": "The epidemic that invented epidemiology and the modern city." },
-      { "entryId": "germTheory",         "note": "The idea that changed everything — and took decades to be believed." },
-      { "entryId": "publicHealth",       "note": "What civilization built once it understood what was killing it." }
+      {
+        "entryId": "mosquitoes",
+        "note": "The insect that shaped where civilization could and couldn't go."
+      },
+      {
+        "entryId": "smallpox",
+        "note": "The disease that made European conquest of the Americas possible."
+      },
+      {
+        "entryId": "cholera",
+        "note": "The epidemic that invented epidemiology and the modern city."
+      },
+      {
+        "entryId": "germTheory",
+        "note": "The idea that changed everything — and took decades to be believed."
+      },
+      {
+        "entryId": "vaccines",
+        "note": "The first technology that let humanity delete a disease — and the long fight over trust that came with it."
+      },
+      {
+        "entryId": "publicHealth",
+        "note": "What civilization built once it understood what was killing it."
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "title": "How science remade what is real",
+    "description": "Six entries on how a new instrument, and a new method, dismantled the universe people thought they lived in.",
+    "entries": [
+      {
+        "entryId": "galileo",
+        "note": "Start here. Point a new instrument at the sky and the Earth stops being the center of anything."
+      },
+      {
+        "entryId": "scientificRevolution",
+        "note": "The century that replaced authority with experiment as the test of what is true."
+      },
+      {
+        "entryId": "newton",
+        "note": "One set of equations for the apple and the planets — the universe revealed as a single clockwork."
+      },
+      {
+        "entryId": "darwin",
+        "note": "The same method turned on life itself: no design, only descent — and humanity demoted to an animal among animals."
+      },
+      {
+        "entryId": "einstein",
+        "note": "Space and time, the last fixed things, turn out to bend. Newton's clockwork was only an approximation."
+      },
+      {
+        "entryId": "quantumMechanics",
+        "note": "At the smallest scale, certainty itself dissolves — science's greatest triumph is also the end of the clockwork dream."
+      }
+    ]
+  },
+  {
+    "id": "empire",
+    "title": "How empires rise and fall",
+    "description": "Six entries on the oldest machine in politics — ruling people who never agreed to be ruled — and how it comes apart.",
+    "entries": [
+      {
+        "entryId": "empire",
+        "note": "Start here. What an empire actually is, and why nearly every large society has been one."
+      },
+      {
+        "entryId": "romanEmpire",
+        "note": "The template every later empire measured itself against — and the cautionary tale of how they end."
+      },
+      {
+        "entryId": "mongolEmpire",
+        "note": "The largest land empire ever assembled, by the people the settled world dismissed as barbarians."
+      },
+      {
+        "entryId": "britishEmpire",
+        "note": "The first truly global empire — run by a trading company, justified by free trade, built on conquest."
+      },
+      {
+        "entryId": "imperialism",
+        "note": "The moment empire stopped apologizing and became an ideology: a duty, a science, a destiny."
+      },
+      {
+        "entryId": "decolonization",
+        "note": "How a third of humanity walked out of empire in a single generation — and what the maps still hide."
+      }
     ]
   }
 ]
