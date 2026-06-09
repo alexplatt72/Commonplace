@@ -28,7 +28,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-05-30"
   },
   {
@@ -165,7 +165,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -181,7 +181,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -912,7 +912,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 26,
+    "degree": 27,
     "added": "2026-05-30"
   },
   {
@@ -1056,7 +1056,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 6,
+    "degree": 8,
     "added": "2026-05-31"
   },
   {
@@ -1137,7 +1137,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-05-30"
   },
   {
@@ -1210,7 +1210,7 @@
       "South Asia",
       "Europe"
     ],
-    "degree": 23,
+    "degree": 24,
     "added": "2026-05-30"
   },
   {
@@ -1929,7 +1929,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-02"
   },
   {
@@ -2488,7 +2488,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-05-30"
   },
   {
@@ -2673,7 +2673,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-05-31"
   },
   {
@@ -2827,7 +2827,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 17,
+    "degree": 18,
     "added": "2026-05-30"
   },
   {
@@ -2885,7 +2885,7 @@
       "Europe",
       "The Americas"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-05-31"
   },
   {
@@ -3015,7 +3015,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -3244,7 +3244,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-05-31"
   },
   {
@@ -3528,7 +3528,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-01"
   },
   {
@@ -3641,7 +3641,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-02"
   },
   {
@@ -4515,7 +4515,7 @@
       "Europe",
       "The Americas"
     ],
-    "degree": 20,
+    "degree": 21,
     "added": "2026-05-31"
   },
   {
@@ -4571,7 +4571,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-05-31"
   },
   {
@@ -5177,7 +5177,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-02"
   },
   {
@@ -5430,7 +5430,7 @@
       "Southeast Asia",
       "The Americas"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-05-30"
   },
   {
@@ -5634,5 +5634,54 @@
     ],
     "degree": 9,
     "added": "2026-05-30"
+  },
+  {
+    "id": "spaceRace",
+    "title": "The Space Race",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1955–1975",
+    "status": "published",
+    "summary": "The superpower competition in spaceflight between the United States and the Soviet Union from roughly 1955 to 1975 — beginning with Sputnik's shock in October 1957, cresting with Neil Armstrong's footstep on the Moon in July 1969, and closing with the Apollo–Soyuz handshake in 1975 — a contest that was simultaneously a proxy of nuclear rivalry, a propaganda battle over which system could master nature, and the founding moment of the technological-managerial state.",
+    "startYear": 1955,
+    "endYear": 1975,
+    "regions": [
+      "The Americas",
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-09"
+  },
+  {
+    "id": "georgeWashington",
+    "title": "George Washington",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1732–1799",
+    "status": "published",
+    "summary": "The Virginia planter and Continental Army commander who won American independence, presided over the Constitutional Convention, and served as the first President of the United States — and whose most consequential act was relinquishing power — resigning his commission in 1783 and declining to seek a third term before stepping down in 1797 — and thereby establishing that the republic's military commander and its chief executive would answer to law rather than to personal ambition.",
+    "startYear": 1732,
+    "endYear": 1799,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
+  },
+  {
+    "id": "magnaCarta",
+    "title": "Magna Carta",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1215 CE – present",
+    "status": "published",
+    "summary": "The 1215 charter wrested from King John by English barons at Runnymede — annulled within weeks but reissued repeatedly, and eventually read as the founding text of the principle that the ruler is bound by law. Magna Carta's actual clauses mostly addressed narrow feudal grievances; its civilizational significance lies in the later centuries that reimagined it as the foundation of due process, constitutional government, and the rule of law.",
+    "startYear": 1215,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
   }
 ]
