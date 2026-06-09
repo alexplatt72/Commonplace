@@ -788,10 +788,12 @@ function EntryCard({ id, entry, onClick, compact, snippet }) {
   const accent = cfg.accent || '#555';
   return (
     <button onClick={() => onClick(id)}
+      onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 7px 18px rgba(0,0,0,0.11)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+      onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)"; e.currentTarget.style.transform = "none"; }}
       style={{ display:"block", width:"100%", textAlign:"left", padding: compact ? "14px 16px" : "18px 20px",
-        background:C.surface, border:`1px solid ${C.border}`, borderLeft:`3px solid ${accent}`,
-        borderRadius:6, cursor:"pointer", transition:"all 0.12s",
-        boxShadow:"0 1px 3px rgba(0,0,0,0.04)" }}>
+        background:C.warm, border:`1px solid ${C.border}`, borderLeft:`3px solid ${accent}`,
+        borderRadius:6, cursor:"pointer", transition:"box-shadow 0.15s, transform 0.15s",
+        boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
       <div style={{ display:"flex", alignItems:"center", gap:6, marginBottom: compact ? 4 : 6 }}>
         <span style={{ padding:"2px 7px", borderRadius:2, fontSize:9, fontFamily:"'JetBrains Mono',monospace",
           fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", color:"#fff", background:accent }}>
@@ -890,9 +892,12 @@ function FeaturedCard({ id, entry, onClick }) {
   const accent = cfg.accent || "#555";
   return (
     <button onClick={() => onClick(id)}
+      onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 7px 18px rgba(0,0,0,0.11)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+      onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)"; e.currentTarget.style.transform = "none"; }}
       style={{ display:"flex", flexDirection:"column", textAlign:"left", padding:0, overflow:"hidden",
-        background:C.surface, border:`1px solid ${C.border}`, borderTop:`3px solid ${accent}`,
-        borderRadius:8, cursor:"pointer", boxShadow:"0 1px 3px rgba(0,0,0,0.05)" }}>
+        background:C.warm, border:`1px solid ${C.border}`, borderTop:`3px solid ${accent}`,
+        borderRadius:8, cursor:"pointer", boxShadow:"0 2px 8px rgba(0,0,0,0.06)",
+        transition:"box-shadow 0.15s, transform 0.15s" }}>
       <div style={{ width:"100%", aspectRatio:"3 / 1",
         background:`linear-gradient(135deg, ${accent}26, ${accent}0a)`, borderBottom:`1px solid ${C.border}` }}>
         <img src={categoryImage(entry.template)} alt=""
@@ -972,8 +977,8 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 
       {/* Reading levels */}
       <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center",
-        gap:"10px 18px", background:C.surface, border:`1px solid ${C.border}`, borderRadius:10,
-        padding:"16px 22px", marginBottom:48 }}>
+        gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
+        padding:"16px 22px", marginBottom:48, boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
         <span style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
           Every entry has <strong style={{ fontWeight:600 }}>four reading levels</strong>
         </span>
@@ -1014,11 +1019,12 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
             return (
               <button key={name} onClick={() => onTemplate(name)}
                 aria-label={`Browse ${name} — ${count} entries`}
-                style={{ display:"flex", gap:14, padding:"18px 18px", background:C.surface,
+                style={{ display:"flex", gap:14, padding:"18px 18px", background:C.warm,
                   border:`1px solid ${C.border}`, borderTop:`3px solid ${cfg.accent}`, borderRadius:8,
-                  cursor:"pointer", textAlign:"left", transition:"all 0.12s" }}
-                onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 3px 10px rgba(0,0,0,0.07)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
-                onMouseLeave={e => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}>
+                  cursor:"pointer", textAlign:"left", transition:"box-shadow 0.15s, transform 0.15s",
+                  boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 7px 18px rgba(0,0,0,0.11)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)"; e.currentTarget.style.transform = "none"; }}>
                 <span style={{ flexShrink:0, width:42, height:42, borderRadius:"50%",
                   display:"flex", alignItems:"center", justifyContent:"center", background:`${cfg.accent}14` }}>
                   <CatIcon name={name} color={cfg.accent} size={21} />
@@ -1778,7 +1784,7 @@ export default function CommonplaceApp() {
                 onBlur={() => setTimeout(() => setAcOpen(false), 150)}
                 placeholder={`Search ${MANIFEST.length} entries…`}
                 style={{ flex:1, padding:"7px 12px", fontFamily:"'Lora',serif", fontSize:13,
-                  color:"#f8f8f0", background:"rgba(255,255,255,0.08)", border:"1px solid rgba(255,255,255,0.15)",
+                  color:"#1c1917", background:"rgba(243,239,231,0.93)", border:"1px solid rgba(255,255,255,0.3)",
                   borderRadius:4, outline:"none" }} />
               <button type="submit" aria-label="Submit search"
                 style={{ padding:"7px 12px", background:"rgba(255,255,255,0.12)", color:"#cbd5e1",
