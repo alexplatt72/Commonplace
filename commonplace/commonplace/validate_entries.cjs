@@ -113,6 +113,44 @@ function wordCount(text) {
   return (text || '').trim().split(/\s+/).filter(w => w.length > 0).length;
 }
 
+/**
+ * Count syllables in a word (English approximation).
+ * Handles common patterns: silent e, vowel runs, -ed, -es, -le endings.
+ */
+function syllableCount(word) {
+  word = word.toLowerCase().replace(/[^a-z]/g, '');
+  if (!word.length) return 0;
+  if (word.length <= 3) return 1;
+  // Remove trailing silent e (not after vowel, not -le)
+  word = word.replace(/(?<=[^aeiou])e$/, '');
+  // Count vowel groups
+  const vowelGroups = word.match(/[aeiouy]+/g);
+  let count = vowelGroups ? vowelGroups.length : 1;
+  // Subtract for common silent patterns
+  if (word.endsWith('ed') && !word.match(/[td]ed$/)) count--;
+  if (word.endsWith('es') && !word.match(/[sxz]es$|[cs]hes$/)) count--;
+  // -le at end counts as a syllable if preceded by consonant
+  if (word.match(/[^aeiou]le$/)) count++;
+  return Math.max(1, count);
+}
+
+/**
+ * Flesch-Kincaid Grade Level for a block of text.
+ * FK-GL = 0.39 × (words/sentences) + 11.8 × (syllables/words) − 15.59
+ * Returns grade level (e.g. 8.2 = 8th grade).
+ */
+function fleschKincaidGradeLevel(text) {
+  if (!text || text.trim().length === 0) return 0;
+  const sents = splitSentences(text);
+  const words = text.trim().split(/\s+/).filter(w => w.length > 0);
+  if (!sents.length || !words.length) return 0;
+  const totalSyllables = words.reduce((sum, w) => sum + syllableCount(w), 0);
+  const asl = words.length / sents.length;         // avg sentence length
+  const asw = totalSyllables / words.length;        // avg syllables per word
+  const grade = (0.39 * asl) + (11.8 * asw) - 15.59;
+  return Math.max(0, grade);
+}
+
 /** Compute word-level bigram Jaccard similarity between two texts. */
 function similarity(textA, textB) {
   if (!textA || !textB) return 0;
@@ -322,18 +360,29 @@ for (const fname of filesToProcess) {
     }
   }
 
-  // ── 3. BEGINNER LAYER QUALITY ─────────────────────────────────────────────
+  // ── 3. LAYER REGISTER QUALITY (Flesch-Kincaid Grade Level) ───────────────
+  //
+  // FK grade level enforces actual reading difficulty per layer.
+  // Replaces blunt sentence-length and word-count checks that failed to
+  // catch Advanced-register prose in Beginner/General slots.
+  //
+  // Limits:
+  //   Beginner  — FK ≤ 8.0  (grade 8, readable by a confident 12-year-old)
+  //   General   — FK ≤ 12.0 (grade 12, readable by a high-school senior)
+  //   Advanced  — FK ≥ 10.0 (warn if suspiciously thin / low complexity)
+  //
+  // Word count floor: Beginner must be ≥ 400 words (still enforced).
+  // Word count ceiling: Beginner must be ≤ 1000 words (still enforced).
 
-  const beginnerStats = { avg: 0, max: 0, totalWords: 0, maxSent: '', sectionWords: {} };
+  const beginnerStats = { avg: 0, max: 0, totalWords: 0, maxSent: '', sectionWords: {}, fkGrade: 0 };
 
   if (content.beginner && sectionKeys) {
     const beginnerSections = sectionKeys.map(k => content.beginner[k] || '');
 
-    // Per-section word count (tracked for stats, no hard limit)
+    // Per-section word count (tracked for stats)
     for (const k of sectionKeys) {
       const secText = content.beginner[k] || '';
-      const secWc = wordCount(secText);
-      beginnerStats.sectionWords[k] = secWc;
+      beginnerStats.sectionWords[k] = wordCount(secText);
     }
 
     const allBeginnerText = beginnerSections.join(' ');
@@ -341,27 +390,53 @@ for (const fname of filesToProcess) {
     const max = maxSentenceLength(allBeginnerText);
     const totalWc = wordCount(allBeginnerText);
     const longest = longestSentence(allBeginnerText);
+    const fkBeginner = fleschKincaidGradeLevel(allBeginnerText);
 
     beginnerStats.avg = avg;
     beginnerStats.max = max;
     beginnerStats.totalWords = totalWc;
     beginnerStats.maxSent = longest;
+    beginnerStats.fkGrade = fkBeginner;
 
-    // 3.2 Average sentence length > 18 = FAIL
-    if (avg > 18)
-      fails.push(`Beginner avg sentence length ${avg.toFixed(1)} words — hard limit is 18`);
+    // 3.1 FK grade level > 8 = FAIL (register too high for target reader)
+    if (fkBeginner > 8.0)
+      fails.push(`Beginner FK grade level ${fkBeginner.toFixed(1)} — hard limit is 8.0 (grade 8). Layer is written above beginner register. Rewrite from scratch.`);
 
-    // 3.3 Any sentence > 35 words = FAIL
+    // 3.1b FK grade level < 4 = FAIL (too telegraphic / condescending)
+    else if (fkBeginner < 4.0)
+      fails.push(`Beginner FK grade level ${fkBeginner.toFixed(1)} — floor is 4.0. Layer is too simplified or telegraphic. Expand sentences to proper beginner register.`);
+
+    // 3.2 Word count floor
+    if (totalWc < 400)
+      warnings.push(`Beginner total word count ${totalWc} is low (target 400–1000)`);
+
+    // 3.3 Word count ceiling
+    if (totalWc > 1000)
+      fails.push(`Beginner total word count ${totalWc} — hard limit is 1000`);
+
+    // 3.4 Any single sentence > 35 words = FAIL (catches runaway sentences FK may miss)
     if (max > 35)
       fails.push(`Beginner has sentence >35 words (max: ${max}) — "${longest.substring(0,80)}..."`);
+  }
 
-    // 3.4 Total word count > 700 = FAIL
-    if (totalWc > 700)
-      fails.push(`Beginner total word count ${totalWc} — hard limit is 700`);
+  // General layer FK check
+  if (content.general && sectionKeys) {
+    const allGeneralText = sectionKeys.map(k => content.general[k] || '').join(' ');
+    const fkGeneral = fleschKincaidGradeLevel(allGeneralText);
+    if (fkGeneral > 11.0)
+      fails.push(`General FK grade level ${fkGeneral.toFixed(1)} — hard limit is 11.0 (grade 11). Layer drifts toward Educational/Advanced register. Pull back to a serious-magazine general reader level.`);
+    else if (fkGeneral < 9.0)
+      fails.push(`General FK grade level ${fkGeneral.toFixed(1)} — floor is 9.0. Layer is too simplified for a general adult reader. Raise register to serious magazine level.`);
+    else if (fkGeneral > 10.5)
+      warnings.push(`General FK grade level ${fkGeneral.toFixed(1)} — approaching the 11.0 ceiling (warn above 10.5)`);
+  }
 
-    // 3.5 Total word count < 400 = WARNING
-    if (totalWc < 400)
-      warnings.push(`Beginner total word count ${totalWc} is low (target 400–700)`);
+  // Advanced layer FK check — warn if suspiciously easy (likely collapsed into General)
+  if (content.advanced && sectionKeys) {
+    const allAdvancedText = sectionKeys.map(k => content.advanced[k] || '').join(' ');
+    const fkAdvanced = fleschKincaidGradeLevel(allAdvancedText);
+    if (fkAdvanced < 10.0)
+      fails.push(`Advanced FK grade level ${fkAdvanced.toFixed(1)} — floor is 10.0. Layer is not written at Advanced register. Rewrite to scholarly near-peer level.`);
   }
 
   // ── 4. LAYER COLLAPSE DETECTION ───────────────────────────────────────────
@@ -741,9 +816,10 @@ function layerStatsBlock(result) {
     }
   }
 
-  // Beginner sentence stats
+  // Beginner stats with FK grade
   if (beginner.totalWords > 0) {
-    lines.push(`    Beginner     — ${beginner.totalWords} words  avg: ${beginner.avg.toFixed(1)}w/sent  max: ${beginner.max}w/sent`);
+    const fkFlag = beginner.fkGrade > 8.0 ? ' ✗ OVER LIMIT' : beginner.fkGrade > 7.0 ? ' ⚠ approaching limit' : '';
+    lines.push(`    Beginner     — ${beginner.totalWords} words  FK grade: ${beginner.fkGrade.toFixed(1)}${fkFlag}  max sent: ${beginner.max}w`);
   }
 
   return lines.join('\n');

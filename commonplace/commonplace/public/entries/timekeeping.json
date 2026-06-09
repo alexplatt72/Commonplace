@@ -309,5 +309,12 @@
       "title": "The Y2K crisis and the Unix timestamp",
       "description": "The Y2K crisis demonstrated how timekeeping choices embedded in software decades earlier could become global infrastructure vulnerabilities. Computer systems had stored years as two-digit numbers; an estimated $300–500 billion was spent worldwide on remediation. The Y2K38 problem — when 32-bit Unix timestamps will overflow in January 2038 — is the next scheduled instance of the same vulnerability. Time, in digital systems, is a number; and every number has limits."
     }
-  ]
+  ],
+  "startYear": -3000,
+  "endYear": 2026,
+  "regions": [
+    "Europe",
+    "North Africa & Middle East"
+  ],
+  "degree": 9
 }

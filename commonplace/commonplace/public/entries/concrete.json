@@ -235,30 +235,35 @@
     {
       "type": "Book",
       "title": "Concrete Planet",
+      "isbn": "9781616144821",
       "author": "Robert Courland",
       "note": "Start here — Courland covers concrete's history from Roman opus caementicium to the Three Gorges Dam with genuine technical depth and strong narrative; the best accessible entry point."
     },
     {
       "type": "Book",
       "title": "Concrete and Culture",
+      "isbn": "9781861899330",
       "author": "Adrian Forty",
       "note": "The essential cultural history — Forty's analysis of what concrete means beyond its structural properties; essential for understanding Brutalism, modernism, and the ideological freight that building materials carry."
     },
     {
       "type": "Book",
       "title": "The Edifice Complex",
+      "isbn": "9780241952771",
       "author": "Deyan Sudjic",
       "note": "The essential account of architecture and power — Sudjic examines how leaders use monumental construction (largely in concrete) to express state power; connects concrete to politics in ways that illuminate both."
     },
     {
       "type": "Book",
       "title": "Brutal London",
+      "isbn": "9781910463635",
       "author": "Simon Phipps",
       "note": "The essential visual account of Brutalism — Phipps's photographs of London's Brutalist buildings make the case for the style's aesthetic power; essential context for understanding the cultural debate about concrete architecture."
     },
     {
       "type": "Book",
       "title": "Making the Modern World",
+      "isbn": "9781299966413",
       "author": "Vaclav Smil",
       "note": "The essential quantitative context — Smil places concrete within the broader history of material consumption; for readers who want to understand concrete's scale relative to other materials and its place in industrial civilization."
     }
@@ -289,5 +294,11 @@
       "title": "Self-healing concrete and material innovation",
       "description": "Researchers have developed concrete embedded with bacteria that produce limestone when water enters cracks, and concrete that incorporates recycled materials to reduce its carbon footprint. These innovations have received substantial popular coverage as examples of biomimicry and green engineering — evidence that concrete's environmental problems may be technically addressable even if political will is the binding constraint."
     }
-  ]
+  ],
+  "startYear": -300,
+  "endYear": 2026,
+  "regions": [
+    "Europe"
+  ],
+  "degree": 5
 }

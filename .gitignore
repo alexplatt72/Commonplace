@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# local dev tooling (this machine only)
+_dev.bat
+.claude/
+_git_junk_backup/
+_isbn_tools/
+_meta_tools/
+check_duplicate.cjs
+fix_encoding.cjs
+report_manifest.cjs
+report_entries.cjs
+write_rewrite.py
+*.log
+
+# backups, archives, and non-app files that must never be served
+**/Archive/
+**/*.zip
+**/*.docx
+**/~$*
+**/*.py

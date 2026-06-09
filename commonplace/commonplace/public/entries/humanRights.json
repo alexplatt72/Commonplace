@@ -262,30 +262,35 @@
     {
       "type": "Book",
       "title": "East West Street",
+      "isbn": "9781504714754",
       "author": "Philippe Sands",
       "note": "Start here — Sands traces how two Galician Jews invented genocide and crimes against humanity after losing their families in the Holocaust; a biography, a legal history, and a meditation on memory that reads like a thriller."
     },
     {
       "type": "Book",
       "title": "A World Made New",
+      "isbn": "9780375506925",
       "author": "Mary Ann Glendon",
       "note": "The essential drafting history — Glendon's account of how the UDHR was negotiated among delegates from incompatible traditions is the most authoritative and readable account of where human rights law came from."
     },
     {
       "type": "Book",
       "title": "The Last Utopia",
+      "isbn": "9780674058545",
       "author": "Samuel Moyn",
       "note": "The essential revisionist account — Moyn's argument that human rights is a recent invention rather than an ancient tradition challenges every assumption about where the movement came from; essential and provocative."
     },
     {
       "type": "Book",
       "title": "Inventing Human Rights",
+      "isbn": "9780393331998",
       "author": "Lynn Hunt",
       "note": "The most accessible cultural history — Hunt's argument that novels cultivated the empathy that made rights possible is a distinctive and enjoyable account of how moral progress happens."
     },
     {
       "type": "Book",
       "title": "The Internationalists",
+      "isbn": "9781501109881",
       "author": "Oona Hathaway and Scott Shapiro",
       "note": "The best account of how international law changed after World War II — Hathaway and Shapiro trace how the prohibition on conquest and the human rights framework replaced the old rules of international order; accessible and sweeping."
     }
@@ -316,5 +321,11 @@
       "title": "The Pinochet case (1998–1999)",
       "description": "The arrest of Pinochet in London in 1998 on a Spanish warrant for crimes against humanity was the first time a former head of state was arrested in a third country for human rights crimes. The UK House of Lords ruled that former heads of state have no immunity from prosecution for torture. Pinochet was released on medical grounds and died without conviction. But the case established universal jurisdiction for serious human rights crimes."
     }
-  ]
+  ],
+  "startYear": 1948,
+  "endYear": 2026,
+  "regions": [
+    "Europe"
+  ],
+  "degree": 17
 }

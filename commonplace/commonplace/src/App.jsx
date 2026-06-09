@@ -1079,31 +1079,126 @@ function HomeView({ onSearch, onTemplate, onEntry }) {
 // TEMPLATE GALLERY VIEW
 // ═══════════════════════════════════════════════════════════════════════════════
 
+// ─── Era buckets (derived from startYear) ────────────────────────────────────
+const ERAS = [
+  { key:"Prehistory",   max:-3000 },
+  { key:"Ancient",      max:-800  },
+  { key:"Classical",    max:500   },
+  { key:"Medieval",     max:1500  },
+  { key:"Early Modern", max:1800  },
+  { key:"Modern",       max:1945  },
+  { key:"Contemporary", max:Infinity },
+];
+function eraOf(year) {
+  if (year == null) return null;
+  for (const e of ERAS) if (year < e.max) return e.key;
+  return "Contemporary";
+}
+const ERA_ORDER = ERAS.reduce((m, e, i) => { m[e.key] = i; return m; }, {});
+
+function FilterChip({ label, count, active, accent, onClick }) {
+  return (
+    <button onClick={onClick}
+      style={{ padding:"5px 11px", borderRadius:14, cursor:"pointer",
+        fontFamily:"'JetBrains Mono',monospace", fontSize:10.5, letterSpacing:"0.02em",
+        border:`1px solid ${active ? accent : C.border}`,
+        background: active ? accent : C.surface, color: active ? "#fff" : C.muted,
+        transition:"all 0.12s", whiteSpace:"nowrap" }}>
+      {label}{count != null && <span style={{ opacity:0.6, marginLeft:5 }}>{count}</span>}
+    </button>
+  );
+}
+
+function FacetRow({ title, keys, counts, selected, accent, onToggle }) {
+  if (!keys || keys.length <= 1) return null; // no point filtering on a single value
+  return (
+    <div style={{ display:"flex", alignItems:"baseline", gap:10, flexWrap:"wrap", marginTop:12 }}>
+      <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.1em",
+        textTransform:"uppercase", color:C.light, minWidth:50, paddingTop:2 }}>{title}</span>
+      <div style={{ display:"flex", gap:6, flexWrap:"wrap" }}>
+        {keys.map(k => (
+          <FilterChip key={k} label={k} count={counts[k]} active={selected.has(k)}
+            accent={accent} onClick={() => onToggle(k)} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function TemplateGallery({ templateName, onEntry, onHome }) {
   const cfg = TEMPLATE_CONFIG[templateName] || {};
   const meta = TEMPLATE_META[templateName] || {};
   const accent = cfg.accent || '#555';
-  const sortKey = t => (t || '').replace(/^the\s+/i, '').toLowerCase();
-  const entries = MANIFEST.filter(e => e.template === templateName)
-    .sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)))
-    .map(e => [e.id, e]);
+
+  const all = React.useMemo(() => MANIFEST.filter(e => e.template === templateName), [templateName]);
+
+  const [sort, setSort]           = React.useState('az');
+  const [subFilter, setSubFilter] = React.useState(() => new Set());
+  const [eraFilter, setEraFilter] = React.useState(() => new Set());
+  const [regFilter, setRegFilter] = React.useState(() => new Set());
+  const [text, setText]           = React.useState('');
+
+  // reset everything when the category changes
+  React.useEffect(() => {
+    setSort('az'); setSubFilter(new Set()); setEraFilter(new Set());
+    setRegFilter(new Set()); setText('');
+  }, [templateName]);
+
+  // facet option counts (from the full category set, so counts are stable)
+  const facetCounts = (getVals) => {
+    const m = {};
+    for (const e of all) for (const v of [].concat(getVals(e) || [])) if (v != null) m[v] = (m[v] || 0) + 1;
+    return m;
+  };
+  const subCounts = facetCounts(e => e.subtype);
+  const eraCounts = facetCounts(e => eraOf(e.startYear));
+  const regCounts = facetCounts(e => e.regions);
+
+  const subKeys = Object.keys(subCounts).sort((a, b) => subCounts[b] - subCounts[a]);
+  const eraKeys = Object.keys(eraCounts).sort((a, b) => ERA_ORDER[a] - ERA_ORDER[b]);
+  const regKeys = Object.keys(regCounts).sort((a, b) => regCounts[b] - regCounts[a]);
+
+  const toggle = (set, setter) => (v) => {
+    const n = new Set(set); n.has(v) ? n.delete(v) : n.add(v); setter(n);
+  };
+
+  const titleKey = t => (t || '').replace(/^the\s+/i, '').toLowerCase();
+  const filtered = all.filter(e => {
+    if (subFilter.size && !subFilter.has(e.subtype)) return false;
+    if (eraFilter.size && !eraFilter.has(eraOf(e.startYear))) return false;
+    if (regFilter.size && !(e.regions || []).some(r => regFilter.has(r))) return false;
+    if (text.trim()) {
+      const q = text.toLowerCase();
+      if (!((e.title || '').toLowerCase().includes(q) || (e.summary || '').toLowerCase().includes(q))) return false;
+    }
+    return true;
+  }).sort((a, b) => {
+    if (sort === 'chrono')    return (a.startYear ?? 0) - (b.startYear ?? 0);
+    if (sort === 'connected') return (b.degree ?? 0) - (a.degree ?? 0);
+    return titleKey(a.title).localeCompare(titleKey(b.title));
+  });
+
+  const anyFilter = subFilter.size || eraFilter.size || regFilter.size || text.trim();
+  const clearAll = () => { setSubFilter(new Set()); setEraFilter(new Set()); setRegFilter(new Set()); setText(''); };
+  const hasFacets = subKeys.length > 1 || eraKeys.length > 1 || regKeys.length > 1;
 
   return (
-    <div style={{ maxWidth:960, margin:"0 auto", padding:"32px 40px 80px" }}>
+    <div style={{ maxWidth:980, margin:"0 auto", padding:"32px 40px 80px" }}>
 
-      {/* Back + Header */}
+      {/* Back */}
       <button onClick={onHome}
-        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:28,
+        style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:24,
           padding:"6px 12px", background:"transparent", border:`1px solid ${C.border}`,
           borderRadius:4, cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
           fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
         ← Home
       </button>
 
-      <div style={{ borderLeft:`4px solid ${accent}`, paddingLeft:20, marginBottom:40 }}>
+      {/* Header */}
+      <div style={{ borderLeft:`4px solid ${accent}`, paddingLeft:20, marginBottom:24 }}>
         <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.12em",
           textTransform:"uppercase", color:accent, marginBottom:6 }}>
-          {templateName} · {entries.length} {entries.length === 1 ? 'entry' : 'entries'}
+          {templateName} · {all.length} {all.length === 1 ? 'entry' : 'entries'}
         </div>
         <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:700,
           color:C.text, marginBottom:8 }}>
@@ -1115,12 +1210,64 @@ function TemplateGallery({ templateName, onEntry, onHome }) {
         </div>
       </div>
 
-      {/* Entry grid */}
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
-        {entries.map(([id, entry]) => (
-          <EntryCard key={id} id={id} entry={entry} onClick={onEntry} />
-        ))}
+      {/* Filter / sort panel */}
+      <div style={{ background:C.warm, border:`1px solid ${C.border}`, borderRadius:8,
+        padding:"15px 18px", marginBottom:20, boxShadow:"0 1px 4px rgba(0,0,0,0.04)" }}>
+        <div style={{ display:"flex", gap:12, flexWrap:"wrap", alignItems:"center" }}>
+          <input value={text} onChange={e => setText(e.target.value)}
+            placeholder={`Filter ${templateName}…`}
+            style={{ flex:"1 1 200px", padding:"8px 12px", fontFamily:"'Lora',serif", fontSize:13.5,
+              color:C.text, background:C.surface, border:`1px solid ${C.border}`, borderRadius:6,
+              outline:"none" }} />
+          <div style={{ display:"flex", gap:6, alignItems:"center" }}>
+            <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, letterSpacing:"0.1em",
+              textTransform:"uppercase", color:C.light }}>Sort</span>
+            {[['az','A–Z'], ['chrono','Chronological'], ['connected','Most connected']].map(([k, lbl]) => (
+              <FilterChip key={k} label={lbl} active={sort === k} accent={C.navy} onClick={() => setSort(k)} />
+            ))}
+          </div>
+        </div>
+        {hasFacets && (
+          <div style={{ borderTop:`1px solid ${C.border}`, marginTop:12, paddingTop:2 }}>
+            <FacetRow title="Type"   keys={subKeys} counts={subCounts} selected={subFilter} accent={accent} onToggle={toggle(subFilter, setSubFilter)} />
+            <FacetRow title="Era"    keys={eraKeys} counts={eraCounts} selected={eraFilter} accent={accent} onToggle={toggle(eraFilter, setEraFilter)} />
+            <FacetRow title="Region" keys={regKeys} counts={regCounts} selected={regFilter} accent={accent} onToggle={toggle(regFilter, setRegFilter)} />
+          </div>
+        )}
       </div>
+
+      {/* Result count + clear */}
+      <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:14 }}>
+        <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.06em", color:C.muted }}>
+          {filtered.length} {filtered.length === 1 ? 'entry' : 'entries'}{anyFilter ? ` of ${all.length}` : ''}
+        </span>
+        {anyFilter ? (
+          <button onClick={clearAll}
+            style={{ background:"none", border:"none", cursor:"pointer", fontFamily:"'JetBrains Mono',monospace",
+              fontSize:10, color:accent, textDecoration:"underline" }}>
+            clear filters
+          </button>
+        ) : null}
+      </div>
+
+      {/* Entry grid */}
+      {filtered.length ? (
+        <div style={{ display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:10 }}>
+          {filtered.map(e => (
+            <EntryCard key={e.id} id={e.id} entry={e} onClick={onEntry} />
+          ))}
+        </div>
+      ) : (
+        <div style={{ padding:"48px 20px", textAlign:"center", fontFamily:"'Lora',serif",
+          fontSize:14.5, color:C.muted, fontStyle:"italic" }}>
+          No entries match these filters.{' '}
+          <button onClick={clearAll}
+            style={{ background:"none", border:"none", cursor:"pointer", fontFamily:"'Lora',serif",
+              fontSize:14.5, fontStyle:"italic", color:accent, textDecoration:"underline" }}>
+            Clear them?
+          </button>
+        </div>
+      )}
     </div>
   );
 }
