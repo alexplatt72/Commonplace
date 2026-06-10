@@ -712,6 +712,21 @@ for (const fname of filesToProcess) {
   // 6.3 Comparative narrative quality is an editorial judgment, not a word count.
   //     No automated check beyond required fields (6.2 above).
 
+  // 6.4 Register — Comparative Memory displays on the GENERAL layer (App.jsx), so it
+  //     must read at General register (FK ~9–11, no banned words), not Advanced/seminar
+  //     prose. Without this gate the analytical content silently drifts to FK 15+.
+  {
+    const cnText = cn.map(c => c.content || '').join(' ').trim();
+    if (cnText) {
+      const fk = fleschKincaidGradeLevel(cnText);
+      if (fk > 11.5)
+        fails.push(`comparativeNarrative reads at FK ${fk.toFixed(1)} — it displays on the General layer and must read at General register (target 9–11). Rewrite in serious-magazine prose, not seminar prose.`);
+      const banned = cnText.match(/\b(structural|structurally|historiographical|postcolonial|materialist|teleological)\b/gi) || [];
+      if (banned.length)
+        fails.push(`comparativeNarrative uses General-banned word(s): ${[...new Set(banned.map(w => w.toLowerCase()))].join(', ')} — replace with plain language.`);
+    }
+  }
+
   // ── 7. RABBIT HOLES ───────────────────────────────────────────────────────
 
   const rhs = entry.rabbitHole || [];
@@ -875,6 +890,18 @@ for (const fname of filesToProcess) {
       if (seen.has(key))
         fails.push(`popularCulture[${i}] "${item.title || '?'}" duplicates popularCulture[${seen.get(key)}] — same item; remove the duplicate`);
       else seen.set(key, i);
+    }
+  }
+
+  // 10.4 Register — Popular Culture displays on the BEGINNER layer (App.jsx), so the
+  //      descriptions must read at Beginner register (plain, concrete), not Advanced.
+  //      The "gets it right / distorts" analysis stays; the vocabulary comes down.
+  {
+    const pcText = pc.map(item => item.description || '').join(' ').trim();
+    if (pcText) {
+      const fk = fleschKincaidGradeLevel(pcText);
+      if (fk > 10.0)
+        fails.push(`popularCulture descriptions read at FK ${fk.toFixed(1)} — this section displays on the Beginner layer and must read at Beginner register (aim ≤8). Say what each work gets right and distorts in plain, everyday words.`);
     }
   }
 
