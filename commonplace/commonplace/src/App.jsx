@@ -39,6 +39,14 @@ const FONTS = `
   .commerce-find .cf-circle { border: 1px solid rgba(44,101,242,0.32); background: rgba(255,255,255,0.55); transition: all .12s; }
   .commerce-find:hover { color: #9a6a00; }
   .commerce-find:hover .cf-circle { border-color: #c8a96e; background: #fffaf0; }
+  .wax-seal-btn .wax-seal-svg { transition: transform .16s ease; }
+  .wax-seal-btn:hover .wax-seal-svg { transform: scale(1.07) rotate(2deg); }
+  .wax-seal-btn:active .wax-seal-svg { transform: scale(1.02); }
+  .qa-modal-backdrop { animation: qaFade .18s ease; }
+  .qa-modal-card { animation: qaPop .22s cubic-bezier(.2,.8,.3,1.05); }
+  @keyframes qaFade { from { opacity: 0 } to { opacity: 1 } }
+  @keyframes qaPop { from { opacity: 0; transform: translateY(10px) scale(.985) } to { opacity: 1; transform: none } }
+  .qa-answer strong { color: #8c1a2c; font-weight: 600; }
 `;
 
 // ─── TEMPLATE CONFIGURATION ───────────────────────────────────────────────────
@@ -1094,8 +1102,163 @@ function getFeatured() {
   return { mode:'weekly', week:weekObj, cards };
 }
 
+// ─── Q&A OF THE WEEK ────────────────────────────────────────────────────────
+// Data-driven and archive-ready: each week is an object in QA_WEEKLY (newest
+// first). The seal/modal always shows QA_WEEKLY[0]. To rotate, PREPEND a new
+// object — old weeks are retained for a future "past questions" archive.
+// answer = ordered blocks: { p } paragraph (supports **bold**), { pull } a
+// pull-quote line, { lifecycleLabel, lifecycle:[[label,body],…] } the steps.
+// Mark the final paragraph with top:true for the divider rule.
+const QA_WEEKLY = [
+  {
+    week: "2026-06-09",
+    originId: "georgeWashington",
+    originTitle: "George Washington",
+    title: "On virtue, custom, and law",
+    question: "Washington set the two-term precedent through personal choice rather than legal requirement. Franklin Roosevelt broke it in a national crisis. Congress then constitutionalized it. What does this sequence tell you about the relationship between personal virtue, unwritten norms, and formal constitutional rules? Can a republic rely on founding figures to supply the restraint its laws do not demand?",
+    answer: [
+      { p: "It tells us that republics often begin by **depending on character**, then try to convert that character into **custom**, and finally, when custom proves vulnerable, into **law**." },
+      { p: "Washington's two-term retirement mattered because the Constitution did **not** force him to leave. That was the point. His restraint dramatized the difference between a republic and a monarchy: power was something a citizen temporarily held, not something a great man naturally possessed. The precedent worked because Washington's personal virtue became an unwritten constitutional norm." },
+      { p: "But Franklin Roosevelt exposed the weakness of that arrangement. He did not \"violate the Constitution.\" He violated a **tradition**, and he did so under conditions where many Americans believed the tradition should yield to emergency: first the Great Depression, then World War II. Unwritten norms are strongest when circumstances feel normal. In crisis, people often ask not \"What restraint did Washington model?\" but \"Who can get us through this?\"" },
+      { p: "Congress and the states then constitutionalized the limit through the Twenty-Second Amendment. That move says: **we no longer trust example alone to do the work.**" },
+      { lifecycleLabel: "A constitutional lifecycle", lifecycle: [
+        ["Virtue creates the norm.", "Washington shows what republican restraint looks like."],
+        ["Custom preserves the norm.", "Later presidents follow the example because violating it would seem dangerous, vain, or un-republican."],
+        ["Crisis tests the norm.", "FDR proves that a strong enough justification, paired with popular support, can overwhelm tradition."],
+        ["Law replaces the norm.", "The Twenty-Second Amendment turns an expectation into an enforceable boundary."],
+      ] },
+      { p: "The deeper lesson is not that virtue is irrelevant. It is that virtue is **too fragile to be the only guardrail**. A republic needs citizens and leaders with self-restraint, because no constitution can anticipate every abuse. But it also needs formal rules, because personal restraint is unevenly distributed, and the most talented leaders are often the ones most able to persuade people that exceptions should be made for them." },
+      { p: "So, can a republic rely on founding figures to supply the restraint its laws do not demand?" },
+      { pull: "Only at the beginning, and only imperfectly." },
+      { p: "Founders can set a moral pattern. They can give later generations a vocabulary of restraint. But they cannot permanently govern from memory. Once the founding generation is gone, the republic has to decide whether its norms are strong enough to remain unwritten. If they are not, it must either formalize them or watch them become optional." },
+      { p: "The Washington–FDR–Twenty-Second Amendment sequence is therefore a quiet warning: **a republic that depends entirely on great men behaving modestly has already left too much to chance.**", top: true },
+    ],
+  },
+];
+const QA_OF_WEEK = QA_WEEKLY[0];
+
+// Render a plain string with **bold** segments as JSX.
+function qaInline(text) {
+  return text.split("**").map((seg, i) => (i % 2 ? <strong key={i}>{seg}</strong> : seg));
+}
+
+function WaxSeal({ size = 116 }) {
+  return (
+    <svg className="wax-seal-svg" width={size} height={size} viewBox="0 0 120 120"
+      role="img" aria-hidden="true"
+      style={{ filter: "drop-shadow(0 3px 5px rgba(70,12,20,0.34))", display: "block", overflow: "visible" }}>
+      <defs>
+        <radialGradient id="waxGrad" cx="40%" cy="33%" r="72%">
+          <stop offset="0%" stopColor="#cf3c50" />
+          <stop offset="52%" stopColor="#b3243a" />
+          <stop offset="100%" stopColor="#871728" />
+        </radialGradient>
+        <filter id="waxWobble" x="-25%" y="-25%" width="150%" height="150%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="11" result="n" />
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="6.5" />
+        </filter>
+        <path id="waxRimTop" d="M60,60 m0,-39 a39,39 0 1,1 -0.01,0" fill="none" />
+      </defs>
+      <g transform="rotate(-7 60 60)">
+        <circle cx="60" cy="60" r="46" fill="url(#waxGrad)" filter="url(#waxWobble)" />
+        <ellipse cx="48" cy="42" rx="20" ry="13" fill="#ffffff" opacity="0.10" />
+        <circle cx="60" cy="60" r="40.5" fill="none" stroke="#5e0e1c" strokeOpacity="0.45" strokeWidth="1.1" />
+        <circle cx="60" cy="60" r="38" fill="none" stroke="#e9d3a6" strokeOpacity="0.30" strokeWidth="0.8" />
+        <text fontFamily="'Lora',serif" fontSize="7.2" fontWeight="600" letterSpacing="1.9" fill="#ecd5a3">
+          <textPath href="#waxRimTop" startOffset="2%">QUESTION &amp; ANSWER · OF THE WEEK ·</textPath>
+        </text>
+        <text x="60" y="59" textAnchor="middle" fontFamily="'DM Serif Display',serif" fontSize="25" fill="#f5e9d2">Q&amp;A</text>
+        <text x="60" y="73" textAnchor="middle" fontFamily="'JetBrains Mono',monospace" fontSize="6.4" letterSpacing="1.6" fill="#e7cf9e">EDUCATION</text>
+      </g>
+    </svg>
+  );
+}
+
+function QAModal({ qa, onClose, onEntry }) {
+  useEffect(() => {
+    const onKey = e => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+  const num = { flexShrink: 0, width: 24, height: 24, borderRadius: "50%", background: "#b3243a",
+    color: "#fff", fontFamily: "'JetBrains Mono',monospace", fontSize: 12, display: "flex",
+    alignItems: "center", justifyContent: "center", marginTop: 1 };
+  const lab = { fontFamily: "'JetBrains Mono',monospace", fontSize: 10, letterSpacing: "0.12em",
+    textTransform: "uppercase", color: C.light, marginBottom: 12 };
+  return (
+    <div className="qa-modal-backdrop" onClick={onClose} role="dialog" aria-modal="true"
+      style={{ position: "fixed", inset: 0, background: "rgba(28,25,23,0.55)", zIndex: 1000,
+        display: "flex", alignItems: "flex-start", justifyContent: "center", padding: "5vh 16px", overflowY: "auto" }}>
+      <div className="qa-modal-card" onClick={e => e.stopPropagation()}
+        style={{ background: C.bg, maxWidth: 680, width: "100%", borderRadius: 14, border: `1px solid ${C.border}`,
+          boxShadow: "0 18px 50px rgba(0,0,0,0.35)", position: "relative", overflow: "hidden", marginBottom: 40 }}>
+        <div style={{ background: "#b3243a", padding: "18px 26px 16px", display: "flex", alignItems: "center", gap: 14 }}>
+          <div style={{ flexShrink: 0 }}><WaxSeal size={54} /></div>
+          <div>
+            <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "#f3d9a0" }}>Question &amp; Answer of the Week</div>
+            <div style={{ fontFamily: "'DM Serif Display',serif", fontSize: 22, color: "#fff", lineHeight: 1.15, marginTop: 3 }}>{qa.title}</div>
+          </div>
+          <button onClick={onClose} aria-label="Close"
+            style={{ position: "absolute", top: 12, right: 14, background: "rgba(255,255,255,0.16)", border: "none",
+              color: "#fff", width: 30, height: 30, borderRadius: "50%", cursor: "pointer", fontSize: 18, lineHeight: 1 }}>×</button>
+        </div>
+
+        <div style={{ padding: "20px 26px 28px" }}>
+          <div style={{ fontFamily: "'Lora',serif", fontSize: 13, color: C.muted, marginBottom: 16 }}>
+            From the{" "}
+            <button onClick={() => { onClose(); onEntry(qa.originId); }}
+              style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#9a6a00",
+                fontFamily: "'Lora',serif", fontSize: 13, fontWeight: 600, textDecoration: "underline" }}>
+              {qa.originTitle}
+            </button>{" "}entry's <strong style={{ color: C.text, fontWeight: 600 }}>Educational layer</strong> — a section built around questions to think through, not facts to memorize.
+          </div>
+
+          <div style={{ borderLeft: "3px solid #b3243a", background: C.warm, padding: "14px 18px", borderRadius: "0 8px 8px 0", marginBottom: 22 }}>
+            <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase", color: "#b3243a", marginBottom: 7 }}>The Question</div>
+            <p style={{ fontFamily: "'Lora',serif", fontStyle: "italic", fontSize: 15.5, lineHeight: 1.6, color: C.text }}>{qa.question}</p>
+          </div>
+
+          <div className="qa-answer" style={{ fontFamily: "'Lora',serif", fontSize: 15, lineHeight: 1.72, color: C.text }}>
+            {qa.answer.map((b, i) => {
+              if (b.lifecycle) return (
+                <div key={i}>
+                  <div style={lab}>{b.lifecycleLabel}</div>
+                  <ol style={{ listStyle: "none", padding: 0, margin: "0 0 18px", display: "flex", flexDirection: "column", gap: 12 }}>
+                    {b.lifecycle.map(([label, body], j) => (
+                      <li key={j} style={{ display: "flex", gap: 12 }}>
+                        <span style={num}>{j + 1}</span>
+                        <span><strong style={{ color: "#8c1a2c", fontWeight: 600 }}>{label}</strong> {body}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              );
+              if (b.pull) return (
+                <p key={i} style={{ fontFamily: "'DM Serif Display',serif", fontSize: 18, color: "#8c1a2c", margin: "0 0 14px" }}>{b.pull}</p>
+              );
+              return (
+                <p key={i} style={ b.top
+                  ? { marginBottom: 0, paddingTop: 14, borderTop: `1px solid ${C.border}` }
+                  : { marginBottom: 14 } }>{qaInline(b.p)}</p>
+              );
+            })}
+          </div>
+
+          <button onClick={() => { onClose(); onEntry(qa.originId); }}
+            style={{ marginTop: 22, fontFamily: "'Playfair Display',serif", fontSize: 14.5, color: "#fff", background: C.navy,
+              border: "none", borderRadius: 6, padding: "11px 22px", cursor: "pointer" }}>
+            Explore {qa.originTitle}'s Education layer  →
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
   const isMobile = useIsMobile();
+  const isWide = !useIsMobile(960);   // ≥960px: content column is a fixed 880, room to nudge the seal right
+  const [showQA, setShowQA] = useState(false);
 
   const totalEntries = MANIFEST.length;
 
@@ -1104,8 +1267,20 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
   return (
     <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
 
+      {showQA && <QAModal qa={QA_OF_WEEK} onClose={() => setShowQA(false)} onEntry={onEntry} />}
+
       {/* Platform statement */}
-      <div style={{ textAlign:"center", marginBottom:36 }}>
+      <div style={{ textAlign:"center", marginBottom:36, position:"relative" }}>
+        {!isMobile && (
+          <button onClick={() => setShowQA(true)} className="wax-seal-btn"
+            aria-label="Open the Question and Answer of the Week"
+            title="Question &amp; Answer of the Week"
+            style={{ position:"absolute", left: isWide ? 150 : -4, top: isWide ? "87%" : "83%",
+              transform:"translateY(-50%)", zIndex:3,
+              background:"none", border:"none", padding:0, cursor:"pointer" }}>
+            <WaxSeal size={120} />
+          </button>
+        )}
         <img src="/tcp_logo_transparent.webp" alt="TheCommonPlace logo"
           style={{ display:"block", margin:"0 auto 6px", width:"340px", maxWidth:"86%", objectFit:"contain" }} />
         <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize: isMobile ? 34 : 50, fontWeight:400,
@@ -1138,6 +1313,17 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
           </button>
         </div>
       </div>
+
+      {isMobile && (
+        <div style={{ display:"flex", justifyContent:"center", marginBottom:34, marginTop:-6 }}>
+          <button onClick={() => setShowQA(true)} className="wax-seal-btn"
+            aria-label="Open the Question and Answer of the Week"
+            title="Question &amp; Answer of the Week"
+            style={{ background:"none", border:"none", padding:0, cursor:"pointer" }}>
+            <WaxSeal size={104} />
+          </button>
+        </div>
+      )}
 
       {/* Explore by thread — search shortcuts (not filters) */}
       <div style={{ textAlign:"center", marginBottom:44 }}>
