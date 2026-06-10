@@ -459,7 +459,7 @@
       "anchor": "Reformation Day (Oct 31)",
       "cards": [
         "protestantReformation",
-        "printingPress",
+        "martinLuther",
         "bible"
       ]
     },
@@ -669,9 +669,8 @@
       "label": "Yuri Gagarin becomes the first human in space",
       "dateLabel": "April 12",
       "type": "anniversary",
-      "entryId": null,
-      "suppressIfTheme": [],
-      "build": "The Space Race"
+      "entryId": "spaceRace",
+      "suppressIfTheme": []
     },
     {
       "md": "04-23",
@@ -696,9 +695,8 @@
       "label": "The Chernobyl disaster",
       "dateLabel": "April 26",
       "type": "anniversary",
-      "entryId": null,
-      "suppressIfTheme": [],
-      "build": "The Chernobyl Disaster"
+      "entryId": "chernobyl",
+      "suppressIfTheme": []
     },
     {
       "md": "05-01",
@@ -732,9 +730,8 @@
       "label": "The Tiananmen Square crackdown",
       "dateLabel": "June 4",
       "type": "anniversary",
-      "entryId": null,
-      "suppressIfTheme": [],
-      "build": "Tiananmen Square Protests"
+      "entryId": "tiananmenSquare",
+      "suppressIfTheme": []
     },
     {
       "md": "06-05",
@@ -795,11 +792,10 @@
       "label": "Apollo 11 lands on the Moon",
       "dateLabel": "July 20",
       "type": "anniversary",
-      "entryId": null,
+      "entryId": "spaceRace",
       "suppressIfTheme": [
         "Moon, Machines & Modern Wonder"
-      ],
-      "build": "The Space Race"
+      ]
     },
     {
       "md": "07-24",
@@ -866,9 +862,8 @@
       "label": "The September 11 attacks",
       "dateLabel": "September 11",
       "type": "anniversary",
-      "entryId": null,
-      "suppressIfTheme": [],
-      "build": "The September 11 Attacks"
+      "entryId": "september11Attacks",
+      "suppressIfTheme": []
     },
     {
       "md": "09-15",
@@ -1002,9 +997,8 @@
       "label": "The Wright brothers' first powered flight",
       "dateLabel": "December 17",
       "type": "anniversary",
-      "entryId": null,
-      "suppressIfTheme": [],
-      "build": "Aviation"
+      "entryId": "aviation",
+      "suppressIfTheme": []
     },
     {
       "md": "12-25",
