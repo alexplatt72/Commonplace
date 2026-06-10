@@ -567,6 +567,30 @@ const AFFILIATES = { amazonTag: '', bookshopId: '125011' };
 const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
 const isBookLike = (type) => /^(book|novel)$/i.test(type || '');
 
+// Validate an ISBN-13 (or ISBN-10) checksum. A direct ISBN-based link must point at a
+// real, correctly-keyed product — a typo'd or transposed ISBN resolves to the wrong book
+// (or nothing). When the checksum fails we fall back to a title+author search instead.
+function isValidISBN(value) {
+  const s = cleanISBN(value).toUpperCase();
+  if (s.length === 13) {
+    if (/[^0-9]/.test(s)) return false;
+    let sum = 0;
+    for (let i = 0; i < 12; i++) sum += (i % 2 ? 3 : 1) * parseInt(s[i], 10);
+    return (10 - (sum % 10)) % 10 === parseInt(s[12], 10);
+  }
+  if (s.length === 10) {
+    let sum = 0;
+    for (let i = 0; i < 10; i++) {
+      const ch = s[i];
+      const v = ch === 'X' ? 10 : parseInt(ch, 10);
+      if (Number.isNaN(v) || (ch === 'X' && i !== 9)) return false;
+      sum += v * (10 - i);
+    }
+    return sum % 11 === 0;
+  }
+  return false;
+}
+
 // Convert ISBN-13 (978 prefix) to ISBN-10. Amazon keys products to the ISBN-10/ASIN,
 // so /dp/{isbn10} is a direct product page. 979-prefix ISBNs have no ISBN-10 → null.
 function isbn13to10(value) {
@@ -589,7 +613,9 @@ function resolveCommerceLink(item, provider) {
   const isbn = cleanISBN(item.isbn);
   const titleAuthor = [item.title, item.author].filter(Boolean).join(' ');
   const ta = encodeURIComponent(titleAuthor);
-  const trusted = !!item.isbnUS && !!isbn;   // US edition confirmed → safe for direct ISBN links
+  // US edition confirmed AND the ISBN is structurally valid → safe for direct ISBN links.
+  // A bad-checksum ISBN can never generate a direct Indie/Amazon link; it searches instead.
+  const trusted = !!item.isbnUS && !!isbn && isValidISBN(isbn);
   if (provider === 'worldcat') {
     // WorldCat resolves any edition's ISBN to the right library record.
     return `https://search.worldcat.org/search?q=${encodeURIComponent(isbn || titleAuthor)}`;
