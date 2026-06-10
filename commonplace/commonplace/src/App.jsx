@@ -605,30 +605,31 @@ function isbn13to10(value) {
 }
 
 // Resolve a "find it" link.
-// WorldCat resolves ISBNs reliably to the right library record. Bookshop and Amazon
-// do NOT (Bookshop's search misses ISBN-13/EAN; Amazon keys products to ISBN-10/ASIN),
-// so they search by title+author — which also stays correct when an ISBN is missing or
-// wrong. An affiliate Bookshop link uses the official ISBN resolver once configured.
+// WorldCat (Library) searches by ISBN and resolves reliably to the right library record.
+// Bookshop (Indie) always searches by title+author: its catalog hard-404s on many academic/
+// older/non-US-edition ISBNs, so a direct ISBN link is not safe (a search always resolves).
+// Amazon keys products to ISBN-10/ASIN, so /dp/{isbn10} is a reliable direct product page for a
+// confirmed US edition; otherwise it searches by title+author.
 function resolveCommerceLink(item, provider) {
   const isbn = cleanISBN(item.isbn);
   const titleAuthor = [item.title, item.author].filter(Boolean).join(' ');
   const ta = encodeURIComponent(titleAuthor);
-  // US edition confirmed AND the ISBN is structurally valid → safe for direct ISBN links.
-  // A bad-checksum ISBN can never generate a direct Indie/Amazon link; it searches instead.
+  // US edition confirmed AND the ISBN is structurally valid → safe for a direct Amazon link.
+  // A bad-checksum ISBN can never generate a direct link; it searches instead. (Bookshop always
+  // searches regardless, so `trusted` now only gates Amazon's direct /dp/ link.)
   const trusted = !!item.isbnUS && !!isbn && isValidISBN(isbn);
   if (provider === 'worldcat') {
     // WorldCat resolves any edition's ISBN to the right library record.
     return `https://search.worldcat.org/search?q=${encodeURIComponent(isbn || titleAuthor)}`;
   }
   if (provider === 'bookshop') {
-    // Direct affiliate ISBN link only when the US edition is confirmed AND Bookshop resolves
-    // this ISBN. A valid, Amazon-safe ISBN can still miss in Bookshop's catalog (different
-    // edition record, or unavailable), so an item may opt out with bookshopDirect:false and
-    // fall back to a title+author search here while keeping its direct Amazon link.
-    const bookshopDirect = trusted && item.bookshopDirect !== false;
-    return (AFFILIATES.bookshopId && bookshopDirect)
-      ? `https://bookshop.org/a/${AFFILIATES.bookshopId}/${isbn}`
-      : `https://bookshop.org/search?keywords=${ta}`;
+    // ALWAYS search — never a direct /a/{id}/{isbn} link. Bookshop's catalog does not carry a
+    // large share of academic, older, and non-US-edition ISBNs, so direct ISBN links hard-404
+    // (verified across the corpus: most failed). A keyword search always resolves (HTTP 200) and
+    // lands on the book when Bookshop stocks it, or an honest "no results" when it doesn't —
+    // never a dead link. Affiliate attribution is preserved via the ?affiliate= param.
+    const aff = AFFILIATES.bookshopId ? `&affiliate=${AFFILIATES.bookshopId}` : '';
+    return `https://bookshop.org/search?keywords=${ta}${aff}`;
   }
   // amazon — direct /dp/{isbn10} only for confirmed US editions; else title+author search
   const isbn10 = trusted ? isbn13to10(isbn) : null;
