@@ -905,6 +905,14 @@ for (const fname of filesToProcess) {
     }
   }
 
+  // 10.5 Global banned word — "historiography"/"historiographical"/etc. must NEVER
+  //      appear, in any layer or section. It is the most seminar-coded word there is.
+  {
+    const hits = JSON.stringify(entry).match(/historiograph\w*/gi);
+    if (hits)
+      fails.push(`Banned word "${[...new Set(hits.map(h => h.toLowerCase()))].join('", "')}" appears ${hits.length}× — "historiograph…" must never appear, in any layer. Use plain language: "the historical debate", "how historians have read it", "scholarly accounts".`);
+  }
+
   // ── 11. AI FAILURE MODE WARNINGS ──────────────────────────────────────────
   // Procedural self-narration: kept as warning — distinctive pattern, low false positive rate.
   // Anti-declarative inflation phrases removed — too context-dependent, high false positive rate.
