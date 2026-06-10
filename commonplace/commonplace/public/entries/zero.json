@@ -65,22 +65,22 @@
     {
       "perspective": "Three independent inventions",
       "name": "The Same Concept, Incompletely",
-      "content": "Zero was developed independently in Babylon (~300 BCE), by the Maya (~4th century CE), and in India (fully by 628 CE). All three developed positional notation. None but India developed the full arithmetic of zero — the rules for what happens when you add, subtract, and multiply with zero as a number. The comparison reveals that the positional placeholder is a relatively natural solution to the problem of representing large numbers compactly, while the arithmetic of zero as a number — with defined behavior under all operations — required a specific intellectual context to develop. The Maya came closest outside India; their failure to go further (if failure it was) may reflect the specific contextual embedding of their mathematics in calendrical rather than commercial or philosophical applications."
+      "content": "Zero appeared three times without any connection between the cases: in Babylon around 300 BCE, among the Maya around the 4th century CE, and in India, where Brahmagupta wrote the full arithmetic rules in 628 CE. All three used positional notation. Only India developed zero as a real number, with rules for adding, subtracting, and multiplying with it. Using zero as a placeholder is a fairly natural move when you need to write large numbers. Treating zero as something you can calculate with is a harder step. It needed a specific context. The Maya came closest outside India. Their mathematics was tied to calendar work rather than commerce or philosophical debate, and that may be why they stopped where they did."
     },
     {
       "perspective": "Roman numerals versus Hindu-Arabic numerals",
       "name": "Two Systems, One Ceiling",
-      "content": "The comparison between Roman and Hindu-Arabic numerals is not a comparison between a bad system and a good one. Roman numerals are adequate for recording quantities and performing simple addition — the tasks for which they were primarily used. The Hindu-Arabic system's advantages appear only when you need to do what Roman numerals structurally cannot: positional arithmetic with large numbers, algebraic manipulation of unknown quantities, and the calculus of continuous change. Medieval European mathematics had built a sophisticated logical and philosophical tradition within the Roman numeral ceiling. The adoption of the new system was not a replacement of ignorance with knowledge; it was an expansion of what kind of knowledge was achievable."
+      "content": "Roman numerals are not a bad system. They work well for the tasks Romans used them for: recording amounts and adding small numbers. The Hindu-Arabic system is only clearly better when you need to do things Roman numerals cannot do, such as positional arithmetic with large numbers, algebra, or calculus. Medieval European scholars built serious work in logic and philosophy while using Roman numerals. Moving to the new system was not a step from ignorance to knowledge. It was a step toward a wider set of questions. The new system opened problems that had not existed before."
     },
     {
       "perspective": "Mathematical development across Islamic and European civilizations",
       "name": "Who Needed What When",
-      "content": "Islamic mathematics in the 9th through 13th centuries developed algebra, trigonometry, and advanced arithmetic using the Hindu-Arabic system with zero. European mathematics in the same period worked primarily with Roman numerals on problems that Roman numerals could handle. The divergence is not primarily about intelligence or curiosity — it reflects different practical and intellectual needs. Islamic commerce, astronomy, and architecture generated problems that required the mathematics zero enables. European intellectual culture in the same period was primarily organized around logic, theology, and legal reasoning, which did not require advanced arithmetic. The adoption gap tracks the need gap."
+      "content": "Between the 9th and 13th centuries, Islamic mathematicians developed algebra, trigonometry, and advanced arithmetic using the Hindu-Arabic system with zero. In the same period, European mathematicians worked mainly with Roman numerals on problems those numerals could handle. The difference was not one of talent or curiosity. It came from different needs. Islamic commerce, astronomy, and architecture produced problems that required the tools zero makes possible. European intellectual life in that period centered on logic, theology, and legal reasoning. Those fields did not call for advanced arithmetic. Where the need did not exist, the adoption did not happen."
     },
     {
       "perspective": "Binary arithmetic and the computer",
       "name": "The Final Consequence",
-      "content": "Binary arithmetic — the mathematical foundation of every computing device — is a positional system with base 2, where zero and one are the only digits. Every calculation a computer performs is a sequence of operations on zeros and ones, physically implemented as transistors in on and off states. The chain from Brahmagupta's 628 CE arithmetic of zero to the device you are reading this on runs through positional notation, algebra, calculus, formal logic, electrical engineering, and computer science. Zero is not metaphorically at the foundation of computing — it is literally at the foundation. Every bit of information in every digital device is a state that is either zero or one."
+      "content": "Binary arithmetic is the base of every computing device. It is a positional system that uses only zero and one. Every calculation a computer does is a series of operations on zeros and ones, run by transistors switching between on and off states. The path from Brahmagupta's 628 CE arithmetic to the device you are reading this on goes through positional notation, algebra, calculus, formal logic, electrical engineering, and computer science. Zero is not a loose metaphor here. It is the actual foundation. Every bit of information in every digital device is a state that is either zero or one."
     }
   ],
   "rabbitHole": [
@@ -196,22 +196,22 @@
     {
       "type": "Technical Concept",
       "title": "The null pointer error",
-      "description": "Tony Hoare, who invented the null pointer in 1965, called it his 'billion-dollar mistake' — the source of innumerable software crashes, security vulnerabilities, and developer frustration. The null pointer is zero translated into programming: the absence of a value. The technical history of programming is partly a history of attempts to handle nothingness safely. Hoare's regret is instructive: zero and its programming descendants are powerful precisely because they represent absence."
+      "description": "Tony Hoare invented the null pointer in 1965. It is zero in programming: a marker for the absence of a value. He later called it his billion-dollar mistake because of how many crashes and security flaws it caused. It gets right that zero is powerful because it stands for nothing. It shows how hard it still is to handle nothing safely in software."
     },
     {
       "type": "Philosophical Concept",
       "title": "Zero as philosophical void",
-      "description": "The philosophical resistance to zero — evident in the Greek refusal to admit it as a number and in medieval theological anxiety about the void — reflects a genuine conceptual difficulty: zero is the number that represents the absence of number. The history of zero's philosophical reception is a history of attempts to think about absence, void, and nothingness — which turns out to be far more demanding than thinking about presence and quantity."
+      "description": "Ancient Greek thinkers refused to call zero a number. Medieval scholars worried that the void it represented had no place in a world created by God. This gets right that zero is genuinely hard to think about. It distorts by making the resistance look like superstition. The real difficulty is that zero is the number for the absence of a number, which is a stranger idea than it seems."
     },
     {
       "type": "Cultural History",
       "title": "The Hindu-Arabic numeral system and zero's transmission",
-      "description": "The story of how zero traveled from Indian mathematics through Islamic scholarship to medieval Europe — where it was initially resisted by merchants and church authorities — is one of the great transmission stories in intellectual history. Fibonacci's Liber Abaci (1202) introduced Hindu-Arabic numerals including zero to European merchants. The adoption of zero was a slow cultural as well as mathematical revolution — merchants who used zero in contracts were sometimes accused of fraud."
+      "description": "Zero traveled from Indian mathematics through Islamic scholars and reached medieval Europe by around 1200, when Fibonacci introduced Hindu-Arabic numerals to European merchants. Some merchants who used zero in contracts were accused of fraud. This story gets right that zero was a slow cultural change, not just a math upgrade. It sometimes misses how much Islamic scholars built on the Indian system before passing it west."
     },
     {
       "type": "Mathematical Legacy",
       "title": "Calculus and the infinitely small",
-      "description": "Newton and Leibniz's independent invention of calculus required confronting zero in a new way: the derivative involves dividing by quantities that approach but never quite reach zero. The logical foundations of this procedure were not rigorously established until the 19th century by Cauchy and Weierstrass. Zero is the conceptual foundation of calculus, and the difficulty of handling it rigorously delayed the full mathematization of physics by over a century."
+      "description": "Newton and Leibniz invented calculus in the 17th century. It works by dividing by quantities that shrink toward zero without quite reaching it. Cauchy and Weierstrass gave that procedure solid logical foundations in the 19th century. This gets right that zero sits at the heart of calculus. It often skips that the rigor problem took over a century to solve and delayed parts of physics along the way."
     }
   ],
   "research": [
