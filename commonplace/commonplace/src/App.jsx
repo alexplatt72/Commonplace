@@ -621,8 +621,12 @@ function resolveCommerceLink(item, provider) {
     return `https://search.worldcat.org/search?q=${encodeURIComponent(isbn || titleAuthor)}`;
   }
   if (provider === 'bookshop') {
-    // Direct affiliate ISBN link only when the US edition is confirmed; else title+author.
-    return (AFFILIATES.bookshopId && trusted)
+    // Direct affiliate ISBN link only when the US edition is confirmed AND Bookshop resolves
+    // this ISBN. A valid, Amazon-safe ISBN can still miss in Bookshop's catalog (different
+    // edition record, or unavailable), so an item may opt out with bookshopDirect:false and
+    // fall back to a title+author search here while keeping its direct Amazon link.
+    const bookshopDirect = trusted && item.bookshopDirect !== false;
+    return (AFFILIATES.bookshopId && bookshopDirect)
       ? `https://bookshop.org/a/${AFFILIATES.bookshopId}/${isbn}`
       : `https://bookshop.org/search?keywords=${ta}`;
   }
