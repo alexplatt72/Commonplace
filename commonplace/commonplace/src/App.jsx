@@ -2415,7 +2415,7 @@ function Footer({ onHome, onBrowse, onAbout, onMethod, onPrivacy }) {
         <button onClick={onHome} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer',
           color: C.text, fontFamily: "'DM Serif Display',serif", fontSize: 18 }}>TheCommonPlace</button>
         <div style={{ color: C.light, fontSize: 12, fontStyle: 'italic', fontFamily: "'Lora',serif", marginTop: 2 }}>
-          A curated atlas of civilization, ideas, and power. Open beta.
+          A curated atlas of civilization, ideas, and power. Currently in beta.
         </div>
       </div>
       <nav style={{ display: 'flex', flexWrap: 'wrap', gap: isMobile ? 16 : 20, alignItems: 'center' }}>
@@ -2452,8 +2452,8 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <P>Each entry is written at several reading levels — Beginner, General, and Advanced, alongside Educational and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
           <H>Find your way in</H>
           <P>Browse the whole canon and filter it by era, region, category, and more; follow a Tour that connects a place to the entries it unlocks; or take a Pathway — a curated sequence that builds toward a big question like “how capitalism happened.” If you prefer to wander, search anything or chase a rabbit hole between related entries.</P>
-          <H>This is an open beta</H>
-          <P>The canon currently holds 302 entries and is still expanding. Things will change, and some subjects you expect are not here yet. If you find an error or want to suggest an entry, the Feedback and Suggest links in the footer go straight to us — beta readers are the best source of both.</P>
+          <H>This is a beta</H>
+          <P>The canon currently holds {MANIFEST.length} entries and is still expanding. Things will change, and some subjects you expect are not here yet. If you find an error or want to suggest an entry, the Feedback and Suggest links in the footer go straight to us — beta readers are the best source of both.</P>
           <P><button onClick={onBrowse} style={{ background: 'none', border: `1px solid ${C.borderStrong}`, color: C.text,
             padding: '9px 18px', borderRadius: 4, cursor: 'pointer', fontFamily: "'Lora',serif", fontSize: 15 }}>Start exploring →</button></P>
         </>
@@ -2462,20 +2462,20 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <P>This page explains how the canon is built and how to read it. It uses a few loaded words — “canon,” “threshold,” “significance” — and they deserve a frame.</P>
           <H>What qualifies as an entry</H>
           <P>An entry has to clear a threshold of civilizational significance: it must have genuinely shaped how the world works, and it must reward structured, multi-level treatment. The test is not fame or popularity but consequence and depth. That makes the canon finite by design — the goal is the subjects that matter most, treated well, rather than exhaustive coverage.</P>
-          <H>Why 302 now, and what a larger canon means</H>
-          <P>The current 302 entries are an early, deliberately curated core. Growth is gated on quality and balance, not volume: a larger canon should mean more of the world represented — more regions, eras, and traditions — not simply more pages. Expansion is a series of intentional decisions, each with the same threshold.</P>
+          <H>Why this size now, and what a larger canon means</H>
+          <P>The current {MANIFEST.length} entries are an early, deliberately curated core. Growth is gated on quality and balance, not volume: a larger canon should mean more of the world represented — more regions, eras, and traditions — not simply more pages. Expansion is a series of intentional decisions, each with the same threshold.</P>
           <H>What the reading levels mean</H>
           <P>Beginner grounds the subject in plain language and concrete scenes. General adds the mechanisms, named figures, and live debates. Advanced develops the scholarly tension — the questions specialists actually argue about. Educational and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
           <H>How sources are handled</H>
           <P>References are rated on two axes — Reliability (the trustworthiness of the method) and Contribution (how much the source adds to this particular subject) — so you can see not just what was cited but why it carries weight here.</P>
           <H>How entries are made</H>
-          <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. This is an open beta, and that process is still being tuned.</P>
+          <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. This is a beta, and that process is still being tuned.</P>
           <H>How to read omissions</H>
           <P>If something is missing, that is not a verdict that it does not matter. The canon is finite and still expanding, and many worthy subjects simply have not been built yet. Tell us what you would add — the footer’s Suggest link is exactly for that.</P>
         </>
       ) : (
         <>
-          <P>Short version: The Commonplace is a reading site. It needs no account and asks you for nothing to use it. Last updated for the open beta.</P>
+          <P>Short version: The Commonplace is a reading site. It needs no account and asks you for nothing to use it. Last updated for the beta.</P>
           <H>Privacy</H>
           <P>The site is static and currently sets no advertising or tracking cookies. Our host keeps standard server logs — things like IP address, browser type, and the pages requested — to operate and secure the site. If we add usage analytics during the beta, we will use a privacy-friendly, cookieless tool and update this page to name it.</P>
           <P>If you email us through the Feedback or Suggest-an-entry links, we keep your message and email address so we can reply and improve the site. We do not sell personal information. Questions or requests about your data: {mailLink}.</P>
