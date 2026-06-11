@@ -8,6 +8,7 @@
   },
   "severity": {
     "ref.duplicateTitle": "fail",
+    "ref.likelyDuplicate": "warn",
     "ref.noEssential": "fail",
     "ref.yearFormat": "warn",
     "ref.annotationBoilerplate": "warn",

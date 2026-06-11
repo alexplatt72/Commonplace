@@ -41,6 +41,27 @@ module.exports = function references(entry, ctx) {
     } else seen.set(k, i);
   }
 
+  // likely duplicate (warn): same author identity + one title is a word-boundary prefix of
+  // the other — i.e. a subtitle-variant of the same work ("The Great Transformation" vs
+  // "The Great Transformation: The Political and Economic Origins of Our Time"). Warn, not
+  // fail: this is human-judged. Some same-author titles legitimately nest (Spinoza's
+  // "Political Treatise" is not a prefix of "Theological-Political Treatise", so it is not
+  // flagged), and harder same-work/different-title cases (Marx's "Capital, Volume I" vs
+  // "Capital: A Critique of Political Economy, Volume 1") need a periodic manual audit.
+  const ntitle = s => (s == null ? '' : String(s)).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  for (let a = 0; a < refs.length; a++) {
+    for (let b = a + 1; b < refs.length; b++) {
+      const ka = authorKey(refs[a].author), kb = authorKey(refs[b].author);
+      if (!ka || ka !== kb) continue;
+      const ta = ntitle(refs[a].title), tb = ntitle(refs[b].title);
+      if (!ta || !tb || ta === tb) continue; // exact dupes already hard-failed above
+      const shorter = ta.length <= tb.length ? ta : tb;
+      const longer  = ta.length <= tb.length ? tb : ta;
+      if (longer.startsWith(shorter) && longer.charAt(shorter.length) === ' ')
+        out.push({ id: 'ref.likelyDuplicate', message: `reference[${b}] "${refs[b].title}" looks like a subtitle-variant of reference[${a}] "${refs[a].title}" (same author) — merge if it is the same work; ignore if genuinely distinct.` });
+    }
+  }
+
   // at least one Essential reference
   if (!refs.some(r => (r.contribution || '') === 'Essential'))
     out.push({ id: 'ref.noEssential', message: `no reference marked contribution:"Essential" — every entry needs at least one essential source.` });

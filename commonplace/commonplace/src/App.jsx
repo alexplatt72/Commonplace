@@ -142,7 +142,7 @@ const SECTION_LABELS = {
   whatItDid:"What It Did to Human Civilization",
   howHumansUnderstoodIt:"How Humans Understood It",
   whatChanged:"What Changed Because of It", theLongShadow:"The Long Shadow",
-  theForce:"The Force", theRecord:"The Record", howPeopleKnew:"How People Knew", whatItDidToSocieties:"What It Did to Societies", theUnequal:"The Unequal", theLongConsequence:"The Long Consequence",
+  theForce:"The Force", howPeopleKnew:"How People Knew", whatItDidToSocieties:"What It Did to Societies", theUnequal:"The Unequal", theLongConsequence:"The Long Consequence",
   humanResponse:"Human Response and Adaptation",
   whatItMadeImpossible:"What It Made Impossible or Inevitable",
   presentAndFuture:"The Present and Future",
