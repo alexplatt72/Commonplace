@@ -469,9 +469,17 @@ function RabbitHole({ links, navigateTo }) {
       >
         {/* Category icon (mirrors the "→ TEMPLATE" badge) + relationship label, centered in the left column */}
         <div style={{ width:72, flexShrink:0, alignSelf:"stretch", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:5 }}>
-          {targetTemplate
-            ? <CatIcon name={targetTemplate} size={26} color={hasEntry ? (TEMPLATE_CONFIG[targetTemplate]?.accent || C.muted) : C.light} />
-            : <CatIcon name="" size={22} color={C.light} />}
+          {targetTemplate ? (
+            <CatIcon name={targetTemplate} size={26} color={hasEntry ? (TEMPLATE_CONFIG[targetTemplate]?.accent || C.muted) : C.light} />
+          ) : (
+            /* coming-soon placeholder: ellipsis in a ring — category-neutral, reads as "in progress" */
+            <svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke={C.light} strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="8.5" />
+              <circle cx="8.2" cy="12" r="1.05" fill={C.light} stroke="none" />
+              <circle cx="12" cy="12" r="1.05" fill={C.light} stroke="none" />
+              <circle cx="15.8" cy="12" r="1.05" fill={C.light} stroke="none" />
+            </svg>
+          )}
           {link.relationship && (
             <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, letterSpacing:"0.04em", textTransform:"uppercase", color: hasEntry ? tc : C.light, textAlign:"center", lineHeight:1.2 }}>{link.relationship}</span>
           )}
