@@ -8,21 +8,36 @@ const CANNED_CLOSERS = [
   'indispensable for', 'a landmark study', 'the classic study'
 ];
 
+// Author key that ignores name ORDER and INITIALS, so "A.B. Bosworth" and
+// "Bosworth, A.B." collapse to the same key, while two different people sharing a
+// title (Clark vs Isaacson on "Leonardo da Vinci") stay distinct. Keeps surname-length
+// tokens only (len>=2 after stripping dots), drops connectives/role words, sorts.
+const AUTHOR_STOP = new Set(['and','the','of','eds','ed','editor','editors','trans','al','et','jr','sr','with']);
+function authorKey(s) {
+  const toks = (s == null ? '' : String(s)).toLowerCase()
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/[.,&]/g, ' ')
+    .split(/\s+/).filter(Boolean)
+    .filter(t => t.length >= 2 && !AUTHOR_STOP.has(t));
+  return [...new Set(toks)].sort().join(' ');
+}
+
 module.exports = function references(entry, ctx) {
   const out = [];
   const refs = entry.reference || [];
   if (!refs.length) return out;
 
-  // duplicate references within the entry — same title AND author (normalized; strips
-  // parentheticals). title+author so two distinct works sharing a title (different authors)
-  // are not falsely flagged.
+  // duplicate references within the entry — same title AND same author IDENTITY.
+  // Author match is order/initial-insensitive (see authorKey) so the same work listed
+  // twice in different name formats is caught, while two distinct works that happen to
+  // share a title but have different authors are not falsely flagged.
   const seen = new Map();
   for (const [i, r] of refs.entries()) {
     const t = ctx.norm(r.title);
     if (!t) continue;
-    const k = t + '|' + ctx.norm(r.author);
+    const k = t + '|' + authorKey(r.author);
     if (seen.has(k)) {
-      out.push({ id: 'ref.duplicateTitle', message: `reference[${i}] "${r.title}" duplicates reference[${seen.get(k)}] — same title+author within one entry; remove or merge.` });
+      out.push({ id: 'ref.duplicateTitle', message: `reference[${i}] "${r.title}" duplicates reference[${seen.get(k)}] — same work (title + author identity) within one entry; remove or merge.` });
     } else seen.set(k, i);
   }
 

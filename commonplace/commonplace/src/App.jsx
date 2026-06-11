@@ -234,7 +234,6 @@ const RELIABILITY_CONFIG = {
 const CONTRIBUTION_CONFIG = {
   "Foundational":  { color:"#7b1a1a", bg:"#fef2f2", border:"#e07070" },
   "Essential":     { color:"#1a4731", bg:"#e8f5ee", border:"#5a9e7a" },
-  "Accessible":    { color:"#1d3461", bg:"#e8eef8", border:"#6080c0" },
   "Supplementary": { color:"#7d4e00", bg:"#fef3e2", border:"#d4a017" },
 };
 
@@ -532,8 +531,20 @@ function ReferenceTab({ items }) {
   if (!items || !items.length) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:16, color:C.muted, fontStyle:"italic" }}>Reference data available in concept build files.</div>;
   return (
     <div>
-      <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic", marginBottom:24, paddingBottom:16, borderBottom:`1px solid ${C.border}`, lineHeight:1.6 }}>
-        Sources rated on two axes: <strong style={{ color:C.text }}>Reliability</strong> (trustworthiness of method) and <strong style={{ color:C.text }}>Contribution</strong> (value to this subject).
+      <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:8, padding:"16px 20px", marginBottom:24, lineHeight:1.6 }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, letterSpacing:"0.06em", textTransform:"uppercase", color:C.muted, marginBottom:10 }}>How references work</div>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, margin:"0 0 10px" }}>
+          These works informed the entry as a whole. The Commonplace does not use inline footnotes; this list is the citation trail for the entry. Some sources are named or used directly in the text; others shaped the background, interpretation, or further-reading path.
+        </p>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:13.5, color:C.muted, margin:"0 0 4px" }}>
+          <strong style={{ color:C.text }}>Reliability</strong> — how trustworthy the source is as scholarship, evidence, or method.
+        </p>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:13.5, color:C.muted, margin:"0 0 10px" }}>
+          <strong style={{ color:C.text }}>Role</strong> — how important the source is to this particular entry.
+        </p>
+        <p style={{ fontFamily:"'Lora',serif", fontSize:12.5, color:C.light, fontStyle:"italic", margin:0 }}>
+          The “Find it” links inside each reading layer are for further reading, not sentence-by-sentence citation.
+        </p>
       </div>
       {items.map((item,i) => {
         const rel = RELIABILITY_CONFIG[item.reliability] || RELIABILITY_CONFIG["Scholarly"];
@@ -548,8 +559,8 @@ function ReferenceTab({ items }) {
                 {item.originLanguage && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, color:"#4a2060", background:"#f3eef8", padding:"1px 6px", borderRadius:2, marginLeft:8, whiteSpace:"nowrap" }}>Non-English: {item.originLanguage}</span>}
               </div>
               <div style={{ display:"flex", flexDirection:"column", gap:4, alignItems:"flex-end" }}>
-                <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:rel.color, background:rel.bg, border:`1px solid ${rel.border}` }}>R: {item.reliability}</span>
-                <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:con.color, background:con.bg, border:`1px solid ${con.border}` }}>C: {item.contribution}</span>
+                <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:rel.color, background:rel.bg, border:`1px solid ${rel.border}` }}>Reliability: {item.reliability}</span>
+                <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:con.color, background:con.bg, border:`1px solid ${con.border}` }}>Role: {item.contribution}</span>
               </div>
             </div>
             <p style={{ fontFamily:"'Lora',serif", fontSize:13.5, lineHeight:1.65, color:C.muted }}>{item.annotation}</p>
@@ -2498,7 +2509,8 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <H>What the reading levels mean</H>
           <P>Beginner grounds the subject in plain language and concrete scenes. General adds the mechanisms, named figures, and live debates. Advanced develops the scholarly tension — the questions specialists actually argue about. Educational and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
           <H>How sources are handled</H>
-          <P>References are rated on two axes — Reliability (the trustworthiness of the method) and Contribution (how much the source adds to this particular subject) — so you can see not just what was cited but why it carries weight here.</P>
+          <P>The Commonplace is written for layered public reading, not formal academic publication, so the prose carries no inline footnotes or numbered citations. Instead, each entry’s Reference list is the citation: the works that actually informed it — including the books, papers, and primary sources it names and engages in the text — gathered in one place rather than scattered through it.</P>
+          <P>References are rated on two axes — Reliability (how trustworthy the source is as a resource) and Role (the part the source played in building this particular entry) — so you can see not just what was used but why it carries weight here. The separate “Find it” links under each layer are for further reading and where to buy a work; they are not a claim that every line traces to them.</P>
           <H>How entries are made</H>
           <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. This is a beta, and that process is still being tuned.</P>
           <H>How to read omissions</H>
