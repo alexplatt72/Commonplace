@@ -438,7 +438,7 @@ function RabbitHole({ links, navigateTo }) {
   // Assign gravity and sort: high → medium → low
   const GRAVITY_ORDER = { high:0, medium:1, low:2 };
   const sortedLinks = [...links]
-    .map(link => ({ ...link, _gravity: link.gravity || TYPE_GRAVITY[link.type] || "medium" }))
+    .map(link => ({ ...link, _gravity: link.gravity || TYPE_GRAVITY[link.relationship] || "medium" }))
     .sort((a, b) => GRAVITY_ORDER[a._gravity] - GRAVITY_ORDER[b._gravity]);
 
   // Group for section headers
@@ -446,7 +446,7 @@ function RabbitHole({ links, navigateTo }) {
   const otherLinks  = sortedLinks.filter(l => l._gravity !== "high");
 
   const renderLink = (link, i) => {
-    const tc = RABBIT_TYPE_COLORS[link.type] || C.muted;
+    const tc = RABBIT_TYPE_COLORS[link.relationship] || C.muted;
     const gs = GRAVITY_STYLES[link._gravity];
     const hasEntry = link.entryId && MANIFEST.find(e => e.id === link.entryId);
     const targetTemplate = hasEntry ? hasEntry.template : null;
@@ -467,12 +467,15 @@ function RabbitHole({ links, navigateTo }) {
           opacity: hasEntry ? 1 : 0.6,
         }}
       >
-        {/* Type label: prominent chip for high gravity, inline text for medium/low */}
-        {gs.typeVisible ? (
-          <span style={{ display:"inline-flex", alignItems:"center", padding:"3px 8px", borderRadius:4, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:600, letterSpacing:"0.05em", textTransform:"uppercase", whiteSpace:"nowrap", marginTop:2, color:"#fff", background: hasEntry ? tc : C.light, flexShrink:0 }}>{link.type}</span>
-        ) : (
-          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, color: hasEntry ? tc : C.light, fontWeight:500, letterSpacing:"0.05em", textTransform:"uppercase", whiteSpace:"nowrap", marginTop:3, minWidth:72, flexShrink:0 }}>{link.type}</span>
-        )}
+        {/* Category icon (mirrors the "→ TEMPLATE" badge) + relationship label, centered in the left column */}
+        <div style={{ width:72, flexShrink:0, alignSelf:"stretch", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:5 }}>
+          {targetTemplate
+            ? <CatIcon name={targetTemplate} size={26} color={hasEntry ? (TEMPLATE_CONFIG[targetTemplate]?.accent || C.muted) : C.light} />
+            : <CatIcon name="" size={22} color={C.light} />}
+          {link.relationship && (
+            <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, letterSpacing:"0.04em", textTransform:"uppercase", color: hasEntry ? tc : C.light, textAlign:"center", lineHeight:1.2 }}>{link.relationship}</span>
+          )}
+        </div>
         <div style={{ flex:1 }}>
           <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom: link._gravity === "high" ? 5 : 2 }}>
             <span style={{ fontFamily:"'Lora',serif", fontSize:gs.labelSize, fontWeight:gs.labelWeight, color: hasEntry ? C.text : C.muted, fontStyle: hasEntry ? "normal" : "italic" }}>{link.label}</span>
