@@ -240,27 +240,27 @@
     {
       "type": "Concept",
       "title": "Weather forecasting — '30% chance of rain'",
-      "description": "Billions of people check a chance-of-rain number every day without thinking about it. That number comes from a probabilistic model that weighs many possible futures. It gets right the idea that weather is uncertain and that uncertainty can be expressed as a number. What most people miss is that '30% chance' means something precise: if conditions like these arise 100 times, it rains about 30 of them. It does not mean a 30% storm."
+      "description": "Billions check a chance-of-rain number each day. It comes from a model that weighs many possible futures and turns weather into a single percentage. Most people read that number loosely. A '30% chance' has a precise meaning: out of 100 days with conditions like these, rain falls on about 30. It does not mean a weaker, 30-percent storm."
     },
     {
       "type": "Event",
       "title": "The 2008 financial crisis as probability failure",
-      "description": "Banks priced mortgage investments using models that assumed home loans in different cities would fail at different times, not all at once. When prices fell across the whole country around 2007 and 2008, they failed together. The models were not dishonest. They were wrong about how the world actually works. The crisis shows that a probability model can be mathematically correct and still give you badly wrong answers about real risk."
+      "description": "Banks priced mortgage bundles with models that assumed home loans in different cities would go bad at separate times, never all at once. When prices fell across the whole country around 2007 and 2008, the loans failed together. The math inside the models held up. Their picture of the world did not, and a model can be exact and still hide real danger."
     },
     {
       "type": "Game",
       "title": "Poker and casino gambling as popular probability",
-      "description": "Poker players who win consistently are estimating probabilities under pressure. Good players do this well. Casinos stay profitable because most players overestimate their chances. This gets right the idea that probability is a practical skill. What it distorts is that most people think gambling is mainly about luck. The skill edge in poker is real. Casinos survive because the house has a small probability advantage on every single bet."
+      "description": "Winning poker players estimate odds fast, under pressure, and a real skill edge separates them from the rest. Casinos turn a profit because most players think gambling is mostly luck and overrate their chances. The house keeps a small probability advantage on every bet, so over many hands and many players, the building always comes out ahead."
     },
     {
       "type": "Game",
       "title": "The lottery — probability made universally tangible",
-      "description": "Lottery jackpot odds, often one in several million, are printed on every ticket. This makes very small probabilities visible to almost everyone. The lottery gets the communication right. What it gets wrong in practice is that people treat those tiny odds as if they feel larger. Buying more tickets barely changes your chance. Lotteries are profitable largely because people's instinct about very small numbers is unreliable."
+      "description": "Every ticket prints the jackpot odds, often one in several million, putting a tiny probability in front of almost everyone. Yet people treat those odds as if they feel bigger than they are. Buying extra tickets barely moves your chance of winning. Lotteries stay profitable because human instinct about very small numbers is shaky, and the printed odds do little to fix it."
     },
     {
       "type": "Phrase",
       "title": "'What are the odds?'",
-      "description": "People say 'what are the odds?' when something surprising happens. The phrase treats events as having measurable likelihoods even when no math is being done. This captures something real about how probability has shaped everyday thinking. What it gets wrong is that surprising events are often not as rare as they feel. When millions of people have experiences every day, unusual things happen often. The math behind coincidence is hard to hold in your head."
+      "description": "People ask 'what are the odds?' when something surprising happens, talking as if every event carries a measurable likelihood, even with no math in sight. The phrase shows how deeply probability has soaked into plain speech. Still, surprising events are usually less rare than they feel. With millions of people living millions of days, strange coincidences are bound to happen often."
     }
   ],
   "research": [
