@@ -305,22 +305,22 @@
       "description": "This romantic comedy is about a man who can travel back in time. Its message is: stop trying to fix things and just live each moment fully. That is actually an argument against clock-managed time. The film gets right that measuring time and living well are not the same thing. What it misses is where the anxiety about wasted time came from. That anxiety was taught by factories and schools, not chosen freely."
     },
     {
-      "type": "Historical Event",
+      "type": "Event",
       "title": "The adoption of Standard Time (1883–1884)",
       "description": "In November 1883, American railway companies divided the country into four time zones. They did not ask Congress. They just announced it, and millions of people reset their clocks. Congress did not officially approve standard time until 1918. The episode shows how a private industry can change daily life faster than any government. It gets that right. What popular accounts often miss is that this was a business decision made for business reasons."
     },
     {
-      "type": "Technology",
+      "type": "Concept",
       "title": "GPS and the invisible atomic clock",
       "description": "Most people think GPS is a map app. It is actually a timekeeping system. Satellites carry precise atomic clocks. Your phone finds its location by measuring tiny differences in signal arrival times. The clocks must also correct for Einstein's theory of relativity or errors would reach several kilometers per day. GPS gets this right invisibly. What most users never know is that they are depending on both atomic physics and Einstein every time they navigate."
     },
     {
-      "type": "Cultural Phrase",
+      "type": "Phrase",
       "title": "'Time is money' — Benjamin Franklin (1748)",
       "description": "Benjamin Franklin wrote this phrase in 1748. It means time is a resource. If you waste it, you lose money. The phrase gets something real: in a wage economy, your hours can be bought and sold. What it distorts is that this is a fairly recent idea. For most of human history, people did not think about time this way. The phrase treats one era's economic arrangement as a permanent truth about what time is."
     },
     {
-      "type": "Historical Crisis",
+      "type": "Event",
       "title": "The Y2K crisis and the Unix timestamp",
       "description": "Y2K was a real scare. Computer systems stored years as two digits, so 2000 looked like 1900. About 300 to 500 billion dollars was spent fixing it. The crisis was solved, but the same problem is coming again: 32-bit Unix timestamps run out in January 2038. Digital systems treat time as a number, and every number has a limit. Y2K showed that timekeeping choices buried in old software can become global emergencies decades later."
     }

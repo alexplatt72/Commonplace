@@ -303,7 +303,9 @@ const SEVERITY = (() => {
 })();
 function loadTaxonomy(file) {
   try { const t = JSON.parse(fs.readFileSync(path.join(__dirname, 'taxonomy', file), 'utf8'));
-        return { canonicalSet: new Set(t.canonical || []), aliases: t.aliases || {}, mode: t.mode || 'warn' }; }
+        const aliases = {};
+        for (const [k, v] of Object.entries(t.aliases || {})) aliases[k.trim()] = v;   // trim keys to avoid whitespace-collision lookups
+        return { canonicalSet: new Set(t.canonical || []), aliases, mode: t.mode || 'warn' }; }
   catch { return { canonicalSet: new Set(), aliases: {}, mode: 'off' }; }
 }
 const TAXONOMY = { pcTypes: loadTaxonomy('popular_culture_types.json'), themes: loadTaxonomy('themes.json') };

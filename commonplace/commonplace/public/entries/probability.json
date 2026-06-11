@@ -238,12 +238,12 @@
   ],
   "popularCulture": [
     {
-      "type": "Everyday experience",
+      "type": "Concept",
       "title": "Weather forecasting — '30% chance of rain'",
       "description": "Billions of people check a chance-of-rain number every day without thinking about it. That number comes from a probabilistic model that weighs many possible futures. It gets right the idea that weather is uncertain and that uncertainty can be expressed as a number. What most people miss is that '30% chance' means something precise: if conditions like these arise 100 times, it rains about 30 of them. It does not mean a 30% storm."
     },
     {
-      "type": "Crisis",
+      "type": "Event",
       "title": "The 2008 financial crisis as probability failure",
       "description": "Banks priced mortgage investments using models that assumed home loans in different cities would fail at different times, not all at once. When prices fell across the whole country around 2007 and 2008, they failed together. The models were not dishonest. They were wrong about how the world actually works. The crisis shows that a probability model can be mathematically correct and still give you badly wrong answers about real risk."
     },
@@ -253,12 +253,12 @@
       "description": "Poker players who win consistently are estimating probabilities under pressure. Good players do this well. Casinos stay profitable because most players overestimate their chances. This gets right the idea that probability is a practical skill. What it distorts is that most people think gambling is mainly about luck. The skill edge in poker is real. Casinos survive because the house has a small probability advantage on every single bet."
     },
     {
-      "type": "Lottery",
+      "type": "Game",
       "title": "The lottery — probability made universally tangible",
       "description": "Lottery jackpot odds, often one in several million, are printed on every ticket. This makes very small probabilities visible to almost everyone. The lottery gets the communication right. What it gets wrong in practice is that people treat those tiny odds as if they feel larger. Buying more tickets barely changes your chance. Lotteries are profitable largely because people's instinct about very small numbers is unreliable."
     },
     {
-      "type": "Everyday phrase",
+      "type": "Phrase",
       "title": "'What are the odds?'",
       "description": "People say 'what are the odds?' when something surprising happens. The phrase treats events as having measurable likelihoods even when no math is being done. This captures something real about how probability has shaped everyday thinking. What it gets wrong is that surprising events are often not as rare as they feel. When millions of people have experiences every day, unusual things happen often. The math behind coincidence is hard to hold in your head."
     }
@@ -291,7 +291,7 @@
     }
   ],
   "themes": [
-    "commerce",
+    "trade",
     "intellectualHistory",
     "mathematics",
     "philosophy",
