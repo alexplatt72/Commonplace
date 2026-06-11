@@ -9,8 +9,8 @@
       { "re": "what it (?:leaves out|distorts|misses|gets wrong)", "flags": "gi", "label": "what it leaves out/distorts/misses" },
       { "re": "\\bit (?:leaves out|distorts|misses)\\b", "flags": "gi", "label": "it leaves out/distorts/misses" },
       { "re": "\\bgets? (?:the |one |something |a )?[\\p{L} ]{0,24}(?:right|wrong) (?:but|though|while|yet)\\b", "flags": "giu", "label": "gets X right but … (scorecard hinge)" },
-      { "re": "(?:\\b(?:is|was|are|were)|['\\u2019]s) right (?:that|about|to)\\b", "flags": "gi", "label": "is/was right that (scorecard mutation)" },
-      { "re": "(?:\\b(?:is|was|are|were)|['\\u2019]s) wrong (?:that|about|to)\\b", "flags": "gi", "label": "is/was wrong that (scorecard mutation)" }
+      { "re": "(?:\\b(?:is|was|are|were)|['\\u2019]s) right (?:that|about)\\b", "flags": "gi", "label": "is/was right that (scorecard mutation)" },
+      { "re": "(?:\\b(?:is|was|are|were)|['\\u2019]s) wrong (?:that|about)\\b", "flags": "gi", "label": "is/was wrong that (scorecard mutation)" }
     ]
   },
 
