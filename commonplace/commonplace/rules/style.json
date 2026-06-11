@@ -8,7 +8,9 @@
       { "re": "\\bgets\\b(?:(?:\\s+|[\\u2014\\u2013-]+)[\\p{L}\\p{N}'\\u2019/-]+){0,8}\\s+wrong\\b", "flags": "giu", "label": "gets … wrong" },
       { "re": "what it (?:leaves out|distorts|misses|gets wrong)", "flags": "gi", "label": "what it leaves out/distorts/misses" },
       { "re": "\\bit (?:leaves out|distorts|misses)\\b", "flags": "gi", "label": "it leaves out/distorts/misses" },
-      { "re": "\\bgets? (?:the |one |something |a )?[\\p{L} ]{0,24}(?:right|wrong) (?:but|though|while|yet)\\b", "flags": "giu", "label": "gets X right but … (scorecard hinge)" }
+      { "re": "\\bgets? (?:the |one |something |a )?[\\p{L} ]{0,24}(?:right|wrong) (?:but|though|while|yet)\\b", "flags": "giu", "label": "gets X right but … (scorecard hinge)" },
+      { "re": "(?:\\b(?:is|was|are|were)|['\\u2019]s) right (?:that|about|to)\\b", "flags": "gi", "label": "is/was right that (scorecard mutation)" },
+      { "re": "(?:\\b(?:is|was|are|were)|['\\u2019]s) wrong (?:that|about|to)\\b", "flags": "gi", "label": "is/was wrong that (scorecard mutation)" }
     ]
   },
 
@@ -17,7 +19,10 @@
     "patterns": [
       { "re": "\\b(?:accurately|faithfully|powerfully|brilliantly) (?:captures|conveys|depicts|portrays|shows)\\b", "flags": "gi", "label": "adverb + captures/conveys (scorecard mutation)" },
       { "re": "\\bcaptures? the (?:emotional |political |human )?(?:core|truth|reality|essence)\\b", "flags": "gi", "label": "captures the X core/truth" },
-      { "re": "\\bsuccessfully (?:conveys|captures|shows|depicts)\\b", "flags": "gi", "label": "successfully conveys/captures" }
+      { "re": "\\bsuccessfully (?:conveys|captures|shows|depicts)\\b", "flags": "gi", "label": "successfully conveys/captures" },
+      { "re": "\\b(?:the )?(?:point|critique|insight|argument) (?:is|was) (?:fair|sound|right)\\b", "flags": "gi", "label": "the point is fair/sound" },
+      { "re": "\\b(?:the )?(?:core|premise|instinct|idea) (?:is|was) sound\\b", "flags": "gi", "label": "the core is sound" },
+      { "re": "\\b(?:saw|sees|see|grasps|grasped|gets at|got at) something (?:true|real|right) about\\b", "flags": "gi", "label": "saw something true about" }
     ]
   },
 
