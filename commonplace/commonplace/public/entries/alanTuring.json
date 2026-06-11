@@ -203,6 +203,50 @@
       "originLanguage": null,
       "domainAuthority": "Mind",
       "annotation": "The paper that introduced what became the Turing Test — Turing's argument that the question 'can machines think?' should be replaced by asking whether machines can imitate human responses indistinguishably. The founding document of philosophy of mind as applied to computing."
+    },
+    {
+      "author": "Turing, Alan",
+      "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+      "year": "1936",
+      "type": "Primary source",
+      "reliability": "Primary",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The 1936 paper that introduced the Turing machine, the universal machine, and the undecidability of the halting problem — the primary text the entry's entire computability account draws on."
+    },
+    {
+      "author": "Penrose, Roger",
+      "title": "The Emperor's New Mind",
+      "year": "1989",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Penrose's book advancing the non-computability argument that Gödel's and Turing's results show human mathematical understanding cannot be captured by any algorithm — a thesis the entry directly engages and flags as contested."
+    },
+    {
+      "author": "Searle, John",
+      "title": "Minds, Brains, and Programs",
+      "year": "1980",
+      "type": "Journal article",
+      "reliability": "Authoritative",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Searle's paper introducing the Chinese Room argument against behavioral criteria of understanding — named in the entry as a primary text for the philosophical debate and engaged against the Turing test."
+    },
+    {
+      "author": "Gödel, Kurt",
+      "title": "On Formally Undecidable Propositions of Principia Mathematica and Related Systems",
+      "year": "1931",
+      "type": "Primary source",
+      "reliability": "Primary",
+      "contribution": "Supplementary",
+      "originLanguage": "German",
+      "domainAuthority": null,
+      "annotation": "Gödel's incompleteness paper, whose result the entry maps directly onto Turing's undecidability of the halting problem and which anchors the Penrose argument the advanced layer engages."
     }
   ],
   "commerce": [

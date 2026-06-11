@@ -234,6 +234,83 @@
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The standard technical reference for AI — covers the field's history, methods, and state of the art across multiple editions. Essential for understanding what AI researchers actually do rather than what popular accounts describe."
+    },
+    {
+      "author": "Turing, Alan M.",
+      "title": "Computing Machinery and Intelligence",
+      "year": "1950",
+      "type": "Journal article",
+      "reliability": "Primary",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The founding text the entry directly narrates as setting AI's operationally-defined research agenda via the Turing test and the question 'Can machines think?'"
+    },
+    {
+      "author": "Searle, John R.",
+      "title": "Minds, Brains, and Programs",
+      "year": "1980",
+      "type": "Journal article",
+      "reliability": "Primary",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The primary source of the Chinese Room argument the entry invokes to challenge the Turing test's behaviorism — that a system can pass behavioral tests for understanding without understanding."
+    },
+    {
+      "author": "Dreyfus, Hubert L.",
+      "title": "What Computers Can't Do: The Limits of Artificial Intelligence",
+      "year": "1972",
+      "type": "Philosophical monograph",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The work whose philosophical critique of symbolic AI and analysis of the frame problem the entry credits with anticipating the limitations of rule-based systems."
+    },
+    {
+      "author": "Vaswani, Ashish et al.",
+      "title": "Attention Is All You Need",
+      "year": "2017",
+      "type": "Conference paper",
+      "reliability": "Primary",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The primary paper introducing the transformer architecture, which the entry treats across the advanced and research layers as the technical basis enabling large language models."
+    },
+    {
+      "author": "Krizhevsky, Alex; Sutskever, Ilya; Hinton, Geoffrey",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)",
+      "year": "2012",
+      "type": "Conference paper",
+      "reliability": "Primary",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The primary source for the 2012 ImageNet breakthrough the entry repeatedly narrates as the event that proved deep learning's superiority and reoriented the field."
+    },
+    {
+      "author": "Kaplan, Jared et al.",
+      "title": "Scaling Laws for Neural Language Models",
+      "year": "2020",
+      "type": "Journal article",
+      "reliability": "Primary",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The primary source for the scaling-laws finding the entry credits with supplying the LLM era's investment logic that capability gains require only resources, not new ideas."
+    },
+    {
+      "author": "Wei, Jason et al.",
+      "title": "Emergent Abilities of Large Language Models",
+      "year": "2022",
+      "type": "Journal article",
+      "reliability": "Primary",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The primary paper the entry engages on the emergent-capabilities question — its claim that abilities appear suddenly with scale, and the later challenge that some are measurement artifacts."
     }
   ],
   "commerce": [
