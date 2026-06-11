@@ -240,22 +240,22 @@
     {
       "type": "Concept",
       "title": "The null pointer error",
-      "description": "Tony Hoare invented the null pointer in 1965. It is zero in programming: a marker for the absence of a value. He later called it his billion-dollar mistake because of how many crashes and security flaws it caused. It gets right that zero is powerful because it stands for nothing. It shows how hard it still is to handle nothing safely in software."
+      "description": "Tony Hoare invented the null pointer in 1965. It is zero in code: a marker that points to no value at all. He later called it his billion-dollar mistake. Programs that follow such a pointer crash, and attackers have used the gap to break in. Sixty years on, telling a program that something is simply absent, and having it cope, remains hard."
     },
     {
       "type": "Concept",
       "title": "Zero as philosophical void",
-      "description": "Ancient Greek thinkers refused to call zero a number. Medieval scholars worried that the void it represented had no place in a world created by God. This gets right that zero is genuinely hard to think about. It distorts by making the resistance look like superstition. The real difficulty is that zero is the number for the absence of a number, which is a stranger idea than it seems."
+      "description": "Ancient Greek thinkers refused to count zero as a number. Medieval scholars feared the void it named had no place in a world made by God. Their unease was not mere superstition. Zero is the number that stands for the absence of a number, a twist of thought that doubles back on itself. The strangeness those thinkers felt was real, built into the idea itself."
     },
     {
       "type": "Concept",
       "title": "The Hindu-Arabic numeral system and zero's transmission",
-      "description": "Zero traveled from Indian mathematics through Islamic scholars and reached medieval Europe by around 1200, when Fibonacci introduced Hindu-Arabic numerals to European merchants. Some merchants who used zero in contracts were accused of fraud. This story gets right that zero was a slow cultural change, not just a math upgrade. It sometimes misses how much Islamic scholars built on the Indian system before passing it west."
+      "description": "Zero moved from Indian mathematics through Islamic scholars to medieval Europe, arriving around 1200 when Fibonacci showed merchants the new numerals. Some who wrote zeros into contracts were accused of fraud, since a zero was easy to forge. The change took centuries, not a season. The usual telling jumps from India to Europe and skips the Islamic scholars, who reshaped and extended the system first."
     },
     {
       "type": "Concept",
       "title": "Calculus and the infinitely small",
-      "description": "Newton and Leibniz invented calculus in the 17th century. It works by dividing by quantities that shrink toward zero without quite reaching it. Cauchy and Weierstrass gave that procedure solid logical foundations in the 19th century. This gets right that zero sits at the heart of calculus. It often skips that the rigor problem took over a century to solve and delayed parts of physics along the way."
+      "description": "Newton and Leibniz built calculus in the 17th century around quantities that shrink toward zero without ever touching it. The method gave right answers, yet rested on a step no one could defend. Cauchy and Weierstrass finally made it rigorous in the 19th century. That gap lasted more than a hundred years, and the shaky footing held back parts of physics until the logic was repaired."
     }
   ],
   "research": [
