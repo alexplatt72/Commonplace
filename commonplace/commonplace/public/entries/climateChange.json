@@ -130,13 +130,15 @@
       "label": "The Paris Agreement",
       "status": "planned",
       "relationship": "Consequential",
-      "reason": "The Paris Agreement is the primary international institutional response to climate change — its architecture, commitments, and enforcement mechanisms define the political frame within which climate action is currently organized."
+      "reason": "The Paris Agreement is the primary international institutional response to climate change — its architecture, commitments, and enforcement mechanisms define the political frame within which climate action is currently organized.",
+      "entryId": "parisAgreement"
     },
     {
       "label": "Geoengineering",
       "status": "planned",
       "relationship": "Consequential",
-      "reason": "Solar radiation management and carbon capture represent the technological response to climate change — their development and the debates about deploying them are the emerging frontier of climate policy."
+      "reason": "Solar radiation management and carbon capture represent the technological response to climate change — their development and the debates about deploying them are the emerging frontier of climate policy.",
+      "entryId": "geoengineering"
     }
   ],
   "reference": [

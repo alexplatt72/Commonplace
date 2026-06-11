@@ -1,0 +1,25 @@
+{
+  "_comment": "Staged severity for every modular check. fail = blocks (counts as a hard fail + blocks commit via hook). warn = review only. off = skip. Flip a check from warn->fail as its remediation phase finishes, so turning the gate on does not block every commit before the backlog is cleared.",
+  "_staging_plan": {
+    "now (Phase A/B — integrity enforced)": ["ref.duplicateTitle=fail", "ref.noEssential=fail", "rabbit.blankEntryId=fail", "rabbit.dupEntryId=fail"],
+    "after taxonomy enums approved (Phase C)": ["taxonomy.pcType -> fail", "taxonomy.theme -> fail"],
+    "after comparative-intro pass (Phase D)": ["cm.summaryRequired -> fail"],
+    "after popular-culture rewrite (Phase E)": ["pc.scorecard -> fail"]
+  },
+  "severity": {
+    "ref.duplicateTitle": "fail",
+    "ref.noEssential": "fail",
+    "ref.yearFormat": "warn",
+    "ref.annotationBoilerplate": "warn",
+    "rabbit.blankEntryId": "fail",
+    "rabbit.dupEntryId": "fail",
+    "taxonomy.pcType": "warn",
+    "taxonomy.theme": "warn",
+    "cm.summaryRequired": "warn",
+    "cm.cardLength": "warn",
+    "pc.scorecard": "warn",
+    "pc.watch": "warn",
+    "commerce.microcopy": "warn",
+    "repetition.stem": "warn"
+  }
+}

@@ -22,6 +22,13 @@ const SINGLE_ENTRY  = (() => {
   const i = process.argv.indexOf('--entry');
   return i !== -1 ? process.argv[i + 1] : null;
 })();
+// --only id1,id2  → validate just these entries (used by the pre-commit hook on changed files)
+const ONLY = (() => {
+  const i = process.argv.indexOf('--only');
+  return i !== -1 ? new Set((process.argv[i + 1] || '').split(',').map(s => s.trim()).filter(Boolean)) : null;
+})();
+const FAST = process.argv.includes('--fast');   // skip the slow corpus repetition scan
+const FULL = process.argv.includes('--full');   // force the corpus repetition scan
 
 // ── Manifest ──────────────────────────────────────────────────────────────────
 const manifestPath = path.join(ENTRIES_DIR, 'manifest.json');
@@ -285,6 +292,40 @@ const COMMERCE_NOTE_TEMPLATES = [
   'covers all aspects',
 ];
 
+// ── Modular checks (one gate, modular internals; severity staged in data) ─────
+// validate_entries.cjs stays the single command; these modules add integrity, taxonomy,
+// and style families driven by rules/*.json + taxonomy/*.json. Severity is data-controlled
+// so a check can be staged off → warn → fail as its remediation phase completes.
+const STYLE_RULES = JSON.parse(fs.readFileSync(path.join(__dirname, 'rules', 'style.json'), 'utf8'));
+const SEVERITY = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'rules', 'severity.json'), 'utf8')).severity || {}; }
+  catch { return {}; }
+})();
+function loadTaxonomy(file) {
+  try { const t = JSON.parse(fs.readFileSync(path.join(__dirname, 'taxonomy', file), 'utf8'));
+        return { canonicalSet: new Set(t.canonical || []), aliases: t.aliases || {}, mode: t.mode || 'warn' }; }
+  catch { return { canonicalSet: new Set(), aliases: {}, mode: 'off' }; }
+}
+const TAXONOMY = { pcTypes: loadTaxonomy('popular_culture_types.json'), themes: loadTaxonomy('themes.json') };
+const MODULE_NAMES = ['references', 'rabbitHoles', 'comparativeMemory', 'popularCultureStyle', 'taxonomy', 'commerce'];
+const MODULES = MODULE_NAMES.map(n => require(path.join(__dirname, 'validators', n + '.cjs')));
+const ctx = {
+  wordCount,
+  fk: fleschKincaidGradeLevel,
+  norm: s => mediaNorm(mediaStripParen(s)),
+  manifestIds,
+  rules: STYLE_RULES,
+  taxonomy: TAXONOMY,
+};
+function applyModuleFindings(findings, fails, warnings) {
+  for (const f of findings || []) {
+    const lvl = SEVERITY[f.id] || 'warn';
+    if (lvl === 'off') continue;
+    (lvl === 'fail' ? fails : warnings).push(f.message);
+  }
+}
+const corpusEntries = [];
+
 // ─────────────────────────────────────────────────────────────────────────────
 // MAIN VALIDATION LOOP
 // ─────────────────────────────────────────────────────────────────────────────
@@ -303,6 +344,8 @@ const allFiles = fs.readdirSync(ENTRIES_DIR)
 
 const filesToProcess = SINGLE_ENTRY
   ? allFiles.filter(f => f === `${SINGLE_ENTRY}.json`)
+  : ONLY
+  ? allFiles.filter(f => ONLY.has(f.replace('.json', '')))
   : allFiles;
 
 // Track all IDs seen for duplicate detection
@@ -940,6 +983,13 @@ for (const fname of filesToProcess) {
   if (!entry.interpretiveInfluences || !Array.isArray(entry.interpretiveInfluences) || entry.interpretiveInfluences.length < 3)
     advisories.push(`interpretiveInfluences should have 3+ names (has ${(entry.interpretiveInfluences || []).length})`);
 
+  // ── MODULAR CHECKS (integrity / taxonomy / style; severity staged in data) ──
+  for (const mod of MODULES) {
+    try { applyModuleFindings(mod(entry, ctx), fails, warnings); }
+    catch (e) { warnings.push(`validator module ${mod.name || '?'} error: ${e.message}`); }
+  }
+  corpusEntries.push({ id, e: entry });
+
   // ── Aggregate result ───────────────────────────────────────────────────────
 
   const hasFails = fails.length > 0;
@@ -957,6 +1007,18 @@ for (const fname of filesToProcess) {
       layers: layerStats,
     },
   });
+}
+
+// ── CORPUS REPETITION DETECTOR (full mode only — the permanent anti-mole) ─────
+// Skipped for single-entry / --only / --fast runs (e.g. the pre-commit hook) since it
+// needs the whole corpus; run it explicitly with --full or on a full-dir validate.
+let repetitionFindings = [];
+const RUN_REPETITION = FULL || (!SINGLE_ENTRY && !ONLY && !FAST);
+if (RUN_REPETITION && corpusEntries.length > 20) {
+  try {
+    const corpusRepetition = require(path.join(__dirname, 'validators', 'repetition.cjs'));
+    repetitionFindings = corpusRepetition(corpusEntries, ctx) || [];
+  } catch (e) { console.error('repetition scan error:', e.message); }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1100,6 +1162,16 @@ if (SINGLE_ENTRY) {
   } else {
     console.log(`\n  No entry found with id "${SINGLE_ENTRY}"`);
   }
+}
+
+// ── CORPUS REPETITION REPORT ─────────────────────────────────────────────────
+if (repetitionFindings.length) {
+  console.log(`\n${'─'.repeat(72)}`);
+  console.log(`  CORPUS REPETITION  (${repetitionFindings.length} recurring stems — decide: ban in rules/style.json or allowlist as framework)`);
+  console.log(`${'─'.repeat(72)}`);
+  for (const f of repetitionFindings.slice(0, 40))
+    console.log(`    [${f.section}]  "${f.stem}"  — ${f.count}× across ${f.entries} entries`);
+  if (repetitionFindings.length > 40) console.log(`    … and ${repetitionFindings.length - 40} more`);
 }
 
 // ── SUMMARY ───────────────────────────────────────────────────────────────────

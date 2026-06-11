@@ -1,0 +1,882 @@
+{
+  "_comment": "DRAFT — pending approval. canonical = approved enum; aliases map known variants to canonical; _unmapped are values needing a decision (currently warn-flagged by the validator). mode flips to \"fail\" after approval + Phase C normalization.",
+  "mode": "warn",
+  "canonical": [
+    "Film",
+    "Television",
+    "Novel",
+    "Book",
+    "Short Story",
+    "Poem",
+    "Play",
+    "Music",
+    "Album",
+    "Song",
+    "Documentary",
+    "Podcast",
+    "Video Game",
+    "Board Game",
+    "Artwork",
+    "Painting",
+    "Sculpture",
+    "Photograph",
+    "Comic",
+    "Graphic Novel",
+    "Concept",
+    "Phrase",
+    "Event",
+    "Exhibition",
+    "Document",
+    "Speech",
+    "Monument",
+    "Place",
+    "Institution",
+    "Controversy",
+    "Other"
+  ],
+  "aliases": {
+    "TV": "Television",
+    "Game": "Video Game",
+    "Historical Event": "Event",
+    "Historical event": "Event",
+    "Cultural phrase": "Phrase",
+    "Legal Tradition": "Concept",
+    "Legal tradition": "Concept",
+    "Theater": "Play",
+    "Cultural Phrase": "Phrase",
+    "Video game": "Video Game",
+    "Memoir": "Book",
+    "Phrases": "Phrase",
+    "Theatre": "Play"
+  },
+  "_unmapped": [
+    [
+      "Fact",
+      12
+    ],
+    [
+      "Cultural Reference",
+      11
+    ],
+    [
+      "Literature",
+      8
+    ],
+    [
+      "Musical",
+      7
+    ],
+    [
+      "Contemporary Issue",
+      6
+    ],
+    [
+      "Architecture",
+      6
+    ],
+    [
+      "Historical figure",
+      6
+    ],
+    [
+      "Cultural concept",
+      5
+    ],
+    [
+      "Art",
+      5
+    ],
+    [
+      "Historical Figure",
+      5
+    ],
+    [
+      "Scientific Achievement",
+      5
+    ],
+    [
+      "Technology",
+      5
+    ],
+    [
+      "Symbol",
+      4
+    ],
+    [
+      "Landmark",
+      4
+    ],
+    [
+      "Political History",
+      4
+    ],
+    [
+      "Political Tradition",
+      4
+    ],
+    [
+      "Political phrase",
+      3
+    ],
+    [
+      "Political Crisis",
+      3
+    ],
+    [
+      "Literary Tradition",
+      3
+    ],
+    [
+      "Political Theory",
+      3
+    ],
+    [
+      "Philosophical Concept",
+      3
+    ],
+    [
+      "Political Legacy",
+      3
+    ],
+    [
+      "Intellectual Tradition",
+      3
+    ],
+    [
+      "Contemporary Relevance",
+      3
+    ],
+    [
+      "Historical Debate",
+      3
+    ],
+    [
+      "Contemporary Debate",
+      3
+    ],
+    [
+      "Political Concept",
+      3
+    ],
+    [
+      "Literary Work",
+      3
+    ],
+    [
+      "Influence",
+      3
+    ],
+    [
+      "Autobiography",
+      2
+    ],
+    [
+      "Essay",
+      2
+    ],
+    [
+      "Cultural archetype",
+      2
+    ],
+    [
+      "Cultural institution",
+      2
+    ],
+    [
+      "Scientific Fact",
+      2
+    ],
+    [
+      "Epic",
+      2
+    ],
+    [
+      "Legal history",
+      2
+    ],
+    [
+      "Archaeological Discovery",
+      2
+    ],
+    [
+      "Myth",
+      2
+    ],
+    [
+      "Poetry",
+      2
+    ],
+    [
+      "Public Health Crisis",
+      2
+    ],
+    [
+      "Policy Legacy",
+      2
+    ],
+    [
+      "Historical legacy",
+      2
+    ],
+    [
+      "Language",
+      2
+    ],
+    [
+      "Scholarship",
+      2
+    ],
+    [
+      "Policy Concept",
+      2
+    ],
+    [
+      "Novel / Film",
+      2
+    ],
+    [
+      "Historical Document",
+      2
+    ],
+    [
+      "Political Controversy",
+      2
+    ],
+    [
+      "Institutional Legacy",
+      2
+    ],
+    [
+      "Contemporary Politics",
+      2
+    ],
+    [
+      "Environmental fact",
+      2
+    ],
+    [
+      "Political Figure",
+      2
+    ],
+    [
+      "Museum collection",
+      2
+    ],
+    [
+      "Historical Achievement",
+      2
+    ],
+    [
+      "Historical Crisis",
+      2
+    ],
+    [
+      "Award",
+      1
+    ],
+    [
+      "Public Health Campaign",
+      1
+    ],
+    [
+      "Misquote",
+      1
+    ],
+    [
+      "National symbol",
+      1
+    ],
+    [
+      "Word",
+      1
+    ],
+    [
+      "Museum",
+      1
+    ],
+    [
+      "Architectural concept",
+      1
+    ],
+    [
+      "Political movement",
+      1
+    ],
+    [
+      "Halloween",
+      1
+    ],
+    [
+      "Military concept",
+      1
+    ],
+    [
+      "Prize",
+      1
+    ],
+    [
+      "Data",
+      1
+    ],
+    [
+      "Political crisis",
+      1
+    ],
+    [
+      "Cultural Movement",
+      1
+    ],
+    [
+      "Building",
+      1
+    ],
+    [
+      "Structure",
+      1
+    ],
+    [
+      "Song / Cultural Fact",
+      1
+    ],
+    [
+      "Architectural Landmark",
+      1
+    ],
+    [
+      "Case",
+      1
+    ],
+    [
+      "Scientific tourism",
+      1
+    ],
+    [
+      "Documentary tradition",
+      1
+    ],
+    [
+      "Cultural moment",
+      1
+    ],
+    [
+      "Cultural Symbol",
+      1
+    ],
+    [
+      "Museum Collection",
+      1
+    ],
+    [
+      "Legal Case",
+      1
+    ],
+    [
+      "Movement",
+      1
+    ],
+    [
+      "Cultural ritual",
+      1
+    ],
+    [
+      "Environmental event",
+      1
+    ],
+    [
+      "Scientific instrument",
+      1
+    ],
+    [
+      "Political vocabulary",
+      1
+    ],
+    [
+      "Music / Theatre",
+      1
+    ],
+    [
+      "Photography",
+      1
+    ],
+    [
+      "Cultural Memory",
+      1
+    ],
+    [
+      "Myth / Cultural Fact",
+      1
+    ],
+    [
+      "Myth debunked",
+      1
+    ],
+    [
+      "Mathematical concept",
+      1
+    ],
+    [
+      "Literary tradition",
+      1
+    ],
+    [
+      "Ethnic identity",
+      1
+    ],
+    [
+      "Cultural practice",
+      1
+    ],
+    [
+      "Organization",
+      1
+    ],
+    [
+      "Legal Moment",
+      1
+    ],
+    [
+      "Policy Reference",
+      1
+    ],
+    [
+      "Academic Legacy",
+      1
+    ],
+    [
+      "Historical Biography",
+      1
+    ],
+    [
+      "Archaeological discovery",
+      1
+    ],
+    [
+      "Aesthetic",
+      1
+    ],
+    [
+      "Environmental marker",
+      1
+    ],
+    [
+      "Exhibit",
+      1
+    ],
+    [
+      "Archaeological Site",
+      1
+    ],
+    [
+      "Legislation",
+      1
+    ],
+    [
+      "Historical metaphor",
+      1
+    ],
+    [
+      "Film franchise",
+      1
+    ],
+    [
+      "News",
+      1
+    ],
+    [
+      "Historical place",
+      1
+    ],
+    [
+      "Thought Experiment",
+      1
+    ],
+    [
+      "Academic Impact",
+      1
+    ],
+    [
+      "International Application",
+      1
+    ],
+    [
+      "Critical Response",
+      1
+    ],
+    [
+      "Linguistic Legacy",
+      1
+    ],
+    [
+      "Philosophical Legacy",
+      1
+    ],
+    [
+      "Intellectual Debate",
+      1
+    ],
+    [
+      "Biographical Paradox",
+      1
+    ],
+    [
+      "Science",
+      1
+    ],
+    [
+      "Cultural Icon",
+      1
+    ],
+    [
+      "Image",
+      1
+    ],
+    [
+      "Cultural name",
+      1
+    ],
+    [
+      "Constitutional Legacy",
+      1
+    ],
+    [
+      "Critique",
+      1
+    ],
+    [
+      "Political Method",
+      1
+    ],
+    [
+      "Critical Reassessment",
+      1
+    ],
+    [
+      "Political moment",
+      1
+    ],
+    [
+      "Historical Map",
+      1
+    ],
+    [
+      "Holiday Politics",
+      1
+    ],
+    [
+      "FBI Surveillance",
+      1
+    ],
+    [
+      "Economic History",
+      1
+    ],
+    [
+      "Cultural Achievement",
+      1
+    ],
+    [
+      "Popular Fiction",
+      1
+    ],
+    [
+      "Biblical story",
+      1
+    ],
+    [
+      "Wonder",
+      1
+    ],
+    [
+      "News event",
+      1
+    ],
+    [
+      "Economic phenomenon",
+      1
+    ],
+    [
+      "Monetary event",
+      1
+    ],
+    [
+      "Philosophical Problem",
+      1
+    ],
+    [
+      "Theological Concept",
+      1
+    ],
+    [
+      "Cultural Comparison",
+      1
+    ],
+    [
+      "Historical disaster",
+      1
+    ],
+    [
+      "Consumer product",
+      1
+    ],
+    [
+      "Literary Controversy",
+      1
+    ],
+    [
+      "Sport",
+      1
+    ],
+    [
+      "Technological system",
+      1
+    ],
+    [
+      "Cultural Myth",
+      1
+    ],
+    [
+      "Quotation",
+      1
+    ],
+    [
+      "Legacy",
+      1
+    ],
+    [
+      "Internet Culture",
+      1
+    ],
+    [
+      "Epic poem",
+      1
+    ],
+    [
+      "Cultural shorthand",
+      1
+    ],
+    [
+      "Political event",
+      1
+    ],
+    [
+      "Technological transition",
+      1
+    ],
+    [
+      "Everyday experience",
+      1
+    ],
+    [
+      "Crisis",
+      1
+    ],
+    [
+      "Lottery",
+      1
+    ],
+    [
+      "Everyday phrase",
+      1
+    ],
+    [
+      "Historical consequence",
+      1
+    ],
+    [
+      "Novel / TV",
+      1
+    ],
+    [
+      "Breakthrough",
+      1
+    ],
+    [
+      "Agricultural event",
+      1
+    ],
+    [
+      "Cultural tradition",
+      1
+    ],
+    [
+      "Historical Infrastructure",
+      1
+    ],
+    [
+      "American History",
+      1
+    ],
+    [
+      "Comedy",
+      1
+    ],
+    [
+      "Numerals",
+      1
+    ],
+    [
+      "Animation",
+      1
+    ],
+    [
+      "Historical Site",
+      1
+    ],
+    [
+      "Cultural Etymology",
+      1
+    ],
+    [
+      "Biblical Story",
+      1
+    ],
+    [
+      "Literary work",
+      1
+    ],
+    [
+      "Hymn",
+      1
+    ],
+    [
+      "Political Philosophy",
+      1
+    ],
+    [
+      "Historical Legacy",
+      1
+    ],
+    [
+      "Contrast",
+      1
+    ],
+    [
+      "Political Application",
+      1
+    ],
+    [
+      "Popular Movement",
+      1
+    ],
+    [
+      "Psychological Application",
+      1
+    ],
+    [
+      "Military Tradition",
+      1
+    ],
+    [
+      "Philosophical Contrast",
+      1
+    ],
+    [
+      "Visual art",
+      1
+    ],
+    [
+      "Trial",
+      1
+    ],
+    [
+      "Short fiction",
+      1
+    ],
+    [
+      "Historical Memory",
+      1
+    ],
+    [
+      "Philosophical Claim",
+      1
+    ],
+    [
+      "Historical Method",
+      1
+    ],
+    [
+      "Contemporary Application",
+      1
+    ],
+    [
+      "Historical Myth",
+      1
+    ],
+    [
+      "Historical Symbol",
+      1
+    ],
+    [
+      "Cultural Debate",
+      1
+    ],
+    [
+      "Tourism Phenomenon",
+      1
+    ],
+    [
+      "Political Significance",
+      1
+    ],
+    [
+      "Musical Tradition",
+      1
+    ],
+    [
+      "Intellectual Legacy",
+      1
+    ],
+    [
+      "Misreading",
+      1
+    ],
+    [
+      "Historical Context",
+      1
+    ],
+    [
+      "Film and Musical",
+      1
+    ],
+    [
+      "Art and Design",
+      1
+    ],
+    [
+      "Historical Warning",
+      1
+    ],
+    [
+      "Religious Practice",
+      1
+    ],
+    [
+      "Agricultural Crisis",
+      1
+    ],
+    [
+      "Contemporary Crisis",
+      1
+    ],
+    [
+      "Historical Transition",
+      1
+    ],
+    [
+      "Historical Phenomenon",
+      1
+    ],
+    [
+      "Technical Concept",
+      1
+    ],
+    [
+      "Cultural History",
+      1
+    ],
+    [
+      "Mathematical Legacy",
+      1
+    ]
+  ]
+}
