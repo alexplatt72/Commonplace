@@ -153,9 +153,16 @@
     {
       "label": "The Treasury",
       "entryId": "treasury",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "The treasury is the institution that holds and disburses the money the parliament votes; the power of the purse only bites if there is a treasury to control. The struggle over who authorizes spending and audits accounts connects the legislative assembly directly to the fiscal machinery it came to oversee."
+    },
+    {
+      "label": "The Tariff",
+      "entryId": "tariff",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Parliament's constitutional control over customs duties — the power of the purse — is one of the oldest engines of representative government; the tariff entry only makes sense against the institutional history of legislatures that voted on trade taxes."
     }
   ],
   "reference": [
