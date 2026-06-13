@@ -5987,5 +5987,86 @@
     ],
     "degree": 12,
     "added": "2026-06-13"
+  },
+  {
+    "id": "customsHouses",
+    "title": "Customs Houses",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which states have taxed, inspected, and controlled the movement of goods across borders and through ports — generating revenue, asserting sovereignty, regulating trade, and producing the bureaucratic frontier at which commerce and state power meet.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "wuZetian",
+    "title": "Wu Zetian",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "624–705 CE",
+    "status": "published",
+    "summary": "The only woman in Chinese history to rule as emperor in her own name — she rose from a Tang court concubine to supreme power, founded the Zhou dynasty, wielded the civil-service examination system as a tool of political restructuring, used Buddhism to legitimate her reign, and received from the historians who followed her a portrait so hostile that separating the record from the slander remains an active scholarly problem.",
+    "startYear": 624,
+    "endYear": 705,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "codeOfHammurabi",
+    "title": "The Code of Hammurabi",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 1754 BCE",
+    "status": "published",
+    "summary": "The collection of 282 laws carved onto a black basalt stele by the Babylonian king Hammurabi around 1754 BCE — one of the oldest and most complete legal texts to survive from the ancient world — that established graduated punishments based on class, codified the principle of proportional retribution, and presented law as a gift from the gods entrusted to a just king.",
+    "startYear": -1754,
+    "endYear": -1754,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "mint",
+    "title": "The Mint",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 600 BCE – present",
+    "status": "published",
+    "summary": "The state workshop that strikes coin — the institution through which rulers across three millennia have controlled the money supply, extracted revenue through seigniorage, waged economic warfare through debasement, and bound the authority to make money to the authority to govern.",
+    "startYear": -600,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "elNino",
+    "title": "El Nino",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "Recurring, c. 3000 BCE–present",
+    "status": "published",
+    "summary": "El Nino is not a single storm but a shift in the entire Pacific Ocean that reshapes weather across the planet. Roughly every three to seven years the warm surface water of the western Pacific sloshes east, killing the cold upwelling off Peru and triggering drought in Asia, floods in South America, and famine across Africa and India. Mike Davis showed that the great colonial-era famines were not accidents of nature but the collision of ENSO cycles with imperial political economies that stripped their subjects of any buffer. Understanding El Nino means understanding that global weather is a single connected system, and that its disruptions fall hardest on those with the least power to absorb them.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Pacific",
+      "Global"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
   }
 ]
