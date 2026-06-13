@@ -32,22 +32,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "accounting",
-    "title": "Accounting",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "c. 3000 BCE–present",
-    "status": "published",
-    "summary": "The discipline of recording, classifying, and communicating economic activity — and the technology through which power has made the economic world visible to itself. Accounting produced the account, double-entry bookkeeping, the audit, the profession, and the idea of accountability itself, each extending the reach of legibility over economic life.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-13"
-  },
-  {
     "id": "abrahamLincoln",
     "title": "Abraham Lincoln",
     "template": "People",
@@ -62,6 +46,22 @@
     ],
     "degree": 9,
     "added": "2026-06-01"
+  },
+  {
+    "id": "accounting",
+    "title": "Accounting",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 3000 BCE–present",
+    "status": "published",
+    "summary": "The discipline of recording, classifying, and communicating economic activity — and the technology through which power has made the economic world visible to itself. Accounting produced the account, double-entry bookkeeping, the audit, the profession, and the idea of accountability itself, each extending the reach of legibility over economic life.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
   },
   {
     "id": "adamSmith",
@@ -94,6 +94,22 @@
     ],
     "degree": 10,
     "added": "2026-05-31"
+  },
+  {
+    "id": "aksum",
+    "title": "Aksum",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 100 CE – 940 CE",
+    "status": "published",
+    "summary": "The ancient kingdom of northern Ethiopia and Eritrea that became one of the ancient world's great trading powers, one of the first states to adopt Christianity as a state religion, and the origin point of a living tradition — the Ethiopian Orthodox Church — that claims an unbroken line to the fourth century.",
+    "startYear": 100,
+    "endYear": 940,
+    "regions": [
+      "Africa"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
   },
   {
     "id": "alanTuring",
@@ -151,6 +167,22 @@
     ],
     "degree": 12,
     "added": "2026-05-30"
+  },
+  {
+    "id": "alKhwarizmi",
+    "title": "Al-Khwarizmi",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 780–850",
+    "status": "published",
+    "summary": "The ninth-century Persian scholar at Baghdad's House of Wisdom whose treatise on al-jabr gave algebra its name and its method, whose name became the word 'algorithm,' and who helped carry the Hindu-Arabic decimal system into the Islamic world and eventually into Europe — making him one of the most consequential mathematicians in history, despite almost nothing being known about his life.",
+    "startYear": 780,
+    "endYear": 850,
+    "regions": [
+      "Islamic World"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
   },
   {
     "id": "ambedkar",
@@ -231,6 +263,22 @@
     ],
     "degree": 14,
     "added": "2026-05-30"
+  },
+  {
+    "id": "angkor",
+    "title": "Angkor",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 9th century CE – present",
+    "status": "published",
+    "summary": "The vast medieval capital of the Khmer Empire in what is now Cambodia — a sprawling low-density city built around an engineered network of reservoirs and canals, home to Angkor Wat and the Bayon, abandoned as a royal seat in the 15th century, rediscovered by Europeans in the 19th, and now both Cambodia's national symbol and one of Asia's most visited ruins.",
+    "startYear": 802,
+    "endYear": 2026,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
   },
   {
     "id": "antibiotics",
@@ -314,22 +362,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "artOfWar",
-    "title": "The Art of War",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
-    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
-    "status": "published",
-    "startYear": -450,
-    "endYear": -450,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 9,
-    "added": "2026-05-30"
-  },
-  {
     "id": "artificialIntelligence",
     "title": "Artificial Intelligence",
     "template": "Foundations",
@@ -351,6 +383,22 @@
       "Global / Transregional"
     ],
     "degree": 11,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "artOfWar",
+    "title": "The Art of War",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
+    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
+    "status": "published",
+    "startYear": -450,
+    "endYear": -450,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -476,6 +524,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "aviation",
+    "title": "Aviation",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1903 – present",
+    "status": "published",
+    "summary": "Powered, controlled flight — first achieved at Kitty Hawk in 1903 and scaled within a single human lifetime into a global network of jet routes carrying billions of passengers a year. Aviation shrank the planet from weeks to hours, restructured warfare, enabled mass tourism and migration, and built the fast lane of globalization in air freight — while generating roughly three percent of global warming emissions and remaining dependent on state subsidy and military procurement.",
+    "startYear": 1903,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-09"
+  },
+  {
     "id": "axialAge",
     "template": "Periods",
     "subtype": "Period",
@@ -507,6 +571,72 @@
     ],
     "degree": 9,
     "added": "2026-05-31"
+  },
+  {
+    "id": "balanceSheet",
+    "title": "The Balance Sheet",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "15th century–present",
+    "status": "published",
+    "summary": "The accounting statement that captures what an entity owns and what it owes at a single moment in time — and, in doing so, became the foundational technology through which capital was measured, compared, and mobilized across the modern world.",
+    "startYear": 1494,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "banking",
+    "title": "Banking",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 2000 BCE–present",
+    "status": "published",
+    "summary": "The institutional practice of holding deposits, extending credit, and transferring money across space and time — a foundation of economic civilization so pervasive that its absence is almost unimaginable, and whose periodic crises reveal how much of modern life is built on organized debt.",
+    "startYear": -2000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "banknote",
+    "title": "The Banknote",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1000 CE–present",
+    "status": "published",
+    "summary": "The paper promise-to-pay that became money itself — a printed instrument whose value rests not on the worth of its material but on the trust that it can be redeemed or accepted by others, from the jiaozi of Song-dynasty China to the fiat currencies of today.",
+    "startYear": 1000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "bazaar",
+    "title": "The Bazaar",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The bazaar — souk, covered market, urban caravanserai node — is not merely a place to buy things but an institution organized around relationships, reputation, and trust rather than fixed prices and anonymous exchange. From Istanbul's Grand Bazaar to Isfahan's Royal Bazaar to Cairo's Khan el-Khalili, these dense commercial spaces ran on guilds, extended credit, face-to-face bargaining, and the social weight of a merchant's name.",
+    "startYear": -500,
+    "endYear": 2026,
+    "regions": [
+      "Middle East",
+      "Central Asia",
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
   },
   {
     "id": "beijing",
@@ -689,6 +819,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "cahokia",
+    "title": "Cahokia",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1050 – 1350 CE (Mississippian florescence); abandoned by c. 1400 CE",
+    "status": "published",
+    "summary": "The largest city in the Americas north of Mexico before European contact — a planned earthwork metropolis near modern St. Louis that rose around 1050 CE, held tens of thousands of people, and was abandoned within a few centuries, complicating the story that pre-contact North America held no cities.",
+    "startYear": 1050,
+    "endYear": 1400,
+    "regions": [
+      "Americas"
+    ],
+    "degree": 4,
+    "added": "2026-06-13"
+  },
+  {
     "id": "canal",
     "title": "The Canal",
     "template": "Foundations",
@@ -703,22 +849,6 @@
     ],
     "degree": 7,
     "added": "2026-06-13"
-  },
-  {
-    "id": "capitalMarx",
-    "title": "Capital",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "1867",
-    "status": "published",
-    "summary": "Karl Marx's three-volume analysis of the capitalist mode of production which provided the theoretical foundation for socialist and communist movements worldwide. Capital argued that capitalism systematically exploits labour through surplus value extraction, and that capitalism contains internal contradictions producing eventual crisis. The book's world effect ran through the states and movements it founded rather than through academic economics.",
-    "startYear": 1867,
-    "endYear": 1867,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-06-02"
   },
   {
     "id": "capitalism",
@@ -744,6 +874,22 @@
     ],
     "degree": 31,
     "added": "2026-05-31"
+  },
+  {
+    "id": "capitalMarx",
+    "title": "Capital",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1867",
+    "status": "published",
+    "summary": "Karl Marx's three-volume analysis of the capitalist mode of production which provided the theoretical foundation for socialist and communist movements worldwide. Capital argued that capitalism systematically exploits labour through surplus value extraction, and that capitalism contains internal contradictions producing eventual crisis. The book's world effect ran through the states and movements it founded rather than through academic economics.",
+    "startYear": 1867,
+    "endYear": 1867,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-02"
   },
   {
     "id": "carthage",
@@ -801,6 +947,22 @@
     ],
     "degree": 8,
     "added": "2026-05-31"
+  },
+  {
+    "id": "chernobyl",
+    "title": "The Chernobyl Disaster",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1986",
+    "status": "published",
+    "summary": "The explosion and fire at Reactor No. 4 of the Chernobyl Nuclear Power Plant in Soviet Ukraine on April 26, 1986 — the worst nuclear-power accident in history — which killed dozens in the immediate aftermath and released radioactive contamination across Europe, forcing the permanent evacuation of Pripyat, exposing the Soviet system's institutional pathologies, and accelerating the political dynamics that would end the USSR by 1991.",
+    "startYear": 1986,
+    "endYear": 1986,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-09"
   },
   {
     "id": "cholera",
@@ -930,6 +1092,22 @@
     ],
     "degree": 13,
     "added": "2026-05-30"
+  },
+  {
+    "id": "codeOfHammurabi",
+    "title": "The Code of Hammurabi",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 1754 BCE",
+    "status": "published",
+    "summary": "The collection of 282 laws carved onto a black basalt stele by the Babylonian king Hammurabi around 1754 BCE — one of the oldest and most complete legal texts to survive from the ancient world — that established graduated punishments based on class, codified the principle of proportional retribution, and presented law as a gift from the gods entrusted to a just king.",
+    "startYear": -1754,
+    "endYear": -1754,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
   },
   {
     "id": "coldWar",
@@ -1108,6 +1286,22 @@
     "added": "2026-06-01"
   },
   {
+    "id": "cooperative",
+    "title": "The Cooperative",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1844–present",
+    "status": "published",
+    "summary": "An enterprise owned and governed by its members rather than outside shareholders — the organizational form that asks whether democratic self-governance can survive the pressures of market competition, and that has generated an alternative tradition of economic thinking running alongside capitalism for nearly two centuries.",
+    "startYear": 1844,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
     "id": "copper",
     "title": "Copper",
     "template": "Foundations",
@@ -1124,6 +1318,22 @@
     "added": "2026-06-01"
   },
   {
+    "id": "corporation",
+    "title": "The Corporation",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "17th century–present",
+    "status": "published",
+    "summary": "The legal form that allows a group of investors to pool capital under a single artificial person — shielding them from personal liability, enabling the accumulation of wealth at a scale no individual could sustain, and producing an institution whose power to shape law, labor, and politics has made it the defining economic structure of the modern world.",
+    "startYear": 1600,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
     "id": "cotton",
     "template": "Foundations",
     "subtype": "Material Foundation",
@@ -1138,6 +1348,38 @@
     ],
     "degree": 7,
     "added": "2026-05-31"
+  },
+  {
+    "id": "court",
+    "title": "The Court",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution where disputes are decided and the law is applied to particular cases. Courts transform force into legitimacy: they are how a society claims its punishments and judgments are justice rather than mere power. Spanning adversarial and inquisitorial traditions, trial by jury and trial by judge, local magistrates and international tribunals, the court is civilization’s most durable answer to the problem of who decides.",
+    "startYear": -2000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "credit",
+    "title": "Credit",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The extension of purchasing power based on trust in a future payment — the claim side of the debt relationship and the social mechanism through which promises to pay have been made tradeable, circulated as near-money, and used to build everything from Mesopotamian grain networks to global capital markets.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
   },
   {
     "id": "crusades",
@@ -1171,6 +1413,22 @@
     ],
     "degree": 11,
     "added": "2026-05-30"
+  },
+  {
+    "id": "customsHouses",
+    "title": "Customs Houses",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which states have taxed, inspected, and controlled the movement of goods across borders and through ports — generating revenue, asserting sovereignty, regulating trade, and producing the bureaucratic frontier at which commerce and state power meet.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
   },
   {
     "id": "daoDeJing",
@@ -1448,6 +1706,23 @@
     "added": "2026-05-30"
   },
   {
+    "id": "elNino",
+    "title": "El Niño",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "Recurring, c. 3000 BCE–present",
+    "status": "published",
+    "summary": "El Nino is not a single storm but a shift in the entire Pacific Ocean that reshapes weather across the planet. Roughly every three to seven years the warm surface water of the western Pacific sloshes east, killing the cold upwelling off Peru and triggering drought in Asia, floods in South America, and famine across Africa and India. Mike Davis showed that the great colonial-era famines were not accidents of nature but the collision of ENSO cycles with imperial political economies that stripped their subjects of any buffer. Understanding El Nino means understanding that global weather is a single connected system, and that its disruptions fall hardest on those with the least power to absorb them.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Pacific",
+      "Global"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
     "id": "empire",
     "title": "Empire",
     "template": "Concepts",
@@ -1544,6 +1819,22 @@
     ],
     "degree": 8,
     "added": "2026-06-01"
+  },
+  {
+    "id": "factory",
+    "title": "The Factory",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1700s–present",
+    "status": "published",
+    "summary": "The institution of concentrated, machine-powered, clock-disciplined production — many workers brought under one roof and synchronized to mechanical rhythms — that did not merely speed up the making of goods but reorganized human time, the laboring body, and the relationship between a worker and their work.",
+    "startYear": 1771,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
   },
   {
     "id": "fallOfTheBerlinWall",
@@ -1844,6 +2135,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "georgeWashington",
+    "title": "George Washington",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1732–1799",
+    "status": "published",
+    "summary": "The Virginia planter and Continental Army commander who won American independence, presided over the Constitutional Convention, and served as the first President of the United States — and whose most consequential act was relinquishing power — resigning his commission in 1783 and declining to seek a third term before stepping down in 1797 — and thereby establishing that the republic's military commander and its chief executive would answer to law rather than to personal ambition.",
+    "startYear": 1732,
+    "endYear": 1799,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
+  },
+  {
     "id": "germTheory",
     "title": "Germ Theory",
     "template": "Foundations",
@@ -1947,6 +2254,22 @@
     ],
     "degree": 9,
     "added": "2026-06-01"
+  },
+  {
+    "id": "greatWallOfChina",
+    "title": "The Great Wall of China",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 7th c. BCE – present",
+    "status": "published",
+    "summary": "Not a single wall but a succession of walls built, abandoned, and rebuilt across two thousand years by different Chinese states for different purposes — the rammed-earth barriers of the Qin, the Han extensions that guarded the Silk Road, and the famous stone-and-brick Ming fortifications — a military barrier that rarely stopped determined invaders but became, centuries later, one of the most powerful symbols of national identity in the modern world.",
+    "startYear": -700,
+    "endYear": 2026,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 6,
+    "added": "2026-06-09"
   },
   {
     "id": "guernica",
@@ -2174,6 +2497,38 @@
     "added": "2026-05-30"
   },
   {
+    "id": "householdEconomy",
+    "title": "The Household Economy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The idea that the home is a site of real economic production — cooking, cleaning, raising children, caring for the sick — and that the national accounts which measure a country's wealth systematically leave this work out, rendering invisible the labor that makes all other labor possible.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "humanitarianIntervention",
+    "title": "Humanitarian Intervention",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "1990s–present",
+    "status": "published",
+    "summary": "The question of whether states or international bodies are morally and legally permitted — or obligated — to use military force against a sovereign state to protect that state's population from mass atrocities, genocide, or crimes against humanity — a question that pits two foundational principles of international order against each other: the sovereignty of states and the protection of human beings from their own governments.",
+    "startYear": 1995,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-01"
+  },
+  {
     "id": "humanRights",
     "title": "Human Rights",
     "summary": "The doctrine that all human beings possess inherent rights by virtue of their humanity — rights that governments cannot legitimately violate and that the international community has a responsibility to protect — institutionalized after World War II in the Universal Declaration of Human Rights and subsequent treaties, and contested ever since on questions of universality, enforceability, cultural specificity, and political instrumentalization.",
@@ -2197,22 +2552,6 @@
     ],
     "degree": 18,
     "added": "2026-05-31"
-  },
-  {
-    "id": "humanitarianIntervention",
-    "title": "Humanitarian Intervention",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "1990s–present",
-    "status": "published",
-    "summary": "The question of whether states or international bodies are morally and legally permitted — or obligated — to use military force against a sovereign state to protect that state's population from mass atrocities, genocide, or crimes against humanity — a question that pits two foundational principles of international order against each other: the sovereignty of states and the protection of human beings from their own governments.",
-    "startYear": 1995,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-01"
   },
   {
     "id": "hume",
@@ -2403,6 +2742,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "industrialRevolution",
+    "title": "The Industrial Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
+    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
+    "status": "published",
+    "startYear": 1760,
+    "endYear": 1840,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 38,
+    "added": "2026-05-30"
+  },
+  {
     "id": "indusValleyCivilization",
     "title": "The Indus Valley Civilization",
     "template": "Places",
@@ -2452,22 +2807,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "industrialRevolution",
-    "title": "The Industrial Revolution",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
-    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
-    "status": "published",
-    "startYear": 1760,
-    "endYear": 1840,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 38,
-    "added": "2026-05-30"
-  },
-  {
     "id": "inequality",
     "template": "Concepts",
     "subtype": "Normative Concept",
@@ -2498,6 +2837,22 @@
     ],
     "degree": 14,
     "added": "2026-06-02"
+  },
+  {
+    "id": "informalEconomy",
+    "title": "The Informal Economy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "modern–present",
+    "status": "published",
+    "summary": "The vast world of market activity that happens outside the state's routine tax, licensing, and labor-protection systems — street vendors, cash work, unlicensed workshops, day laborers — which by ILO estimates accounts for the majority of employment globally, challenging the idea that formality is the norm and informality the exception.",
+    "startYear": 1900,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
   },
   {
     "id": "insurance",
@@ -2700,6 +3055,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "joanOfArc",
+    "title": "Joan of Arc",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 1412–1431",
+    "status": "published",
+    "summary": "The peasant girl from Domrémy who claimed divine voices, persuaded the dauphin's court to give her a role in the Hundred Years' War, helped lift the siege of Orléans in 1429, and stood beside Charles VII at his coronation — then was captured, tried for heresy by a pro-English ecclesiastical court, and burned at Rouen at roughly nineteen. A posthumous retrial annulled the verdict in 1456; she was canonized in 1920. The trial transcripts survive in unusual completeness, making her one of the most documented people of the medieval world, yet the gap between the historical record and her layered mythic afterlife — Catholic martyr, French nationalist emblem, feminist icon, far-right mascot — has never closed.",
+    "startYear": 1412,
+    "endYear": 1431,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
+  },
+  {
     "id": "johnRawls",
     "title": "John Rawls",
     "template": "People",
@@ -2714,6 +3085,22 @@
     ],
     "degree": 11,
     "added": "2026-05-31"
+  },
+  {
+    "id": "jointStockCompany",
+    "title": "The Joint-Stock Company",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1550s–present",
+    "status": "published",
+    "summary": "The device that let strangers pool capital into a single enterprise by buying tradeable shares — spreading risk and raising sums no individual or partnership could. It built the great chartered trading companies, created the first secondary markets in shares, produced the first speculative bubbles, and bound the pooling of money to empire and colonial violence: ownership turned into a liquid, tradeable claim, and the form became the engine of both modern capitalism and armed corporate rule.",
+    "startYear": 1600,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
   },
   {
     "id": "juliusCaesar",
@@ -2739,22 +3126,6 @@
     ],
     "degree": 10,
     "added": "2026-05-31"
-  },
-  {
-    "id": "justWarTheory",
-    "title": "Just War Theory",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "4th century CE–present",
-    "status": "published",
-    "summary": "The tradition in moral and political philosophy that attempts to specify when the resort to war is morally permissible (jus ad bellum) and how war, once begun, must be conducted (jus in bello) — developed through Augustine, Aquinas, Grotius, and Vitoria, and now institutionalized in international humanitarian law, while remaining contested by both pacifists who reject its permissive conclusions and realists who reject its moral constraints.",
-    "startYear": 350,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 16,
-    "added": "2026-06-01"
   },
   {
     "id": "justice",
@@ -2786,6 +3157,22 @@
       "Europe"
     ],
     "degree": 7,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "justWarTheory",
+    "title": "Just War Theory",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century CE–present",
+    "status": "published",
+    "summary": "The tradition in moral and political philosophy that attempts to specify when the resort to war is morally permissible (jus ad bellum) and how war, once begun, must be conducted (jus in bello) — developed through Augustine, Aquinas, Grotius, and Vitoria, and now institutionalized in international humanitarian law, while remaining contested by both pacifists who reject its permissive conclusions and realists who reject its moral constraints.",
+    "startYear": 350,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 16,
     "added": "2026-06-01"
   },
   {
@@ -2837,6 +3224,22 @@
     ],
     "degree": 9,
     "added": "2026-05-31"
+  },
+  {
+    "id": "khmerEmpire",
+    "title": "The Khmer Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 802–1431 CE",
+    "status": "published",
+    "summary": "The mainland Southeast Asian state that, for roughly six centuries, organized labor, land, and belief around a sacred kingship — building from its capital at Angkor an order that reached across much of what is now Cambodia, Thailand, and Laos before fading in the fifteenth century.",
+    "startYear": 802,
+    "endYear": 1431,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
   },
   {
     "id": "koreanWar",
@@ -2994,6 +3397,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "ludwigVanBeethoven",
+    "title": "Ludwig van Beethoven",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1770–1827",
+    "status": "published",
+    "summary": "The German composer who bridged the Classical and Romantic eras, producing nine symphonies, sixteen string quartets, thirty-two piano sonatas, and a body of work that reshaped what music was thought capable of expressing — and who, in going deaf at the height of his powers, became the defining emblem of the artist-genius creating in defiance of circumstance.",
+    "startYear": 1770,
+    "endYear": 1827,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "machiavelli",
     "title": "Niccolò Machiavelli",
     "template": "People",
@@ -3016,6 +3435,22 @@
     ],
     "degree": 12,
     "added": "2026-05-30"
+  },
+  {
+    "id": "magnaCarta",
+    "title": "Magna Carta",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1215 CE – present",
+    "status": "published",
+    "summary": "The 1215 charter wrested from King John by English barons at Runnymede — annulled within weeks but reissued repeatedly, and eventually read as the founding text of the principle that the ruler is bound by law. Magna Carta's actual clauses mostly addressed narrow feudal grievances; its civilizational significance lies in the later centuries that reimagined it as the foundation of due process, constitutional government, and the rule of law.",
+    "startYear": 1215,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
   },
   {
     "id": "mahabharata",
@@ -3059,6 +3494,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "maliEmpire",
+    "title": "The Mali Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1235–1600 CE",
+    "status": "published",
+    "summary": "The Mali Empire (c. 1235–1600) was the first great medieval West African empire to control the trans-Saharan gold trade at scale — founded by Sundiata Keita after the Battle of Kirina, reaching its height under Mansa Musa's extraordinary reign, and cementing Timbuktu and Djenné as centres of Islamic learning before giving way to the Songhai Empire that succeeded it.",
+    "startYear": 1235,
+    "endYear": 1600,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
+  },
+  {
     "id": "manhattanProject",
     "title": "The Manhattan Project",
     "template": "Events",
@@ -3097,6 +3548,22 @@
     ],
     "degree": 16,
     "added": "2026-05-30"
+  },
+  {
+    "id": "mansaMusa",
+    "title": "Mansa Musa",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "r. c. 1312–1337 CE",
+    "status": "published",
+    "summary": "Ruler of the Mali Empire whose 1324 pilgrimage to Mecca, lavish distribution of gold in Cairo, and patronage of mosques and scholars at Timbuktu made him one of the medieval Islamic world's most famous African sovereigns — and, through his portrait on the 1375 Catalan Atlas, the figure who fixed an image of West African wealth in the European imagination for centuries.",
+    "startYear": 1312,
+    "endYear": 1337,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
   },
   {
     "id": "maoZedong",
@@ -3138,6 +3605,38 @@
     ],
     "degree": 9,
     "added": "2026-05-31"
+  },
+  {
+    "id": "marieCurie",
+    "title": "Marie Curie",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1867–1934",
+    "status": "published",
+    "summary": "The Polish-born physicist and chemist who, with Pierre Curie, isolated polonium and radium, named the phenomenon of radioactivity, and demonstrated that it was an atomic property rather than a chemical reaction — twice awarded the Nobel Prize (Physics 1903, Chemistry 1911), the only person to win in two different sciences, while facing systematic exclusion from French scientific institutions and the gendered mythology that has obscured the rigor and ambition of her work.",
+    "startYear": 1867,
+    "endYear": 1934,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-06-09"
+  },
+  {
+    "id": "martinLuther",
+    "title": "Martin Luther",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1483–1546",
+    "status": "published",
+    "summary": "German friar and theology professor whose 1517 protest against the sale of indulgences sparked the Protestant Reformation — built on three ideas: that salvation comes through faith alone, that scripture alone holds authority, and that every believer stands directly before God — and whose legacy includes both a revolution in religious liberty and a record of virulent antisemitism that the Nazis later cited approvingly.",
+    "startYear": 1483,
+    "endYear": 1546,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
   },
   {
     "id": "martinLutherKing",
@@ -3415,6 +3914,22 @@
     ],
     "degree": 4,
     "added": "2026-05-30"
+  },
+  {
+    "id": "mint",
+    "title": "The Mint",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 600 BCE – present",
+    "status": "published",
+    "summary": "The state workshop that strikes coin — the institution through which rulers across three millennia have controlled the money supply, extracted revenue through seigniorage, waged economic warfare through debasement, and bound the authority to make money to the authority to govern.",
+    "startYear": -600,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
   },
   {
     "id": "money",
@@ -3741,6 +4256,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "olmec",
+    "title": "The Olmec",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1500–400 BCE",
+    "status": "published",
+    "summary": "The earliest major civilization of Mesoamerica, centered on the hot, wet lowlands of the Gulf Coast of Mexico from roughly 1500 to 400 BCE. The Olmec built the first large ceremonial centers in the region, first at San Lorenzo and later at La Venta, and carved colossal basalt heads weighing many tons from stone hauled across long distances. They worked jade with great skill and left behind a recurring set of religious images, including a part-human, part-jaguar being. Whether they were the single \"mother culture\" that shaped everything that followed in Mesoamerica, or one of several early \"sister cultures,\" is still debated.",
+    "startYear": -1500,
+    "endYear": -400,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
+  },
+  {
     "id": "opiumWars",
     "title": "The Opium Wars",
     "template": "Events",
@@ -3798,6 +4329,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "pabloPicasso",
+    "title": "Pablo Picasso",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1881–1973",
+    "status": "published",
+    "summary": "The Spanish painter and sculptor who co-invented Cubism, transformed what Western art could look like, and became the most commercially dominant artist of the twentieth century",
+    "startYear": 1881,
+    "endYear": 1973,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
     "id": "paper",
     "title": "Paper",
     "template": "Foundations",
@@ -3813,6 +4360,23 @@
     ],
     "degree": 13,
     "added": "2026-05-30"
+  },
+  {
+    "id": "parliament",
+    "title": "The Parliament",
+    "template": "Places",
+    "subtype": "System",
+    "period": "medieval–present",
+    "status": "published",
+    "summary": "The representative assembly through which a society makes its laws, decides its taxes, controls its spending, and holds its rulers to account through open debate and recorded votes — an institution that grew out of medieval councils summoned to grant a ruler money, won the long struggle over the power of the purse, shifted from advising a monarch to governing in his place, and then spread across the world as the working machinery of representative government, carrying both its promise of consent and its persistent failures of inclusion.",
+    "startYear": 930,
+    "endYear": 2026,
+    "regions": [
+      "Europe",
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
   },
   {
     "id": "persianEmpire",
@@ -3856,6 +4420,22 @@
     "added": "2026-06-01"
   },
   {
+    "id": "plantation",
+    "title": "The Plantation",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1500s–present",
+    "status": "published",
+    "summary": "The agricultural-industrial system that organized enslaved and coerced labor to mass-produce cash crops — sugar, tobacco, cotton, coffee — for distant markets. The plantation was not a farm but a factory in the field: a regime of gang labor, surveillance, and violence that ran on a precise calendar, generated immense wealth for owners and the economies they fed, built racially ordered slave societies across the Atlantic world, and left long afterlives in sharecropping, the convict-lease farm, and the company estate.",
+    "startYear": 1500,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
     "id": "plato",
     "title": "Plato",
     "template": "People",
@@ -3893,6 +4473,22 @@
     ],
     "degree": 11,
     "added": "2026-05-31"
+  },
+  {
+    "id": "port",
+    "title": "The Port",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which maritime commerce, migration, disease, and ideas moved between worlds — a physical node of docks and warehouses, a regulatory space of customs and quarantine, a cosmopolitan contact zone where strangers met on commercial terms, and a labor system whose containerization revolution in the mid-20th century remade global trade and displaced the dockworker communities that had defined port cities for centuries.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
   },
   {
     "id": "power",
@@ -4431,6 +5027,24 @@
     "added": "2026-05-31"
   },
   {
+    "id": "september11Attacks",
+    "title": "The September 11 Attacks",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "September 11, 2001",
+    "status": "published",
+    "summary": "The al-Qaeda attacks of September 11, 2001 — four hijacked airliners, the collapse of the World Trade Center's twin towers, a strike on the Pentagon, and a fourth plane forced down in Pennsylvania — killing roughly 2,977 people and triggering two decades of American-led wars, the construction of a domestic surveillance and security state, and a global transformation of how governments justified coercion in the name of safety.",
+    "startYear": 2001,
+    "endYear": 2001,
+    "regions": [
+      "The Americas",
+      "North Africa & Middle East",
+      "South Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
+  },
+  {
     "id": "sewers",
     "title": "Sewers",
     "template": "Foundations",
@@ -4469,6 +5083,38 @@
     ],
     "degree": 13,
     "added": "2026-06-01"
+  },
+  {
+    "id": "shareholderValue",
+    "title": "Shareholder Value",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 1970–present",
+    "status": "published",
+    "summary": "The doctrine that a corporation's single legitimate purpose is to maximize financial returns to its shareholders — an idea forged in the economics departments of the 1970s, institutionalized through stock-based pay and hostile takeovers in the 1980s, and now contested by a stakeholder movement arguing that a firm answerable only to its owners produces inequality, short-termism, and damage it was never designed to account for.",
+    "startYear": 1970,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 25,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "shipbuilding",
+    "title": "Shipbuilding",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "status": "published",
+    "summary": "The technology and industry of constructing vessels capable of crossing open water — from the dugout canoes of the Neolithic to the ironclad battleships and container carriers of the industrial age — that connected continents, moved goods and armies, transmitted religion and disease, and organized the global economic system that still operates today.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
   },
   {
     "id": "siddharthaGautama",
@@ -4554,24 +5200,6 @@
     "added": "2026-06-01"
   },
   {
-    "id": "slaveTrade",
-    "title": "The Transatlantic Slave Trade",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "c. 1500–1867",
-    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
-    "status": "published",
-    "startYear": 1500,
-    "endYear": 1867,
-    "regions": [
-      "Sub-Saharan Africa",
-      "The Americas",
-      "Europe"
-    ],
-    "degree": 26,
-    "added": "2026-05-30"
-  },
-  {
     "id": "slavery",
     "title": "Slavery",
     "summary": "The institution of owning human beings as property — one of the most widespread and durable institutions in human history, practiced on every inhabited continent, powering the ancient economies of Greece, Rome, and the Near East, and reaching its most systematic modern form in the Atlantic plantation complex that built the wealth of the early capitalist world — and one of the central subjects of moral and political philosophy, whose abolition required a reconception of what it means to be human.",
@@ -4597,6 +5225,24 @@
     ],
     "degree": 21,
     "added": "2026-05-31"
+  },
+  {
+    "id": "slaveTrade",
+    "title": "The Transatlantic Slave Trade",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1500–1867",
+    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
+    "status": "published",
+    "startYear": 1500,
+    "endYear": 1867,
+    "regions": [
+      "Sub-Saharan Africa",
+      "The Americas",
+      "Europe"
+    ],
+    "degree": 26,
+    "added": "2026-05-30"
   },
   {
     "id": "smallpox",
@@ -4776,6 +5422,23 @@
     "added": "2026-05-30"
   },
   {
+    "id": "spaceRace",
+    "title": "The Space Race",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1955–1975",
+    "status": "published",
+    "summary": "The superpower competition in spaceflight between the United States and the Soviet Union from roughly 1955 to 1975 — beginning with Sputnik's shock in October 1957, cresting with Neil Armstrong's footstep on the Moon in July 1969, and closing with the Apollo–Soyuz handshake in 1975 — a contest that was simultaneously a proxy of nuclear rivalry, a propaganda battle over which system could master nature, and the founding moment of the technological-managerial state.",
+    "startYear": 1955,
+    "endYear": 1975,
+    "regions": [
+      "The Americas",
+      "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-06-09"
+  },
+  {
     "id": "spanishCivilWar",
     "title": "The Spanish Civil War",
     "template": "Events",
@@ -4790,6 +5453,23 @@
     ],
     "degree": 8,
     "added": "2026-06-01"
+  },
+  {
+    "id": "spanishConquestOfTheAmericas",
+    "title": "The Spanish Conquest of the Americas",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1492–c.1572",
+    "status": "published",
+    "summary": "The decades-long process by which Spanish expeditions toppled the largest states in the Americas — the Aztec Triple Alliance in 1521 and the Inca realm after 1532 — and built an empire across two continents. The conquest ran less on European weaponry than on epidemic disease, the political fractures inside Indigenous empires, and the tens of thousands of Indigenous allies who fought alongside the newcomers. Out of it came the encomienda labor system, a vast silver economy, and a tangle of conquest myths that historians have spent decades dismantling.",
+    "startYear": 1492,
+    "endYear": 1572,
+    "regions": [
+      "Latin America",
+      "Europe"
+    ],
+    "degree": 18,
+    "added": "2026-06-13"
   },
   {
     "id": "sparta",
@@ -4831,6 +5511,22 @@
     ],
     "degree": 11,
     "added": "2026-06-02"
+  },
+  {
+    "id": "srivijaya",
+    "title": "Srivijaya",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 7th–13th century CE",
+    "status": "published",
+    "summary": "Srivijaya (c. 7th–13th century) was a maritime empire centered on Sumatra that commanded key chokepoints and grew rich by servicing, taxing, and protecting the trade that passed between China and India. It was also a major center of Mahayana Buddhist learning. The entry's purpose is to explain what kind of power a thalassocracy was — and how a state this important could be largely forgotten and then pieced back together from scattered evidence.",
+    "startYear": 671,
+    "endYear": 1288,
+    "regions": [
+      "Asia"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
   },
   {
     "id": "statistics",
@@ -4881,6 +5577,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "steel",
+    "title": "Steel",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1850 CE – present",
+    "status": "published",
+    "summary": "The cheap, strong alloy of iron and carbon that the Bessemer converter made suddenly abundant in the 1850s — whose mass production built the railways, skyscrapers, warships, and reinforced concrete that shaped the modern world, and whose geography of dominance ran from Britain and America through Japan and South Korea to the overwhelming Chinese supremacy of the 21st century.",
+    "startYear": 1856,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "stoicism",
     "title": "Stoicism",
     "summary": "The ancient Greek and Roman philosophical school — founded by Zeno of Citium in Athens around 300 BCE — that taught that virtue is the only true good, that external circumstances are 'indifferent,' that we can control our judgments but not outcomes, and that living according to reason and nature is the path to flourishing: a philosophy that shaped Roman imperial culture, influenced early Christianity, and has undergone a remarkable 21st-century revival as a practical philosophy of life.",
@@ -4904,6 +5616,23 @@
     ],
     "degree": 10,
     "added": "2026-05-31"
+  },
+  {
+    "id": "swahiliCoast",
+    "title": "The Swahili Coast",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 800 – 1500 CE",
+    "status": "published",
+    "summary": "The chain of city-states along East Africa's Indian Ocean shore — Kilwa, Mombasa, Lamu, Zanzibar — that built a trading civilization from monsoon winds, gold, and Islamic-African urban culture, before the Portuguese arrived with cannon and broke the system open.",
+    "startYear": 800,
+    "endYear": 1500,
+    "regions": [
+      "Sub-Saharan Africa",
+      "North Africa & Middle East"
+    ],
+    "degree": 12,
+    "added": "2026-06-13"
   },
   {
     "id": "tambora",
@@ -5316,6 +6045,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "tiananmenSquare",
+    "title": "The Tiananmen Square Protests",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "April–June 1989",
+    "status": "published",
+    "summary": "The student-led pro-democracy movement that occupied Beijing's Tiananmen Square in spring 1989 — drawing millions of demonstrators across China before the People's Liberation Army cleared the square with live fire on the night of June 3–4, killing an unknown number of people — and the Chinese Communist Party's subsequent erasure of the event from public memory inside China.",
+    "startYear": 1989,
+    "endYear": 1989,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-09"
+  },
+  {
     "id": "timekeeping",
     "title": "Timekeeping",
     "summary": "The technology of measuring, standardizing, and organizing time — from the first astronomical calendars of ancient Mesopotamia through the mechanical clock's transformation of medieval Europe to the atomic clock's precision that enables GPS and global finance — a technology so fundamental to modern civilization that its absence is unimaginable, and whose history reveals how deeply the organization of time is bound up with the organization of power.",
@@ -5593,6 +6338,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "wEBDuBois",
+    "title": "W.E.B. Du Bois",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1868–1963",
+    "status": "published",
+    "summary": "The sociologist, historian, and activist who coined the concept of double consciousness, wrote The Souls of Black Folk, helped found the NAACP, produced the most empirically rigorous account of Black life in America with The Philadelphia Negro, rewrote the history of Reconstruction in Black Reconstruction in America, and whose long career moved from civil-rights organizing to Pan-Africanism and ultimately to exile in Ghana at age ninety-three.",
+    "startYear": 1868,
+    "endYear": 1963,
+    "regions": [
+      "North America"
+    ],
+    "degree": 12,
+    "added": "2026-06-13"
+  },
+  {
     "id": "weimarRepublic",
     "title": "The Weimar Republic",
     "template": "Events",
@@ -5730,6 +6491,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "wuZetian",
+    "title": "Wu Zetian",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "624–705 CE",
+    "status": "published",
+    "summary": "The only woman in Chinese history to rule as emperor in her own name — she rose from a Tang court concubine to supreme power, founded the Zhou dynasty, wielded the civil-service examination system as a tool of political restructuring, used Buddhism to legitimate her reign, and received from the historians who followed her a portrait so hostile that separating the record from the slander remains an active scholarly problem.",
+    "startYear": 624,
+    "endYear": 705,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "zero",
     "title": "Zero",
     "template": "Foundations",
@@ -5744,313 +6521,6 @@
     ],
     "degree": 9,
     "added": "2026-05-30"
-  },
-  {
-    "id": "spaceRace",
-    "title": "The Space Race",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1955–1975",
-    "status": "published",
-    "summary": "The superpower competition in spaceflight between the United States and the Soviet Union from roughly 1955 to 1975 — beginning with Sputnik's shock in October 1957, cresting with Neil Armstrong's footstep on the Moon in July 1969, and closing with the Apollo–Soyuz handshake in 1975 — a contest that was simultaneously a proxy of nuclear rivalry, a propaganda battle over which system could master nature, and the founding moment of the technological-managerial state.",
-    "startYear": 1955,
-    "endYear": 1975,
-    "regions": [
-      "The Americas",
-      "Europe"
-    ],
-    "degree": 9,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "georgeWashington",
-    "title": "George Washington",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1732–1799",
-    "status": "published",
-    "summary": "The Virginia planter and Continental Army commander who won American independence, presided over the Constitutional Convention, and served as the first President of the United States — and whose most consequential act was relinquishing power — resigning his commission in 1783 and declining to seek a third term before stepping down in 1797 — and thereby establishing that the republic's military commander and its chief executive would answer to law rather than to personal ambition.",
-    "startYear": 1732,
-    "endYear": 1799,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 9,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "magnaCarta",
-    "title": "Magna Carta",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "1215 CE – present",
-    "status": "published",
-    "summary": "The 1215 charter wrested from King John by English barons at Runnymede — annulled within weeks but reissued repeatedly, and eventually read as the founding text of the principle that the ruler is bound by law. Magna Carta's actual clauses mostly addressed narrow feudal grievances; its civilizational significance lies in the later centuries that reimagined it as the foundation of due process, constitutional government, and the rule of law.",
-    "startYear": 1215,
-    "endYear": 2026,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 9,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "september11Attacks",
-    "title": "The September 11 Attacks",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "September 11, 2001",
-    "status": "published",
-    "summary": "The al-Qaeda attacks of September 11, 2001 — four hijacked airliners, the collapse of the World Trade Center's twin towers, a strike on the Pentagon, and a fourth plane forced down in Pennsylvania — killing roughly 2,977 people and triggering two decades of American-led wars, the construction of a domestic surveillance and security state, and a global transformation of how governments justified coercion in the name of safety.",
-    "startYear": 2001,
-    "endYear": 2001,
-    "regions": [
-      "The Americas",
-      "North Africa & Middle East",
-      "South Asia"
-    ],
-    "degree": 9,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "joanOfArc",
-    "title": "Joan of Arc",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "c. 1412–1431",
-    "status": "published",
-    "summary": "The peasant girl from Domrémy who claimed divine voices, persuaded the dauphin's court to give her a role in the Hundred Years' War, helped lift the siege of Orléans in 1429, and stood beside Charles VII at his coronation — then was captured, tried for heresy by a pro-English ecclesiastical court, and burned at Rouen at roughly nineteen. A posthumous retrial annulled the verdict in 1456; she was canonized in 1920. The trial transcripts survive in unusual completeness, making her one of the most documented people of the medieval world, yet the gap between the historical record and her layered mythic afterlife — Catholic martyr, French nationalist emblem, feminist icon, far-right mascot — has never closed.",
-    "startYear": 1412,
-    "endYear": 1431,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 9,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "tiananmenSquare",
-    "title": "The Tiananmen Square Protests",
-    "template": "Events",
-    "subtype": "Discrete Event",
-    "period": "April–June 1989",
-    "status": "published",
-    "summary": "The student-led pro-democracy movement that occupied Beijing's Tiananmen Square in spring 1989 — drawing millions of demonstrators across China before the People's Liberation Army cleared the square with live fire on the night of June 3–4, killing an unknown number of people — and the Chinese Communist Party's subsequent erasure of the event from public memory inside China.",
-    "startYear": 1989,
-    "endYear": 1989,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 8,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "chernobyl",
-    "title": "The Chernobyl Disaster",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1986",
-    "status": "published",
-    "summary": "The explosion and fire at Reactor No. 4 of the Chernobyl Nuclear Power Plant in Soviet Ukraine on April 26, 1986 — the worst nuclear-power accident in history — which killed dozens in the immediate aftermath and released radioactive contamination across Europe, forcing the permanent evacuation of Pripyat, exposing the Soviet system's institutional pathologies, and accelerating the political dynamics that would end the USSR by 1991.",
-    "startYear": 1986,
-    "endYear": 1986,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "marieCurie",
-    "title": "Marie Curie",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1867–1934",
-    "status": "published",
-    "summary": "The Polish-born physicist and chemist who, with Pierre Curie, isolated polonium and radium, named the phenomenon of radioactivity, and demonstrated that it was an atomic property rather than a chemical reaction — twice awarded the Nobel Prize (Physics 1903, Chemistry 1911), the only person to win in two different sciences, while facing systematic exclusion from French scientific institutions and the gendered mythology that has obscured the rigor and ambition of her work.",
-    "startYear": 1867,
-    "endYear": 1934,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 7,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "martinLuther",
-    "title": "Martin Luther",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1483–1546",
-    "status": "published",
-    "summary": "German friar and theology professor whose 1517 protest against the sale of indulgences sparked the Protestant Reformation — built on three ideas: that salvation comes through faith alone, that scripture alone holds authority, and that every believer stands directly before God — and whose legacy includes both a revolution in religious liberty and a record of virulent antisemitism that the Nazis later cited approvingly.",
-    "startYear": 1483,
-    "endYear": 1546,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 9,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "greatWallOfChina",
-    "title": "The Great Wall of China",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 7th c. BCE – present",
-    "status": "published",
-    "summary": "Not a single wall but a succession of walls built, abandoned, and rebuilt across two thousand years by different Chinese states for different purposes — the rammed-earth barriers of the Qin, the Han extensions that guarded the Silk Road, and the famous stone-and-brick Ming fortifications — a military barrier that rarely stopped determined invaders but became, centuries later, one of the most powerful symbols of national identity in the modern world.",
-    "startYear": -700,
-    "endYear": 2026,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 6,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "aviation",
-    "title": "Aviation",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "1903 – present",
-    "status": "published",
-    "summary": "Powered, controlled flight — first achieved at Kitty Hawk in 1903 and scaled within a single human lifetime into a global network of jet routes carrying billions of passengers a year. Aviation shrank the planet from weeks to hours, restructured warfare, enabled mass tourism and migration, and built the fast lane of globalization in air freight — while generating roughly three percent of global warming emissions and remaining dependent on state subsidy and military procurement.",
-    "startYear": 1903,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "balanceSheet",
-    "title": "The Balance Sheet",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "15th century–present",
-    "status": "published",
-    "summary": "The accounting statement that captures what an entity owns and what it owes at a single moment in time — and, in doing so, became the foundational technology through which capital was measured, compared, and mobilized across the modern world.",
-    "startYear": 1494,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "banking",
-    "title": "Banking",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 2000 BCE–present",
-    "status": "published",
-    "summary": "The institutional practice of holding deposits, extending credit, and transferring money across space and time — a foundation of economic civilization so pervasive that its absence is almost unimaginable, and whose periodic crises reveal how much of modern life is built on organized debt.",
-    "startYear": -2000,
-    "endYear": 2026,
-    "regions": [
-      "Global"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "corporation",
-    "title": "The Corporation",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "17th century–present",
-    "status": "published",
-    "summary": "The legal form that allows a group of investors to pool capital under a single artificial person — shielding them from personal liability, enabling the accumulation of wealth at a scale no individual could sustain, and producing an institution whose power to shape law, labor, and politics has made it the defining economic structure of the modern world.",
-    "startYear": 1600,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "jointStockCompany",
-    "title": "The Joint-Stock Company",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "1550s–present",
-    "status": "published",
-    "summary": "The device that let strangers pool capital into a single enterprise by buying tradeable shares — spreading risk and raising sums no individual or partnership could. It built the great chartered trading companies, created the first secondary markets in shares, produced the first speculative bubbles, and bound the pooling of money to empire and colonial violence: ownership turned into a liquid, tradeable claim, and the form became the engine of both modern capitalism and armed corporate rule.",
-    "startYear": 1600,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "shipbuilding",
-    "title": "Shipbuilding",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3000 BCE–present",
-    "status": "published",
-    "summary": "The technology and industry of constructing vessels capable of crossing open water — from the dugout canoes of the Neolithic to the ironclad battleships and container carriers of the industrial age — that connected continents, moved goods and armies, transmitted religion and disease, and organized the global economic system that still operates today.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "shareholderValue",
-    "title": "Shareholder Value",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "c. 1970–present",
-    "status": "published",
-    "summary": "The doctrine that a corporation's single legitimate purpose is to maximize financial returns to its shareholders — an idea forged in the economics departments of the 1970s, institutionalized through stock-based pay and hostile takeovers in the 1980s, and now contested by a stakeholder movement arguing that a firm answerable only to its owners produces inequality, short-termism, and damage it was never designed to account for.",
-    "startYear": 1970,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 25,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "steel",
-    "title": "Steel",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 1850 CE – present",
-    "status": "published",
-    "summary": "The cheap, strong alloy of iron and carbon that the Bessemer converter made suddenly abundant in the 1850s — whose mass production built the railways, skyscrapers, warships, and reinforced concrete that shaped the modern world, and whose geography of dominance ran from Britain and America through Japan and South Korea to the overwhelming Chinese supremacy of the 21st century.",
-    "startYear": 1856,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "alKhwarizmi",
-    "title": "Al-Khwarizmi",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "c. 780–850",
-    "status": "published",
-    "summary": "The ninth-century Persian scholar at Baghdad's House of Wisdom whose treatise on al-jabr gave algebra its name and its method, whose name became the word 'algorithm,' and who helped carry the Hindu-Arabic decimal system into the Islamic world and eventually into Europe — making him one of the most consequential mathematicians in history, despite almost nothing being known about his life.",
-    "startYear": 780,
-    "endYear": 850,
-    "regions": [
-      "Islamic World"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
   },
   {
     "id": "zhengHe",
@@ -6069,406 +6539,19 @@
     "added": "2026-06-13"
   },
   {
-    "id": "wEBDuBois",
-    "title": "W.E.B. Du Bois",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1868–1963",
-    "status": "published",
-    "summary": "The sociologist, historian, and activist who coined the concept of double consciousness, wrote The Souls of Black Folk, helped found the NAACP, produced the most empirically rigorous account of Black life in America with The Philadelphia Negro, rewrote the history of Reconstruction in Black Reconstruction in America, and whose long career moved from civil-rights organizing to Pan-Africanism and ultimately to exile in Ghana at age ninety-three.",
-    "startYear": 1868,
-    "endYear": 1963,
-    "regions": [
-      "North America"
-    ],
-    "degree": 12,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "customsHouses",
-    "title": "Customs Houses",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The institution through which states have taxed, inspected, and controlled the movement of goods across borders and through ports — generating revenue, asserting sovereignty, regulating trade, and producing the bureaucratic frontier at which commerce and state power meet.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "wuZetian",
-    "title": "Wu Zetian",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "624–705 CE",
-    "status": "published",
-    "summary": "The only woman in Chinese history to rule as emperor in her own name — she rose from a Tang court concubine to supreme power, founded the Zhou dynasty, wielded the civil-service examination system as a tool of political restructuring, used Buddhism to legitimate her reign, and received from the historians who followed her a portrait so hostile that separating the record from the slander remains an active scholarly problem.",
-    "startYear": 624,
-    "endYear": 705,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "codeOfHammurabi",
-    "title": "The Code of Hammurabi",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 1754 BCE",
-    "status": "published",
-    "summary": "The collection of 282 laws carved onto a black basalt stele by the Babylonian king Hammurabi around 1754 BCE — one of the oldest and most complete legal texts to survive from the ancient world — that established graduated punishments based on class, codified the principle of proportional retribution, and presented law as a gift from the gods entrusted to a just king.",
-    "startYear": -1754,
-    "endYear": -1754,
-    "regions": [
-      "North Africa & Middle East"
-    ],
-    "degree": 8,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "mint",
-    "title": "The Mint",
-    "template": "Places",
-    "subtype": "System",
-    "period": "c. 600 BCE – present",
-    "status": "published",
-    "summary": "The state workshop that strikes coin — the institution through which rulers across three millennia have controlled the money supply, extracted revenue through seigniorage, waged economic warfare through debasement, and bound the authority to make money to the authority to govern.",
-    "startYear": -600,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "elNino",
-    "title": "El Niño",
-    "template": "Natural Phenomena",
-    "subtype": "Natural Force",
-    "period": "Recurring, c. 3000 BCE–present",
-    "status": "published",
-    "summary": "El Nino is not a single storm but a shift in the entire Pacific Ocean that reshapes weather across the planet. Roughly every three to seven years the warm surface water of the western Pacific sloshes east, killing the cold upwelling off Peru and triggering drought in Asia, floods in South America, and famine across Africa and India. Mike Davis showed that the great colonial-era famines were not accidents of nature but the collision of ENSO cycles with imperial political economies that stripped their subjects of any buffer. Understanding El Nino means understanding that global weather is a single connected system, and that its disruptions fall hardest on those with the least power to absorb them.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Pacific",
-      "Global"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "pabloPicasso",
-    "title": "Pablo Picasso",
-    "template": "People",
-    "subtype": "Creative Figure",
-    "period": "1881–1973",
-    "status": "published",
-    "summary": "The Spanish painter and sculptor who co-invented Cubism, transformed what Western art could look like, and became the most commercially dominant artist of the twentieth century",
-    "startYear": 1881,
-    "endYear": 1973,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "ludwigVanBeethoven",
-    "title": "Ludwig van Beethoven",
-    "template": "People",
-    "subtype": "Creative Figure",
-    "period": "1770–1827",
-    "status": "published",
-    "summary": "The German composer who bridged the Classical and Romantic eras, producing nine symphonies, sixteen string quartets, thirty-two piano sonatas, and a body of work that reshaped what music was thought capable of expressing — and who, in going deaf at the height of his powers, became the defining emblem of the artist-genius creating in defiance of circumstance.",
-    "startYear": 1770,
-    "endYear": 1827,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "maliEmpire",
-    "title": "The Mali Empire",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1235–1600 CE",
-    "status": "published",
-    "summary": "The Mali Empire (c. 1235–1600) was the first great medieval West African empire to control the trans-Saharan gold trade at scale — founded by Sundiata Keita after the Battle of Kirina, reaching its height under Mansa Musa's extraordinary reign, and cementing Timbuktu and Djenné as centres of Islamic learning before giving way to the Songhai Empire that succeeded it.",
-    "startYear": 1235,
-    "endYear": 1600,
-    "regions": [
-      "Sub-Saharan Africa"
-    ],
-    "degree": 6,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "swahiliCoast",
-    "title": "The Swahili Coast",
-    "template": "Places",
-    "subtype": "System",
-    "period": "c. 800 – 1500 CE",
-    "status": "published",
-    "summary": "The chain of city-states along East Africa's Indian Ocean shore — Kilwa, Mombasa, Lamu, Zanzibar — that built a trading civilization from monsoon winds, gold, and Islamic-African urban culture, before the Portuguese arrived with cannon and broke the system open.",
-    "startYear": 800,
-    "endYear": 1500,
-    "regions": [
-      "Sub-Saharan Africa",
-      "North Africa & Middle East"
-    ],
-    "degree": 12,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "aksum",
-    "title": "Aksum",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 100 CE – 940 CE",
-    "status": "published",
-    "summary": "The ancient kingdom of northern Ethiopia and Eritrea that became one of the ancient world's great trading powers, one of the first states to adopt Christianity as a state religion, and the origin point of a living tradition — the Ethiopian Orthodox Church — that claims an unbroken line to the fourth century.",
-    "startYear": 100,
-    "endYear": 940,
-    "regions": [
-      "Africa"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "mansaMusa",
-    "title": "Mansa Musa",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "r. c. 1312–1337 CE",
-    "status": "published",
-    "summary": "Ruler of the Mali Empire whose 1324 pilgrimage to Mecca, lavish distribution of gold in Cairo, and patronage of mosques and scholars at Timbuktu made him one of the medieval Islamic world's most famous African sovereigns — and, through his portrait on the 1375 Catalan Atlas, the figure who fixed an image of West African wealth in the European imagination for centuries.",
-    "startYear": 1312,
-    "endYear": 1337,
-    "regions": [
-      "Sub-Saharan Africa"
-    ],
-    "degree": 6,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "olmec",
-    "title": "The Olmec",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1500–400 BCE",
-    "status": "published",
-    "summary": "The earliest major civilization of Mesoamerica, centered on the hot, wet lowlands of the Gulf Coast of Mexico from roughly 1500 to 400 BCE. The Olmec built the first large ceremonial centers in the region, first at San Lorenzo and later at La Venta, and carved colossal basalt heads weighing many tons from stone hauled across long distances. They worked jade with great skill and left behind a recurring set of religious images, including a part-human, part-jaguar being. Whether they were the single \"mother culture\" that shaped everything that followed in Mesoamerica, or one of several early \"sister cultures,\" is still debated.",
-    "startYear": -1500,
-    "endYear": -400,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 6,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "cooperative",
-    "title": "The Cooperative",
+    "id": "bondMarket",
+    "title": "The Bond Market",
     "template": "Concepts",
     "subtype": "Analytical Concept",
-    "period": "1844–present",
+    "period": "medieval–present",
     "status": "published",
-    "summary": "An enterprise owned and governed by its members rather than outside shareholders — the organizational form that asks whether democratic self-governance can survive the pressures of market competition, and that has generated an alternative tradition of economic thinking running alongside capitalism for nearly two centuries.",
-    "startYear": 1844,
+    "summary": "The marketplace where governments and corporations borrow by selling tradeable promises to repay with interest, and where the price of that borrowing is continuously set. The bond market turns a loan into a security that can change hands, prices a government's credibility every day, and exercises a discipline over states that the stock market does not — which is why it has often mattered more than the exchange where shares trade.",
+    "startYear": 1171,
     "endYear": 2026,
     "regions": [
       "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "cahokia",
-    "title": "Cahokia",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 1050 – 1350 CE (Mississippian florescence); abandoned by c. 1400 CE",
-    "status": "published",
-    "summary": "The largest city in the Americas north of Mexico before European contact — a planned earthwork metropolis near modern St. Louis that rose around 1050 CE, held tens of thousands of people, and was abandoned within a few centuries, complicating the story that pre-contact North America held no cities.",
-    "startYear": 1050,
-    "endYear": 1400,
-    "regions": [
-      "Americas"
     ],
     "degree": 4,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "spanishConquestOfTheAmericas",
-    "title": "The Spanish Conquest of the Americas",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1492–c.1572",
-    "status": "published",
-    "summary": "The decades-long process by which Spanish expeditions toppled the largest states in the Americas — the Aztec Triple Alliance in 1521 and the Inca realm after 1532 — and built an empire across two continents. The conquest ran less on European weaponry than on epidemic disease, the political fractures inside Indigenous empires, and the tens of thousands of Indigenous allies who fought alongside the newcomers. Out of it came the encomienda labor system, a vast silver economy, and a tangle of conquest myths that historians have spent decades dismantling.",
-    "startYear": 1492,
-    "endYear": 1572,
-    "regions": [
-      "Latin America",
-      "Europe"
-    ],
-    "degree": 18,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "khmerEmpire",
-    "title": "The Khmer Empire",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 802–1431 CE",
-    "status": "published",
-    "summary": "The mainland Southeast Asian state that, for roughly six centuries, organized labor, land, and belief around a sacred kingship — building from its capital at Angkor an order that reached across much of what is now Cambodia, Thailand, and Laos before fading in the fifteenth century.",
-    "startYear": 802,
-    "endYear": 1431,
-    "regions": [
-      "Southeast Asia"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "angkor",
-    "title": "Angkor",
-    "template": "Places",
-    "subtype": "Site",
-    "period": "c. 9th century CE – present",
-    "status": "published",
-    "summary": "The vast medieval capital of the Khmer Empire in what is now Cambodia — a sprawling low-density city built around an engineered network of reservoirs and canals, home to Angkor Wat and the Bayon, abandoned as a royal seat in the 15th century, rediscovered by Europeans in the 19th, and now both Cambodia's national symbol and one of Asia's most visited ruins.",
-    "startYear": 802,
-    "endYear": 2026,
-    "regions": [
-      "Southeast Asia"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "householdEconomy",
-    "title": "The Household Economy",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The idea that the home is a site of real economic production — cooking, cleaning, raising children, caring for the sick — and that the national accounts which measure a country's wealth systematically leave this work out, rendering invisible the labor that makes all other labor possible.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "informalEconomy",
-    "title": "The Informal Economy",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "modern–present",
-    "status": "published",
-    "summary": "The vast world of market activity that happens outside the state's routine tax, licensing, and labor-protection systems — street vendors, cash work, unlicensed workshops, day laborers — which by ILO estimates accounts for the majority of employment globally, challenging the idea that formality is the norm and informality the exception.",
-    "startYear": 1900,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 6,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "srivijaya",
-    "title": "Srivijaya",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 7th–13th century CE",
-    "status": "published",
-    "summary": "Srivijaya (c. 7th–13th century) was a maritime empire centered on Sumatra that commanded key chokepoints and grew rich by servicing, taxing, and protecting the trade that passed between China and India. It was also a major center of Mahayana Buddhist learning. The entry's purpose is to explain what kind of power a thalassocracy was — and how a state this important could be largely forgotten and then pieced back together from scattered evidence.",
-    "startYear": 671,
-    "endYear": 1288,
-    "regions": [
-      "Asia"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "port",
-    "title": "The Port",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The institution through which maritime commerce, migration, disease, and ideas moved between worlds — a physical node of docks and warehouses, a regulatory space of customs and quarantine, a cosmopolitan contact zone where strangers met on commercial terms, and a labor system whose containerization revolution in the mid-20th century remade global trade and displaced the dockworker communities that had defined port cities for centuries.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "credit",
-    "title": "Credit",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The extension of purchasing power based on trust in a future payment — the claim side of the debt relationship and the social mechanism through which promises to pay have been made tradeable, circulated as near-money, and used to build everything from Mesopotamian grain networks to global capital markets.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "factory",
-    "title": "The Factory",
-    "template": "Places",
-    "subtype": "System",
-    "period": "1700s–present",
-    "status": "published",
-    "summary": "The institution of concentrated, machine-powered, clock-disciplined production — many workers brought under one roof and synchronized to mechanical rhythms — that did not merely speed up the making of goods but reorganized human time, the laboring body, and the relationship between a worker and their work.",
-    "startYear": 1771,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "plantation",
-    "title": "The Plantation",
-    "template": "Places",
-    "subtype": "System",
-    "period": "1500s–present",
-    "status": "published",
-    "summary": "The agricultural-industrial system that organized enslaved and coerced labor to mass-produce cash crops — sugar, tobacco, cotton, coffee — for distant markets. The plantation was not a farm but a factory in the field: a regime of gang labor, surveillance, and violence that ran on a precise calendar, generated immense wealth for owners and the economies they fed, built racially ordered slave societies across the Atlantic world, and left long afterlives in sharecropping, the convict-lease farm, and the company estate.",
-    "startYear": 1500,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
     "added": "2026-06-13"
   }
 ]

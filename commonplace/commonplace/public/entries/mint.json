@@ -9,7 +9,18 @@
   "title": "The Mint",
   "summary": "The state workshop that strikes coin — the institution through which rulers across three millennia have controlled the money supply, extracted revenue through seigniorage, waged economic warfare through debasement, and bound the authority to make money to the authority to govern.",
   "hook": "When Isaac Newton took the job of Warden of the Royal Mint in 1696, his friends thought he had wasted himself on a sinecure. Instead he threw himself at the work — prosecuting counterfeiters, organizing the Great Recoinage, supervising the replacement of England's worn and clipped coin stock with new milled pieces. He understood something his friends missed: the mint was not a clerical post. It was one of the most politically charged institutions in England. Whoever controlled the coin controlled the measure of value itself. That insight goes back to the first minted coin, struck in Lydia around 600 BCE, and it still governs the debates about who should issue the digital money of the coming century.",
-  "aliases": ["minting","coinage","coins","seigniorage","debasement","clipping","counterfeiting","Royal Mint","Great Recoinage","token coinage"],
+  "aliases": [
+    "minting",
+    "coinage",
+    "coins",
+    "seigniorage",
+    "debasement",
+    "clipping",
+    "counterfeiting",
+    "Royal Mint",
+    "Great Recoinage",
+    "token coinage"
+  ],
   "themes": [
     "sovereignty",
     "politicalEconomy",
@@ -154,7 +165,7 @@
     {
       "label": "The Banknote",
       "entryId": "banknote",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "The banknote emerged as paper money that displaced the coin for large-denomination transactions, eventually forcing mints to renegotiate their role in a monetary system no longer centered on struck metal. The transition from coin to note is one of the pivotal episodes in monetary history."
     },

@@ -121,6 +121,20 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "Insurance is where probability theory first became a commercial technology: actuarial science applied the mathematics of uncertain events to mortality and loss, making life and property insurance viable. The probability entry explains the conceptual revolution — the decision that certain kinds of uncertainty were amenable to quantitative treatment — that insurance required and in turn accelerated."
+    },
+    {
+      "label": "The Banknote",
+      "entryId": "banknote",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Probability and the banknote converge in the mathematics of banking: fractional reserve note issue is a bet that not all depositors will demand redemption at once, a calculation that insurance and probability theory made rigorous; the same intellectual moment that produced actuarial tables also produced the tools for managing the risk that made a paper currency viable."
+    },
+    {
+      "label": "The Bond Market",
+      "entryId": "bondMarket",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The pricing of credit risk that the bond market performs — setting a yield that compensates for the probability of default — is an application of probability mathematics to sovereign promises; the same intellectual tradition that produced actuarial tables and insurance theory made it possible to quote a government's creditworthiness as a number."
     }
   ],
   "reference": [
