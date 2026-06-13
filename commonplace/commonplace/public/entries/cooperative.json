@@ -21,6 +21,20 @@
     "economicHistory",
     "globalHistory"
   ],
+  "aliases": [
+    "cooperative",
+    "co-op",
+    "worker cooperative",
+    "consumer cooperative",
+    "credit union",
+    "Rochdale Pioneers",
+    "Mondragon",
+    "platform cooperativism",
+    "demutualization",
+    "member ownership",
+    "one member one vote",
+    "labor-managed firm"
+  ],
   "interpretiveInfluences": [
     "G.D.H. Cole",
     "Beatrice Webb",
@@ -41,7 +55,7 @@
     "general": {
       "theConcept": "When the Rochdale Pioneers opened their store in 1844, they were doing more than running a shop. They were setting out a new idea about how a business should treat the people inside it. Profit would go back to members, not to outside investors. Members would govern the institution. Capital would not command labor. This inversion of the standard firm drove cooperative movements for nearly two centuries. It created a tradition of practice and thought running alongside mainstream economics without ever replacing it.\n\nG.D.H. Cole, the British historian who wrote most about the cooperative movement, argued that cooperatives carried a distinct social vision. Sidney and Beatrice Webb saw the consumer cooperative as the more workable strand. They believed it could capture retail trade without needing to change how goods were produced. This early split between worker ownership and consumer ownership set up an argument that ran through the whole twentieth century. The two models drew different backers and made different trade-offs between economic performance and democratic control.",
       "problemItSolves": "The cooperative tradition grew from a specific reading of what was wrong with industrial capitalism. The problem was not simply low wages. Workers had no voice in decisions that shaped their lives. They had no say in how companies were run, no share in gains beyond their wages, and no guard against choices made purely in the interest of outside capital. The cooperative proposed a different link between ownership and participation.\n\nHenry Hansmann studied enterprise ownership and argued that different forms suit different industries based on where organizing costs are lowest. When customers are similar and deal with a firm often, consumer cooperatives work well. When workers share skills and goals, worker cooperatives are viable. On this reading, the cooperative is not an ideology forced onto markets — it is a practical answer to the costs of governing an enterprise. This shifted the debate away from a simple clash between capitalism and its critics toward a narrower question: under what conditions does member ownership beat investor ownership?",
-      "howItWorks": "Mondragon is the case that both supporters and critics of worker cooperatives return to most often. A Catholic priest, José María Arizmendiarrieta, founded it in 1956 in the Basque Country of Spain. The network grew into worker-owned enterprises in manufacturing, retail, and finance. By the early twenty-first century it employed roughly eighty thousand people and ranked among Spain's larger business groups.\n\nWhat Mondragon showed was that a large worker-owned enterprise can compete in global markets for decades. But success under pressure required real trade-offs. As the network expanded outside Spain, it hired workers in other countries as employees rather than members. During the 2008 financial crisis, Mondragon cut workers in ways a strict cooperative model might not have allowed. Sharryn Kasmir, who studied the Basque town where Mondragon was born, found labor conflict and internal hierarchy that the official cooperative story left out. Mondragon is a genuine cooperative — but a more complicated one than its admirers often admit.",
+      "howItWorks": "Mondragon is the case that both supporters and critics of worker cooperatives return to most often. A Catholic priest, José María Arizmendiarrieta, founded it in 1956 in the Basque Country of Spain. The network grew into worker-owned enterprises in manufacturing, retail, and finance. By the early twenty-first century it employed roughly eighty thousand people and ranked among Spain's larger business groups.\n\nWhat Mondragon showed was that a large worker-owned enterprise can compete in global markets for decades. But success under pressure required real trade-offs. As the network expanded outside Spain, it hired workers in other countries as employees rather than members. During the post-2008 crisis, Mondragon used wage adjustments, redeployment, and internal support mechanisms; the 2013 failure of its Fagor appliance cooperative showed both the resilience and the limits of the federation model. Sharryn Kasmir, who studied the Basque town where Mondragon was born, found labor conflict and internal hierarchy that the official cooperative story left out. Mondragon is a genuine cooperative — but a more complicated one than its admirers often admit.",
       "whatItExplains": "Farm cooperatives show a different side of the model. They reveal what collective action can do for small producers who lack leverage on their own. When Danish farmers built dairy cooperatives in the late nineteenth century, they turned a fragmented world of small farms into one of Europe's stronger food systems. Scandinavian agricultural cooperatives went on to hold large shares of national markets and to compete in exports.\n\nThe logic here differs from worker ownership. Farmers hold their land and animals on their own. What they pool is the processing, storage, and selling of their produce. By joining these functions, farmers gain access to scale and bargaining power they could never reach alone. This form has proved durable because member interests line up clearly. The cooperative exists to serve the farmers who supply it, and those farmers are also the ones who own it.",
       "whereItBreaksDown": "The capital problem is the sharpest limit on cooperative growth. A standard company can raise money by selling shares to outside investors who want a financial return. A cooperative cannot easily sell voting stakes to outsiders without losing member control. So cooperatives rely on saved earnings and loans to grow. In industries that need a lot of capital — manufacturing, technology, large-scale infrastructure — this is a real handicap.\n\nThe debate about whether cooperatives can scale is long-running and still open. Jaroslav Vanek, who formalized cooperative theory in the 1970s, argued that worker-managed firms faced built-in disadvantages in capital markets. Later economists challenged parts of his model but confirmed that capital access was a real problem. The practical result is that cooperatives cluster in sectors where capital needs are modest, or where members can build reserves over time — retail, credit, housing, farming — rather than expanding into industries where large, fast investment is needed.",
       "usedAndMisusedC": "The cooperative idea draws support from across the political spectrum, and that range tells you something about both its appeal and its limits. Some on the left embrace cooperatives as a step toward collective ownership. Social democrats support them as a check on corporate power that stops short of state control. Some conservatives favor them as voluntary, market-based alternatives to government programs, especially in credit, housing, and rural services.\n\nThis wide support can be a strength. But it also creates confusion. Someone who likes credit unions because they are local and self-governing holds a very different view from someone who favors worker ownership because it moves control of production into workers' hands. The cooperative form can hold both visions — but the form alone does not resolve the political disagreement that lies beneath them."
@@ -208,6 +222,34 @@
       "reliability": "Scholarly",
       "contribution": "Supplementary",
       "annotation": "The Webbs' account of the consumer cooperative as the more viable strand of cooperative development, arguing that consumer ownership could capture retail trade without transforming production. Essential for the early theoretical debate between consumer and worker ownership that shaped cooperative movements through the twentieth century."
+    },
+    {
+      "author": "International Co-operative Alliance",
+      "title": "Facts and Figures on the Co-operative Movement",
+      "year": "2023",
+      "type": "Report",
+      "reliability": "Authoritative",
+      "contribution": "Supplementary",
+      "domainAuthority": "International Co-operative Alliance",
+      "annotation": "The primary statistical source for global cooperative scope, covering membership, employment, and sectoral distribution. The hook's figure of roughly three million cooperatives operating worldwide, along with the claim that cooperatives account for a significant share of economic activity in agriculture, credit, and retail, draws on ICA aggregations of national cooperative data."
+    },
+    {
+      "author": "Scholz, Trebor and Schneider, Nathan (eds.)",
+      "title": "Ours to Hack and to Own: The Rise of Platform Cooperativism",
+      "year": "2017",
+      "type": "Edited volume",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "annotation": "The foundational text for the platform cooperativism movement, gathering essays from practitioners, designers, and theorists arguing that digital platforms should be owned and governed by the workers and users who create their value. The entry's Research tab treatment of platform cooperativism as an emerging response to gig economy labor relations draws directly on the framework developed here."
+    },
+    {
+      "author": "Hirschman, Albert O.",
+      "title": "Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States",
+      "year": "1970",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "annotation": "The theoretical source for the exit/voice framework applied in the Advanced layer to explain how cooperatives differ structurally from investor-owned firms. Where shareholders in conventional corporations discipline management through exit — selling shares — cooperative members have no equivalent mechanism; they operate through voice, through democratic governance. Hirschman's framework maps the difference more precisely than any cooperative-specific literature does."
     }
   ],
   "commerce": [
