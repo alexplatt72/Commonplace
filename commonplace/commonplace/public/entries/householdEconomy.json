@@ -27,7 +27,7 @@
   ],
   "content": {
     "beginner": {
-      "theConcept": "Most people think of the economy as factories, offices, and shops. But there is another economy running alongside it, every day, in every home. Someone is cooking meals. Someone is caring for a baby or a sick grandparent. Someone is cleaning, shopping, and managing the schedule that keeps everything else running. All of this takes real time and real effort. None of it gets paid.\n\nEconomists call this unpaid work the household economy. It is the part of economic life that national statistics do not capture. When a country measures its wealth, it adds up all the goods and services that were bought and sold. Because household work has no price tag, it simply does not count. This is not a small gap. Studies in several countries have found that unpaid household work, if it were valued at market wages, would equal somewhere between a quarter and more than half of the official economy.",
+      "theConcept": "Most people think of the economy as factories, offices, and shops. But there is another economy running alongside it, every day, in every home. Someone is cooking meals. Someone is caring for a baby or a sick grandparent. Someone is cleaning, shopping, and managing the schedule that keeps everything else running. All of this takes real time and real effort. None of it gets paid.\n\nEconomists call this unpaid work the household economy. It is the part of economic life that official GDP does not capture. When a country measures its wealth, it adds up all the goods and services that were bought and sold. Because household work has no price tag, it simply does not count. This is not a small gap. Studies in several countries have found that unpaid household work, if it were valued at market wages, would equal somewhere between a quarter and more than half of the official economy.",
       "problemItSolves": "Before feminist economists began asking about household work in the twentieth century, most economic thinking treated the home as outside the economy. Markets were where economic life happened. The household was where people simply lived. This view had a hidden problem: it only made sense if someone was taking care of all the basic human needs that the market did not touch.\n\nWho was doing that work? Mostly women. And because the work was invisible to economists, so were the people doing it. A policy built on this picture of the world could cut spending on childcare or elder care without appearing to touch the economy at all. The concept of the household economy was developed to make this labor visible, and to ask what it costs when it is ignored.",
       "howItWorks": "The household economy works by turning time into goods and services. A parent who spends three hours cooking a meal and caring for a child has produced something real: nourished, looked-after people. A formal economy runs on exactly this kind of output. The difference is that a restaurant charges for the meal, so it counts. A parent does not charge, so it does not.\n\nThis gap creates a strange accounting problem. When a family hires a cleaner, that work appears in the national statistics. When a family member does the same cleaning themselves, it vanishes. The economy looks the same size whether parents raise their children at home or pay a nursery. But the money that flows to the nursery gets counted and the care at home does not. The boundary between the counted economy and the uncounted one is not drawn by importance. It is drawn by whether money changed hands.",
       "whatItExplains": "The concept explains why economic statistics can look healthy while many people are working harder than ever. In many countries, women entered paid jobs across the twentieth century. They did not stop doing most of the housework. The sociologist Arlie Hochschild studied this in American families during the 1980s. She called it the second shift. A full day at the office, then another partial day of cooking, cleaning, and childcare at home. Men did more housework than before, but still far less. The total gap in hours remained wide.\n\nThe concept also explains something about poorer countries. In parts of rural Africa, South Asia, and Latin America, families rely heavily on subsistence work: growing food, fetching water, making things for direct use. None of this enters official GDP figures. A country can look poor by market measures while households produce a great deal. Policies based only on GDP miss this entirely.",
@@ -218,6 +218,51 @@
       "reliability": "Scholarly",
       "contribution": "Supplementary",
       "annotation": "The earliest systematic treatment of household production as an economic category, and the source of the third-party criterion — the principle that if you could pay someone else to do an activity, it counts as production. The intellectual origin of satellite accounting and the starting point for all subsequent debates about how to measure household work."
+    },
+    {
+      "author": "Gary S. Becker",
+      "title": "A Treatise on the Family",
+      "year": "1981",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "annotation": "The founding statement of the neoclassical \"new home economics,\" modelling the household as a site of production and rational allocation; the Advanced layer engages it directly as the mainstream counterpoint to feminist accounts."
+    },
+    {
+      "author": "Diane Elson",
+      "title": "Male Bias in the Development Process",
+      "year": "1991",
+      "type": "Edited volume",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "annotation": "Elson's analysis of how economic models and policy treat unpaid reproductive labour as a costless reserve; named among the entry's interpretive influences and supplied here as a direct reference."
+    },
+    {
+      "author": "Mariarosa Dalla Costa and Selma James",
+      "title": "The Power of Women and the Subversion of the Community",
+      "year": "1972",
+      "type": "Primary source",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "annotation": "The pamphlet that launched the Wages for Housework campaign, arguing unpaid domestic labour produces and reproduces labour power; the primary source behind the entry's discussion of that movement."
+    },
+    {
+      "author": "Claudia Goldin",
+      "title": "Career and Family: Women's Century-Long Journey toward Equity",
+      "year": "2021",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Supplementary",
+      "annotation": "Goldin's account of how the structure of paid work penalizes those who carry caregiving, named in the Research layer; she was awarded the 2023 Nobel Memorial Prize in Economics."
+    },
+    {
+      "author": "European Commission, IMF, OECD, UN, World Bank",
+      "title": "System of National Accounts 2008",
+      "year": "2009",
+      "type": "Reference work",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "annotation": "The international standard defining the GDP \"production boundary,\" which excludes most unpaid own-account household services; the authoritative source for the entry's central claim about what national accounts measure."
     }
   ],
   "commerce": [
@@ -302,5 +347,28 @@
     "Global / Transregional"
   ],
   "degree": 7,
-  "added": "2026-06-13"
+  "added": "2026-06-13",
+  "aliases": [
+    "unpaid labor",
+    "unpaid care work",
+    "social reproduction",
+    "care economy",
+    "wages for housework"
+  ],
+  "indexTerms": [
+    "household economy",
+    "unpaid labor",
+    "unpaid care work",
+    "social reproduction",
+    "GDP",
+    "satellite accounts",
+    "time-use surveys",
+    "second shift",
+    "care economy",
+    "wages for housework",
+    "feminist economics",
+    "national accounts",
+    "production boundary",
+    "Marilyn Waring"
+  ]
 }
