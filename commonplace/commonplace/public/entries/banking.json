@@ -1,0 +1,366 @@
+{
+  "id": "banking",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Foundations",
+  "subtype": "Material Foundation",
+  "period": "c. 2000 BCE–present",
+  "title": "Banking",
+  "summary": "The institutional practice of holding deposits, extending credit, and transferring money across space and time — a foundation of economic civilization so pervasive that its absence is almost unimaginable, and whose periodic crises reveal how much of modern life is built on organized debt.",
+  "themes": [
+    "economics",
+    "economicHistory",
+    "capitalism",
+    "politicalEconomy",
+    "trade",
+    "globalHistory",
+    "modernity",
+    "institutions",
+    "inequality",
+    "power",
+    "history"
+  ],
+  "hook": "In 1345, the Bardi and Peruzzi banking families of Florence went bankrupt. Edward III of England had borrowed heavily to finance his wars with France and defaulted on the loans. The Bardi and Peruzzi had extended credit worth roughly three times the annual revenue of the English crown. Their collapse triggered a financial crisis that rippled through the Mediterranean economy and contributed to the ruin of dozens of dependent firms. Giovanni Villani, a Florentine chronicler, called it the \"crash of the great banks.\"\n\nSix centuries later, in September 2008, Lehman Brothers filed for bankruptcy. The event triggered a global financial crisis, a recession that cost tens of millions of people their jobs, and government bailouts in the trillions of dollars. The mechanism was different. The scale was different. The underlying structure was the same: banks that had extended credit beyond what their depositors and creditors could absorb, in a system where the failure of large institutions threatened to bring down smaller ones.\n\nBanking is one of civilization's oldest and most contested inventions. It allows merchants to trade across continents without carrying coins. It allows farmers to survive a bad harvest by borrowing against the next good one. It allows governments to fight wars, build roads, and fund welfare states. And periodically, it fails in ways that remind the world how much of modern life depends on an institution that is, at bottom, built on trust.",
+  "aliases": [
+    "banking",
+    "banks",
+    "credit",
+    "money lending",
+    "financial institutions",
+    "central banking",
+    "commercial banking",
+    "investment banking",
+    "deposit banking"
+  ],
+  "indexTerms": [
+    "credit",
+    "deposits",
+    "interest",
+    "fractional reserve banking",
+    "central bank",
+    "Bank of England",
+    "Federal Reserve",
+    "Medici bank",
+    "Bardi and Peruzzi",
+    "bills of exchange",
+    "double-entry bookkeeping",
+    "financial crisis",
+    "2008 financial crisis",
+    "bank runs",
+    "systemic risk",
+    "mortgage-backed securities",
+    "Basel accords",
+    "shadow banking",
+    "microfinance",
+    "Islamic finance",
+    "usury",
+    "lender of last resort",
+    "deposit insurance",
+    "Glass-Steagall",
+    "too big to fail",
+    "Venice",
+    "Amsterdam",
+    "London",
+    "Wall Street"
+  ],
+  "interpretiveInfluences": [
+    "Charles Kindleberger",
+    "Niall Ferguson",
+    "Hyman Minsky",
+    "Barry Eichengreen"
+  ],
+  "content": {
+    "beginner": {
+      "theFoundation": "Money sitting in a vault does nothing. Money lent out can build a warehouse, plant a crop, or fund a voyage. This simple fact is the origin of banking.\n\nThe first banks were not buildings with marble columns. They were grain storehouses in ancient Mesopotamia. Farmers deposited barley there. The temple issued receipts that others accepted as payment. The temple lent out stored grain and charged interest. The essential structure — deposit, lend, charge — was in place four thousand years ago.\n\nA bank does three things. It keeps your money safe. It pays you a small return for leaving your money there. And it lends that money to someone else at a higher rate, keeping the difference. That spread between what it pays depositors and what it charges borrowers is how banks make money.\n\nThe catch is that the bank does not keep all the deposited money in reserve. It lends most of it out. If all depositors tried to withdraw at the same time, the bank could not pay. This is called a bank run. Banks work because most people do not try to withdraw at the same time. When confidence breaks, the system can collapse.",
+      "howItArrived": "Medieval Europe ran on coins and personal trust. Moving money over long distances was dangerous. Merchants travelling between Florence and London could be robbed.\n\nThe Italian merchant banks of the 13th and 14th centuries solved this with a bill of exchange. A merchant in Florence deposited gold with a banker and received a paper note. In London, he presented that note to the banker's partner and received English silver. No gold had moved. Two banking houses had agreed that a debt in one city could be settled in another.\n\nThe Medici bank dominated European finance in the 15th century through a network of partner banks across the continent. It financed trade, extended credit to princes and popes, and managed the Vatican's accounts. The Medici did not just hold money — they moved it, converted it between currencies, and created it through loans that exceeded their deposits.\n\nThis became the template for modern banking. Banks are not passive warehouses. They are active creators of credit, and the credit they create is itself a form of money.",
+      "whatItReorganized": "Banking reorganized what commerce could do. Before reliable credit, trade was limited to what merchants could carry. With credit, merchants could finance voyages and pay for goods before the ships arrived. The great trading empires of the early modern period — Venice, Genoa, the Dutch Republic — were built on banking as much as on ships.\n\nBanking also reorganized war. The Bank of England was founded in 1694 to lend money to William III for his wars against France. In exchange, the bank received the right to issue banknotes. This began the relationship between state finance and banking that still defines modern governments.\n\nStates could borrow to fight now and repay later from taxes. The cost shifted forward onto future taxpayers. This is still how governments operate.",
+      "thePoliticalEconomy": "Banking has always been contested. Medieval Christianity prohibited charging interest — usury — as morally wrong. Jewish communities in Europe were permitted to lend at interest because they stood outside the Christian prohibition. This created a pattern lasting centuries: excluded groups doing financial work the majority needed but publicly condemned.\n\nAs commerce expanded, the prohibition softened. Banks found workarounds — bills of exchange involved currency conversion, and the exchange rate could quietly include a return — that kept lending within the letter of the law.\n\nThe question of who benefits from banking and who is harmed has never been settled. Banks provide credit that enables growth. They also charge more to borrowers who can least afford it, extend risky loans during booms, and pull back during busts — making bad times worse. The balance between those functions is the central fight in banking regulation.",
+      "theFeedback": "Banks fail. They have failed in every century since they were invented, and the pattern is consistent.\n\nIn good times, banks lend more freely — to borrowers who would not have qualified before, against rising collateral whose value keeps climbing because everyone is borrowing to buy. The cycle speeds up until something triggers a turn. Lenders call in loans. Borrowers cannot pay. Collateral values fall. Banks face losses beyond their reserves. Credit tightens. Businesses cannot pay wages. Workers lose jobs. A financial crisis becomes an economic one.\n\nHyman Minsky described this cycle in the 20th century, but it had been seen long before. The crash of 1720, the Panic of 1873, the Great Depression, the crisis of 2008 — all follow the same pattern.\n\nAfter the 19th-century panics, governments created central banks that could lend to failing banks and stop runs from spreading. After the Depression, deposit insurance protected ordinary savers. Each crisis produced new rules. Each set of rules was later tested by a crisis different enough to reveal its limits.",
+      "presentAndFuture": "Banking in the early 21st century is in permanent argument about what it should be.\n\nThe 2008 crisis produced new rules: higher capital requirements, limits on risky trading, and stress tests. Banks got safer. They also got bigger. The largest American banks in 2025 are far larger than those considered too big to fail in 2008.\n\nDigital technology is changing who provides banking services. Fintech companies offer payments, loans, and savings without bank charters. Cryptocurrency advocates want systems with no institutional middleman. Some central banks are designing digital currencies that would let people hold accounts directly with the state.\n\nMicrofinance extended small loans to people in poor countries with no access to formal banking, with mixed results. Islamic finance serves hundreds of millions through products that comply with religious prohibitions on interest.\n\nNone of this has settled the core tension: banking is both a public utility — whose failure causes broad harm — and a private business that profits by taking risks. That tension is as unresolved now as when Edward III defaulted on his Florentine loans in 1345."
+    },
+    "general": {
+      "theFoundation": "The temple granaries of ancient Mesopotamia held barley for farmers and issued receipts that circulated as payment. This is a less exotic origin for banking than it sounds. The core functions — accepting deposits, keeping records, extending credit — appeared first not in commerce but in an administrative setting. Credit long predates coinage.\n\nThe reason is in how agriculture and trade work. Crops come in once or twice a year, but farmers need to eat year-round. Cargoes arrive in bulk at uncertain intervals. Both situations create a gap between when money is needed and when it is available. Credit fills that gap. The demand for banking is not a modern invention; it is built into the timing of economic life.\n\nWhat changed over the centuries was that lending became formalized — turned into institutions with lasting existence, transferable obligations, and ties to political authority. That process, traced from medieval Italy through the Dutch and English banking revolutions to today's global system, is the history of banking as a civilizational force.",
+      "howItArrived": "The Medici bank, at its peak in the mid-15th century, operated through a set of partnerships. Cosimo de' Medici built the network by placing trusted managers in branch banks in London, Bruges, Venice, Geneva, Rome, and Naples, each organized as a separate firm. Profits flowed back to Florence while the parent was protected from any single branch's failure — in principle. In practice, the London and Bruges branches piled up bad debts from loans to English and Burgundian rulers, and this helped bring the bank down after Lorenzo's death.\n\nThe key financial tool of this period was not the bank itself but the bill of exchange — a written order from one merchant to another to pay a set sum at a set place on a future date. Bills of exchange could be transferred, combined, and sold at a discount. A London merchant owed money by a Paris merchant could sell that claim to a third party at a discount and get cash now. This made credit portable and created a market for it.\n\nThe Bank of Amsterdam, founded in 1609, marks a new stage: the public bank as monetary backbone. It accepted deposits of worn and mixed coins and issued receipts in a standard unit of account — the bank guilder — that became the currency of international trade. For a century and a half, the bank guilder was one of the most trusted monetary instruments in the world, and Amsterdam's financial standing rested on that trust.",
+      "whatItReorganized": "The Bank of England was founded in 1694 not to serve commerce but to fund war. In exchange for a loan of £1.2 million to William III, the bank received the right to issue banknotes and became the government's main banker. The deal tied the financial interests of the bank's creditors to the health of the state — the bank needed the government solvent to be repaid, and the government needed the bank to raise money it could not collect through taxes.\n\nThis link between finance and state power had large consequences. The historian John Brewer called the result the fiscal-military state — a form of government that could fight long wars by borrowing against future tax revenues. Britain's ability to wage war against France through the 18th century depended on borrowing cheaply through organized financial markets. France, with a less transparent treasury and weaker legal protections for its creditors, paid higher rates. That financial gap contributed to the French Revolution of 1789.\n\nBanking did not merely help commerce. It reshaped the capacity of states to act, with lasting effects on which countries could project power and which could not.",
+      "thePoliticalEconomy": "The moral objection to interest has a long history. Aristotle argued that money is barren — it produces nothing — and that charging for its use over time is unnatural. Medieval Christian theology agreed, defining usury broadly to cover most lending at interest. The practical result was to push lending toward groups outside the Christian moral community. Jewish lenders in European cities operated under royal protection that was both a privilege and a form of exploitation — they could lend at interest, but their assets and persons were periodically seized or they were expelled.\n\nAs commerce grew from the 13th through the 16th century, the prohibitions were reinterpreted rather than dropped. Scholastic theologians carved out an exception for productive credit — lending to fund a trade voyage whose outcome was uncertain — while opposing pure time-lending. Calvin's more direct acceptance of interest in Protestant theology reduced friction in northern European finance. Max Weber argued this acceptance was one condition for capitalist development in Protestant countries. That argument is still debated, but the link between the Protestant Reformation and the Dutch and English commercial revolutions is real enough to need explaining.\n\nToday the debate is less theological but runs along similar lines: does banking serve society by directing credit to productive uses, or does it drain value by concentrating financial expertise and access in ways that favor those who are already wealthy? The question is not abstract. Research since the 2000s has found that financial sector growth beyond a certain point reduces rather than increases economic growth.",
+      "theFeedback": "The 2008 financial crisis was, at its core, a version of a crisis described many times before. Hyman Minsky's financial instability hypothesis, developed in the 1970s and 1980s, proposed that stability breeds instability. Periods of prosperity lead lenders to relax standards, borrowers to take on more debt, and asset prices to rise in ways that justify further borrowing. The process feeds on itself until it reverses. When it reverses, the contraction is as violent as the expansion was gradual.\n\nMinsky's framework explained the pattern but not the severity in 2008. Two things made that crisis worse than its predecessors. First, securitization had spread risk so widely through the financial system that no one could locate it. Second, global banks were so deeply connected that the failure of American mortgage lenders sent losses to banks in Germany, Iceland, and Britain that had bought the securities backed by those mortgages.\n\nThe safeguards built after the Great Depression — deposit insurance, the Glass-Steagall separation of commercial and investment banking, the central bank's role as lender of last resort — had been partly dismantled before 2008. Glass-Steagall was repealed in 1999. Derivatives markets grew with little oversight. Shadow banking — credit created outside formally regulated banks — expanded fast.\n\nThe post-2008 response raised capital requirements through the Basel III accords, created new rules for winding down failing banks, and in some countries restricted certain kinds of trading. Whether it fixed what Minsky identified, or merely adjusted the settings, is the central question in banking regulation today.",
+      "presentAndFuture": "Central banks have become the most powerful economic institutions in most developed economies — a position that was not always expected and has been recently contested. The Federal Reserve’s balance sheet grew from roughly $900 billion before 2008 to over $8 trillion at its peak in 2022, as the bank bought government bonds and mortgage-backed securities to steady markets and encourage growth. The Bank of England, the European Central Bank, and the Bank of Japan ran similar programs. These asset purchases — called quantitative easing — changed what central banking does in practice.\n\nOne disputed effect is distributional. When central banks buy financial assets, those asset prices tend to rise. People who own financial assets — largely the wealthy — gain more than people whose wealth is mainly in wages or savings accounts. Whether this is an acceptable cost of stabilizing the financial system or an unjustifiable transfer upward is not a technical question. It is a political one.\n\nAt the same time, fintech and digital payments are reshaping retail banking. Traditional bank branches matter less, but new dependencies on technology platforms are forming in their place. Whether these new financial go-betweens need banking regulation — and what happens when they fail — has not been settled."
+    },
+    "advanced": {
+      "theFoundation": "The scholarly debate about when banking should be said to begin is not merely definitional — it exposes a deeper disagreement about what banking fundamentally is. If banking is the acceptance of deposits for safekeeping and their reemployment as credit, then the temples of Mesopotamia and ancient Egypt were banks. If banking requires the creation of money through credit extension — the bank's promise to pay becoming itself a circulating medium — then the start date shifts to medieval Italy. If banking requires legal personhood, transferable shares, and a regulatory relationship with the state, then the history begins with the Casa di San Giorgio in Genoa in 1407 or the Bank of Amsterdam in 1609.\n\nThese are not equivalent definitions. The first treats banking as a service. The second treats it as a monetary phenomenon. The third treats it as an institutional form. Historians of finance tend toward the first; monetary economists toward the second; legal and institutional historians toward the third. The disagreement matters because it generates different genealogies of the 2008 crisis, different prescriptions for reform, and different accounts of what banking's relationship to the state should be.\n\nJ.K. Galbraith's observation in Money: Whence It Came, Where It Went — that the process by which banks create money is so simple that the mind recoils from it — captures the epistemological peculiarity of the field. Banking rests on a mechanism that is both technically straightforward and counterintuitive in its implications: the loan creates the deposit, not the other way around. Understanding this reversal is the beginning of understanding why banking crises have the character they do.",
+      "howItArrived": "The early modern banking revolutions in the Netherlands and England were not simply commercial developments. They were constitutional transformations in the relationship between financial creditors and political power. The Dutch Republic's system of provincial bonds, backed by excise tax revenues and managed through transparent accounting, offered creditors legal protections that the Habsburg monarchy could not — and did not — match. The result was a sustained interest-rate differential that gave the Republic access to credit at terms its enemies could not match.\n\nThe Bank of England's founding represented the same principle institutionalized: a bank owned by private creditors whose interests were aligned with state solvency, operating under parliamentary sanction, made credible by the constitutional constraints on royal prerogative that followed 1688. The Glorious Revolution is therefore part of the history of banking: the legal subordination of the Crown to parliamentary control of taxation was also the condition that made British government debt credible to investors.\n\nNiall Ferguson's argument in The Ascent of Money frames this as one of the West's decisive advantages over other civilizations: not military technology or Protestant ethics, but the sophistication of financial institutions that could mobilize capital for state purposes. This framing has been contested — it understates the role of extraction from colonial economies in financing European states — but it correctly identifies that the political-legal context for credit determines what credit can do. This has direct implications for contemporary development economics: the question is not just whether developing countries have banks, but whether the legal and political infrastructure exists to make those banks' promises credible.",
+      "whatItReorganized": "The relationship between financial development and economic growth is one of the most studied and contested questions in empirical economics. The standard account — developed by Raymond Goldsmith, Ronald McKinnon, and Edward Shaw in the 1960s and 1970s — held that financial development causes economic growth by mobilizing savings and directing them to productive investment. This view underpinned decades of IMF and World Bank conditionality requiring developing countries to liberalize their financial sectors.\n\nThe empirical revision of this account, led by Raghuram Rajan and Luigi Zingales in the 1990s and extended after 2008, showed a more complicated relationship. Financial development up to a moderate level is associated with growth; financial development beyond that level is associated with slower growth, higher inequality, and greater crisis vulnerability. The Bank for International Settlements, in a series of papers by Stephen Cecchetti and Enisse Kharroubi, found that when the financial sector grows beyond roughly 100% of GDP, it begins crowding out more productive activities by attracting talented workers and capital. This is the \"too much finance\" finding — politically inconvenient for an industry that captures significant shares of national income in advanced economies and that funds significant portions of academic economic research.\n\nThe uncomfortable implication is that the financial sectors of the United States and the United Kingdom, which grew dramatically from the 1980s through the 2000s, may have been welfare-reducing rather than welfare-enhancing in their later growth. This is a genuinely confrontational finding because it suggests that deregulation, widely understood as improving economic efficiency, may in this case have had the opposite effect.",
+      "thePoliticalEconomy": "The political economy of banking regulation after 2008 raises a question that the technical literature on systemic risk has difficulty capturing: why, given that the costs of financial crises are borne primarily by non-financial actors, do non-financial actors consistently fail to impose the regulatory constraints that financial actors resist?\n\nSimon Johnson's argument in a 2009 Atlantic article — \"The Quiet Coup\" — offered a structural answer: that the financial sector's penetration of the regulatory apparatus, academic economics, and political fundraising had created a capture dynamic powerful enough to survive catastrophic crisis. The revolving door between the Treasury, the Fed, and Wall Street; the dominance of finance-friendly economists at policy institutions; the concentration of political donations from financial firms — these structural features, Johnson argued, explained why the post-2008 regulatory response was more limited than the scale of the crisis might have suggested.\n\nThis argument cuts against the standard public-choice model of regulation, which predicts that diffuse consumer interests will be systematically underrepresented relative to concentrated producer interests. Banking is a case where the consumer interest in financial stability is not diffuse — financial crises impose large, visible costs — yet regulatory capture has nonetheless been sustained across multiple crisis cycles. The mechanism seems to require ideological capture as well as material capture: the spread through economic policymaking of a worldview in which sophisticated financial markets are presumptively efficient and regulatory intervention presumptively distorting. That worldview is not neutral. Its social distribution — dominant in elite university economics departments, in central banks, and in the major financial firms — is not accidental.",
+      "theFeedback": "Minsky's financial instability hypothesis is often cited but rarely engaged at its most radical level. The surface claim — that stability breeds instability through a progression from hedge to speculative to Ponzi finance — is now part of mainstream macroeconomic discussion. The deeper claim is more challenging: that this cycle is not a deviation from equilibrium capitalism but a structural feature of it. Capitalist credit systems do not converge to stability. They generate endogenous instability because credit creation is not controlled by any single actor but emerges from the decentralized decisions of thousands of lenders and borrowers, each of whom is rational by local criteria but whose aggregate behavior produces systemic fragility.\n\nIf Minsky is right in this stronger sense, then post-crisis regulatory reform addresses symptoms rather than causes. Higher capital requirements slow the buildup of fragility but do not eliminate it. Deposit insurance prevents bank runs but does not prevent the asset price cycles that generate them. The macroprudential turn in regulation — using policy tools to address aggregate credit growth rather than individual bank safety — represents an attempt to intervene at the systemic level, but it is still contested whether these tools can be calibrated successfully or whether their effects are too slow, too uncertain, or too easily evaded.\n\nThe most intellectually serious critique of the post-2008 regime comes not from those who argue that regulation went too far, but from those who argue that it did not go far enough and that the categories within which it operates — managing risks within a credit-creating banking system — make fundamental reform impossible without changing what banking is. Proposals for narrow banking (restricting deposit-taking institutions to holding only safe assets), full reserve banking, or central bank digital currency that bypasses commercial banking altogether share a structural diagnosis: the fragility is in the money creation function, and reforms that leave that function intact cannot eliminate it.",
+      "presentAndFuture": "The political economy of central banking has changed more in the decade after 2008 than in the previous half-century. The Taylor Rule, which had structured expectations about Federal Reserve behavior since the early 1990s, was abandoned in practice — interest rates held near zero for years in ways the Rule would not have sanctioned, then raised more aggressively in 2022-2023 than any mechanical rule could have anticipated. The expansion of the Fed's balance sheet through quantitative easing crossed boundaries that had been considered institutional taboos: direct purchase of mortgage-backed securities, direct support of corporate bond markets during COVID.\n\nThese expansions of central bank activity have not been matched by expansions of central bank accountability. The distributional effects of quantitative easing — which asset purchases benefit and which populations bear the inflation that accommodative monetary policy eventually produces — are consequential political questions that are managed within an institutional framework designed for technical independence rather than democratic representation. The European Central Bank's \"whatever it takes\" commitment by Mario Draghi in 2012, which stabilized the eurozone by committing the bank to purchase peripheral sovereign debt, was effective as crisis management and deeply contested as constitutional matter — the German Constitutional Court spent years adjudicating whether it was within the Treaty's bounds.\n\nThe implicit contract of central bank independence — insulated from politics in exchange for delivery of low and stable inflation — depended on a macroeconomic environment in which that goal was achievable at tolerable cost. The inflationary episode of 2021-2023, however complex its causes, showed that the contract could be stressed by events outside the central bank's control. The political sustainability of central bank independence is not guaranteed by the economic arguments for it."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "Banking is a Foundations entry because it reorganized what civilization could do — not just what it could buy. The ability to separate the timing of payment from the timing of obligation, to move value across space without moving metal, and to create purchasing power through credit changed what governments, merchants, and individuals could accomplish. Understanding banking is understanding one of the core institutional mechanisms by which the modern economy operates — not a particular policy or a particular event, but a foundational condition of how resources are mobilized across time and space.",
+        "theDebate": "The central debates in banking history concern the relationship between financial development and economic growth, the causes of financial crises and whether they are preventable, and the appropriate boundary between banking as private enterprise and banking as public utility. Scholars disagree about whether banking drives growth or merely follows it; about whether financial crises are random shocks or endogenous products of the financial system's own dynamics; and about whether post-2008 regulation represents adequate reform or incremental adjustment that leaves the underlying instability intact.",
+        "whyItMatters": "Banking is the connective tissue of economic history. Tracing its development unlocks the fiscal-military states of early modern Europe, the commercial revolutions of the Dutch Republic and England, the mobilization of capital for industrialization, the political economy of colonialism, the Great Depression and its policy responses, and the financial globalization of the late 20th century. Almost no major economic-historical question can be addressed without engaging with how credit and banking shaped what was possible.",
+        "questions": [
+          "Medieval Christianity prohibited charging interest on loans as morally wrong — yet European banking developed and expanded in that environment through legal fictions and exemptions. What does this suggest about the relationship between moral prohibitions and economic practices? When does moral condemnation of a practice drive it underground, and when does it produce accommodation?",
+          "Financial crises follow a recognizable pattern — expansion, excess, collapse, contraction — that has been observed for centuries. If the pattern is so well understood, why does it keep recurring? Is the recurrence evidence that the pattern is inevitable, that regulators fail to act on their knowledge, or that each crisis is different enough from the last to defeat pattern-recognition?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "The economics of banking divides along several axes. The finance-and-growth tradition, from Walter Bagehot through Goldsmith, McKinnon, and Shaw, holds that financial development is a precondition for economic growth. The revisionist tradition, catalyzed by the post-2008 \"too much finance\" findings of Cecchetti, Kharroubi, and Arcand, argues that this relationship is nonlinear and that advanced economies' financial sectors had grown past the welfare-enhancing range well before 2008.\n\nIn economic history, the debate about early modern banking turns on the question of institutional origins. Douglass North and Barry Weingast's influential 1989 account of the Glorious Revolution as the constitutional precondition for credible state debt — the foundation of British financial development — has been challenged by scholars who argue it understates the role of prior commercial practice, the contributions of excluded groups, and the dynamics of colonial extraction in providing the capital that English institutions then managed.\n\nIn monetary economics, the post-Keynesian tradition associated with Minsky, Wynne Godley, and more recently Steve Keen and the Modern Monetary Theory school has argued that mainstream economics systematically misrepresents banking by treating banks as intermediaries between savers and borrowers rather than as active creators of money. The Bank of England's 2014 quarterly bulletin explicitly endorsed the post-Keynesian account of money creation, a significant institutional acknowledgment of a view long marginalized in academic economics. The implications of that account for monetary policy, fiscal policy, and the theory of financial crises have not been fully worked through in the mainstream literature.",
+        "evidenceAndLimits": "The historical evidence for banking's effects on economic development is strong on correlation and weaker on mechanism. Financial development and economic growth are associated across countries and time periods, but the causal direction is contested — financial systems develop partly because economies that are growing create demand for financial services. Isolating the independent effect of financial development on growth requires instrumental variables whose validity is debated.\n\nFor financial crises, the evidence base is large: Kindleberger's Manias, Panics, and Crashes compiled the best historical inventory; Reinhart and Rogoff's This Time Is Different extended it to 800 years of sovereign debt crises across 66 countries. The patterns are consistent enough to be considered stylized facts. The limits are in predicting timing — the theoretical framework explains the mechanism but not when exactly a given cycle will peak — and in evaluating post-crisis reforms, where the relevant counterfactual (what would have happened without the reform) is unavailable.",
+        "takingAPosition": "A strong scholarly argument about banking must engage with the tension between banking as a private institution allocating credit by expected return and banking as a public utility whose failure imposes costs far beyond its own shareholders. Every banking policy choice allocates this tension implicitly — deposit insurance, capital requirements, too-big-to-fail guarantees, and central bank backstops all represent settlements in which private banking is permitted to create money and capture the profits of doing so, on condition that the state will absorb the costs when the system fails.\n\nThe intellectually demanding move is to see this not as a regulatory failure to be corrected but as a persistent feature of credit-creating systems. If banking crises are, as Minsky argued, endogenous to credit-creating financial systems, then the question for reform is whether you can modify the system's parameters while preserving its credit-creating function, or whether the credit-creating function itself is what generates the instability. The post-2008 reform consensus chose the first path — modify the parameters. A strong argument must explain either why that choice was correct (identifying which modifications are sufficient) or why it was not (specifying what a fundamental alternative would look like and why it has not been implemented). Neither argument can be made without engaging with the distributional politics of banking reform: who benefits from each institutional arrangement, and why the interest groups who benefit from the current arrangement have been powerful enough to shape the terms of reform after catastrophic crises.",
+        "questions": [
+          "The Bank of England's 2014 bulletin confirmed that commercial banks create money when they make loans, rather than lending out pre-existing deposits. If this is true, what follows for arguments that financial markets efficiently allocate savings to productive investments? And what follows for the claim that government borrowing displaces private investment?",
+          "After the 2008 crisis, governments bailed out major banks on the grounds that their failure would impose costs on the broader economy that were unacceptable. Private profits during the boom remained private, while losses were shared widely. Was there a response that would have been less economically damaging? What would it have required, and why was it not implemented?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "The Bank of England's money creation bulletin and the endogenous money consensus",
+      "content": "In 2014, the Bank of England published a Quarterly Bulletin article — 'Money creation in the modern economy' — that explicitly confirmed the post-Keynesian account of bank money creation: banks do not lend out reserves or deposits, but create money by extending credit, with the deposit created simultaneously with the loan. This was not new knowledge in technical circles — it had been argued by Hyman Minsky, Wynne Godley, and before them by Knut Wicksell — but the central bank endorsement was significant as an institutional acknowledgment. The implications for macroeconomic models, which had long worked with loanable-funds frameworks that presuppose banks as intermediaries, are still being worked through in the academic literature. The finding is now established as an account of how banks operate; its implications for monetary theory and financial regulation remain subjects of active debate."
+    },
+    {
+      "status": "emerging",
+      "topic": "The distributional effects of quantitative easing",
+      "content": "A substantial empirical literature has developed since 2010 examining whether quantitative easing programs — the large-scale asset purchases by central banks in the US, UK, eurozone, and Japan — had distributional effects that benefited wealthier households more than poorer ones. The mechanism proposed is straightforward: asset purchases raise asset prices; wealthier households hold more financial assets; therefore the primary beneficiaries of asset price increases are wealthy. Initial central bank responses disputed this, arguing that QE prevented the unemployment and wage collapse that would have harmed low-income households. More recent empirical work has found evidence for both channels, suggesting that QE's distributional effects depend heavily on what the counterfactual would have been and how long the programs ran. This is emerging because the empirical methods are contested and the policies are recent enough that full effects may not yet be measurable."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The actual lending practices and interest rates of medieval banking before systematic record-keeping",
+      "content": "What evidence would resolve this: systematic records of loan terms, interest rates, default rates, and borrower characteristics from medieval banking operations, especially before the 13th century. Why unavailable: most medieval banking was conducted informally or through records maintained for internal use, the vast majority of which have not survived. Church prohibitions on usury meant that explicit interest charges were often disguised in exchange rate differentials or other legal instruments, making it impossible to reconstruct effective interest rates from surviving documents. The surviving records of the Medici bank and a few other major Florentine firms provide exceptional detail for the 14th-15th centuries, but they are outliers. What can be established: the existence of credit transactions in Mediterranean commerce, approximate price levels for specific types of trade finance, and the broad institutional forms through which lending occurred. What must remain unknowable: the effective cost of credit for small-scale borrowers, the extent of informal lending networks, and the proportion of economic activity financed by credit versus immediate exchange in most medieval communities."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "Economic development tradition",
+      "name": "The Engine of Growth",
+      "content": "Development economists have long seen banking as one of the key things that sets rich countries apart from poor ones. Countries with strong financial systems grow faster, the evidence shows, because credit allows investment that savings alone cannot fund. A farmer with access to rural credit can buy seeds before the harvest. One without credit cannot. A startup with a loan can hire before it has revenue. One without cannot. The case is that what holds back poor countries is often not ideas or effort but the lack of credit to put them to work. On this view, expanding banking's reach — through microfinance, mobile banking, and financial inclusion — is one of the best tools for cutting poverty. Banking crises are a real cost, but they are the price of a system that in normal times creates genuine value."
+    },
+    {
+      "perspective": "Critical political economy tradition",
+      "name": "The Extraction Machine",
+      "content": "Critics on the left focus on how banking moves income upward rather than spreading growth outward. The financial sector's rise in wealthy countries from the 1980s through the 2000s did not produce faster economic growth. It produced higher inequality and, in the end, a crisis whose costs fell on working people through job losses and cuts to public services. Banks lend to owners of assets who can offer collateral. They do not lend to the most useful parts of the economy. They extend credit during booms that make existing owners richer. When the booms end, governments take on the losses while the profits stayed private. The word financialization names this pattern: a financial sector that grows not by solving real problems but by gaining enough political power to extract fees through its control of credit."
+    },
+    {
+      "perspective": "Constitutional and legal history tradition",
+      "name": "The Political Infrastructure",
+      "content": "Legal and constitutional historians see banking as political infrastructure. An institution whose working depends entirely on a legal and political system that enforces contracts, protects lenders, and makes state promises believable. The Glorious Revolution of 1688 matters to banking history because it put parliament in control of royal finance. That made English government debt trustworthy in ways that French debt was not. The Federal Reserve System matters because it created the tools the state needed to back a private banking system at national scale. On this reading, the key questions in banking are not purely economic. They are about power: who sets the rules, in whose interest, and whether the political system can handle the crises that banking reliably produces."
+    }
+  ],
+  "comparativeSummary": "Banking looks like a different institution depending on whether you measure it by what it enables, by who it enriches, or by the political conditions it requires. The development tradition sees a credit system that turns idle savings into productive investment and has lifted hundreds of millions of people out of poverty when it reaches them. The critical tradition sees an extraction mechanism that redistributes income upward during booms and socializes losses during crises, capturing the regulatory apparatus in the process. The constitutional tradition sees neither a market mechanism nor a class instrument, but a political artifact whose properties are determined by the legal and institutional framework within which it operates. The three perspectives do not resolve to a single answer about what banking is — but holding them simultaneously is closer to the truth than any one of them alone.",
+  "rabbitHole": [
+    {
+      "label": "Money",
+      "entryId": "money",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Banking is inconceivable without money as the medium it holds, transfers, and creates — and the relationship between bank credit and money supply is central to understanding what banks do and how they fail."
+    },
+    {
+      "label": "Debt",
+      "entryId": "debt",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "Banking is the institutional form through which debt is organized at civilizational scale; the history of debt as a human practice — from Mesopotamian grain loans to sovereign default — runs through and beyond the banking system."
+    },
+    {
+      "label": "Capitalism",
+      "entryId": "capitalism",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Banking and capitalism developed together and are mutually constitutive — capitalism's investment dynamics require credit, and banking's profit model requires the investment returns that capitalist production generates."
+    },
+    {
+      "label": "The Great Depression",
+      "entryId": "greatDepression",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The Great Depression was primarily transmitted and amplified by banking collapse — the failure of thousands of American banks between 1930 and 1933 contracted the money supply by roughly a third and turned a recession into a catastrophe; the institutional architecture of modern banking regulation was designed in its wake."
+    },
+    {
+      "label": "The Dutch Republic",
+      "entryId": "dutchRepublic",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "The Dutch Republic pioneered the institutional forms — the public bank, the bond market, the joint-stock company — that became the template for modern finance; Amsterdam's Bank of Amsterdam (1609) was the first stable public bank and set the standard for monetary credibility."
+    },
+    {
+      "label": "The Market",
+      "entryId": "theMarket",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Banking creates the credit through which markets function and periodically destabilizes the markets it enables; the theory of market efficiency and the practice of banking have been in tension since at least the tulip mania of 1637."
+    },
+    {
+      "label": "Venice",
+      "entryId": "venice",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "Medieval Venice developed some of the earliest banking and state finance innovations in Europe — public debt, government bonds, and deposit institutions — that Italian and then northern European banking built upon."
+    },
+    {
+      "label": "Keynes",
+      "entryId": "keynes",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Keynes's analysis of money, investment, and the business cycle emerged directly from his engagement with banking institutions and their instability; his policy prescriptions — and the debates they provoked — defined 20th-century thinking about how governments should respond to financial crises."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Kindleberger, Charles P. and Robert Aliber",
+      "title": "Manias, Panics, and Crashes: A History of Financial Crises",
+      "year": "1978",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The essential historical survey of financial crises — Kindleberger assembled the first systematic comparative account of crises from the 17th century onward, establishing the pattern that this entry draws on throughout and giving the Minsky framework its most influential empirical grounding. Essential for any serious engagement with banking's instability."
+    },
+    {
+      "author": "Ferguson, Niall",
+      "title": "The Ascent of Money: A Financial History of the World",
+      "year": "2008",
+      "type": "Monograph",
+      "reliability": "Credible",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The most accessible broad-sweep financial history — Ferguson traces banking from Mesopotamian grain lending through Medici Florence, the Bank of England, and the 2008 crisis with narrative clarity and wide range. Best used as an overview, with awareness that its thesis about Western financial superiority has attracted significant critical challenge."
+    },
+    {
+      "author": "Minsky, Hyman P.",
+      "title": "Stabilizing an Unstable Economy",
+      "year": "1986",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The foundational statement of the financial instability hypothesis — Minsky's argument that stability generates instability, and that this cycle is endogenous to capitalist credit systems, is the theoretical framework this entry draws on most heavily for understanding crisis dynamics. Essential for the Advanced and Research layers."
+    },
+    {
+      "author": "Reinhart, Carmen M. and Kenneth S. Rogoff",
+      "title": "This Time Is Different: Eight Centuries of Financial Folly",
+      "year": "2009",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The comprehensive empirical foundation for cross-country crisis analysis — Reinhart and Rogoff's dataset of 800 years of financial crises across 66 countries established the pattern of recurrence and the consistent aftermath of sovereign and banking crises in ways that reshaped both scholarly and policy discussion after 2008."
+    },
+    {
+      "author": "North, Douglass C. and Barry R. Weingast",
+      "title": "Constitutions and Commitment: The Evolution of Institutions Governing Public Choice in Seventeenth-Century England",
+      "year": "1989",
+      "type": "Article",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": "Journal of Economic History",
+      "annotation": "The foundational article linking constitutional change to financial development — North and Weingast's argument that the Glorious Revolution created the credible commitment to debt repayment that made English public finance and then the Bank of England possible is the most influential version of the institutional hypothesis this entry engages and qualifies."
+    },
+    {
+      "author": "Bank of England Monetary Analysis Directorate",
+      "title": "Money creation in the modern economy",
+      "year": "2014",
+      "type": "Report",
+      "reliability": "Authoritative",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": "Bank of England Quarterly Bulletin",
+      "annotation": "The institutional confirmation of endogenous money creation — this Bank of England Quarterly Bulletin article explicitly endorsed the post-Keynesian account that banks create money through lending rather than intermediating pre-existing savings; the entry cites it in the Research layer as a significant institutional acknowledgment of a long-contested theoretical position."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "title": "The Ascent of Money: A Financial History of the World",
+      "author": "Niall Ferguson",
+      "isbn": "9780143116172",
+      "level": "Introductory",
+      "note": "Start here if you have never read a financial history — Ferguson moves from Mesopotamian grain lending through Italian merchant banking to Wall Street with strong narrative pace; the thesis is contestable but the survey is excellent for building a first map of the terrain."
+    },
+    {
+      "type": "Book",
+      "title": "Manias, Panics, and Crashes: A History of Financial Crises",
+      "author": "Charles P. Kindleberger",
+      "isbn": "9780230365353",
+      "level": "Intermediate",
+      "note": "The essential intermediate step — Kindleberger's comparative history of financial crises from the 17th century onward is indispensable for understanding why banking crises follow recognizable patterns; serious general readers who want to go beyond the first map."
+    },
+    {
+      "type": "Book",
+      "title": "This Time Is Different: Eight Centuries of Financial Folly",
+      "author": "Carmen M. Reinhart and Kenneth S. Rogoff",
+      "level": "Intermediate",
+      "note": "Essential if you want the data behind the patterns — Reinhart and Rogoff's 800-year dataset on financial crises across 66 countries is the empirical foundation for the argument that financial crises recur despite our supposed knowledge of them; demanding but rewards close reading."
+    },
+    {
+      "type": "Book",
+      "title": "Stabilizing an Unstable Economy",
+      "author": "Hyman P. Minsky",
+      "level": "Scholarly",
+      "note": "The essential theoretical framework — Minsky's argument that stability breeds instability is the most important analytical tool for understanding how banking crises develop; challenging but the payoff is a genuine explanatory framework, not just a history of events."
+    },
+    {
+      "type": "Book",
+      "title": "Money: Whence It Came, Where It Went",
+      "author": "John Kenneth Galbraith",
+      "isbn": "9780691143989",
+      "level": "Introductory",
+      "note": "The most readable general history of money and banking — Galbraith's combination of wit and command of institutional history makes this the best accessible entry point for readers who find Ferguson too thesis-driven; particularly strong on American banking history and the Federal Reserve."
+    },
+    {
+      "type": "Book",
+      "title": "The Bankers' New Clothes: What's Wrong with Banking and What to Do about It",
+      "author": "Anat Admati and Martin Hellwig",
+      "level": "Scholarly",
+      "note": "Essential for understanding post-2008 regulation — Admati and Hellwig's accessible but rigorous argument about bank capital requirements cuts through the industry's objections to reform; the best entry point for readers who want to engage seriously with the policy debates after the financial crisis."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Film",
+      "title": "It's a Wonderful Life (1946)",
+      "description": "Frank Capra’s film shows a small-town savings-and-loan facing a classic bank run. People panic and rush to pull out their money. The hero, played by Jimmy Stewart, has lent those deposits to neighbors for homes and businesses. He cannot pay everyone at once. The film captures what deposit banking does — community savings enabling community mortgages — and what breaks when trust collapses."
+    },
+    {
+      "type": "Film",
+      "title": "The Big Short (2015)",
+      "description": "Adam McKay’s film follows a handful of traders who saw the 2008 mortgage crisis coming and bet against it. To explain CDOs and credit default swaps, the film cuts away to celebrities giving plain-English tutorials. The recklessness and opacity of mortgage securitization come through vividly. The focus stays on the traders who profited, though, rather than on the millions of ordinary people whose losses were the premise of those profits."
+    },
+    {
+      "type": "Documentary",
+      "title": "Inside Job (2010)",
+      "description": "Charles Ferguson’s Oscar-winning documentary argues that economists, regulators, and politicians were effectively working for the financial industry they were meant to watch. The film’s most striking moments are interviews with economists who defended deregulation while taking undisclosed payments from banks and Wall Street firms. It made conflicts of interest in economic policymaking a subject of public debate."
+    },
+    {
+      "type": "Book",
+      "title": "Liar's Poker (1989)",
+      "description": "Michael Lewis worked as a bond salesman at Salomon Brothers in the 1980s, when mortgage-backed securities were first being invented. His memoir captures the trading floor culture of that moment — fast money, contempt for clients, and an ethic built on personal profit. Lewis intended it as a warning. Many readers treated it as a guide. It shaped how a generation thought about Wall Street."
+    },
+    {
+      "type": "Concept",
+      "title": "\"Too big to fail\"",
+      "description": "The phrase entered everyday speech after the 2008 crisis. It describes banks so large and so tangled with the rest of the economy that the government felt it could not let them fail without bringing down everything else. The bailout that followed was defensible on economic grounds and infuriating to most voters. The phrase has since become a shorthand for the whole uneasy relationship between big banks and the government."
+    },
+    {
+      "type": "Event",
+      "title": "The Panic of 2008 and the Lehman collapse",
+      "description": "Lehman Brothers filed for bankruptcy in September 2008, and in the weeks that followed the global financial system came close to seizing up. The event produced a wave of books, documentaries, and political movements — from the Tea Party to Occupy Wall Street. For most people in wealthy countries, it is the banking event they lived through. It changed how the public thinks about banks, bailouts, and who bears the cost when large institutions fail."
+    }
+  ],
+  "startYear": -2000,
+  "endYear": 2026,
+  "regions": [
+    "Global"
+  ],
+  "degree": 5,
+  "added": "2026-06-13"
+}

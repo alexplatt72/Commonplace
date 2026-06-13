@@ -4858,6 +4858,36 @@
     "added": "2026-05-31"
   },
   {
+    "id": "taxation",
+    "title": "Taxation",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "history",
+      "economics",
+      "politicalEconomy",
+      "governance",
+      "stateFormation",
+      "capitalism",
+      "inequality",
+      "democracy",
+      "empire",
+      "law",
+      "globalHistory",
+      "modernity"
+    ],
+    "status": "published",
+    "summary": "The compulsory extraction of resources from individuals and institutions by a political authority — the financial mechanism through which states have funded armies, built infrastructure, sustained bureaucracies, and redistributed wealth for five thousand years. No state has ever operated without some form of taxation; the history of how states have taxed — what they taxed, who they taxed, and how they justified it — is inseparable from the history of political power itself.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
     "id": "theAeneid",
     "title": "The Aeneid",
     "template": "Works",
@@ -5813,5 +5843,69 @@
     ],
     "degree": 8,
     "added": "2026-06-09"
+  },
+  {
+    "id": "balanceSheet",
+    "title": "The Balance Sheet",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "15th century–present",
+    "status": "published",
+    "summary": "The accounting statement that captures what an entity owns and what it owes at a single moment in time — and, in doing so, became the foundational technology through which capital was measured, compared, and mobilized across the modern world.",
+    "startYear": 1494,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "banking",
+    "title": "Banking",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 2000 BCE–present",
+    "status": "published",
+    "summary": "The institutional practice of holding deposits, extending credit, and transferring money across space and time — a foundation of economic civilization so pervasive that its absence is almost unimaginable, and whose periodic crises reveal how much of modern life is built on organized debt.",
+    "startYear": -2000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "corporation",
+    "title": "The Corporation",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "17th century–present",
+    "status": "published",
+    "summary": "The legal form that allows a group of investors to pool capital under a single artificial person — shielding them from personal liability, enabling the accumulation of wealth at a scale no individual could sustain, and producing an institution whose power to shape law, labor, and politics has made it the defining economic structure of the modern world.",
+    "startYear": 1600,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "shipbuilding",
+    "title": "Shipbuilding",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "status": "published",
+    "summary": "The technology and industry of constructing vessels capable of crossing open water — from the dugout canoes of the Neolithic to the ironclad battleships and container carriers of the industrial age — that connected continents, moved goods and armies, transmitted religion and disease, and organized the global economic system that still operates today.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
   }
 ]
