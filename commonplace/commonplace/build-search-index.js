@@ -50,11 +50,15 @@ const TYPE_GARBAGE = new Set([
 
 function buildRecord(entry) {
   const { id, title, summary, template, subtype,
+          aliases: entryAliases,
           comparativeNarrative, reference, commerce,
           themes, associatedWorks } = entry;
 
-  // aliases: genuine alternate names for THIS entry only
+  // aliases: genuine alternate names + search keywords for THIS entry —
+  // the entry's own `aliases` array (alternate names / topical search terms) plus
+  // the comparativeNarrative perspective names.
   const aliases = uniq([
+    ...(Array.isArray(entryAliases) ? entryAliases : []),
     ...pluck(comparativeNarrative, 'name'),
   ]);
 

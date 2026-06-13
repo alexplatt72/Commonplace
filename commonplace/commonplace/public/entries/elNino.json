@@ -1,6 +1,6 @@
 {
   "id": "elNino",
-  "title": "El Nino",
+  "title": "El Niño",
   "template": "Natural Phenomena",
   "subtype": "Natural Force",
   "summary": "El Nino is not a single storm but a shift in the entire Pacific Ocean that reshapes weather across the planet. Roughly every three to seven years the warm surface water of the western Pacific sloshes east, killing the cold upwelling off Peru and triggering drought in Asia, floods in South America, and famine across Africa and India. Mike Davis showed that the great colonial-era famines were not accidents of nature but the collision of ENSO cycles with imperial political economies that stripped their subjects of any buffer. Understanding El Nino means understanding that global weather is a single connected system, and that its disruptions fall hardest on those with the least power to absorb them.",
@@ -17,11 +17,12 @@
   "status": "published",
   "qualityTier": "A",
   "aliases": [
+    "El Nino",
     "ENSO",
+    "El Niño-Southern Oscillation",
     "El Nino-Southern Oscillation",
-    "El Nino Southern Oscillation",
-    "the Christ Child current",
-    "Pacific warming cycle"
+    "La Niña",
+    "La Nina"
   ],
   "indexTerms": [
     "ENSO",
@@ -51,7 +52,7 @@
       "howPeopleKnew": "For a long time, no one understood why these things kept happening together. The drought in India, the floods in Peru, the vanishing fish off the coast of South America: they seemed unconnected.\n\nIn the early 1900s, a British scientist named Gilbert Walker noticed that air pressure patterns on opposite sides of the Pacific seemed to move in opposite directions. When pressure was high in the eastern Pacific, it was low in the western Pacific, and vice versa. He called this the Southern Oscillation, but he could not explain what caused it or why it mattered.\n\nThe key breakthrough came in 1969. A Norwegian-American scientist named Jacob Bjerknes figured out the link. The ocean and the atmosphere were not separate systems. They drove each other. Warm Pacific water warmed the air above it, which changed the winds, which moved the water, which changed the ocean temperature. The whole thing was a loop. Once that loop flipped into El Nino mode, it could stay that way for months or years before swinging back.\n\nBy the 1980s, scientists could track sea surface temperatures from satellites. They began to see El Nino coming months before it arrived. Today forecasters can issue warnings up to a year in advance, which gives farmers and governments time to prepare.",
       "whatItDidToSocieties": "The biggest El Nino in the historical record was not 1997. It was the one that ran from 1876 to 1879.\n\nThat year, the monsoon failed across India, China, and Brazil almost at the same time. The harvests collapsed. In India under British rule, tens of millions of people went without food. The government in London did not stop grain exports from India even as people starved. Drought hit China at the same time, and the death toll there was also enormous. The famines of those years may have killed 30 million people or more across the world.\n\nThe historian Mike Davis argued that these were not simple natural disasters. The El Nino drought was the trigger, but the empire was the trap. Colonial rule had destroyed the local food stores and credit systems that Indian and Chinese farmers had used for centuries to survive bad years. When the rains failed, there was nothing to fall back on. The famine was both a natural event and a political one.\n\nModern El Nino years are less deadly, but they still hit hardest in places with the least safety nets. The same drought that means higher food prices in a rich country can mean actual hunger in a poor one.",
       "theUnequal": "El Nino is a global event, but it does not hit everyone the same way.\n\nPeruvian fishermen lose their catch when the cold current disappears. Small farmers in India lose their crops when the monsoon weakens. Herders in East Africa lose their animals when the rains fail. People in these places live close to the edge. When El Nino hits, they fall off it.\n\nMeanwhile, other places benefit. Parts of the American West get more rain than usual. The Atlantic hurricane season quiets down in El Nino years, which means less damage along the Gulf Coast of the United States.\n\nThe people who suffer most from El Nino are the people who are least able to move, least able to store food, and least able to buy it on world markets when local supplies fail. The pattern was set in colonial times, and it has never fully changed.",
-      "theLongConsequence": "El Nino itself is not getting worse, but climate change is loading the system in ways scientists are still working out.\n\nWarmer oceans mean El Nino events that develop faster and hit harder. The 1997 to 1998 event showed what an extreme El Nino does to coral reefs: mass bleaching wiped out long stretches of reef across the tropics. Coral can recover, but it takes years. It cannot recover if the water keeps warming.\n\nThe forecasting tools built since the 1980s are now a real piece of global safety equipment. Early warnings let governments pre-position food aid, move livestock, and advise farmers to plant drought-resistant crops. Those warnings do not stop the drought. But they give people time, and time can be the difference between a hard year and a disaster."
+      "theLongConsequence": "Scientists are still debating how climate change will affect El Niño's frequency and strength. What is clearer is that El Niño now acts on a warmer world, so the droughts, floods, heat, and coral bleaching it triggers can hit harder.\n\nThe 1997 to 1998 event showed what an extreme El Nino does to coral reefs: mass bleaching wiped out long stretches of reef across the tropics. Coral can recover, but it takes years. It cannot recover if the water keeps warming.\n\nThe forecasting tools built since the 1980s are now real global safety equipment. Early warnings let governments pre-position food aid, move livestock, and advise farmers to plant drought-resistant crops. Those warnings do not stop the drought. But they give people time, and time can be the difference between a hard year and a disaster."
     },
     "general": {
       "theForce": "Under normal Pacific conditions, the trade winds blow steadily west. They pile warm surface water against the coasts of Indonesia and Australia while drawing cold, nutrient-rich water up off Peru. The western Pacific sits warm and stormy. The eastern Pacific stays cool and dry. Gilbert Walker, working through colonial weather records in the 1920s, noticed that air pressure on the two sides of the Pacific moved in opposite directions — high pressure east when it was low pressure west. He named this the Southern Oscillation, but he could not explain what drove it.\n\nJacob Bjerknes supplied the answer in 1969. The ocean and the atmosphere were not separate. They were locked in a feedback loop, each driving the other. When the trade winds weaken a little, warm water slides east. Warmer eastern Pacific water heats the air above it. That reduces the pressure gradient that drives the trades. Weaker trades let more warm water spread east. The loop keeps amplifying until the whole Pacific flips: the eastern basin warm, the western basin cooler, and rainfall patterns across the tropics reshuffled. This is El Nino. Its opposite — La Nina — is the same loop running the other way, with the trades strengthened and the eastern Pacific unusually cold. The two states alternate over a rough cycle of three to seven years, with no fixed clock driving them.",
@@ -249,6 +250,17 @@
       "originLanguage": null,
       "domainAuthority": null,
       "annotation": "The first coupled model to successfully simulate and predict El Nino events, published in Science. Supplies the entry's account of the transition from physical theory to operational forecasting — the model Cane and Zebiak built was the direct ancestor of the ENSO prediction systems that gave advance warning of the 1997 event."
+    },
+    {
+      "author": "Jin, Fei-Fei",
+      "title": "An Equatorial Ocean Recharge Paradigm for ENSO. Part I: Conceptual Model",
+      "year": "1997",
+      "type": "Journal article",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": "Journal of the Atmospheric Sciences",
+      "annotation": "The source for the recharge-discharge oscillator theory the entry invokes in the Advanced section. Jin's paradigm explains how the build-up and discharge of warm water in the equatorial Pacific — not just the Bjerknes surface feedback — provides the restoring force that terminates El Niño events and drives the oscillation between El Niño and La Niña states."
     }
   ],
   "commerce": [
