@@ -1868,6 +1868,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "giftEconomy",
+    "title": "The Gift Economy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "A system of exchange organized through giving, receiving, and reciprocating rather than price and contract. Studied through the Kula ring, the potlatch, blood donation, and open-source software, the gift economy reveals that generosity is rarely free: a gift creates a social bond, an obligation, and sometimes a hierarchy — making it not the opposite of economics but a different economics, one that builds relationships rather than settling them.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "glass",
     "title": "Glass",
     "template": "Foundations",
@@ -3911,6 +3927,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "prison",
+    "title": "The Prison",
+    "template": "Places",
+    "subtype": "System",
+    "period": "late 18th century–present",
+    "summary": "The modern institution that punishes by depriving people of liberty over measured time — a relatively recent invention that replaced the public, bodily punishments of earlier eras with confinement behind walls. The prison promised humane, rational reform and grew instead into a vast machinery of confinement whose results are deeply contested, reaching its most extreme form in the mass incarceration of the late-twentieth-century United States.",
+    "status": "published",
+    "startYear": 1787,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
     "id": "probability",
     "title": "Probability",
     "template": "Foundations",
@@ -5941,6 +5973,22 @@
     "added": "2026-06-13"
   },
   {
+    "id": "jointStockCompany",
+    "title": "The Joint-Stock Company",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1550s–present",
+    "status": "published",
+    "summary": "The device that let strangers pool capital into a single enterprise by buying tradeable shares — spreading risk and raising sums no individual or partnership could. It built the great chartered trading companies, created the first secondary markets in shares, produced the first speculative bubbles, and bound the pooling of money to empire and colonial violence: ownership turned into a liquid, tradeable claim, and the form became the engine of both modern capitalism and armed corporate rule.",
+    "startYear": 1600,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
     "id": "shipbuilding",
     "title": "Shipbuilding",
     "template": "Foundations",
@@ -6389,6 +6437,38 @@
       "Global / Transregional"
     ],
     "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "factory",
+    "title": "The Factory",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1700s–present",
+    "status": "published",
+    "summary": "The institution of concentrated, machine-powered, clock-disciplined production — many workers brought under one roof and synchronized to mechanical rhythms — that did not merely speed up the making of goods but reorganized human time, the laboring body, and the relationship between a worker and their work.",
+    "startYear": 1771,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "plantation",
+    "title": "The Plantation",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1500s–present",
+    "status": "published",
+    "summary": "The agricultural-industrial system that organized enslaved and coerced labor to mass-produce cash crops — sugar, tobacco, cotton, coffee — for distant markets. The plantation was not a farm but a factory in the field: a regime of gang labor, surveillance, and violence that ran on a precise calendar, generated immense wealth for owners and the economies they fed, built racially ordered slave societies across the Atlantic world, and left long afterlives in sharecropping, the convict-lease farm, and the company estate.",
+    "startYear": 1500,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
     "added": "2026-06-13"
   }
 ]
