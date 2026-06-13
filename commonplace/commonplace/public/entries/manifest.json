@@ -6230,5 +6230,85 @@
     ],
     "degree": 18,
     "added": "2026-06-13"
+  },
+  {
+    "id": "khmerEmpire",
+    "title": "The Khmer Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 802–1431 CE",
+    "status": "published",
+    "summary": "The mainland Southeast Asian state that, for roughly six centuries, organized labor, land, and belief around a sacred kingship — building from its capital at Angkor an order that reached across much of what is now Cambodia, Thailand, and Laos before fading in the fifteenth century.",
+    "startYear": 802,
+    "endYear": 1431,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "angkor",
+    "title": "Angkor",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 9th century CE – present",
+    "status": "published",
+    "summary": "The vast medieval capital of the Khmer Empire in what is now Cambodia — a sprawling low-density city built around an engineered network of reservoirs and canals, home to Angkor Wat and the Bayon, abandoned as a royal seat in the 15th century, rediscovered by Europeans in the 19th, and now both Cambodia's national symbol and one of Asia's most visited ruins.",
+    "startYear": 802,
+    "endYear": 2026,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "householdEconomy",
+    "title": "The Household Economy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The idea that the home is a site of real economic production — cooking, cleaning, raising children, caring for the sick — and that the national accounts which measure a country's wealth systematically leave this work out, rendering invisible the labor that makes all other labor possible.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "srivijaya",
+    "title": "Srivijaya",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 7th–13th century CE",
+    "status": "published",
+    "summary": "Srivijaya (c. 7th–13th century) was a maritime empire centered on Sumatra that controlled the sea lanes between China and India and grew rich by taxing the trade that passed through them. It was also a major center of Mahayana Buddhist learning. The entry's purpose is to explain what kind of power a thalassocracy was — and how a state this important could be largely forgotten and then pieced back together from scattered evidence.",
+    "startYear": 671,
+    "endYear": 1288,
+    "regions": [
+      "Asia"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "port",
+    "title": "The Port",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which maritime commerce, migration, disease, and ideas moved between worlds — a physical node of docks and warehouses, a regulatory space of customs and quarantine, a cosmopolitan contact zone where strangers met on commercial terms, and a labor system whose containerization revolution in the mid-20th century remade global trade and displaced the dockworker communities that had defined port cities for centuries.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
   }
 ]
