@@ -134,7 +134,7 @@
     {
       "label": "The Supply Chain",
       "entryId": "supplyChain",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "The warehouse is a node in a supply chain, but the supply chain as a managed system is a conceptual and organizational achievement that deserves its own entry. Understanding how warehouses fit into planned, integrated logistics networks — and why just-in-time thinking tried to minimize their role — requires the supply chain entry."
     },
@@ -158,6 +158,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "The formal warehouse system — bonded, licensed, receipted — coexisted with vast informal storage networks. Farmers' grain pits, merchants' private cellars, community food stores: the informal economy of storage was probably larger than the formal one for most of history, and the two systems interacted in ways that shaped what the formal system could accomplish."
+    },
+    {
+      "label": "Logistics",
+      "entryId": "logistics",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The warehouse is the resting point in any logistics system — the institution that makes it possible to decouple the timing of supply from the timing of demand, which is the central problem logistics exists to solve."
     }
   ],
   "reference": [

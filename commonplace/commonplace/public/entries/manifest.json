@@ -1,69 +1,5 @@
 [
   {
-    "id": "form",
-    "title": "The Form",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "c. 1800-present",
-    "status": "published",
-    "summary": "The printed document with blanks to fill in -- the cell-level unit of modern bureaucracy through which states and large organizations see, sort, and process people. The form standardizes a person into data, determines who receives benefits and recognition, and encodes in its very categories the political question of who counts. No other technology of modernity is so common, so ignored, or so quietly decisive about identity and access.",
-    "startYear": 1800,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "commons",
-    "title": "The Commons",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "medieval–present",
-    "status": "published",
-    "summary": "A resource held and governed collectively — neither privately owned nor state-controlled — covering medieval English pastures, ocean fisheries, the atmosphere, open-source software, and the digital knowledge pool. Long dismissed as inherently prone to ruin, the commons was rehabilitated by Elinor Ostrom's Nobel Prize-winning research showing that communities can and do govern shared resources sustainably, making the commons a serious third option alongside private property and the state.",
-    "startYear": 1200,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "wage",
-    "title": "The Wage",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "Payment for labor by time or output — the form through which most people in a market economy get their living, and the hinge of the whole employment relationship. The wage looks like a simple price, but it encodes the central bargain of capitalism: what your time is worth, and who decides.",
-    "startYear": -500,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "publicDebt",
-    "title": "Public Debt",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "medieval–present",
-    "status": "published",
-    "summary": "The money a state borrows against its future taxes — the device that has let governments spend far beyond what they collect, funding wars, infrastructure, and ambitions no single year of revenue could cover. Public debt turns a government's promise to repay into the bedrock of modern finance, which makes the question of whose promises are trusted, and who ultimately pays, one of the central problems of state power.",
-    "startYear": 1672,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 6,
-    "added": "2026-06-13"
-  },
-  {
     "id": "abbasidCaliphate",
     "title": "The Abbasid Caliphate",
     "template": "Periods",
@@ -144,6 +80,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "theAeneid",
+    "title": "The Aeneid",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "29–19 BCE",
+    "status": "published",
+    "summary": "Virgil's epic poem recounting the journey of Aeneas from the fall of Troy to the founding of the line that would produce Rome, composed between 29 and 19 BCE at the request of Augustus. The Aeneid gave Rome a mythological origin equal in prestige to the Greek tradition while making Roman imperium seem divinely destined. Its world effect ran through the medieval and Renaissance imagination of empire and Dante's Commedia.",
+    "startYear": -29,
+    "endYear": -19,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-06-02"
+  },
+  {
     "id": "agriculturalRevolution",
     "title": "The Agricultural Revolution",
     "template": "Events",
@@ -160,6 +112,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "haitianRevolution",
+    "title": "The Haitian Revolution",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1791–1804",
+    "summary": "The only successful slave revolution in history — a thirteen-year uprising in the French colony of Saint-Domingue that destroyed the most profitable plantation economy in the world, killed or expelled the colonial ruling class, defeated the armies of France, Britain, and Spain, and produced Haiti, the first Black republic and the first nation founded by formerly enslaved people.",
+    "status": "published",
+    "startYear": 1791,
+    "endYear": 1804,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 17,
+    "added": "2026-05-30"
+  },
+  {
     "id": "aksum",
     "title": "Aksum",
     "template": "Places",
@@ -173,6 +141,22 @@
       "Africa"
     ],
     "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "alKhwarizmi",
+    "title": "Al-Khwarizmi",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 780–850",
+    "status": "published",
+    "summary": "The ninth-century Persian scholar at Baghdad's House of Wisdom whose treatise on al-jabr gave algebra its name and its method, whose name became the word 'algorithm,' and who helped carry the Hindu-Arabic decimal system into the Islamic world and eventually into Europe — making him one of the most consequential mathematicians in history, despite almost nothing being known about his life.",
+    "startYear": 780,
+    "endYear": 850,
+    "regions": [
+      "Islamic World"
+    ],
+    "degree": 7,
     "added": "2026-06-13"
   },
   {
@@ -197,6 +181,30 @@
       "Europe"
     ],
     "degree": 7,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "einstein",
+    "title": "Albert Einstein",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1879–1955",
+    "themes": [
+      "science",
+      "physics",
+      "20thCentury",
+      "germany",
+      "knowledge",
+      "mathematics"
+    ],
+    "summary": "The German-born physicist whose special and general relativity overturned Newtonian mechanics — making him the most recognizable scientist in history and transforming the understanding of space, time, gravity, and the cosmos.",
+    "status": "published",
+    "startYear": 1879,
+    "endYear": 1955,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 11,
     "added": "2026-05-30"
   },
   {
@@ -233,36 +241,36 @@
     "added": "2026-05-30"
   },
   {
-    "id": "alKhwarizmi",
-    "title": "Al-Khwarizmi",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "c. 780–850",
+    "id": "theAlphabet",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "1800 BCE–present",
+    "title": "The Alphabet",
+    "summary": "The writing system in which a small set of symbols — typically 20 to 30 — represents the sounds of a language rather than its syllables or words, enabling literacy at a scale and speed that no earlier writing system achieved — and reorganizing what could be thought, recorded, traded, governed, and believed.",
     "status": "published",
-    "summary": "The ninth-century Persian scholar at Baghdad's House of Wisdom whose treatise on al-jabr gave algebra its name and its method, whose name became the word 'algorithm,' and who helped carry the Hindu-Arabic decimal system into the Islamic world and eventually into Europe — making him one of the most consequential mathematicians in history, despite almost nothing being known about his life.",
-    "startYear": 780,
-    "endYear": 850,
+    "startYear": -1800,
+    "endYear": 2026,
     "regions": [
-      "Islamic World"
+      "Global / Transregional"
     ],
     "degree": 7,
-    "added": "2026-06-13"
+    "added": "2026-05-31"
   },
   {
-    "id": "ambedkar",
-    "title": "B.R. Ambedkar",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1891–1956",
+    "id": "healthcarePolicy",
+    "title": "Healthcare Policy",
+    "template": "Policy",
+    "subtype": "Policy Landscape",
+    "period": "present",
+    "summary": "How a society ensures people can access medical care, and who pays — the most complex domestic policy domain in the United States, touching financing, delivery, insurance, labor, pharmaceutical economics, and federalism simultaneously",
     "status": "published",
-    "summary": "The Dalit scholar, jurist, and political leader who designed the Indian constitution, mounted the most powerful intellectual challenge to Gandhi's approach to caste, converted to Buddhism with hundreds of thousands of followers, and whose arguments about structural inequality and the limits of reform from within remain the foundational texts of Dalit liberation thought.",
-    "startYear": 1891,
-    "endYear": 1956,
+    "startYear": 2026,
+    "endYear": 2026,
     "regions": [
-      "South Asia"
+      "The Americas"
     ],
-    "degree": 12,
-    "added": "2026-05-31"
+    "degree": 6,
+    "added": "2026-05-30"
   },
   {
     "id": "americanCivilWar",
@@ -294,6 +302,23 @@
       "The Americas"
     ],
     "degree": 17,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "hanDynasty",
+    "title": "The Han Dynasty",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "206 BCE – 220 CE",
+    "summary": "The second imperial dynasty of China — the political and cultural formation that established the institutional, philosophical, and ethnic foundations of Chinese civilization as it has persisted for over two thousand years.",
+    "status": "published",
+    "startYear": -206,
+    "endYear": 220,
+    "regions": [
+      "East Asia",
+      "Central Asia & the Steppe"
+    ],
+    "degree": 15,
     "added": "2026-05-30"
   },
   {
@@ -329,6 +354,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "tangDynasty",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "618–907 CE",
+    "title": "The Tang Dynasty",
+    "summary": "The Tang Dynasty (618–907 CE) was the moment China became a crossroads of Eurasian civilization — absorbing Buddhist philosophy from India, silk technology spreading westward, Persian refugees at court, and Central Asian music in the capital. Its analytical question is what happens when a civilization stops being a destination and becomes a junction.",
+    "status": "published",
+    "startYear": 618,
+    "endYear": 907,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 7,
+    "added": "2026-05-31"
+  },
+  {
     "id": "angkor",
     "title": "Angkor",
     "template": "Places",
@@ -343,6 +384,22 @@
     ],
     "degree": 9,
     "added": "2026-06-13"
+  },
+  {
+    "id": "hannahArendt",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1906–1975",
+    "title": "Hannah Arendt",
+    "summary": "German-Jewish political philosopher whose experience of totalitarianism, statelessness, and exile shaped a body of work analyzing the nature of political action, the origins of modern tyranny, the 'banality of evil,' and the conditions under which human freedom and plurality can be sustained.",
+    "status": "published",
+    "startYear": 1906,
+    "endYear": 1975,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-05-31"
   },
   {
     "id": "antibiotics",
@@ -410,6 +467,38 @@
     "added": "2026-05-31"
   },
   {
+    "id": "theArchive",
+    "title": "The Archive",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which states, churches, corporations, and other organized powers have accumulated and controlled records — creating the documentary basis for legal authority, historical knowledge, and administrative power, while simultaneously determining what is preserved, who may access it, and what is destroyed.",
+    "startYear": -800,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 15,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "tariff",
+    "title": "The Tariff",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "A tax on imported goods — historically the chief revenue source of pre-modern states and the main lever of trade policy — and the site where a government's need for money, the politics of protecting home industries, and the theory of free trade collide.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
     "id": "aristotle",
     "title": "Aristotle",
     "template": "People",
@@ -423,6 +512,38 @@
       "Europe"
     ],
     "degree": 25,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "harrietTubman",
+    "title": "Harriet Tubman",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 1822–1913",
+    "status": "published",
+    "summary": "The Maryland-born enslaved woman who escaped slavery in 1849 and then returned south approximately thirteen times over the following decade to guide roughly seventy enslaved people to freedom via the Underground Railroad — becoming the most celebrated conductor in that network's history — before serving as a Union spy, scout, and nurse during the Civil War, and subsequently spending decades advocating for Black civil rights and women's suffrage.",
+    "startYear": 1822,
+    "endYear": 1913,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 13,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "artOfWar",
+    "title": "The Art of War",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
+    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
+    "status": "published",
+    "startYear": -450,
+    "endYear": -450,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -450,22 +571,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "artOfWar",
-    "title": "The Art of War",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 5th century BCE (traditional); possibly c. 4th–3rd century BCE",
-    "summary": "A brief military treatise attributed to the Chinese strategist Sun Tzu — the foundational text of East Asian military thought and the most widely applied strategic framework outside its original military context in world history.",
-    "status": "published",
-    "startYear": -450,
-    "endYear": -450,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 9,
-    "added": "2026-05-30"
-  },
-  {
     "id": "ashoka",
     "title": "Ashoka",
     "template": "People",
@@ -477,6 +582,22 @@
     "endYear": -232,
     "regions": [
       "South Asia"
+    ],
+    "degree": 7,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "franzFerdinand",
+    "title": "The Assassination of Franz Ferdinand",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "June 28, 1914",
+    "summary": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914 — the event that activated Europe's interlocking alliance system and triggered the First World War. The entry examines why a single political murder produced a continental catastrophe, tracing the structural conditions that made escalation nearly automatic once the shot was fired.",
+    "status": "published",
+    "startYear": 1914,
+    "endYear": 1914,
+    "regions": [
+      "Europe"
     ],
     "degree": 7,
     "added": "2026-05-30"
@@ -520,6 +641,22 @@
     ],
     "degree": 13,
     "added": "2026-05-30"
+  },
+  {
+    "id": "hiroshimaNagasaki",
+    "title": "The Atomic Bombings of Hiroshima and Nagasaki",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "August 6–9, 1945",
+    "status": "published",
+    "summary": "The American use of atomic bombs against the Japanese cities of Hiroshima on August 6, 1945, and Nagasaki on August 9, 1945 — killing approximately 200,000 people immediately and tens of thousands more from radiation — which ended the Second World War in the Pacific and inaugurated the nuclear age: a permanent condition of human civilization in which the means to destroy it exist and cannot be uninvented.",
+    "startYear": 1945,
+    "endYear": 1945,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 19,
+    "added": "2026-06-01"
   },
   {
     "id": "atomicTheory",
@@ -604,6 +741,36 @@
     "added": "2026-06-09"
   },
   {
+    "id": "taxation",
+    "title": "Taxation",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "history",
+      "economics",
+      "politicalEconomy",
+      "governance",
+      "stateFormation",
+      "capitalism",
+      "inequality",
+      "democracy",
+      "empire",
+      "law",
+      "globalHistory",
+      "modernity"
+    ],
+    "status": "published",
+    "summary": "The compulsory extraction of resources from individuals and institutions by a political authority — the financial mechanism through which states have funded armies, built infrastructure, sustained bureaucracies, and redistributed wealth for five thousand years. No state has ever operated without some form of taxation; the history of how states have taxed — what they taxed, who they taxed, and how they justified it — is inseparable from the history of political power itself.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
     "id": "axialAge",
     "template": "Periods",
     "subtype": "Period",
@@ -634,6 +801,22 @@
       "The Americas"
     ],
     "degree": 9,
+    "added": "2026-05-31"
+  },
+  {
+    "id": "ambedkar",
+    "title": "B.R. Ambedkar",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1891–1956",
+    "status": "published",
+    "summary": "The Dalit scholar, jurist, and political leader who designed the Indian constitution, mounted the most powerful intellectual challenge to Gandhi's approach to caste, converted to Buddhism with hundreds of thousands of followers, and whose arguments about structural inequality and the limits of reform from within remain the foundational texts of Dalit liberation thought.",
+    "startYear": 1891,
+    "endYear": 1956,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 12,
     "added": "2026-05-31"
   },
   {
@@ -677,6 +860,22 @@
     "status": "published",
     "summary": "The paper promise-to-pay that became money itself — a printed instrument whose value rests not on the worth of its material but on the trust that it can be redeemed or accepted by others, from the jiaozi of Song-dynasty China to the fiat currencies of today.",
     "startYear": 1000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "bankruptcy",
+    "title": "Bankruptcy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The legal procedure for resolving debts that cannot be paid — the orderly, collective alternative to debtors' prison, flight, or creditor free-for-all — and the institution that, by letting economic failure end without ending the person, made risk-taking capitalism possible.",
+    "startYear": -500,
     "endYear": 2026,
     "regions": [
       "Global / Transregional"
@@ -797,6 +996,30 @@
     ],
     "degree": 4,
     "added": "2026-06-13"
+  },
+  {
+    "id": "hebrewBibleOldTestament",
+    "title": "The Hebrew Bible",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 900–c. 400 BCE",
+    "themes": [
+      "religion",
+      "ancientHistory",
+      "judaism",
+      "literature",
+      "law",
+      "myth"
+    ],
+    "summary": "The collection of ancient Israelite and Jewish texts that became the founding scripture of Judaism, the Old Testament of Christianity, and a primary source for Islam — shaping the moral and literary imagination of Western civilization more than any other single work.",
+    "status": "published",
+    "startYear": -900,
+    "endYear": -400,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 15,
+    "added": "2026-05-30"
   },
   {
     "id": "britishEmpire",
@@ -931,6 +1154,22 @@
     "added": "2026-06-13"
   },
   {
+    "id": "capitalMarx",
+    "title": "Capital",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1867",
+    "status": "published",
+    "summary": "Karl Marx's three-volume analysis of the capitalist mode of production which provided the theoretical foundation for socialist and communist movements worldwide. Capital argued that capitalism systematically exploits labour through surplus value extraction, and that capitalism contains internal contradictions producing eventual crisis. The book's world effect ran through the states and movements it founded rather than through academic economics.",
+    "startYear": 1867,
+    "endYear": 1867,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-02"
+  },
+  {
     "id": "capitalism",
     "title": "Capitalism",
     "summary": "The economic system in which the means of production are privately owned, goods and services are allocated through markets, and profit-seeking drives investment — a system that has generated unprecedented material wealth, lifted billions from poverty, and produced inequality, environmental destruction, and periodic crises that have generated the most consequential political conflicts of the modern era.",
@@ -954,22 +1193,6 @@
     ],
     "degree": 31,
     "added": "2026-05-31"
-  },
-  {
-    "id": "capitalMarx",
-    "title": "Capital",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "1867",
-    "status": "published",
-    "summary": "Karl Marx's three-volume analysis of the capitalist mode of production which provided the theoretical foundation for socialist and communist movements worldwide. Capital argued that capitalism systematically exploits labour through surplus value extraction, and that capitalism contains internal contradictions producing eventual crisis. The book's world effect ran through the states and movements it founded rather than through academic economics.",
-    "startYear": 1867,
-    "endYear": 1867,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-06-02"
   },
   {
     "id": "carthage",
@@ -1043,6 +1266,22 @@
     ],
     "degree": 8,
     "added": "2026-05-31"
+  },
+  {
+    "id": "darwin",
+    "title": "Charles Darwin",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1809–1882",
+    "summary": "The naturalist who proposed natural selection as the mechanism of evolution, producing a theory so coherent and so well-evidenced that it made divine creation scientifically unnecessary within biology, and permanently transformed how humans understand the relationship between life and time, and established biology as a historical science",
+    "status": "published",
+    "startYear": 1809,
+    "endYear": 1882,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 10,
+    "added": "2026-05-30"
   },
   {
     "id": "chernobyl",
@@ -1123,6 +1362,22 @@
     ],
     "degree": 6,
     "added": "2026-05-31"
+  },
+  {
+    "id": "theCity",
+    "title": "The City",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3500 BCE–present",
+    "status": "published",
+    "summary": "The concentrated human settlement that made possible — and required — writing, taxation, professional armies, law, and specialization of labor, now housing more than half of humanity for the first time in history.",
+    "startYear": -3500,
+    "endYear": 2026,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 15,
+    "added": "2026-06-02"
   },
   {
     "id": "civilRightsMovement",
@@ -1254,6 +1509,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "commons",
+    "title": "The Commons",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "medieval–present",
+    "status": "published",
+    "summary": "A resource held and governed collectively — neither privately owned nor state-controlled — covering medieval English pastures, ocean fisheries, the atmosphere, open-source software, and the digital knowledge pool. Long dismissed as inherently prone to ruin, the commons was rehabilitated by Elinor Ostrom's Nobel Prize-winning research showing that communities can and do govern shared resources sustainably, making the commons a serious third option alongside private property and the state.",
+    "startYear": 1200,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "communism",
     "template": "Concepts",
     "subtype": "Normative Concept",
@@ -1268,6 +1539,22 @@
     ],
     "degree": 17,
     "added": "2026-05-31"
+  },
+  {
+    "id": "manifesto",
+    "title": "The Communist Manifesto",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "1848",
+    "summary": "The argument that compressed a theory of history, a critique of capitalism, and a political programme into 23 pages — and then became more powerful as a symbol than as a text",
+    "status": "published",
+    "startYear": 1848,
+    "endYear": 1848,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 16,
+    "added": "2026-05-30"
   },
   {
     "id": "computing",
@@ -1543,20 +1830,20 @@
     "added": "2026-06-02"
   },
   {
-    "id": "darwin",
-    "title": "Charles Darwin",
+    "id": "hume",
+    "title": "David Hume",
     "template": "People",
     "subtype": "Thinker",
-    "period": "1809–1882",
-    "summary": "The naturalist who proposed natural selection as the mechanism of evolution, producing a theory so coherent and so well-evidenced that it made divine creation scientifically unnecessary within biology, and permanently transformed how humans understand the relationship between life and time, and established biology as a historical science",
+    "period": "1711–1776",
     "status": "published",
-    "startYear": 1809,
-    "endYear": 1882,
+    "summary": "The Scottish philosopher who pushed Enlightenment empiricism to its radical conclusions — showing that reason alone cannot prove causation, establish the self, or justify belief in miracles — and who produced the most systematic challenge to religious belief and rationalist philosophy that the Western tradition has faced.",
+    "startYear": 1711,
+    "endYear": 1776,
     "regions": [
       "Europe"
     ],
-    "degree": 10,
-    "added": "2026-05-30"
+    "degree": 5,
+    "added": "2026-06-01"
   },
   {
     "id": "debt",
@@ -1640,6 +1927,22 @@
     ],
     "degree": 8,
     "added": "2026-05-31"
+  },
+  {
+    "id": "theDivineComedy",
+    "title": "The Divine Comedy",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 1308–1321",
+    "status": "published",
+    "summary": "Dante Alighieri's epic poem of a journey through Hell, Purgatory, and Heaven — written in Italian in the early fourteenth century — which synthesized medieval Christian theology with classical learning, established the Italian vernacular as a literary language, and remains the most ambitious and technically accomplished work in the Western literary canon.",
+    "startYear": 1308,
+    "endYear": 1321,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 6,
+    "added": "2026-06-01"
   },
   {
     "id": "dna",
@@ -1762,161 +2065,6 @@
     "added": "2026-06-01"
   },
   {
-    "id": "einstein",
-    "title": "Albert Einstein",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1879–1955",
-    "themes": [
-      "science",
-      "physics",
-      "20thCentury",
-      "germany",
-      "knowledge",
-      "mathematics"
-    ],
-    "summary": "The German-born physicist whose special and general relativity overturned Newtonian mechanics — making him the most recognizable scientist in history and transforming the understanding of space, time, gravity, and the cosmos.",
-    "status": "published",
-    "startYear": 1879,
-    "endYear": 1955,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 11,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "electricity",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "title": "Electricity",
-    "period": "1880s–present",
-    "summary": "The harnessing of electromagnetic energy that reorganized how civilization produces and distributes power, enabling industrial production, communication, computing, and modern urban life.",
-    "status": "published",
-    "startYear": 1885,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "elNino",
-    "title": "El Niño",
-    "template": "Natural Phenomena",
-    "subtype": "Natural Force",
-    "period": "Recurring, c. 3000 BCE–present",
-    "status": "published",
-    "summary": "El Nino is not a single storm but a shift in the entire Pacific Ocean that reshapes weather across the planet. Roughly every three to seven years the warm surface water of the western Pacific sloshes east, killing the cold upwelling off Peru and triggering drought in Asia, floods in South America, and famine across Africa and India. Mike Davis showed that the great colonial-era famines were not accidents of nature but the collision of ENSO cycles with imperial political economies that stripped their subjects of any buffer. Understanding El Nino means understanding that global weather is a single connected system, and that its disruptions fall hardest on those with the least power to absorb them.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Pacific",
-      "Global"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "empire",
-    "title": "Empire",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "c. 2300 BCE – present",
-    "summary": "The political form in which one state rules over multiple peoples who did not choose that rule — the dominant political structure of most of recorded history, the framework through which most of the world's wealth, knowledge, and people were connected, and the system whose legacies continue to shape international politics, economic inequality, and cultural identity",
-    "status": "published",
-    "startYear": -2300,
-    "endYear": 2026,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 20,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "enlightenment",
-    "title": "The Enlightenment",
-    "template": "Periods",
-    "subtype": "Movement",
-    "period": "c. 1680–1800",
-    "summary": "The 18th-century intellectual movement that made reason the supreme authority — and whose legacy is still being fought over",
-    "status": "published",
-    "startYear": 1680,
-    "endYear": 1800,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 36,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "epicOfGilgamesh",
-    "title": "The Epic of Gilgamesh",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 2100–c. 700 BCE",
-    "summary": "The ancient Mesopotamian epic poem about the king of Uruk — compiled in its most complete form around 1200 BCE from older Sumerian traditions — that tells of friendship, loss, and the search for immortality, and is among the oldest surviving works of literature, containing a flood narrative that predates and closely parallels the biblical story of Noah.",
-    "themes": [
-      "ancientHistory",
-      "literature",
-      "mesopotamia",
-      "death",
-      "myth",
-      "archaeology"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "schemaVersion": 1,
-    "aliases": [
-      "Gilgamesh",
-      "Epic of Gilgamesh",
-      "He Who Saw the Deep"
-    ],
-    "indexTerms": [
-      "Gilgamesh",
-      "Enkidu",
-      "Utnapishtim",
-      "Shamash",
-      "Ishtar",
-      "Humbaba",
-      "Uruk",
-      "Nineveh",
-      "Ashurbanipal",
-      "George Smith",
-      "Andrew George",
-      "Standard Babylonian",
-      "Sumerian",
-      "cuneiform",
-      "flood narrative",
-      "Bull of Heaven",
-      "Cedar Forest"
-    ],
-    "startYear": -2100,
-    "endYear": -700,
-    "regions": [
-      "North Africa & Middle East"
-    ],
-    "degree": 8,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "evolution",
-    "title": "Evolution",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "1859–present",
-    "status": "published",
-    "summary": "The process by which populations of organisms change over successive generations through the differential survival and reproduction of heritable traits — the foundational explanatory framework of modern biology, and one of the most contested scientific ideas in the history of human culture.",
-    "startYear": 1859,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 8,
-    "added": "2026-06-01"
-  },
-  {
     "id": "factory",
     "title": "The Factory",
     "template": "Places",
@@ -1963,6 +2111,22 @@
     ],
     "degree": 17,
     "added": "2026-05-31"
+  },
+  {
+    "id": "minimumWage",
+    "title": "The Federal Minimum Wage",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "present",
+    "summary": "Whether and how the federal floor on wages should be changed — the most extensively studied question in labor economics, with genuine methodological disputes and genuine value disagreements about how to weigh competing outcomes",
+    "status": "published",
+    "startYear": 2026,
+    "endYear": 2026,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 4,
+    "added": "2026-05-30"
   },
   {
     "id": "feminism",
@@ -2047,6 +2211,38 @@
     "added": "2026-05-30"
   },
   {
+    "id": "theForest",
+    "title": "The Forest",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "deep prehistory – present",
+    "summary": "The ecosystem that sheltered, fed, and equipped the human species for most of its existence — and whose systematic destruction over the past ten thousand years has been both the precondition for civilization and one of civilization's most consequential long-term costs.",
+    "status": "published",
+    "startYear": -10000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 5,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "form",
+    "title": "The Form",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 1800-present",
+    "status": "published",
+    "summary": "The printed document with blanks to fill in -- the cell-level unit of modern bureaucracy through which states and large organizations see, sort, and process people. The form standardizes a person into data, determines who receives benefits and recognition, and encodes in its very categories the political question of who counts. No other technology of modernity is so common, so ignored, or so quietly decisive about identity and access.",
+    "startYear": 1800,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "frantzFanon",
     "title": "Frantz Fanon",
     "template": "People",
@@ -2061,22 +2257,6 @@
     ],
     "degree": 11,
     "added": "2026-06-02"
-  },
-  {
-    "id": "franzFerdinand",
-    "title": "The Assassination of Franz Ferdinand",
-    "template": "Events",
-    "subtype": "Discrete Event",
-    "period": "June 28, 1914",
-    "summary": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914 — the event that activated Europe's interlocking alliance system and triggered the First World War. The entry examines why a single political murder produced a continental catastrophe, tracing the structural conditions that made escalation nearly automatic once the shot was fired.",
-    "status": "published",
-    "startYear": 1914,
-    "endYear": 1914,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 7,
-    "added": "2026-05-30"
   },
   {
     "id": "frederickDouglass",
@@ -2127,20 +2307,29 @@
     "added": "2026-05-30"
   },
   {
-    "id": "freud",
-    "title": "Sigmund Freud",
+    "id": "nietzsche",
+    "title": "Friedrich Nietzsche",
+    "summary": "The German philosopher whose radical critique of morality, religion, and truth — developed in works including Thus Spoke Zarathustra, Beyond Good and Evil, and On the Genealogy of Morality — declared the death of God, introduced the concepts of the will to power, eternal recurrence, and the Übermensch, and became one of the most influential and most misappropriated thinkers in modern history.",
     "template": "People",
     "subtype": "Thinker",
-    "period": "1856–1939",
+    "period": "1844–1900",
+    "themes": [
+      "philosophy",
+      "germany",
+      "19thCentury",
+      "history",
+      "modernity",
+      "ethics"
+    ],
     "status": "published",
-    "summary": "The founder of psychoanalysis — the theory that unconscious mental processes shape behavior, that childhood experience forms adult personality, and that repressed desires drive neurotic symptoms — whose ideas transformed how educated people in the 20th century understood themselves, regardless of whether those ideas were scientifically valid.",
-    "startYear": 1856,
-    "endYear": 1939,
+    "qualityTier": "A",
+    "startYear": 1844,
+    "endYear": 1900,
     "regions": [
       "Europe"
     ],
-    "degree": 8,
-    "added": "2026-06-01"
+    "degree": 9,
+    "added": "2026-05-31"
   },
   {
     "id": "galileo",
@@ -2229,6 +2418,22 @@
     ],
     "degree": 7,
     "added": "2026-05-30"
+  },
+  {
+    "id": "hegel",
+    "title": "Georg Wilhelm Friedrich Hegel",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1770–1831",
+    "status": "published",
+    "summary": "The German philosopher whose dialectical idealism — the idea that history unfolds through the conflict and resolution of opposing forces, driven by the development of Spirit toward freedom — shaped Marx, Nietzsche, existentialism, and 20th-century political thought more profoundly than almost any other thinker.",
+    "startYear": 1770,
+    "endYear": 1831,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 11,
+    "added": "2026-05-31"
   },
   {
     "id": "georgeWashington",
@@ -2416,254 +2621,20 @@
     "added": "2026-05-30"
   },
   {
-    "id": "haitianRevolution",
-    "title": "The Haitian Revolution",
+    "id": "tiananmenSquare",
+    "title": "The Tiananmen Square Protests",
     "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1791–1804",
-    "summary": "The only successful slave revolution in history — a thirteen-year uprising in the French colony of Saint-Domingue that destroyed the most profitable plantation economy in the world, killed or expelled the colonial ruling class, defeated the armies of France, Britain, and Spain, and produced Haiti, the first Black republic and the first nation founded by formerly enslaved people.",
+    "subtype": "Discrete Event",
+    "period": "April–June 1989",
     "status": "published",
-    "startYear": 1791,
-    "endYear": 1804,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 17,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "hanDynasty",
-    "title": "The Han Dynasty",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "206 BCE – 220 CE",
-    "summary": "The second imperial dynasty of China — the political and cultural formation that established the institutional, philosophical, and ethnic foundations of Chinese civilization as it has persisted for over two thousand years.",
-    "status": "published",
-    "startYear": -206,
-    "endYear": 220,
-    "regions": [
-      "East Asia",
-      "Central Asia & the Steppe"
-    ],
-    "degree": 15,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "hannahArendt",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1906–1975",
-    "title": "Hannah Arendt",
-    "summary": "German-Jewish political philosopher whose experience of totalitarianism, statelessness, and exile shaped a body of work analyzing the nature of political action, the origins of modern tyranny, the 'banality of evil,' and the conditions under which human freedom and plurality can be sustained.",
-    "status": "published",
-    "startYear": 1906,
-    "endYear": 1975,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "harrietTubman",
-    "title": "Harriet Tubman",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "c. 1822–1913",
-    "status": "published",
-    "summary": "The Maryland-born enslaved woman who escaped slavery in 1849 and then returned south approximately thirteen times over the following decade to guide roughly seventy enslaved people to freedom via the Underground Railroad — becoming the most celebrated conductor in that network's history — before serving as a Union spy, scout, and nurse during the Civil War, and subsequently spending decades advocating for Black civil rights and women's suffrage.",
-    "startYear": 1822,
-    "endYear": 1913,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 13,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "healthcarePolicy",
-    "title": "Healthcare Policy",
-    "template": "Policy",
-    "subtype": "Policy Landscape",
-    "period": "present",
-    "summary": "How a society ensures people can access medical care, and who pays — the most complex domestic policy domain in the United States, touching financing, delivery, insurance, labor, pharmaceutical economics, and federalism simultaneously",
-    "status": "published",
-    "startYear": 2026,
-    "endYear": 2026,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 6,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "hebrewBibleOldTestament",
-    "title": "The Hebrew Bible",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 900–c. 400 BCE",
-    "themes": [
-      "religion",
-      "ancientHistory",
-      "judaism",
-      "literature",
-      "law",
-      "myth"
-    ],
-    "summary": "The collection of ancient Israelite and Jewish texts that became the founding scripture of Judaism, the Old Testament of Christianity, and a primary source for Islam — shaping the moral and literary imagination of Western civilization more than any other single work.",
-    "status": "published",
-    "startYear": -900,
-    "endYear": -400,
-    "regions": [
-      "North Africa & Middle East"
-    ],
-    "degree": 15,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "hegel",
-    "title": "Georg Wilhelm Friedrich Hegel",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1770–1831",
-    "status": "published",
-    "summary": "The German philosopher whose dialectical idealism — the idea that history unfolds through the conflict and resolution of opposing forces, driven by the development of Spirit toward freedom — shaped Marx, Nietzsche, existentialism, and 20th-century political thought more profoundly than almost any other thinker.",
-    "startYear": 1770,
-    "endYear": 1831,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 11,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "hiroshimaNagasaki",
-    "title": "The Atomic Bombings of Hiroshima and Nagasaki",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "August 6–9, 1945",
-    "status": "published",
-    "summary": "The American use of atomic bombs against the Japanese cities of Hiroshima on August 6, 1945, and Nagasaki on August 9, 1945 — killing approximately 200,000 people immediately and tens of thousands more from radiation — which ended the Second World War in the Pacific and inaugurated the nuclear age: a permanent condition of human civilization in which the means to destroy it exist and cannot be uninvented.",
-    "startYear": 1945,
-    "endYear": 1945,
+    "summary": "The student-led pro-democracy movement that occupied Beijing's Tiananmen Square in spring 1989 — drawing millions of demonstrators across China before the People's Liberation Army cleared the square with live fire on the night of June 3–4, killing an unknown number of people — and the Chinese Communist Party's subsequent erasure of the event from public memory inside China.",
+    "startYear": 1989,
+    "endYear": 1989,
     "regions": [
       "East Asia"
     ],
-    "degree": 19,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "hobbes",
-    "title": "Thomas Hobbes",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1588–1679",
-    "themes": [
-      "politics",
-      "philosophy",
-      "england",
-      "power",
-      "war",
-      "science"
-    ],
-    "summary": "The English philosopher whose Leviathan argued that human beings in their natural condition face a war of all against all — founding the social contract tradition and the realist account of international relations.",
-    "status": "published",
-    "startYear": 1588,
-    "endYear": 1679,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 15,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "horses",
-    "title": "Horses",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3500 BCE-present",
-    "summary": "The domestication of the horse around 3500 BCE on the Eurasian steppe was among the most consequential events in human history -- transforming warfare, trade, agriculture, and political organization across Eurasia, enabling the steppe empires that repeatedly reshaped the ancient and medieval world, and reverberating through the Columbian Exchange to transform the Americas.",
-    "status": "published",
-    "startYear": -3500,
-    "endYear": 2026,
-    "regions": [
-      "Central Asia & the Steppe"
-    ],
     "degree": 8,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "householdEconomy",
-    "title": "The Household Economy",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The idea that the home is a site of real economic production — cooking, cleaning, raising children, caring for the sick — and that the national accounts which measure a country's wealth systematically leave this work out, rendering invisible the labor that makes all other labor possible.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "humanitarianIntervention",
-    "title": "Humanitarian Intervention",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "1990s–present",
-    "status": "published",
-    "summary": "The question of whether states or international bodies are morally and legally permitted — or obligated — to use military force against a sovereign state to protect that state's population from mass atrocities, genocide, or crimes against humanity — a question that pits two foundational principles of international order against each other: the sovereignty of states and the protection of human beings from their own governments.",
-    "startYear": 1995,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "humanRights",
-    "title": "Human Rights",
-    "summary": "The doctrine that all human beings possess inherent rights by virtue of their humanity — rights that governments cannot legitimately violate and that the international community has a responsibility to protect — institutionalized after World War II in the Universal Declaration of Human Rights and subsequent treaties, and contested ever since on questions of universality, enforceability, cultural specificity, and political instrumentalization.",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "c. 1948–present",
-    "themes": [
-      "politics",
-      "law",
-      "history",
-      "ethics",
-      "globalHistory",
-      "modernity"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "startYear": 1948,
-    "endYear": 2026,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 18,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "hume",
-    "title": "David Hume",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1711–1776",
-    "status": "published",
-    "summary": "The Scottish philosopher who pushed Enlightenment empiricism to its radical conclusions — showing that reason alone cannot prove causation, establish the self, or justify belief in miracles — and who produced the most systematic challenge to religious belief and rationalist philosophy that the Western tradition has faced.",
-    "startYear": 1711,
-    "endYear": 1776,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 5,
-    "added": "2026-06-01"
+    "added": "2026-06-09"
   },
   {
     "id": "ibnBattuta",
@@ -2772,6 +2743,57 @@
     "added": "2026-05-30"
   },
   {
+    "id": "timekeeping",
+    "title": "Timekeeping",
+    "summary": "The technology of measuring, standardizing, and organizing time — from the first astronomical calendars of ancient Mesopotamia through the mechanical clock's transformation of medieval Europe to the atomic clock's precision that enables GPS and global finance — a technology so fundamental to modern civilization that its absence is unimaginable, and whose history reveals how deeply the organization of time is bound up with the organization of power.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "history",
+      "science",
+      "economics",
+      "globalHistory",
+      "modernity",
+      "religion"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Europe",
+      "North Africa & Middle East"
+    ],
+    "degree": 9,
+    "added": "2026-05-31"
+  },
+  {
+    "id": "kant",
+    "title": "Immanuel Kant",
+    "summary": "The Prussian philosopher who attempted to reconcile rationalism and empiricism, established the Categorical Imperative as the foundation of moral philosophy, argued for the conditions of possible experience in the Critique of Pure Reason, and shaped every major philosophical tradition that followed — from German idealism to analytic philosophy to contemporary ethics.",
+    "template": "People",
+    "subtype": "Thinker",
+    "themes": [
+      "philosophy",
+      "Enlightenment",
+      "germany",
+      "knowledge",
+      "ethics",
+      "politics"
+    ],
+    "period": "1724–1804",
+    "qualityTier": "A",
+    "status": "published",
+    "startYear": 1724,
+    "endYear": 1804,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 14,
+    "added": "2026-05-31"
+  },
+  {
     "id": "imperialism",
     "template": "Concepts",
     "subtype": "Normative Concept",
@@ -2838,22 +2860,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "industrialRevolution",
-    "title": "The Industrial Revolution",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
-    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
-    "status": "published",
-    "startYear": 1760,
-    "endYear": 1840,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 38,
-    "added": "2026-05-30"
-  },
-  {
     "id": "indusValleyCivilization",
     "title": "The Indus Valley Civilization",
     "template": "Places",
@@ -2900,6 +2906,22 @@
       "South Asia"
     ],
     "degree": 9,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "industrialRevolution",
+    "title": "The Industrial Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1760–1840 (Britain); c. 1840–1914 (global)",
+    "summary": "The transition from an organic economy powered by plants, animals, and human muscle to a mineral economy powered by coal — which produced modern urbanism, the working class, industrial warfare, the end of Malthusian population limits, and the carbon emissions now reshaping the planet's climate",
+    "status": "published",
+    "startYear": 1760,
+    "endYear": 1840,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 38,
     "added": "2026-05-30"
   },
   {
@@ -2967,6 +2989,22 @@
     "added": "2026-06-13"
   },
   {
+    "id": "interest",
+    "title": "Interest",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The price charged for the use of borrowed money over time — the mechanism through which lenders are compensated for waiting, through which small debts can compound into large ones, and through which the economy’s master price is set, steering investment and saving across the entire financial system.",
+    "startYear": -2000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
     "id": "internationalLaw",
     "title": "International Law",
     "template": "Concepts",
@@ -3031,6 +3069,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "printingPress",
+    "title": "The Invention of the Printing Press",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "c. 1440",
+    "summary": "The technology that made information cheap to reproduce — and institutional monopoly on knowledge permanently impossible",
+    "status": "published",
+    "startYear": 1440,
+    "endYear": 1440,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 30,
+    "added": "2026-05-30"
+  },
+  {
     "id": "iranianRevolution",
     "title": "The Iranian Revolution",
     "template": "Events",
@@ -3079,6 +3133,46 @@
     "added": "2026-06-02"
   },
   {
+    "id": "thirtyYearsWar",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1618–1648",
+    "title": "The Thirty Years' War",
+    "summary": "The catastrophic conflict that devastated Central Europe from 1618 to 1648 -- beginning as a religious war between Catholics and Protestants and ending as a struggle between European great powers that established the modern system of sovereign states.",
+    "status": "published",
+    "startYear": 1618,
+    "endYear": 1648,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "newton",
+    "title": "Isaac Newton",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1643–1727",
+    "themes": [
+      "science",
+      "mathematics",
+      "england",
+      "enlightenment",
+      "astronomy",
+      "knowledge"
+    ],
+    "summary": "The English mathematician and natural philosopher whose Principia Mathematica unified terrestrial and celestial mechanics under universal gravitation, making him the dominant figure of the Scientific Revolution and the foundation of classical physics.",
+    "status": "published",
+    "startYear": 1643,
+    "endYear": 1727,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 10,
+    "added": "2026-05-30"
+  },
+  {
     "id": "islam",
     "title": "Islam",
     "template": "Foundations",
@@ -3116,6 +3210,30 @@
       "North Africa & Middle East"
     ],
     "degree": 21,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "rousseau",
+    "title": "Jean-Jacques Rousseau",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1712–1778",
+    "themes": [
+      "philosophy",
+      "politics",
+      "Enlightenment",
+      "france",
+      "democracy",
+      "education"
+    ],
+    "summary": "The Geneva-born philosopher whose ideas about natural goodness, the social contract, the general will, and education shaped the French Revolution, Romanticism, modern democracy, and progressive pedagogy — while his life and contradictions made him one of the most contested figures in Western thought.",
+    "status": "published",
+    "startYear": 1712,
+    "endYear": 1778,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 14,
     "added": "2026-05-30"
   },
   {
@@ -3165,6 +3283,56 @@
     ],
     "degree": 9,
     "added": "2026-06-09"
+  },
+  {
+    "id": "locke",
+    "title": "John Locke",
+    "summary": "The English philosopher whose Two Treatises of Government argued that legitimate political authority derives from consent of the governed, that natural rights to life, liberty, and property are inalienable, and that revolution is justified when governments violate those rights — providing the philosophical foundation of liberal democracy and the American Revolution.",
+    "template": "People",
+    "subtype": "Thinker",
+    "themes": [
+      "philosophy",
+      "politics",
+      "Enlightenment",
+      "england",
+      "democracy",
+      "law"
+    ],
+    "period": "1632–1704",
+    "qualityTier": "A",
+    "status": "published",
+    "startYear": 1632,
+    "endYear": 1704,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 14,
+    "added": "2026-05-31"
+  },
+  {
+    "id": "keynes",
+    "title": "John Maynard Keynes",
+    "summary": "The British economist whose General Theory of Employment, Interest and Money (1936) — written in response to the Great Depression — argued that market economies are not self-correcting and that governments must use fiscal policy to stabilize aggregate demand, thereby founding modern macroeconomics, justifying the postwar welfare state, and providing the intellectual framework for economic management in every advanced democracy.",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1883–1946",
+    "themes": [
+      "economics",
+      "britain",
+      "20thCentury",
+      "politics",
+      "history",
+      "capitalism"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "startYear": 1883,
+    "endYear": 1946,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-05-31"
   },
   {
     "id": "johnRawls",
@@ -3224,6 +3392,38 @@
     "added": "2026-05-31"
   },
   {
+    "id": "theJury",
+    "title": "The Jury",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "12th century–present",
+    "status": "published",
+    "summary": "The institution of deciding legal questions by a body of ordinary citizens — one of the oldest mechanisms for involving non-specialists in governance, a site of persistent tension between democratic participation and expert judgment, and the institution that forces most directly the question of whether truth is best determined by the community it affects or by those trained to find it.",
+    "startYear": 1150,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "justWarTheory",
+    "title": "Just War Theory",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century CE–present",
+    "status": "published",
+    "summary": "The tradition in moral and political philosophy that attempts to specify when the resort to war is morally permissible (jus ad bellum) and how war, once begun, must be conducted (jus in bello) — developed through Augustine, Aquinas, Grotius, and Vitoria, and now institutionalized in international humanitarian law, while remaining contested by both pacifists who reject its permissive conclusions and realists who reject its moral constraints.",
+    "startYear": 350,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 16,
+    "added": "2026-06-01"
+  },
+  {
     "id": "justice",
     "title": "Justice",
     "template": "Concepts",
@@ -3256,69 +3456,28 @@
     "added": "2026-06-01"
   },
   {
-    "id": "justWarTheory",
-    "title": "Just War Theory",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "4th century CE–present",
-    "status": "published",
-    "summary": "The tradition in moral and political philosophy that attempts to specify when the resort to war is morally permissible (jus ad bellum) and how war, once begun, must be conducted (jus in bello) — developed through Augustine, Aquinas, Grotius, and Vitoria, and now institutionalized in international humanitarian law, while remaining contested by both pacifists who reject its permissive conclusions and realists who reject its moral constraints.",
-    "startYear": 350,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 16,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "kant",
-    "title": "Immanuel Kant",
-    "summary": "The Prussian philosopher who attempted to reconcile rationalism and empiricism, established the Categorical Imperative as the foundation of moral philosophy, argued for the conditions of possible experience in the Critique of Pure Reason, and shaped every major philosophical tradition that followed — from German idealism to analytic philosophy to contemporary ethics.",
+    "id": "marx",
+    "title": "Karl Marx",
+    "summary": "The German philosopher, economist, and revolutionary whose analysis of capitalism as a system of class exploitation — developed in Capital, the Communist Manifesto, and decades of political journalism — became the theoretical foundation of socialist and communist movements worldwide, inspired revolutions that shaped the 20th century, and remains the most systematic critique of capitalism ever produced.",
     "template": "People",
     "subtype": "Thinker",
+    "period": "1818–1883",
     "themes": [
       "philosophy",
-      "Enlightenment",
-      "germany",
-      "knowledge",
-      "ethics",
-      "politics"
-    ],
-    "period": "1724–1804",
-    "qualityTier": "A",
-    "status": "published",
-    "startYear": 1724,
-    "endYear": 1804,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 14,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "keynes",
-    "title": "John Maynard Keynes",
-    "summary": "The British economist whose General Theory of Employment, Interest and Money (1936) — written in response to the Great Depression — argued that market economies are not self-correcting and that governments must use fiscal policy to stabilize aggregate demand, thereby founding modern macroeconomics, justifying the postwar welfare state, and providing the intellectual framework for economic management in every advanced democracy.",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1883–1946",
-    "themes": [
       "economics",
-      "britain",
-      "20thCentury",
       "politics",
+      "germany",
       "history",
-      "capitalism"
+      "modernity"
     ],
     "status": "published",
     "qualityTier": "A",
-    "startYear": 1883,
-    "endYear": 1946,
+    "startYear": 1818,
+    "endYear": 1883,
     "regions": [
       "Europe"
     ],
-    "degree": 9,
+    "degree": 21,
     "added": "2026-05-31"
   },
   {
@@ -3352,6 +3511,23 @@
     ],
     "degree": 9,
     "added": "2026-06-01"
+  },
+  {
+    "id": "elNino",
+    "title": "El Niño",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "Recurring, c. 3000 BCE–present",
+    "status": "published",
+    "summary": "El Nino is not a single storm but a shift in the entire Pacific Ocean that reshapes weather across the planet. Roughly every three to seven years the warm surface water of the western Pacific sloshes east, killing the cold upwelling off Peru and triggering drought in Asia, floods in South America, and famine across Africa and India. Mike Davis showed that the great colonial-era famines were not accidents of nature but the collision of ENSO cycles with imperial political economies that stripped their subjects of any buffer. Understanding El Nino means understanding that global weather is a single connected system, and that its disruptions fall hardest on those with the least power to absorb them.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Pacific",
+      "Global"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
   },
   {
     "id": "laborUnions",
@@ -3420,6 +3596,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "electricity",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "title": "Electricity",
+    "period": "1880s–present",
+    "summary": "The harnessing of electromagnetic energy that reorganized how civilization produces and distributes power, enabling industrial production, communication, computing, and modern urban life.",
+    "status": "published",
+    "startYear": 1885,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-05-30"
+  },
+  {
     "id": "legitimacy",
     "template": "Concepts",
     "subtype": "Analytical Concept",
@@ -3433,6 +3625,29 @@
       "Global / Transregional"
     ],
     "degree": 14,
+    "added": "2026-05-31"
+  },
+  {
+    "id": "trotsky",
+    "title": "Leon Trotsky",
+    "summary": "The Russian revolutionary, theorist of permanent revolution, organizer of the Red Army, and founder of the Fourth International — expelled by Stalin, exiled across three continents, and assassinated in Mexico in 1940 — and the most potent symbol of the Stalinist betrayal of the Russian Revolution.",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1879–1940",
+    "themes": [
+      "russia",
+      "history",
+      "20thCentury",
+      "politics"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "startYear": 1879,
+    "endYear": 1940,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
     "added": "2026-05-31"
   },
   {
@@ -3478,6 +3693,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "theLibrary",
+    "title": "The Library",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 3rd century BCE–present",
+    "status": "published",
+    "summary": "The institution for collecting, organizing, and preserving knowledge — from the ancient world's great repositories at Alexandria and Nineveh through the Islamic House of Wisdom and medieval monastery libraries to the modern public library and digital archive. The library is the foundational technology of civilizational memory: it determines what survives, who can access it, and therefore what future generations can know about the past.",
+    "startYear": -250,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 12,
+    "added": "2026-06-02"
+  },
+  {
     "id": "littleIceAge",
     "title": "The Little Ice Age",
     "template": "Natural Phenomena",
@@ -3494,29 +3725,20 @@
     "added": "2026-05-30"
   },
   {
-    "id": "locke",
-    "title": "John Locke",
-    "summary": "The English philosopher whose Two Treatises of Government argued that legitimate political authority derives from consent of the governed, that natural rights to life, liberty, and property are inalienable, and that revolution is justified when governments violate those rights — providing the philosophical foundation of liberal democracy and the American Revolution.",
-    "template": "People",
-    "subtype": "Thinker",
-    "themes": [
-      "philosophy",
-      "politics",
-      "Enlightenment",
-      "england",
-      "democracy",
-      "law"
-    ],
-    "period": "1632–1704",
-    "qualityTier": "A",
+    "id": "logistics",
+    "title": "Logistics",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "ancient–present",
     "status": "published",
-    "startYear": 1632,
-    "endYear": 1704,
+    "summary": "The discipline of moving and storing things to the right place at the right time — the management of flow that has decided campaigns, built empires, and made the modern economy work. Logistics is infrastructure's invisible twin: while engineers build the roads and ports, logisticians work out what moves through them and when. Mastering it has determined the outcome of wars and the fortunes of companies; failing at it has brought armies and supply chains alike to ruin.",
+    "startYear": -500,
+    "endYear": 2026,
     "regions": [
-      "Europe"
+      "Global / Transregional"
     ],
-    "degree": 14,
-    "added": "2026-05-31"
+    "degree": 7,
+    "added": "2026-06-13"
   },
   {
     "id": "ludwigVanBeethoven",
@@ -3533,30 +3755,6 @@
     ],
     "degree": 7,
     "added": "2026-06-13"
-  },
-  {
-    "id": "machiavelli",
-    "title": "Niccolò Machiavelli",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1469–1527",
-    "themes": [
-      "politics",
-      "power",
-      "italy",
-      "renaissance",
-      "philosophy",
-      "statecraft"
-    ],
-    "summary": "The Florentine diplomat and political theorist whose Prince offered a ruthlessly unsentimental account of how power is acquired and maintained — founding modern political science and generating five centuries of controversy.",
-    "status": "published",
-    "startYear": 1469,
-    "endYear": 1527,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 12,
-    "added": "2026-05-30"
   },
   {
     "id": "magnaCarta",
@@ -3656,22 +3854,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "manifesto",
-    "title": "The Communist Manifesto",
-    "template": "Works",
-    "subtype": "Non-narrative",
-    "period": "1848",
-    "summary": "The argument that compressed a theory of history, a critique of capitalism, and a political programme into 23 pages — and then became more powerful as a symbol than as a text",
-    "status": "published",
-    "startYear": 1848,
-    "endYear": 1848,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 16,
-    "added": "2026-05-30"
-  },
-  {
     "id": "mansaMusa",
     "title": "Mansa Musa",
     "template": "People",
@@ -3745,6 +3927,22 @@
     "added": "2026-06-09"
   },
   {
+    "id": "theMarket",
+    "title": "The Market",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which goods, services, labor, and capital are allocated through decentralized exchanges governed by price signals rather than central direction. Markets are among the oldest and most consequential human institutions — they emerged independently across civilizations, generated the price information on which complex economies depend, and became the primary mechanism of capitalist organization while remaining objects of profound political disagreement.",
+    "startYear": -800,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-02"
+  },
+  {
     "id": "martinLuther",
     "title": "Martin Luther",
     "template": "People",
@@ -3774,31 +3972,6 @@
       "The Americas"
     ],
     "degree": 13,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "marx",
-    "title": "Karl Marx",
-    "summary": "The German philosopher, economist, and revolutionary whose analysis of capitalism as a system of class exploitation — developed in Capital, the Communist Manifesto, and decades of political journalism — became the theoretical foundation of socialist and communist movements worldwide, inspired revolutions that shaped the 20th century, and remains the most systematic critique of capitalism ever produced.",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1818–1883",
-    "themes": [
-      "philosophy",
-      "economics",
-      "politics",
-      "germany",
-      "history",
-      "modernity"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "startYear": 1818,
-    "endYear": 1883,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 21,
     "added": "2026-05-31"
   },
   {
@@ -4022,22 +4195,6 @@
     "added": "2026-05-31"
   },
   {
-    "id": "minimumWage",
-    "title": "The Federal Minimum Wage",
-    "template": "Policy",
-    "subtype": "Policy Question",
-    "period": "present",
-    "summary": "Whether and how the federal floor on wages should be changed — the most extensively studied question in labor economics, with genuine methodological disputes and genuine value disagreements about how to weigh competing outcomes",
-    "status": "published",
-    "startYear": 2026,
-    "endYear": 2026,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 4,
-    "added": "2026-05-30"
-  },
-  {
     "id": "mint",
     "title": "The Mint",
     "template": "Places",
@@ -4068,6 +4225,25 @@
     ],
     "degree": 8,
     "added": "2026-05-30"
+  },
+  {
+    "id": "theMongolConquests",
+    "title": "The Mongol Conquests",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1206–1368",
+    "status": "published",
+    "qualityTier": "A",
+    "summary": "The military campaigns launched from the Mongolian steppe by Genghis Khan and his successors between 1206 and the mid-fourteenth century, which created the largest contiguous land empire in history, killed tens of millions of people, connected Eurasia into a single trading system, and restructured the political order from China to Eastern Europe.",
+    "startYear": 1206,
+    "endYear": 1368,
+    "regions": [
+      "East Asia",
+      "Europe",
+      "Central Asia & the Steppe"
+    ],
+    "degree": 8,
+    "added": "2026-06-01"
   },
   {
     "id": "mongolEmpire",
@@ -4141,6 +4317,22 @@
       "The Americas"
     ],
     "degree": 14,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "empire",
+    "title": "Empire",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "c. 2300 BCE – present",
+    "summary": "The political form in which one state rules over multiple peoples who did not choose that rule — the dominant political structure of most of recorded history, the framework through which most of the world's wealth, knowledge, and people were connected, and the system whose legacies continue to shape international politics, economic inequality, and cultural identity",
+    "status": "published",
+    "startYear": -2300,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 20,
     "added": "2026-05-30"
   },
   {
@@ -4249,6 +4441,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "enclosure",
+    "title": "Enclosure",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1450–1900",
+    "status": "published",
+    "summary": "The long process by which England's open fields and common lands were fenced off into private, exclusive property — extinguishing the use-rights that village communities had held for centuries. It unfolded in two great waves: a Tudor-era surge driven by sheep and wool, and the Parliamentary enclosure of the 18th and 19th centuries, carried out through more than five thousand private Acts. Critics call it the original theft that created a landless wage-labor force; defenders call it the foundation of modern, productive agriculture. Either way, enclosure is how shared land became private capital.",
+    "startYear": 1450,
+    "endYear": 1900,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
     "id": "nelsonMandela",
     "title": "Nelson Mandela",
     "template": "People",
@@ -4265,53 +4473,60 @@
     "added": "2026-06-01"
   },
   {
-    "id": "newton",
-    "title": "Isaac Newton",
+    "id": "theNewspaper",
+    "title": "The Newspaper",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1605–present",
+    "status": "published",
+    "summary": "The periodical publication of news for a mass audience — the first technology for synchronizing the attention of a large public around shared events, shaping political life, public opinion, and the modern concept of an informed citizenry from the 17th century through its displacement by digital media.",
+    "startYear": 1605,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "machiavelli",
+    "title": "Niccolò Machiavelli",
     "template": "People",
     "subtype": "Thinker",
-    "period": "1643–1727",
+    "period": "1469–1527",
     "themes": [
-      "science",
-      "mathematics",
-      "england",
-      "enlightenment",
-      "astronomy",
-      "knowledge"
+      "politics",
+      "power",
+      "italy",
+      "renaissance",
+      "philosophy",
+      "statecraft"
     ],
-    "summary": "The English mathematician and natural philosopher whose Principia Mathematica unified terrestrial and celestial mechanics under universal gravitation, making him the dominant figure of the Scientific Revolution and the foundation of classical physics.",
+    "summary": "The Florentine diplomat and political theorist whose Prince offered a ruthlessly unsentimental account of how power is acquired and maintained — founding modern political science and generating five centuries of controversy.",
     "status": "published",
-    "startYear": 1643,
-    "endYear": 1727,
+    "startYear": 1469,
+    "endYear": 1527,
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-05-30"
   },
   {
-    "id": "nietzsche",
-    "title": "Friedrich Nietzsche",
-    "summary": "The German philosopher whose radical critique of morality, religion, and truth — developed in works including Thus Spoke Zarathustra, Beyond Good and Evil, and On the Genealogy of Morality — declared the death of God, introduced the concepts of the will to power, eternal recurrence, and the Übermensch, and became one of the most influential and most misappropriated thinkers in modern history.",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1844–1900",
-    "themes": [
-      "philosophy",
-      "germany",
-      "19thCentury",
-      "history",
-      "modernity",
-      "ethics"
-    ],
+    "id": "enlightenment",
+    "title": "The Enlightenment",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1680–1800",
+    "summary": "The 18th-century intellectual movement that made reason the supreme authority — and whose legacy is still being fought over",
     "status": "published",
-    "qualityTier": "A",
-    "startYear": 1844,
-    "endYear": 1900,
+    "startYear": 1680,
+    "endYear": 1800,
     "regions": [
       "Europe"
     ],
-    "degree": 9,
-    "added": "2026-05-31"
+    "degree": 36,
+    "added": "2026-05-30"
   },
   {
     "id": "nonviolence",
@@ -4327,6 +4542,22 @@
       "South Asia"
     ],
     "degree": 12,
+    "added": "2026-06-02"
+  },
+  {
+    "id": "theNovel",
+    "title": "The Novel",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "c. 1600–present",
+    "status": "published",
+    "summary": "The extended prose fiction form that emerged in Europe in the seventeenth and eighteenth centuries and became the dominant literary form of the modern world — distinguished by its focus on individual psychological interiority, its engagement with social reality, and its address to a reading public. The novel is not merely a literary form but an epistemological one: it develops the capacity to inhabit other minds and imagine other lives.",
+    "startYear": 1600,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
     "added": "2026-06-02"
   },
   {
@@ -4394,20 +4625,75 @@
     "added": "2026-06-13"
   },
   {
-    "id": "opiumWars",
-    "title": "The Opium Wars",
+    "id": "theHolocaust",
     "template": "Events",
     "subtype": "Extended Process",
-    "period": "1839–1860",
+    "title": "The Holocaust",
+    "period": "1933–1945",
+    "summary": "The systematic, state-organized persecution and murder of six million Jews and millions of others by the Nazi regime and its collaborators between 1933 and 1945 — the most extensively documented genocide in history.",
     "status": "published",
-    "summary": "Two conflicts between Britain and China (1839–1842 and 1856–1860) fought over British insistence on the right to sell opium in China and China's attempts to prohibit the trade. The Opium Wars inaugurated China's century of humiliation, opened Chinese markets and territory to foreign powers through unequal treaties, and remain defining events in Chinese national memory and foreign policy.",
-    "startYear": 1839,
-    "endYear": 1860,
+    "startYear": 1933,
+    "endYear": 1945,
     "regions": [
-      "Europe",
-      "East Asia"
+      "Europe"
     ],
-    "degree": 7,
+    "degree": 22,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "thomasAquinas",
+    "title": "Thomas Aquinas",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1225–1274",
+    "status": "published",
+    "summary": "The 13th-century Dominican friar and theologian whose Summa Theologiae attempted to synthesize Aristotelian philosophy with Christian doctrine — producing an intellectual framework that the Catholic Church declared its official philosophy in 1879 and that continues to underpin Catholic moral theology, natural law theory, and the philosophy of religion.",
+    "startYear": 1225,
+    "endYear": 1274,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 18,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "hobbes",
+    "title": "Thomas Hobbes",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1588–1679",
+    "themes": [
+      "politics",
+      "philosophy",
+      "england",
+      "power",
+      "war",
+      "science"
+    ],
+    "summary": "The English philosopher whose Leviathan argued that human beings in their natural condition face a war of all against all — founding the social contract tradition and the realist account of international relations.",
+    "status": "published",
+    "startYear": 1588,
+    "endYear": 1679,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 15,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "thomasJefferson",
+    "title": "Thomas Jefferson",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1743–1826",
+    "status": "published",
+    "summary": "The author of the Declaration of Independence, third President of the United States, founder of the University of Virginia, and enslaver of over 600 people — a figure whose words established the founding language of American democracy and whose life demonstrated the gap between that language and the political community it described.",
+    "startYear": 1743,
+    "endYear": 1826,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 9,
     "added": "2026-06-02"
   },
   {
@@ -4425,6 +4711,71 @@
     ],
     "degree": 10,
     "added": "2026-05-30"
+  },
+  {
+    "id": "opiumWars",
+    "title": "The Opium Wars",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1839–1860",
+    "status": "published",
+    "summary": "Two conflicts between Britain and China (1839–1842 and 1856–1860) fought over British insistence on the right to sell opium in China and China's attempts to prohibit the trade. The Opium Wars inaugurated China's century of humiliation, opened Chinese markets and territory to foreign powers through unequal treaties, and remain defining events in Chinese national memory and foreign policy.",
+    "startYear": 1839,
+    "endYear": 1860,
+    "regions": [
+      "Europe",
+      "East Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-02"
+  },
+  {
+    "id": "horses",
+    "title": "Horses",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3500 BCE-present",
+    "summary": "The domestication of the horse around 3500 BCE on the Eurasian steppe was among the most consequential events in human history -- transforming warfare, trade, agriculture, and political organization across Eurasia, enabling the steppe empires that repeatedly reshaped the ancient and medieval world, and reverberating through the Columbian Exchange to transform the Americas.",
+    "status": "published",
+    "startYear": -3500,
+    "endYear": 2026,
+    "regions": [
+      "Central Asia & the Steppe"
+    ],
+    "degree": 8,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "theHospital",
+    "title": "The Hospital",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution through which organized societies have concentrated the sick, administered professional knowledge, and managed the boundary between life and death — an institution that transformed from a charitable shelter for the poor and dying into the central organizing structure of modern medicine, reshaping the relationship between patient and healer, individual and state, body and professional authority.",
+    "startYear": -800,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 12,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "totalitarianism",
+    "title": "Totalitarianism",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "1920s – present",
+    "status": "published",
+    "summary": "The concept that certain regimes — Nazi Germany, Stalinist Russia, Maoist China — represent a qualitatively new form of political domination that goes beyond traditional despotism, seeking not merely to control behavior but to transform human nature, abolish private life, and mobilize entire populations toward ideological ends.",
+    "startYear": 1925,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 20,
+    "added": "2026-06-01"
   },
   {
     "id": "ottomanEmpire",
@@ -4449,6 +4800,22 @@
     ],
     "degree": 21,
     "added": "2026-05-30"
+  },
+  {
+    "id": "householdEconomy",
+    "title": "The Household Economy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The idea that the home is a site of real economic production — cooking, cleaning, raising children, caring for the sick — and that the national accounts which measure a country's wealth systematically leave this work out, rendering invisible the labor that makes all other labor possible.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
   },
   {
     "id": "pabloPicasso",
@@ -4498,6 +4865,38 @@
       "Global / Transregional"
     ],
     "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "thePartition",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1947",
+    "title": "The Partition of India",
+    "summary": "The division of British India in August 1947 into the independent states of India and Pakistan — accompanied by the largest mass migration in human history, between one and two million deaths, and the displacement of fifteen million people — that shaped the subcontinent's politics for generations.",
+    "status": "published",
+    "startYear": 1947,
+    "endYear": 1947,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 7,
+    "added": "2026-05-31"
+  },
+  {
+    "id": "passports",
+    "title": "Passports",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1400 CE–present",
+    "status": "published",
+    "summary": "The small booklet that ties a person to a state and governs their right to cross borders — converting citizenship from a legal status into a portable document, and turning movement across the earth from a natural act into a privilege that states may grant or deny. From ancient letters of safe-conduct to the World War I checkpoint and the biometric chip, the passport is the state’s monopoly on authorizing human mobility made physical.",
+    "startYear": 1414,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
     "added": "2026-06-13"
   },
   {
@@ -4556,6 +4955,56 @@
     ],
     "degree": 8,
     "added": "2026-06-01"
+  },
+  {
+    "id": "epicOfGilgamesh",
+    "title": "The Epic of Gilgamesh",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "c. 2100–c. 700 BCE",
+    "summary": "The ancient Mesopotamian epic poem about the king of Uruk — compiled in its most complete form around 1200 BCE from older Sumerian traditions — that tells of friendship, loss, and the search for immortality, and is among the oldest surviving works of literature, containing a flood narrative that predates and closely parallels the biblical story of Noah.",
+    "themes": [
+      "ancientHistory",
+      "literature",
+      "mesopotamia",
+      "death",
+      "myth",
+      "archaeology"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "Gilgamesh",
+      "Epic of Gilgamesh",
+      "He Who Saw the Deep"
+    ],
+    "indexTerms": [
+      "Gilgamesh",
+      "Enkidu",
+      "Utnapishtim",
+      "Shamash",
+      "Ishtar",
+      "Humbaba",
+      "Uruk",
+      "Nineveh",
+      "Ashurbanipal",
+      "George Smith",
+      "Andrew George",
+      "Standard Babylonian",
+      "Sumerian",
+      "cuneiform",
+      "flood narrative",
+      "Bull of Heaven",
+      "Cedar Forest"
+    ],
+    "startYear": -2100,
+    "endYear": -700,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 8,
+    "added": "2026-05-30"
   },
   {
     "id": "plantation",
@@ -4645,22 +5094,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "printingPress",
-    "title": "The Invention of the Printing Press",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "c. 1440",
-    "summary": "The technology that made information cheap to reproduce — and institutional monopoly on knowledge permanently impossible",
-    "status": "published",
-    "startYear": 1440,
-    "endYear": 1440,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 30,
-    "added": "2026-05-30"
-  },
-  {
     "id": "prison",
     "title": "The Prison",
     "template": "Places",
@@ -4739,6 +5172,22 @@
     ],
     "degree": 28,
     "added": "2026-05-30"
+  },
+  {
+    "id": "publicDebt",
+    "title": "Public Debt",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "medieval–present",
+    "status": "published",
+    "summary": "The money a state borrows against its future taxes — the device that has let governments spend far beyond what they collect, funding wars, infrastructure, and ambitions no single year of revenue could cover. Public debt turns a government's promise to repay into the bedrock of modern finance, which makes the question of whose promises are trusted, and who ultimately pays, one of the central problems of state power.",
+    "startYear": 1672,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
   },
   {
     "id": "publicHealth",
@@ -4861,6 +5310,105 @@
     "added": "2026-06-02"
   },
   {
+    "id": "slaveTrade",
+    "title": "The Transatlantic Slave Trade",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1500–1867",
+    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
+    "status": "published",
+    "startYear": 1500,
+    "endYear": 1867,
+    "regions": [
+      "Sub-Saharan Africa",
+      "The Americas",
+      "Europe"
+    ],
+    "degree": 26,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "transitionalJustice",
+    "title": "Transitional Justice",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1945–present",
+    "status": "published",
+    "summary": "The set of judicial and non-judicial mechanisms — criminal trials, truth commissions, reparations, lustration, and memorialization — through which societies emerging from mass atrocity or authoritarian rule attempt to reckon with the past, and the contested question of whether justice, truth, peace, and reconciliation can be simultaneously achieved.",
+    "startYear": 1945,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 14,
+    "added": "2026-06-02"
+  },
+  {
+    "id": "translation",
+    "title": "Translation",
+    "summary": "The practice of rendering meaning across language boundaries — which preserved ancient Greek philosophy for the Islamic world, returned it to Europe for the Renaissance, transmitted the Bible across civilizations, and enabled the Reformation, the Scientific Revolution, and every subsequent exchange of ideas across cultural borders — and without which the connected world we inhabit would be impossible.",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "themes": [
+      "language",
+      "history",
+      "religion",
+      "globalHistory",
+      "philosophy",
+      "science"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 12,
+    "added": "2026-05-31"
+  },
+  {
+    "id": "treasury",
+    "title": "The Treasury",
+    "template": "Places",
+    "subtype": "System",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The institution that holds, collects, and spends the state’s money — the fisc, the counting house of power. Every ambition a government has ever acted on, from war to welfare to roads, has run through the treasury first.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "treatyOfVersailles",
+    "title": "The Treaty of Versailles",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1919",
+    "themes": [
+      "politics",
+      "war",
+      "europe",
+      "diplomacy",
+      "nationalism",
+      "20thCentury"
+    ],
+    "summary": "The peace settlement that formally ended the First World War — imposing disarmament, territorial losses, reparations, and the war guilt clause on Germany, and creating the political conditions debated ever since as causes of the Second World War.",
+    "status": "published",
+    "startYear": 1919,
+    "endYear": 1919,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 10,
+    "added": "2026-05-30"
+  },
+  {
     "id": "renaissance",
     "title": "The Renaissance",
     "template": "Periods",
@@ -4874,6 +5422,22 @@
       "Europe"
     ],
     "degree": 18,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "theRepublic",
+    "title": "The Republic",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 375 BCE",
+    "summary": "Plato's extended philosophical dialogue on justice, the ideal state, and the nature of the soul — the foundational text of Western political philosophy and one of the most influential works in the history of ideas.",
+    "status": "published",
+    "startYear": -375,
+    "endYear": -375,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -5013,28 +5577,20 @@
     "added": "2026-06-01"
   },
   {
-    "id": "rousseau",
-    "title": "Jean-Jacques Rousseau",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1712–1778",
-    "themes": [
-      "philosophy",
-      "politics",
-      "Enlightenment",
-      "france",
-      "democracy",
-      "education"
-    ],
-    "summary": "The Geneva-born philosopher whose ideas about natural goodness, the social contract, the general will, and education shaped the French Revolution, Romanticism, modern democracy, and progressive pedagogy — while his life and contradictions made him one of the most contested figures in Western thought.",
+    "id": "tambora",
+    "title": "The Eruption of Mount Tambora",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Event",
+    "period": "April 1815",
     "status": "published",
-    "startYear": 1712,
-    "endYear": 1778,
+    "summary": "The largest volcanic eruption in recorded history, which killed over seventy thousand people directly and caused the 'Year Without a Summer' of 1816 — disrupting agriculture across the Northern Hemisphere, driving famine and migration from Europe to North America, and demonstrating for the first time that a single geological event could alter global climate.",
+    "startYear": 1815,
+    "endYear": 1815,
     "regions": [
-      "Europe"
+      "Southeast Asia"
     ],
-    "degree": 14,
-    "added": "2026-05-30"
+    "degree": 8,
+    "added": "2026-06-01"
   },
   {
     "id": "russianRevolution",
@@ -5146,6 +5702,22 @@
       "Europe"
     ],
     "degree": 14,
+    "added": "2026-05-30"
+  },
+  {
+    "id": "worldWarII",
+    "title": "The Second World War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1939–1945",
+    "summary": "The deadliest conflict in human history -- killing between 70 and 85 million people across six years of fighting -- producing the Holocaust, the nuclear age, the Cold War, decolonization, and the international order that still governs global politics.",
+    "status": "published",
+    "startYear": 1939,
+    "endYear": 1945,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 24,
     "added": "2026-05-30"
   },
   {
@@ -5271,6 +5843,22 @@
     "added": "2026-05-30"
   },
   {
+    "id": "freud",
+    "title": "Sigmund Freud",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1856–1939",
+    "status": "published",
+    "summary": "The founder of psychoanalysis — the theory that unconscious mental processes shape behavior, that childhood experience forms adult personality, and that repressed desires drive neurotic symptoms — whose ideas transformed how educated people in the 20th century understood themselves, regardless of whether those ideas were scientifically valid.",
+    "startYear": 1856,
+    "endYear": 1939,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-01"
+  },
+  {
     "id": "silk",
     "title": "Silk",
     "template": "Foundations",
@@ -5305,22 +5893,6 @@
     "added": "2026-05-30"
   },
   {
-    "id": "simonBolivar",
-    "title": "Simón Bolívar",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1783–1830",
-    "status": "published",
-    "summary": "The Venezuelan-born military commander and political leader who liberated most of Spanish South America between 1813 and 1825, governing as president or dictator across Venezuela, Colombia, Ecuador, Peru, and Bolivia — and who spent his final years watching the republics he had created fragment, federate against him, and slide toward the caudillo instability that would define Latin American politics for generations.",
-    "startYear": 1783,
-    "endYear": 1830,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 8,
-    "added": "2026-06-01"
-  },
-  {
     "id": "simoneDeBeauvoir",
     "title": "Simone de Beauvoir",
     "template": "People",
@@ -5335,6 +5907,22 @@
       "Europe"
     ],
     "degree": 10,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "simonBolivar",
+    "title": "Simón Bolívar",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1783–1830",
+    "status": "published",
+    "summary": "The Venezuelan-born military commander and political leader who liberated most of Spanish South America between 1813 and 1825, governing as president or dictator across Venezuela, Colombia, Ecuador, Peru, and Bolivia — and who spent his final years watching the republics he had created fragment, federate against him, and slide toward the caudillo instability that would define Latin American politics for generations.",
+    "startYear": 1783,
+    "endYear": 1830,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 8,
     "added": "2026-06-01"
   },
   {
@@ -5363,24 +5951,6 @@
     ],
     "degree": 21,
     "added": "2026-05-31"
-  },
-  {
-    "id": "slaveTrade",
-    "title": "The Transatlantic Slave Trade",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "c. 1500–1867",
-    "summary": "The commercial and imperial system that transported 12.5 million Africans to the Americas over three and a half centuries",
-    "status": "published",
-    "startYear": 1500,
-    "endYear": 1867,
-    "regions": [
-      "Sub-Saharan Africa",
-      "The Americas",
-      "Europe"
-    ],
-    "degree": 26,
-    "added": "2026-05-30"
   },
   {
     "id": "smallpox",
@@ -5651,22 +6221,6 @@
     "added": "2026-06-02"
   },
   {
-    "id": "srivijaya",
-    "title": "Srivijaya",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "c. 7th–13th century CE",
-    "status": "published",
-    "summary": "Srivijaya (c. 7th–13th century) was a maritime empire centered on Sumatra that commanded key chokepoints and grew rich by servicing, taxing, and protecting the trade that passed between China and India. It was also a major center of Mahayana Buddhist learning. The entry's purpose is to explain what kind of power a thalassocracy was — and how a state this important could be largely forgotten and then pieced back together from scattered evidence.",
-    "startYear": 671,
-    "endYear": 1288,
-    "regions": [
-      "Asia"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
     "id": "spreadsheet",
     "title": "The Spreadsheet",
     "template": "Foundations",
@@ -5691,6 +6245,54 @@
     ],
     "degree": 7,
     "added": "2026-06-13"
+  },
+  {
+    "id": "srivijaya",
+    "title": "Srivijaya",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 7th–13th century CE",
+    "status": "published",
+    "summary": "Srivijaya (c. 7th–13th century) was a maritime empire centered on Sumatra that commanded key chokepoints and grew rich by servicing, taxing, and protecting the trade that passed between China and India. It was also a major center of Mahayana Buddhist learning. The entry's purpose is to explain what kind of power a thalassocracy was — and how a state this important could be largely forgotten and then pieced back together from scattered evidence.",
+    "startYear": 671,
+    "endYear": 1288,
+    "regions": [
+      "Asia"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "standardizedContainer",
+    "title": "The Standardized Container",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1956–present",
+    "status": "published",
+    "summary": "A corrugated steel box — twenty or forty feet long, the same dimensions wherever it travels — that turned cargo handling from a labor-intensive puzzle into a mechanical routine and made modern globalization physically possible. Before the container, every ship required armies of dockworkers to hand-load individual crates and barrels. After it, a crane picks up the whole box and sets it on a truck or a train in minutes. By collapsing freight costs, it made it economically rational to scatter production across continents — a transformation whose consequences are still reshaping labor, politics, and the geography of manufacturing.",
+    "startYear": 1956,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "theState",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "c. 3000 BCE–present",
+    "title": "The State",
+    "summary": "The state is the strange achievement of making political power impersonal — of transferring obedience from a person to an office, from a ruler to an institution that persists when rulers change. How that depersonalization happens, what it makes possible, and where it breaks down is the central puzzle of political life.",
+    "status": "published",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 15,
+    "added": "2026-05-31"
   },
   {
     "id": "statistics",
@@ -5782,6 +6384,38 @@
     "added": "2026-05-31"
   },
   {
+    "id": "strike",
+    "title": "The Strike",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1830s–present",
+    "status": "published",
+    "summary": "The collective withdrawal of labor — workers stopping work together to force a concession from an employer or a state. The strike is the labor movement's ultimate weapon because it converts the worker's dependence on wages into the employer's dependence on workers: when production halts, the employer loses money and must bargain. Its forms range from the orderly walkout to the factory occupation and the general strike, and its history is a long contest between that leverage and the countermeasures built to break it.",
+    "startYear": 1894,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "supplyChain",
+    "title": "The Supply Chain",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1950s–present",
+    "status": "published",
+    "summary": "The linked network of firms, processes, and flows — spanning raw materials, components, assembly, transport, and retail — that turns nature into a finished good in a consumer's hands. The supply chain made the modern object a collaborative product of dozens of hands across the planet: astonishingly efficient, quietly brittle, and deeply entangled with questions of labor, power, and political choice.",
+    "startYear": 1950,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
     "id": "swahiliCoast",
     "title": "The Swahili Coast",
     "template": "Places",
@@ -5797,407 +6431,6 @@
     ],
     "degree": 12,
     "added": "2026-06-13"
-  },
-  {
-    "id": "tambora",
-    "title": "The Eruption of Mount Tambora",
-    "template": "Natural Phenomena",
-    "subtype": "Natural Event",
-    "period": "April 1815",
-    "status": "published",
-    "summary": "The largest volcanic eruption in recorded history, which killed over seventy thousand people directly and caused the 'Year Without a Summer' of 1816 — disrupting agriculture across the Northern Hemisphere, driving famine and migration from Europe to North America, and demonstrating for the first time that a single geological event could alter global climate.",
-    "startYear": 1815,
-    "endYear": 1815,
-    "regions": [
-      "Southeast Asia"
-    ],
-    "degree": 8,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "tangDynasty",
-    "template": "Periods",
-    "subtype": "Period",
-    "period": "618–907 CE",
-    "title": "The Tang Dynasty",
-    "summary": "The Tang Dynasty (618–907 CE) was the moment China became a crossroads of Eurasian civilization — absorbing Buddhist philosophy from India, silk technology spreading westward, Persian refugees at court, and Central Asian music in the capital. Its analytical question is what happens when a civilization stops being a destination and becomes a junction.",
-    "status": "published",
-    "startYear": 618,
-    "endYear": 907,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 7,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "taxation",
-    "title": "Taxation",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3000 BCE–present",
-    "themes": [
-      "history",
-      "economics",
-      "politicalEconomy",
-      "governance",
-      "stateFormation",
-      "capitalism",
-      "inequality",
-      "democracy",
-      "empire",
-      "law",
-      "globalHistory",
-      "modernity"
-    ],
-    "status": "published",
-    "summary": "The compulsory extraction of resources from individuals and institutions by a political authority — the financial mechanism through which states have funded armies, built infrastructure, sustained bureaucracies, and redistributed wealth for five thousand years. No state has ever operated without some form of taxation; the history of how states have taxed — what they taxed, who they taxed, and how they justified it — is inseparable from the history of political power itself.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global"
-    ],
-    "degree": 5,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "tariff",
-    "title": "The Tariff",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "A tax on imported goods — historically the chief revenue source of pre-modern states and the main lever of trade policy — and the site where a government's need for money, the politics of protecting home industries, and the theory of free trade collide.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "theAeneid",
-    "title": "The Aeneid",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "29–19 BCE",
-    "status": "published",
-    "summary": "Virgil's epic poem recounting the journey of Aeneas from the fall of Troy to the founding of the line that would produce Rome, composed between 29 and 19 BCE at the request of Augustus. The Aeneid gave Rome a mythological origin equal in prestige to the Greek tradition while making Roman imperium seem divinely destined. Its world effect ran through the medieval and Renaissance imagination of empire and Dante's Commedia.",
-    "startYear": -29,
-    "endYear": -19,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 7,
-    "added": "2026-06-02"
-  },
-  {
-    "id": "theAlphabet",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "1800 BCE–present",
-    "title": "The Alphabet",
-    "summary": "The writing system in which a small set of symbols — typically 20 to 30 — represents the sounds of a language rather than its syllables or words, enabling literacy at a scale and speed that no earlier writing system achieved — and reorganizing what could be thought, recorded, traded, governed, and believed.",
-    "status": "published",
-    "startYear": -1800,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "theArchive",
-    "title": "The Archive",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The institution through which states, churches, corporations, and other organized powers have accumulated and controlled records — creating the documentary basis for legal authority, historical knowledge, and administrative power, while simultaneously determining what is preserved, who may access it, and what is destroyed.",
-    "startYear": -800,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 15,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "theCity",
-    "title": "The City",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3500 BCE–present",
-    "status": "published",
-    "summary": "The concentrated human settlement that made possible — and required — writing, taxation, professional armies, law, and specialization of labor, now housing more than half of humanity for the first time in history.",
-    "startYear": -3500,
-    "endYear": 2026,
-    "regions": [
-      "North Africa & Middle East"
-    ],
-    "degree": 15,
-    "added": "2026-06-02"
-  },
-  {
-    "id": "theDivineComedy",
-    "title": "The Divine Comedy",
-    "template": "Works",
-    "subtype": "Foundational Text",
-    "period": "c. 1308–1321",
-    "status": "published",
-    "summary": "Dante Alighieri's epic poem of a journey through Hell, Purgatory, and Heaven — written in Italian in the early fourteenth century — which synthesized medieval Christian theology with classical learning, established the Italian vernacular as a literary language, and remains the most ambitious and technically accomplished work in the Western literary canon.",
-    "startYear": 1308,
-    "endYear": 1321,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 6,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "theForest",
-    "title": "The Forest",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "deep prehistory – present",
-    "summary": "The ecosystem that sheltered, fed, and equipped the human species for most of its existence — and whose systematic destruction over the past ten thousand years has been both the precondition for civilization and one of civilization's most consequential long-term costs.",
-    "status": "published",
-    "startYear": -10000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 5,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "theHolocaust",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "title": "The Holocaust",
-    "period": "1933–1945",
-    "summary": "The systematic, state-organized persecution and murder of six million Jews and millions of others by the Nazi regime and its collaborators between 1933 and 1945 — the most extensively documented genocide in history.",
-    "status": "published",
-    "startYear": 1933,
-    "endYear": 1945,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 22,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "theHospital",
-    "title": "The Hospital",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The institution through which organized societies have concentrated the sick, administered professional knowledge, and managed the boundary between life and death — an institution that transformed from a charitable shelter for the poor and dying into the central organizing structure of modern medicine, reshaping the relationship between patient and healer, individual and state, body and professional authority.",
-    "startYear": -800,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 12,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "theJury",
-    "title": "The Jury",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "12th century–present",
-    "status": "published",
-    "summary": "The institution of deciding legal questions by a body of ordinary citizens — one of the oldest mechanisms for involving non-specialists in governance, a site of persistent tension between democratic participation and expert judgment, and the institution that forces most directly the question of whether truth is best determined by the community it affects or by those trained to find it.",
-    "startYear": 1150,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "theLibrary",
-    "title": "The Library",
-    "template": "Foundations",
-    "subtype": "Conceptual Foundation",
-    "period": "c. 3rd century BCE–present",
-    "status": "published",
-    "summary": "The institution for collecting, organizing, and preserving knowledge — from the ancient world's great repositories at Alexandria and Nineveh through the Islamic House of Wisdom and medieval monastery libraries to the modern public library and digital archive. The library is the foundational technology of civilizational memory: it determines what survives, who can access it, and therefore what future generations can know about the past.",
-    "startYear": -250,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 12,
-    "added": "2026-06-02"
-  },
-  {
-    "id": "theMarket",
-    "title": "The Market",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The institution through which goods, services, labor, and capital are allocated through decentralized exchanges governed by price signals rather than central direction. Markets are among the oldest and most consequential human institutions — they emerged independently across civilizations, generated the price information on which complex economies depend, and became the primary mechanism of capitalist organization while remaining objects of profound political disagreement.",
-    "startYear": -800,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-02"
-  },
-  {
-    "id": "theMongolConquests",
-    "title": "The Mongol Conquests",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1206–1368",
-    "status": "published",
-    "qualityTier": "A",
-    "summary": "The military campaigns launched from the Mongolian steppe by Genghis Khan and his successors between 1206 and the mid-fourteenth century, which created the largest contiguous land empire in history, killed tens of millions of people, connected Eurasia into a single trading system, and restructured the political order from China to Eastern Europe.",
-    "startYear": 1206,
-    "endYear": 1368,
-    "regions": [
-      "East Asia",
-      "Europe",
-      "Central Asia & the Steppe"
-    ],
-    "degree": 8,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "theNewspaper",
-    "title": "The Newspaper",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 1605–present",
-    "status": "published",
-    "summary": "The periodical publication of news for a mass audience — the first technology for synchronizing the attention of a large public around shared events, shaping political life, public opinion, and the modern concept of an informed citizenry from the 17th century through its displacement by digital media.",
-    "startYear": 1605,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "theNovel",
-    "title": "The Novel",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "c. 1600–present",
-    "status": "published",
-    "summary": "The extended prose fiction form that emerged in Europe in the seventeenth and eighteenth centuries and became the dominant literary form of the modern world — distinguished by its focus on individual psychological interiority, its engagement with social reality, and its address to a reading public. The novel is not merely a literary form but an epistemological one: it develops the capacity to inhabit other minds and imagine other lives.",
-    "startYear": 1600,
-    "endYear": 2026,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-06-02"
-  },
-  {
-    "id": "thePartition",
-    "template": "Events",
-    "subtype": "Threshold Moment — Restructured",
-    "period": "1947",
-    "title": "The Partition of India",
-    "summary": "The division of British India in August 1947 into the independent states of India and Pakistan — accompanied by the largest mass migration in human history, between one and two million deaths, and the displacement of fifteen million people — that shaped the subcontinent's politics for generations.",
-    "status": "published",
-    "startYear": 1947,
-    "endYear": 1947,
-    "regions": [
-      "South Asia"
-    ],
-    "degree": 7,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "theRepublic",
-    "title": "The Republic",
-    "template": "Works",
-    "subtype": "Narrative",
-    "period": "c. 375 BCE",
-    "summary": "Plato's extended philosophical dialogue on justice, the ideal state, and the nature of the soul — the foundational text of Western political philosophy and one of the most influential works in the history of ideas.",
-    "status": "published",
-    "startYear": -375,
-    "endYear": -375,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "theState",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "c. 3000 BCE–present",
-    "title": "The State",
-    "summary": "The state is the strange achievement of making political power impersonal — of transferring obedience from a person to an office, from a ruler to an institution that persists when rulers change. How that depersonalization happens, what it makes possible, and where it breaks down is the central puzzle of political life.",
-    "status": "published",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 15,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "thirtyYearsWar",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1618–1648",
-    "title": "The Thirty Years' War",
-    "summary": "The catastrophic conflict that devastated Central Europe from 1618 to 1648 -- beginning as a religious war between Catholics and Protestants and ending as a struggle between European great powers that established the modern system of sovereign states.",
-    "status": "published",
-    "startYear": 1618,
-    "endYear": 1648,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "thomasAquinas",
-    "title": "Thomas Aquinas",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1225–1274",
-    "status": "published",
-    "summary": "The 13th-century Dominican friar and theologian whose Summa Theologiae attempted to synthesize Aristotelian philosophy with Christian doctrine — producing an intellectual framework that the Catholic Church declared its official philosophy in 1879 and that continues to underpin Catholic moral theology, natural law theory, and the philosophy of religion.",
-    "startYear": 1225,
-    "endYear": 1274,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 18,
-    "added": "2026-06-01"
-  },
-  {
-    "id": "thomasJefferson",
-    "title": "Thomas Jefferson",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1743–1826",
-    "status": "published",
-    "summary": "The author of the Declaration of Independence, third President of the United States, founder of the University of Virginia, and enslaver of over 600 people — a figure whose words established the founding language of American democracy and whose life demonstrated the gap between that language and the political community it described.",
-    "startYear": 1743,
-    "endYear": 1826,
-    "regions": [
-      "The Americas"
-    ],
-    "degree": 9,
-    "added": "2026-06-02"
   },
   {
     "id": "thucydides",
@@ -6225,150 +6458,45 @@
     "added": "2026-05-31"
   },
   {
-    "id": "tiananmenSquare",
-    "title": "The Tiananmen Square Protests",
-    "template": "Events",
-    "subtype": "Discrete Event",
-    "period": "April–June 1989",
-    "status": "published",
-    "summary": "The student-led pro-democracy movement that occupied Beijing's Tiananmen Square in spring 1989 — drawing millions of demonstrators across China before the People's Liberation Army cleared the square with live fire on the night of June 3–4, killing an unknown number of people — and the Chinese Communist Party's subsequent erasure of the event from public memory inside China.",
-    "startYear": 1989,
-    "endYear": 1989,
-    "regions": [
-      "East Asia"
-    ],
-    "degree": 8,
-    "added": "2026-06-09"
-  },
-  {
-    "id": "timekeeping",
-    "title": "Timekeeping",
-    "summary": "The technology of measuring, standardizing, and organizing time — from the first astronomical calendars of ancient Mesopotamia through the mechanical clock's transformation of medieval Europe to the atomic clock's precision that enables GPS and global finance — a technology so fundamental to modern civilization that its absence is unimaginable, and whose history reveals how deeply the organization of time is bound up with the organization of power.",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3000 BCE–present",
+    "id": "humanRights",
+    "title": "Human Rights",
+    "summary": "The doctrine that all human beings possess inherent rights by virtue of their humanity — rights that governments cannot legitimately violate and that the international community has a responsibility to protect — institutionalized after World War II in the Universal Declaration of Human Rights and subsequent treaties, and contested ever since on questions of universality, enforceability, cultural specificity, and political instrumentalization.",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 1948–present",
     "themes": [
+      "politics",
+      "law",
       "history",
-      "science",
-      "economics",
+      "ethics",
       "globalHistory",
-      "modernity",
-      "religion"
+      "modernity"
     ],
     "status": "published",
     "qualityTier": "A",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Europe",
-      "North Africa & Middle East"
-    ],
-    "degree": 9,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "totalitarianism",
-    "title": "Totalitarianism",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "1920s – present",
-    "status": "published",
-    "summary": "The concept that certain regimes — Nazi Germany, Stalinist Russia, Maoist China — represent a qualitatively new form of political domination that goes beyond traditional despotism, seeking not merely to control behavior but to transform human nature, abolish private life, and mobilize entire populations toward ideological ends.",
-    "startYear": 1925,
+    "startYear": 1948,
     "endYear": 2026,
     "regions": [
       "Europe"
     ],
-    "degree": 20,
-    "added": "2026-06-01"
+    "degree": 18,
+    "added": "2026-05-31"
   },
   {
-    "id": "transitionalJustice",
-    "title": "Transitional Justice",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "1945–present",
+    "id": "humanitarianIntervention",
+    "title": "Humanitarian Intervention",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "1990s–present",
     "status": "published",
-    "summary": "The set of judicial and non-judicial mechanisms — criminal trials, truth commissions, reparations, lustration, and memorialization — through which societies emerging from mass atrocity or authoritarian rule attempt to reckon with the past, and the contested question of whether justice, truth, peace, and reconciliation can be simultaneously achieved.",
-    "startYear": 1945,
+    "summary": "The question of whether states or international bodies are morally and legally permitted — or obligated — to use military force against a sovereign state to protect that state's population from mass atrocities, genocide, or crimes against humanity — a question that pits two foundational principles of international order against each other: the sovereignty of states and the protection of human beings from their own governments.",
+    "startYear": 1995,
     "endYear": 2026,
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 14,
-    "added": "2026-06-02"
-  },
-  {
-    "id": "translation",
-    "title": "Translation",
-    "summary": "The practice of rendering meaning across language boundaries — which preserved ancient Greek philosophy for the Islamic world, returned it to Europe for the Renaissance, transmitted the Bible across civilizations, and enabled the Reformation, the Scientific Revolution, and every subsequent exchange of ideas across cultural borders — and without which the connected world we inhabit would be impossible.",
-    "template": "Foundations",
-    "subtype": "Material Foundation",
-    "period": "c. 3000 BCE–present",
-    "themes": [
-      "language",
-      "history",
-      "religion",
-      "globalHistory",
-      "philosophy",
-      "science"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 12,
-    "added": "2026-05-31"
-  },
-  {
-    "id": "treatyOfVersailles",
-    "title": "The Treaty of Versailles",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1919",
-    "themes": [
-      "politics",
-      "war",
-      "europe",
-      "diplomacy",
-      "nationalism",
-      "20thCentury"
-    ],
-    "summary": "The peace settlement that formally ended the First World War — imposing disarmament, territorial losses, reparations, and the war guilt clause on Germany, and creating the political conditions debated ever since as causes of the Second World War.",
-    "status": "published",
-    "startYear": 1919,
-    "endYear": 1919,
-    "regions": [
-      "Europe"
-    ],
     "degree": 10,
-    "added": "2026-05-30"
-  },
-  {
-    "id": "trotsky",
-    "title": "Leon Trotsky",
-    "summary": "The Russian revolutionary, theorist of permanent revolution, organizer of the Red Army, and founder of the Fourth International — expelled by Stalin, exiled across three continents, and assassinated in Mexico in 1940 — and the most potent symbol of the Stalinist betrayal of the Russian Revolution.",
-    "template": "People",
-    "subtype": "Historical Actor",
-    "period": "1879–1940",
-    "themes": [
-      "russia",
-      "history",
-      "20thCentury",
-      "politics"
-    ],
-    "status": "published",
-    "qualityTier": "A",
-    "startYear": 1879,
-    "endYear": 1940,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 8,
-    "added": "2026-05-31"
+    "added": "2026-06-01"
   },
   {
     "id": "universities",
@@ -6394,6 +6522,22 @@
     ],
     "degree": 8,
     "added": "2026-05-31"
+  },
+  {
+    "id": "usury",
+    "title": "Usury",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century BCE–present",
+    "status": "published",
+    "summary": "The moral and religious condemnation of charging interest on a loan — originally a ban on any interest at all, later narrowed to mean only excessive interest. The prohibition runs through Aristotle's argument that money cannot breed, the Hebrew Bible's rule against lending at interest to fellow Israelites, the medieval Church's councils, and the Islamic ban on riba, before loosening in the Reformation and surviving today as interest-rate caps and the politics of payday lending.",
+    "startYear": -350,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
   },
   {
     "id": "vaccines",
@@ -6502,6 +6646,54 @@
     "added": "2026-06-01"
   },
   {
+    "id": "evolution",
+    "title": "Evolution",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1859–present",
+    "status": "published",
+    "summary": "The process by which populations of organisms change over successive generations through the differential survival and reproduction of heritable traits — the foundational explanatory framework of modern biology, and one of the most contested scientific ideas in the history of human culture.",
+    "startYear": 1859,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-01"
+  },
+  {
+    "id": "wEBDuBois",
+    "title": "W.E.B. Du Bois",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1868–1963",
+    "status": "published",
+    "summary": "The sociologist, historian, and activist who coined the concept of double consciousness, wrote The Souls of Black Folk, helped found the NAACP, produced the most empirically rigorous account of Black life in America with The Philadelphia Negro, rewrote the history of Reconstruction in Black Reconstruction in America, and whose long career moved from civil-rights organizing to Pan-Africanism and ultimately to exile in Ghana at age ninety-three.",
+    "startYear": 1868,
+    "endYear": 1963,
+    "regions": [
+      "North America"
+    ],
+    "degree": 12,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "wage",
+    "title": "The Wage",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "Payment for labor by time or output — the form through which most people in a market economy get their living, and the hinge of the whole employment relationship. The wage looks like a simple price, but it encodes the central bargain of capitalism: what your time is worth, and who decides.",
+    "startYear": -500,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
     "id": "warehouse",
     "title": "The Warehouse",
     "template": "Places",
@@ -6532,22 +6724,6 @@
     ],
     "degree": 12,
     "added": "2026-05-30"
-  },
-  {
-    "id": "wEBDuBois",
-    "title": "W.E.B. Du Bois",
-    "template": "People",
-    "subtype": "Thinker",
-    "period": "1868–1963",
-    "status": "published",
-    "summary": "The sociologist, historian, and activist who coined the concept of double consciousness, wrote The Souls of Black Folk, helped found the NAACP, produced the most empirically rigorous account of Black life in America with The Philadelphia Negro, rewrote the history of Reconstruction in Black Reconstruction in America, and whose long career moved from civil-rights organizing to Pan-Africanism and ultimately to exile in Ghana at age ninety-three.",
-    "startYear": 1868,
-    "endYear": 1963,
-    "regions": [
-      "North America"
-    ],
-    "degree": 12,
-    "added": "2026-06-13"
   },
   {
     "id": "weimarRepublic",
@@ -6620,22 +6796,6 @@
     ],
     "degree": 7,
     "added": "2026-06-02"
-  },
-  {
-    "id": "worldWarII",
-    "title": "The Second World War",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1939–1945",
-    "summary": "The deadliest conflict in human history -- killing between 70 and 85 million people across six years of fighting -- producing the Holocaust, the nuclear age, the Cold War, decolonization, and the international order that still governs global politics.",
-    "status": "published",
-    "startYear": 1939,
-    "endYear": 1945,
-    "regions": [
-      "Europe"
-    ],
-    "degree": 24,
-    "added": "2026-05-30"
   },
   {
     "id": "wretchedOfTheEarth",
@@ -6732,86 +6892,6 @@
       "East Asia"
     ],
     "degree": 6,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "treasury",
-    "title": "The Treasury",
-    "template": "Places",
-    "subtype": "System",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The institution that holds, collects, and spends the state’s money — the fisc, the counting house of power. Every ambition a government has ever acted on, from war to welfare to roads, has run through the treasury first.",
-    "startYear": -3000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "interest",
-    "title": "Interest",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The price charged for the use of borrowed money over time — the mechanism through which lenders are compensated for waiting, through which small debts can compound into large ones, and through which the economy’s master price is set, steering investment and saving across the entire financial system.",
-    "startYear": -2000,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 9,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "usury",
-    "title": "Usury",
-    "template": "Concepts",
-    "subtype": "Normative Concept",
-    "period": "4th century BCE–present",
-    "status": "published",
-    "summary": "The moral and religious condemnation of charging interest on a loan — originally a ban on any interest at all, later narrowed to mean only excessive interest. The prohibition runs through Aristotle's argument that money cannot breed, the Hebrew Bible's rule against lending at interest to fellow Israelites, the medieval Church's councils, and the Islamic ban on riba, before loosening in the Reformation and surviving today as interest-rate caps and the politics of payday lending.",
-    "startYear": -350,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 10,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "bankruptcy",
-    "title": "Bankruptcy",
-    "template": "Concepts",
-    "subtype": "Analytical Concept",
-    "period": "ancient–present",
-    "status": "published",
-    "summary": "The legal procedure for resolving debts that cannot be paid — the orderly, collective alternative to debtors' prison, flight, or creditor free-for-all — and the institution that, by letting economic failure end without ending the person, made risk-taking capitalism possible.",
-    "startYear": -500,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
-    "added": "2026-06-13"
-  },
-  {
-    "id": "strike",
-    "title": "The Strike",
-    "template": "Events",
-    "subtype": "Extended Process",
-    "period": "1830s–present",
-    "status": "published",
-    "summary": "The collective withdrawal of labor — workers stopping work together to force a concession from an employer or a state. The strike is the labor movement's ultimate weapon because it converts the worker's dependence on wages into the employer's dependence on workers: when production halts, the employer loses money and must bargain. Its forms range from the orderly walkout to the factory occupation and the general strike, and its history is a long contest between that leverage and the countermeasures built to break it.",
-    "startYear": 1894,
-    "endYear": 2026,
-    "regions": [
-      "Global / Transregional"
-    ],
-    "degree": 7,
     "added": "2026-06-13"
   }
 ]
