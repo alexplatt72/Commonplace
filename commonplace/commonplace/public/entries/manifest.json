@@ -7315,5 +7315,85 @@
     ],
     "degree": 7,
     "added": "2026-06-13"
+  },
+  {
+    "id": "plastic",
+    "title": "Plastic",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1860 – present",
+    "status": "published",
+    "summary": "Synthetic polymers shaped by heat and pressure — from Bakelite in 1907 to the petrochemical explosion of polyethylene, PVC, and PET — plastic remade daily life by making everything cheaper, lighter, and more durable. It is now an ecological reckoning: a material so permanent that it does not disappear, only fragments, and so pervasive that microplastics are found in human blood, Arctic ice, and the deepest ocean trenches.",
+    "startYear": 1907,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "cement",
+    "title": "Cement",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 3000 BCE–present",
+    "status": "published",
+    "summary": "The powdered binder — most importantly Portland cement, made by calcining limestone and clay at extreme heat — that, when mixed with water, undergoes a chemical reaction called hydration and hardens into a stone-like solid. Cement is the active ingredient in concrete, mortar, and most modern masonry. It is the most-used manufactured substance after water, and its production is one of the largest single sources of human carbon emissions on earth.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "timber",
+    "title": "Timber",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 10,000 BCE — present",
+    "status": "published",
+    "summary": "Wood cut and prepared for building — humanity's oldest structural material, which raised ships, houses, and cities across thousands of years, drove deforestation on a continental scale, and is now returning in engineered form as a potential low-carbon alternative to concrete and steel.",
+    "startYear": -10000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "ceramics",
+    "title": "Ceramics",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 26,000 BCE – present",
+    "status": "published",
+    "summary": "Inorganic materials hardened by fire — above all fired clay — that represent humanity's first synthetic material: an irreversible chemical transformation of earth into something new, running unbroken from the earliest cooking pot to the heat shields of spacecraft.",
+    "startYear": -26000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "clay",
+    "title": "Clay",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 30,000 BCE–present",
+    "status": "published",
+    "summary": "The fine-grained, plastic sediment — shaped when wet, rigid when dried, fused when fired — that served as humanity's first vessel, first building block, and first writing surface, and whose abundance in river valleys made it the quiet substrate of the earliest cities, the oldest libraries, and the potter's art.",
+    "startYear": -30000,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 5,
+    "added": "2026-06-13"
   }
 ]
