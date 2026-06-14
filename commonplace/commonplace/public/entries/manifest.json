@@ -1,5 +1,53 @@
 [
   {
+    "id": "form",
+    "title": "The Form",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 1800-present",
+    "status": "published",
+    "summary": "The printed document with blanks to fill in -- the cell-level unit of modern bureaucracy through which states and large organizations see, sort, and process people. The form standardizes a person into data, determines who receives benefits and recognition, and encodes in its very categories the political question of who counts. No other technology of modernity is so common, so ignored, or so quietly decisive about identity and access.",
+    "startYear": 1800,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "commons",
+    "title": "The Commons",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "medieval–present",
+    "status": "published",
+    "summary": "A resource held and governed collectively — neither privately owned nor state-controlled — covering medieval English pastures, ocean fisheries, the atmosphere, open-source software, and the digital knowledge pool. Long dismissed as inherently prone to ruin, the commons was rehabilitated by Elinor Ostrom's Nobel Prize-winning research showing that communities can and do govern shared resources sustainably, making the commons a serious third option alongside private property and the state.",
+    "startYear": 1200,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "wage",
+    "title": "The Wage",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "Payment for labor by time or output — the form through which most people in a market economy get their living, and the hinge of the whole employment relationship. The wage looks like a simple price, but it encodes the central bargain of capitalism: what your time is worth, and who decides.",
+    "startYear": -500,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-13"
+  },
+  {
     "id": "publicDebt",
     "title": "Public Debt",
     "template": "Concepts",
@@ -3304,6 +3352,32 @@
     ],
     "degree": 9,
     "added": "2026-06-01"
+  },
+  {
+    "id": "laborUnions",
+    "title": "Labor Unions",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1790s–present",
+    "summary": "Organizations through which workers combine to bargain collectively with employers, converting the powerlessness of the individual worker into shared strength. From early friendly societies and craft guilds through the industrial unions of the nineteenth and twentieth centuries to a contested present, unions have used collective bargaining, the strike threat, and political action to shape wages and conditions.",
+    "themes": [
+      "labor",
+      "class",
+      "capitalism",
+      "politics",
+      "inequality",
+      "economicHistory",
+      "institutions"
+    ],
+    "status": "published",
+    "startYear": 1799,
+    "endYear": 2025,
+    "regions": [
+      "Europe",
+      "The Americas"
+    ],
+    "degree": 12,
+    "added": "2026-06-13"
   },
   {
     "id": "language",
@@ -6717,6 +6791,22 @@
     "status": "published",
     "summary": "The legal procedure for resolving debts that cannot be paid — the orderly, collective alternative to debtors' prison, flight, or creditor free-for-all — and the institution that, by letting economic failure end without ending the person, made risk-taking capitalism possible.",
     "startYear": -500,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "strike",
+    "title": "The Strike",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1830s–present",
+    "status": "published",
+    "summary": "The collective withdrawal of labor — workers stopping work together to force a concession from an employer or a state. The strike is the labor movement's ultimate weapon because it converts the worker's dependence on wages into the employer's dependence on workers: when production halts, the employer loses money and must bargain. Its forms range from the orderly walkout to the factory occupation and the general strike, and its history is a long contest between that leverage and the countermeasures built to break it.",
+    "startYear": 1894,
     "endYear": 2026,
     "regions": [
       "Global / Transregional"
