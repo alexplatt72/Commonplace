@@ -147,7 +147,7 @@
     {
       "label": "The Dam",
       "entryId": "dam",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "The dam is the structure that makes large-scale hydropower possible by storing water at elevation and controlling its release. The hydropower entry covers the energy system; the dam entry will carry the engineering, hydrology, and structural history of the device itself."
     },
@@ -178,6 +178,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "Canals and dams are both large hydraulic engineering projects that redirect the energy and flow of water for human purposes. Both have remade river systems, displaced communities, and enabled economic development that otherwise would not have been possible — and both carry the cost of that transformation in the altered landscapes they leave behind."
+    },
+    {
+      "label": "Solar Power",
+      "entryId": "solarPower",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "Hydropower and solar are renewable electricity's natural operational pair — solar is abundant and intermittent, hydropower is dispatchable and flexible — and the hydropower entry notes that its value as grid backup is rising precisely as variable renewables dominate new capacity; a reader of hydropower following that logic forward arrives at solar as the primary source it is increasingly paired with and designed to complement."
     }
   ],
   "reference": [

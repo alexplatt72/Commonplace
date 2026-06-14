@@ -154,9 +154,16 @@
     {
       "label": "Solar Power",
       "entryId": "solarPower",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "Solar photovoltaics are the fastest-growing source of electricity globally and the technology most likely to reshape the grid's architecture over the coming decades. The relationship between cheap, distributed solar and a grid designed for centralized generation is the central engineering and political tension of the energy transition."
+    },
+    {
+      "label": "The Mine",
+      "entryId": "mine",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The electric grid's two primary material dependencies — coal-fired generation and copper transmission wire — both trace directly to mining, and a reader of the electricGrid entry who follows either supply chain back to its source arrives at the mine as the institution that made the grid's physical infrastructure possible."
     }
   ],
   "reference": [

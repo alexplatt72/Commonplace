@@ -155,6 +155,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "Nuclear power plants are the most capital-intensive version of the power plant's basic steam-cycle design, with fission replacing combustion as the heat source. The entry on nuclear power will address what the power plant entry treats as context — the physics of fission, the governance of nuclear waste, and the contested politics of nuclear revival."
+    },
+    {
+      "label": "The Dam",
+      "entryId": "dam",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The powerPlant entry explicitly identifies the hydroelectric variant as the case where 'falling water pushes against the blades of a water turbine' without heat, steam, or combustion — a reader of the powerPlant entry who wants to understand the structure that stores the water at elevation and controls its release through turbines, and the political and displacement costs that come with it, would naturally turn to the dam entry."
     }
   ],
   "reference": [
