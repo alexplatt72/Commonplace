@@ -8565,5 +8565,86 @@
     ],
     "degree": 6,
     "added": "2026-06-14"
+  },
+  {
+    "id": "nubia",
+    "title": "Nubia",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 3500 BCE–1500 CE",
+    "status": "published",
+    "summary": "Nubia — the land of the middle Nile in what is now southern Egypt and northern Sudan — was one of Africa's oldest centers of power, supplying gold, ivory, and soldiers to the wider ancient world. Across three thousand years its cultures ran from the early A-Group through the C-Group to the powerful kingdom of Kerma, trading, warring, and intermarrying with Egypt to the north, before the kingdom of Kush (covered in its own entry) grew to rule Egypt itself.",
+    "startYear": -3500,
+    "endYear": 1500,
+    "regions": [
+      "Sub-Saharan Africa",
+      "North Africa & Middle East"
+    ],
+    "degree": 4,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "kush",
+    "title": "Kush",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1070 BCE–c. 350 CE",
+    "status": "published",
+    "summary": "The Kingdom of Kush was the great Nubian power of the middle Nile, centered first at Napata and later at Meroë. It twice built an empire: its kings conquered and ruled Egypt as the 25th Dynasty around 744–656 BCE, and after losing Egypt it flourished for centuries as an African state of iron, pyramids, ruling queens, and its own Meroitic script — a writing system that can be sounded out but whose language is still poorly understood — before declining around the fourth century CE.",
+    "startYear": -1070,
+    "endYear": 350,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 4,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "greatZimbabwe",
+    "title": "Great Zimbabwe",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 11th century – 15th century CE",
+    "status": "published",
+    "summary": "The massive stone city in southern Africa built by the ancestral Shona between roughly the 11th and 15th centuries — capital of a wealthy gold-trading state, the largest pre-modern stone structure in sub-Saharan Africa, and the target of a long colonial campaign to deny that Africans had built it at all.",
+    "startYear": 1100,
+    "endYear": 1450,
+    "regions": [
+      "Africa"
+    ],
+    "degree": 5,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "beninKingdom",
+    "title": "Benin Kingdom",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 13th century–1897 CE",
+    "status": "published",
+    "summary": "The Kingdom of Benin (the Edo state in what is now southern Nigeria, not the modern country called Benin) was one of West Africa's most sophisticated and long-lived kingdoms — ruled by a divine king called the Oba, ringed by vast earthwork walls, and famous above all for the cast-brass and bronze artworks whose looting by a British force in 1897 became a defining case in the global debate over returning stolen heritage.",
+    "startYear": 1200,
+    "endYear": 1897,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "windPower",
+    "title": "Wind Power",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 9th century CE — present",
+    "status": "published",
+    "summary": "The capture of moving air to do useful work — grinding grain, pumping water, and now generating electricity at enormous scale. Wind power is among the oldest energy technologies humans have used and, as of the early-to-mid 2020s, one of the fastest-growing sources of new electricity, whose giant spinning blades have become a signature image of the energy transition even as its variability makes it a persistently difficult fit for a grid built around steady, controllable plants.",
+    "startYear": 900,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
   }
 ]
