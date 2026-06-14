@@ -182,6 +182,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Algorithms process; databases store. The two are conceptually distinct but practically inseparable: what an algorithm can do depends on what data is available to it, making the design of the database a prior political and technical choice."
+    },
+    {
+      "label": "The Loom",
+      "entryId": "loom",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The algorithm entry traces the concept of a finite, mechanical procedure through al-Khwarizmi and Turing, but the direct physical ancestor of stored-program computing is Joseph Marie Jacquard's punched-card loom of 1804 — the device that first separated pattern-as-data from the machine that executes it, a lineage Babbage and Lovelace explicitly named."
     }
   ],
   "reference": [
