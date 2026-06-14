@@ -185,9 +185,16 @@
     {
       "label": "Cattle",
       "entryId": "cattle",
-      "status": "planned",
+      "status": "published",
       "relationship": "Parallel",
       "reason": "Cattle and cassava both function as food-security foundations across sub-Saharan Africa, but through different logics: cattle provide wealth storage, protein, and social currency, while cassava provides caloric insurance in the face of drought. Together they show the complementary pillars of African smallholder food systems."
+    },
+    {
+      "label": "Camels",
+      "entryId": "camels",
+      "status": "published",
+      "relationship": "Contrasting",
+      "reason": "Cassava conquered hunger in the humid tropics of Africa through the same era that camels opened the Sahara — both were transformative biological tools for inhabiting extreme environments, yet one worked by rooting populations in place while the other enabled mobility across otherwise impassable terrain."
     }
   ],
   "reference": [
