@@ -174,9 +174,16 @@
     {
       "label": "Nuclear Power",
       "entryId": "nuclearPower",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "Nuclear power plants are steam turbines run on fission heat rather than combustion. The turbine is the machine that nuclear power inherited from the coal age and kept — the technology changed around it, but the rotating shaft and the generator remained the same."
+    },
+    {
+      "label": "The Power Plant",
+      "entryId": "powerPlant",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "A reader of The Turbine learns that Parsons's 1884 steam turbine was adopted first in large central generating stations — the very power plants that became the nodes of the modern grid — making the turbine entry the direct mechanical backstory to the power plant as an institution."
     }
   ],
   "reference": [

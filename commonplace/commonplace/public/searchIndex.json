@@ -4405,6 +4405,43 @@
     ]
   },
   {
+    "id": "hydropower",
+    "title": "Hydropower",
+    "summary": "The generation of electricity from falling or flowing water — the world's oldest and still its largest source of renewable electricity, and the clearest case of clean power whose cleanliness conceals large human and ecological costs.",
+    "aliases": [
+      "hydroelectric power",
+      "hydroelectricity",
+      "water power",
+      "hydro",
+      "pumped-storage hydro",
+      "run-of-river hydro",
+      "The Flooded Valley View",
+      "The Grid Engineer's View",
+      "The River's View"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "McCully, Patrick",
+      "World Commission on Dams",
+      "Smil, Vaclav",
+      "Colson, Elizabeth",
+      "International Energy Agency",
+      "Patrick McCully",
+      "Vaclav Smil",
+      "Simon Winchester",
+      "Marc Reisner",
+      "Material Foundation"
+    ],
+    "themes": [
+      "technology",
+      "ecology",
+      "economicHistory",
+      "politicalEconomy",
+      "climate",
+      "physics"
+    ]
+  },
+  {
     "id": "ibnBattuta",
     "title": "Ibn Battuta",
     "summary": "The Moroccan scholar and traveler who, between 1325 and 1354, covered approximately 75,000 miles across the Islamic world, Africa, Central Asia, India, Southeast Asia, and China — producing the Rihla, the most extensive account of the medieval world written by a single observer. Ibn Battuta's journeys documented the geographic reach of Islamic civilization at its maximum extent and remain the primary eyewitness source for dozens of medieval societies.",
@@ -7224,6 +7261,43 @@
     ]
   },
   {
+    "id": "nuclearPower",
+    "title": "Nuclear Power",
+    "summary": "The generation of electricity from the heat of splitting atoms — the most concentrated energy source humans have harnessed, and the one most entangled with weapons, catastrophe, and dread, now re-examined as a large, near-zero-carbon option in a warming world.",
+    "aliases": [
+      "nuclear energy",
+      "atomic power",
+      "atomic energy",
+      "nuclear reactor",
+      "fission power",
+      "nuclear electricity",
+      "The Decarbonization View",
+      "The Affected-Place View",
+      "The Weapons-Shadow View"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Rhodes, Richard",
+      "Weart, Spencer R.",
+      "Perrow, Charles",
+      "Smil, Vaclav",
+      "Mahaffey, James",
+      "Joshua S. Goldstein and Staffan A. Qvist",
+      "Adam Higginbotham",
+      "Richard Rhodes",
+      "Vaclav Smil",
+      "Charles Perrow",
+      "Material Foundation"
+    ],
+    "themes": [
+      "technology",
+      "physics",
+      "nuclearWeapons",
+      "ecology",
+      "science"
+    ]
+  },
+  {
     "id": "oil",
     "title": "Oil",
     "summary": "The fossil fuel that powers the modern world economy -- extracted commercially since 1859, the foundation of transportation, agriculture, plastics, and warfare for over a century, and the primary driver of anthropogenic climate change.",
@@ -7465,6 +7539,46 @@
       "italy",
       "ancientHistory",
       "identity"
+    ]
+  },
+  {
+    "id": "pigs",
+    "title": "Pigs",
+    "summary": "Domesticated from the wild boar roughly nine thousand or more years ago in multiple regions, the pig became one of the most efficient meat-making animals humans ever raised — an omnivore that converts waste, scraps, and root crops into protein faster than any ruminant. Unlike cattle and sheep, the pig offers no wool, no milk economy, and no plow traction: it is raised almost entirely for meat, and it excels at that single purpose. Yet the pig is also the animal at the center of the world's most analyzed food taboo: the prohibition on pork in Judaism and Islam touches the lives of well over a billion people today. No other domesticated animal so starkly exposes the gap between biological utility and cultural meaning.",
+    "aliases": [
+      "pork",
+      "hog",
+      "swine",
+      "pig domestication",
+      "wild boar",
+      "Sus scrofa",
+      "pork taboo",
+      "food taboo",
+      "livestock",
+      "The Prohibition as Living Practice",
+      "The Optimal Animal",
+      "The Costs of Concentration"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Marvin Harris",
+      "Mary Douglas",
+      "Frederick J. Simoons",
+      "Greger Larson et al.",
+      "David M. Freidenreich",
+      "Tom Standage",
+      "James Villas",
+      "Material Foundation"
+    ],
+    "themes": [
+      "agriculture",
+      "religion",
+      "islam",
+      "judaism",
+      "ecology",
+      "politicalEconomy",
+      "globalHistory",
+      "society"
     ]
   },
   {
@@ -11386,6 +11500,45 @@
     ]
   },
   {
+    "id": "electricGrid",
+    "title": "The Electric Grid",
+    "summary": "The continent-spanning network of generators, transmission lines, transformers, and substations that carries electricity from where it is made to where it is used — commonly called the largest machine ever built — and now the central chokepoint of the transition to clean energy.",
+    "aliases": [
+      "power grid",
+      "electrical grid",
+      "electricity grid",
+      "national grid",
+      "transmission grid",
+      "power network",
+      "electrical network",
+      "utility grid",
+      "The Grid as Momentum-Carrying System",
+      "The Grid as Distributor of Access and Exclusion",
+      "The Grid as Real-Time Balancing Act"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Hughes, Thomas P.",
+      "Bakke, Gretchen",
+      "Smil, Vaclav",
+      "Nye, David E.",
+      "Hirsh, Richard F.",
+      "Jonnes, Jill",
+      "System"
+    ],
+    "themes": [
+      "technology",
+      "economicHistory",
+      "science",
+      "physics",
+      "inequality",
+      "ecology",
+      "globalHistory",
+      "institutions",
+      "modernity"
+    ]
+  },
+  {
     "id": "enlightenment",
     "title": "The Enlightenment",
     "summary": "The 18th-century intellectual movement that made reason the supreme authority — and whose legacy is still being fought over",
@@ -13968,6 +14121,46 @@
       "technology",
       "politicalEconomy",
       "governance"
+    ]
+  },
+  {
+    "id": "powerPlant",
+    "title": "The Power Plant",
+    "summary": "The central facility where fuel or flowing water is converted into electricity at industrial scale — the place where the abstract idea of 'energy policy' becomes concrete, where a building full of spinning turbines whose fuel choice, multiplied across a grid, decides how much carbon a civilization emits.",
+    "aliases": [
+      "generating station",
+      "power station",
+      "electricity generating plant",
+      "thermal power station",
+      "central station",
+      "baseload plant",
+      "peaking plant",
+      "coal plant",
+      "nuclear plant",
+      "hydroelectric plant",
+      "The Power Plant as Physical System",
+      "The Power Plant as Institutional Choice",
+      "The Power Plant as the Carbon Decision"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Smil, Vaclav",
+      "Rhodes, Richard",
+      "Yergin, Daniel",
+      "MacKay, David J.C.",
+      "Balogh, Brian",
+      "Klein, Seth",
+      "System"
+    ],
+    "themes": [
+      "technology",
+      "economicHistory",
+      "ecology",
+      "climate",
+      "institutions",
+      "globalHistory",
+      "modernity",
+      "politicalEconomy"
     ]
   },
   {

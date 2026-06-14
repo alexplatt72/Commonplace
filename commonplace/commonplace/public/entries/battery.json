@@ -173,7 +173,7 @@
     {
       "label": "The Electric Grid",
       "entryId": "electricGrid",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "Grid-scale battery storage is beginning to reshape how electricity grids are designed and operated, moving from a flow model to a buffer model. The battery and the grid are becoming co-dependent in ways that neither was designed for."
     },
@@ -183,6 +183,13 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "Solar generation and battery storage are the paired technologies of the energy transition: solar generates at variable times, batteries store the surplus and release it when needed. Neither achieves its potential at scale without the other."
+    },
+    {
+      "label": "Hydropower",
+      "entryId": "hydropower",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "Pumped-storage hydropower is by far the largest form of grid energy storage worldwide — the role batteries are now growing to share."
     }
   ],
   "reference": [

@@ -172,6 +172,20 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "Dams and pumps are the two primary technologies for controlling water at civilizational scale — one by stopping it, one by moving it. Hydroelectric dams often use pump-storage systems to balance power grids, making the two technologies directly intertwined."
+    },
+    {
+      "label": "The Electric Grid",
+      "entryId": "electricGrid",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "A reader of The Pump learns that the steam engine — invented to drain mines — was the direct ancestor of the turbine-driven power station; that story continues in the electric grid, which is what those power stations eventually built and interconnected."
+    },
+    {
+      "label": "The Power Plant",
+      "entryId": "powerPlant",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "A reader of The Pump follows the mine-drainage crisis through Newcomen to Watt, arriving at the moment the steam engine was freed from its pumping role to drive rotating machinery — the conceptual step that made the centralised, fuel-burning power plant possible."
     }
   ],
   "reference": [
