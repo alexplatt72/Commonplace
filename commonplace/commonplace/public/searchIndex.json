@@ -1635,6 +1635,48 @@
     ]
   },
   {
+    "id": "civilServiceExaminations",
+    "title": "Civil Service Examinations",
+    "summary": "The Chinese civil-service examination system, the keju, was the longest-running attempt in history to staff a government by tested learning rather than by birth. Maturing under the Sui and Tang around the seventh century and elaborated under the Song, it required candidates to master the Confucian classics and write to a strict form, advancing through sealed local, provincial, and palace examinations toward the jinshi degree that opened the door to office. Over roughly thirteen centuries it produced a scholar-official class and a durable bureaucracy, offered a narrow but real route upward for talented commoners, and drew admiration from Enlightenment Europe before its abolition in 1905. Its costs — rote learning, the advantage of the wealthy who could afford to study, and a conservatism critics later blamed for stifling change — are as much a part of the record as its achievements.",
+    "aliases": [
+      "civil service examinations",
+      "the imperial examination",
+      "imperial examinations",
+      "keju",
+      "ke ju",
+      "the Chinese examination system",
+      "the examination system",
+      "the imperial civil service exam",
+      "The Ladder of Talent",
+      "The Machine That Made an Elite",
+      "The Idea That Traveled"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Elman, Benjamin A.",
+      "Miyazaki, Ichisada",
+      "Ho, Ping-ti",
+      "Weber, Max",
+      "Man-Cheong, Iona D.",
+      "Chaffee, John W.",
+      "Ichisada Miyazaki",
+      "Benjamin A. Elman",
+      "Ping-ti Ho",
+      "John W. Chaffee",
+      "Extended Process"
+    ],
+    "themes": [
+      "china",
+      "eastAsia",
+      "education",
+      "governance",
+      "knowledge",
+      "intellectualHistory",
+      "stateFormation",
+      "empire"
+    ]
+  },
+  {
     "id": "cleopatra",
     "title": "Cleopatra VII",
     "summary": "The last ruler of Ptolemaic Egypt — Greek by dynasty, Egyptian by cultural identity and political strategy — who allied with Julius Caesar and Mark Antony in the dying decades of the Roman Republic, presided over Egypt's absorption into the Roman Empire, and became one of the most mythologized figures in Western history, her actual political genius largely obscured by two thousand years of sexual legend.",
@@ -8599,6 +8641,45 @@
     ]
   },
   {
+    "id": "algorithm",
+    "title": "The Algorithm",
+    "summary": "A finite, exact procedure — a recipe of steps that, followed mechanically, produces a result. Algorithms predate computers by more than a millennium, but the word acquired a second life as the name for the opaque ranking, recommendation, and decision systems that now sort social feeds, set prices, screen job applicants, and allocate risk across modern life.",
+    "aliases": [
+      "algorithms",
+      "algorithmic systems",
+      "algorithmic decision-making",
+      "automated decision systems",
+      "ranking systems",
+      "The Tool Perspective",
+      "The Power Perspective",
+      "The Accountability Gap Perspective"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Knuth, Donald E.",
+      "O'Neil, Cathy",
+      "Fry, Hannah",
+      "Kleinberg, Jon, Mullainathan, Sendhil, and Raghavan, Manish",
+      "Finn, Ed",
+      "Turing, Alan M.",
+      "Hannah Fry",
+      "Cathy O'Neil",
+      "Ed Finn",
+      "Donald E. Knuth",
+      "Frank Pasquale",
+      "Analytical Concept"
+    ],
+    "themes": [
+      "technology",
+      "mathematics",
+      "knowledge",
+      "power",
+      "economics",
+      "politics",
+      "inequality"
+    ]
+  },
+  {
     "id": "theAlphabet",
     "title": "The Alphabet",
     "summary": "The writing system in which a small set of symbols — typically 20 to 30 — represents the sounds of a language rather than its syllables or words, enabling literacy at a scale and speed that no earlier writing system achieved — and reorganizing what could be thought, recorded, traded, governed, and believed.",
@@ -10017,6 +10098,62 @@
       "china",
       "language",
       "physics"
+    ]
+  },
+  {
+    "id": "database",
+    "title": "The Database",
+    "summary": "The organized, queryable store of structured data — and the quiet infrastructure beneath almost everything digital. From paper files and punch-card registers to Edgar Codd's relational model of 1970 and the SQL query language that followed, the database transformed record-keeping into a recombinant power. Any institution that can store, find, and join records can know and act on everyone in them at once. The bank balance, the airline reservation, the state registry, the credit score: all are database queries. So is the targeted advertisement and the watchlist.",
+    "aliases": [
+      "database",
+      "relational database",
+      "SQL",
+      "structured query language",
+      "RDBMS",
+      "relational model",
+      "Edgar Codd",
+      "data store",
+      "record system",
+      "database management system",
+      "DBMS",
+      "NoSQL",
+      "data warehouse",
+      "Oracle database",
+      "MySQL",
+      "PostgreSQL",
+      "queryable store",
+      "structured data",
+      "data table",
+      "row",
+      "column",
+      "table join",
+      "primary key",
+      "query",
+      "The Engine of the Information Economy",
+      "The Surveillance Infrastructure",
+      "The Error and the Absence"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Codd, Edgar F.",
+      "Eubanks, Virginia",
+      "Zuboff, Shoshana",
+      "Ceruzzi, Paul E.",
+      "Noble, Safiya Umoja",
+      "Broussard, Meredith",
+      "O'Neil, Cathy",
+      "Gitelman, Lisa",
+      "Conceptual Foundation"
+    ],
+    "themes": [
+      "technology",
+      "knowledge",
+      "power",
+      "stateFormation",
+      "politicalEconomy",
+      "capitalism",
+      "inequality",
+      "knowledgeTransmission"
     ]
   },
   {
@@ -13106,6 +13243,50 @@
     ]
   },
   {
+    "id": "searchEngine",
+    "title": "The Search Engine",
+    "summary": "The machine that made the web findable -- by crawling, indexing, and above all ranking billions of pages so a query returns a usable result in milliseconds. Google's PageRank, introduced around 1998, treated incoming links as votes of authority and turned ranking into the central problem of the web. That ranking became a gatekeeper: what appears on the first page of results is seen; what does not barely exists. The search engine is not a neutral window onto the web but an editorial machine whose ordering shapes what billions of people can find and therefore believe.",
+    "aliases": [
+      "search engine",
+      "web search",
+      "Google",
+      "PageRank",
+      "information retrieval",
+      "web indexing",
+      "search algorithm",
+      "keyword search",
+      "web crawler",
+      "search ranking",
+      "SERP",
+      "search results",
+      "The Gatekeeper That Was Never Asked to Govern",
+      "The Most Efficient Market for Attention Ever Built",
+      "The Algorithm as Unelected Infrastructure"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Battelle, John",
+      "Vaidhyanathan, Siva",
+      "Noble, Safiya Umoja",
+      "Brin, Sergey and Page, Lawrence",
+      "Pariser, Eli",
+      "John Battelle",
+      "Eli Pariser",
+      "Siva Vaidhyanathan",
+      "Safiya Umoja Noble",
+      "Max Fisher",
+      "Conceptual Foundation"
+    ],
+    "themes": [
+      "technology",
+      "knowledgeTransmission",
+      "politicalEconomy",
+      "power",
+      "capitalism",
+      "intellectualHistory"
+    ]
+  },
+  {
     "id": "worldWarII",
     "title": "The Second World War",
     "summary": "The deadliest conflict in human history -- killing between 70 and 85 million people across six years of fighting -- producing the Holocaust, the nuclear age, the Cold War, decolonization, and the international order that still governs global politics.",
@@ -14196,6 +14377,40 @@
       "diplomacy",
       "nationalism",
       "20thCentury"
+    ]
+  },
+  {
+    "id": "unitedNations",
+    "title": "The United Nations",
+    "summary": "The standing organization of nearly all the world's states, founded in 1945 from the wreckage of the Second World War to keep peace and coordinate cooperation. It pairs a universal General Assembly, where every state has one vote, with a powerful Security Council whose five permanent members can each veto any action. That built-in compromise is what lets the organization function and what guarantees it will fail whenever a great power blocks it.",
+    "aliases": [
+      "UN",
+      "United Nations Organization",
+      "the UN",
+      "The Unfinished Parliament of Humanity",
+      "A Mirror of Power",
+      "A Forum Won and a Hierarchy Preserved"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Mazower, Mark",
+      "Kennedy, Paul",
+      "Schlesinger, Stephen C.",
+      "United Nations",
+      "United Nations General Assembly",
+      "Paul Kennedy",
+      "Stephen C. Schlesinger",
+      "Mark Mazower",
+      "James Traub",
+      "Analytical Concept"
+    ],
+    "themes": [
+      "diplomacy",
+      "humanRights",
+      "sovereignty",
+      "war",
+      "globalization",
+      "institutions"
     ]
   },
   {

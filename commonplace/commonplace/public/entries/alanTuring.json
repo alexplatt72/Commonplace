@@ -160,6 +160,20 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "The Turing entry traces how theoretical computer science created the computational architecture that processes GPS signals — the receiver must solve simultaneous equations from four satellites to compute a position, a task requiring exactly the programmable digital computation Turing formalized. Without the stored-program computer, GPS would remain a theoretical geometry problem."
+    },
+    {
+      "label": "The Search Engine",
+      "entryId": "searchEngine",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Turing's theoretical work on computation — the universal machine and the concept of mechanical symbol manipulation — provides the intellectual foundation on which crawling, indexing, and relevance ranking are built."
+    },
+    {
+      "label": "The Algorithm",
+      "entryId": "algorithm",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Turing formalized the concept of an effective procedure — the Turing machine is the mathematical definition of what an algorithm is — making his work the theoretical bedrock on which all algorithmic thinking rests."
     }
   ],
   "reference": [

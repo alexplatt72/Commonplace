@@ -198,6 +198,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "GPS and the internet share the same origin story: military systems opened to civilian use, generating economic returns their designers did not anticipate, becoming invisible infrastructure, and creating dependencies that are now very difficult to unwind. The comparison sharpens both."
+    },
+    {
+      "label": "The Database",
+      "entryId": "database",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "GPS generates continuous streams of location data that only become useful when stored and queried in databases; the two technologies together underpin the location-aware digital economy and the surveillance infrastructure that accompanies it."
     }
   ],
   "reference": [
