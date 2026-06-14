@@ -170,7 +170,7 @@
     {
       "label": "Public Debt",
       "entryId": "publicDebt",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "Public debt is the obligation that the bond market exists to price and trade. A focused entry on the politics of government borrowing extends the bond market's account of how states meet their creditors into the modern fiscal state."
     },
@@ -180,6 +180,13 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "The treasury is the office that actually issues a government's bonds and manages its debt. The bond market is the arena it sells into; understanding the institution on the issuing side completes the picture of how sovereign borrowing works in practice."
+    },
+    {
+      "label": "Bankruptcy",
+      "entryId": "bankruptcy",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The Bond Market entry discusses how sovereign debt crises — when governments cannot service their bonds — produce the most visible and globally destabilizing bankruptcies, linking market confidence directly to state insolvency."
     }
   ],
   "reference": [

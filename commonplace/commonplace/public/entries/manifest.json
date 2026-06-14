@@ -1,5 +1,21 @@
 [
   {
+    "id": "publicDebt",
+    "title": "Public Debt",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "medieval–present",
+    "status": "published",
+    "summary": "The money a state borrows against its future taxes — the device that has let governments spend far beyond what they collect, funding wars, infrastructure, and ambitions no single year of revenue could cover. Public debt turns a government's promise to repay into the bedrock of modern finance, which makes the question of whose promises are trusted, and who ultimately pays, one of the central problems of state power.",
+    "startYear": 1672,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 6,
+    "added": "2026-06-13"
+  },
+  {
     "id": "abbasidCaliphate",
     "title": "The Abbasid Caliphate",
     "template": "Periods",
@@ -5577,6 +5593,32 @@
     "added": "2026-06-13"
   },
   {
+    "id": "spreadsheet",
+    "title": "The Spreadsheet",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "1979–present",
+    "themes": [
+      "economics",
+      "technology",
+      "capitalism",
+      "knowledge",
+      "modernity",
+      "economicHistory",
+      "institutions",
+      "politicalEconomy"
+    ],
+    "status": "published",
+    "summary": "The grid of rows and columns that recalculates itself — the tool that turned the paper ledger into a live model of any quantitative situation. From VisiCalc in 1979 through Lotus 1-2-3 and Microsoft Excel, the spreadsheet democratized financial modeling and made 'what-if' analysis universal. It also spread fragile, error-ridden models and, in at least one notorious case, shaped economic policy on a faulty foundation.",
+    "startYear": 1979,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "statistics",
     "title": "Statistics",
     "template": "Foundations",
@@ -6632,6 +6674,54 @@
       "Global / Transregional"
     ],
     "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "interest",
+    "title": "Interest",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The price charged for the use of borrowed money over time — the mechanism through which lenders are compensated for waiting, through which small debts can compound into large ones, and through which the economy’s master price is set, steering investment and saving across the entire financial system.",
+    "startYear": -2000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "usury",
+    "title": "Usury",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century BCE–present",
+    "status": "published",
+    "summary": "The moral and religious condemnation of charging interest on a loan — originally a ban on any interest at all, later narrowed to mean only excessive interest. The prohibition runs through Aristotle's argument that money cannot breed, the Hebrew Bible's rule against lending at interest to fellow Israelites, the medieval Church's councils, and the Islamic ban on riba, before loosening in the Reformation and surviving today as interest-rate caps and the politics of payday lending.",
+    "startYear": -350,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "bankruptcy",
+    "title": "Bankruptcy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "ancient–present",
+    "status": "published",
+    "summary": "The legal procedure for resolving debts that cannot be paid — the orderly, collective alternative to debtors' prison, flight, or creditor free-for-all — and the institution that, by letting economic failure end without ending the person, made risk-taking capitalism possible.",
+    "startYear": -500,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
     "added": "2026-06-13"
   }
 ]

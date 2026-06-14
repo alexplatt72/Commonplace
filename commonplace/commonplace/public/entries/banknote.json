@@ -201,9 +201,16 @@
     {
       "label": "Public Debt",
       "entryId": "publicDebt",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "The credibility of a fiat banknote is downstream of the fiscal capacity of the state that issues it, and the modern note was born entangled with sovereign borrowing. The public debt entry will develop the fiscal foundation on which the trust in paper money ultimately rests."
+    },
+    {
+      "label": "Bankruptcy",
+      "entryId": "bankruptcy",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "The Banknote entry traces paper money's origins in promises-to-pay and shows how bank failures — the collapse of those promises — were the original bankruptcy crises that shaped commercial law and the need for insolvency procedures."
     }
   ],
   "reference": [

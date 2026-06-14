@@ -992,6 +992,42 @@
     ]
   },
   {
+    "id": "bankruptcy",
+    "title": "Bankruptcy",
+    "summary": "The legal procedure through which societies decide who loses how much when debts cannot be paid — converting the old sin of insolvency from a personal disgrace into an orderly process, and balancing the honest debtor's claim to a fresh start against the creditor's claim to be repaid.",
+    "aliases": [
+      "insolvency",
+      "Chapter 7",
+      "Chapter 11",
+      "fresh start",
+      "debt discharge",
+      "liquidation",
+      "reorganization",
+      "The Moral Hazard Problem",
+      "The Fresh Start as a Social Good",
+      "The Culture of Failure"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Skeel, David A.",
+      "Mann, Bruce H.",
+      "Warren, Elizabeth; Westbrook, Jay Lawrence",
+      "Jackson, Thomas H.",
+      "Jacoby, Melissa B.",
+      "Warren, Charles",
+      "Warren, Elizabeth; Tyagi, Amelia Warren",
+      "Tabb, Charles Jordan",
+      "Analytical Concept"
+    ],
+    "themes": [
+      "law",
+      "capitalism",
+      "commerce",
+      "politicalEconomy",
+      "inequality"
+    ]
+  },
+  {
     "id": "beijing",
     "title": "Beijing",
     "summary": "The capital of China for six centuries and the center of the world's most continuously inhabited civilization — a city whose built environment embeds a complete cosmological and political order and whose contemporary significance is inseparable from the authoritarian state that now occupies it.",
@@ -3943,6 +3979,45 @@
     ]
   },
   {
+    "id": "interest",
+    "title": "Interest",
+    "summary": "The price charged for the use of borrowed money over time — the mechanism through which lenders are compensated for waiting, through which small debts can compound into large ones, and through which the economy's master price is set, steering investment and saving across the entire financial system.",
+    "aliases": [
+      "interest rate",
+      "compound interest",
+      "simple interest",
+      "time value of money",
+      "rate of interest",
+      "nominal interest rate",
+      "real interest rate",
+      "annual percentage rate",
+      "APR",
+      "Interest as the Price of Capital",
+      "Interest as Institutional and Distributional",
+      "Interest as Moral Problem"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Homer, Sidney; Sylla, Richard",
+      "Fisher, Irving",
+      "Keynes, John Maynard",
+      "Hudson, Michael",
+      "Rajan, Raghuram G.",
+      "Minsky, Hyman P.",
+      "Bernstein, Peter L.",
+      "Reinhart, Carmen; Rogoff, Kenneth",
+      "Analytical Concept"
+    ],
+    "themes": [
+      "economics",
+      "politicalEconomy",
+      "religion",
+      "law",
+      "globalHistory",
+      "economicHistory"
+    ]
+  },
+  {
     "id": "internationalLaw",
     "title": "International Law",
     "summary": "The body of rules, treaties, customs, and principles that govern relations between states and, increasingly, between states and individuals — including the laws of war, human rights obligations, trade regimes, and environmental agreements — enforced not by a world government but through reciprocity, reputation, domestic courts, and international tribunals whose authority states themselves must accept.",
@@ -6486,6 +6561,40 @@
       "law",
       "politicalTheory",
       "inequality"
+    ]
+  },
+  {
+    "id": "publicDebt",
+    "title": "Public Debt",
+    "summary": "The money a state borrows against its future taxes — the device that has let governments spend far beyond what they collect, funding wars, infrastructure, and ambitions no single year of revenue could cover. Public debt turns a government's promise to repay into the bedrock of modern finance, which makes the question of whose promises are trusted, and who ultimately pays, one of the central problems of state power.",
+    "aliases": [
+      "national debt",
+      "sovereign debt",
+      "government debt",
+      "the funded debt",
+      "debt-to-GDP",
+      "sovereign default",
+      "The Price of a Promise",
+      "Who Pays, and Who Decided",
+      "Eight Centuries of Default"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Macdonald, James",
+      "Stasavage, David",
+      "Reinhart, Carmen M.; Rogoff, Kenneth S.",
+      "Ferguson, Niall",
+      "Tooze, Adam",
+      "Reinhart, Carmen; Rogoff, Kenneth",
+      "Analytical Concept"
+    ],
+    "themes": [
+      "economics",
+      "politicalEconomy",
+      "stateFormation",
+      "power",
+      "war",
+      "capitalism"
     ]
   },
   {
@@ -12829,6 +12938,54 @@
     ]
   },
   {
+    "id": "spreadsheet",
+    "title": "The Spreadsheet",
+    "summary": "The grid of rows and columns that recalculates itself — the tool that turned the paper ledger into a live model of any quantitative situation. From VisiCalc in 1979 through Lotus 1-2-3 and Microsoft Excel, the spreadsheet democratized financial modeling and made 'what-if' analysis universal. It also spread fragile, error-ridden models and, in at least one notorious case, shaped economic policy on a faulty foundation.",
+    "aliases": [
+      "spreadsheet",
+      "spread sheet",
+      "VisiCalc",
+      "Lotus 1-2-3",
+      "Microsoft Excel",
+      "Excel",
+      "columnar pad",
+      "worksheet",
+      "workbook",
+      "what-if analysis",
+      "killer app",
+      "grid model",
+      "financial model",
+      "spreadsheet software",
+      "electronic spreadsheet",
+      "The Tool That Sold the Machine",
+      "The Error-Prone Infrastructure",
+      "The Authority of the Grid"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Levy, Steven",
+      "Panko, Raymond R.",
+      "Herndon, Thomas and Ash, Michael and Pollin, Robert",
+      "Porter, Theodore M.",
+      "Reinhart, Carmen M. and Rogoff, Kenneth S.",
+      "Bricklin, Dan",
+      "Gleeson-White, Jane",
+      "Power, Michael",
+      "Bergstrom, Carl T. and West, Jevin D.",
+      "Conceptual Foundation"
+    ],
+    "themes": [
+      "economics",
+      "technology",
+      "capitalism",
+      "knowledge",
+      "modernity",
+      "economicHistory",
+      "institutions",
+      "politicalEconomy"
+    ]
+  },
+  {
     "id": "theState",
     "title": "The State",
     "summary": "The state is the strange achievement of making political power impersonal — of transferring obedience from a person to an office, from a ruler to an institution that persists when rulers change. How that depersonalization happens, what it makes possible, and where it breaks down is the central puzzle of political life.",
@@ -13806,6 +13963,41 @@
       "globalHistory",
       "philosophy",
       "science"
+    ]
+  },
+  {
+    "id": "usury",
+    "title": "Usury",
+    "summary": "The moral and religious condemnation of charging interest on a loan — originally a ban on any interest at all, later narrowed to mean only excessive interest. The prohibition runs through Aristotle's argument that money cannot breed, the Hebrew Bible's rule against lending at interest to fellow Israelites, the medieval Church's councils, and the Islamic ban on riba, before loosening in the Reformation and surviving today as interest-rate caps and the politics of payday lending.",
+    "aliases": [
+      "Riba",
+      "Lending at interest",
+      "Loan-sharking",
+      "Interest prohibition",
+      "Neshekh",
+      "The Loan as an Act of Mercy",
+      "Credit Is Necessary, and Has a Price",
+      "A Forced Role, Then a Weapon"
+    ],
+    "associatedWorks": [],
+    "indexTerms": [
+      "Nelson, Benjamin",
+      "Noonan, John T.",
+      "Le Goff, Jacques",
+      "Aristotle",
+      "Aquinas, Thomas",
+      "Calvin, John",
+      "Graeber, David",
+      "El-Gamal, Mahmoud A.",
+      "Normative Concept"
+    ],
+    "themes": [
+      "ethics",
+      "religion",
+      "theology",
+      "law",
+      "economics",
+      "judaism"
     ]
   },
   {

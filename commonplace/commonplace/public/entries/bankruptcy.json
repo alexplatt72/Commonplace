@@ -1,0 +1,304 @@
+{
+  "id": "bankruptcy",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Concepts",
+  "subtype": "Analytical Concept",
+  "period": "ancient–present",
+  "title": "Bankruptcy",
+  "summary": "The legal procedure through which societies decide who loses how much when debts cannot be paid — converting the old sin of insolvency from a personal disgrace into an orderly process, and balancing the honest debtor's claim to a fresh start against the creditor's claim to be repaid.",
+  "hook": "In medieval Italian market towns, when a moneylender could no longer pay what he owed, creditors smashed his wooden bench in the public square. The word 'bankruptcy' comes from that act — banca rotta, the broken bench. The message was brutal and clear: failure meant ruin, shame, and the end of your livelihood. For most of history, people who could not pay their debts faced prison, forced labor, or the sale of their families. Today, in most of the world, they file a form, appear before a judge, and walk out with their debts erased. That journey — from the broken bench to the fresh start — is the story of how capitalism learned to make failure survivable.",
+  "aliases": ["insolvency", "Chapter 7", "Chapter 11", "fresh start", "debt discharge", "liquidation", "reorganization"],
+  "indexTerms": ["banca rotta", "broken bench", "debtors prison", "discharge of debt", "fresh start doctrine", "liquidation", "reorganization", "Chapter 7", "Chapter 11", "insolvency", "creditor", "debtor"],
+  "themes": [
+    "law",
+    "capitalism",
+    "commerce",
+    "politicalEconomy",
+    "inequality"
+  ],
+  "interpretiveInfluences": [
+    "Charles Warren",
+    "David Skeel",
+    "Bruce Mann",
+    "Melissa Jacoby",
+    "Elizabeth Warren"
+  ],
+  "content": {
+    "beginner": {
+      "theConcept": "Picture a small business owner who borrowed money to buy equipment, rent a shop, and hire workers. Then a recession hits. Customers stop coming. The loans keep growing. Soon she owes far more than the business will ever earn. In most countries today, she can go to court and declare bankruptcy. A judge reviews her situation. Some assets may be sold. When the process ends, her old debts are erased. She gets what lawyers call a fresh start.\n\nThis outcome would have seemed shocking to most people throughout history. For centuries, failing to pay your debts was treated like a crime. Debtors in ancient Rome could be sold into slavery. In England, men sat in debtors' prisons for years. They could not work off what they owed because prison left them no way to earn. Bankruptcy law broke that circle by turning a personal disgrace into a legal procedure.",
+      "problemItSolves": "The core problem bankruptcy solves is simple: sometimes debts genuinely cannot be paid. A drought ruins a farmer's crop. A factory closes and a family loses its income. A medical crisis devours savings. No amount of pressure will create money that does not exist.\n\nBefore bankruptcy law, creditors could chase a debtor forever. They could seize property and sue repeatedly. The debtor stayed trapped. The creditor often got little back anyway, because a ruined person has nothing to give. Bankruptcy law changed the calculation. It said: at some point, cut the losses. Divide what is left among creditors in an orderly way. Let the debtor start over. Everyone gets certainty instead of endless war.\n\nThe same logic applies to businesses. A company may be worth more as a going concern than as a pile of sold-off parts. Bankruptcy law lets struggling companies keep operating while they work out a plan to repay creditors. Workers keep their jobs. The alternative — immediate collapse — often destroys more value than it recovers.",
+      "howItWorks": "Modern bankruptcy law in most countries offers two basic paths. The first is liquidation. A court appoints someone to sell the debtor's non-essential assets. The proceeds go to creditors in a fixed order — secured creditors first, then others in line. When the assets are gone, the remaining debts are discharged. The debtor starts fresh with little but their future earnings intact.\n\nThe second path is reorganization. Here the debtor keeps operating while proposing a plan to repay creditors over several years, often paying less than the full amount owed. Creditors vote on the plan. If approved by the court, the business continues. In the United States, these two paths are known as Chapter 7 and Chapter 11, named after sections of the bankruptcy code.\n\nNot everyone gets a discharge. Courts check whether the debtor was honest. People who hid assets, committed fraud, or ran up debts they knew they could never pay can be denied relief. Certain debts — in the United States, student loans and child support, for example — typically survive bankruptcy and cannot be erased. The fresh start is real, but it has conditions.",
+      "whatItExplains": "Bankruptcy explains something important about how capitalism works. Markets reward risk-taking. Entrepreneurs borrow money to build companies that might fail. Investors put capital into uncertain ventures. If every failure meant permanent ruin, far fewer people would take these risks. Some scholars argue that the relative ease of bankruptcy in the United States — compared with countries where personal bankruptcy carries lasting stigma — helps explain why American entrepreneurship has been so active. This is a contested claim, and the evidence is mixed, but it points to a genuine connection between how a society treats failure and how willing its people are to try.\n\nBankruptcy also explains why credit exists at all. Lenders know, when they make a loan, that bankruptcy law gives borrowers an exit. That knowledge shapes how they lend — what interest rate they charge, how much collateral they demand, which borrowers they trust. Bankruptcy is not just a safety valve for debtors. It is a structural feature of credit markets that shapes every loan made.",
+      "whereItBreaksDown": "The fresh-start ideal runs into trouble in several directions. One is moral hazard. If people know they can discharge debts, some will borrow more than they should and then walk away. Bankruptcy law tries to deter this — courts dismiss cases involving obvious abuse — but the line between genuine misfortune and strategic default is hard to draw.\n\nA second problem is who actually benefits. The corporate reorganization process has been shaped by powerful creditors and Wall Street advisers. A large company in Chapter 11 can employ hundreds of professionals for years. An individual filer gets a simpler process but far less help. Outcomes in consumer bankruptcy vary sharply based on whether the debtor has a lawyer.\n\nA third problem is what bankruptcy cannot fix. When a financial crisis drowns thousands of borrowers at once, individual filings cannot address the systemic problem. The 2008 crisis produced waves of foreclosures that bankruptcy courts were not designed to handle. Many families lost their homes to a process that worked better for lenders than for them.",
+      "usedAndMisusedC": "Bankruptcy has been used as a tool of power as well as relief. Some large corporations have filed for bankruptcy to shed labor contracts, cut pension obligations, and escape environmental liability. They used the process not because they faced genuine collapse but because it let them drop obligations they found inconvenient. Courts have sometimes approved these maneuvers and other times pushed back. The tension between genuine relief and strategic use runs through the law's history.\n\nThe United States made student loan debt nearly impossible to discharge in bankruptcy through legislative changes beginning in the 1970s. The argument was that students would borrow for expensive degrees and then file bankruptcy before building careers. Whether this concern was well-founded — or whether the policy served lenders more than students — is debated. Removing the bankruptcy exit for student borrowers changed how those loan markets work and what leverage borrowers have."
+    },
+    "general": {
+      "theConcept": "The first English bankruptcy statute, passed in 1542 under Henry VIII, was not mercy for debtors. It was order for creditors. Before the act, each of a merchant's creditors raced to grab his goods. Everyone grabbed at once, leaving nothing for anyone and destroying the debtor's chance of recovery. The 1542 act let creditors petition collectively, bringing commissioners in to manage the debtor's assets. The debtor had no rights in the process at all.\n\nFor the next three centuries, bankruptcy law in England and America was essentially creditor protection, not debtor relief. American bankruptcy acts in the nineteenth century began to offer discharges, but Congress repealed them repeatedly. Only with the Bankruptcy Act of 1898 did the United States establish a permanent system that erased debts. The law shifted back and forth across this period as creditors pressed for order and debtors pressed for relief. The creditors mostly won until the late nineteenth century.",
+      "problemItSolves": "The economic argument for generous bankruptcy law is straightforward but contested. If entrepreneurs cannot fail cleanly, they will not try ambitiously. Countries with harsh bankruptcy regimes may see less startup activity — the cost of failure is high enough to deter risk-taking.\n\nThis argument has shaped policy debates. Many point to the United States' accessible bankruptcy system as one reason for its entrepreneurial culture. But the evidence is mixed. Researchers find it hard to separate bankruptcy law from other factors — contract enforcement, labor markets, access to capital — that all affect business formation. The claim that easy bankruptcy promotes innovation is plausible, but it is a hypothesis, not an established fact. Countries with stricter regimes have also built vigorous startup sectors. Bankruptcy law may be one ingredient in American entrepreneurial culture, but the recipe has many others.",
+      "howItWorks": "Corporate reorganization in the United States — Chapter 11 — was designed to save viable businesses. A company keeps operating while it proposes a plan: cut some debts, stretch out others, perhaps swap debt for ownership stakes. The theory is that a going concern is worth more than its liquidated parts, so keeping the business running helps everyone.\n\nIn practice, secured lenders, who hold collateral, typically receive the largest share of the reorganized company. Unsecured creditors — trade suppliers, employees with unpaid wages, pensioners — receive less. Congress tightened rules for individual filers in 2005, making it harder to use Chapter 7 and pushing more people toward Chapter 13 repayment plans. Critics argued the change served credit card companies more than struggling debtors; supporters said it reduced abuse. The debate reflects the fundamental question in the law: whose fresh start, and at whose expense?",
+      "whatItExplains": "Bankruptcy filings often reveal an industry's finances in ways that ordinary accounting does not. When Lehman Brothers filed for bankruptcy in September 2008 — the largest filing in American history at the time — the proceedings exposed obligations, derivatives, and hidden commitments that regulators had not fully mapped. The bankruptcy court became, inadvertently, a forensic investigation of an entire sector.\n\nSmaller cases reveal different things. Consumer bankruptcy filings track economic distress with a precision that unemployment figures miss. Elizabeth Warren and her co-authors used court records to show that medical bills were a leading cause of personal bankruptcy in the early 2000s. That finding fed directly into debates about health insurance reform. The bankruptcy file is a peculiar kind of archive — it preserves the financial anatomy of failure in public records that any researcher can study.",
+      "whereItBreaksDown": "Bankruptcy works best when one debtor's failure is isolated. It works much less well when many debtors fail at the same time for the same reason. In 2008 and 2009, millions of American homeowners owed more than their houses were worth. Bankruptcy courts were not equipped for mass mortgage modification, partly because the law treated primary residence mortgages differently from other debts. A proposal to let bankruptcy judges modify home loan terms — sometimes called cram-down — was defeated in Congress in 2009, largely through lender lobbying. Many homeowners who might have kept their homes through restructured loans instead lost them.\n\nThis is the broader limit. Bankruptcy is an individual proceeding. When the problem is systemic — a whole industry over-leveraged, a whole economy in crisis — individual filings cannot reach it. Other tools are needed, and the structure of bankruptcy law can actually impede them.",
+      "usedAndMisusedC": "Companies facing asbestos claims or opioid lawsuits have filed for bankruptcy to cap their total liability and resolve claims in bulk — sometimes even though they were not genuinely insolvent. The maneuver lets a company pay a fraction of what individual lawsuits might have produced and to discharge future claims by people not yet diagnosed.\n\nCritics argue this lets companies shift the costs of their harmful products onto victims and the public. Defenders argue mass bankruptcies are often the only realistic way to distribute limited assets among thousands of claimants. Courts have shifted the rules without resolving the underlying question: when does the bankruptcy process become a strategic shield rather than a genuine last resort?"
+    },
+    "advanced": {
+      "theConcept": "The most important theoretical dispute in bankruptcy scholarship concerns the purpose of the discharge. The traditional justification is humanitarian: a person crushed by debts they cannot pay deserves relief, both for their own sake and because permanent debt servitude is inconsistent with free labor and human dignity. The economic justification is consequentialist: discharge promotes risk-taking, clears balance sheets to enable productive redeployment of assets, and reduces the deadweight loss of prolonged insolvency proceedings. These two justifications mostly point in the same direction, but they diverge in important cases — which is why the tension between them matters.\n\nThomas Jackson's influential 'creditors' bargain' model, developed in the 1980s, argued that bankruptcy law should be understood as the hypothetical agreement that creditors would strike ex ante if they could coordinate — essentially a pro-rata sharing rule to prevent the race to grab assets. On this view, bankruptcy is entirely about efficient debt collection; debtor relief is at best a side effect. Elizabeth Warren challenged this framework directly, arguing that bankruptcy serves multiple values that the creditors' bargain model excludes: relief from the social costs of debt servitude, the fresh start as a matter of human dignity, and the distribution of losses in ways that reflect social judgments about fairness rather than market priority. The debate between these frameworks is not resolved and directly determines which creditors should receive more under a reorganization plan, whether certain debts should be dischargeable, and who bears the costs of systemic financial failure.",
+      "problemItSolves": "The international evidence on bankruptcy law and entrepreneurship is instructive precisely because it is ambiguous. Cross-country studies find correlations between more accessible personal bankruptcy regimes and higher rates of self-employment and startup formation, but causal identification is difficult. Legal systems, financial systems, labor markets, and cultural attitudes toward failure all vary together. John Armour and Douglas Cumming's comparative work found suggestive evidence that personal bankruptcy discharge laws affect entrepreneurship rates, but acknowledged the difficulty of isolating the mechanism. The argument that American entrepreneurial culture owes something to American bankruptcy law is plausible — the ability to fail cleanly may reduce the personal cost of trying — but it sits alongside other factors including access to venture capital, flexible labor markets, and university technology transfer that make the causal chain hard to specify.\n\nThe more uncomfortable version of this argument deserves direct engagement. If easy bankruptcy promotes entrepreneurship by socializing the downside risk, then the question becomes: who bears those costs? Creditors who extend credit knowing it may be discharged build the risk into their interest rates. But that means borrowers as a class cross-subsidize the small fraction who discharge debts in bankruptcy. And not all borrowers have equal access to credit, so the cross-subsidy runs in complex directions. The fresh start is not free — it is paid for by higher credit costs spread across all borrowers, with the distribution of those costs depending on the structure of credit markets.",
+      "howItWorks": "The political economy of bankruptcy reform follows a consistent pattern: large financial institutions have concentrated interests and organizational capacity that diffuse debtor populations lack. They can shape legislative drafting, fund lobbying, and frame public debate in ways that shift the law's balance toward creditors even when the empirical case for the shift is weak. Elizabeth Warren's academic work on bankruptcy filers documented this asymmetry before her political career — the research consistently showed that most filers experienced genuine hardship rather than strategic default, a finding that ran counter to the credit industry's legislative narrative.\n\nSubsequent empirical research by Melissa Jacoby, Michelle White, and others examined actual outcomes after the 2005 reforms. Many filers diverted from Chapter 7 to Chapter 13 under the new means test ended up in repayment plans they could not complete, resulting in dismissal without discharge — a worse outcome than the Chapter 7 they had been steered away from. The pattern is instructive: bankruptcy reform that tightens access to discharge, justified as reducing abuse, can produce systematic harm to exactly the filers the system is designed to help, precisely because the people who suffer the harm lack the political organization to contest it.",
+      "whatItExplains": "The treatment of student loan debt in American bankruptcy law represents one of the most significant and contested doctrinal developments of the past half-century. Until 1976, student loans were dischargeable in bankruptcy like other unsecured debts. Congress then restricted discharge for federally guaranteed loans, and subsequent legislation in 1984 and 1990 extended the restriction to private loans and tightened it further. The result is that student debt now requires proof of 'undue hardship' for discharge — a standard so stringent that courts have interpreted it to require near-total disability and permanent poverty.\n\nThe political economy of this change tracks the creditors' bargain debate directly. Lenders argued that if students could discharge loans in bankruptcy immediately after graduating, the expected loss rate would make educational lending unviable. Whether this was empirically true is contested. The discharge restriction has certainly enabled the expansion of student lending, but it has also created a class of debt that operates differently from all other consumer debt — accumulating interest during periods of financial hardship, surviving bankruptcy, and in the case of federal loans, being collectible through wage garnishment and tax refund seizure without court proceedings. The student loan exception challenges the basic logic of the fresh start: if certain categories of debt are immune from discharge, the fresh start applies unevenly, and the principle of treating failure as survivable applies only to some failures and some debtors.",
+      "whereItBreaksDown": "The most significant failure of American bankruptcy law in the past two decades was its inability to address the housing crisis of 2008 to 2012 at scale. The legal barrier was specific: under the Supreme Court's interpretation of the bankruptcy code, bankruptcy courts could modify the terms of most debts — auto loans, credit card debt, business loans — but not the mortgage on a primary residence. This 'anti-modification rule' for home mortgages had been established in cases interpreting statutory language that exempted certain residential mortgage claims from restructuring in Chapter 13.\n\nThe consequence was that while corporate debtors could restructure their obligations to creditors through reorganization plans, individual homeowners had no analogous mechanism for their primary asset. The 'cram-down' legislation proposed in 2009 would have given bankruptcy judges the power to modify mortgage terms — reducing principal to market value, adjusting interest rates — in individual Chapter 13 cases. The legislation was defeated after intense lobbying by the financial services industry, despite administration support. The economic literature on the counterfactual suggests that broader mortgage modification could have meaningfully reduced foreclosure rates and macroeconomic damage, but the political economy of the reform blocked it. The episode illustrates how the formal structure of bankruptcy law — which debts can be restructured, by which parties, subject to whose veto — is a product of political contestation that distributes the costs of financial crises in ways that are not determined by economic logic alone.",
+      "usedAndMisusedC": "The mass tort bankruptcy — using Chapter 11 to resolve claims from thousands or millions of individuals injured by a company's product — has become one of the most contested areas of contemporary bankruptcy law. Johnson & Johnson's use of a subsidiary to file for bankruptcy in 2021 to resolve talc-related cancer claims, Purdue Pharma's bankruptcy to resolve opioid claims, and similar maneuvers by Boy Scouts of America and the Catholic Diocese raise a fundamental question about the discharge's proper scope. The discharge was designed for genuinely insolvent debtors. These filers were not insolvent — they had substantial assets — but were using the bankruptcy process to achieve a global settlement with an organized claimant class at a fraction of what litigation might have produced.\n\nThe Third Circuit initially approved the Johnson & Johnson maneuver, finding that access to bankruptcy does not require actual insolvency. Other circuits disagreed. The Supreme Court's 2024 decision in Harrington v. Purdue Pharma rejected the specific mechanism Purdue had used — providing releases for third parties who had not themselves filed for bankruptcy, including Sackler family members — but did not resolve the broader question of when solvent or near-solvent companies may use Chapter 11 to manage liability. The scholarly debate cuts to the core purpose question. If bankruptcy exists to provide genuine relief to genuinely insolvent debtors, these maneuvers are abuse. If bankruptcy exists to enable efficient collective resolution of overlapping claims, they may be appropriate. The debate will not be resolved by appeals to the text of the statute alone — it requires a choice about what bankruptcy is fundamentally for."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "Bankruptcy matters as the legal institution through which societies manage the inevitable failures that accompany risk-taking in market economies. The question it poses is not whether debts should be paid — of course they should — but what happens when they genuinely cannot be, and who should bear the cost of that failure. The history of bankruptcy law is a history of competing claims: the creditor's claim to repayment, the debtor's claim to relief and a second chance, and the broader public interest in a financial system that keeps working even when parts of it fail. Getting the balance right has been contested across five centuries of legal development, and the current rules reflect accumulated political settlements as much as economic logic.",
+        "theDebate": "The central debates in bankruptcy scholarship concern: whether the law's primary purpose should be efficient debt collection (the creditors' bargain model) or debtor relief (the fresh start model); how corporate reorganization should balance the interests of secured creditors against employees, pensioners, and trade creditors; whether certain categories of debt — student loans, tort claims, tax obligations — should be exempt from discharge; and how bankruptcy law should handle mass tort liability when companies use the process strategically rather than out of genuine insolvency. These debates are not merely academic: they directly determine who pays when financial systems fail.",
+        "whyItMatters": "Bankruptcy matters for understanding capitalism and risk-taking, the political economy of credit markets, the legal treatment of failure in market societies, the relationship between individual relief and systemic financial stability, and how the law distributes the costs of financial crisis between debtors, creditors, and the broader public.",
+        "questions": [
+          "American law makes student loan debt nearly impossible to discharge in bankruptcy, while credit card debt can be erased. The original justification was that students would borrow and then immediately file bankruptcy before establishing their careers. Is that concern well-founded given what we know about who actually files for bankruptcy — and if the policy primarily serves lenders rather than preventing abuse, what would it take to change it?",
+          "Large companies like Purdue Pharma have used bankruptcy to cap their total liability for mass torts — injuries caused by their products — even though they were not truly insolvent. Critics call this an abuse of a process designed for genuine financial distress. Defenders call it the most efficient way to distribute limited resources among many claimants. Who should decide — and by what standard?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "The foundational debate in modern bankruptcy scholarship is between Thomas Jackson's creditors' bargain model (developed in the 1980s) and Elizabeth Warren's multi-value critique. Jackson argued that bankruptcy should be understood purely as a coordination mechanism for creditors — solving the problem of races to grab assets — with the discharge as an efficiency tool rather than a moral commitment. Warren argued that this framework excludes values — debtor dignity, the fresh start, the social costs of debt servitude — that the law has always served and should serve. This debate remains unresolved and structures the field. David Skeel's Debt's Dominion provides the essential legal history of American bankruptcy from 1800 to 2001. Bruce Mann's Republic of Debtors traces the moral and cultural history of debt and failure in early America. Melissa Jacoby's empirical work examines how the 2005 reform actually affected filer outcomes.",
+        "evidenceAndLimits": "Bankruptcy law is unusually well-documented because bankruptcy proceedings generate public court records. This makes empirical research on outcomes tractable: researchers can track filing rates, discharge rates, asset distributions, and outcomes for individual filers and firms across time and geography. The main limits are: the counterfactual — what would have happened if a company or individual had not filed, or had filed under different rules — is inherently unobservable; international comparisons are complicated by the fact that legal systems, financial systems, and cultural attitudes toward failure all differ; and the political economy of how bankruptcy law gets made is harder to study than the law's formal effects.",
+        "takingAPosition": "A defensible scholarly position on bankruptcy must resist two tempting simplifications. The pure creditors' bargain position — that bankruptcy is only about efficient debt collection — cannot explain why legislatures have repeatedly expanded debtor relief even when doing so imposes costs on creditors. The pure fresh-start humanitarian position — that debtors deserve relief as a matter of human dignity — cannot explain why society should socialize the costs of failure rather than having them fall on those who chose to extend credit. The most defensible position holds that bankruptcy serves multiple purposes that are genuinely in tension, and that the balance among them should be struck through democratic deliberation informed by evidence about effects. The student loan exception, the anti-modification rule for home mortgages, and the mass tort bankruptcy all represent cases where that deliberation has been distorted by well-organized creditor interests relative to diffuse debtor interests — producing rules that serve the politically powerful rather than the economically rational or the humanely just. Engaging this argument requires confronting the political economy of law reform, not just its formal structure.",
+        "questions": [
+          "The creditors' bargain model treats bankruptcy as the coordination mechanism creditors would design ex ante if they could negotiate before lending. But tort creditors — people injured by a product before it was known to be dangerous — never had the opportunity to negotiate. Does the theory apply to them at all, and if not, what does that reveal about the model's limits?",
+          "Warren's research showed that most personal bankruptcy filers experienced job loss, medical crisis, or divorce as precipitating causes — not strategic overborrowing. If the 2005 reform was premised on a false picture of who files, should empirical evidence of this kind change the law, and what would it take politically for it to do so?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "The shift from punishment to relief in Anglo-American bankruptcy law",
+      "content": "Legal historians including Charles Warren and, more recently, David Skeel and Bruce Mann have established that Anglo-American bankruptcy law underwent a fundamental transformation between the sixteenth and late nineteenth centuries — moving from a creditor-only process that treated insolvency as fraud to a system that extended meaningful discharge rights to individual debtors. The 1898 Bankruptcy Act in the United States is the standard marker for the establishment of a permanent discharge-granting system, though earlier acts offered limited discharge rights. The historical record of this shift is well-documented in statutory text, court records, and congressional debates. What is less settled is the relative weight of humanitarian versus economic arguments in driving each stage of reform."
+    },
+    {
+      "status": "emerging",
+      "topic": "The effects of personal bankruptcy law on entrepreneurship and risk-taking",
+      "content": "A body of comparative legal and economic research — including work by John Armour, Douglas Cumming, and Wei Fan — finds statistical associations between more accessible personal bankruptcy regimes and higher rates of entrepreneurship, self-employment, and small-business formation. The mechanism proposed is that discharge reduces the personal cost of business failure, lowering the barrier to entrepreneurial risk-taking. The findings are suggestive but face significant identification challenges: legal regimes, financial systems, and cultural attitudes toward failure vary together across countries, making causal isolation difficult. The claim that American bankruptcy law has contributed to American entrepreneurial culture is plausible but should be treated as a hypothesis supported by correlational evidence rather than an established causal fact."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The actual rate of strategic versus distress-driven bankruptcy filing in consumer cases",
+      "content": "Whether most consumer bankruptcy filers are genuinely distressed or strategically gaming the system cannot be fully established from available evidence. Court records show income, assets, and debts, but not the sequence of decisions or whether the financial distress was avoidable. The 2005 reform debate turned partly on whether strategic abuse was common, with the credit industry asserting it was and consumer advocates citing research suggesting most filers had experienced job loss, medical crisis, or divorce. What can be established: surveys of filers and court record studies consistently find that most filers report serious income disruption, high medical bills, or relationship breakdown as precipitating causes. What cannot be recovered: the counterfactual behavior of filers under different legal regimes, or what fraction of filers would have avoided insolvency with better financial management. The evidence needed to resolve this question — detailed longitudinal financial records plus experimental variation in legal rules — does not exist, and the political stakes of the question mean that competing claims continue to be made with more confidence than the evidence warrants."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "Creditor and financial industry perspective",
+      "name": "The Moral Hazard Problem",
+      "content": "Lenders see generous bankruptcy law as a risk to the whole credit system. When borrowers know they can discharge debts, some will borrow more than they can repay — they have a built-in exit. The credit card and mortgage industries have pushed for tighter rules, arguing that easy discharge gets priced into interest rates that all borrowers pay. The 2005 reform was framed in exactly these terms: a means test to make sure debtors who could repay were required to do so. From the lender's view, the fresh start is a form of insurance. Borrowers pay for it collectively through higher borrowing costs. If discharge is too easy, those costs rise for everyone."
+    },
+    {
+      "perspective": "Debtors and consumer advocates",
+      "name": "The Fresh Start as a Social Good",
+      "content": "Consumer advocates and many bankruptcy lawyers argue that the system has been captured by large creditors. The typical person who files for bankruptcy is not gaming the system. They lost a job, went through a divorce, or faced a medical crisis. The 2005 reform made the process harder for exactly those people while doing little to address lenders who issued credit recklessly. The student loan exception and the rule blocking mortgage modification are, on this reading, clear examples: creditor interests shaped those rules, and debtors paid the price. The fresh start was always meant for people in genuine distress. The question is whether the law still serves them."
+    },
+    {
+      "perspective": "Comparative international perspective",
+      "name": "The Culture of Failure",
+      "content": "Outside the United States and United Kingdom, personal bankruptcy has historically carried heavier stigma and longer legal consequences. In much of continental Europe and East Asia, it has meant multi-year repayment plans, bars on certain jobs, and public listing as insolvent. These rules reflect a different view of debt: in some traditions, failing to repay is a serious moral failure, not a business decision to be resolved in court. The comparison matters because it shows the American fresh-start doctrine is a choice — one that treats failure as a normal part of market life, not a personal disgrace. Whether other countries are moving toward more debtor-friendly rules, or represent genuinely different models, is an active question in comparative law."
+    }
+  ],
+  "comparativeSummary": "Everyone agrees that unpayable debts are a problem and that some legal procedure for handling them is necessary. The split is over what the procedure is fundamentally for. Creditors insist that generous discharge rules change how people borrow — that the exit door, if too easy to reach, invites people to walk through it who could have paid. Debtors and their advocates reply that the typical bankruptcy filer was not gaming the system but was hit by forces outside their control, and that the law's increasing difficulty reflects creditor lobbying more than evidence about abuse. The international comparison adds a third dimension: different societies have made genuinely different choices about how much stigma and consequence should follow financial failure, reflecting deeper disagreements about whether bankruptcy is an individual misfortune, a market mechanism, or a moral failing.",
+  "rabbitHole": [
+    {
+      "label": "Debt",
+      "entryId": "debt",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Debt is the obligation that bankruptcy addresses. Understanding what debt is — how it operates, how it compounds, how it has been used as a tool of control — is prerequisite to understanding why a legal exit from it needed to be invented."
+    },
+    {
+      "label": "Credit",
+      "entryId": "credit",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Bankruptcy is the backstop that shapes how freely credit is extended. Lenders price in the probability of discharge when setting interest rates, meaning bankruptcy law is structural to how credit markets operate."
+    },
+    {
+      "label": "The Corporation",
+      "entryId": "corporation",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Limited liability and corporate bankruptcy let firms fail without ruining their owners — a parallel development to personal bankruptcy that extended the logic of survivable failure to organized enterprise."
+    },
+    {
+      "label": "The Great Depression",
+      "entryId": "greatDepression",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "The Depression produced mass personal and corporate insolvency on a scale that individual bankruptcy proceedings could not address — a stress test of bankruptcy law's systemic limits that shaped subsequent financial regulation."
+    },
+    {
+      "label": "Capitalism",
+      "entryId": "capitalism",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Bankruptcy is how capitalism makes failure survivable — converting insolvency from a catastrophe that freezes capital into a procedure that clears it for redeployment. The institution is inseparable from how market economies manage risk."
+    },
+    {
+      "label": "Law",
+      "entryId": "law",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Bankruptcy is a legal institution whose power comes entirely from courts and statutes. Understanding what law is and how legal systems enforce obligations explains both why bankruptcy works and what its limits are."
+    },
+    {
+      "label": "Public Debt",
+      "entryId": "publicDebt",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Sovereign bankruptcy — what happens when governments cannot pay their debts — is a related but distinct problem. Nations lack a formal bankruptcy court, and the absence of one shapes how sovereign debt crises unfold very differently from corporate or personal insolvency."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Skeel, David A.",
+      "title": "Debt's Dominion: A History of Bankruptcy Law in America",
+      "year": "2001",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The essential legal history of American bankruptcy from 1800 to the 1990s, tracing how the law developed through the competing interests of commercial creditors, investment bankers, and debtor advocates. The standard scholarly account for understanding the law's current shape."
+    },
+    {
+      "author": "Mann, Bruce H.",
+      "title": "Republic of Debtors: Bankruptcy in the Age of American Independence",
+      "year": "2002",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The essential cultural and moral history of debt and failure in early America — traces how attitudes toward insolvency shifted from moral condemnation toward legal procedure, grounding the fresh-start tradition in its historical origins. Required reading for understanding where the American approach came from."
+    },
+    {
+      "author": "Warren, Elizabeth; Westbrook, Jay Lawrence",
+      "title": "The Law of Debtors and Creditors: Text, Cases, and Problems",
+      "year": "2019",
+      "type": "Casebook",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The standard American law school casebook and the vehicle through which Warren's multi-value critique of the creditors' bargain model has shaped a generation of bankruptcy lawyers and scholars. Also the source for the entry's account of how the law's formal structure distributes losses."
+    },
+    {
+      "author": "Jackson, Thomas H.",
+      "title": "The Logic and Limits of Bankruptcy Law",
+      "year": "1986",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The founding statement of the creditors' bargain model — argues that bankruptcy law should be understood as the coordination mechanism creditors would design ex ante to prevent destructive races to seize assets. The theory this entry identifies and critiques as excluding values beyond efficient debt collection."
+    },
+    {
+      "author": "Jacoby, Melissa B.",
+      "title": "The Debt Negotiation Industry",
+      "year": "2010",
+      "type": "Journal article",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Empirical work on outcomes for consumer debtors after the 2005 reform — documents how the means test and new procedural requirements affected filing patterns and discharge outcomes, providing the evidentiary basis for the entry's claims about who the reform actually affected."
+    },
+    {
+      "author": "Warren, Charles",
+      "title": "Bankruptcy in United States History",
+      "year": "1935",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The original scholarly history of American bankruptcy law, tracing congressional debates and statutory changes from the founding through the early twentieth century. The source for the entry's account of how each legislative shift reflected competing creditor and debtor interests."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "author": "Mann, Bruce H.",
+      "title": "Republic of Debtors: Bankruptcy in the Age of American Independence",
+      "note": "Mann writes about debt and failure in early America as a moral and cultural drama, not a technical subject. His account makes the fresh-start idea feel earned rather than given — the best entry into the human story behind the law."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "author": "Warren, Elizabeth; Tyagi, Amelia Warren",
+      "title": "The Two-Income Trap: Why Middle-Class Parents Are Going Broke",
+      "note": "Warren and her daughter wrote this for general readers. No other book explains as plainly why families that look financially stable end up in bankruptcy court — a window into the contemporary economics of household financial distress."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "author": "Skeel, David A.",
+      "title": "Debt's Dominion: A History of Bankruptcy Law in America",
+      "note": "Skeel traces how American bankruptcy law developed through political contests between banker interests, commercial creditors, and debtor advocates. More readable than most legal history, and the fullest account of how the law reached its current shape."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "author": "Tabb, Charles Jordan",
+      "title": "The Law of Bankruptcy",
+      "note": "Tabb's treatise is the standard reference for practitioners and serious students, covering both doctrine and the policy debates behind it — the place to go when you want to understand how the law actually works at the ground level."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "author": "Jackson, Thomas H.",
+      "title": "The Logic and Limits of Bankruptcy Law",
+      "note": "For scholars who want to engage the theoretical foundation — Jackson's creditors' bargain model is the framework that Warren and subsequent scholars defined themselves against, and you cannot understand the advanced bankruptcy literature without it."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Film",
+      "title": "The Big Short (2015, dir. Adam McKay)",
+      "description": "Follows investors who bet against bad mortgage loans during the 2008 financial crisis. The film is vivid about how those loans were bundled and sold. But the actual bankruptcy process stays offscreen. Homeowners who lost everything appear as numbers, not people. The engineering that caused the crisis is front and center; the legal aftermath is left out entirely."
+    },
+    {
+      "type": "Novel",
+      "title": "Bleak House — Charles Dickens (1852–53)",
+      "description": "The court case of Jarndyce v. Jarndyce drags on for so long that it eats up the money it was meant to protect. Dickens was writing about inheritance law, not bankruptcy. But the image is the same: a legal process that destroys wealth while trying to settle debts. Modern bankruptcy law was built, in part, to prevent exactly this kind of slow ruin."
+    },
+    {
+      "type": "Concept",
+      "title": "Chapter 11 as business strategy",
+      "description": "In American culture, Chapter 11 has come to mean a corporate move, not a last resort. Airlines, store chains, and casinos have used it more than once. Sometimes the goal is to drop union contracts or cut pension costs, not to survive a genuine crisis. The phrase now carries a hint of cunning as much as it suggests real distress."
+    },
+    {
+      "type": "Concept",
+      "title": "The student loan exception as political flashpoint",
+      "description": "Student loan debt is almost impossible to erase in bankruptcy. It builds up interest when borrowers are broke. The government can collect it without a court order. For many younger Americans, this feels deeply unfair. The debate over student loan forgiveness is really about whether this carve-out was ever fair — and whether it still is."
+    },
+    {
+      "type": "Television",
+      "title": "Billions (Showtime, 2016–present)",
+      "description": "The hedge fund managers in Billions buy up the debts of companies that are bankrupt or near it. This is a real strategy — bankruptcy opens a door for buyers who want assets at low prices. The show is honest about how these deals look from the outside: legal, cold-blooded, and often profitable for the buyer while devastating for everyone else."
+    },
+    {
+      "type": "Phrase",
+      "title": "\"Going bankrupt\" in everyday speech",
+      "description": "People use the word far beyond its legal meaning. A friendship goes bankrupt. A party becomes morally bankrupt. An idea is called bankrupt. The word still carries the old weight of total failure. But in daily use, it drops the part about courts and fresh starts. The casual version keeps the shame the law tried to remove."
+    }
+  ],
+  "startYear": -500,
+  "endYear": 2026,
+  "regions": [
+    "Global / Transregional"
+  ],
+  "degree": 7,
+  "added": "2026-06-13"
+}
