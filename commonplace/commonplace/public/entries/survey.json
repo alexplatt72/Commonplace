@@ -1,0 +1,336 @@
+{
+  "id": "survey",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Foundations",
+  "subtype": "Conceptual Foundation",
+  "period": "c. 1895–present",
+  "title": "The Survey",
+  "summary": "The technique of learning about a whole population by carefully questioning a small, representative sample — a counterintuitive idea that lets a few thousand well-chosen people stand in for millions, and whose results depend entirely on choices about who is asked, how, and in what words.",
+  "hook": "In 1936, the Literary Digest mailed survey ballots to ten million Americans — a number never before attempted in the history of opinion polling. The magazine predicted a landslide victory for Republican Alf Landon over Franklin Roosevelt. Landon lost in one of the biggest electoral defeats in American history. That same year, a young pollster named George Gallup surveyed roughly fifty thousand people, chose them carefully, and called the election correctly. The Digest had ten million responses. Gallup had fifty thousand. The Digest was wrong. This is the founding paradox of the survey: a small sample, chosen well, beats a vast sample chosen badly. What makes the difference is not how many people you ask, but who they are.",
+  "aliases": [
+    "survey",
+    "opinion poll",
+    "public opinion polling",
+    "sample survey",
+    "questionnaire",
+    "random sampling",
+    "representative sample",
+    "margin of error",
+    "polling",
+    "social survey"
+  ],
+  "indexTerms": [
+    "George Gallup",
+    "Literary Digest",
+    "1936 election poll",
+    "sampling frame",
+    "random sample",
+    "representative sample",
+    "margin of error",
+    "confidence interval",
+    "nonresponse bias",
+    "selection bias",
+    "push poll",
+    "question wording",
+    "Likert scale",
+    "exit poll",
+    "census long form",
+    "American Community Survey",
+    "1948 Dewey Truman",
+    "Charles Booth",
+    "Seymour Sudman",
+    "Norman Bradburn",
+    "shy voter effect",
+    "interviewer effect",
+    "mode effect",
+    "telephone survey",
+    "online survey",
+    "social desirability bias",
+    "probability sampling",
+    "cluster sampling",
+    "stratified sampling",
+    "polling aggregator"
+  ],
+  "interpretiveInfluences": [
+    "George Gallup",
+    "Seymour Sudman",
+    "Norman Bradburn",
+    "Stanley Presser"
+  ],
+  "themes": [
+    "science",
+    "democracy",
+    "politics",
+    "mathematics",
+    "society",
+    "knowledge",
+    "media",
+    "publicHealth",
+    "globalHistory"
+  ],
+  "content": {
+    "beginner": {
+      "theFoundation": "Before 1936, if you wanted to know what Americans thought about something, you had two options. You could ask everyone — which took years and cost a fortune. Or you could guess. A magazine called the Literary Digest found a third way: mail ballots to millions of people. They sent ten million in 1936 and got back two million responses. Surely that would tell them who would win the election.\n\nIt did not. The Digest predicted the wrong winner by a wide margin. A pollster named George Gallup predicted the right one with just fifty thousand people. Gallup won not because he asked more people, but because he asked the right people.\n\nThis is the central idea of the survey. You do not need to ask everyone in a group to learn about that group. You need to ask a small piece of it — and that piece must be chosen carefully.\n\nThe technical word for this small piece is a sample. When the sample looks like the whole group it comes from — when it has the same mix of ages, incomes, regions, and opinions — it is called a representative sample. A representative sample of two thousand people can tell you what two hundred million think, within a small margin of error.",
+      "howItArrived": "The Digest drew its mailing list from car registrations and telephone directories. In 1936, owning a car or a phone meant you were probably wealthier than average. The Digest ended up talking mostly to richer Americans, who were more likely to vote Republican. Two million responses could not fix this problem. The error was built into who was asked, not how many.\n\nThis is called selection bias. The sample was not random. It did not represent everyone.\n\nGallup used a different method. He picked people to match the makeup of the voting public — different ages, incomes, regions, and political leanings. A balanced sample gave a more accurate picture from far fewer responses.\n\nThe lesson took decades to fully sink in. In 1948, almost every major poll said Thomas Dewey would beat Harry Truman. Truman won. The famous photo of him holding up a newspaper that read \"Dewey Defeats Truman\" has become one of the most recognized images in American political history. The polls had stopped collecting data weeks before the election, missing a late shift in public opinion. A well-designed survey is still only a snapshot of a single moment.",
+      "whatItReorganized": "The survey became the main tool for measuring public opinion. Governments use surveys to track unemployment, health, poverty, and education. The United States Census Bureau sends out the American Community Survey every year, asking detailed questions of a sample of households to fill gaps the short census form cannot.\n\nPolitical polling changed elections. Campaigns track shifts in opinion week by week. They test how voters respond to different messages. They use surveys to decide where to travel and what to say. Public polling also shapes how news covers elections, turning the vote into a running scoreboard.\n\nThe survey also created a science of question design. How you ask a question changes what people say. A survey about \"assistance to the poor\" gets different answers than one asking about \"welfare.\" The two questions cover the same policy. The different words produce different responses.",
+      "thePoliticalEconomy": "A survey sounds neutral. It is not. The choices built into a survey shape every result.\n\nSampling frames decide who can be reached. A telephone survey in the 1990s missed households without landlines. Online surveys today miss people without internet access. Those missing groups differ from the rest of the population in ways that matter to what you are trying to measure.\n\nNonresponse is a growing problem. Most people now refuse to participate in surveys. Response rates to telephone polls fell from around 35 percent in the 1990s to under 10 percent in many recent surveys. Pollsters adjust for this with statistical weights, but the adjustments are imperfect.\n\nPush polls are not really surveys at all. They are calls designed to spread negative information about a candidate while pretending to ask for opinions. Asking \"Would you vote for Candidate X if you knew he had been accused of fraud?\" is not measuring opinion. It is shaping it.",
+      "theFeedback": "Digital technology changed surveys fast. Online surveys are cheap. Millions of responses can come in hours. But internet users are not a random sample of the population. Cheap surveys also get used for things they were not designed for. Measuring customer satisfaction, checking employee morale, gathering user feedback — with little thought about whether the sample represents anyone beyond those who replied.\n\nPolling aggregators combine many different polls using statistical models. Their forecasts express election outcomes as probabilities. A candidate up five points in polls has roughly a 75 or 80 percent chance of winning, not a certainty. Many readers treat these probabilities as plain predictions rather than estimates with real uncertainty built in.\n\nThe shy voter problem is a persistent puzzle. In several recent elections, candidates did better on election day than polls had predicted. Some voters seem to tell pollsters one thing and then vote differently. Social pressure shapes survey answers just as it shapes much else in public life.",
+      "presentAndFuture": "As of the mid-2020s, the survey is under real strain. Response rates are low. Trust in institutions is lower still. Younger people are harder to reach by phone and less likely to respond to surveys. Some pollsters now use large groups of internet volunteers and adjust their answers to match the population. Others add voter files and consumer data to improve estimates.\n\nWhether any of this can match the accuracy of the 1960s and 1970s, when telephone surveys were new and response rates were high, is uncertain. The survey is not going away. The need to measure what people think, what they earn, and how healthy they are is too important. But the gap between a good survey and a bad one is as hard to spot as it has ever been."
+    },
+    "general": {
+      "theFoundation": "The Literary Digest's 1936 failure taught the central lesson of survey research: a biased sample fails at any size. The magazine's ten million responses drew heavily from car owners and telephone subscribers — wealthier voters, more likely to support the Republican candidate. Two million returned ballots could not fix a list that was wrong from the start. George Gallup used quota sampling, building a smaller group that matched the voting population by income, region, age, and party lean, and called Roosevelt's victory correctly from about fifty thousand interviews. The episode became a textbook case that representativeness, not volume, is what matters.\n\nThe deeper point is about inference. A survey does not just measure a sample. It measures a sample to draw conclusions about a whole population. That leap — from the people you asked to the far larger group you did not — is where the technique earns or loses its value. When a sample is genuinely random, probability theory makes that leap precise: a random sample of a given size will estimate the population figure within a margin of error that can be calculated. But those guarantees only hold when sampling is actually random and enough people respond.",
+      "howItArrived": "The modern survey grew from two traditions that met in the early twentieth century. The social survey movement, active in Britain and the United States between roughly 1890 and 1920, used structured questions to map the lives of the urban poor. Charles Booth's surveys of London and Seebohm Rowntree's study of poverty in York sent investigators door to door through thousands of households. The aim was description and reform, not statistical inference.\n\nThe mathematical side came from a different source. Agricultural research stations in the 1920s and 1930s, working on problems like crop yields and soil tests, developed the theory of random sampling. A random sample — where every person in a population has a known, equal chance of being chosen — lets probability theory specify how close the sample result is likely to be to the true figure. This is what gives the margin of error its meaning. It is not a rough estimate; it is a statement about the likely range of results across many repeated samples.\n\nGallup, Elmo Roper, and Archibald Crossley merged these two traditions in the 1930s by applying sampling discipline to the measurement of public opinion. Their track record over the next several elections established the survey as a reliable tool for learning what citizens think.",
+      "whatItReorganized": "The 1948 election brought the second big lesson: even a good survey is only a snapshot. Major polling organizations had stopped collecting data in mid-October, confident the race was over. Harry Truman won. The failure was not about sample quality but about timing. Opinion had shifted in the final weeks and nobody was measuring it. After 1948, pollsters pushed their last surveys closer to election day and stopped treating a lead in the polls as a closed case.\n\nOutside elections, the survey became the main tool through which governments track their populations between censuses. The United States runs a short census every ten years that counts households, but the detailed questions — about income, education, housing, and ancestry — moved to the American Community Survey, a rolling sample of about 3.5 million households conducted year-round. Social conditions change faster than a ten-year count can follow.\n\nIn public health, surveys became the chief instrument for monitoring disease, risky behaviors, and risk factors that medical records do not systematically capture. The National Health Interview Survey has tracked health conditions in the United States since 1957. Survey data on smoking rates, obesity, vaccination, and physical activity drives public health policy for tens of millions of people. Question wording matters a great deal here: how a health behavior is defined in a question shapes how common it appears to be.",
+      "thePoliticalEconomy": "A survey's results depend on choices its designers make. Those choices are rarely neutral.\n\nHow a question is worded is the most studied source of variation. Research in cognitive psychology, associated with scholars including Norbert Schwarz, showed that question order, framing, and the response scale all shift what people say. Asking about \"assistance to the poor\" draws more support than asking about \"welfare.\" Asking deficit questions before Social Security questions produces different answers than reversing the order. These are not small quirks. They can move measured opinion by ten or fifteen points.\n\nWho can be reached is a separate problem. Every survey runs off a sampling frame — a list of people who could be contacted. Telephone surveys in the 1970s and 1980s could not easily reach households without phones. Online surveys today cannot reach people who are not online. Both gaps tilt toward the same groups: people who are older, poorer, or less educated. Statistical adjustments can shrink these gaps but not close them.\n\nWho pays for a survey shapes what gets asked. Industry-funded surveys on product safety, health risks, or environmental impacts have a documented record of finding results that favor the funder. The mechanisms are usually design choices — who is studied, which comparison group is used, which outcomes are measured — rather than outright fraud. The results can still be quite wrong.",
+      "theFeedback": "The internet made surveys cheap and abundant. A poll that once took weeks and substantial funding can now be fielded overnight for a fraction of the cost. That shift flooded the media environment with opinion data. It also flooded it with poorly designed polls, unrepresentative online panels, and surveys conducted without genuine random sampling. Distinguishing careful work from sloppy work requires more expertise than most readers bring.\n\nPolling aggregators emerged to address part of this problem. They combine many individual polls using statistical methods, treating each poll as an imperfect estimate of the same underlying number and averaging them to reduce noise. The approach works well when the individual polls are off in different directions. It works poorly when they share the same bias. In several recent American elections, polls across multiple organizations consistently underestimated support for one candidate in key states. Averaging polls that share a blind spot does not correct that blind spot — it amplifies it.",
+      "presentAndFuture": "The deeper problem facing polls in the mid-2020s is not a technical one. It is a problem of who responds. In the 1970s, most people called for a telephone survey agreed to participate. Response rates have since fallen to single digits in many surveys. The people who agree to be interviewed are now a small and potentially unusual slice of the public. Pollsters adjust for this using demographic weights and modeling, but those adjustments rest on assumptions that cannot be tested with the survey data alone.\n\nSome researchers have moved away from probability sampling entirely, using large online panels and richer modeling to compensate. Others argue that better incentives and multi-mode designs can bring response rates back up. Both approaches have produced accurate results in some settings and serious errors in others. The question the field has not yet answered is whether the guarantee that made surveys trustworthy — that the sample was chosen by a process the mathematics could describe — can survive in an environment where most people refuse to be surveyed."
+    },
+    "advanced": {
+      "theFoundation": "The inferential logic of probability sampling rests on a theorem: if every member of a finite population has a known, nonzero probability of selection, then the sample mean is an unbiased estimator of the population mean, and the sampling distribution of that estimator has a standard error calculable from sample size and population variance. This is not an approximation. Under probability sampling, the margin of error in a survey is a mathematical consequence of the sampling design, not a guess. The 1936 Literary Digest failure and the subsequent rise of quota and random sampling mark the transition from intuitive data collection to probability-grounded inference — a transition that made the survey a scientific instrument rather than a large opinion petition.\n\nBut the theorem's guarantees are conditional. They hold only when the probability mechanism governs actual selection, not merely intended selection. When response rates fall below twenty percent, the realized sample is not the intended random sample. It is the subset of the intended sample willing to respond, and the missing eighty percent may differ systematically from the twenty who answered. This is not a mathematical problem but an empirical one: how much does refusal to participate correlate with the quantity being measured? When the answer is \"substantially\" — as appears to be true for political opinion in contemporary surveys — the probability-sampling guarantee has collapsed even when the design is technically correct. The practical consequence is that modern surveys often operate as non-probability samples dressed in probability-sample language, and the margin of error reported is a fiction that describes sampling variability but not the much larger source of error from nonresponse.",
+      "howItArrived": "The methodological history of the survey divides into three phases. The first, running from the social survey movement of the 1890s through the quota-sampling era of the 1930s, established the survey as an instrument of social description and democratic accountability. The second, from roughly 1950 to 1980, was the golden age of probability sampling. Random-digit dialing allowed genuine random selection from the telephone-owning population; that population was large enough and representative enough that inferences to the full adult population were defensible; and response rates of fifty to seventy percent meant that nonresponse was a manageable source of error. Researchers during this period developed the standard instruments — the Likert scale, the semantic differential, the split-sample experiment for testing question wording — that remain the workhorses of survey practice.\n\nThe third phase began in the 1990s with the proliferation of mobile phones and accelerated in the 2000s with internet diffusion and declining response rates. Random-digit dialing to landlines reached a shrinking fraction of the population. The intellectual question this created — whether adjustments based on demographic weighting could restore inferential validity — remains genuinely open. The answer depends on untestable assumptions about the relationship between response propensity and opinion formation, and the evidence from elections suggests those assumptions have failed in politically charged surveys at precisely the moments when accurate measurement mattered most.",
+      "whatItReorganized": "The survey's reorganization of political knowledge is most analytically interesting not in the horse-race polling that dominates public attention but in the longer-running academic enterprise of measuring political attitudes. The American National Election Studies, fielded since 1948, and the General Social Survey, running since 1972, have produced the longitudinal data on which most empirical political science and political sociology rests. Claims about trends in partisanship, racial attitudes, trust in institutions, and ideological sorting all derive from these instruments. The limitations of that evidence base are substantial: question wording varies across decades in ways that complicate trend analysis; survey response is not behavioral data; and attitudes measured in surveys may differ systematically from the attitudes that drive actual political behavior.\n\nThe most interesting tension in the survey's cognitive reorganization of politics concerns the relationship between measurement and the thing being measured. Public opinion, as measured by surveys, is not a pre-existing social fact that surveys discover. It is partly constructed by the act of measurement. People form opinions in response to survey questions about topics they may never have considered, using information activated by the question framing. What surveys measure, on some accounts, is less \"what the public thinks\" than \"what respondents say when asked, in these words, in this context, about this topic.\" This is not a reason to abandon surveys — the alternative of simply not measuring public opinion is worse. But it is a reason to treat survey data as a particular kind of evidence with specific production conditions, rather than as a transparent window on social reality.",
+      "thePoliticalEconomy": "The political economy of survey data operates at the intersection of three distinct interests: the state's interest in population management, the market's interest in consumer behavior, and the democratic public's interest in self-knowledge. These interests are partially aligned and partially in conflict in ways that have consequences for what gets measured and how.\n\nGovernment statistical surveys — the decennial census, the Current Population Survey, the American Community Survey — are authoritative data sources because they are conducted by institutions with legal mandates, scientific independence, and large resources. Their authority also makes them politically contested. Decisions about whether to include a citizenship question on the census, how to classify race and ethnicity, and whether to count same-sex partnerships are not methodological choices but policy choices with distributive consequences for representation and federal funding. The politicization of these instruments — which became acute in the United States in the late 2010s and early 2020s — threatens the credibility of the data on which a wide range of downstream analyses depend.\n\nCommercial market research generates far more survey data than academic or government research combined, but it operates under different epistemological norms. Accuracy is assessed against client utility rather than correspondence to population parameters. Proprietary surveys are rarely published in methodological detail, making replication or independent evaluation difficult. The proliferation of online research panels — large pools of people who agree to take surveys in exchange for small payments — has created a machinery for fast, cheap data collection that is useful for many research purposes but structurally non-representative in ways that are hard to correct.\n\nThe democratic function of the survey — its role in making public opinion legible to itself, to candidates, and to policymakers — depends on an epistemological premise that is increasingly strained: that the population being surveyed is reachable, that a representative subset will respond, and that the responses are valid indicators of the attitudes and intentions they claim to measure. When that premise holds, as it did reasonably well during the telephone survey's peak decades, surveys produce a valuable form of collective self-knowledge. When it breaks down, they produce confident-looking numbers that may be systematically misleading — and the damage to public reasoning is proportional to the confidence with which those numbers are reported.",
+      "theFeedback": "The cognitive reorganization the survey produced — teaching an entire class of institutions to reason about populations through sample statistics — created a dependency with characteristic failure modes. The most important is false precision: reporting a margin of error that accurately describes sampling variability while ignoring the much larger potential error from nonresponse, measurement, and model specification. A poll reporting that 52 percent support a policy with a margin of error of plus or minus three points creates an impression of knowledge — the figure is presumably between 49 and 55 — when the actual uncertainty, accounting for all sources of error, may be far larger.\n\nThe second failure mode is treating survey responses as direct measures of behavior. Political scientists have documented large gaps between what people say in surveys and what they do at the ballot box, in market research, and in health behavior studies. The gap is not random noise but systematic: survey responses are shaped by social desirability, question framing, and the artificiality of the interview situation in ways that can produce systematic divergence from actual behavior. The surveys that most successfully predict behavior are those that measure behavioral intentions in the most specific and contextualized terms rather than general attitudes — asking \"Will you vote in the election on November 5th?\" rather than \"Do you think it's important for citizens to vote?\"\n\nThe third failure mode is confounding measurement with reality. When government agencies use survey data to allocate resources — as they do with poverty statistics, unemployment rates, and health prevalence measures — the design choices that produced those numbers become policy-consequential. Communities that respond less well to surveys receive smaller measured needs and smaller allocations. The measurement instrument and the social reality it claims to describe are not independent.",
+      "presentAndFuture": "The methodological frontier in survey research concerns the integration of survey data with administrative records, transaction data, and behavioral traces from digital platforms. These combinations can, in principle, address the coverage and nonresponse problems that plague standalone surveys: if a researcher knows from voter files that a survey respondent voted in recent elections, or from medical records that they have a particular diagnosis, that information can be used to validate and supplement self-reported data. The privacy implications of these integrations are substantial and only partially addressed by existing legal frameworks. The epistemological implications are also nontrivial: fusing survey-generated data with administrative data creates composite measures whose properties are difficult to characterize and whose production conditions are more opaque than those of either source alone.\n\nThe fundamental unresolved question in survey methodology is whether the inferential legitimacy of probability sampling can be preserved in an environment where that sampling is practically unachievable, or whether the field must develop new epistemological frameworks appropriate to the non-probability, high-volume, heavily modeled instruments that now dominate practice. The answer will determine what role the survey plays in democratic self-knowledge over the next generation — whether it remains a reliable instrument for learning what populations think and need, or becomes primarily a tool for constructing narratives about opinion that are plausible rather than valid."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "The survey matters as the primary instrument through which modern societies learn about themselves between censuses — measuring public opinion, tracking health and poverty, testing policy interventions, and making the distribution of social conditions legible to governments, researchers, and citizens. Its history is a story about what it takes to make a small group of people stand in credibly for everyone else, and about how that credibility can be gained, lost, and fought over.",
+        "theDebate": "The central methodological debates concern the collapse of survey response rates and what it does to the inferential validity of probability sampling; whether non-probability online panels adjusted with statistical weights can substitute for declining telephone surveys; the systematic biases introduced by question wording and response context; and whether surveys measure pre-existing attitudes or construct attitudes in the act of measurement. In electoral polling specifically, the debates concern what caused repeated underestimation of Republican support in 2016 and 2020 American elections, whether it reflects differential nonresponse among certain voter types, and whether aggregation methods can compensate for shared bias across polls.",
+        "whyItMatters": "Understanding surveys is essential for reading nearly any quantitative social science research — in economics, political science, public health, and sociology, the data being analyzed almost always came from a survey, and the conclusions are only as good as the survey instrument. It also matters for reading news coverage of politics, public health, and social trends, where survey-based claims are ubiquitous. The history of survey methodology is a case study in the sociology of knowledge: how measurement techniques become institutionally entrenched, how they reorganize what questions can be asked and what counts as evidence, and how they can fail systematically while appearing to function normally.",
+        "questions": [
+          "The 1936 Literary Digest poll had ten million responses and the wrong answer. George Gallup had fifty thousand responses and the right one. What does this tell us about the relationship between the quantity of evidence and its quality? Are there other domains — medicine, history, economics — where a similar logic applies?",
+          "Survey question wording can shift measured public opinion by ten to fifteen percentage points. Does this mean surveys measure \"real\" public opinion, or that they partly create it? If polls shape the opinions they claim to measure — through media coverage, bandwagon effects, and the priming that comes from being asked a question — what are the democratic implications of widespread political polling?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "The methodological literature on surveys divides into two streams that rarely talk to each other as much as they should. The statistical tradition — represented in work by Leslie Kish's Survey Sampling (1965) and the broader tradition of design-based inference — focuses on the probability theory that grounds sampling and the formal conditions under which inferential guarantees hold. The cognitive tradition — developed through the work of Norbert Schwarz, Seymour Sudman, and Norman Bradburn, synthesized in Questions and Answers in Attitude Surveys (1992) — examines how respondents interpret questions, form answers, and report them, establishing that survey responses are cognitive constructions shaped by context, wording, and the interview situation. The two traditions rarely disagree about facts but emphasize different sources of survey error: the statistical tradition focuses on sampling, the cognitive tradition on measurement.\n\nElectoral polling specifically has attracted sustained methodological scrutiny following the failures of 2016 and 2020. The American Association for Public Opinion Research autopsy reports document the technical findings. The deeper scholarly disagreement is about whether the failures reflect a fixable methodological problem or a more structural issue with measuring the opinions of populations that are increasingly reluctant to participate in research.",
+        "evidenceAndLimits": "The history of survey methodology is unusually well-documented because practitioners have an interest in understanding their own failures. The 1936 Literary Digest, the 1948 Dewey-Truman, the 1992 British general election, and the 2016 American presidential election are all well-studied cases in which surveys failed and the reasons were subsequently analyzed in detail. This record is valuable for understanding what can go wrong. Its limits are two: first, we know more about spectacular polling failures than about the baseline accuracy of surveys on questions without a clear external criterion to validate against; second, the survey's accuracy in measuring non-electoral public opinion — where there is often no clear benchmark — is harder to assess.",
+        "takingAPosition": "The strongest interpretive position on modern survey methodology is that the instrument is under genuine structural strain that methodological refinements can partially but not fully address. The collapse in response rates is not a temporary technical problem but a consequence of changes in social trust, communication technology, and the relationship between citizens and institutions that have been building for decades. Adjusting for nonresponse requires modeling assumptions that cannot be verified from the data, and in politically polarized environments, those modeling assumptions can produce systematic bias that no amount of additional weighting will correct.\n\nThis does not mean surveys have lost their value. For many purposes — tracking trends in health behaviors, measuring the distribution of income, assessing public knowledge of specific facts — they remain the best available instrument. The error is treating them as more precise than they are, particularly for measuring politically charged attitudes among populations with low response propensity. A defensible position is that survey evidence should be reported with wider uncertainty intervals than the margin of sampling error alone, that multiple instruments (surveys, administrative data, behavioral records) should be combined where possible, and that the inferential step from sample to population should be stated as an assumption to be scrutinized rather than a guarantee to be assumed.",
+        "questions": [
+          "Survey researchers distinguish between sampling error (the mathematical uncertainty from using a sample rather than a census) and nonsampling error (wording effects, nonresponse bias, measurement error). The margin of error reported in news coverage captures only the first. In contemporary surveys with single-digit response rates, which source of error is larger, and what would honest uncertainty reporting look like?",
+          "The sociologist Pierre Bourdieu argued in 1972 that 'public opinion does not exist' — that surveys manufacture the appearance of opinion on questions that most people have not formed genuine views about. His critique applies specifically to attitude surveys that ask people to rate their support for policies they know little about. Is this a fundamental problem for democratic legitimacy, or is it a design problem that better survey instruments could address?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "The 1936 Literary Digest failure: selection bias, not sample size",
+      "content": "The Literary Digest poll's failure to predict the 1936 presidential election is well-established as a case of selection bias rather than insufficient sample size. The magazine drew its mailing list from automobile registrations and telephone directories, which in 1936 substantially overrepresented wealthier, more Republican voters. The two million returned ballots reflected the composition of the list rather than the voting population. This finding has been confirmed by multiple retrospective analyses and is now the canonical demonstration that a biased sampling frame cannot be corrected by adding more responses. Gallup's use of quota sampling, while methodologically imperfect by later standards, produced a more representative respondent pool and a correct prediction. The episode is established as the founding lesson of probability-sampling methodology."
+    },
+    {
+      "status": "established",
+      "topic": "Question wording effects on survey responses",
+      "content": "Decades of experimental research have established that how a survey question is worded systematically affects the responses obtained. Studies by Howard Schuman, Stanley Presser, Norbert Schwarz, and Seymour Sudman demonstrated that changes in question wording, response scale, question order, and context can shift measured opinion by large magnitudes — sometimes ten to twenty percentage points on contested policy questions. The mechanisms are well understood: respondents interpret questions in context, bring different considerations to mind depending on prior questions, and are subject to social desirability pressures that vary with question framing. This is an established finding with direct implications for how surveys should be designed and interpreted."
+    },
+    {
+      "status": "emerging",
+      "topic": "The causes of systematic underestimation of Republican support in 2016 and 2020 US elections",
+      "content": "Post-election analyses by the American Association for Public Opinion Research documented that surveys and polling aggregators substantially underestimated Republican vote share in several Midwestern states in both the 2016 and 2020 presidential elections. Multiple explanations have been proposed: differential nonresponse among Republican-leaning voters (sometimes called 'shy Trump voters'); herding, in which individual pollsters adjust toward the emerging consensus; and insufficient weighting by education, which has become a stronger predictor of vote choice. As of the mid-2020s, no consensus explanation has emerged. The leading hypothesis is differential nonresponse correlated with political trust — that voters with lower trust in institutions are both more likely to vote Republican and less likely to respond to surveys — but this remains contested and the evidence is not definitive."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The true distribution of opinion among non-respondents in modern surveys",
+      "content": "What evidence would resolve this: a method for comparing the opinions of survey respondents with those of the people who refused to participate, using an independent measure of opinion that does not require voluntary participation. Why that evidence is unavailable: by definition, non-respondents do not participate in surveys. Linking survey records to administrative data (voter files, tax records, medical records) can establish demographic differences between respondents and non-respondents, but not opinion differences, because opinion is not recorded in administrative systems. What can be established: that respondents and non-respondents differ demographically in documented ways; that some of those demographic differences correlate with political opinions; and therefore that nonresponse plausibly introduces opinion bias. What cannot be established: the magnitude or direction of that bias on any specific survey question, which requires knowing what non-respondents would have said — information that is structurally unavailable. This means that the nonresponse bias in any given survey cannot be calculated, only estimated through modeling assumptions that themselves require validation."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "Government statistical agencies",
+      "name": "The Survey as Instrument of State Knowledge",
+      "content": "National statistical offices built surveys as tools for governing large populations. A government cannot know where to build hospitals, how to set minimum wages, or where to direct poverty programs without current data on who needs what. The survey, from this angle, is a machine for making the population knowable. Its design choices are not neutral technical decisions. Choosing how to define employment determines the unemployment rate, which shapes monetary policy. Deciding which racial categories appear on the American Community Survey affects which communities qualify for federal funding. The populations hardest to count in surveys — people without fixed addresses, undocumented immigrants, those living in crowded households — tend to have the greatest need for the resources those surveys help allocate."
+    },
+    {
+      "perspective": "Democratic theory",
+      "name": "The Survey as Mirror of Public Opinion",
+      "content": "In democratic thought, the survey has a specific job: making ordinary citizens' views visible to their representatives and to each other. Before regular polling, leaders had to read public opinion through elections, newspaper editorials, and letters — sources slow, noisy, and biased toward organized groups. Surveys let citizens see what their fellow citizens think in something closer to real time. But the question of whether this helps democracy or warps it is unresolved. When polls dominate election coverage, they can crowd out discussion of policy. When a candidate is shown trailing in the polls, some supporters stop donating, volunteers stop turning up, and the gap can widen for reasons that have nothing to do with the candidate's platform. The tool meant to reflect opinion can push it in a direction."
+    },
+    {
+      "perspective": "Social science methodology",
+      "name": "The Survey as Cognitive Construction",
+      "content": "Researchers in cognitive psychology found that people do not retrieve pre-formed attitudes when they answer survey questions. They construct answers on the spot, using whatever the question brings to mind. The sociologist Pierre Bourdieu argued that surveys create the illusion of mass opinion on topics most people have never seriously considered. When you ask a representative sample whether they support a particular trade policy, you are not measuring views that existed before you called. You are producing them. This does not make surveys worthless, but it changes what they can claim. A poll finding 58 percent support for a policy means 58 percent of respondents, asked this question in this way, gave answers coded as supporting — not that 58 percent of citizens have weighed the policy and prefer it."
+    }
+  ],
+  "comparativeSummary": "The survey looks different depending on what you think it is for. To government agencies, it is an instrument of state knowledge — a mechanism for making populations legible enough to govern, whose design choices have direct distributional consequences. To democratic theorists, it is a mirror for public opinion, flawed but essential, whose value lies in making citizen preferences visible to each other and to their representatives. To cognitive scientists and methodological critics, it is partly a construction device — producing responses that reflect question design as much as underlying attitudes. These perspectives do not contradict each other so much as target different stages of the same process: how data is collected, how it is used, and what it actually represents. Holding all three together produces a more honest picture of what the survey can and cannot establish about the societies it claims to describe.",
+  "rabbitHole": [
+    {
+      "label": "Statistics",
+      "entryId": "statistics",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The survey is one instrument within the broader science of statistics; sampling theory, confidence intervals, and margin of error are statistical concepts that give surveys their inferential power."
+    },
+    {
+      "label": "Probability",
+      "entryId": "probability",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Probability theory is the mathematical foundation of random sampling; the guarantee that a well-chosen sample can represent a population rests entirely on the laws of probability."
+    },
+    {
+      "label": "The Census",
+      "entryId": "census",
+      "status": "published",
+      "relationship": "Contrasting",
+      "reason": "The census aims to count everyone; the survey deliberately samples a fraction and generalizes. The contrast defines what is gained and lost when you trade completeness for speed and economy."
+    },
+    {
+      "label": "Democracy",
+      "entryId": "democracy",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Democratic theory gave the survey its civic function — making citizen preferences legible to representatives and to each other — while polling has in turn shaped how democratic campaigns, media, and legislatures operate."
+    },
+    {
+      "label": "Measurement",
+      "entryId": "measurement",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Every survey question is a measurement instrument; validity and reliability — the core concerns of measurement theory — determine whether survey responses track the attitudes and behaviors they claim to capture."
+    },
+    {
+      "label": "Public Health",
+      "entryId": "publicHealth",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Health surveys have become the primary tool for tracking disease burden, risk factors, and behavioral trends in populations between census cycles; much of what governments know about health disparities comes from survey instruments."
+    },
+    {
+      "label": "GDP",
+      "entryId": "gDP",
+      "status": "planned",
+      "relationship": "Parallel",
+      "reason": "Like GDP, the survey is a statistical construction that reduces the complexity of social reality to a number — and like GDP, it shapes policy and public understanding in ways that depend heavily on contested design choices."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Sudman, Seymour and Bradburn, Norman M.",
+      "title": "Asking Questions: A Practical Guide to Questionnaire Design",
+      "year": "1982",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Sudman and Bradburn synthesized decades of cognitive and methodological research on question wording, response formats, and interviewer effects into practical design guidance. No other single volume covers the mechanics of how surveys produce their data as thoroughly or as clearly."
+    },
+    {
+      "author": "Groves, Robert M. and others",
+      "title": "Survey Methodology",
+      "year": "2009",
+      "type": "Academic monograph",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The definitive scholarly treatment of the total survey error framework — covers sampling, nonresponse, measurement, and mode effects within a unified model. The standard graduate-level reference for understanding what can go wrong in surveys and why."
+    },
+    {
+      "author": "Schwarz, Norbert and Sudman, Seymour (eds.)",
+      "title": "Answering Questions: Methodology for Determining Cognitive and Communicative Processes in Survey Research",
+      "year": "1996",
+      "type": "Academic monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The foundational collection on cognitive survey methodology — establishes how respondents interpret questions, search memory, and formulate answers, demonstrating that survey responses are cognitive constructions shaped by context. Grounds the entry's treatment of question wording effects."
+    },
+    {
+      "author": "Converse, Jean M.",
+      "title": "Survey Research in the United States: Roots and Emergence 1890-1960",
+      "year": "1987",
+      "type": "Academic monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The definitive intellectual history of the survey from the social survey movement through the development of probability sampling — essential for understanding how the instrument developed and why the choices made in the 1930s and 1940s still shape practice today."
+    },
+    {
+      "author": "American Association for Public Opinion Research",
+      "title": "An Evaluation of 2016 Election Polls in the United States",
+      "year": "2017",
+      "type": "Report",
+      "reliability": "Credible",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The primary post-mortem on the 2016 polling failures — documents the pattern of errors, evaluates competing explanations, and identifies differential nonresponse by education as the leading candidate. Essential for the entry's treatment of modern polling's structural problems."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "The Myth of the Rational Voter: Why Democracies Choose Bad Policies",
+      "author": "Bryan Caplan",
+      "note": "A provocative entry point to the political stakes of polling — Caplan asks what public opinion surveys actually measure and whether what they capture translates into good collective decisions. Good for readers who come to the survey wanting to question it."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are",
+      "author": "Seth Stephens-Davidowitz",
+      "note": "Readable and surprising — compares what people say in surveys with what they reveal through internet search behavior, showing where the two diverge and what the gap means for understanding public attitudes."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Averaged American: Surveys, Citizens, and the Making of a Mass Public",
+      "author": "Sarah E. Igo",
+      "note": "Igo traces how mid-twentieth-century polling taught Americans to understand themselves as statistical populations and shapes the entry's account of the survey's cultural effects. The right book for someone who wants the history of what the survey did to democratic self-understanding."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Asking Questions: A Practical Guide to Questionnaire Design",
+      "author": "Seymour Sudman and Norman Bradburn",
+      "note": "The practitioner's guide to how surveys produce their data — readable without a statistics background; essential for anyone who wants to understand why question wording and design choices matter so much."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Survey Methodology",
+      "author": "Robert M. Groves and others",
+      "note": "The authoritative scholarly treatment — covers the total survey error framework from sampling through nonresponse to measurement; demanding but the definitive reference for researchers who need to understand what the numbers actually mean."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Event",
+      "title": "The 1936 Literary Digest poll and the Gallup upset",
+      "description": "The Digest's ten million ballots looked like a triumph until they predicted the wrong winner. People retell it as proof that bigger samples are better. The real lesson goes the other way: a biased sample fails at any size. The Digest surveyed car owners and phone users, not ordinary voters. That part of the story tends to get dropped, leaving a myth instead of a lesson."
+    },
+    {
+      "type": "Event",
+      "title": "Truman holds up the Chicago Tribune: 'Dewey Defeats Truman' (1948)",
+      "description": "The photograph of Harry Truman grinning and holding up a newspaper that had already printed the wrong winner became one of the most recognized political images of the twentieth century. Polls had stopped data collection weeks early, missing a late shift toward Truman. The image is remembered as proof that polls can be wrong; what it actually shows is that a snapshot taken too early will miss movement that happens after the shutter clicks."
+    },
+    {
+      "type": "Concept",
+      "title": "The margin of error in election night coverage",
+      "description": "Every poll reports a margin of error, usually plus or minus three points. Viewers take this as the range where the real number probably sits. But that margin only covers sampling variability. It says nothing about the larger errors from nonresponse or question wording. A poll showing 52 percent with a three-point margin sounds precise. The true uncertainty is wider. The phrase signals caution but delivers less than it promises."
+    },
+    {
+      "type": "Phrase",
+      "title": "Push poll",
+      "description": "The term 'push poll' entered political vocabulary in the 1990s to describe calls that posed as surveys but were actually designed to spread damaging claims about candidates. The name stuck because it captured something real: a survey can be used to push opinion rather than measure it. The phrase is now applied loosely to any poll that seems biased, sometimes incorrectly, but it points to a genuine vulnerability in an instrument that depends on trust."
+    },
+    {
+      "type": "Controversy",
+      "title": "The 2016 polling miss and its aftermath",
+      "description": "Polls underestimated Donald Trump's support in key states. News coverage declared polling broken. The real failures were concentrated in a few Midwestern states and traced mainly to underrepresenting less-educated white voters. National polls were closer to the mark. The episode showed how fast one bad prediction becomes a verdict on an entire practice, and how hard it is to tell a fixable problem from a deeper one."
+    }
+  ],
+  "startYear": 1895,
+  "endYear": 2026,
+  "regions": ["Global"],
+  "degree": 7,
+  "added": "2026-06-13"
+}

@@ -2303,6 +2303,22 @@
     "added": "2026-06-13"
   },
   {
+    "id": "gPS",
+    "title": "GPS",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1973–present",
+    "status": "published",
+    "summary": "A constellation of satellites carrying atomic clocks that lets any receiver on Earth calculate its precise location and the exact time, for free, at any moment. Built as a US military navigation system, GPS was opened to civilian use after a 1983 airline disaster, its full accuracy unlocked in 2000. It dissolved one of the oldest human problems — knowing where you are — into invisible infrastructure, then quietly wove its timing signal into the hidden rhythm of financial networks, power grids, and precision weapons, making modern civilization dependent on a faint pulse from orbit.",
+    "startYear": 1973,
+    "endYear": null,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "glass",
     "title": "Glass",
     "template": "Foundations",
@@ -4941,6 +4957,22 @@
     "added": "2026-05-31"
   },
   {
+    "id": "radio",
+    "title": "Radio",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1890s–present",
+    "status": "published",
+    "summary": "The technology that sent sound through the air without wires — and by reaching everyone at once, created the first true mass medium and the modern broadcast nation. Radio collapsed the distance between a single voice and millions of listeners, making it possible, for the first time, for one person to speak intimately to a whole country simultaneously. That power built democratic movements and fueled dictatorships alike.",
+    "startYear": 1895,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-13"
+  },
+  {
     "id": "railways",
     "title": "Railways",
     "template": "Foundations",
@@ -5942,6 +5974,33 @@
     "added": "2026-06-13"
   },
   {
+    "id": "survey",
+    "title": "The Survey",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 1895–present",
+    "themes": [
+      "science",
+      "democracy",
+      "politics",
+      "mathematics",
+      "society",
+      "knowledge",
+      "media",
+      "publicHealth",
+      "globalHistory"
+    ],
+    "status": "published",
+    "summary": "The technique of learning about a whole population by carefully questioning a small, representative sample — a counterintuitive idea that lets a few thousand well-chosen people stand in for millions, and whose results depend entirely on choices about who is asked, how, and in what words.",
+    "startYear": 1895,
+    "endYear": 2026,
+    "regions": [
+      "Global"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "swahiliCoast",
     "title": "The Swahili Coast",
     "template": "Places",
@@ -6037,6 +6096,22 @@
     "added": "2026-06-13"
   },
   {
+    "id": "telegraph",
+    "title": "The Telegraph",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1840s–1900s",
+    "status": "published",
+    "summary": "The first electrical technology to send complex written information faster than a human could carry it. By pulsing electrical signals along a wire in coded patterns, the telegraph separated communication from transportation for the first time in history. A message that once required days of travel could now arrive in seconds. The network of copper wire that spread across continents and beneath oceans in the nineteenth century remade news, markets, diplomacy, and warfare, laying the foundation for every wired communication system that followed.",
+    "startYear": 1844,
+    "endYear": 1906,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-06-13"
+  },
+  {
     "id": "telephone",
     "title": "The Telephone",
     "template": "Foundations",
@@ -6053,19 +6128,19 @@
     "added": "2026-06-13"
   },
   {
-    "id": "telegraph",
-    "title": "The Telegraph",
+    "id": "television",
+    "title": "Television",
     "template": "Foundations",
     "subtype": "Material Foundation",
-    "period": "1840s–1900s",
+    "period": "1927–present",
     "status": "published",
-    "summary": "The first electrical technology to send complex written information faster than a human could carry it. By pulsing electrical signals along a wire in coded patterns, the telegraph separated communication from transportation for the first time in history. A message that once required days of travel could now arrive in seconds. The network of copper wire that spread across continents and beneath oceans in the nineteenth century remade news, markets, diplomacy, and warfare, laying the foundation for every wired communication system that followed.",
-    "startYear": 1844,
-    "endYear": 1906,
+    "summary": "The technology that added the moving image to broadcasting — and became, for most of the twentieth century, the single screen around which families, nations, and consumer culture organized themselves, before cable and streaming shattered the shared audience into a billion private feeds.",
+    "startYear": 1927,
+    "endYear": 2026,
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 7,
+    "degree": 10,
     "added": "2026-06-13"
   },
   {
@@ -6972,6 +7047,22 @@
       "East Asia"
     ],
     "degree": 6,
+    "added": "2026-06-13"
+  },
+  {
+    "id": "satellite",
+    "title": "The Satellite",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1957�present",
+    "status": "published",
+    "summary": "The artificial satellite is a machine placed in orbit to relay signals and watch the Earth � a vantage point above the planet that rewired global communication, weather forecasting, war, and surveillance. From Sputnik's launch in 1957 through the dense constellations overhead today, satellites became the hidden infrastructure behind live television, the daily weather forecast, precision warfare, and the surveillance state, all drawing on the same god's-eye view of the planet.",
+    "startYear": 1957,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
     "added": "2026-06-13"
   }
 ]

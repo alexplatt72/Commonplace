@@ -153,6 +153,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "The Alan Turing entry describes the theoretical foundations of computation — the stored-program machine whose architecture made the personal computer possible, and therefore made VisiCalc and its successors conceivable as mass-market tools."
+    },
+    {
+      "label": "GPS",
+      "entryId": "gPS",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The Turing entry traces how theoretical computer science created the computational architecture that processes GPS signals — the receiver must solve simultaneous equations from four satellites to compute a position, a task requiring exactly the programmable digital computation Turing formalized. Without the stored-program computer, GPS would remain a theoretical geometry problem."
     }
   ],
   "reference": [
