@@ -173,7 +173,7 @@
     {
       "label": "Inflation",
       "entryId": "inflation",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "Inflation and interest are inseparable in practice: the real interest rate — the rate after subtracting inflation — determines whether a lender gains or loses purchasing power. Central banks set interest rates primarily to control inflation, making the two concepts the twin levers of monetary policy."
     },
@@ -183,6 +183,13 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "Bonds are instruments for borrowing at a fixed interest rate over a specified term. The bond market is where interest rates are discovered and where the cost of government borrowing is set — the practical arena in which abstract interest-rate theory becomes prices that billions of people live with."
+    },
+    {
+      "label": "GDP",
+      "entryId": "gDP",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Interest is the price of time — the mechanism that connects present production to future claims — and the entry's history of how lending rates were set and disputed prefigures the twentieth-century project of managing national growth through monetary policy and GDP targets."
     }
   ],
   "reference": [

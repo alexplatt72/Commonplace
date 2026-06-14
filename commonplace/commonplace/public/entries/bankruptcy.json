@@ -9,8 +9,29 @@
   "title": "Bankruptcy",
   "summary": "The legal procedure through which societies decide who loses how much when debts cannot be paid — converting the old sin of insolvency from a personal disgrace into an orderly process, and balancing the honest debtor's claim to a fresh start against the creditor's claim to be repaid.",
   "hook": "In medieval Italian market towns, a moneylender who could no longer pay was said to have his bench broken in the public square — banca rotta, the 'broken bench.' The word 'bankruptcy' descends from that phrase, though whether the bench was ever literally smashed is uncertain. The message was brutal and clear: failure meant ruin, shame, and the end of your livelihood. For most of history, people who could not pay their debts faced prison, forced labor, or the sale of their families. Today, in many legal systems, insolvency is a court-supervised process: assets are gathered, creditors are ranked, some debts may be discharged, and the debtor may receive a legally defined fresh start. That journey — from the broken bench to the fresh start — is the story of how capitalism learned to make failure survivable.",
-  "aliases": ["insolvency", "Chapter 7", "Chapter 11", "fresh start", "debt discharge", "liquidation", "reorganization"],
-  "indexTerms": ["banca rotta", "broken bench", "debtors prison", "discharge of debt", "fresh start doctrine", "liquidation", "reorganization", "Chapter 7", "Chapter 11", "insolvency", "creditor", "debtor"],
+  "aliases": [
+    "insolvency",
+    "Chapter 7",
+    "Chapter 11",
+    "fresh start",
+    "debt discharge",
+    "liquidation",
+    "reorganization"
+  ],
+  "indexTerms": [
+    "banca rotta",
+    "broken bench",
+    "debtors prison",
+    "discharge of debt",
+    "fresh start doctrine",
+    "liquidation",
+    "reorganization",
+    "Chapter 7",
+    "Chapter 11",
+    "insolvency",
+    "creditor",
+    "debtor"
+  ],
   "themes": [
     "law",
     "capitalism",
@@ -155,6 +176,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Sovereign bankruptcy — what happens when governments cannot pay their debts — is a related but distinct problem. Nations lack a formal bankruptcy court, and the absence of one shapes how sovereign debt crises unfold very differently from corporate or personal insolvency."
+    },
+    {
+      "label": "GDP",
+      "entryId": "gDP",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Bankruptcy is the legal reckoning that happens when debts exceed productive output — the mirror image of what GDP is designed to measure; the entry's account of how insolvency law shapes investment and risk-taking is inseparable from the question of what national income accounting is actually tracking."
     }
   ],
   "reference": [

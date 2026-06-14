@@ -168,7 +168,7 @@
     {
       "label": "Inflation",
       "entryId": "inflation",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "For a state that borrows in its own currency, the real ceiling on public debt is not insolvency but inflation, the rise in prices that follows from creating too much money to meet obligations. A focused entry on inflation develops the constraint this entry names as the true limit on sovereign borrowing."
     },
@@ -178,6 +178,13 @@
       "status": "published",
       "relationship": "Contrasting",
       "reason": "Bankruptcy is the orderly legal process by which a private borrower discharges debts it cannot pay; sovereign default has no such court and no clean procedure. The contrast sharpens what is distinctive about a debtor that cannot be hauled before a judge."
+    },
+    {
+      "label": "GDP",
+      "entryId": "gDP",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Public debt's entry shows how governments have borrowed against anticipated future income for centuries; GDP emerged partly as the instrument that let states calculate how much they could borrow — making the debt-to-GDP ratio the central fiscal metric of modern governance."
     }
   ],
   "reference": [
