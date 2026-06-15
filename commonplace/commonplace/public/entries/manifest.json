@@ -1202,7 +1202,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 30,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -2476,7 +2476,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 17,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -2525,7 +2525,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 13,
+    "degree": 9,
     "added": "2026-06-01"
   },
   {
@@ -2864,7 +2864,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 17,
+    "degree": 8,
     "added": "2026-06-01"
   },
   {
@@ -4342,7 +4342,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 14,
+    "degree": 8,
     "added": "2026-06-01"
   },
   {
@@ -5751,7 +5751,7 @@
       "Latin America",
       "Europe"
     ],
-    "degree": 7,
+    "degree": 9,
     "added": "2026-06-13"
   },
   {
@@ -6400,7 +6400,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 7,
+    "degree": 6,
     "added": "2026-05-31"
   },
   {
@@ -7031,7 +7031,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-13"
   },
   {
@@ -9377,7 +9377,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9553,7 +9553,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9619,6 +9619,86 @@
       "Europe"
     ],
     "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "furTrade",
+    "title": "The Fur Trade",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1580 – 1870 CE",
+    "status": "published",
+    "summary": "The vast commercial system that linked Indigenous hunters and middlemen across North America to European markets through the exchange of furs — above all beaver — for manufactured goods. For two centuries it was a central engine of colonial expansion, ecological change, and Indigenous transformation, built on Indigenous knowledge and diplomacy as much as European capital.",
+    "startYear": 1580,
+    "endYear": 1870,
+    "regions": [
+      "North America"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "indiraGandhi",
+    "title": "Indira Gandhi",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1917–1984",
+    "status": "published",
+    "summary": "India's only female prime minister and its dominant political figure for nearly two decades, who championed the poor with her 'Garibi Hatao' (abolish poverty) politics, nationalized banks, and led India to a decisive victory in the 1971 war that helped create Bangladesh, then in 1975 declared a state of Emergency that suspended civil liberties, jailed the opposition, and censored the press — the gravest assault on Indian democracy by an elected leader — before her 1984 assassination by two of her Sikh bodyguards, months after she ordered the army into the Golden Temple, set off anti-Sikh massacres that killed thousands.",
+    "startYear": 1917,
+    "endYear": 1984,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "maroons",
+    "title": "Maroons",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "16th century–19th century",
+    "status": "published",
+    "summary": "The enslaved people across the Americas who escaped bondage and built free, self-governing communities in forests, mountains, and swamps, from Brazil to Jamaica to Suriname to the United States. Across more than three centuries, marronage was the longest-running campaign of resistance to slavery in the hemisphere: freedom not hoped for but seized, defended by force, and sometimes wrested into formal treaties, a few of which bound the maroons to return future runaways.",
+    "startYear": 1500,
+    "endYear": 1888,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "undergroundRailroad",
+    "title": "The Underground Railroad",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1800 – 1865 CE",
+    "status": "published",
+    "summary": "The loose, secret, and largely Black-led web of routes, safe houses, and helpers that aided enslaved people escaping the American South before the Civil War — best understood not as a benevolent white rescue operation but as the visible edge of the enslaved freeing themselves.",
+    "startYear": 1800,
+    "endYear": 1865,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "trailOfTears",
+    "title": "The Trail of Tears",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1830–1839",
+    "status": "published",
+    "summary": "The forced removal, during the 1830s, of the Indigenous nations of the American Southeast — the Cherokee, Muscogee (Creek), Choctaw, Chickasaw, and Seminole — from their homelands to territory west of the Mississippi River. Driven by settler hunger for Native land and authorized by the Indian Removal Act of 1830, the expulsions killed thousands on the journey, above all during the Cherokee removal of 1838–39. The nations resisted removal by every lawful means, including a Supreme Court victory the federal government refused to enforce. They endured the removal and rebuilt themselves in the West, and the Cherokee, Muscogee (Creek), Choctaw, Chickasaw, and Seminole nations are self-governing peoples today.",
+    "startYear": 1830,
+    "endYear": 1839,
+    "regions": [
+      "North America"
+    ],
+    "degree": 5,
     "added": "2026-06-15"
   }
 ]
