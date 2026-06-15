@@ -895,7 +895,7 @@
     "regions": [
       "Americas"
     ],
-    "degree": 4,
+    "degree": 7,
     "added": "2026-06-13"
   },
   {
@@ -5524,7 +5524,7 @@
       "The Americas",
       "Europe"
     ],
-    "degree": 26,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -6031,7 +6031,7 @@
       "Sub-Saharan Africa",
       "North Africa & Middle East"
     ],
-    "degree": 12,
+    "degree": 8,
     "added": "2026-06-13"
   },
   {
@@ -9275,7 +9275,7 @@
       "Indian Ocean",
       "Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9327,6 +9327,89 @@
       "Sub-Saharan Africa"
     ],
     "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "indianOceanSlaveTrade",
+    "title": "The Indian Ocean Slave Trade",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 800 – 1900s CE",
+    "status": "published",
+    "summary": "The long-running system that carried enslaved Africans and others across the western Indian Ocean to Arabia, Persia, South Asia, and the islands — older and longer-lasting than the Atlantic trade, different in its uses, and far less remembered.",
+    "startYear": 800,
+    "endYear": 1909,
+    "regions": [
+      "Sub-Saharan Africa",
+      "North Africa & Middle East",
+      "South Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "mauritius",
+    "title": "Mauritius",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1638 CE (first sustained settlement) to present",
+    "status": "published",
+    "summary": "A small volcanic island in the western Indian Ocean with no native human population until the seventeenth century — where the Dutch, French, and British successively built a sugar-plantation colony worked by enslaved Africans and then by indentured laborers from India, producing in a few generations an entirely new multi-ethnic society from scratch. Mauritius was also, through the fate of the dodo, the world's first recorded lesson that human arrival could drive a species to extinction.",
+    "startYear": 1638,
+    "endYear": 2026,
+    "regions": [
+      "Indian Ocean",
+      "Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "mississippianCulture",
+    "title": "The Mississippian Culture",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 800–1600 CE",
+    "status": "published",
+    "summary": "The network of maize-farming, mound-building societies that flourished across the river valleys of the southeastern and midwestern United States from roughly 800 to 1600 CE. Not a single empire but a shared world of ranked chiefdoms, monumental earthworks, and common religious imagery, the Mississippian culture produced the most populous and politically complex Native societies north of Mexico. Its largest center was the city of Cahokia, near modern St. Louis. Many Mississippian centers rose and declined over centuries before Europeans arrived, and the peoples did not vanish: their descendants include the Muscogee (Creek), Choctaw, Chickasaw, and other Native nations of the American Southeast.",
+    "startYear": 800,
+    "endYear": 1600,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "ancestralPuebloans",
+    "title": "The Ancestral Puebloans",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1st century–1300 CE",
+    "status": "published",
+    "summary": "The farming people of the arid Four Corners region of the American Southwest, where Colorado, Utah, Arizona, and New Mexico meet, who built one of North America's most remarkable architectural and agricultural traditions between roughly the first centuries CE and about 1300 CE. They mastered dryland farming of maize, beans, and squash, developed from pit-house villages into above-ground masonry pueblos, and raised the great houses centered on Chaco Canyon and the cliff dwellings of Mesa Verde. Long called the \"Anasazi,\" a Navajo-derived term many Pueblo descendants reject, they are now widely called Ancestral Puebloans. They did not vanish when they left the Four Corners in the late 1200s; they migrated south and east, and their descendants are the living Pueblo nations of today, including the Hopi, Zuni, Acoma, and the Rio Grande pueblos.",
+    "startYear": 1,
+    "endYear": 1300,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "chacoCanyon",
+    "title": "Chaco Canyon",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 850 – 1150 CE (Chacoan florescence); reorganization and migration after c. 1150 CE",
+    "status": "published",
+    "summary": "The monumental center of the Ancestral Puebloan world in the high desert of northwestern New Mexico between roughly 850 and 1150 CE — a place of enormous multi-story great houses, precise astronomical alignments, and a network of straight roads, built in a harsh landscape, debated by archaeologists, and held sacred by the Pueblo nations descended from its builders.",
+    "startYear": 850,
+    "endYear": 1150,
+    "regions": [
+      "Americas"
+    ],
+    "degree": 6,
     "added": "2026-06-15"
   }
 ]
