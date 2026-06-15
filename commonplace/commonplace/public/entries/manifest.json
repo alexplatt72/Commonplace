@@ -6269,7 +6269,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 22,
+    "degree": 7,
     "added": "2026-05-30"
   },
   {
@@ -8677,7 +8677,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 5,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -8693,7 +8693,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-14"
   },
   {
@@ -8904,7 +8904,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -9056,7 +9056,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9072,7 +9072,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9157,6 +9157,88 @@
     "summary": "The Mfecane was a period of widespread war, migration, and political upheaval across southern Africa in roughly the 1810s to 1830s, during which established communities broke apart and new, more militarized states rose, including the Zulu, the Ndebele under Mzilikazi, the Sotho under Moshoeshoe, and the Swazi. It is also one of the most fiercely contested stories in African history: the older account blamed the upheaval largely on Zulu expansion under Shaka, while from the 1980s revisionists argued that this picture was partly a myth that obscured the role of European and Griqua slave and labor raiding and that later served to justify white settlement. Historians now tend to read the period as a tangle of internal and external causes, making the Mfecane as much a lesson in how the past is written and used as it is an event in the past.",
     "startYear": 1815,
     "endYear": 1840,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "hereroAndNamaGenocide",
+    "title": "The Herero and Nama Genocide",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1904–1908",
+    "status": "published",
+    "summary": "The destruction of the Ovaherero and Nama peoples by imperial Germany in its colony of German South-West Africa, present-day Namibia, between 1904 and 1908 — a colonial war of conquest that turned into a deliberate campaign to wipe out two peoples, complete with an explicit extermination order and a system of concentration camps. Widely described as the first genocide of the twentieth century, it killed a very large share of the Herero and roughly half the Nama, though exact figures are estimated and debated. Long neglected, it became the subject of an argument over whether it prefigured later European mass violence, and was officially recognized by Germany only in 2021.",
+    "startYear": 1904,
+    "endYear": 1908,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "congoFreeState",
+    "title": "The Congo Free State",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1885–1908",
+    "status": "published",
+    "summary": "The vast central African territory that one man, King Leopold II of Belgium, ruled from 1885 to 1908 not as a nation but as personal property, running it as a forced-labor rubber-extraction regime whose violence and population loss made it one of the great catastrophes of the colonial era, and whose exposure produced the first great international human-rights campaign before the territory passed to the Belgian state.",
+    "startYear": 1885,
+    "endYear": 1908,
+    "regions": [
+      "Africa",
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "battleOfAdwa",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "March 1, 1896",
+    "title": "The Battle of Adwa",
+    "summary": "The day an African army beat a European empire and kept its country free",
+    "status": "published",
+    "startYear": 1896,
+    "endYear": 1896,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "algerianWar",
+    "title": "The Algerian War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1954–1962",
+    "status": "published",
+    "summary": "The war (1954–1962) through which Algeria won independence from France — fought over territory France legally treated as part of itself, against a Muslim majority excluded by a European settler minority. It brought down the French Fourth Republic, exposed the systematic use of torture by a democratic state, and became the twentieth century's defining case of decolonization as both catastrophe and reckoning.",
+    "startYear": 1954,
+    "endYear": 1962,
+    "regions": [
+      "Africa",
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "mauMauUprising",
+    "title": "The Mau Mau Uprising",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1952–1960 CE",
+    "status": "published",
+    "summary": "An armed rebellion, centered on Kenya's Kikuyu people, against British colonial rule and the land dispossession at its heart — and the counterinsurgency that crushed it, with its mass detention camps, forced 'villagization,' and collective punishment, which has become one of the most documented and damning cases of violence in the late British Empire, and a story whose telling was for decades suppressed through destroyed and hidden colonial records.",
+    "startYear": 1952,
+    "endYear": 1960,
     "regions": [
       "Sub-Saharan Africa"
     ],
