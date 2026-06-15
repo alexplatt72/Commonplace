@@ -353,6 +353,19 @@ const filesToProcess = SINGLE_ENTRY
 // Track all IDs seen for duplicate detection
 const seenIds = new Map(); // id → filename
 
+// ── Mojibake / encoding-corruption guard ─────────────────────────────────────
+// Detects the signature of UTF-8 text that was decoded as Windows-1252/Latin-1
+// (e.g. an em-dash "—" becoming "Ã¢â‚¬â€"). This shipped silently to production
+// once (2026-06, manifest.json), so it is now a HARD FAIL on every entry file
+// AND the manifest. Written with \u escapes so this source file is pure ASCII
+// and cannot itself be re-encoded into a broken pattern.
+const MOJIBAKE_RE = /\u00e2\u20ac|\u00e2\u201a\u00ac|\u00c3[\u0080-\u00ff\u2013\u2014\u0152\u0153]|\u00c2[\u00a0-\u00bf]/;
+function mojibakeSnippet(text) {
+  const m = text.match(MOJIBAKE_RE);
+  if (!m) return null;
+  return text.slice(Math.max(0, m.index - 14), m.index + 12).replace(/\s+/g, ' ');
+}
+
 for (const fname of filesToProcess) {
   const raw = fs.readFileSync(path.join(ENTRIES_DIR, fname), 'utf8');
   let entry;
@@ -372,6 +385,11 @@ for (const fname of filesToProcess) {
 
   const id       = entry.id || fname.replace('.json', '');
   const fails    = [];
+
+  // 0. Encoding integrity — hard fail on UTF-8/Windows-1252 mojibake.
+  if (MOJIBAKE_RE.test(raw)) {
+    fails.push(`Mojibake / encoding corruption (UTF-8 decoded as Windows-1252) — near "${mojibakeSnippet(raw)}". Re-save this file as UTF-8.`);
+  }
   const warnings = [];
   const advisories = [];
 
@@ -1009,6 +1027,27 @@ for (const fname of filesToProcess) {
       layers: layerStats,
     },
   });
+}
+
+// ── Encoding integrity for the manifest + sibling data files ─────────────────
+// manifest.json mirrors entry text (period/summary/title) and feeds the browse
+// UI directly, but it is NOT in the entry loop above. A mojibake bug here ships
+// straight to the cards (this happened once, 2026-06). Gate it on every full-dir
+// validate (i.e. the pre-commit hook and pre-push), not on focused --entry runs.
+if (!SINGLE_ENTRY && !ONLY) {
+  for (const fname of NON_ENTRY_FILES) {
+    const fp = path.join(ENTRIES_DIR, fname);
+    if (!fs.existsSync(fp)) continue;
+    const raw = fs.readFileSync(fp, 'utf8');
+    if (MOJIBAKE_RE.test(raw)) {
+      globalFails++;
+      allResults.push({
+        id: fname, fname,
+        fails: [`Mojibake / encoding corruption (UTF-8 decoded as Windows-1252) — near "${mojibakeSnippet(raw)}". Re-save this file as UTF-8.`],
+        warnings: [], advisories: [], stats: null,
+      });
+    }
+  }
 }
 
 // ── CORPUS REPETITION DETECTOR (full mode only — the permanent anti-mole) ─────
