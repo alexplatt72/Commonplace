@@ -174,9 +174,23 @@
     {
       "label": "Manifest Destiny",
       "entryId": "manifestDestiny",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "The belief that white settlement was destined to spread across the continent supplied the ideology that justified removal and the seizures that followed; Manifest Destiny names the expansionist creed that turned settler land hunger into a sense of national mission."
+    },
+    {
+      "label": "The Homestead Act",
+      "entryId": "homesteadAct",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Removal was 'driven by settler hunger for Native land,' clearing homelands the government later distributed. The Homestead Act is the disposal mechanism that handed such cleared land to settlers a generation on."
+    },
+    {
+      "label": "Indian Removal",
+      "entryId": "indianRemoval",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The marches were 'authorized by the Indian Removal Act of 1830'; this entry treats removal as the policy, debate, and constitutional question that the Trail of Tears carried out as a lived event."
     }
   ],
   "reference": [
@@ -316,6 +330,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 5,
+  "degree": 8,
   "added": "2026-06-15"
 }

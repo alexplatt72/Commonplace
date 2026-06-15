@@ -213,7 +213,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 12,
+    "degree": 9,
     "added": "2026-05-31"
   },
   {
@@ -4294,7 +4294,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 58,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -9602,7 +9602,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9634,7 +9634,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9698,7 +9698,87 @@
     "regions": [
       "North America"
     ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "indianRemoval",
+    "title": "Indian Removal",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "c. 1830s",
+    "status": "published",
+    "summary": "The United States policy, crystallized in the Indian Removal Act of 1830, of compelling the Indigenous nations east of the Mississippi to cede their homelands and relocate west. Treated here as a policy question rather than as the marches it produced, it posed, and still poses, hard questions about federal power, treaty obligation, the rule of law, and whether a constitutional republic can lawfully dispossess sovereign nations within its borders. The policy was contested at the time, narrowly enacted, and carried out in defiance of the Supreme Court. The nations it targeted, the Cherokee, Muscogee (Creek), Choctaw, Chickasaw, Seminole, and others, endure as self-governing peoples today, and the treaty questions removal raised remain live law.",
+    "startYear": 1830,
+    "endYear": 1839,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "rammohunRoy",
+    "title": "Rammohun Roy",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1772–1833",
+    "status": "published",
+    "summary": "The Bengali scholar, religious reformer, and public intellectual, often called the father of the Indian Renaissance, who fused deep learning in Sanskrit, Persian, Arabic, and English to argue for a rational, monotheistic reform of Hinduism, campaigned against the burning of widows, founded the reformist Brahmo Sabha, and pioneered modern education, a free press, and political petition under a colonial rule he both used and partly endorsed.",
+    "startYear": 1772,
+    "endYear": 1833,
+    "regions": [
+      "South Asia"
+    ],
     "degree": 5,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "reservationSystem",
+    "title": "The Reservation System",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1850 CE – present",
+    "status": "published",
+    "summary": "The framework of bounded, 'reserved' lands to which the United States confined Indigenous nations through treaties and federal power. Built as an instrument of dispossession, control, and forced assimilation, it cleared land for settlers and tried to dissolve Native nations through allotment, boarding schools, and agency rule. Yet the same reserved lands and the treaties that created them became the territorial and legal ground on which tribal sovereignty survived. Reservations are not relics: they are the living jurisdictions of self-governing Native nations today.",
+    "startYear": 1850,
+    "endYear": null,
+    "regions": [
+      "North America"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "homesteadAct",
+    "title": "The Homestead Act",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1862",
+    "status": "published",
+    "summary": "The 1862 United States law, signed by Abraham Lincoln, that offered 160 acres of federal \"public domain\" land for a small filing fee to any settler who would live on it and farm it for five years, then receive title. It was the fullest legal expression of the Jeffersonian dream of a republic of independent smallholders, open to women, immigrants, and, after the Civil War, formerly enslaved people. It was also the legal engine that handed settlers an immense expanse of land the United States had taken, and was still taking, from Indigenous nations. The Act democratized landownership for millions precisely by distributing land that was not the government's to give until it had been seized.",
+    "startYear": 1862,
+    "endYear": 1862,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "manifestDestiny",
+    "title": "Manifest Destiny",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "19th century CE",
+    "status": "published",
+    "summary": "The nineteenth-century American belief that the United States was divinely ordained and naturally destined to expand across the North American continent. A blend of religious providentialism, racial hierarchy, and republican mission, it supplied the moral cover for the conquest of Indigenous and Mexican land, recasting the seizure of a continent as the inevitable and benevolent spread of liberty and civilization rather than as a series of deliberate and violent political choices.",
+    "startYear": 1845,
+    "endYear": 1898,
+    "regions": [
+      "North America"
+    ],
+    "degree": 8,
     "added": "2026-06-15"
   }
 ]
