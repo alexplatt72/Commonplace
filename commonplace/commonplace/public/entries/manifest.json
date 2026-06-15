@@ -2816,7 +2816,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 12,
+    "degree": 7,
     "added": "2026-05-30"
   },
   {
@@ -8840,7 +8840,7 @@
       "Sub-Saharan Africa",
       "North Africa & Middle East"
     ],
-    "degree": 4,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -8856,7 +8856,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 6,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -9377,7 +9377,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9489,7 +9489,136 @@
     "regions": [
       "The Americas"
     ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "amazonianEarthworks",
+    "title": "Amazonian Earthworks",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 2,000 – 500 years before present (major earthwork building); evidence exposed mainly since the late 20th century",
+    "status": "published",
+    "summary": "The geometric ditched enclosures, raised fields, causeways, mounds, and dark fertile soils found across parts of the Amazon basin — physical evidence that the rainforest, long imagined as empty wilderness, was home before 1492 to large and complex human societies that shaped the forest itself, and one of the most debated discoveries in American archaeology.",
+    "startYear": -50,
+    "endYear": 1500,
+    "regions": [
+      "Americas"
+    ],
     "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "andes",
+    "title": "The Andes",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 3000 BCE – present",
+    "status": "published",
+    "summary": "The world's longest mountain range, running some 7,000 kilometers down the western edge of South America — a vertical system of stacked environments that forced those who lived there to master altitude, terrace steep slopes, manage cold and thin air, and cultivate entirely different crops at every elevation, giving the world the potato and a lineage of civilizations stretching back four thousand years.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "amazon",
+    "title": "The Amazon",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 10,000 BCE–present",
+    "summary": "The Amazon is the planet's largest river system and the vast rainforest it waters — a natural force on a planetary scale that carries roughly a fifth of all the river water reaching the world's oceans, holds the richest concentration of living species on land, makes much of its own rainfall through a cycle of aerial moisture called flying rivers, and now sits close enough to a tipping point that its fate has become a question for the whole climate of the planet.",
+    "status": "published",
+    "startYear": -10000,
+    "endYear": 2026,
+    "regions": [
+      "Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "greatPlains",
+    "title": "The Great Plains",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 10,000 BCE – present",
+    "status": "published",
+    "summary": "The vast grassland running down the center of North America — from the Canadian prairies to Texas — a system built by grass, fire, drought, and grazing that produced one of history's most dynamic mobile cultures after the horse arrived, was deliberately emptied of its defining animal and peoples within a single human lifetime, and was then nearly destroyed as farmland by the same forces of soil and sky that had always ruled it.",
+    "startYear": null,
+    "endYear": null,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "bison",
+    "title": "The Bison",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "Prehistory – present",
+    "summary": "The American bison, often called the buffalo, was the keystone animal of the North American grasslands and the material foundation of Plains Indigenous life. Tens of millions once shaped the prairie itself and sustained whole nations who used nearly every part of the animal. Within roughly two decades in the late nineteenth century, the herds were slaughtered almost to extinction in a collapse that was partly commercial and partly a deliberate weapon against the Plains peoples who depended on them. Saved from extinction by a small conservation effort, the bison survives today mostly in managed herds and stands as a symbol of both loss and restoration.",
+    "themes": [
+      "medicine",
+      "science",
+      "publicHealth",
+      "biology",
+      "economics",
+      "globalHealth"
+    ],
+    "status": "published",
+    "qualityTier": "A",
+    "schemaVersion": 1,
+    "aliases": [
+      "antimicrobials",
+      "penicillin",
+      "antibacterials",
+      "wonder drugs"
+    ],
+    "indexTerms": [
+      "penicillin",
+      "Alexander Fleming",
+      "Howard Florey",
+      "Ernst Chain",
+      "streptomycin",
+      "Selman Waksman",
+      "ampicillin",
+      "MRSA",
+      "antimicrobial resistance",
+      "AMR",
+      "bacteriophage",
+      "sulfonamides",
+      "pharmaceutical industry",
+      "WHO",
+      "One Health"
+    ],
+    "startYear": -10000,
+    "endYear": 2026,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "simoneWeil",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1909–1943",
+    "title": "Simone Weil",
+    "summary": "French philosopher, labor activist, and religious mystic who refused the distance between thought and suffering — leaving the lecture hall to work in factories, making attention and affliction the center of ethics, and pursuing God to the very edge of the Church without entering it, in a body of work published almost entirely after her early death.",
+    "status": "published",
+    "startYear": 1909,
+    "endYear": 1943,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 6,
     "added": "2026-06-15"
   }
 ]
