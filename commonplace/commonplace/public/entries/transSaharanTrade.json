@@ -147,6 +147,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The Sahel, the semi-arid band along the desert's southern edge, was the zone where the trading cities stood and the empires formed. Understanding the trans-Saharan system fully means understanding the ecological frontier where the desert crossing began and ended."
+    },
+    {
+      "label": "Kanem-Bornu",
+      "entryId": "kanemBornu",
+      "status": "published",
+      "relationship": "Descendant",
+      "reason": "This entry notes that 'no single king ruled the whole network' and that 'kings on the southern edge taxed the trade.' Kanem-Bornu was the eastern Lake Chad power that controlled and taxed this corridor toward Fezzan and the Nile."
     }
   ],
   "reference": [
@@ -340,5 +347,6 @@
     "Sub-Saharan Africa",
     "North Africa & Middle East"
   ],
-  "added": "2026-06-14"
+  "added": "2026-06-14",
+  "degree": 9
 }
