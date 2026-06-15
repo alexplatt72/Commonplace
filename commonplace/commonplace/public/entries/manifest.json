@@ -6878,7 +6878,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 12,
+    "degree": 8,
     "added": "2026-06-13"
   },
   {
@@ -8693,7 +8693,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -8888,7 +8888,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 4,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -8920,7 +8920,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-14"
   },
   {
@@ -8984,7 +8984,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-14"
   },
   {
@@ -9000,7 +9000,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 6,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9016,7 +9016,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9040,7 +9040,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9056,7 +9056,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9072,7 +9072,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9088,7 +9088,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 5,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9104,7 +9104,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9128,7 +9128,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9144,7 +9144,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9209,7 +9209,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9243,6 +9243,90 @@
       "Sub-Saharan Africa"
     ],
     "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "nigerianCivilWar",
+    "title": "The Nigerian Civil War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1967–1970",
+    "status": "published",
+    "summary": "The war (1967–1970), also called the Biafran War, in which the Igbo-led Eastern Region tried to break away from Nigeria as the Republic of Biafra and was defeated, largely through a blockade that produced a mass famine. Carried into homes worldwide by television and relief campaigns, it became the first modern famine spectacle and a landmark in the history of humanitarian action, while posing the hardest question of the postcolonial state: whether borders drawn by Europe could hold a nation together.",
+    "startYear": 1967,
+    "endYear": 1970,
+    "regions": [
+      "Africa"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "madagascar",
+    "title": "Madagascar",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 80–90 million years ago to present; human settlement from c. 500–700 CE",
+    "status": "published",
+    "summary": "The fourth largest island on Earth, separated from other landmasses for tens of millions of years and settled by humans only about 1,300–1,500 years ago — by Austronesian seafarers from Southeast Asia and Bantu-speaking peoples from East Africa — making it both an extraordinary laboratory of isolated evolution and the destination of one of history's most astonishing long-distance migrations, now facing severe deforestation and extinction.",
+    "startYear": -80000000,
+    "endYear": 2026,
+    "regions": [
+      "Indian Ocean",
+      "Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "panAfricanism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1900–present",
+    "title": "Pan-Africanism",
+    "summary": "The long political and intellectual movement built on the idea that African peoples and the African diaspora share a common history and destiny and should act together — an idea that began among the descendants of the enslaved in the Atlantic world, crossed the ocean to help drive Africa's decolonization, and produced institutions from the Organization of African Unity in 1963 to the African Union, while never achieving the continental political unity its boldest advocates imagined.",
+    "status": "published",
+    "startYear": 1900,
+    "endYear": null,
+    "regions": [
+      "Africa",
+      "The Americas"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "negritude",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1930s-1960s",
+    "title": "Negritude",
+    "summary": "The literary and cultural movement launched in 1930s Paris by Black writers from France's colonies that turned a word coined as an insult into a banner of pride, affirming a shared Black identity and the value of African heritage against a colonial system that taught the colonized to despise their own culture. Led above all by Aimé Césaire of Martinique, Léopold Sédar Senghor of Senegal, and Léon-Gontran Damas of French Guiana, it was the cultural counterpart to political Pan-Africanism, and remains one of the most influential and most contested ideas in twentieth-century Black thought.",
+    "status": "published",
+    "startYear": 1934,
+    "endYear": 1960,
+    "regions": [
+      "Africa",
+      "Europe",
+      "The Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "apartheidResistance",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1948–1994",
+    "title": "Apartheid Resistance",
+    "summary": "The decades-long struggle, roughly 1948 to 1994, through which South Africa's Black majority and their allies fought to overturn apartheid — moving through petition, mass civil disobedience, armed struggle, township insurrection, and a global pressure campaign of sanctions and boycotts, and winning not a clean military victory but a negotiated revolution that left the country free, democratic, and still burdened by apartheid's economic legacy.",
+    "status": "published",
+    "startYear": 1948,
+    "endYear": 1994,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 8,
     "added": "2026-06-15"
   }
 ]
