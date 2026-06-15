@@ -1555,7 +1555,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 6,
     "added": "2026-05-30"
   },
   {
@@ -8693,7 +8693,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 5,
+    "degree": 6,
     "added": "2026-06-14"
   },
   {
@@ -8905,6 +8905,86 @@
       "Sub-Saharan Africa"
     ],
     "degree": 5,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "zuluKingdom",
+    "title": "The Zulu Kingdom",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1816–1897 CE",
+    "status": "published",
+    "summary": "The Zulu Kingdom was the southern African state that rose in the early nineteenth century and became, for several decades, the most formidable military power in the region. Beginning as one small Nguni-speaking chiefdom, it was forged into a centralized, regiment-based war state, organized around age-grade regiments quartered in royal barracks and a disciplined standing army. It survived a clash with Afrikaner trekkers at Blood River in 1838 and inflicted a stunning defeat on a British army at Isandlwana in 1879, before Britain regrouped and conquered it, breaking up and absorbing Zululand by the century's end.",
+    "startYear": 1816,
+    "endYear": 1897,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "shakaZulu",
+    "title": "Shaka Zulu",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 1787–1828 CE",
+    "status": "published",
+    "summary": "The founder-king who forged a small southern African chiefdom into the Zulu Kingdom within roughly a decade, credited with the military and political innovations that made Zulu power possible — and one of the most heavily mythologized figures in African history, whose popular portrait as a genius-tyrant rests largely on a handful of unreliable European accounts written after his death in 1828.",
+    "startYear": 1787,
+    "endYear": 1828,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 4,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "lakeVictoria",
+    "title": "Lake Victoria",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1858 CE – present",
+    "status": "published",
+    "summary": "Africa's largest lake and the world's largest tropical lake, shared by Uganda, Kenya, and Tanzania — the long-sought source of the White Nile, a prize in the Victorian scramble for Africa, the cradle of one of evolution's most extraordinary bursts of speciation, and the scene of one of the largest human-caused extinctions of recent times.",
+    "startYear": 1858,
+    "endYear": 2026,
+    "regions": [
+      "Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "queenNzinga",
+    "title": "Queen Nzinga",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 1583–1663 CE",
+    "status": "published",
+    "summary": "Njinga Mbande (c. 1583–1663), ruler of the kingdoms of Ndongo and Matamba in what is now Angola, who fought, allied with, converted to Christianity, and out-maneuvered the Portuguese empire for nearly four decades — using war, diplomacy, and shifting alliances to hold off full Portuguese domination in her lifetime, and becoming an enduring symbol of African and female resistance to European conquest and the Atlantic slave trade.",
+    "startYear": 1583,
+    "endYear": 1663,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "haileSelassie",
+    "title": "Haile Selassie",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1892–1975 CE",
+    "status": "published",
+    "summary": "The last emperor of Ethiopia, crowned in 1930 as Haile Selassie I, who modernized an ancient sacred monarchy while keeping near-absolute power, became a global symbol of African independence through his 1936 appeal to the League of Nations and his hosting of the Organization of African Unity in 1963, was revered half a world away as a living god by the Rastafari movement though he remained a devout Orthodox Christian, and was finally deposed in the 1974 revolution after a concealed famine, dying in detention in 1975.",
+    "startYear": 1892,
+    "endYear": 1975,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
     "added": "2026-06-14"
   }
 ]
