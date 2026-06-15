@@ -895,7 +895,7 @@
     "regions": [
       "Americas"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-13"
   },
   {
@@ -4471,7 +4471,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 6,
+    "degree": 8,
     "added": "2026-06-13"
   },
   {
@@ -5751,7 +5751,7 @@
       "Latin America",
       "Europe"
     ],
-    "degree": 18,
+    "degree": 7,
     "added": "2026-06-13"
   },
   {
@@ -9393,7 +9393,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9409,7 +9409,87 @@
     "regions": [
       "Americas"
     ],
-    "degree": 6,
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "mesaVerde",
+    "title": "Mesa Verde",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 600 – 1300 CE (Ancestral Puebloan occupation); cliff dwellings built largely in the 1200s",
+    "status": "published",
+    "summary": "A high, forested mesa in southwestern Colorado whose sheltered canyon alcoves hold the most spectacular cliff dwellings in North America — stone villages built by Ancestral Puebloan people in the 1200s CE after roughly seven centuries of occupation on the mesa above — and a place whose people did not vanish but migrated south and east to become part of today's living Pueblo nations.",
+    "startYear": 600,
+    "endYear": 1300,
+    "regions": [
+      "Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "teotihuacan",
+    "title": "Teotihuacan",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 100 BCE – 550 CE (florescence); ceremonial center burned c. 550–650 CE",
+    "status": "published",
+    "summary": "One of the largest cities of the ancient world — a meticulously planned metropolis in the highlands of central Mexico, dominated by colossal pyramids and a grand central avenue, home to well over a hundred thousand people at its height. Its monuments survive in extraordinary detail, yet we do not know what its builders called themselves, what language they spoke, or how they governed.",
+    "startYear": -100,
+    "endYear": 650,
+    "regions": [
+      "Americas"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "tenochtitlan",
+    "title": "Tenochtitlan",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1325 – 1521 CE (Mexica capital); razed and rebuilt as Mexico City",
+    "status": "published",
+    "summary": "The island capital of the Aztec (Mexica) empire, a planned city of perhaps two hundred thousand people that rose from a lake in the Valley of Mexico, sustained by raised garden plots, causeways, and aqueducts. The Spanish who saw it in 1519 were astonished by its scale; a Spanish-led coalition of Indigenous enemies, aided by smallpox, besieged and razed it in 1521. Mexico City was built on its ruins, the lake later drained, so the Aztec capital now lies mostly underground.",
+    "startYear": 1325,
+    "endYear": 1521,
+    "regions": [
+      "Americas"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "cusco",
+    "title": "Cusco",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 13th century CE – present",
+    "status": "published",
+    "summary": "The capital and sacred center of the Inca empire, high in the Peruvian Andes — a planned city the Incas called the navel of the world, rebuilt in monumental stone in the fifteenth century, seized by the Spanish in 1533 and overbuilt with churches and mansions raised directly on its Inca foundations.",
+    "startYear": 1200,
+    "endYear": 2026,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "machuPicchu",
+    "title": "Machu Picchu",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1450–1540s CE; re-examined 1911–present",
+    "status": "published",
+    "summary": "The fifteenth-century Inca royal estate perched on a ridge above the Urubamba River in Peru — almost certainly built for the emperor Pachacuti, abandoned near the time of the Spanish conquest, and never truly lost, since local Andean farmers always knew it was there. It became the world's most famous image of the Inca only after an American explorer arrived in 1911, guided by local people, and mistook it for a vanished city, launching a legend that mass tourism and popular memory turned into the universal symbol of a civilization.",
+    "startYear": 1450,
+    "endYear": 2026,
+    "regions": [
+      "The Americas"
+    ],
+    "degree": 7,
     "added": "2026-06-15"
   }
 ]
