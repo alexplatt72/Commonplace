@@ -8825,5 +8825,86 @@
     ],
     "degree": 7,
     "added": "2026-06-14"
+  },
+  {
+    "id": "sahel",
+    "title": "The Sahel",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 300 CE – present",
+    "status": "published",
+    "summary": "The broad semi-arid grassland belt that runs across Africa just south of the Sahara, from the Atlantic to the Red Sea — a fragile transition zone whose grasslands fed great empires, whose position made it the meeting point of desert and farmland, and whose rainfall now makes it a front line of drought, climate stress, and conflict.",
+    "startYear": 300,
+    "endYear": 2026,
+    "regions": [
+      "Sub-Saharan Africa",
+      "North Africa & Middle East"
+    ],
+    "degree": 4,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "sahara",
+    "title": "The Sahara",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 5000 BCE–present",
+    "summary": "The largest hot desert on Earth — a swath of sand, rock, and gravel covering roughly nine million square kilometers across northern Africa — that has split a continent, was once green savanna within human memory, and continues to shape the world far beyond its sands: driving global climate, fertilizing distant ecosystems, and marking the route that thousands of people now risk everything to cross.",
+    "status": "published",
+    "startYear": -11000,
+    "endYear": 2026,
+    "regions": [
+      "Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "gao",
+    "title": "Gao",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 700 CE – present",
+    "status": "published",
+    "summary": "The city on the eastern bend of the Niger River, in what is now Mali, that grew rich on the trans-Saharan trade and became the capital of the Songhai Empire — the largest state in the history of West Africa — ruled from here by the askias at their height around 1500, and remembered above all by the great earthen pyramid-tomb of King Askia Muhammad.",
+    "startYear": 700,
+    "endYear": 2026,
+    "regions": [
+      "Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "nigerRiver",
+    "title": "The Niger River",
+    "template": "Places",
+    "subtype": "System",
+    "period": "Antiquity to present",
+    "status": "published",
+    "summary": "West Africa's greatest river, which rises near the Atlantic, runs the wrong way into the Sahel toward the desert's edge, and finally reaches the sea in a delta whose oil has made it one of the most fought-over and polluted places on Earth.",
+    "startYear": null,
+    "endYear": null,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 4,
+    "added": "2026-06-14"
+  },
+  {
+    "id": "congoRiver",
+    "title": "The Congo River",
+    "template": "Places",
+    "subtype": "System",
+    "period": "Geological to present; colonial extraction 1885–1908",
+    "status": "published",
+    "summary": "The great river that loops through Central Africa, the world's deepest river and second by discharge — artery of the Congo rainforest, and the channel through which one of history's most brutal colonial extraction systems was driven, making its name a European byword for a darkness that was largely European-made.",
+    "startYear": 1874,
+    "endYear": 2026,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 5,
+    "added": "2026-06-14"
   }
 ]
