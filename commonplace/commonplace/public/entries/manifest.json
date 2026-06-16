@@ -358,7 +358,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 11,
+    "degree": 9,
     "added": "2026-05-31"
   },
   {
@@ -2091,7 +2091,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 11,
+    "degree": 8,
     "added": "2026-06-02"
   },
   {
@@ -4342,7 +4342,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-01"
   },
   {
@@ -9072,7 +9072,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9088,7 +9088,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 7,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9104,7 +9104,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9310,7 +9310,7 @@
       "Europe",
       "The Americas"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9922,7 +9922,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9940,6 +9940,86 @@
       "Europe"
     ],
     "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "congoCrisis",
+    "title": "The Congo Crisis",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1960–1965",
+    "status": "published",
+    "summary": "The violent collapse of order (1960–1965) that followed the Belgian Congo's hasty independence — an army mutiny, the secession of mineral-rich Katanga, the dismissal and assassination of the elected prime minister Patrice Lumumba with Belgian and American complicity, the largest United Nations peacekeeping operation of its era, and a Cold War proxy struggle that ended with the rise of the dictator Mobutu. It became the defining case of foreign intervention in newly independent Africa, and of the gap between the flag of sovereignty and the substance of it.",
+    "startYear": 1960,
+    "endYear": 1965,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "amilcarCabral",
+    "title": "Amílcar Cabral",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1924–1973",
+    "status": "published",
+    "summary": "The agronomist, guerrilla leader, and political theorist who led the independence struggle of Portuguese Guinea and Cape Verde, and who argued that liberation must be a 'return to the source' of indigenous culture — demanding that the Westernized elite commit 'class suicide' to serve the people, insisting that revolutionaries 'tell no lies, claim no easy victories,' and building schools, clinics, and courts in liberated zones even as he fought, before his assassination in 1973 months before the independence he had made inevitable.",
+    "startYear": 1924,
+    "endYear": 1973,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "chimamandaNgoziAdichie",
+    "title": "Chimamanda Ngozi Adichie",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1977–present",
+    "status": "published",
+    "summary": "The Nigerian novelist and essayist whose Half of a Yellow Sun and Americanah, and whose talks 'The Danger of a Single Story' and 'We Should All Be Feminists,' carried Igbo and Nigerian life into the center of twenty-first-century world literature — a writer who insisted that Africans be granted the full complexity of their own stories, refusing the single story in both its colonial and its sentimental forms.",
+    "startYear": 1977,
+    "endYear": null,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "desmondTutu",
+    "title": "Desmond Tutu",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1931–2021",
+    "status": "published",
+    "summary": "The South African Anglican archbishop who became the moral voice of the struggle against apartheid and then the conscience of the democracy that followed — a Nobel Peace laureate who named apartheid a sin and a heresy, gave the world the image of the 'Rainbow Nation,' chaired the Truth and Reconciliation Commission's contested attempt to trade truth for amnesty, and never stopped speaking uncomfortable truths to power, Black and white alike, to the end of his life.",
+    "startYear": 1931,
+    "endYear": 2021,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "felaKuti",
+    "title": "Fela Kuti",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1938–1997",
+    "status": "published",
+    "summary": "The Nigerian musician who invented Afrobeat and turned it into a weapon — fusing Yoruba rhythm, highlife, jazz, and funk into long, hypnotic, brass-driven songs in pidgin English, aimed squarely at the corruption and brutality of Nigeria's military rulers. Beaten, jailed, and burned out of his own commune, he became the most important African popular musician of the twentieth century and a Pan-African icon, while embodying in his own life the contradictions of liberation.",
+    "startYear": 1938,
+    "endYear": 1997,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 5,
     "added": "2026-06-15"
   }
 ]
