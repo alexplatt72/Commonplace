@@ -1,0 +1,33 @@
+{
+  "canonical": [
+    "Global / Transregional",
+    "Europe",
+    "North Africa & Middle East",
+    "Sub-Saharan Africa",
+    "North America",
+    "Latin America & Caribbean",
+    "East Asia",
+    "South Asia",
+    "Southeast Asia",
+    "Oceania"
+  ],
+  "aliases": {
+    "Global": "Global / Transregional",
+    "Global Tropics": "Global / Transregional",
+    "Eurasia / Global": "Global / Transregional",
+    "Atlantic World": "Global / Transregional",
+    "Indian Ocean": "Global / Transregional",
+    "Africa": "Sub-Saharan Africa",
+    "Islamic World": "North Africa & Middle East",
+    "Middle East": "North Africa & Middle East",
+    "Middle East & North Africa": "North Africa & Middle East",
+    "Latin America": "Latin America & Caribbean",
+    "Americas": "Latin America & Caribbean",
+    "The Americas": "Latin America & Caribbean",
+    "Central Asia": "East Asia",
+    "Central Asia & the Steppe": "East Asia",
+    "Asia": "East Asia",
+    "Pacific": "Oceania"
+  },
+  "note": "Canonical region vocabulary. entry.regions must be a subset of `canonical` (enforced by validate_entries.cjs). `aliases` maps retired/drift labels to their canonical replacement for the migration pass; the per-entry Americas/Africa splits were resolved by hand in _meta_tools/_normalize_regions.cjs and are not derivable from this map alone."
+}

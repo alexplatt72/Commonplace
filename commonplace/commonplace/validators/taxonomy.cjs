@@ -26,5 +26,15 @@ module.exports = function taxonomy(entry, ctx) {
     const r = resolve(t, thReg);
     if (!r.ok) out.push({ id: 'taxonomy.theme', message: `theme "${t}" is not a canonical theme id — add it to taxonomy/themes.json or use an existing id.` });
   }
+  // regions: strict canonical-only. Aliases in taxonomy/regions.json are a one-way migration map,
+  // not acceptable stored values — "The Americas"/"Africa" need a per-entry split, so a label that
+  // only resolves via alias is still a fail, forcing the author to pick the right canonical region.
+  const rgReg = ctx.taxonomy && ctx.taxonomy.regions;
+  if (rgReg && rgReg.canonicalSet.size) {
+    for (const rg of (entry.regions || [])) {
+      const v = (rg == null ? '' : String(rg)).trim();
+      if (!rgReg.canonicalSet.has(v)) out.push({ id: 'taxonomy.region', message: `region "${rg}" is not a canonical region — use one of the approved regions in taxonomy/regions.json (no drift labels; pick the specific bucket).` });
+    }
+  }
   return out;
 };
