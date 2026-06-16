@@ -160,9 +160,16 @@
     {
       "label": "Zoroastrianism",
       "entryId": "zoroastrianism",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Zoroastrianism was the official religion of the Sasanian state, served by a powerful priesthood and the sacred fire temples that anchored its public order. Understanding the faith, its dualism, and its priestly hierarchy is essential to grasping how the empire framed royal authority."
+    },
+    {
+      "label": "The Umayyad Caliphate",
+      "entryId": "umayyadCaliphate",
+      "relationship": "Consequential",
+      "reason": "The Arab-Muslim conquest destroyed the Sasanian empire, and the Umayyad caliphate rose to rule the Persian lands it had governed.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -307,6 +314,6 @@
   "regions": [
     "North Africa & Middle East"
   ],
-  "degree": 10,
+  "degree": 14,
   "added": "2026-06-16"
 }

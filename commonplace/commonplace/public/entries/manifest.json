@@ -28,7 +28,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 18,
+    "degree": 19,
     "added": "2026-06-01"
   },
   {
@@ -878,7 +878,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-05-31"
   },
   {
@@ -2059,7 +2059,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 26,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -2564,7 +2564,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 21,
+    "degree": 23,
     "added": "2026-05-30"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 64,
+    "degree": 67,
     "added": "2026-05-30"
   },
   {
@@ -3194,7 +3194,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 14,
+    "degree": 16,
     "added": "2026-05-30"
   },
   {
@@ -3210,7 +3210,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -3984,7 +3984,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 15,
+    "degree": 18,
     "added": "2026-05-30"
   },
   {
@@ -4187,7 +4187,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 14,
+    "degree": 16,
     "added": "2026-05-31"
   },
   {
@@ -4260,7 +4260,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 10,
+    "degree": 13,
     "added": "2026-05-31"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 67,
+    "degree": 70,
     "added": "2026-05-30"
   },
   {
@@ -4526,7 +4526,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 28,
+    "degree": 30,
     "added": "2026-05-30"
   },
   {
@@ -4633,7 +4633,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 17,
+    "degree": 18,
     "added": "2026-05-31"
   },
   {
@@ -4936,7 +4936,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 12,
+    "degree": 15,
     "added": "2026-06-02"
   },
   {
@@ -4952,7 +4952,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 53,
+    "degree": 55,
     "added": "2026-05-30"
   },
   {
@@ -6266,7 +6266,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 24,
+    "degree": 25,
     "added": "2026-05-30"
   },
   {
@@ -10433,7 +10433,7 @@
       "North Africa & Middle East",
       "South Asia"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-16"
   },
   {
@@ -10515,7 +10515,7 @@
       "North Africa & Middle East",
       "Europe"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-16"
   },
   {
@@ -10629,7 +10629,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 10,
+    "degree": 14,
     "added": "2026-06-16"
   },
   {
@@ -10646,6 +10646,90 @@
       "North Africa & Middle East"
     ],
     "degree": 9,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "umayyadCaliphate",
+    "title": "The Umayyad Caliphate",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "661–750 CE",
+    "status": "published",
+    "summary": "The first hereditary Islamic dynasty, ruling from 661 to 750 CE with its capital at Damascus — founded by Mu'awiya after the civil war that followed the killing of the caliph Ali. The Umayyads presided over the great Arab-Muslim conquests, carrying their armies across North Africa, into Iberia in 711, and to the edges of India and Central Asia, building one of the largest empires the world had yet seen. They made Arabic the language of government, struck the first distinctly Islamic coinage, and raised the Dome of the Rock in Jerusalem and the Great Mosque of Damascus. They ruled a non-Arab Muslim majority while privileging Arabs, and the grievances this bred, together with Shia and Kharijite opposition, helped bring the Abbasid Revolution that overthrew them in 750.",
+    "startYear": 661,
+    "endYear": 750,
+    "regions": [
+      "North Africa & Middle East",
+      "Europe"
+    ],
+    "degree": 10,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "zoroastrianism",
+    "title": "Zoroastrianism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 2nd millennium BCE – present",
+    "status": "published",
+    "summary": "One of the world's oldest living religions, taught by the Iranian prophet Zarathustra at a date scholars cannot fix. It worships Ahura Mazda, the Wise Lord, and frames existence as a moral struggle between truth and the lie, in which each person must choose. The faith of three Persian empires before the Arab-Muslim conquest reduced it to a minority, it survives among the Parsis of India and Iranian Zoroastrians, and scholars debate its disputed influence on Jewish, Christian, and Islamic ideas of heaven, hell, and a final judgment.",
+    "startYear": -1200,
+    "endYear": 2026,
+    "regions": [
+      "North Africa & Middle East",
+      "South Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "wahhabiMovement",
+    "title": "The Wahhabi Movement",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1740s CE – present",
+    "status": "published",
+    "summary": "A Sunni revivalist movement that began in the Najd region of central Arabia in the eighteenth century, preaching a strict return to the absolute oneness of God and the practice of the earliest Muslims. Its founder, Muhammad ibn Abd al-Wahhab, condemned saint veneration, tomb visitation, and much popular devotion as idolatry. A pact with the House of Saud bound the movement to a dynasty that would build the modern Kingdom of Saudi Arabia, from which, in the oil age, its influence spread worldwide.",
+    "startYear": 1744,
+    "endYear": 2026,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 8,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "youngTurks",
+    "title": "The Young Turks",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1889–1918",
+    "status": "published",
+    "summary": "The reformist and nationalist opposition that tried to save the late Ottoman Empire by remaking it. Its leading body, the Committee of Union and Progress, forced the restoration of the constitution in the 1908 revolution and seized full power in a 1913 coup. Beginning in a hopeful equality of all Ottoman subjects, the movement turned toward Turkish nationalism, governed under a wartime triumvirate, organized the genocide of the empire's Armenians, and brought the empire into the First World War, where it fell apart.",
+    "startYear": 1908,
+    "endYear": 1918,
+    "regions": [
+      "North Africa & Middle East",
+      "Europe"
+    ],
+    "degree": 6,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "zionism",
+    "title": "Zionism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "late 19th century CE – present",
+    "status": "published",
+    "summary": "The modern Jewish national movement that arose in late-nineteenth-century Europe and sought a Jewish homeland in the ancient land of Israel. Born from the experience of persecution and from old religious ties to the land, it ran in several rival strands, drove waves of Jewish immigration to Ottoman and then British-ruled Palestine, and culminated in the 1948 founding of Israel. That founding is marked by Israelis as independence and by Palestinians as the Nakba, the catastrophe of their displacement, and the meaning of the term is contested to this day.",
+    "startYear": 1897,
+    "endYear": 2026,
+    "regions": [
+      "Europe",
+      "North Africa & Middle East"
+    ],
+    "degree": 8,
     "added": "2026-06-16"
   }
 ]
