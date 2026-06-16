@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 21,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -1153,7 +1153,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 29,
+    "degree": 7,
     "added": "2026-05-30"
   },
   {
@@ -2002,7 +2002,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 13,
+    "degree": 9,
     "added": "2026-05-31"
   },
   {
@@ -9253,7 +9253,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9788,7 +9788,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9868,7 +9868,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 5,
+    "degree": 6,
     "added": "2026-06-15"
   },
   {
@@ -10077,7 +10077,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -10112,7 +10112,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -10128,7 +10128,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -10160,7 +10160,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -10177,6 +10177,86 @@
       "Sub-Saharan Africa"
     ],
     "degree": 8,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "sundiataKeita",
+    "title": "Sundiata Keita",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c.1217–c.1255",
+    "status": "published",
+    "summary": "The founder of the Mali Empire, who united the Mandinka chiefdoms of the upper Niger and defeated the Sosso king Sumanguru at the Battle of Kirina around 1235 to build the West African state that would later astonish the world under his descendant Mansa Musa. Almost everything told about him survives through the Epic of Sundiata, an oral history kept alive for centuries by the griots, the hereditary bards of the Mande peoples, who recount his childhood disability, his exile, and his triumphant return. The tradition also credits him with the Kurukan Fuga, a remembered charter of laws and social ranks. The result is a figure whose broad achievement is historically secure while much of the vivid detail belongs to legend, leaving any honest account to weigh the documented record against a beloved and much-elaborated story.",
+    "startYear": 1217,
+    "endYear": 1255,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "thomasSankara",
+    "title": "Thomas Sankara",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1949–1987",
+    "status": "published",
+    "summary": "The army captain who seized power in Upper Volta in 1983, renamed it Burkina Faso, the land of upright people, and over four years drove one of the most radical experiments in self-reliance the continent had seen. He vaccinated millions of children in a matter of weeks, planted trees against the spreading desert, banned female genital cutting and forced marriage, put women in his government, refused foreign aid and debt on the grounds that the lender becomes the master, and lived with a deliberate, demonstrative austerity. He also ruled without elections, jailed opponents, and restricted the press. In October 1987 he was killed in a coup that brought his closest comrade, Blaise Compaoré, to power. His afterlife as an incorruptible Pan-African icon, an Africa's Che Guevara, sits beside a contested record of one-party revolutionary rule; a 2021–22 trial convicted Compaoré of his murder in absentia.",
+    "startYear": 1949,
+    "endYear": 1987,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "wangariMaathai",
+    "title": "Wangari Maathai",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1940–2011",
+    "status": "published",
+    "summary": "The Kenyan biologist and activist who founded the Green Belt Movement in 1977 and turned tree planting into a tool of political resistance, organizing rural women to grow tens of millions of trees while challenging a corrupt, authoritarian state that seized public land and silenced dissent. The first woman in East and Central Africa to earn a doctorate, she argued that environmental ruin, the powerlessness of poor women, and bad governance were a single problem, and that restoring the soil and restoring democracy went together. Beaten, jailed, and ridiculed under President Daniel arap Moi, she lived to win the Nobel Peace Prize in 2004, the first African woman to do so, and to serve as a member of parliament and assistant minister.",
+    "startYear": 1940,
+    "endYear": 2011,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "woleSoyinka",
+    "title": "Wole Soyinka",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1934–",
+    "status": "published",
+    "summary": "The Nigerian playwright, poet, and essayist who in 1986 became the first African to win the Nobel Prize in Literature — a writer who fused the Yoruba mythic imagination, above all the god Ogun, with the techniques of global modernism, and who paired a demanding body of drama and verse with a lifetime of political dissidence under successive Nigerian regimes, including imprisonment without trial during the civil war and exile under the Abacha dictatorship.",
+    "startYear": 1934,
+    "endYear": null,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 8,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "yaaAsantewaa",
+    "title": "Yaa Asantewaa",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c.1840–1921",
+    "status": "published",
+    "summary": "Queen mother of Ejisu in the Asante Empire of present-day Ghana, who in 1900 helped rally and lead the last major Asante revolt against British rule, the War of the Golden Stool. After the British governor demanded the Golden Stool, the sacred seat that the Asante held to embody the soul of the nation, and exiled the Asantehene Prempeh I, she is remembered for shaming hesitant chiefs into war. The rising was crushed, and she was captured and exiled to the Seychelles, where she died in 1921. The documentary record of her life is thin, and her image has since been heavily reworked in Ghanaian nationalism and in later celebrations of African women's leadership, so that the woman and the symbol are not easy to separate.",
+    "startYear": 1840,
+    "endYear": 1921,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
     "added": "2026-06-16"
   }
 ]
