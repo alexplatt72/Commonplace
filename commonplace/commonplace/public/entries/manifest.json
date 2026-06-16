@@ -1185,7 +1185,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-13"
   },
   {
@@ -1490,7 +1490,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 22,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -2564,7 +2564,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 15,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -3178,7 +3178,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 21,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -4235,7 +4235,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 8,
+    "degree": 7,
     "added": "2026-05-31"
   },
   {
@@ -7011,7 +7011,7 @@
       "North Africa & Middle East",
       "East Asia"
     ],
-    "degree": 13,
+    "degree": 9,
     "added": "2026-05-31"
   },
   {
@@ -10144,7 +10144,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-16"
   },
   {
@@ -10417,6 +10417,72 @@
       "Sub-Saharan Africa"
     ],
     "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "sufism",
+    "title": "Sufism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 8th century CE – present",
+    "status": "published",
+    "summary": "The mystical and interior current within Islam, devoted to direct experience of God through purification of the self, the remembrance of God, and love. From early ascetics it grew into great orders of master and disciple, produced poets read across the world, carried Islam into Africa and Asia, and remains in long tension with strict scriptural authority.",
+    "startYear": 750,
+    "endYear": 2026,
+    "regions": [
+      "North Africa & Middle East",
+      "South Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "almohads",
+    "title": "The Almohads",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1121–1269",
+    "status": "published",
+    "summary": "The Berber Muslim reform movement and empire that preached absolute divine oneness, ruled the Maghreb and Muslim Spain in the 12th and 13th centuries, persecuted Jews and Christians, yet sheltered the philosophers Ibn Tufayl and Averroes before collapsing at Las Navas de Tolosa.",
+    "startYear": 1121,
+    "endYear": 1269,
+    "regions": [
+      "North Africa & Middle East",
+      "Europe"
+    ],
+    "degree": 5,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "assyrianEmpire",
+    "title": "The Assyrian Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 911–609 BCE",
+    "status": "published",
+    "summary": "The Neo-Assyrian Empire of roughly 911 to 609 BCE, the first state to rule the whole ancient Near East — built on a standing professional army, iron weapons, and siege engineering, run through the mass deportation of conquered peoples, and remembered both for its own boasts of terror and for the great library at Nineveh that preserved the Epic of Gilgamesh.",
+    "startYear": -911,
+    "endYear": -609,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "fatimidCaliphate",
+    "title": "The Fatimid Caliphate",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "909–1171 CE",
+    "status": "published",
+    "summary": "The Isma'ili Shi'a caliphate that ruled from 909 to 1171 CE — rising in what is now Tunisia, conquering Egypt and founding Cairo and the mosque-university of al-Azhar, controlling the holy cities and the Red Sea trade, and ending when Saladin restored Egypt to Sunni Abbasid allegiance. For more than two centuries it offered a rival claim to lead all Muslims.",
+    "startYear": 909,
+    "endYear": 1171,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 6,
     "added": "2026-06-16"
   }
 ]
