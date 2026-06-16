@@ -44,7 +44,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 15,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -1596,7 +1596,7 @@
       "South Asia",
       "Europe"
     ],
-    "degree": 24,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -2123,7 +2123,7 @@
     "regions": [
       "The Americas"
     ],
-    "degree": 10,
+    "degree": 9,
     "added": "2026-05-31"
   },
   {
@@ -8693,7 +8693,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-14"
   },
   {
@@ -9209,7 +9209,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9292,7 +9292,7 @@
       "Africa",
       "The Americas"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9310,7 +9310,7 @@
       "Europe",
       "The Americas"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9326,7 +9326,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9987,7 +9987,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -10019,7 +10019,89 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 5,
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "leopoldSenghor",
+    "title": "Léopold Sédar Senghor",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1906–2001",
+    "status": "published",
+    "summary": "The Senegalese poet, philosopher, and statesman who co-founded the Négritude movement in 1930s Paris and then became the first president of independent Senegal, governing from 1960 to 1980 before voluntarily stepping down — a rare act among the leaders of his generation. He fused African cultural pride with French humanism, built a stable but France-aligned and largely one-party-dominant state, and in 1983 became the first African elected to the Académie française, even as later thinkers attacked his celebration of an African 'emotion' against Greek 'reason' as essentialism and his politics as too tied to the former colonizer.",
+    "startYear": 1906,
+    "endYear": 2001,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "menelikIi",
+    "title": "Menelik II",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1844–1913",
+    "status": "published",
+    "summary": "Emperor of Ethiopia who did what no other African ruler of his age managed, crushing an invading Italian army at Adwa in 1896 and keeping Ethiopia the one African state to survive the European Scramble unconquered, while at the same time he roughly doubled his empire through southern and western conquests that brought modernization to the center and dispossession, killing, enslavement, and famine to the Oromo, Sidama, and other peoples he absorbed, making him at once the great African anti-colonial victor and a conquering emperor in his own right.",
+    "startYear": 1844,
+    "endYear": 1913,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "miriamMakeba",
+    "title": "Miriam Makeba",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1932–2008",
+    "status": "published",
+    "summary": "The South African singer known as Mama Africa, who carried Xhosa and South African song to the world and became the most famous voice of the anti-apartheid struggle in exile. Hits like Pata Pata and the Click Song made South African sound global, and her testimony against apartheid cost her thirty years of banishment from her own country. A Grammy-winning artist whose warmth on stage never softened her insistence on speaking the truth, she traced the whole arc of the struggle, from exile in 1960 to her return after Mandela's release.",
+    "startYear": 1932,
+    "endYear": 2008,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "ngugiWaThiongo",
+    "title": "Ngugi wa Thiong'o",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1938–2025",
+    "status": "published",
+    "summary": "The Kenyan novelist, playwright, and theorist who became the most forceful advocate for African literature written in African languages — a writer who won acclaim in English, then renounced it for his mother tongue Gikuyu, arguing in Decolonising the Mind that to write Africa in the colonizer's language was to complete the colonization of the imagination, a stand that cost him prison and exile.",
+    "startYear": 1938,
+    "endYear": 2025,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "olaudahEquiano",
+    "title": "Olaudah Equiano",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "c. 1745–1797",
+    "status": "published",
+    "summary": "The formerly enslaved African writer, sailor, and abolitionist whose 1789 autobiography, The Interesting Narrative of the Life of Olaudah Equiano, became the most influential first-person account of the transatlantic slave trade ever written — a bestseller that put a human voice and an 'I' at the centre of the British abolition campaign, even as modern scholarship has raised an unresolved question about whether the African childhood it so movingly describes was his own memory.",
+    "startYear": 1745,
+    "endYear": 1797,
+    "regions": [
+      "Sub-Saharan Africa",
+      "Europe",
+      "The Americas"
+    ],
+    "degree": 6,
     "added": "2026-06-15"
   }
 ]
