@@ -185,6 +185,13 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "The case is a key test of the concept of genocide applied to an event that predates the word, and of the boundary between colonial violence and genocide that the concept is meant to mark."
+    },
+    {
+      "label": "The Berlin Conference",
+      "entryId": "berlinConference",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "Berlin opened the partition that handed Germany South-West Africa, the colony where von Trotha pursued the 'destruction of the Herero nation'; the conference set the rules for that conquest."
     }
   ],
   "reference": [
@@ -324,5 +331,6 @@
   "regions": [
     "Sub-Saharan Africa"
   ],
-  "added": "2026-06-15"
+  "added": "2026-06-15",
+  "degree": 7
 }

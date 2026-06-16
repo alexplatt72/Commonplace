@@ -3155,7 +3155,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 33,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -5290,7 +5290,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 14,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -6031,7 +6031,7 @@
       "Sub-Saharan Africa",
       "North Africa & Middle East"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-13"
   },
   {
@@ -8952,7 +8952,7 @@
     "regions": [
       "Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-14"
   },
   {
@@ -9176,7 +9176,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9193,7 +9193,7 @@
       "Africa",
       "Europe"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9242,7 +9242,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9794,7 +9794,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9810,7 +9810,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9826,7 +9826,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9859,6 +9859,87 @@
       "Sub-Saharan Africa"
     ],
     "degree": 5,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "asanteEmpire",
+    "title": "The Asante Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1700–1902 CE",
+    "status": "published",
+    "summary": "The Asante (Ashanti) Empire (c. 1700–1902) was the powerful Akan state of the West African forest, ruled from Kumasi in present-day Ghana. Unified under the sacred Golden Stool and the office of the Asantehene, it grew rich on gold and on supplying captives to the Atlantic slave trade, built a sophisticated bureaucracy and road network, and fought a long series of wars against Britain before its final annexation. The entry holds together Asante's genuine statecraft and wealth, its central role as a slave supplier, and its long, effective resistance to conquest.",
+    "startYear": 1700,
+    "endYear": 1902,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 5,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "bugandaKingdom",
+    "title": "The Buganda Kingdom",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 14th–16th century origins to 1966; kabaka-ship restored 1993 CE",
+    "status": "published",
+    "summary": "Buganda was the powerful centralized kingdom of the Baganda people on the northern shore of Lake Victoria, in present-day Uganda. Ruled by the kabaka through appointed chiefs rather than a purely hereditary aristocracy, it built a meritocratic bureaucracy and a war fleet of canoes before any European arrived, expanded at the expense of its rival Bunyoro, and then negotiated and partly harnessed British colonialism — securing land and privilege through the 1900 Buganda Agreement and becoming the favored core of the Uganda Protectorate, even as it gave its name to the country it would be folded into.",
+    "startYear": 1500,
+    "endYear": 1966,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "sokotoCaliphate",
+    "title": "The Sokoto Caliphate",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1804–1903 CE",
+    "status": "published",
+    "summary": "The Sokoto Caliphate (1804–1903) was the vast Islamic state of the central Sudan, in what is now northern Nigeria and beyond. Founded by the Fulani scholar Usman dan Fodio through a jihad against Hausa kingdoms he judged corrupt and only nominally Muslim, it became the largest and most populous state in nineteenth-century Africa: a confederation of emirates bound by Islamic law and learning, sustained by farming and one of the largest systems of slavery in the modern world. The British conquered it in 1903 and then ruled through its emirs, so that its institutions and the Sultan of Sokoto's authority outlasted the empire itself.",
+    "startYear": 1804,
+    "endYear": 1903,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 8,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "africanIndependence",
+    "title": "African Independence (Year of Africa, 1960)",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1957–1994",
+    "status": "published",
+    "summary": "The rapid wave of decolonization that, in barely two decades after World War II, dismantled European colonial rule across most of Africa — symbolized by 1960, the 'Year of Africa,' when seventeen countries became independent in a single year — restoring African sovereignty and raising soaring hopes, while leaving the new states the colonial borders, extractive economies, and fragile institutions that shaped their struggles ever after.",
+    "startYear": 1957,
+    "endYear": 1994,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-15"
+  },
+  {
+    "id": "berlinConference",
+    "title": "The Berlin Conference",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "November 1884 – February 1885",
+    "status": "published",
+    "summary": "The 1884–85 meeting of fourteen European powers, convened by Bismarck and joined by the United States, that set the diplomatic ground rules for the European partition of Africa — with no African ruler present — adopting the doctrine of effective occupation, opening the Congo basin to free trade, and recognizing King Leopold II's private Congo, so that while it did not itself draw most of Africa's borders, it gave the Scramble for Africa its legal cover and accelerating logic.",
+    "startYear": 1884,
+    "endYear": 1885,
+    "regions": [
+      "Sub-Saharan Africa",
+      "Europe"
+    ],
+    "degree": 7,
     "added": "2026-06-15"
   }
 ]
