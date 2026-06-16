@@ -146,6 +146,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "This entry frames the 'Non-Aligned Movement' as 'the organized voice of countries declining the terms set in Washington and Moscow.' Indira Gandhi steered India through that non-alignment, signing the 1971 Soviet treaty and testing a nuclear device in 1974."
+    },
+    {
+      "label": "The Suez Crisis",
+      "entryId": "suezCrisis",
+      "relationship": "Consequential",
+      "reason": "A defining early Cold War episode in which superpower pressure, not the battlefield, decided the outcome and humbled the old European powers.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -354,6 +361,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 40,
+  "degree": 42,
   "added": "2026-05-30"
 }

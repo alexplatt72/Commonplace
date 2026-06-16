@@ -154,7 +154,7 @@
     {
       "label": "The Sunni-Shia Split",
       "entryId": "sunniShiaSplit",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "The Seljuks were the great Sunni champions of their age, pushing back the Shia dynasty in Baghdad and building madrasas to strengthen Sunni learning against the Fatimids. Their reign is a key chapter in the long political contest between the two branches of Islam."
     },
@@ -164,6 +164,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The Seljuk Empire straddled the great overland routes linking Central Asia, Iran, and the Mediterranean, and the dynasty itself arrived along those steppe corridors. Its control of Iran and the Near East placed it astride the trade and migration networks that connected east and west."
+    },
+    {
+      "label": "Al-Ghazali",
+      "entryId": "alGhazali",
+      "relationship": "Thematic",
+      "reason": "Al-Ghazali rose to fame at the Nizamiyya college in Baghdad under Seljuk patronage, before the spiritual crisis that led him to abandon his post.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -303,6 +310,6 @@
   "regions": [
     "North Africa & Middle East"
   ],
-  "degree": 10,
+  "degree": 13,
   "added": "2026-06-16"
 }

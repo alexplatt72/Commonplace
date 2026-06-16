@@ -28,7 +28,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 20,
+    "degree": 22,
     "added": "2026-06-01"
   },
   {
@@ -197,7 +197,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 13,
+    "degree": 14,
     "added": "2026-06-13"
   },
   {
@@ -374,7 +374,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 26,
+    "degree": 29,
     "added": "2026-05-30"
   },
   {
@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 36,
+    "degree": 37,
     "added": "2026-05-30"
   },
   {
@@ -910,7 +910,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 17,
+    "degree": 18,
     "added": "2026-06-13"
   },
   {
@@ -1201,7 +1201,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 40,
+    "degree": 42,
     "added": "2026-05-30"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 143,
+    "degree": 144,
     "added": "2026-05-30"
   },
   {
@@ -1596,7 +1596,7 @@
       "South Asia",
       "Europe"
     ],
-    "degree": 41,
+    "degree": 42,
     "added": "2026-05-30"
   },
   {
@@ -2767,7 +2767,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 16,
+    "degree": 20,
     "added": "2026-06-02"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 70,
+    "degree": 74,
     "added": "2026-05-30"
   },
   {
@@ -3178,7 +3178,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 30,
+    "degree": 32,
     "added": "2026-05-30"
   },
   {
@@ -3911,7 +3911,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-01"
   },
   {
@@ -3984,7 +3984,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-05-30"
   },
   {
@@ -4260,7 +4260,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-05-31"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 74,
+    "degree": 75,
     "added": "2026-05-30"
   },
   {
@@ -4681,7 +4681,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-05-30"
   },
   {
@@ -4936,7 +4936,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-06-02"
   },
   {
@@ -5248,7 +5248,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-02"
   },
   {
@@ -10433,7 +10433,7 @@
       "North Africa & Middle East",
       "South Asia"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-06-16"
   },
   {
@@ -10482,7 +10482,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-16"
   },
   {
@@ -10613,7 +10613,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-16"
   },
   {
@@ -10645,7 +10645,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 10,
+    "degree": 13,
     "added": "2026-06-16"
   },
   {
@@ -10662,7 +10662,7 @@
       "North Africa & Middle East",
       "Europe"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-06-16"
   },
   {
@@ -10762,7 +10762,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-16"
   },
   {
@@ -10811,7 +10811,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-16"
   },
   {
@@ -10827,7 +10827,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 10,
+    "degree": 14,
     "added": "2026-06-16"
   },
   {
@@ -10893,6 +10893,87 @@
     "regions": [
       "North Africa & Middle East",
       "Europe"
+    ],
+    "degree": 9,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "suezCrisis",
+    "title": "The Suez Crisis",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "October–November 1956",
+    "status": "published",
+    "summary": "The 1956 war over the Suez Canal, in which Britain, France, and Israel secretly colluded to seize the waterway from Egypt — a military success that became a political catastrophe and exposed Britain and France as no longer first-rank world powers.",
+    "startYear": 1956,
+    "endYear": 1956,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 9,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "sunniShiaSplit",
+    "title": "The Sunni-Shia Split",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "632–680 CE",
+    "status": "published",
+    "summary": "The major division within Islam, which began as a dispute over who should lead the Muslim community after the Prophet Muhammad's death in 632 CE. Sunnis came to accept the succession of caliphs chosen by the community's leading men, beginning with Abu Bakr. Shia Muslims held that leadership belonged to the Prophet's family, beginning with his cousin and son-in-law Ali. The disagreement deepened through civil war, Ali's caliphate and assassination, and above all the killing of his son Husayn at Karbala in 680, the event that came to define Shia identity. The full split was gradual, unfolding over centuries into distinct schools of law, theology, and devotion, and the relationship between the two branches has varied widely ever since.",
+    "startYear": 632,
+    "endYear": 680,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 12,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "alBiruni",
+    "title": "Al-Biruni",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "973–c. 1048 CE",
+    "status": "published",
+    "summary": "The Khwarezmian polymath who measured the Earth's size with a single mountain and a careful angle, and who travelled into India in the entourage of a conqueror only to produce a calm, comparative study of Hindu religion, science, and custom that many modern scholars treat as an early model of cross-cultural inquiry — a thinker whose central discipline was distinguishing what he had verified from what he had merely been told.",
+    "startYear": 973,
+    "endYear": 1048,
+    "regions": [
+      "North Africa & Middle East",
+      "South Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "alFarabi",
+    "title": "Al-Farabi",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 870–950 CE",
+    "status": "published",
+    "summary": "The tenth-century philosopher whom the Islamic tradition honored as 'the Second Teacher' — second only to Aristotle — for systematizing Greek logic in Arabic and arguing that Plato and Aristotle were fundamentally in harmony. His emanationist metaphysics and his Platonic vision of a virtuous city ruled by a philosopher-prophet set the agenda for Islamic philosophy, shaping Ibn Sina directly and reaching, through translation, into Jewish and Christian thought.",
+    "startYear": 870,
+    "endYear": 950,
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 10,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "alGhazali",
+    "title": "Al-Ghazali",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 1058–1111 CE",
+    "status": "published",
+    "summary": "The Persian jurist, theologian, and mystic who, at the height of his fame, abandoned a prestigious teaching post in Baghdad for a decade of withdrawal — and whose two greatest works, a sharp critique of the Aristotelian philosophers and a vast synthesis of law with Sufi spirituality, reshaped mainstream Sunni Islam, making mysticism respectable and setting the terms on which faith and reason would be argued for centuries.",
+    "startYear": 1058,
+    "endYear": 1111,
+    "regions": [
+      "North Africa & Middle East"
     ],
     "degree": 9,
     "added": "2026-06-16"
