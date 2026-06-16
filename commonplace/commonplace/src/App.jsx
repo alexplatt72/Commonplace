@@ -588,8 +588,10 @@ const AFFILIATES = { amazonTag: '', bookshopId: '125011' };
 
 const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
 const isBookLike = (type) => /^(book|novel)$/i.test(type || '');
-// Fiction gets an explicit colored callout in commerce; non-fiction is the unmarked default.
-const isFiction = (type) => /^(novel|short story|play|poem|graphic novel)$/i.test(type || '');
+// Literary works (novels, plays, poems, graphic narratives) get an explicit colored callout in
+// commerce; non-fiction is the unmarked default. Broad enough to cover plays, epics, and graphic
+// memoir without the "Fiction" category-lie on testimony like Maus or Persepolis.
+const isLiterary = (type) => /^(novel|short stor(y|ies)|play|poem|graphic novel|graphic memoir|verse novel)$/i.test(type || '');
 
 // Validate an ISBN-13 (or ISBN-10) checksum. A direct ISBN-based link must point at a
 // real, correctly-keyed product — a typo'd or transposed ISBN resolves to the wrong book
@@ -725,8 +727,8 @@ function CommerceSection({ items }) {
             <div style={{ flex:1 }}>
               <div style={{ display:"flex", alignItems:"center", gap:6, marginBottom:5 }}>
                 <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9, color:"#1d4ed8", letterSpacing:"0.08em", textTransform:"uppercase" }}>{item.type}</span>
-                {isFiction(item.type) && (
-                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, fontWeight:600, color:"#fff", background:"#b45309", letterSpacing:"0.1em", textTransform:"uppercase", padding:"1.5px 6px", borderRadius:3 }}>Fiction</span>
+                {isLiterary(item.type) && (
+                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:8, fontWeight:600, color:"#fff", background:"#b45309", letterSpacing:"0.1em", textTransform:"uppercase", padding:"1.5px 6px", borderRadius:3 }}>Literary</span>
                 )}
               </div>
               <div style={{ fontFamily:"'Lora',serif", fontSize:14, fontStyle:"italic", fontWeight:600, color:C.text, marginBottom:3 }}>{item.title}</div>
