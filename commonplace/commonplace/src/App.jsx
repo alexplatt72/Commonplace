@@ -587,11 +587,13 @@ function ReferenceTab({ items }) {
 const AFFILIATES = { amazonTag: '', bookshopId: '125011' };
 
 const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
-const isBookLike = (type) => /^(book|novel)$/i.test(type || '');
 // Literary works (novels, plays, poems, graphic narratives) get an explicit colored callout in
 // commerce; non-fiction is the unmarked default. Broad enough to cover plays, epics, and graphic
 // memoir without the "Fiction" category-lie on testimony like Maus or Persepolis.
 const isLiterary = (type) => /^(novel|short stor(y|ies)|play|poem|graphic novel|graphic memoir|verse novel)$/i.test(type || '');
+// "Book-like" = a buyable book that should show the Find-it purchase row. All literary forms are
+// buyable books (a play, poem collection, or graphic novel has an ISBN), plus plain non-fiction Books.
+const isBookLike = (type) => /^book$/i.test(type || '') || isLiterary(type);
 
 // Validate an ISBN-13 (or ISBN-10) checksum. A direct ISBN-based link must point at a
 // real, correctly-keyed product — a typo'd or transposed ISBN resolves to the wrong book

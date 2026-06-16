@@ -22,7 +22,7 @@ const clean = v => (v || '').replace(/[^0-9Xx]/g, '').toUpperCase();
 function validIsbn13(s) { if (s.length !== 13 || /[^0-9]/.test(s)) return false; let sum = 0; for (let i = 0; i < 12; i++) sum += +s[i] * (i % 2 ? 3 : 1); return (10 - sum % 10) % 10 === +s[12]; }
 function validIsbn10(s) { if (s.length !== 10) return false; let sum = 0; for (let i = 0; i < 10; i++) { const c = s[i]; const v = c === 'X' ? 10 : +c; if ((c === 'X' && i !== 9) || Number.isNaN(v)) return false; sum += v * (10 - i); } return sum % 11 === 0; }
 const validIsbn = s => s.length === 13 ? validIsbn13(s) : s.length === 10 ? validIsbn10(s) : false;
-const isBookLike = t => /^(book|novel)$/i.test(t || '');
+const isBookLike = t => /^(book|novel|short stor(y|ies)|play|poem|graphic novel|graphic memoir|verse novel)$/i.test(t || '');
 
 const items = [];
 for (const f of fs.readdirSync(DIR)) {
