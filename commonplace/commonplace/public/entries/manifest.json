@@ -7576,7 +7576,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 5,
+    "degree": 9,
     "added": "2026-06-13"
   },
   {
@@ -9139,7 +9139,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -9820,7 +9820,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9836,7 +9836,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -9852,7 +9852,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -9868,7 +9868,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 6,
+    "degree": 7,
     "added": "2026-06-15"
   },
   {
@@ -10256,7 +10256,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -10288,7 +10288,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -10304,7 +10304,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -10320,7 +10320,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-16"
   },
   {
@@ -10333,6 +10333,86 @@
     "summary": "The giant carved stone obelisks raised over royal tombs at Aksum in northern Ethiopia around the third and fourth centuries CE, cut to look like multi-storey towers with false doors and windows. The tallest ever attempted, weighing over five hundred tons, fell and broke. A twenty-four-metre stele was looted by Fascist Italy in 1937, shipped to Rome, returned to Ethiopia in 2005, and re-erected at Aksum in 2008, making it a landmark case in the modern fight over looted heritage.",
     "startYear": 200,
     "endYear": 2008,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 8,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "maasai",
+    "title": "The Maasai",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 17th century CE – present",
+    "status": "published",
+    "summary": "The semi-nomadic cattle herders of the savanna grasslands of southern Kenya and northern Tanzania — a Nilotic, Maa-speaking people whose age-set system and famous warrior grade, the moran, organize a society built entirely around cattle, and who have spent a century fighting the loss of their grazing land to colonial treaties, ranches, and the wildlife parks that turned their pastures into tourist attractions.",
+    "startYear": 1600,
+    "endYear": 2026,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 7,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "san",
+    "title": "The San",
+    "template": "Places",
+    "subtype": "System",
+    "period": "Deep antiquity – present",
+    "status": "published",
+    "summary": "The San peoples of southern Africa, hunter-gatherers of the Kalahari and beyond, whose Khoisan languages carry the click consonants, whose rock art is among the oldest and richest on earth, and whose genetic lineages branch near the root of the human family tree — a living people long flattened into a fantasy of the timeless primitive, and long dispossessed by farmers, colonists, and conservation states alike.",
+    "startYear": -100000,
+    "endYear": 2026,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 9,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "beninBronzes",
+    "title": "Benin Bronzes",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "13th century onward; looted 1897",
+    "status": "published",
+    "summary": "Thousands of brass and bronze plaques, heads, and figures cast by the Edo people for the royal court of the Kingdom of Benin, in present-day Edo State, Nigeria, from roughly the 13th century. Made largely by lost-wax casting in brass for the palace of the Oba, they recorded court history and ritual in metal. In 1897 a British military expedition sacked Benin City and looted the works, which were sold across Europe and America. They are now the central case in the global debate over returning objects taken in the colonial era.",
+    "startYear": 1897,
+    "endYear": 1897,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 6,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "asanteGoldenStool",
+    "title": "The Asante Golden Stool",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "c. 1700–present",
+    "status": "published",
+    "summary": "The Sika Dwa Kofi, the Golden Stool of the Asante people of present-day Ghana, is the sacred object that holds the soul of the nation. By Asante tradition the priest Okomfo Anokye called it down from the sky around 1700 to seal the union of the Asante confederacy under the first Asantehene, Osei Tutu. It is never sat upon and never allowed to touch the ground. Its honor triggered the War of the Golden Stool in 1900, after a British governor demanded to sit on it, and it was hidden rather than surrendered. It remains the central emblem of Asante identity today.",
+    "startYear": 1700,
+    "endYear": 2026,
+    "regions": [
+      "Sub-Saharan Africa"
+    ],
+    "degree": 8,
+    "added": "2026-06-16"
+  },
+  {
+    "id": "kebraNagast",
+    "title": "The Kebra Nagast",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "Surviving Ge'ez compilation dated to the early 14th century CE; claims older sources",
+    "status": "published",
+    "summary": "The national epic of Ethiopia, written in Ge'ez and usually dated in its surviving form to the early fourteenth century. It tells how the Queen of Sheba visited King Solomon, bore him a son, Menelik I, who carried the Ark of the Covenant from Jerusalem to Aksum and made Ethiopia the new chosen nation. The text became the charter of the Solomonic dynasty, which ruled until 1974, anchored the Ethiopian Orthodox claim to hold the original Ark, and later shaped the Rastafari movement. Its world effect runs through dynasty, church, and crown across seven centuries, independently of any single author.",
+    "startYear": 1300,
+    "endYear": 1974,
     "regions": [
       "Sub-Saharan Africa"
     ],
