@@ -172,9 +172,16 @@
     {
       "label": "Ife",
       "entryId": "ife",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "The naturalistic sculpture of Ife, in clay and metal, is the West African tradition most often proposed as a descendant of the Nok line; the possible connection is a central question in the deep history of Nigerian art, though the centuries between them are thinly documented."
+    },
+    {
+      "label": "The Dogon",
+      "entryId": "dogon",
+      "relationship": "Parallel",
+      "reason": "Like Nok, the Dogon are central to the story of West African art that reshaped how the world sees sculpture.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -303,6 +310,6 @@
   "regions": [
     "Sub-Saharan Africa"
   ],
-  "degree": 5,
+  "degree": 7,
   "added": "2026-06-15"
 }
