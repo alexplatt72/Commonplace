@@ -162,6 +162,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The popular image of the House of Wisdom as a temple of Greek philosophy centers on the recovery of Aristotle — yet the careful reading suggests the caliphal library leaned toward Persian material, making the Aristotelian association part of the legend rather than its core."
+    },
+    {
+      "label": "Euclid's Elements",
+      "entryId": "euclidsElements",
+      "relationship": "Thematic",
+      "reason": "Greek mathematical works including Euclid’s Elements were among the texts rendered into Arabic in the Abbasid translation milieu the House of Wisdom legend represents.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -290,6 +297,6 @@
   "regions": [
     "North Africa & Middle East"
   ],
-  "degree": 10,
+  "degree": 12,
   "added": "2026-06-16"
 }

@@ -146,6 +146,13 @@
       "relationship": "Thematic",
       "reason": "The Dome of the Rock crowns the walled platform at the heart of Jerusalem that Muslims call the Haram al-Sharif and Jews call the Temple Mount.",
       "status": "published"
+    },
+    {
+      "label": "The Second Temple",
+      "entryId": "secondTemple",
+      "relationship": "Thematic",
+      "reason": "The Second Temple was the sacred heart of Jerusalem for nearly six centuries, and its destruction in 70 CE is one of the hinge events of the city’s history.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -419,6 +426,6 @@
   "regions": [
     "North Africa & Middle East"
   ],
-  "degree": 21,
+  "degree": 23,
   "added": "2026-05-30"
 }
