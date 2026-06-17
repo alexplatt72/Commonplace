@@ -179,9 +179,16 @@
     {
       "label": "Suleiman the Magnificent",
       "entryId": "suleimanTheMagnificent",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "The later Ottoman sultans, Suleiman among them, inherited Saladin's mantle as the great Sunni defenders of Islam against Christian Europe and consciously invoked his memory in their own wars and self-presentation."
+    },
+    {
+      "label": "Cairo",
+      "entryId": "cairo",
+      "relationship": "Thematic",
+      "reason": "Saladin ruled Egypt from Cairo, fortified it with the Citadel, and turned its al-Azhar from a Shia into a Sunni center of learning.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -339,6 +346,6 @@
   "regions": [
     "North Africa & Middle East"
   ],
-  "degree": 12,
+  "degree": 15,
   "added": "2026-06-16"
 }
