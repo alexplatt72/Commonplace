@@ -182,6 +182,13 @@
       "status": "planned",
       "relationship": "Consequential",
       "reason": "The 'Elements' is the work on which Euclid's entire significance rests, and it merits treatment as a text in its own right — its thirteen books, its deductive architecture, and its two-thousand-year career as the most successful textbook in history."
+    },
+    {
+      "label": "Ptolemy",
+      "entryId": "ptolemy",
+      "relationship": "Descendant",
+      "reason": "Ptolemy built his astronomy on the deductive geometry of Euclid's Alexandria, applying the same rigorous method to a mathematical model of the heavens.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -322,6 +329,6 @@
     "Europe",
     "North Africa & Middle East"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-16"
 }
