@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 39,
+    "degree": 42,
     "added": "2026-05-30"
   },
   {
@@ -1153,7 +1153,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 46,
+    "degree": 48,
     "added": "2026-05-30"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 42,
+    "degree": 44,
     "added": "2026-05-30"
   },
   {
@@ -1815,7 +1815,7 @@
       "Oceania",
       "Global / Transregional"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-13"
   },
   {
@@ -2476,7 +2476,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-05-30"
   },
   {
@@ -3553,7 +3553,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-05-30"
   },
   {
@@ -4203,7 +4203,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 17,
+    "degree": 18,
     "added": "2026-05-31"
   },
   {
@@ -4219,7 +4219,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-05-30"
   },
   {
@@ -4665,7 +4665,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-06-13"
   },
   {
@@ -5502,7 +5502,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 31,
+    "degree": 32,
     "added": "2026-05-31"
   },
   {
@@ -5521,7 +5521,7 @@
       "North America",
       "Europe"
     ],
-    "degree": 55,
+    "degree": 57,
     "added": "2026-05-30"
   },
   {
@@ -5748,7 +5748,7 @@
       "Latin America & Caribbean",
       "Europe"
     ],
-    "degree": 33,
+    "degree": 35,
     "added": "2026-06-13"
   },
   {
@@ -7424,7 +7424,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-13"
   },
   {
@@ -7475,7 +7475,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-13"
   },
   {
@@ -7560,7 +7560,7 @@
       "South Asia",
       "Global / Transregional"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-13"
   },
   {
@@ -9530,7 +9530,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-15"
   },
   {
@@ -9627,7 +9627,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-15"
   },
   {
@@ -10096,7 +10096,7 @@
       "North America",
       "Latin America & Caribbean"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-15"
   },
   {
@@ -11694,7 +11694,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -11712,6 +11712,87 @@
       "Global / Transregional"
     ],
     "degree": 13,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "coralReefs",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 6000 BCE–present",
+    "title": "Coral Reefs",
+    "summary": "A coral reef is a vast living structure built over thousands of years by colonies of tiny animals whose limestone skeletons accumulate into the most biodiverse habitat in the sea — a system that covers a tiny fraction of the ocean floor yet shelters perhaps a quarter to a third of all marine species, shields coastlines, and feeds hundreds of millions, and that warming and acidifying seas have now made one of the most threatened ecosystems on Earth.",
+    "status": "published",
+    "startYear": -6000,
+    "endYear": 2025,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "garifuna",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 17th century CE – present",
+    "title": "The Garifuna",
+    "summary": "An Afro-Indigenous people of the Caribbean coast of Central America — chiefly Honduras, Belize, Guatemala, and Nicaragua, with a large diaspora in the United States. The Garifuna (or Garínagu) formed on the island of St. Vincent from the mixing of Indigenous Island Caribs with Africans, were deported by the British in 1797 after years of resistance, and carried across the sea an Indigenous language, a distinctive music and spirituality, and a way of life that UNESCO named a Masterpiece of the Oral and Intangible Heritage of Humanity.",
+    "status": "published",
+    "startYear": 1635,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "goldenAgeOfPiracy",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1650s–1730 (classic phase c. 1714–1726)",
+    "title": "The Golden Age of Piracy",
+    "summary": "The burst of intense maritime robbery, roughly the 1650s to 1730, that swept the Caribbean, the Atlantic, and the Indian Ocean. The entry treats piracy not as a world apart but as the violent shadow of empire — licensed in wartime, hunted in peace — and weighs the romantic pirate of fiction against the thinner, harder record.",
+    "status": "published",
+    "startYear": 1650,
+    "endYear": 1730,
+    "regions": [
+      "Latin America & Caribbean",
+      "Global / Transregional"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "britishHonduras",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1638 – 1981 CE",
+    "title": "British Honduras",
+    "summary": "The colonial extraction settlement on the Caribbean coast of Central America that became modern Belize. Conjured out of a single tree, it began as a cluster of English logcutters — many of them former pirates — felling logwood for textile dye, then shifted to mahogany cut by enslaved Africans deep in the forest. Claimed but never settled by Spain, formalized by Britain only in 1862, and contested by Guatemala to this day, it left behind an English-speaking, plural society wedged into Spanish-speaking Central America.",
+    "status": "published",
+    "startYear": 1638,
+    "endYear": 1981,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 12,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "hurricanes",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "Recurring, c. 6000 BCE–present",
+    "title": "Hurricanes",
+    "summary": "A hurricane is the ocean's great heat engine turned loose — a vast rotating storm that draws its power from warm tropical water and converts it into wind, rain, and the deadliest hazard of all, storm surge. The same force is called a hurricane in the Atlantic, a typhoon in the western Pacific, and a cyclone in the Indian Ocean. The word itself carries a history: it comes through Spanish from a Caribbean Indigenous name linked to a Maya storm god, and the Caribbean and Gulf it haunts are among the most hurricane-prone seas on Earth. Hurricanes have repeatedly reshaped the region's colonial economies, its naval history, and its patterns of migration, and a warming ocean is expected to make the strongest of them more intense.",
+    "status": "published",
+    "startYear": -6000,
+    "endYear": 2025,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 10,
     "added": "2026-06-18"
   }
 ]
