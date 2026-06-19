@@ -165,7 +165,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -430,7 +430,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 6,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -569,7 +569,7 @@
       "North Africa & Middle East",
       "East Asia"
     ],
-    "degree": 13,
+    "degree": 14,
     "added": "2026-05-30"
   },
   {
@@ -714,7 +714,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 42,
+    "degree": 43,
     "added": "2026-05-30"
   },
   {
@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 15,
+    "degree": 18,
     "added": "2026-06-01"
   },
   {
@@ -2460,7 +2460,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 93,
+    "degree": 95,
     "added": "2026-05-30"
   },
   {
@@ -4235,7 +4235,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-05-31"
   },
   {
@@ -4633,7 +4633,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 25,
+    "degree": 26,
     "added": "2026-05-31"
   },
   {
@@ -9643,7 +9643,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-15"
   },
   {
@@ -10433,7 +10433,7 @@
       "North Africa & Middle East",
       "South Asia"
     ],
-    "degree": 23,
+    "degree": 25,
     "added": "2026-06-16"
   },
   {
@@ -11840,7 +11840,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 8,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -11856,7 +11856,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -11872,7 +11872,87 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 12,
+    "degree": 18,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "jainism",
+    "title": "Jainism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 8th century BCE – present",
+    "summary": "One of the world's oldest living religions, born in the same ancient Indian ferment as Buddhism among the non-Vedic renouncers, and built around a single principle carried further than perhaps any other tradition has carried it: ahimsa, non-harm to every living being, down to the smallest. Its central teacher is Mahavira, by tradition the last of twenty-four ford-makers, though Jains hold the path itself to be eternal.",
+    "status": "published",
+    "startYear": -800,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "marathaConfederacy",
+    "title": "The Maratha Confederacy",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1674–1818 CE",
+    "summary": "The Marathi-speaking power of the western Deccan that, rising under Shivaji against the Deccan sultanates and the Mughals, broke Mughal dominance in the eighteenth century and spread across much of India — only to lose, divided among rival houses, to the British East India Company by 1818.",
+    "status": "published",
+    "startYear": 1674,
+    "endYear": 1818,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "mauryaEmpire",
+    "title": "The Maurya Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 322–185 BCE",
+    "summary": "The first state to bring most of the Indian subcontinent under a single rule — a centralized, bureaucratic empire whose greatest emperor, Ashoka, conquered a region called Kalinga, recorded his own remorse on rock and pillar, and helped turn Buddhism into a world religion.",
+    "status": "published",
+    "startYear": -322,
+    "endYear": -185,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "sikhism",
+    "title": "Sikhism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1469 CE – present",
+    "summary": "The religion founded in the Punjab by Guru Nanak (1469–1539) on the teaching that there is one formless God beyond every human division, and that caste, ritualism, and the Hindu–Muslim divide are beside the point — a truth lived through honest work, sharing with others, and devotion. Carried forward by a line of ten Gurus and then by a living scripture, the Guru Granth Sahib, and the initiated community of the Khalsa, it is today the world's fifth-largest organized religion.",
+    "status": "published",
+    "startYear": 1469,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "bhaktiMovement",
+    "title": "The Bhakti Movement",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 6th century CE – present",
+    "summary": "A centuries-long wave of personal, emotional devotion to a personal God that reshaped Hinduism from below. Sung in everyday languages rather than Sanskrit, it placed direct love of God above ritual, priestly mediation, and often above caste, and made the divine reachable by the low-caste, the illiterate, and women. Traced from the Tamil south of roughly the sixth century, it spread across India over the next thousand years and remains the dominant mode of popular Hindu worship.",
+    "status": "published",
+    "startYear": 600,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 9,
     "added": "2026-06-18"
   }
 ]

@@ -129,7 +129,7 @@
     {
       "label": "The Maratha Confederacy",
       "entryId": "marathaConfederacy",
-      "status": "planned",
+      "status": "published",
       "relationship": "Contrasting",
       "reason": "A later south-and-central Indian power organized very differently, as a confederacy rather than a temple-centered dynasty — the contrast clarifies how distinctive the Chola fusion of delta agriculture, temple economy, and naval reach really was"
     },
@@ -146,6 +146,13 @@
       "status": "planned",
       "relationship": "Descendant",
       "reason": "The great later South Indian empire that inherited and reworked the Tamil temple, agrarian, and trading traditions the Cholas consolidated — it shows what became of the southern model of power after the Chola dynasty's eclipse"
+    },
+    {
+      "label": "The Bhakti Movement",
+      "entryId": "bhaktiMovement",
+      "relationship": "Consequential",
+      "reason": "The ecstatic hymns of the Tamil Alvars and Nayanars, the seedbed of bhakti, filled the great temples the Chola kings built across the south.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -331,6 +338,6 @@
   "regions": [
     "South Asia"
   ],
-  "degree": 8,
+  "degree": 11,
   "added": "2026-06-18"
 }
