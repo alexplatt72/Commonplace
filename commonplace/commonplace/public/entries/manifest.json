@@ -714,7 +714,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-05-30"
   },
   {
@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 43,
+    "degree": 45,
     "added": "2026-05-30"
   },
   {
@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-06-01"
   },
   {
@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 52,
+    "degree": 53,
     "added": "2026-05-31"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 145,
+    "degree": 148,
     "added": "2026-05-30"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 44,
+    "degree": 45,
     "added": "2026-05-30"
   },
   {
@@ -1596,7 +1596,7 @@
       "South Asia",
       "Europe"
     ],
-    "degree": 43,
+    "degree": 44,
     "added": "2026-05-30"
   },
   {
@@ -2396,7 +2396,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-01"
   },
   {
@@ -2863,7 +2863,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 20,
+    "degree": 24,
     "added": "2026-06-01"
   },
   {
@@ -2881,7 +2881,7 @@
       "South Asia",
       "Sub-Saharan Africa"
     ],
-    "degree": 43,
+    "degree": 44,
     "added": "2026-05-30"
   },
   {
@@ -3692,7 +3692,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-05-31"
   },
   {
@@ -4235,7 +4235,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-05-31"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 81,
+    "degree": 83,
     "added": "2026-05-30"
   },
   {
@@ -4526,7 +4526,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 44,
+    "degree": 45,
     "added": "2026-05-30"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 61,
+    "degree": 62,
     "added": "2026-05-30"
   },
   {
@@ -6396,7 +6396,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-05-31"
   },
   {
@@ -6962,7 +6962,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 27,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -11856,7 +11856,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 13,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -11872,7 +11872,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 22,
+    "degree": 24,
     "added": "2026-06-18"
   },
   {
@@ -11888,7 +11888,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 8,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -11952,7 +11952,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -12031,6 +12031,86 @@
     "endYear": 1646,
     "regions": [
       "South Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "yoga",
+    "title": "Yoga",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1st millennium BCE – present",
+    "status": "published",
+    "summary": "An Indian spiritual discipline whose name means \"to yoke\" or \"union\" — for most of its long history a rigorous path for stilling the mind and freeing the self, not a form of exercise. Rooted in the ascetic and Upanishadic world of the first millennium BCE and given classical shape in Patanjali's Yoga Sutras, it taught liberation through ethics, breath, concentration, and meditation, with physical posture only one small part. The bending, stretching practice the modern world calls yoga took form mainly in the late nineteenth and twentieth centuries and has become a global, largely secular wellness practice that has mostly shed its metaphysics.",
+    "startYear": -500,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "bengalFamineOf1943",
+    "title": "The Bengal Famine of 1943",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1943–1944",
+    "status": "published",
+    "summary": "The mass starvation of roughly two to three million people in British-ruled Bengal during 1943 and 1944, in one of the richest provinces of the British Empire and in the middle of the Second World War. No single drought explains it. Its causes were a tangle of wartime disruption, the Japanese conquest of Burma, scorched-earth defense measures, inflation, market collapse, and slow colonial relief — and the question of British and Churchill-era responsibility remains fiercely debated.",
+    "startYear": 1943,
+    "endYear": 1944,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "sepoyRebellionOf1857",
+    "title": "The Rebellion of 1857",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1857–1858",
+    "status": "published",
+    "summary": "The vast uprising across northern India against the rule of the British East India Company, which began in May 1857 as a mutiny of the Company's Indian soldiers and swelled into a broad revolt of soldiers, peasants, and dispossessed elites. It was the bloodiest challenge the British ever faced in India, marked by atrocities on both sides, and the Company crushed it with great ferocity. Its defeat ended Company rule, transferred India to the direct government of the British Crown, ended the Mughal dynasty, and left a memory so contested that the event has no single agreed name.",
+    "startYear": 1857,
+    "endYear": 1858,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "bangladeshLiberationWar",
+    "title": "The Bangladesh Liberation War",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1971",
+    "status": "published",
+    "summary": "The 1971 war in which East Pakistan broke away from West Pakistan to become independent Bangladesh — a country built on a single religion that tore in two over language and political power. After the Pakistani army's crackdown on 25 March 1971 unleashed mass killing, rape, and the flight of roughly ten million refugees into India, Bengali guerrillas and an Indian military intervention forced the Pakistani surrender on 16 December 1971. The death toll is bitterly contested, ranging from official Bangladeshi figures of three million to independent estimates in the hundreds of thousands.",
+    "startYear": 1971,
+    "endYear": 1971,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "vascoDaGamasVoyageToIndia",
+    "title": "Vasco da Gama's Voyage to India",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1497 – 1499",
+    "status": "published",
+    "summary": "The first all-sea route from Europe to Asia, opened when the Portuguese captain Vasco da Gama rounded the Cape of Good Hope and reached Calicut on the Indian coast in 1498 — breaking the chain of middlemen that had carried Asian goods to Europe for centuries and opening the era of European seaborne empire in Asia.",
+    "startYear": 1497,
+    "endYear": 1499,
+    "regions": [
+      "Global / Transregional"
     ],
     "degree": 8,
     "added": "2026-06-18"
