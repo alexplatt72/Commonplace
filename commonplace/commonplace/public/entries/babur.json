@@ -175,6 +175,13 @@
       "status": "planned",
       "relationship": "Precursor",
       "reason": "The empire of Babur's ancestor Timur, whose lost capital Samarkand he spent his youth trying to recover; his Timurid identity and genealogy anchored his claim to rule."
+    },
+    {
+      "label": "Ranjit Singh",
+      "entryId": "ranjitSingh",
+      "relationship": "Descendant",
+      "reason": "Three centuries after Babur founded the Mughal Empire, Ranjit Singh built a Sikh empire over the same Punjab as Mughal power dissolved.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -303,6 +310,6 @@
   "regions": [
     "South Asia"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }
