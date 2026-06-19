@@ -585,7 +585,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 17,
+    "degree": 21,
     "added": "2026-05-31"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 39,
+    "degree": 42,
     "added": "2026-05-30"
   },
   {
@@ -3943,7 +3943,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 20,
+    "degree": 26,
     "added": "2026-06-02"
   },
   {
@@ -3984,7 +3984,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 21,
+    "degree": 22,
     "added": "2026-05-30"
   },
   {
@@ -4469,7 +4469,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 16,
+    "degree": 19,
     "added": "2026-06-13"
   },
   {
@@ -5748,7 +5748,7 @@
       "Latin America & Caribbean",
       "Europe"
     ],
-    "degree": 28,
+    "degree": 33,
     "added": "2026-06-13"
   },
   {
@@ -6186,7 +6186,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-05-31"
   },
   {
@@ -7011,7 +7011,7 @@
       "North Africa & Middle East",
       "East Asia"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-05-31"
   },
   {
@@ -7043,7 +7043,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-05-30"
   },
   {
@@ -7424,7 +7424,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-13"
   },
   {
@@ -7508,7 +7508,7 @@
       "Latin America & Caribbean",
       "Global / Transregional"
     ],
-    "degree": 18,
+    "degree": 20,
     "added": "2026-06-13"
   },
   {
@@ -9450,7 +9450,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-06-15"
   },
   {
@@ -11632,5 +11632,86 @@
     ],
     "degree": 10,
     "added": "2026-06-17"
+  },
+  {
+    "id": "mayaScript",
+    "title": "Maya Script",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 300 BCE–present",
+    "status": "published",
+    "summary": "The most fully developed writing system of the pre-Columbian Americas, and the only one known to record a spoken language completely. Maya script mixes whole-word signs with phonetic syllable signs, recording the dynastic history, ritual, astronomy, and calendar of the Maya — a body of knowledge nearly erased by Spanish book-burning, then painstakingly read again in the twentieth century.",
+    "startYear": -300,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "mayaCalendar",
+    "title": "The Maya Calendar",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 400 BCE – present",
+    "status": "published",
+    "summary": "Not one calendar but a set of interlocking cycles — a 260-day ritual round, a 365-day solar year, and a linear day-count reaching back to a mythical creation — built on a base-20 place-value system and an independently invented zero. It let Maya scribes fix any day in deep time, schedule the rituals of kingship, and write the most accurate astronomical tables of the pre-Columbian Americas.",
+    "startYear": -400,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "chichenItza",
+    "title": "Chichén Itzá",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 600 – 1200/1250 CE (peak as a Maya city); a Wonder and tourist site today",
+    "status": "published",
+    "summary": "A great pre-Columbian Maya city in the northern Yucatán of Mexico, which rose in the Terminal Classic and dominated much of the northern lowlands between roughly 800 and 1100 CE before declining by about 1200 to 1250. Its monuments include El Castillo (the Temple of Kukulcán), the largest Mesoamerican ball court, the round Caracol, the Temple of the Warriors, and the Sacred Cenote into which offerings were thrown. Famous for a blend of Maya and central-Mexican styles whose origin scholars now debate, it remained a place of pilgrimage after its decline and is today a UNESCO World Heritage Site and a New 7 Wonders of the World.",
+    "startYear": 600,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "cozumel",
+    "title": "Cozumel",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 800 CE (Maya settlement; pilgrimage peak in the Postclassic)–present",
+    "status": "published",
+    "summary": "An island off the Caribbean coast of Mexico's Yucatan Peninsula that was one of the most important pilgrimage destinations in the Maya world, especially in the Postclassic period (roughly 1200–1500 CE). Maya travelers, many of them women hoping for safe childbirth, crossed the sea to consult an oracle of the goddess often identified with Ix Chel, associated with the moon, healing, childbirth, weaving, and divination. Cortes stopped here in 1519 at the start of the conquest of Mexico; disease and conquest later emptied the island. Today it is one of the world's busiest cruise-ship ports and a famous scuba-diving destination on the Mesoamerican Reef.",
+    "startYear": 800,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "cacao",
+    "title": "Cacao",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1900 BCE – present",
+    "status": "published",
+    "summary": "The bitter bean of a tropical American tree (Theobroma cacao, 'food of the gods'), processed by Mesoamerican peoples into a spiced, frothy drink and used by the Maya and Aztecs as money, tribute, and sacred substance — cacao crossed to Europe after the conquest, was sweetened into the chocolate the modern world eats, and now rests on a global cacao belt whose West African farms carry documented problems of poverty and child labor.",
+    "startYear": -1900,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean",
+      "Global / Transregional"
+    ],
+    "degree": 13,
+    "added": "2026-06-18"
   }
 ]
