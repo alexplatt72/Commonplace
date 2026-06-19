@@ -430,7 +430,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 12,
     "added": "2026-05-30"
   },
   {
@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 50,
+    "degree": 51,
     "added": "2026-05-30"
   },
   {
@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 25,
+    "degree": 27,
     "added": "2026-06-01"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 153,
+    "degree": 154,
     "added": "2026-05-30"
   },
   {
@@ -2460,7 +2460,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 23,
+    "degree": 25,
     "added": "2026-05-30"
   },
   {
@@ -2881,7 +2881,7 @@
       "South Asia",
       "Sub-Saharan Africa"
     ],
-    "degree": 44,
+    "degree": 45,
     "added": "2026-05-30"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 103,
+    "degree": 104,
     "added": "2026-05-30"
   },
   {
@@ -4235,7 +4235,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-05-31"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 63,
+    "degree": 64,
     "added": "2026-05-30"
   },
   {
@@ -6396,7 +6396,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-05-31"
   },
   {
@@ -11840,7 +11840,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 15,
+    "degree": 18,
     "added": "2026-06-18"
   },
   {
@@ -11856,7 +11856,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-06-18"
   },
   {
@@ -11872,7 +11872,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 33,
+    "degree": 37,
     "added": "2026-06-18"
   },
   {
@@ -11952,7 +11952,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -11984,7 +11984,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12032,7 +12032,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -12096,7 +12096,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12176,7 +12176,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -12224,7 +12224,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -12256,7 +12256,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -12304,7 +12304,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-18"
   },
   {
@@ -12349,6 +12349,86 @@
     "status": "published",
     "startYear": -500,
     "endYear": 500,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "hampi",
+    "title": "Hampi",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1336 CE – present",
+    "status": "published",
+    "summary": "The ruined capital of the Vijayanagara Empire, scattered across a vast field of granite boulders on the Tungabhadra river in Karnataka, southern India. For two centuries one of the richest cities on earth, it was sacked over months after the Battle of Talikota in 1565 and never rebuilt as a capital. Its temples, palaces, and waterworks survive as one of the great ruin fields of the world, with the Virupaksha temple still in worship and the site protected by UNESCO.",
+    "startYear": 1336,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "kashmir",
+    "title": "Kashmir",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 250 BCE – present",
+    "status": "published",
+    "summary": "A Himalayan valley long called paradise on earth — celebrated for its lakes, gardens, shawls, and a syncretic culture of Hindu, Buddhist, and Sufi learning — that became the unfinished business of the 1947 Partition and one of the most militarized and bitterly disputed places on the planet, claimed in full by both India and Pakistan and partly held by China.",
+    "startYear": -250,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "konarkAndTheTempleArchitectureOfIndia",
+    "title": "Konark and the Temple Architecture of India",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 500 CE – present",
+    "status": "published",
+    "summary": "The Hindu temple is not a hall for congregation but a built cosmos: a house for a god and a model of the universe carved in stone. Raised by the thousand across India in a shared grammar that split into magnificent regional styles, it served as bank, school, landowner, and stage for art and dance as much as a place of worship. Konark, the thirteenth-century Sun Temple in Odisha, conceived as a colossal stone chariot of the sun-god Surya, is the tradition's boldest single statement.",
+    "startYear": 500,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "nalanda",
+    "title": "Nalanda",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 5th century CE – present",
+    "status": "published",
+    "summary": "The vast Buddhist monastic university of eastern India that, for some seven centuries, drew students from across Asia to study philosophy, logic, medicine, and astronomy — endowed by the Gupta and Pala kings, recorded by Chinese pilgrims, and destroyed around 1200 CE in a loss that became a symbol of the end of Buddhist learning in its Indian homeland.",
+    "startYear": 427,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "sriLanka",
+    "title": "Sri Lanka",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 500 BCE – present",
+    "status": "published",
+    "summary": "The teardrop island off the southern tip of India that became, for more than two thousand years, the great fortress of Theravada Buddhism and a crossroads of the Indian Ocean — home to the ancient hydraulic civilizations of Anuradhapura and Polonnaruwa, the island where the Pali canon was first written down, ruled in turn by Sinhalese kings, south Indian invaders, and European traders, and torn in its modern life by a 26-year civil war between the Sinhalese-majority state and Tamil separatists that ended in 2009 amid mass civilian death.",
+    "startYear": -500,
+    "endYear": 2025,
     "regions": [
       "South Asia"
     ],

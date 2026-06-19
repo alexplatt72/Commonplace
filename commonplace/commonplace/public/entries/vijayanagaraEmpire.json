@@ -123,7 +123,7 @@
     {
       "label": "Hampi",
       "entryId": "hampi",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "The ruined capital itself, the wonder-city left broken after Talikota and now a World Heritage site; the place entry will carry the physical and archaeological story the empire entry can only summarize."
     },
@@ -167,6 +167,13 @@
       "entryId": "vascoDaGamasVoyageToIndia",
       "relationship": "Thematic",
       "reason": "When the Portuguese reached the Malabar coast, the great South Indian empire of Vijayanagara was flourishing in the interior.",
+      "status": "published"
+    },
+    {
+      "label": "Konark and the Temple Architecture of India",
+      "entryId": "konarkAndTheTempleArchitectureOfIndia",
+      "relationship": "Thematic",
+      "reason": "Vijayanagara was one of the great later temple-building empires, its capital crowded with the Dravidian shrines and gateway towers of this architectural tradition.",
       "status": "published"
     }
   ],
@@ -341,6 +348,6 @@
   "regions": [
     "South Asia"
   ],
-  "degree": 11,
+  "degree": 15,
   "added": "2026-06-18"
 }
