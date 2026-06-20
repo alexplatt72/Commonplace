@@ -158,7 +158,7 @@
     {
       "label": "Legalism",
       "entryId": "legalism",
-      "status": "planned",
+      "status": "published",
       "relationship": "Contrasting",
       "reason": "The rival statecraft that trusted law, reward, and harsh punishment over moral cultivation -- the alternative to Confucian government against which the Han defined its own Confucian turn."
     },
@@ -168,6 +168,13 @@
       "status": "planned",
       "relationship": "Consequential",
       "reason": "The campaign that attacked Confucian texts, temples, and customs as feudal relics -- the sharpest modern repudiation of the tradition, and the low point before the late-20th-century revival."
+    },
+    {
+      "label": "Joseon Korea",
+      "entryId": "joseonKorea",
+      "relationship": "Descendant",
+      "reason": "Joseon Korea built the most thoroughly Neo-Confucian state ever attempted, more rigorous than China itself.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -359,6 +366,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 9,
+  "degree": 14,
   "added": "2026-06-18"
 }

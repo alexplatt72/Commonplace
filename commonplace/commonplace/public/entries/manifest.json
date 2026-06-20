@@ -746,7 +746,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 32,
+    "degree": 34,
     "added": "2026-05-30"
   },
   {
@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 39,
+    "degree": 43,
     "added": "2026-06-01"
   },
   {
@@ -1329,7 +1329,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 18,
+    "degree": 19,
     "added": "2026-05-30"
   },
   {
@@ -2259,7 +2259,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -2492,7 +2492,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 20,
+    "degree": 22,
     "added": "2026-05-30"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 112,
+    "degree": 113,
     "added": "2026-05-30"
   },
   {
@@ -4025,7 +4025,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 8,
+    "degree": 10,
     "added": "2026-05-31"
   },
   {
@@ -4162,7 +4162,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 40,
+    "degree": 42,
     "added": "2026-05-30"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 67,
+    "degree": 69,
     "added": "2026-05-30"
   },
   {
@@ -5641,7 +5641,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 16,
+    "degree": 19,
     "added": "2026-05-31"
   },
   {
@@ -6060,7 +6060,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-05-31"
   },
   {
@@ -12976,7 +12976,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 9,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -12992,7 +12992,87 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 9,
+    "degree": 12,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "genghisKhansSuccessors",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1227–1405",
+    "title": "Genghis Khan's Successors",
+    "summary": "The era after Genghis Khan's death in 1227, when the largest contiguous land empire in history passed to his sons and grandsons and split into four vast khanates — the Yuan in China, the Ilkhanate in Persia, the Golden Horde on the Russian steppe, and the Chagatai realm in Central Asia. For roughly a century these states ruled from Korea to Hungary, knit Eurasia into one connected world under the Pax Mongolica, then dissolved into the nations that still remember them with both dread and pride.",
+    "status": "published",
+    "startYear": 1227,
+    "endYear": 1405,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "joseonKorea",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1392–1910 CE",
+    "title": "Joseon Korea",
+    "summary": "Joseon Korea (1392–1910) was the longest-lived dynasty in East Asian history and, by many accounts, the most thoroughly Confucian state ever built — a kingdom that engineered its whole society around Neo-Confucian order, gave Korea its own alphabet under King Sejong, survived a catastrophic Japanese invasion, sealed itself off as the 'Hermit Kingdom,' and was finally annexed by imperial Japan.",
+    "status": "published",
+    "startYear": 1392,
+    "endYear": 1910,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "legalism",
+    "title": "Legalism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 4th century BCE – present",
+    "summary": "The cold, hard-headed Chinese theory of statecraft -- the school of \"methods and law\" (Fa-jia) that held people are selfish, that a ruler's virtue cannot govern them, and that order comes only from clear law, ruthless reward and punishment, and an all-powerful state. It built the first unified Chinese empire under the Qin, was disgraced when that empire collapsed, and then survived in secret as the administrative skeleton every later \"Confucian\" dynasty quietly kept.",
+    "status": "published",
+    "startYear": -400,
+    "endYear": 1912,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 6,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "shinto",
+    "title": "Shinto",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "ancient roots – present",
+    "summary": "The native religion of Japan — the way of the kami, the countless sacred presences felt in nature, place, and ancestry. It has no founder, no scripture, and no fixed creed, only shrines, purification, and festival. For over a thousand years it fused with Buddhism, then in the modern era was briefly forged by the state into an instrument of emperor-worship and nationalism, before returning after 1945 to the quiet rhythms of Japanese life.",
+    "status": "published",
+    "startYear": -500,
+    "endYear": 2025,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 6,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "goryeoDynasty",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "918–1392 CE",
+    "title": "The Goryeo Dynasty",
+    "summary": "The Goryeo Dynasty (918–1392 CE) gave Korea its name and its first great flowering — a Buddhist kingdom that unified the peninsula, made celadon counted among the finest ceramics ever produced, carved the entire Buddhist canon onto more than eighty thousand woodblocks as a prayer against the Mongols, and printed with movable metal type generations before Gutenberg.",
+    "status": "published",
+    "startYear": 918,
+    "endYear": 1392,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]

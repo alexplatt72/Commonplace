@@ -135,6 +135,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "The Black Death and cholera are the two most consequential epidemic diseases in European history — one a single catastrophic medieval event, the other a recurring global process across seven pandemics — and comparing how each drove institutional responses illuminates what makes epidemics politically transformative versus demographically devastating alone."
+    },
+    {
+      "label": "Genghis Khan's Successors",
+      "entryId": "genghisKhansSuccessors",
+      "relationship": "Precursor",
+      "reason": "The Mongol-connected trade roads of the khanates carried the Black Death west out of Asia in the 1340s.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -408,6 +415,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 32,
+  "degree": 34,
   "added": "2026-05-30"
 }
