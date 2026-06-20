@@ -787,8 +787,8 @@ function EntryView({ entry, accent, navigateTo }) {
             <span style={{ display:"inline-block", padding:"2px 10px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", color:C.light, background:C.bg, border:`1px solid ${C.border}` }}>{entry.period}</span>
             {entry.creatorId && <span style={{ display:"inline-block", padding:"2px 10px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", color:"#5b21b6", background:"#f5f0ff", border:"1px solid #c4b5fd" }}>creator: {entry.creatorId}</span>}
           </div>
-          <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:700, lineHeight:1.25, color:C.text, marginBottom:6 }}>{entry.title}</h2>
-          <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, fontStyle:"italic", paddingBottom:20 }}>{entry.summary}</p>
+          <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:700, lineHeight:1.25, color:C.text, marginBottom:10 }}>{entry.title}</h2>
+          <p style={{ fontFamily:"'Lora',serif", fontSize: isMobile ? 16 : 17.5, lineHeight:1.6, color:C.text, fontStyle:"italic", borderLeft:`3px solid ${accent}`, paddingLeft: isMobile ? 14 : 18, margin:"0 0 22px" }}>{entry.summary}</p>
         </div>
         <Hook text={entry.hook} />
         <div style={{ display:"flex", borderTop:`1px solid ${C.border}` }}>
