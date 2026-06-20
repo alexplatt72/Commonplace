@@ -767,7 +767,7 @@ function PopularCulture({ items }) {
 }
 
 function EntryView({ entry, accent, navigateTo }) {
-  const [depth, setDepth] = useState("beginner");
+  const [depth, setDepth] = useState(getDefaultDepth);
   const [tab, setTab] = useState("content");
   // Switching layer should start the reader at the top of the new layer, not leave
   // them at the bottom where the "go deeper" link was.
@@ -1069,12 +1069,79 @@ function CatIcon({ name, color = "#333", size = 22 }) {
 }
 
 // ─── Reading levels (mirrors the entry depth system) ─────────────────────────
+// Reader's default opening depth — persisted in localStorage (not a cookie), defaults to General.
+const DEFAULT_DEPTH_KEY = 'cp_depth';
+const getDefaultDepth = () => { try { return localStorage.getItem(DEFAULT_DEPTH_KEY) || 'general'; } catch { return 'general'; } };
+const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KEY, d); } catch {} };
+
 const READING_LEVELS = [
-  { label:"Beginner",    color:"#2d5a3d" },
-  { label:"General",     color:"#1e3a5f" },
-  { label:"Educational", color:"#9a6a00" },
-  { label:"Advanced",    color:"#5c2d6e" },
+  { id:"beginner", label:"Beginner", color:"#2d5a3d", selectable:true,
+    blurb:"The same essential story in plain, middle-school-level language. A gentle on-ramp, or a reinforcing read before General." },
+  { id:"general", label:"General", color:"#1e3a5f", selectable:true, tag:"Recommended start",
+    blurb:"The complete, standalone account at a high-school reading level. Everything most readers need to understand the entry. Start here; you can stop here too." },
+  { id:"educational", label:"Educational", color:"#9a6a00",
+    blurb:"General plus teaching scaffolding: evidence, methods, questions, and how we know what we know. For readers who want to learn the subject, not just grasp it." },
+  { id:"advanced", label:"Advanced", color:"#5c2d6e",
+    blurb:"Scholarly depth for engaged readers. More nuance, source problems, interpretation, and debates specialists still argue. Denser, and assumes background." },
 ];
+
+// Reading-level chip with a hover / tap / focus popover declaring what the level offers.
+function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
+  const [hover, setHover] = React.useState(false);
+  const [pinned, setPinned] = React.useState(false);
+  const open = hover || pinned;
+  const filled = selectable && active;
+  const handleClick = () => { if (selectable) { onSelect && onSelect(); setPinned(true); } else setPinned(p => !p); };
+  const radius = joined === "left" ? "20px 0 0 20px" : joined === "right" ? "0 20px 20px 0" : 20;
+  return (
+    <span style={{ position:"relative", display:"inline-block" }}>
+      <button type="button"
+        onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
+        onClick={handleClick} onBlur={() => setPinned(false)}
+        aria-pressed={selectable ? !!active : undefined} aria-expanded={open}
+        style={{ display:"inline-flex", alignItems:"center", gap:6,
+          fontFamily:"'JetBrains Mono',monospace", fontSize:11,
+          color: filled ? "#fff" : level.color,
+          border: joined ? `1px solid ${C.borderStrong}` : `1px solid ${level.color}${level.tag ? "99" : "55"}`,
+          borderRight: joined === "left" ? "none" : undefined,
+          borderRadius: radius, padding:"5px 13px",
+          background: filled ? level.color : (open ? `${level.color}1a` : (level.tag && !selectable ? `${level.color}0d` : "transparent")),
+          cursor: selectable ? "pointer" : "help", transition:"background 0.12s" }}>
+        <span style={{ width:6, height:6, borderRadius:"50%", background: filled ? "#fff" : level.color }} />
+        {level.label}
+      </button>
+      {open && (
+        <span role="tooltip" style={{ position:"absolute", left:"50%", bottom:"calc(100% + 9px)",
+          transform:"translateX(-50%)", width:248, background:C.surface,
+          border:`1px solid ${level.color}55`, borderTop:`3px solid ${level.color}`, borderRadius:8,
+          padding:"10px 13px", boxShadow:"0 6px 20px rgba(0,0,0,0.14)", fontFamily:"'Lora',serif",
+          fontSize:12.5, lineHeight:1.5, color:C.text, textAlign:"left", zIndex:50, pointerEvents:"none" }}>
+          {level.tag && (
+            <span style={{ display:"block", fontFamily:"'JetBrains Mono',monospace", fontSize:9.5,
+              fontWeight:600, letterSpacing:"0.07em", textTransform:"uppercase", color:level.color, marginBottom:5 }}>
+              {level.tag}
+            </span>
+          )}
+          {level.blurb}
+        </span>
+      )}
+    </span>
+  );
+}
+
+// The four reading-level chips as a selector for the reader's default opening depth.
+// Click any level to make it the default; the selected one is filled. Hover shows its blurb.
+function ReadingLevelSelector() {
+  const [pref, setPref] = React.useState(getDefaultDepth);
+  const choose = (id) => { setPref(id); setDefaultDepthPref(id); };
+  return (
+    <div style={{ flexBasis:"100%", display:"flex", gap:8, flexWrap:"wrap", justifyContent:"center" }}>
+      {READING_LEVELS.map(l => (
+        <ReadingLevelChip key={l.id} level={l} selectable active={pref === l.id} onSelect={() => choose(l.id)} />
+      ))}
+    </div>
+  );
+}
 
 // ─── Per-category hero image (ONE image per category, shown on featured cards) ─
 // Files live in /public/category-images/ as Title-case .png (≈3:1 banners).
@@ -1396,7 +1463,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
           Explore by thread
         </div>
         <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:8,
-          maxWidth:700, margin:"0 auto" }}>
+          maxWidth:768, margin:"0 auto" }}>
           {THREADS.map(t => (
             <button key={t} onClick={() => onSearch(t)}
               style={{ fontFamily:"'Lora',serif", fontSize:13.5, color:C.navy, background:"transparent",
@@ -1414,22 +1481,13 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
       <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center",
         gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
         padding:"16px 22px", marginBottom:48, boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
-        <span style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
+        <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
           Every entry has <strong style={{ fontWeight:600 }}>four reading levels</strong>
         </span>
-        <div style={{ display:"flex", gap:8, flexWrap:"wrap" }}>
-          {READING_LEVELS.map(l => (
-            <span key={l.label} style={{ display:"inline-flex", alignItems:"center", gap:6,
-              fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:l.color,
-              border:`1px solid ${l.color}55`, borderRadius:20, padding:"5px 12px" }}>
-              <span style={{ width:6, height:6, borderRadius:"50%", background:l.color }} />
-              {l.label}
-            </span>
-          ))}
-        </div>
+        <ReadingLevelSelector />
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
-          Choose the depth that fits you. Grow your understanding at your own pace.
+          Hover any level to see what it offers — tap to set where your entries open.
         </span>
       </div>
 
