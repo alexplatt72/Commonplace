@@ -151,6 +151,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Angkor's temple complex was built with sandstone rather than cement, but its hydraulic engineering — vast reservoirs, embankments, and canals — illustrates precisely the scale of monumental construction that cement eventually made economically achievable everywhere."
+    },
+    {
+      "label": "Angkor Wat",
+      "entryId": "angkorWat",
+      "relationship": "Consequential",
+      "reason": "Angkor Wat is the crowning monument of the vast Khmer capital of Angkor, the largest temple of the city.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -331,6 +338,6 @@
   "regions": [
     "Southeast Asia"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-06-13"
 }
