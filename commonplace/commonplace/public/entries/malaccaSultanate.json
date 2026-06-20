@@ -170,7 +170,7 @@
     {
       "label": "The Strait of Malacca",
       "entryId": "straitOfMalacca",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "The Strait of Malacca was the chokepoint whose control defined the sultanate's power, and it remained the strategic heart of regional trade long after the kingdom fell. The strait itself is the geographic constant that explains why a great emporium could rise there at all."
     },
@@ -186,6 +186,13 @@
       "entryId": "spreadOfIslamInSoutheastAsia",
       "relationship": "Consequential",
       "reason": "Malacca embraced Islam and carried it along its trade networks, becoming the engine of conversion across the archipelago.",
+      "status": "published"
+    },
+    {
+      "label": "The Malay World",
+      "entryId": "malayWorld",
+      "relationship": "Descendant",
+      "reason": "The Malacca Sultanate became the classical template of the Malay Muslim world its language and court culture spread across the archipelago.",
       "status": "published"
     }
   ],
@@ -327,6 +334,6 @@
   "regions": [
     "Southeast Asia"
   ],
-  "degree": 12,
+  "degree": 16,
   "added": "2026-06-18"
 }

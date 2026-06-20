@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 37,
+    "degree": 39,
     "added": "2026-06-01"
   },
   {
@@ -1153,7 +1153,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 49,
+    "degree": 50,
     "added": "2026-05-30"
   },
   {
@@ -1329,7 +1329,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 16,
+    "degree": 18,
     "added": "2026-05-30"
   },
   {
@@ -1539,7 +1539,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-02"
   },
   {
@@ -2492,7 +2492,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 18,
+    "degree": 20,
     "added": "2026-05-30"
   },
   {
@@ -2881,7 +2881,7 @@
       "South Asia",
       "Sub-Saharan Africa"
     ],
-    "degree": 54,
+    "degree": 56,
     "added": "2026-05-30"
   },
   {
@@ -4203,7 +4203,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-05-31"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 65,
+    "degree": 67,
     "added": "2026-05-30"
   },
   {
@@ -5641,7 +5641,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 14,
+    "degree": 16,
     "added": "2026-05-31"
   },
   {
@@ -5831,7 +5831,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 22,
+    "degree": 25,
     "added": "2026-06-13"
   },
   {
@@ -6044,7 +6044,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-06-01"
   },
   {
@@ -6060,7 +6060,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-05-31"
   },
   {
@@ -7102,7 +7102,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-13"
   },
   {
@@ -12624,7 +12624,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -12672,7 +12672,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12688,7 +12688,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-06-18"
   },
   {
@@ -12704,7 +12704,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 12,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -12768,7 +12768,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -12880,7 +12880,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 9,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -12913,6 +12913,86 @@
       "Southeast Asia"
     ],
     "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "malayWorld",
+    "title": "The Malay World",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 500 BCE – present",
+    "summary": "The vast maritime cultural sphere of island Southeast Asia — tens of thousands of islands scattered across a quarter of a million square miles of sea, spanning what is now Indonesia, Malaysia, Brunei, Singapore, and beyond. It was held together not by a single empire but by a shared trade language, the monsoon-driven sea, and commerce. The western, seafaring branch of the Austronesian world, it ran on port-polities rather than land empires, and was bound over time by a layered religion in which Islam became the defining faith. Its enduring legacy is the Malay language, modernized into the national tongue of both Indonesia and Malaysia and now spoken by hundreds of millions.",
+    "status": "published",
+    "startYear": -500,
+    "endYear": 2025,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "straitOfMalacca",
+    "title": "The Strait of Malacca",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 100 CE – present",
+    "summary": "The narrow, shallow channel between Sumatra and the Malay Peninsula, roughly 900 kilometers long and at its tightest only a couple of miles wide. For two thousand years it has been the unavoidable sea-gate between the Indian Ocean and the South China Sea, the shortest route linking the markets of India, the Middle East, and Europe to those of China and East Asia. Whoever held it taxed the world's commerce, and it remains today one of the busiest and most strategically vital waterways on earth.",
+    "status": "published",
+    "startYear": 100,
+    "endYear": 2025,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "krakatoa",
+    "title": "Krakatoa",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Event",
+    "period": "August 1883",
+    "status": "published",
+    "summary": "The 1883 eruption of Krakatoa, a volcanic island in the Sunda Strait between Java and Sumatra, was one of the most violent volcanic events of the modern era. Its climax on 27 August produced what is often called the loudest sound in recorded history and drove tsunamis that drowned tens of thousands of people on the surrounding coasts. Carried within hours by the new global telegraph network, the disaster became arguably the first natural catastrophe the whole world followed in near-real time, and its high-altitude veil of ash and gas cooled the planet slightly and painted vivid red skies around the globe for months.",
+    "startYear": 1883,
+    "endYear": 1883,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "confucianism",
+    "title": "Confucianism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 5th century BCE – present",
+    "summary": "The ethical and social tradition rooted in the teachings of Confucius that became the moral grammar, statecraft, and family ethic of China and much of East Asia -- made the doctrine of the world's longest-running meritocratic bureaucracy, attacked in the 20th century as the dead hand of the past, and invoked again today.",
+    "status": "published",
+    "startYear": -551,
+    "endYear": 2025,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "daoism",
+    "title": "Daoism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 4th century BCE – present",
+    "summary": "China's great philosophy of letting go — the tradition of the Dao, the Way, which set the spontaneity of nature against the rules of society, taught that the wisest action is often no action, and grew from a handful of cryptic texts into an organized religion of gods, alchemists, and seekers of immortality.",
+    "status": "published",
+    "startYear": -500,
+    "endYear": 2025,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
     "added": "2026-06-18"
   }
 ]
