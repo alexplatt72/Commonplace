@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 56,
+    "degree": 58,
     "added": "2026-05-31"
   },
   {
@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 31,
+    "degree": 32,
     "added": "2026-06-01"
   },
   {
@@ -1201,7 +1201,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 44,
+    "degree": 45,
     "added": "2026-05-30"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 155,
+    "degree": 158,
     "added": "2026-05-30"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 45,
+    "degree": 46,
     "added": "2026-05-30"
   },
   {
@@ -1265,7 +1265,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 18,
+    "degree": 20,
     "added": "2026-05-31"
   },
   {
@@ -1758,7 +1758,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-06-01"
   },
   {
@@ -2847,7 +2847,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 17,
+    "degree": 18,
     "added": "2026-05-31"
   },
   {
@@ -2881,7 +2881,7 @@
       "South Asia",
       "Sub-Saharan Africa"
     ],
-    "degree": 48,
+    "degree": 51,
     "added": "2026-05-30"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 108,
+    "degree": 111,
     "added": "2026-05-30"
   },
   {
@@ -3397,7 +3397,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-06-13"
   },
   {
@@ -4203,7 +4203,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 20,
+    "degree": 21,
     "added": "2026-05-31"
   },
   {
@@ -5831,7 +5831,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 16,
+    "degree": 19,
     "added": "2026-06-13"
   },
   {
@@ -6777,7 +6777,7 @@
       "Southeast Asia",
       "North America"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-05-30"
   },
   {
@@ -10861,7 +10861,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-06-16"
   },
   {
@@ -11872,7 +11872,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 51,
+    "degree": 52,
     "added": "2026-06-18"
   },
   {
@@ -12096,7 +12096,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -12112,7 +12112,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-18"
   },
   {
@@ -12448,7 +12448,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -12656,7 +12656,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -12672,7 +12672,87 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 7,
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "majapahit",
+    "title": "Majapahit",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1293–1527 CE",
+    "status": "published",
+    "summary": "Majapahit (c. 1293–1527) was the last and greatest of the Hindu-Buddhist empires of the Indonesian archipelago — a Javanese sea-power that, at its fourteenth-century height under King Hayam Wuruk and his minister Gajah Mada, claimed influence over ports and islands across maritime Southeast Asia. The entry's purpose is to explain what kind of empire a Javanese thalassocracy was, why its reported extent must be read with care, and how a vanished Hindu kingdom became modern Indonesia's imagined ancestor.",
+    "startYear": 1293,
+    "endYear": 1527,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "malaccaSultanate",
+    "title": "The Malacca Sultanate",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1400–1511 CE",
+    "status": "published",
+    "summary": "The Malacca Sultanate (c. 1400–1511) was a Malay Muslim port-kingdom on the strait that bears its name, the chokepoint between the Indian Ocean and the South China Sea. It grew into the greatest trading emporium of maritime Southeast Asia, became a springboard for the spread of Islam across the archipelago, and fell to Portuguese guns in 1511. The entry's purpose is to explain how a small harbor became the meeting-point of the monsoon trade systems, and what it left behind for the Malay world.",
+    "startYear": 1400,
+    "endYear": 1511,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "dutchEastIndies",
+    "title": "The Dutch East Indies",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1602–1949",
+    "status": "published",
+    "summary": "The Netherlands' colony in what is now Indonesia, born from the Dutch East India Company (the VOC) chartered in 1602 and lasting until Indonesian independence in 1949. A small European nation extracted the wealth of a vast tropical archipelago for three and a half centuries — first through the world's first great multinational corporation, then as a colonial state running forced-cultivation systems — and in the process drew the borders that became the modern Indonesian republic.",
+    "startYear": 1602,
+    "endYear": 1949,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "philippinesUnderSpain",
+    "title": "The Philippines Under Spain",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1565–1898",
+    "status": "published",
+    "summary": "The 333-year period during which Spain ruled an archipelago of more than seven thousand islands in Southeast Asia — governing it from Spanish Mexico rather than Europe, knitting it to the world through a single galleon a year between Manila and Acapulco, and converting most of its lowland peoples to Roman Catholicism through the friar orders, who held vast estates and often more power than the civil government, while the Muslim south and the highlands were never fully subdued and resistance ran from Lapulapu to the revolution that ended Spanish rule.",
+    "startYear": 1565,
+    "endYear": 1898,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "khmerRouge",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1975–1979",
+    "title": "The Khmer Rouge",
+    "summary": "The radical Communist movement that ruled Cambodia, renamed Democratic Kampuchea, from 1975 to 1979 under Pol Pot and the secretive party known as Angkar. On taking power it emptied the cities at gunpoint, declared a new beginning it called Year Zero, abolished money, schools, religion, and private property, and drove the whole population into rural forced labor. Roughly 1.5 to 2 million Cambodians — about a quarter of the country — died from execution, starvation, overwork, and disease before a Vietnamese invasion ended the regime in 1979.",
+    "status": "published",
+    "startYear": 1975,
+    "endYear": 1979,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]
