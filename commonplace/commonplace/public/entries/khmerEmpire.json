@@ -145,6 +145,20 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "The Khmer Empire built one of the ancient world's most productive agrarian systems on wet-rice paddy cultivation — a form of intensive agriculture that used water buffalo and hand-puddling rather than the plow, demonstrating an alternative path to agricultural surplus and empire."
+    },
+    {
+      "label": "Champa",
+      "entryId": "champa",
+      "relationship": "Contrasting",
+      "reason": "The Khmer Empire and Champa were neighboring Indianized rivals who traded blows for centuries; the Cham navy once sacked Angkor in 1177.",
+      "status": "published"
+    },
+    {
+      "label": "Funan",
+      "entryId": "funan",
+      "relationship": "Precursor",
+      "reason": "Funan was the first great Indianized civilization of the lower Mekong, the distant seed of the later Cambodian world that culminated in the Khmer Empire of Angkor.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -329,7 +343,7 @@
   "regions": [
     "Southeast Asia"
   ],
-  "degree": 13,
+  "degree": 17,
   "added": "2026-06-13",
   "comparativeSummary": "Everyone agrees the Khmer empire was vast and brilliant. They disagree about what its memory is for. French colonial scholars saw a lost classical civilization fallen into ruin, an image that helped justify their guardianship of its monuments. Cambodians have held it as a golden age and the root of national identity, putting its great temple on the flag — though the Khmer Rouge twisted that pride into a tool of cruelty. Thai memory recalls a rival absorbed and then overtaken, its forms living on in the kingdoms that displaced it. Each looks at the same six centuries and pulls out the inheritance it needs."
 }

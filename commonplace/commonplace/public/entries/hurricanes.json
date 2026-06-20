@@ -179,6 +179,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Hurricanes repeatedly devastated the Belize coast and its timber-cutting settlements, shaping the precarious development of the colony. The storms are a recurring force in the history of the settlement that became Belize."
+    },
+    {
+      "label": "Cyclones",
+      "entryId": "cyclones",
+      "relationship": "Parallel",
+      "reason": "A cyclone is the same tropical-cyclone storm as a hurricane, named for the Indian Ocean, where the Bay of Bengal’s surge has made them the deadliest on earth.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -320,6 +327,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 10,
+  "degree": 12,
   "added": "2026-06-18"
 }
