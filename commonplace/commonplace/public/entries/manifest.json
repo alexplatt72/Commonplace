@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 51,
+    "degree": 52,
     "added": "2026-05-30"
   },
   {
@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 27,
+    "degree": 30,
     "added": "2026-06-01"
   },
   {
@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 55,
+    "degree": 56,
     "added": "2026-05-31"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 154,
+    "degree": 155,
     "added": "2026-05-30"
   },
   {
@@ -2460,7 +2460,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 25,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -2881,7 +2881,7 @@
       "South Asia",
       "Sub-Saharan Africa"
     ],
-    "degree": 45,
+    "degree": 46,
     "added": "2026-05-30"
   },
   {
@@ -3154,7 +3154,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 104,
+    "degree": 106,
     "added": "2026-05-30"
   },
   {
@@ -4235,7 +4235,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 23,
+    "degree": 25,
     "added": "2026-05-31"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 64,
+    "degree": 65,
     "added": "2026-05-30"
   },
   {
@@ -6744,7 +6744,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 7,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -10943,7 +10943,7 @@
       "North Africa & Middle East",
       "South Asia"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-06-16"
   },
   {
@@ -11856,7 +11856,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-06-18"
   },
   {
@@ -11872,7 +11872,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 37,
+    "degree": 41,
     "added": "2026-06-18"
   },
   {
@@ -11920,7 +11920,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -11952,7 +11952,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-06-18"
   },
   {
@@ -12048,7 +12048,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 8,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -12080,7 +12080,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -12144,7 +12144,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12160,7 +12160,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12256,7 +12256,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -12288,7 +12288,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12384,7 +12384,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -12433,6 +12433,86 @@
       "South Asia"
     ],
     "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "britishEastIndiaCompany",
+    "title": "The British East India Company",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1600–1874",
+    "summary": "The private joint-stock trading company, chartered in 1600, that ended up conquering and governing the Indian subcontinent. It began as a venture seeking spices and textiles and became a corporate state: ruling some 200 million people, fielding a private army larger than Britain's own, collecting taxes, coining money, making war and treaty, and answering ultimately to its shareholders. It financed its conquests with Indian revenue and fought them with Indian soldiers, plundered Bengal, pioneered the opium trade into China, and governed India for a century before the British Crown took it over in the wake of the Rebellion of 1857.",
+    "status": "published",
+    "startYear": 1600,
+    "endYear": 1874,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "ganges",
+    "title": "The Ganges",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1500 BCE – present",
+    "summary": "The river that runs about 2,500 kilometers from the Himalayas across the northern plain of India to the Bay of Bengal — worshipped by Hindus as the living goddess Ganga, depended on by hundreds of millions for water and farming, and ranked among the most polluted rivers on earth. A single channel that is at once the holiest river in Hinduism and a grave environmental crisis.",
+    "status": "published",
+    "startYear": -1500,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "himalayas",
+    "title": "The Himalayas",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 50 million years ago – present",
+    "summary": "The highest mountain range on earth, raised by the collision of the Indian and Asian plates, that walls off northern India, traps the monsoon, and feeds the great rivers on which roughly two billion people depend — a barrier, a water tower, and a holy landscape all at once.",
+    "status": "published",
+    "startYear": -2000,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "tajMahal",
+    "title": "The Taj Mahal",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "1632 – present",
+    "summary": "The white marble mausoleum on the Yamuna river at Agra, built between roughly 1632 and 1653 by the Mughal emperor Shah Jahan for his dead wife Mumtaz Mahal — the supreme monument of Mughal architecture, a perfectly proportioned tomb set in a four-part paradise garden, and the building that became the global symbol of love and of India itself.",
+    "status": "published",
+    "startYear": 1632,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 7,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "ayurveda",
+    "title": "Ayurveda",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "Late Vedic roots (c. 800 BCE); classical texts last centuries BCE to early CE; living today",
+    "status": "published",
+    "summary": "The classical medical tradition of the Indian subcontinent, whose Sanskrit name means \"the science of life\" (ayus, life, and veda, knowledge). Rooted in the late Vedic world and systematized in great compendia such as the Charaka Samhita and the Sushruta Samhita, it holds that health is the balance of three bodily humors, the doshas, and treats imbalance through diet, herbs, lifestyle, oil therapies, and purification. One of the world's oldest organized medical systems and a genuine ancient achievement, it is also a booming global wellness industry whose specific therapeutic claims mostly lack robust clinical support, and some of whose traditional metal-based preparations have caused heavy-metal poisoning.",
+    "startYear": -800,
+    "endYear": 2025,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]
