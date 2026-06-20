@@ -193,6 +193,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "Aung San was the founding nationalist leader of independent Burma in the same postwar moment, another Southeast Asian figure who turned wartime opportunity into a bid for freedom from colonial rule. His parallel career sharpens what was distinctive about Sukarno's path and its long aftermath."
+    },
+    {
+      "label": "Java",
+      "entryId": "java",
+      "relationship": "Consequential",
+      "reason": "Sukarno, the Javanese-born founder of Indonesia, made the island the political heart of the nation he proclaimed.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -350,6 +357,6 @@
   "regions": [
     "Southeast Asia"
   ],
-  "degree": 10,
+  "degree": 12,
   "added": "2026-06-18"
 }
