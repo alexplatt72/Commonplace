@@ -1089,9 +1089,10 @@ const READING_LEVELS = [
 function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
   const [hover, setHover] = React.useState(false);
   const [pinned, setPinned] = React.useState(false);
-  const open = hover || pinned;
+  // Selectable chips: popover is hover-only (click selects). Non-selectable: click pins it open.
+  const open = hover || (pinned && !selectable);
   const filled = selectable && active;
-  const handleClick = () => { if (selectable) { onSelect && onSelect(); setPinned(true); } else setPinned(p => !p); };
+  const handleClick = () => { if (selectable) { onSelect && onSelect(); } else setPinned(p => !p); };
   const radius = joined === "left" ? "20px 0 0 20px" : joined === "right" ? "0 20px 20px 0" : 20;
   return (
     <span style={{ position:"relative", display:"inline-block" }}>
