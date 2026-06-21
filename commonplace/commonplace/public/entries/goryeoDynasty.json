@@ -165,6 +165,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "The Confucian dynasty that overthrew Goryeo in 1392, turned the state away from Buddhism, and ruled Korea for the next five centuries."
+    },
+    {
+      "label": "Sejong the Great",
+      "entryId": "sejongTheGreat",
+      "relationship": "Descendant",
+      "reason": "The Korea Goryeo handed on was remade by Sejong, who gave it Hangul.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -293,6 +300,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }
