@@ -138,6 +138,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Beijing's Forbidden City and imperial infrastructure required mortar on an extraordinary scale, driving demand for hydraulic binding agents; the city embodies the imperial logic of monumental construction that cement later democratised worldwide."
+    },
+    {
+      "label": "The Forbidden City",
+      "entryId": "forbiddenCity",
+      "relationship": "Consequential",
+      "reason": "The Forbidden City sits on the central axis at the heart of Beijing.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -270,7 +277,7 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-05-30",
   "comparativeSummary": "The same square, the same axis, the same palace walls — and three parties insist they mean opposite things. The fight here is not over what Beijing is but over what it is allowed to say. The Party reads the stones as proof of civilization and continuity, with 1989 edited out. The protesters of that year aimed those same symbols back at the state, and outside China the square now stands for the cost of opposing it. Foreign visitors and heritage bodies admire the grandeur while leaving the present government out of the frame. Each vantage keeps part of the city and hides the rest."
 }

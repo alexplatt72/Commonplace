@@ -168,6 +168,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "The founder of the Nationalist Party and of the Chinese republic, whose death in 1925 passed the movement to Chiang Kai-shek and whose unfinished project of national unification framed the struggle both parties claimed to inherit."
+    },
+    {
+      "label": "Shanghai",
+      "entryId": "shanghai",
+      "relationship": "Consequential",
+      "reason": "The Communist victory ended foreign Shanghai; the 1927 purge there scarred the city.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -307,6 +314,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 15,
+  "degree": 19,
   "added": "2026-06-18"
 }

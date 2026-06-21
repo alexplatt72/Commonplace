@@ -164,6 +164,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "Sun Yat-sen's early-twentieth-century vision of a modern, strong, unified China set the nation-building project that Mao and then Deng inherited and transformed; Deng's drive to make China rich and powerful answers a question first posed in Sun's revolution."
+    },
+    {
+      "label": "Hong Kong",
+      "entryId": "hongKong",
+      "relationship": "Consequential",
+      "reason": "Deng's 'one country, two systems' framed Hong Kong's 1997 return to China.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -321,6 +328,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 10,
+  "degree": 13,
   "added": "2026-06-18"
 }
