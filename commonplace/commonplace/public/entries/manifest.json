@@ -746,7 +746,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 34,
+    "degree": 35,
     "added": "2026-05-30"
   },
   {
@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 54,
+    "degree": 58,
     "added": "2026-05-30"
   },
   {
@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 35,
+    "degree": 38,
     "added": "2026-06-01"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 163,
+    "degree": 167,
     "added": "2026-05-30"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 46,
+    "degree": 50,
     "added": "2026-05-30"
   },
   {
@@ -2444,7 +2444,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-06-02"
   },
   {
@@ -4162,7 +4162,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 54,
+    "degree": 55,
     "added": "2026-05-30"
   },
   {
@@ -4324,7 +4324,7 @@
     "regions": [
       "Oceania"
     ],
-    "degree": 20,
+    "degree": 21,
     "added": "2026-05-30"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 82,
+    "degree": 83,
     "added": "2026-05-30"
   },
   {
@@ -12112,7 +12112,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -13776,7 +13776,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -13792,7 +13792,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -13840,7 +13840,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -13936,7 +13936,87 @@
     "regions": [
       "Global / Transregional"
     ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "steppe",
+    "title": "The Steppe",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1000 BCE – 1700 CE",
+    "summary": "The vast belt of open grassland running almost unbroken across the middle of Eurasia, from the plains of Hungary to the borders of China — too dry to farm but ideal for the horse, which for some three thousand years turned the peoples who lived on it into the most mobile warriors on earth and made the steppe at once the great engine of nomad empire and a highway along which goods, faiths, and diseases crossed the continent.",
+    "status": "published",
+    "startYear": -1000,
+    "endYear": 1700,
+    "regions": [
+      "Global / Transregional"
+    ],
     "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "aboriginalAustraliaAndTheDreaming",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 65,000 years ago – present",
+    "title": "Aboriginal Australia and the Dreaming",
+    "summary": "Aboriginal and Torres Strait Islander peoples have lived on the Australian continent for at least sixty-five thousand years, in hundreds of distinct nations and languages bound to their land by the Dreaming, the sacred web of law, story, and creation. Theirs are the oldest continuing living cultures known. In 1788 the British came to stay, and what followed was both a catastrophe of dispossession, disease, frontier killing, and the forced removal of children, and a long survival and renaissance that continues today.",
+    "status": "published",
+    "startYear": -65000,
+    "endYear": 2025,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "hawaiianKingdom",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1795–1898 CE",
+    "title": "The Hawaiian Kingdom",
+    "summary": "The Hawaiian Kingdom (1795–1898) was the sovereign island monarchy that united Hawai'i under one crown, won recognition as an independent nation, and modernized on its own terms across a century of missionaries, traders, and empires. Founded by Kamehameha I, it adopted Christianity, a written language, and a constitution, while introduced disease collapsed the Native Hawaiian population. In 1893 a small group of mostly American planters, backed by US Marines, overthrew Queen Lili'uokalani; the United States annexed Hawai'i in 1898. The entry holds together the kingdom's genuine statecraft, the catastrophe of disease, the planter coup, and the still-living sovereignty movement.",
+    "status": "published",
+    "startYear": 1795,
+    "endYear": 1898,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "maori",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1300–present",
+    "title": "The Māori",
+    "summary": "The Māori are the indigenous Polynesian people of Aotearoa (New Zealand), descended from voyagers who reached the islands in ocean-going canoes around 1300 — the last major landmass humans settled. They built a tribal warrior society of iwi and hapū bound by mana, signed with the British Crown the Treaty of Waitangi in 1840 whose Māori and English texts still do not agree, lost most of their land in war and law, and then drove one of the great cultural revivals of the modern world.",
+    "status": "published",
+    "startYear": 1300,
+    "endYear": 2025,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "captainCooksPacificVoyages",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1768–1779",
+    "title": "Captain Cook's Pacific Voyages",
+    "summary": "The three voyages of the British navigator James Cook between 1768 and 1779, which charted more of the globe than any earlier expedition and filled in the last great blank on the European map of the world. Cook mapped New Zealand and the eastern coast of Australia, crossed deep into Antarctic waters, reached Hawai'i, and advanced science from astronomy to the near-defeat of scurvy at sea. The same voyages were the leading edge of European expansion into the Pacific, opening Australia, New Zealand, and the islands to colonization, settlement, and devastating disease among peoples who had lived there for centuries or millennia. Cook was killed at Kealakekua Bay in Hawai'i in 1779.",
+    "status": "published",
+    "startYear": 1768,
+    "endYear": 1779,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 11,
     "added": "2026-06-18"
   }
 ]
