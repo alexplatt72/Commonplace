@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 47,
+    "degree": 48,
     "added": "2026-06-01"
   },
   {
@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 32,
+    "degree": 33,
     "added": "2026-06-01"
   },
   {
@@ -1201,7 +1201,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 47,
+    "degree": 49,
     "added": "2026-05-30"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 161,
+    "degree": 162,
     "added": "2026-05-30"
   },
   {
@@ -1265,7 +1265,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 21,
+    "degree": 23,
     "added": "2026-05-31"
   },
   {
@@ -3780,7 +3780,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 15,
     "added": "2026-06-01"
   },
   {
@@ -4025,7 +4025,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-05-31"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 89,
+    "degree": 91,
     "added": "2026-05-30"
   },
   {
@@ -4486,7 +4486,7 @@
       "Europe",
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-02"
   },
   {
@@ -4896,7 +4896,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 14,
+    "degree": 17,
     "added": "2026-06-02"
   },
   {
@@ -12080,7 +12080,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 13,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -12752,7 +12752,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12976,7 +12976,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 18,
+    "degree": 21,
     "added": "2026-06-18"
   },
   {
@@ -12992,7 +12992,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 14,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -13024,7 +13024,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 7,
+    "degree": 9,
     "added": "2026-06-18"
   },
   {
@@ -13056,7 +13056,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -13088,7 +13088,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 8,
+    "degree": 9,
     "added": "2026-06-18"
   },
   {
@@ -13104,7 +13104,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 8,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -13136,7 +13136,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 9,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -13152,7 +13152,87 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 7,
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "tokugawaJapan",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1603–1868 CE",
+    "title": "Tokugawa Japan",
+    "summary": "Tokugawa (Edo) Japan (1603–1868) was the two and a half centuries when a warrior dynasty bought peace by freezing the country in place — ending a century of civil war, sealing Japan off from most of the world, locking society into rigid hereditary ranks, and in that long, controlled stillness incubating a brilliant urban culture and the disciplined, literate society that astonished the world when American warships forced it open at gunpoint.",
+    "status": "published",
+    "startYear": 1603,
+    "endYear": 1868,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 12,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "zenBuddhism",
+    "title": "Zen Buddhism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 6th century – present",
+    "summary": "The Buddhism that threw away the scriptures — the meditation school, called Chan in China and Zen in Japan, which insisted that awakening cannot be reached through words, doctrine, or study but only through direct experience. It turned sitting in silence, raking gravel, and pouring tea into paths to enlightenment, shaped a whole Japanese aesthetic of simplicity and imperfection, and, almost alone among Asian religions, captured the modern Western imagination.",
+    "status": "published",
+    "startYear": 520,
+    "endYear": 2025,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 12,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "boxerRebellion",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1899–1901",
+    "title": "The Boxer Rebellion",
+    "summary": "The anti-foreign uprising in north China (1899–1901) led by a secret society whose members believed that martial-arts ritual and spirit possession made them invulnerable to bullets. Amid drought, famine, and rage at a century of foreign domination, the Boxers killed Chinese Christians and foreign missionaries, besieged the foreign legations in Beijing, and were backed by the Qing court when the Empress Dowager Cixi declared war on the powers. An eight-nation army crushed them, sacked Beijing, and imposed the 1901 Boxer Protocol with its crushing indemnity. The rising is remembered in radically opposed ways, and its death tolls remain contested.",
+    "status": "published",
+    "startYear": 1899,
+    "endYear": 1901,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "chineseCivilWar",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1927–1949",
+    "title": "The Chinese Civil War",
+    "summary": "The longest and largest civil war of the 20th century — a struggle for control of China between the Nationalists (Kuomintang) and the Chinese Communist Party that ran, on and off, for more than two decades. It opened in 1927 with Chiang Kai-shek's bloody purge of the Communists, was interrupted by the Japanese invasion, and resumed full-scale after 1945. It killed millions and ended in 1949 with Mao Zedong's Communist victory, the founding of the People's Republic on the mainland, and the flight of the Nationalist government to Taiwan — a division across the Taiwan Strait that remains unresolved.",
+    "status": "published",
+    "startYear": 1927,
+    "endYear": 1949,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "culturalRevolution",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1966–1976",
+    "title": "The Cultural Revolution",
+    "summary": "The decade-long political upheaval that Mao Zedong launched in China in 1966, formally the Great Proletarian Cultural Revolution, to purge his rivals and reignite revolution by mobilizing the young against the country's teachers, officials, and traditions. Mao called on students organized as Red Guards to destroy the so-called Four Olds and to denounce authority everywhere, plunging China into years of terror, factional violence, and ruin. It wound down only with Mao's death in 1976. In 1981 the Communist Party itself declared it a catastrophe and assigned chief responsibility to Mao.",
+    "status": "published",
+    "startYear": 1966,
+    "endYear": 1976,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]

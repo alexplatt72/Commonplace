@@ -147,7 +147,7 @@
     {
       "label": "The Cultural Revolution",
       "entryId": "culturalRevolution",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "The decade of mass mobilization, violence, and destruction that Mao launched against his own party and society is the most extreme expression of his political theory and deserves its own entry."
     },
@@ -157,6 +157,13 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "Mao abolished the examination system's successor institutions and attacked the Confucian literati class during the Cultural Revolution; his rule marks the most radical rupture in the two-thousand-year tradition the examinations represent."
+    },
+    {
+      "label": "The Chinese Civil War",
+      "entryId": "chineseCivilWar",
+      "relationship": "Consequential",
+      "reason": "The Chinese Civil War ended in Mao Zedong victory and the founding of the People Republic of China in 1949.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -371,7 +378,7 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 11,
+  "degree": 15,
   "added": "2026-06-01",
   "comparativeSummary": "The same man answers a different question depending on where you stand. To the Chinese Communist Party, Mao is the founder who ended a century of foreign humiliation, and the famines and terror are real but kept to the margins, because the party's own authority rests on the revolution he won. To the people imprisoned, tortured, or starved, that arithmetic is unbearable, and the organized cruelty is the whole story. To revolutionaries across Asia and Africa, what mattered was the method that beat colonial power, not what came after. Each makes a different part of his record the center."
 }
