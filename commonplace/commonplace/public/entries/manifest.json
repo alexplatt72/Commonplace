@@ -682,7 +682,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-05-30"
   },
   {
@@ -828,7 +828,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 49,
+    "degree": 51,
     "added": "2026-06-01"
   },
   {
@@ -2412,7 +2412,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-06-09"
   },
   {
@@ -2492,7 +2492,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 25,
+    "degree": 26,
     "added": "2026-05-30"
   },
   {
@@ -2881,7 +2881,7 @@
       "South Asia",
       "Sub-Saharan Africa"
     ],
-    "degree": 56,
+    "degree": 57,
     "added": "2026-05-30"
   },
   {
@@ -4098,7 +4098,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 15,
+    "degree": 18,
     "added": "2026-05-31"
   },
   {
@@ -4896,7 +4896,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-06-02"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 71,
+    "degree": 73,
     "added": "2026-05-30"
   },
   {
@@ -5641,7 +5641,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-05-31"
   },
   {
@@ -6060,7 +6060,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-05-31"
   },
   {
@@ -7011,7 +7011,7 @@
       "North Africa & Middle East",
       "East Asia"
     ],
-    "degree": 20,
+    "degree": 21,
     "added": "2026-05-31"
   },
   {
@@ -12976,7 +12976,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 27,
+    "degree": 30,
     "added": "2026-06-18"
   },
   {
@@ -12992,7 +12992,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 21,
+    "degree": 23,
     "added": "2026-06-18"
   },
   {
@@ -13024,7 +13024,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -13040,7 +13040,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -13072,7 +13072,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -13120,7 +13120,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -13184,7 +13184,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-06-18"
   },
   {
@@ -13424,7 +13424,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -13440,7 +13440,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -13456,7 +13456,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -13488,7 +13488,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 10,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -13549,6 +13549,86 @@
     "status": "published",
     "startYear": 1406,
     "endYear": 2025,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 13,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "grandCanal",
+    "title": "The Grand Canal",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 5th c. BCE – present (joined under the Sui, 605–610 CE)",
+    "summary": "The man-made river that held China together — a thousand-mile spine of canals dug by millions of conscripts to carry the grain of the rich southern rice lands to the hungry capitals of the north, widely called the longest and oldest artificial waterway on earth.",
+    "status": "published",
+    "startYear": 605,
+    "endYear": 2025,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "terracottaArmy",
+    "title": "The Terracotta Army",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "246 BCE – present",
+    "summary": "The buried army of life-sized clay soldiers, horses, and chariots arrayed in battle formation around the unexcavated tomb of Qin Shi Huang, China's First Emperor, near Xi'an — made to guard a dead god-king in the afterlife, lost for two thousand years, and struck by farmers digging a well in 1974.",
+    "status": "published",
+    "startYear": -246,
+    "endYear": 2026,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "dreamOfTheRedChamber",
+    "title": "Dream of the Red Chamber",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "c. 1759–1791",
+    "status": "published",
+    "summary": "The mid-18th-century Chinese novel by Cao Xueqin, also called The Story of the Stone, widely regarded as the greatest work of Chinese fiction and one of the Four Great Classical Novels of China. It follows the slow ruin of the aristocratic Jia family through the doomed love of the sensitive boy Jia Baoyu and his fragile cousin Lin Daiyu. Cao left it unfinished at his death around 1763; the common 120-chapter version, completed by a later editor often named as Gao E, was printed in 1791–92, and both that ending and its authorship are debated.",
+    "startYear": 1759,
+    "endYear": 1791,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "hangul",
+    "title": "Hangul",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "Promulgated 1443–1446; marginal for four centuries; national script of both Koreas today",
+    "status": "published",
+    "summary": "The Korean alphabet, designed at the court of King Sejong and promulgated in 1443–1446 as the Hunminjeongeum, 'the correct sounds for instructing the people.' Almost every other writing system grew slowly out of older scripts; Hangul was deliberately invented as a single rational project to give an unlettered people a way to write. It is a small alphabet, today 24 basic letters, whose design is featural: the consonant shapes picture the speech organs that make their sound, the vowels are built from symbols for heaven, earth, and the standing human, and the letters group into square syllable blocks. Long dismissed by the Confucian elite as vulgar 'women's writing' while serious work stayed in Chinese, it revived with Korean nationalism and became, after 1945, the proud national script of South Korea (Hangul) and North Korea (Chosŏn'gŭl). Linguists frequently call it among the most scientific alphabets ever made.",
+    "startYear": 1443,
+    "endYear": 1446,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "journeyToTheWest",
+    "title": "Journey to the West",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "Material accreted over centuries from the 7th century onward; the classic 100-chapter novel took shape in the late 16th century (Ming dynasty)",
+    "status": "published",
+    "summary": "A 16th-century Chinese novel, one of the Four Great Classical Novels of China and among the most beloved stories in all of East Asia. It tells of Sun Wukong, the Monkey King, a stone-born trickster who defies Heaven itself and is then sent to escort a timid Buddhist monk across a world of demons to fetch holy scriptures from India. The tale grew over centuries from the real seventh-century pilgrimage of the monk Xuanzang, accreting folklore into a riotous, funny, deeply Buddhist road-story that is at once a children's favorite, a spiritual allegory of the soul's path to enlightenment, and the source of the most famous character in Chinese fiction. The classic version, traditionally though uncertainly attributed to Wu Cheng'en, follows the four pilgrims through eighty-one calamities before they win their reward.",
+    "startYear": 1592,
+    "endYear": 1592,
     "regions": [
       "East Asia"
     ],

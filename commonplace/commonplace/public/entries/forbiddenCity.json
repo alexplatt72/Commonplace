@@ -184,6 +184,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "Another vast, rigorously symmetrical imperial complex of the same centuries, raised by a powerful dynasty to project cosmic order and authority. Setting the two side by side shows how empires used monumental architecture to make power visible."
+    },
+    {
+      "label": "The Grand Canal",
+      "entryId": "grandCanal",
+      "relationship": "Consequential",
+      "reason": "The tribute-grain fleets up the Grand Canal ultimately supplied the Beijing court at its heart.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -323,6 +330,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 10,
+  "degree": 13,
   "added": "2026-06-18"
 }

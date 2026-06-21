@@ -171,6 +171,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "Zheng He's voyages were entirely a product of Ming court politics — the Yongle Emperor's personal vision, the eunuch-official rivalry, and the fiscal constraints of the northern frontier all determined what the treasure fleet was and why it stopped; the Ming entry provides the dynastic context that explains both the voyages' scale and their abrupt cancellation."
+    },
+    {
+      "label": "Journey to the West",
+      "entryId": "journeyToTheWest",
+      "relationship": "Consequential",
+      "reason": "The classic novel took its final hundred-chapter form in the late Ming.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -352,7 +359,7 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 15,
+  "degree": 18,
   "added": "2026-05-31",
   "comparativeSummary": "The same fleet looks like a different thing depending on where you stand when it sails past. To the kingdoms it visited, Zheng He's ships meant soldiers and tribute demands, not gifts. To the Portuguese who arrived later, the real event was China's absence, the empty water that let them in. To the officials who cancelled the voyages, scrapping the fleet was a win, not a blunder, because oceanic reach was never what they were taught to value. What divides these accounts is whose loss the withdrawal counts as, and whether grand voyages signal generosity, threat, or waste."
 }
