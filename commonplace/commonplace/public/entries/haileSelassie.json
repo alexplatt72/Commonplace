@@ -188,6 +188,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "As host and a principal founder of the Organization of African Unity in 1963, and as ruler of the one nation Europe never colonized, Haile Selassie became a central reference point for pan-African unity and Black liberation worldwide."
+    },
+    {
+      "label": "Bob Marley",
+      "entryId": "bobMarley",
+      "relationship": "Consequential",
+      "reason": "Marley revered Haile Selassie as divine and made him central to his lyrics.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -331,6 +338,6 @@
   "regions": [
     "Sub-Saharan Africa"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-06-14"
 }

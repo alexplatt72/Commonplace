@@ -585,7 +585,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 27,
+    "degree": 28,
     "added": "2026-05-31"
   },
   {
@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 43,
+    "degree": 45,
     "added": "2026-06-01"
   },
   {
@@ -1201,7 +1201,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 54,
+    "degree": 55,
     "added": "2026-05-30"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 179,
+    "degree": 184,
     "added": "2026-05-30"
   },
   {
@@ -1265,7 +1265,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 33,
+    "degree": 35,
     "added": "2026-05-31"
   },
   {
@@ -2693,7 +2693,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 25,
+    "degree": 28,
     "added": "2026-05-31"
   },
   {
@@ -3943,7 +3943,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 31,
+    "degree": 32,
     "added": "2026-06-02"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 98,
+    "degree": 99,
     "added": "2026-05-30"
   },
   {
@@ -5459,7 +5459,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-01"
   },
   {
@@ -5502,7 +5502,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 37,
+    "degree": 40,
     "added": "2026-05-31"
   },
   {
@@ -5748,7 +5748,7 @@
       "Latin America & Caribbean",
       "Europe"
     ],
-    "degree": 37,
+    "degree": 39,
     "added": "2026-06-13"
   },
   {
@@ -8979,7 +8979,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 14,
+    "degree": 16,
     "added": "2026-06-14"
   },
   {
@@ -9286,7 +9286,7 @@
       "Sub-Saharan Africa",
       "Global / Transregional"
     ],
-    "degree": 35,
+    "degree": 36,
     "added": "2026-06-15"
   },
   {
@@ -10208,7 +10208,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-16"
   },
   {
@@ -14080,7 +14080,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-06-18"
   },
   {
@@ -14128,7 +14128,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 8,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -14176,7 +14176,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 12,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -14256,7 +14256,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -14288,7 +14288,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 12,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -14336,7 +14336,87 @@
     "regions": [
       "Latin America & Caribbean"
     ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "valladolidDebate",
+    "title": "The Valladolid Debate",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "1550–1551",
+    "status": "published",
+    "summary": "The debate held at Valladolid in Spain in 1550 and 1551, when the Emperor Charles V suspended further conquests in the Americas and convened a junta of theologians to argue whether Spain could justly rule and convert the indigenous peoples of the New World. The Dominican friar Bartolomé de las Casas argued that they were rational human beings with souls, rights, and legitimate societies who should be won by peaceful persuasion; the scholar Juan Ginés de Sepúlveda argued, using Aristotle's idea of natural slavery, that their barbarism and human sacrifice made conquest a just and lesser evil. The debate ended without a clear verdict, both men claimed victory, and the conquest continued — yet it is remembered as one of the first times a European empire formally questioned its own right to conquer.",
+    "startYear": 1550,
+    "endYear": 1551,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "zapatistaUprising",
+    "title": "The Zapatista Uprising",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1994–present",
+    "summary": "The rebellion that fought with words as much as with guns — on the first day of 1994, masked Maya fighters in Mexico's poorest state seized towns to cry \"Ya basta!\" against five centuries of dispossession, then within days mostly laid down their arms and picked up the world's attention, becoming the first great rebel movement of the internet age and a living symbol of indigenous autonomy and resistance to global capitalism.",
+    "status": "published",
+    "startYear": 1994,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
     "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "bartolomeDeLasCasas",
+    "title": "Bartolomé de las Casas",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1484–1566",
+    "summary": "The Spanish colonist who changed sides. Las Casas came to the Caribbean as a young settler, held a grant of forced Indigenous labor, and then underwent a conversion so complete that he spent the rest of his long life as the fiercest enemy of the empire that had made him. He indicted the conquest of the Americas as one of history's great crimes, argued that the peoples of the New World were fully human and fully free, and became a founding ancestor of the idea of universal human rights — even as his own record carried a grave contradiction he later renounced: his early proposal to import enslaved Africans to relieve the Indians.",
+    "status": "published",
+    "startYear": 1484,
+    "endYear": 1566,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "bobMarley",
+    "title": "Bob Marley",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1945–1981",
+    "status": "published",
+    "summary": "The Jamaican singer and songwriter who, between the late 1960s and his death in 1981, shaped reggae into a global language of liberation, carrying the Rastafari faith's message of Black pride and resistance to Babylon across every continent, surviving an assassination attempt and brokering an onstage truce in Jamaica's gang-torn politics, playing at Zimbabwe's independence, and becoming in a short life the first worldwide superstar of the developing world and a lasting symbol of freedom for the oppressed.",
+    "startYear": 1945,
+    "endYear": 1981,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "cheGuevara",
+    "title": "Che Guevara",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1928–1967",
+    "status": "published",
+    "summary": "The Argentine doctor turned Marxist guerrilla who helped Fidel Castro win the Cuban Revolution, served in its new government and oversaw the revolutionary tribunals and executions at La Cabaña, theorized armed revolution for the whole Third World, died trying to spread it in Bolivia in 1967, and was reborn as the most reproduced photograph of the twentieth century — a face that means rebellion to millions, ruthlessness to many others, and money to the companies that sell it.",
+    "startYear": 1928,
+    "endYear": 1967,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]
