@@ -163,6 +163,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "The Toltec are a Mesoamerican culture known partly through later legend and partly through archaeology, and like the Moche they raise the question of how to separate a real ancient society from the imagery and stories that surround it."
+    },
+    {
+      "label": "Caral / Norte Chico",
+      "entryId": "caral",
+      "relationship": "Descendant",
+      "reason": "A later Peruvian-coast civilization in the tradition Caral founded.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -302,6 +309,6 @@
   "regions": [
     "Latin America & Caribbean"
   ],
-  "degree": 13,
+  "degree": 15,
   "added": "2026-06-18"
 }
