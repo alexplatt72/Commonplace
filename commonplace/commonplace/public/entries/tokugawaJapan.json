@@ -181,9 +181,16 @@
     {
       "label": "Hokusai",
       "entryId": "hokusai",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "The woodblock master of the Tokugawa floating world whose Great Wave became the most famous image of the era, exemplifying the commoner art that bloomed inside the closed country."
+    },
+    {
+      "label": "Hiroshige",
+      "entryId": "hiroshige",
+      "relationship": "Descendant",
+      "reason": "The Edo floating world produced the ukiyo-e woodblock print Hiroshige perfected.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -330,6 +337,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 12,
+  "degree": 16,
   "added": "2026-06-18"
 }
