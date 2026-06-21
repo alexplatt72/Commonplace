@@ -184,6 +184,20 @@
       "status": "planned",
       "relationship": "Descendant",
       "reason": "The conqueror who made one last bloody bid to restore the empire and ruled through puppet Chinggisid khans, the violent coda whose death in 1405 closes this era."
+    },
+    {
+      "label": "The Central Asian Khanates",
+      "entryId": "centralAsianKhanates",
+      "relationship": "Descendant",
+      "reason": "The Uzbek khanates claimed the Chinggisid legitimacy of the Mongol successor states.",
+      "status": "published"
+    },
+    {
+      "label": "The Göktürks",
+      "entryId": "gokturks",
+      "relationship": "Precursor",
+      "reason": "The Gokturks began the steppe-empire tradition the Chinggisid khanates continued.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -340,6 +354,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 8,
+  "degree": 12,
   "added": "2026-06-18"
 }
