@@ -158,16 +158,23 @@
     {
       "label": "Cixi",
       "entryId": "cixi",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "The Empress Dowager who dominated the Qing court made the fateful decision to back the Boxers and declare war on the foreign powers. Her improvised, divided policy was the hinge on which the rebellion turned from a peasant movement into a national disaster."
     },
     {
       "label": "The Taiping Rebellion",
       "entryId": "taipingRebellion",
-      "status": "planned",
+      "status": "published",
       "relationship": "Precursor",
       "reason": "An earlier and far deadlier convulsion against the Qing, also fusing religion with mass upheaval, that drained the dynasty and showed how faith and desperation could ignite enormous violence in nineteenth-century China."
+    },
+    {
+      "label": "The Nanjing Massacre",
+      "entryId": "nanjingMassacre",
+      "relationship": "Parallel",
+      "reason": "Both episodes saw foreign armies and mass violence convulse China, fueling a wounded national memory.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -307,6 +314,6 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 8,
+  "degree": 14,
   "added": "2026-06-18"
 }

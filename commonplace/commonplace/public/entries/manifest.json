@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 33,
+    "degree": 34,
     "added": "2026-06-01"
   },
   {
@@ -1137,7 +1137,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-05-31"
   },
   {
@@ -1265,7 +1265,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 23,
+    "degree": 25,
     "added": "2026-05-31"
   },
   {
@@ -3780,7 +3780,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-01"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 91,
+    "degree": 92,
     "added": "2026-05-30"
   },
   {
@@ -4486,7 +4486,7 @@
       "Europe",
       "East Asia"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-06-02"
   },
   {
@@ -4896,7 +4896,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-06-02"
   },
   {
@@ -5362,7 +5362,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-01"
   },
   {
@@ -6962,7 +6962,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 30,
+    "degree": 32,
     "added": "2026-05-30"
   },
   {
@@ -12064,7 +12064,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -12096,7 +12096,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -12240,7 +12240,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -12752,7 +12752,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -13056,7 +13056,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -13088,7 +13088,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -13136,7 +13136,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -13152,7 +13152,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -13184,7 +13184,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -13200,7 +13200,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 8,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -13216,7 +13216,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 8,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -13229,6 +13229,86 @@
     "status": "published",
     "startYear": 1966,
     "endYear": 1976,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 13,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "greatLeapForward",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1958–1962",
+    "title": "The Great Leap Forward",
+    "summary": "Mao Zedong's campaign, launched in 1958, to vault China into a communist future by mobilizing its hundreds of millions of peasants to industrialize and collectivize overnight. Farmers were herded into giant people's communes and pulled off the fields to smelt useless iron in backyard furnaces, while ideology overrode expertise in the countryside. The system ran on lies: terrified local officials reported fictional harvests, the state seized grain against those false numbers, and the result was the deadliest famine in recorded history, killing tens of millions between 1959 and 1961. The death toll is contested, with estimates commonly ranging from around 15 million to 45 million or more, and the catastrophe remains a suppressed and sensitive subject in China today.",
+    "status": "published",
+    "startYear": 1958,
+    "endYear": 1962,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "nanjingMassacre",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1937–1938",
+    "title": "The Nanjing Massacre",
+    "summary": "The mass murder, torture, and rape carried out by the Japanese Imperial Army in the Chinese capital of Nanjing over roughly six weeks after the city fell on 13 December 1937, during the Second Sino-Japanese War. Surrendered soldiers and civilians were executed in their thousands along the Yangtze, the city was looted and burned, and tens of thousands of women and girls were raped, giving the event its second name, the Rape of Nanjing. That an atrocity of this kind occurred is established beyond serious doubt. Its scale is genuinely disputed, with death-toll estimates ranging from tens of thousands to the 300,000 carved at China's memorial, and a current of Japanese nationalist denial keeps the memory a running sore in relations between the two countries.",
+    "status": "published",
+    "startYear": 1937,
+    "endYear": 1938,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "taipingRebellion",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1850–1864",
+    "title": "The Taiping Rebellion",
+    "summary": "A vast millenarian uprising in southern and central China, led by Hong Xiuquan, a failed examination candidate who came to believe he was the younger brother of Jesus Christ. From 1850 his movement swelled into the bloodiest civil war in history. The rebels carved out a rival state, the Taiping Heavenly Kingdom, with its capital at Nanjing, banning opium, foot-binding, and private property while preaching a heterodox Christianity-derived faith. It controlled much of the rich lower Yangtze for over a decade and nearly toppled the Qing dynasty before being crushed in 1864 by provincial Chinese armies, aided late by Western-led forces. The dead, from combat, massacre, famine, and disease, are estimated at perhaps twenty to thirty million or more, among the deadliest conflicts in all of human history.",
+    "status": "published",
+    "startYear": 1850,
+    "endYear": 1864,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "akiraKurosawa",
+    "title": "Akira Kurosawa",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1910–1998",
+    "status": "published",
+    "summary": "The Japanese filmmaker who directed some thirty films across half a century and is widely regarded as one of the most influential directors in the history of cinema. His Rashomon (1950) won the top prize at Venice and stunned the West into discovering Japanese film, while Seven Samurai (1954) became a template that filmmakers everywhere borrowed. His samurai pictures were remade as Hollywood Westerns and his techniques shaped directors from Sergio Leone to George Lucas, even as critics at home for periods attacked him as too Western to be truly Japanese.",
+    "startYear": 1910,
+    "endYear": 1998,
+    "regions": [
+      "East Asia"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "cixi",
+    "title": "Empress Dowager Cixi",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1835–1908",
+    "status": "published",
+    "summary": "A low-ranking concubine of the Xianfeng Emperor who, after his death in 1861, seized the regency and became the dominant force in Qing politics for nearly half a century, ruling China from behind a silk screen as regent for two child emperors. She crushed the 1898 Hundred Days' Reform, gambled on the Boxer Rebellion and lost catastrophically, then sponsored sweeping late-Qing reforms before her death in 1908 — and is remembered, depending on the teller, as the reactionary who doomed China or as a pragmatist who held a collapsing empire together.",
+    "startYear": 1835,
+    "endYear": 1908,
     "regions": [
       "East Asia"
     ],
