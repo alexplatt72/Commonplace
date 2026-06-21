@@ -131,7 +131,7 @@
     {
       "label": "The Treaty of Waitangi",
       "entryId": "treatyOfWaitangi",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "The 1840 treaty between the Crown and Māori chiefs is the founding constitutional document of New Zealand and the root of enduring Māori grievance, and its two non-matching texts deserve the full textual analysis that this entry deliberately defers. The dedicated entry treats the discrepancy between 'sovereignty' and 'kāwanatanga'/'tino rangatiratanga,' the signing, and the treaty's long afterlife in law and politics."
     },
@@ -183,6 +183,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "The Hawaiian Kingdom was a Polynesian people who, like the Māori, faced European contact, disease, and the loss of sovereignty, but through annexation by the United States rather than Britain. Setting the two Polynesian peoples side by side shows different colonial outcomes for related cultures across the Pacific."
+    },
+    {
+      "label": "Rapa Nui (Easter Island)",
+      "entryId": "rapaNui",
+      "relationship": "Parallel",
+      "reason": "Both are Polynesian peoples of the open Pacific who endured colonization.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -331,6 +338,6 @@
   "regions": [
     "Oceania"
   ],
-  "degree": 10,
+  "degree": 14,
   "added": "2026-06-18"
 }

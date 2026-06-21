@@ -170,6 +170,13 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "Cook reached Hawai'i on his third voyage and was killed there in 1779, and the islands he charted were drawn into a century of foreign pressure that ended Hawaiian sovereignty. The kingdom's rise and fall is the direct sequel to the encounter that killed him."
+    },
+    {
+      "label": "Rapa Nui (Easter Island)",
+      "entryId": "rapaNui",
+      "relationship": "Consequential",
+      "reason": "Cook visited Rapa Nui in 1774, drawing it into the European reach.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -320,6 +327,6 @@
   "regions": [
     "Oceania"
   ],
-  "degree": 11,
+  "degree": 14,
   "added": "2026-06-18"
 }

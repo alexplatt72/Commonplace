@@ -293,7 +293,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 19,
+    "degree": 20,
     "added": "2026-06-13"
   },
   {
@@ -585,7 +585,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 21,
+    "degree": 22,
     "added": "2026-05-31"
   },
   {
@@ -795,7 +795,7 @@
       "Europe",
       "South Asia"
     ],
-    "degree": 58,
+    "degree": 59,
     "added": "2026-05-30"
   },
   {
@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 38,
+    "degree": 41,
     "added": "2026-06-01"
   },
   {
@@ -1201,7 +1201,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 49,
+    "degree": 50,
     "added": "2026-05-30"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 167,
+    "degree": 172,
     "added": "2026-05-30"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 50,
+    "degree": 51,
     "added": "2026-05-30"
   },
   {
@@ -1265,7 +1265,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 27,
+    "degree": 29,
     "added": "2026-05-31"
   },
   {
@@ -3651,7 +3651,7 @@
       "Europe",
       "North America"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-06-09"
   },
   {
@@ -4848,7 +4848,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 28,
+    "degree": 30,
     "added": "2026-05-30"
   },
   {
@@ -5016,7 +5016,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 19,
+    "degree": 21,
     "added": "2026-05-30"
   },
   {
@@ -5459,7 +5459,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-01"
   },
   {
@@ -5674,7 +5674,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-05-31"
   },
   {
@@ -8607,7 +8607,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 20,
+    "degree": 21,
     "added": "2026-06-14"
   },
   {
@@ -9611,7 +9611,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 7,
+    "degree": 8,
     "added": "2026-06-15"
   },
   {
@@ -14000,7 +14000,7 @@
     "regions": [
       "Oceania"
     ],
-    "degree": 10,
+    "degree": 14,
     "added": "2026-06-18"
   },
   {
@@ -14016,7 +14016,87 @@
     "regions": [
       "Oceania"
     ],
-    "degree": 11,
+    "degree": 14,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "rapaNui",
+    "title": "Rapa Nui (Easter Island)",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1200 CE – present",
+    "status": "published",
+    "summary": "A tiny, remote volcanic island in the southeastern Pacific, one of the most isolated inhabited places on Earth, settled by Polynesians around 1200 CE. Its people raised nearly a thousand giant stone ancestor-figures, the moai, and invented rongorongo, a unique undeciphered script. A famous story blames the Rapanui for destroying their own forest and society, but the evidence points instead to the Polynesian rat and, above all, to outsiders: the 1862–63 Peruvian slave raids and the epidemics that crashed the population to barely a hundred people. Their descendants survived, revived their culture, and now press for control of their own heritage.",
+    "startYear": 1200,
+    "endYear": 2025,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "treatyOfWaitangi",
+    "title": "The Treaty of Waitangi",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1840 CE – present",
+    "status": "published",
+    "summary": "The short treaty signed in 1840 between the British Crown and around 540 Māori chiefs — written in English and in Māori in versions that say crucially different things, with the English text ceding 'sovereignty' and the Māori text (Te Tiriti) ceding only 'kāwanatanga,' governance, while guaranteeing the chiefs 'tino rangatiratanga,' full authority over their lands and treasures. Dismissed by a court in 1877 as a 'simple nullity,' it was revived from the 1970s through the Waitangi Tribunal and a long process of settlements, and is now treated as New Zealand's founding document and a living, still-contested partnership.",
+    "startYear": 1840,
+    "endYear": 1840,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "diegoRiveraAndMexicanMuralism",
+    "title": "Diego Rivera and Mexican Muralism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1920s–1950s",
+    "summary": "The movement, led by Diego Rivera, in which the Mexican state turned the walls of its public buildings over to painters who covered them with a vast, fierce epic of Mexican history -- from the Aztec past through the Spanish conquest to the promise of revolution -- making art a weapon of the people and giving a wounded nation a new image of itself.",
+    "status": "published",
+    "startYear": 1920,
+    "endYear": 1950,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "liberationTheology",
+    "title": "Liberation Theology",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1968–present",
+    "summary": "The Latin American movement, born among Catholic priests and the poor, that read the Gospel as a call to liberate the oppressed from unjust structures, drew on Marxist social analysis, produced martyrs under military regimes, and was disciplined by the Vatican before its core idea entered mainstream Church teaching.",
+    "status": "published",
+    "startYear": 1968,
+    "endYear": 2025,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "magicalRealism",
+    "title": "Magical Realism",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "c. 1949-1990",
+    "summary": "The literary mode -- above all of 20th-century Latin America -- in which ghosts, miracles, and impossible wonders are narrated in the same calm, matter-of-fact voice as the price of bread, so that the marvelous and the everyday become one fabric. It let a continent tell its own outsized, violent, dreamlike history in a register plain realism could not hold, crowned by Gabriel Garcia Marquez's One Hundred Years of Solitude (1967), and it became one of the most imitated and most contested modes in modern fiction.",
+    "status": "published",
+    "startYear": 1949,
+    "endYear": 1990,
+    "regions": [
+      "Latin America & Caribbean"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]
