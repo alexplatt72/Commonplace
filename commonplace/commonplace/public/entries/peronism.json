@@ -157,9 +157,16 @@
     {
       "label": "Operation Condor",
       "entryId": "operationCondor",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "The coordinated campaign of state terror across the Southern Cone into which Argentina's 1976 dictatorship fed; the breakdown of the fractured Peronist government of 1973 to 1976 helped open the way to that repression."
+    },
+    {
+      "label": "The Tango",
+      "entryId": "tango",
+      "relationship": "Thematic",
+      "reason": "Tango was the music of the Buenos Aires working class whose loyalty Peronism mobilized.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -321,6 +328,6 @@
   "regions": [
     "Latin America & Caribbean"
   ],
-  "degree": 8,
+  "degree": 12,
   "added": "2026-06-18"
 }
