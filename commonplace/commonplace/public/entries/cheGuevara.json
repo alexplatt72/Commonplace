@@ -173,9 +173,16 @@
     {
       "label": "Fidel Castro",
       "entryId": "fidelCastro",
-      "status": "planned",
+      "status": "published",
       "relationship": "Parallel",
       "reason": "The leader Guevara joined and helped bring to power, whose state Guevara served before leaving to fight abroad — Castro's long rule and pragmatism stand in pointed contrast to Guevara's restless drive to export revolution and die for it."
+    },
+    {
+      "label": "Eva Perón",
+      "entryId": "evaPeron",
+      "relationship": "Parallel",
+      "reason": "Another Latin American figure who became a contested global icon and commodity.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -321,6 +328,6 @@
   "regions": [
     "Latin America & Caribbean"
   ],
-  "degree": 8,
+  "degree": 14,
   "added": "2026-06-18"
 }
