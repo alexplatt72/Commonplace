@@ -191,9 +191,16 @@
     {
       "label": "The Declaration of Independence",
       "entryId": "declarationOfIndependence",
-      "status": "planned",
+      "status": "published",
       "relationship": "Precursor",
       "reason": "The Declaration's claim that people hold rights by nature and that government rests on consent is the principle the Bill of Rights later wrote into enforceable law. Its universal language and its unkept promises form the closest American forerunner to the Bill's own gap between word and practice."
+    },
+    {
+      "label": "The Federalist Papers",
+      "entryId": "federalistPapers",
+      "relationship": "Precursor",
+      "reason": "The Anti-Federalist case the Papers answered forced the Bill of Rights.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -344,6 +351,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 8,
+  "degree": 12,
   "added": "2026-06-18"
 }

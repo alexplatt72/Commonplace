@@ -229,7 +229,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 31,
+    "degree": 32,
     "added": "2026-05-30"
   },
   {
@@ -245,7 +245,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 26,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 65,
+    "degree": 66,
     "added": "2026-05-31"
   },
   {
@@ -1120,7 +1120,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 17,
+    "degree": 18,
     "added": "2026-06-02"
   },
   {
@@ -1612,7 +1612,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 68,
+    "degree": 70,
     "added": "2026-05-30"
   },
   {
@@ -1863,7 +1863,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 41,
+    "degree": 43,
     "added": "2026-05-30"
   },
   {
@@ -1929,7 +1929,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-01"
   },
   {
@@ -2155,7 +2155,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 27,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -2897,7 +2897,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 65,
+    "degree": 66,
     "added": "2026-05-30"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 108,
+    "degree": 109,
     "added": "2026-05-30"
   },
   {
@@ -4502,7 +4502,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-05-30"
   },
   {
@@ -5264,7 +5264,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 38,
+    "degree": 39,
     "added": "2026-05-30"
   },
   {
@@ -5502,7 +5502,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 56,
+    "degree": 59,
     "added": "2026-05-31"
   },
   {
@@ -6476,7 +6476,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 9,
+    "degree": 10,
     "added": "2026-06-02"
   },
   {
@@ -9286,7 +9286,7 @@
       "Sub-Saharan Africa",
       "Global / Transregional"
     ],
-    "degree": 39,
+    "degree": 40,
     "added": "2026-06-15"
   },
   {
@@ -14736,7 +14736,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 8,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -14848,7 +14848,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 16,
+    "degree": 18,
     "added": "2026-06-18"
   },
   {
@@ -14864,7 +14864,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 16,
+    "degree": 19,
     "added": "2026-06-18"
   },
   {
@@ -14880,7 +14880,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-06-18"
   },
   {
@@ -14944,7 +14944,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -14976,7 +14976,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-18"
   },
   {
@@ -14992,7 +14992,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -15056,7 +15056,104 @@
     "regions": [
       "North America"
     ],
+    "degree": 12,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "declarationOfIndependence",
+    "title": "The Declaration of Independence",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1776",
+    "status": "published",
+    "summary": "The 1776 document by which thirteen British colonies announced their separation from Britain and justified it to the world. Drafted chiefly by Thomas Jefferson and adopted by the Second Continental Congress, it declared that all men are created equal and hold rights no government may take away, and that governments rest on the consent of the governed. Its philosophy was Enlightenment natural rights, above all John Locke. Its author enslaved hundreds of people, its Congress struck out a passage condemning the slave trade, and its text smeared Native peoples as savages. Yet its words outran their authors: abolitionists, the women of Seneca Falls, Lincoln, anti-colonial movements, and Martin Luther King all turned the promise of equality against the powers that withheld it.",
+    "startYear": 1776,
+    "endYear": 1776,
+    "regions": [
+      "North America"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "federalistPapers",
+    "title": "The Federalist Papers",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1787–1788",
+    "status": "published",
+    "summary": "Eighty-five newspaper essays written by Alexander Hamilton, James Madison, and John Jay under the shared pen name Publius in 1787 and 1788, urging New Yorkers to ratify the new United States Constitution. They were partisan campaign documents written to win a vote, not neutral philosophy, and they answered the Anti-Federalists, who feared the new national government would crush the states and liberty. Yet two of them — Federalist No. 10 on faction and the large republic, and No. 51 on the separation of powers — became the deepest explanation ever written of how the American government was meant to work. Over time The Federalist became the classic guide to the Constitution's design and a source the Supreme Court mines for the framers' original meaning, an authority its authors could not have foreseen.",
+    "startYear": 1787,
+    "endYear": 1788,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "reconstructionAmendments",
+    "title": "The Reconstruction Amendments",
+    "template": "Works",
+    "subtype": "Foundational Text",
+    "period": "1865–1870",
+    "status": "published",
+    "summary": "The Thirteenth, Fourteenth, and Fifteenth Amendments to the United States Constitution, ratified between 1865 and 1870 in the years after the Civil War. Together they abolished slavery, made everyone born on American soil a citizen entitled to due process and the equal protection of the laws, and barred denying the vote on the basis of race. They turned the federal government from a distant power into the guarantor of rights against the states, rewriting what the Constitution was for. Almost at once the Supreme Court read them narrowly and white-supremacist states defied them, leaving the promise unenforced for nearly a century. The civil rights revolution of the mid-twentieth century revived them, and they are now seen as a second founding, the constitutional core of American equality.",
+    "startYear": 1865,
+    "endYear": 1870,
+    "regions": [
+      "North America"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "silentSpring",
+    "title": "Silent Spring",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "1962",
+    "themes": [
+      "ecology",
+      "science",
+      "biology",
+      "unitedStates",
+      "publicHealth",
+      "20thCentury"
+    ],
+    "summary": "Rachel Carson's 1962 book, in which a marine biologist showed an America where pesticides had silenced the songbirds — building a meticulous, lyrical case that the synthetic chemicals sprayed to conquer nature, above all DDT, were moving through the food chain and poisoning the whole web of life, including humanity itself. Widely credited with launching the modern environmental movement, vindicated by a presidential science panel against a furious and often sexist industry campaign, and tied to the 1972 US DDT ban and the creation of the EPA — though the later near-total bans carry a debated tradeoff for malaria control that Carson, who sought regulation rather than prohibition, never called for.",
+    "status": "published",
+    "startYear": 1962,
+    "endYear": 1962,
+    "regions": [
+      "North America"
+    ],
     "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "soulsOfBlackFolk",
+    "title": "The Souls of Black Folk",
+    "template": "Works",
+    "subtype": "Non-narrative",
+    "period": "1903",
+    "themes": [
+      "race",
+      "identity",
+      "literature",
+      "resistance",
+      "intellectualHistory",
+      "america",
+      "20thCentury"
+    ],
+    "summary": "W.E.B. Du Bois's 1903 book of fourteen essays that named the wound of being Black in America — declaring that 'the problem of the twentieth century is the problem of the color line,' giving the world the idea of 'double consciousness' and the 'veil,' and openly challenging Booker T. Washington's accommodation with a demand for full civil rights, the vote, and higher education led by a 'Talented Tenth.'",
+    "status": "published",
+    "startYear": 1903,
+    "endYear": 1903,
+    "regions": [
+      "North America"
+    ],
+    "degree": 10,
     "added": "2026-06-18"
   }
 ]
