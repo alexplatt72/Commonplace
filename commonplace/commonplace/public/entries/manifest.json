@@ -60,7 +60,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-01"
   },
   {
@@ -229,7 +229,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 23,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -245,7 +245,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 24,
+    "degree": 25,
     "added": "2026-05-30"
   },
   {
@@ -358,7 +358,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-05-31"
   },
   {
@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 63,
+    "degree": 64,
     "added": "2026-05-31"
   },
   {
@@ -1120,7 +1120,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-02"
   },
   {
@@ -1217,7 +1217,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 199,
+    "degree": 200,
     "added": "2026-05-30"
   },
   {
@@ -1612,7 +1612,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 63,
+    "degree": 65,
     "added": "2026-05-30"
   },
   {
@@ -2123,7 +2123,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-05-31"
   },
   {
@@ -2476,7 +2476,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 29,
+    "degree": 30,
     "added": "2026-05-30"
   },
   {
@@ -2897,7 +2897,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 63,
+    "degree": 65,
     "added": "2026-05-30"
   },
   {
@@ -4276,7 +4276,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 17,
+    "degree": 19,
     "added": "2026-05-30"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 106,
+    "degree": 107,
     "added": "2026-05-30"
   },
   {
@@ -5502,7 +5502,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 46,
+    "degree": 50,
     "added": "2026-05-31"
   },
   {
@@ -9286,7 +9286,7 @@
       "Sub-Saharan Africa",
       "Global / Transregional"
     ],
-    "degree": 37,
+    "degree": 38,
     "added": "2026-06-15"
   },
   {
@@ -9772,7 +9772,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-06-15"
   },
   {
@@ -9981,7 +9981,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-15"
   },
   {
@@ -14576,7 +14576,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -14816,7 +14816,87 @@
     "regions": [
       "North America"
     ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "progressiveEra",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1896–1920",
+    "title": "The Progressive Era",
+    "summary": "The Progressive Era (roughly the 1890s to about 1920) was the burst of American reform that tried to tame the new industrial age. Alarmed by giant corporations, corrupt city machines, and brutal working conditions, reformers turned to government and expertise to regulate, clean up, and humanize their society — winning trust-busting, the income tax, food and drug laws, the direct election of senators, Prohibition, and votes for women. The same movement also embraced racial segregation and eugenics and largely excluded Black Americans, which is why its legacy remains genuinely contested.",
+    "status": "published",
+    "startYear": 1896,
+    "endYear": 1920,
+    "regions": [
+      "North America"
+    ],
     "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "jimCrow",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1877–1965",
+    "title": "Jim Crow",
+    "summary": "The system of legal racial segregation and disenfranchisement that ruled the American South for nearly a century after Reconstruction, stamping 'white' and 'colored' onto schools, railcars, and drinking fountains, stripping the vote from millions of Black citizens through poll taxes and literacy tests, and enforcing itself through lynching, convict leasing, and the daily threat of violence — until the civil rights movement broke it with the Civil Rights Act of 1964 and the Voting Rights Act of 1965.",
+    "status": "published",
+    "startYear": 1877,
+    "endYear": 1965,
+    "regions": [
+      "North America"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "reconstruction",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1865–1877",
+    "title": "Reconstruction",
+    "summary": "The dozen years after the American Civil War, 1865 to 1877, when the United States tried for the first time to build a genuine multiracial democracy on the ruins of slavery — writing Black freedom and citizenship into the Constitution, electing Black men to office across the South, and then abandoning the experiment to a campaign of white terror that would take a century to undo.",
+    "status": "published",
+    "startYear": 1865,
+    "endYear": 1877,
+    "regions": [
+      "North America"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "greatMigration",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1910–1970",
+    "title": "The Great Migration",
+    "summary": "The decades-long movement, roughly from 1910 to 1970, in which an estimated six million Black Americans left the rural Jim Crow South for the industrial cities of the North, Midwest, and West — the largest internal movement of a people in American history. It was a mass act of self-liberation that turned a Southern, rural Black population into a largely urban one, built the great Black communities and political power of cities such as Chicago, Detroit, and New York, and carried Southern Black culture into the national mainstream, even as the migrants met new walls of segregation, hostile unions, and racial violence in the places they fled to.",
+    "status": "published",
+    "startYear": 1910,
+    "endYear": 1970,
+    "regions": [
+      "North America"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "louisianaPurchase",
+    "title": "The Louisiana Purchase",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1803",
+    "summary": "The 1803 deal in which the United States bought roughly 828,000 square miles of the continent's heart from Napoleon for about fifteen million dollars, doubling the nation at a stroke — a bargain made possible only because the formerly enslaved people of Saint-Domingue had destroyed Napoleon's army, and one that opened a century of westward expansion across lands home to dozens of Native nations who had no part in the sale.",
+    "status": "published",
+    "startYear": 1803,
+    "endYear": 1803,
+    "regions": [
+      "North America"
+    ],
+    "degree": 9,
     "added": "2026-06-18"
   }
 ]

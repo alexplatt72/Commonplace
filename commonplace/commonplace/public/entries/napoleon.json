@@ -136,6 +136,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Napoleon's most celebrated early victories — Lodi and Arcola — turned on audacious bridge assaults under fire, and a reader of Napoleon's campaigns who encounters the bridge as a military chokepoint would naturally turn to the bridge entry's treatment of how controlling a crossing concentrates power and can change the course of a campaign."
+    },
+    {
+      "label": "The Louisiana Purchase",
+      "entryId": "louisianaPurchase",
+      "relationship": "Consequential",
+      "reason": "Napoleon sold Louisiana after abandoning his New World empire.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -380,6 +387,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 17,
+  "degree": 19,
   "added": "2026-05-30"
 }
