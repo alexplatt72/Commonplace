@@ -153,6 +153,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The Haudenosaunee are a leading example of the Native nations dispossessed by United States expansion — their displacement parallels the fate of the Osage, Sioux, and Pawnee whose lands the Purchase set in motion the taking of."
+    },
+    {
+      "label": "The Mexican-American War",
+      "entryId": "mexicanAmericanWar",
+      "relationship": "Consequential",
+      "reason": "The Purchase began the continental drive the Mexican-American War carried to the Pacific.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -310,6 +317,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }
