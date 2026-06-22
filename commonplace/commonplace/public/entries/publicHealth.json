@@ -163,6 +163,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The social gradient of health — the continuous relationship between social position and health outcome — means that health inequality and economic inequality are not separate problems. Addressing the former without the latter has proven consistently insufficient across decades of public health evidence."
+    },
+    {
+      "label": "Florence Nightingale",
+      "entryId": "florenceNightingale",
+      "relationship": "Consequential",
+      "reason": "Nightingale helped invent evidence-based public health and sanitary reform.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -375,7 +382,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 20,
+  "degree": 22,
   "added": "2026-06-02",
   "comparativeSummary": "Public health asks one question: who acts to protect a whole population, and on whose behalf? That question splits the room. In much of the Global South, the answer is shadowed by systems colonial rulers built to guard settlers and keep workers productive, not to serve the governed. Conservative and libertarian critics ask where the state's reach into private choice should stop, especially when emergency powers prove hard to give back. Community organizers answer from below, insisting the people affected should shape health programs rather than just receive them. The same effort to keep populations healthy reads as care, control, or contested authority depending on where you stand."
 }

@@ -198,6 +198,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The internet has transformed bureaucratic administration — enabling automated processing, digital records, and algorithmic decision-making that replicate bureaucratic functions at vastly greater scale and speed, raising new questions about accountability, bias, and the role of human judgment."
+    },
+    {
+      "label": "Franz Kafka",
+      "entryId": "franzKafka",
+      "relationship": "Consequential",
+      "reason": "Kafka made faceless bureaucratic power a literary nightmare.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -435,7 +442,7 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 18,
+  "degree": 20,
   "added": "2026-05-31",
   "comparativeSummary": "Almost everyone has cursed a clerk, so it is tempting to agree on what bureaucracy is. These traditions do not. To Weber, it is the cage modern life cannot leave: efficient, impersonal, and quietly crushing. To economists of public choice, it is a parasite that serves its own staff and should be shrunk. To students of state capacity, it is a rare achievement most countries lack, and the real danger is having too little of it. The fault line is partly where you stand. People who have lived under government that cannot function want more of it; people in places that mostly work want less."
 }
