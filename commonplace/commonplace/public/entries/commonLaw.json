@@ -162,6 +162,13 @@
       "status": "planned",
       "relationship": "Descendant",
       "reason": "Due process descends directly from the common-law tradition and from Magna Carta's 'law of the land,' becoming the guarantee that the state must follow fair, established procedures before depriving anyone of life, liberty, or property."
+    },
+    {
+      "label": "The Norman Conquest",
+      "entryId": "normanConquest",
+      "relationship": "Precursor",
+      "reason": "English common law grew from the fusion of Norman and Anglo-Saxon law after the Conquest.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -313,6 +320,6 @@
     "Europe",
     "North America"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }
