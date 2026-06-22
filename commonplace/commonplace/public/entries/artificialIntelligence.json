@@ -191,6 +191,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "Modern search engines depend on machine-learning models to rank results and understand natural-language queries; AI is not merely adjacent but structurally embedded in how search works."
+    },
+    {
+      "label": "Ada Lovelace",
+      "entryId": "adaLovelace",
+      "relationship": "Thematic",
+      "reason": "Lovelace’s objection framed an enduring question about machine creativity.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -419,7 +426,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 17,
+  "degree": 19,
   "added": "2026-05-30",
   "comparativeSummary": "People arguing about AI are often not describing the same thing. To one camp it is the most powerful technology ever built, racing toward systems that could rewrite science and even improve themselves; the urgent task is steering it. To another, the same systems are skilled mimics that match patterns without understanding, and no amount of scaling closes that gap. A third looks past the machine to who owns it: models trained on unpaid human work, now used to automate that work, with the gains flowing to capital. What you think AI is decides what you think should be done about it."
 }

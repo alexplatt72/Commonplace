@@ -160,6 +160,13 @@
       "status": "planned",
       "relationship": "Precursor",
       "reason": "Mendel discovered that inheritance comes in discrete units, decades before anyone knew their chemical basis. The double helix gave his abstract 'factors' a physical form, joining his statistical laws of heredity to a molecule."
+    },
+    {
+      "label": "Antoine Lavoisier",
+      "entryId": "antoineLavoisier",
+      "relationship": "Descendant",
+      "reason": "The quantitative, experimental chemistry Lavoisier founded underlies modern molecular biology.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -322,6 +329,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 8,
+  "degree": 9,
   "added": "2026-06-18"
 }

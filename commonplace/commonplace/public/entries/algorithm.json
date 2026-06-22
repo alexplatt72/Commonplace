@@ -189,6 +189,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "The algorithm entry traces the concept of a finite, mechanical procedure through al-Khwarizmi and Turing, but the direct physical ancestor of stored-program computing is Joseph Marie Jacquard's punched-card loom of 1804 — the device that first separated pattern-as-data from the machine that executes it, a lineage Babbage and Lovelace explicitly named."
+    },
+    {
+      "label": "Ada Lovelace",
+      "entryId": "adaLovelace",
+      "relationship": "Thematic",
+      "reason": "Lovelace’s 1843 Note G is famous as an early machine algorithm.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -360,6 +367,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 13,
+  "degree": 15,
   "added": "2026-06-13"
 }
