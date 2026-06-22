@@ -207,6 +207,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "The radio entry describes how the transistor radio democratized broadcasting across the developing world; that portability was entirely dependent on cheap, reliable dry-cell batteries — the battery is the mobile energy source that separated radio from the wall socket and turned it into the personal, ubiquitous medium the radio entry celebrates."
+    },
+    {
+      "label": "James Clerk Maxwell",
+      "entryId": "jamesClerkMaxwell",
+      "relationship": "Precursor",
+      "reason": "Maxwell predicted the electromagnetic waves that became radio.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -340,6 +347,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-06-13"
 }

@@ -123,6 +123,13 @@
       "relationship": "Descendant",
       "reason": "The double helix finally explained, at the molecular level, the inheritance Darwin theorized.",
       "status": "published"
+    },
+    {
+      "label": "Gregor Mendel",
+      "entryId": "gregorMendel",
+      "relationship": "Parallel",
+      "reason": "Darwin’s contemporary work on the other half of the inheritance-and-variation story.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -352,6 +359,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 13,
+  "degree": 15,
   "added": "2026-05-30"
 }
