@@ -139,6 +139,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "The American Revolution turned the parliament's oldest bargain — no taxation without representation — into a founding principle of a new republic, and then deliberately rejected the parliamentary model in favor of a separated executive, making it the clearest case of both the principle's power and the institution's limits."
+    },
+    {
+      "label": "Haudenosaunee Confederacy (Iroquois)",
+      "entryId": "haudenosauneeConfederacy",
+      "relationship": "Consequential",
+      "reason": "The Revolution split the Confederacy and cost it dearly.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -384,6 +391,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 22,
+  "degree": 24,
   "added": "2026-05-30"
 }
