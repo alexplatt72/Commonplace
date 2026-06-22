@@ -158,6 +158,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "The Rastafari movement read the Kebra Nagast's vision of African divine kingship as living scripture and saw Haile Selassie as Solomon's heir. The epic gained a second life in the African diaspora, far from the dynasty and church that produced it."
+    },
+    {
+      "label": "Popol Vuh",
+      "entryId": "popolVuh",
+      "relationship": "Parallel",
+      "reason": "Another people’s sacred national narrative carrying identity and lineage.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -286,6 +293,6 @@
   "regions": [
     "Sub-Saharan Africa"
   ],
-  "degree": 10,
+  "degree": 12,
   "added": "2026-06-16"
 }

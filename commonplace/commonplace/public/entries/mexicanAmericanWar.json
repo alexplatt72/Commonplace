@@ -185,6 +185,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The war pitted two rival national destinies against each other, an expanding American republic certain of its continental mission and a young Mexican nation fighting for its territorial survival, sharpening the national identities on both sides of the new border."
+    },
+    {
+      "label": "The Monroe Doctrine",
+      "entryId": "monroeDoctrine",
+      "relationship": "Thematic",
+      "reason": "The US expansion the Doctrine’s hemispheric claim helped license.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -365,6 +372,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }
