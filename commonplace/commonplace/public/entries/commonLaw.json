@@ -1,0 +1,318 @@
+{
+  "id": "commonLaw",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Concepts",
+  "subtype": "Analytical Concept",
+  "period": "1166 CE – present",
+  "title": "Common Law",
+  "summary": "A legal system in which much of the law is made by judges deciding individual cases rather than only by lawmakers writing codes. Its engine is precedent (stare decisis): a court's ruling on a point of law binds later courts in similar cases, so the law grows case by case out of accumulated decisions. Born in England after 1066 and carried across the world by the British Empire, the common law today governs the legal systems of the United States, Canada, Australia, India, and much of Africa and the Caribbean — often imposed on colonized peoples over their own traditions. It is one of the two great legal families of the modern world, set against the civil-law systems of Europe and Latin America that build the law from comprehensive codes.",
+  "hook": "In most of the world, when you want to know what the law is, you look it up in a book a parliament wrote. In the common-law world, you read what judges decided. There is no single code that holds the whole law of negligence, or contract, or murder. Instead the law lives inside thousands of past rulings, each one binding on the courts that come after it, so the law is built case by case, like a coral reef rising from countless small deposits. It began with royal judges riding the roads of medieval England, and the British Empire later carried it to roughly a third of humanity. Its central promise is consistency: like cases should be decided alike. Its central worry is the power it hands to judges who answer to no electorate.",
+  "themes": [
+    "law",
+    "governance",
+    "justice",
+    "britain",
+    "colonialism",
+    "rights",
+    "institutions"
+  ],
+  "interpretiveInfluences": [
+    "A.W.B. Simpson",
+    "S.F.C. Milsom",
+    "Frederic William Maitland",
+    "Ronald Dworkin",
+    "H.L.A. Hart"
+  ],
+  "content": {
+    "beginner": {
+      "theConcept": "Imagine you want to know whether something is against the law. In most countries, you find the answer in a book. A parliament wrote that book, listed the rules, and you look up the one you need. In a common-law country, much of the law is not in any single book. To find it, you read what judges have already decided in real cases.\n\nThe common law is law made by judges as they go. When a judge settles a case, the decision does more than end that one dispute. It becomes a rule that later judges must follow when a similar case comes along. So the law grows one case at a time, out of thousands of past rulings stacked on top of each other.\n\nThis is the heart of the common law: the past binds the present. The Latin name for the rule is stare decisis, which means to stand by things decided. A judge today is not free to decide however they please. They must follow the rulings of the judges who came before.",
+      "problemItSolves": "Before the common law, England had no single law. Each region followed its own local customs. What counted as a crime or a fair deal could change from one place to the next. Justice depended on where you happened to live.\n\nAfter 1066, English kings began sending royal judges out across the country to hear cases. These judges started to share what they learned. Slowly they built one set of rules that applied to the whole kingdom. Because it was common to everyone, people called it the common law.\n\nThe system solved a real problem. It made the law more predictable. If a judge in one town decided a question one way, judges elsewhere would decide it the same way. People could begin to guess how a court might rule before they ever walked into one. That promise, that like cases get treated alike, is what the common law was built to deliver.",
+      "howItWorks": "A common-law judge does not start from a blank page. They look at how earlier courts ruled on the same kind of problem. If a past decision fits, the judge must follow it. This is what makes a single ruling so powerful. It does not just settle one fight. It sets a rule for the future.\n\nLawyers, then, argue mostly from past cases. One side says, look at this earlier ruling, it controls our case. The other side says, no, our facts are different, so that ruling does not apply. Pointing out a real difference is called distinguishing a case. It lets a court avoid an old rule without throwing it out.\n\nVery rarely, a high court decides an old ruling was simply wrong and overturns it. This is unusual, because the whole system depends on the past staying steady. The law can bend slowly, case by case, but sudden reversals shake the trust that holds it together.",
+      "whatItExplains": "The common law has a great rival, and seeing the contrast makes both clearer. Most of Europe, Latin America, and much of Asia use civil law. There, lawmakers write one large code that tries to cover everything in advance, and judges mainly apply it. The code comes first. The judge looks down at the book.\n\nThe common law works the other way. Lawmakers still pass statutes, and judges must follow them. But where no statute speaks, judges make the law themselves through their rulings. And even when a statute exists, judges decide what its words mean for real cases. So in the common law, judges do not just apply the law. They help build it.\n\nThis explains why common-law courtrooms feel like a contest. Two sides fight it out, each showing evidence and arguing from past cases, while the judge referees. This style is called adversarial. The law that results is practical and tested, shaped by real disputes rather than written all at once in a quiet room.",
+      "whereItBreaksDown": "The common law has real weaknesses, and its critics press on them hard. Because the law lives scattered across thousands of past rulings, it can be hard to find and hard to predict. A skilled lawyer can dig up cases pointing in opposite directions. Ordinary people often cannot tell what the law requires until a court tells them.\n\nThere is also the deeper worry about power. Judges in a common-law system make law, yet most of them are never elected. When a court reads new meaning into old words, it is shaping rules that govern everyone, without a vote. Supporters say this lets the law adapt wisely over time. Critics answer that it hands too much power to a small group of officials no one chose.\n\nThe system also grows slowly. Because change comes case by case, the common law can lag behind a fast-moving world. Sometimes a problem is too big or too urgent to wait for the right lawsuit, and a parliament must step in and pass a statute instead.",
+      "usedAndMisusedC": "The common law did not stay in England. The British Empire carried it across the world. Today it is the foundation of the legal systems of the United States, Canada, Australia, India, much of Africa, and the Caribbean. By one common estimate it governs roughly a third of the world's people.\n\nBut its spread was not a gift freely chosen. In many colonies, the British imposed their law over the traditions already there. Local customs, religious law, and older systems of justice were pushed aside or forced underneath English rules. People had to bring their disputes to courts run on a foreign model, often in a foreign language.\n\nMany countries that won independence kept the common law, because it was already woven into their courts. Some blended it with their own customary or religious law. So the common law's reach is real and huge. It is also, in much of the world, a legacy of conquest. Both things are true at once, and an honest account holds them together."
+    },
+    "general": {
+      "theConcept": "A judge in a common-law court takes up a problem that no statute clearly answers, and finds the law not in a code but in a library of decided cases. The rule that governs the dispute may have been laid down a century earlier by a court the judge has never read a word about. This is the defining feature of the common law: it is law built by judges, case by case, and held together by the principle that a ruling on a point of law binds the courts that follow.\n\nThat principle has a name, stare decisis, and it does most of the system's work. A precedent is not advice a later judge may take or leave. Within its court hierarchy it is a command. The law therefore grows incrementally, each decision adding a small deposit to a structure no single mind designed. The image often used is a coral reef, because the result is intricate, durable, and the product of accumulation rather than plan.\n\nThe common law took shape in England after the Norman Conquest of 1066, as royal judges built a single law for the whole realm out of local custom and royal authority. By the late twelfth century, under Henry II, that system was recognizably underway, and the Assize of Clarendon in 1166 is often used to mark its arrival. The name records its ambition. It was the law common to all of England, in place of the patchwork of regional customs that came before.",
+      "problemItSolves": "The common law replaced a world of fragmented, local justice with a single national one. Before royal judges spread across England, law was custom, and custom varied by place. The same act might be punished in one county and tolerated in the next. What the common law offered was not better rules so much as one set of rules, applied consistently, by courts that recorded and remembered their own decisions.\n\nThe deeper problem it answers is predictability. A legal system is most useful when people can anticipate how it will treat them. Precedent supplies that. Because a court is bound by what comparable courts decided before, a lawyer can study the past rulings and advise a client on the likely outcome. The law becomes something you can reason about in advance, rather than a fresh gamble each time a dispute reaches a courtroom.\n\nIts rival tradition, civil law, solves the same problem by a different route. Drawing on Roman law and revived by codifiers such as those behind France's Napoleonic Code of 1804, civil-law systems write comprehensive statutes meant to settle questions ahead of time, so judges can look up the answer rather than build it. The common law trusts accumulated decisions; the civil law trusts the code. Both aim at consistency. They locate it in different places.",
+      "howItWorks": "The machinery of the common law runs on a few linked techniques. A judge facing a dispute looks for the controlling precedent, the earlier ruling on the same point of law that a higher court has settled. The binding part of a precedent is its reasoning on the legal question, often called the ratio; remarks that go beyond what the case required carry weight but do not bind. Courts lower in the hierarchy must follow courts above them, which is what makes the system hold together.\n\nWhere the law has room to move is in the space between cases. No two disputes are identical, so a judge can decide that an old ruling does not apply because the facts differ in a way that matters. This is called distinguishing, and it is the common law's main tool for change without rupture. Over many decisions, a line of cases can shift considerably while every individual step claims only to follow what came before. Occasionally a top court will openly overrule a precedent, but courts treat this as a serious act, since stability is much of the system's value.\n\nThe common law also shapes how trials feel. It tends to be adversarial: the two parties gather and present the evidence and argue the law, while the judge acts as an umpire rather than an investigator. Civil-law systems lean more inquisitorial, with the judge taking a leading role in examining the facts. Neither style is universal within its family, and modern systems borrow from each other, but the contrast captures a real difference in who drives a case forward.",
+      "whatItExplains": "The concept explains why two legal worlds that pursue the same goals look so different in practice. In a common-law country, the law of large fields such as contract, property, and negligence was for centuries mainly the work of judges, assembled from rulings rather than enacted in a statute. A reader who wants to know the law of negligence cannot simply find the relevant section of a code. They must trace a chain of decisions, because that is where the rule actually lives. Civil-law countries, by contrast, can point to an article of the code.\n\nIt also explains a distinctive style of legal reasoning, one that prizes both consistency and flexibility and accepts the tension between them. Consistency comes from following precedent; flexibility comes from distinguishing, interpreting, and, rarely, overruling. A common-law system is therefore always doing two things at once. It is honoring the past and adjusting it. Defenders see this as the source of the tradition's practicality, a law tested against real human conflicts rather than written in the abstract.\n\nFinally, the concept explains a global pattern. Trace the world's legal systems and the common-law family clusters around the former territories of the British Empire, while the civil-law family clusters around continental Europe and the places it colonized or influenced. The map of legal traditions is, to a striking degree, a map of past empires. That observation carries an uncomfortable charge, because for much of the common-law world, the law arrived with conquest rather than consent.",
+      "whereItBreaksDown": "The common law's strengths shade into its weaknesses. Predictability is the boast, yet the law's dispersal across countless rulings can make it genuinely hard to know. Skilled advocates can assemble precedents pointing in opposite directions, and the true rule may not be clear until a high court resolves the clash. The same accumulation that gives the law depth can leave it tangled, accessible mainly to specialists who can navigate the case law.\n\nThe sharper objection concerns democratic legitimacy. When judges make and remake law through their rulings, they exercise a power that most of them hold without election. Reading a fresh meaning into an old rule can amount to changing the law for everyone, with no vote taken. Admirers answer that incremental, reasoned, publicly justified decision-making is itself a virtue, and that legislatures remain free to override the courts by statute. Critics reply that this understates how much unelected judges shape contested questions of public life. The debate is genuine and unresolved.\n\nThere is also a problem of pace and a problem of origin. Because the common law moves case by case, it can trail behind rapid social or technological change, which is one reason modern legislatures pass so much statute law that now overlays and often displaces the judge-made rules. And the system's reach beyond England rests heavily on empire. In much of the world the common law did not grow from local soil but was installed by colonial power, raising a lasting question about whose justice it was built to deliver.",
+      "usedAndMisusedC": "The common law became a global system through the British Empire, and the manner of that spread is part of what the concept now has to account for. Settlers in North America and Australia carried English law as their own inheritance and built it into new nations; the United States kept the common law after independence and made it the working substance of its courts. In colonies with large existing populations, the story was different. The law was imposed. British administrators set up English-style courts and applied English doctrines over societies that already had their own law, whether customary, religious, or codified.\n\nThe result was rarely a clean replacement. Colonial authorities often allowed local law to govern family and religious matters while reserving commercial and criminal law to the English model, producing the layered, plural legal orders that many post-colonial states still carry. India administers Hindu and Muslim personal law alongside a common-law framework; several African and Caribbean states blend received English law with customary systems. These mixtures are not tidy compromises. They encode old hierarchies about which law counted as real and which was tolerated at the margins.\n\nWhat the concept therefore has to hold together is a genuine double character. The common law gave much of the world an independent, precedent-bound judiciary, a vocabulary of rights, and a check on arbitrary power that later movements turned against the very empire that brought it. It also arrived, for hundreds of millions of people, as an instrument of rule that displaced their own legal traditions without their consent. Admirers stress the first; critics stress the second; an honest reckoning refuses to let either erase the other."
+    },
+    "advanced": {
+      "theConcept": "The unsettled question at the center of common-law theory is what a precedent actually obligates a later judge to do, and the dispute runs deeper than procedure. The orthodox account holds that a binding precedent supplies a rule, extractable as its ratio decidendi, that governs future cases falling within its terms. Yet a powerful line of scholarship, with A.W.B. Simpson prominent in it, argues that the common law is better understood not as a set of discrete rules announced in cases but as a customary body of practice, a tradition of reasoning within which individual decisions are evidence of the law rather than its sole source. On that view the ratio is reconstructed by later courts as much as it is found, which makes the binding force of precedent more interpretive than the orthodox picture allows.\n\nThis is not a verbal quarrel. It determines whether common-law adjudication is constrained in the way its defenders claim. If judges genuinely extract and apply fixed rules, the system's promise of consistency is grounded in something hard. If, as the customary account suggests, the controlling rule is substantially the product of later interpretation, then precedent constrains more loosely, and the line between following the law and making it becomes correspondingly hard to police. The theoretical stakes are the legitimacy of the whole enterprise: a system that lets unelected judges shape law is easier to defend if precedent really binds than if it mostly licenses.",
+      "problemItSolves": "Cast in jurisprudential terms, the common law is the proving ground for the deepest quarrel in legal theory: whether law is the set of rules officials have laid down, or whether legal practice carries an internal morality that judges discover as they decide. H.L.A. Hart's positivism treats the law as resting on a rule of recognition, a shared practice among officials that identifies which standards count as law; on this account precedent binds because the legal community accepts that it does, and judges in genuinely novel cases exercise a delegated discretion to make new law. The hard cases are filled by choice, not by the law, because the law has run out.\n\nRonald Dworkin built his most influential argument by denying exactly this. In hard cases, he held, the common-law judge is not choosing freely but seeking the answer that best fits and justifies the whole body of past decisions, reading the law as a chain novel each judge must continue in keeping with what came before. There is, on his account, a right answer even where no rule dictates it, and judicial law-making is therefore far less arbitrary than the positivist concedes. The dispute is not academic decoration. It governs how one should describe what a judge does when overruling a precedent or extending a doctrine, and whether that act is an exercise of law or of power lightly dressed as law.",
+      "howItWorks": "The mechanism prized as the common law's genius is also where its claim to constraint is most exposed. Precedent is supposed to discipline judges, yet the same toolkit that enforces stability, identifying the ratio, distinguishing on the facts, characterizing prior holdings narrowly or broadly, supplies the means to evade it. A court determined to reach a particular result can almost always find a factual difference that lets it set an inconvenient precedent aside without overruling it, and a court determined to entrench a result can read a prior holding so broadly that it controls cases its authors never contemplated. The line of negligence cases running from Donoghue v. Stevenson in 1932 outward shows doctrine expanding dramatically through steps each presented as faithful application.\n\nThis is the realist challenge, and it cuts at the system's self-description. If distinguishing is this elastic, then the constraint of precedent is partly a rhetorical achievement, a discipline that holds because judges treat it as real and a professional culture polices departures, not because the logic of the cases forces particular outcomes. The honest defense is not that precedent mechanically determines results but that it raises the cost of unprincipled ones: a judge who distinguishes implausibly must do so in writing, before a profession trained to notice, with the reasoning exposed to appeal and criticism. The constraint is social and reputational as much as logical, which is a weaker claim than the orthodox account makes and a more defensible one.",
+      "whatItExplains": "The framework does its most demanding work on the colonial transplantation of the common law, where the tradition's universalist self-image meets its imperial history. The common law presents itself as the slow distillation of reason from experience, a law that grows from the felt needs of the community it governs. That story cannot survive contact with the colonial record, in which English doctrines were imposed on societies whose experience and felt needs were entirely different, by judges who often neither knew nor respected the law already in place. The reception of English law in colonial India, codified in part precisely because the unwritten common law proved unworkable when administered by outsiders over an unfamiliar society, is the standing refutation of the organic-growth myth.\n\nWhat the colonial case exposes is that the common law's much-praised flexibility cuts both ways. The same interpretive freedom that lets the tradition adapt to local circumstance allowed colonial courts to recognize indigenous law selectively, freezing fluid customary practices into rigid rules, elevating the interpretations that suited administration and discarding the rest. Scholars of legal pluralism have shown that what colonial courts called customary law was frequently a colonial product, custom reshaped by the act of being rendered into common-law form. The concept therefore explains a hard truth about its own reach: the common law did not simply spread to a third of humanity. In much of that territory it remade the law it found while claiming only to be applying it, and the post-colonial legal orders that resulted still bear the marks of that remaking.",
+      "whereItBreaksDown": "The deepest theoretical strain is the counter-majoritarian one the common law shares with constitutionalism but in an acute form, because here the law-making is unauthorized by any text. A legislature that delegates is at least accountable; the common-law judge makes law in fields the legislature never spoke to, justified only by the practice of doing so. Defenders since Edward Coke have answered that this is law refined by many minds over long time, an artificial reason superior to the will of any single lawmaker. The claim is genuinely contestable. It can describe a tradition that protects liberty by binding rulers to settled rules, and it can equally dignify the accumulated prejudices of a narrow judicial class as though age conferred wisdom.\n\nThe strain sharpens when precedent and justice diverge. Stare decisis commands a court to follow a prior ruling it believes wrong, on the theory that stability and equal treatment outweigh getting each case right. But a system that for generations bound courts to precedents entrenching, say, racial subordination shows the cost: the same fidelity that protects against arbitrary power also protects entrenched injustice, and the tools for escape, distinguishing and overruling, are precisely the tools whose free use would dissolve the constraint that gives the system its value. The common law cannot fully resolve this. It can only manage it, trading some correctness for stability and some stability for correctness, case by case, with no formula for the exchange rate. The tradition's defenders and critics are not disagreeing about facts so much as weighing the same facts differently, which is why the debate does not close.",
+      "usedAndMisusedC": "The common law's most consequential misuse is the one embedded in its global diffusion, where a tradition that narrates itself as the organic growth of local reason functioned as an instrument of imperial administration. The ideological work is subtle. By presenting English doctrines as the deliverances of reason rather than the law of a particular people, colonial jurists could install them over other societies as though extending a universal good rather than imposing a foreign order. The much-praised adaptability of the common law turned, in colonial hands, into a power to recognize indigenous law selectively, to freeze negotiable customary practice into fixed rules, and to privilege the renderings that suited revenue collection and social control. What was called the application of custom was frequently its reconstruction.\n\nYet the same tradition supplied weapons that were turned back against the power that brought it. Anti-colonial lawyers and movements, many trained in the metropole's own courts, invoked common-law guarantees of due process, habeas corpus, and the rule of law to contest detention, expropriation, and arbitrary rule, exploiting the gap between the tradition's stated principles and its colonial practice. This is the characteristic doubleness the concept must hold. The common law could legitimate domination by dressing it as universal reason, and it could furnish the very vocabulary of rights and procedural fairness that the dominated used to claim their freedom. Neither function cancels the other, and an account that collapses the tradition into pure liberty or pure power misdescribes how it actually operated across the territories it came to govern."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "The common law is one of the world's two great legal traditions, and it is built on a surprising idea: that much of the law should be made by judges deciding real cases, not written in advance by lawmakers. Its central rule is precedent, the requirement that courts follow the decisions of earlier courts, so the law grows case by case. Understanding the common law means understanding how a legal system can be coherent without a master plan, and why a tradition born in medieval England now governs much of the world.",
+        "theDebate": "The central debates concern how tightly precedent actually constrains judges (whether following past cases is a genuine discipline or a flexible rhetoric), whether judge-made law is democratically legitimate when judges are unelected, and how to reckon with the common law's spread through empire (whether its global reach is the diffusion of a valuable tradition or the imposition of a colonial one over displaced local law). A further debate contrasts the common law with the civil-law tradition, and asks whether the differences between code-based and case-based systems are shrinking as each borrows from the other.",
+        "whyItMatters": "The common law shapes daily life across a third of the world, from how contracts are enforced to how the accused are tried. Understanding it unlocks the legal systems of the United States, Britain, India, and much of the former British Empire, the contrast between the world's two main legal families, and the larger questions of how law balances stability against change and judicial power against democratic control.",
+        "questions": [
+          "The common law promises that like cases will be decided alike, yet it also lets judges distinguish a past case by pointing to differences in the facts. Does this flexibility strengthen the promise of consistency by allowing sensible exceptions, or does it quietly undermine it? How would you tell the difference?",
+          "In much of the world, the common law arrived through colonial rule, imposed over existing legal traditions. Does a legal system's origin in conquest affect its legitimacy today, after independence and after generations of local use? What would make such a system genuinely the country's own?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "S.F.C. Milsom and Frederic William Maitland are foundational for the historical understanding of how the common law emerged from the institutions of medieval England, with Maitland's late-nineteenth-century work still shaping the field. A.W.B. Simpson advanced the influential argument that the common law is best understood as a customary tradition of practice rather than a set of rules announced in cases. In legal philosophy, H.L.A. Hart's positivism and Ronald Dworkin's interpretive theory frame the central dispute over whether judges in hard cases make new law or discover the answer that best fits existing law. Scholars of legal pluralism and colonial law, building on this work, have reframed the common law's global spread as a story of selective imposition and the colonial reshaping of indigenous custom.",
+        "evidenceAndLimits": "The common law is unusually well-documented: centuries of recorded judicial decisions provide a continuous archive of how doctrines developed. This record supports firm conclusions about what courts held and how reasoning shifted over time. Its limits are real, however. Reported cases capture disputes that reached appellate courts, not the vast majority of legal life that never produced a recorded judgment, so the archive over-represents the contested and the wealthy. The medieval origins are harder to reconstruct, since early records are sparse and institutional. And the colonial record is shaped by the colonizers who kept it, which means the indigenous law the common law displaced often survives only as filtered through the courts that were superseding it.",
+        "takingAPosition": "A strong position on the common law must hold two things at once without collapsing either. It must take seriously the realist insight that the tools of precedent, distinguishing and characterizing prior holdings, give judges real room to reach the results they prefer, so the constraint of precedent is looser than the orthodox account claims. But it cannot conclude that the constraint is therefore empty, because a profession trained to notice unprincipled reasoning, an appeals process, and a culture of written justification impose genuine costs on departures. The defensible view is that precedent constrains socially and reputationally rather than mechanically. On the colonial question, the strongest position likewise refuses the easy verdicts: it credits the common law with furnishing tools, an independent judiciary and a language of rights, that anti-colonial movements turned against empire, while insisting that these were delivered through imposition that displaced existing law. The position to defend is that both the achievement and the conquest are real, and that an account stressing only one is incomplete.",
+        "questions": [
+          "Hart holds that in hard cases judges exercise discretion to make new law, while Dworkin holds they seek the single answer that best fits the whole body of past decisions. Which better describes what a court does when it extends a doctrine to a situation no prior case addressed, and what evidence from actual judicial opinions would help you decide?",
+          "Scholars of legal pluralism argue that what colonial courts called customary law was often a colonial product, indigenous practice frozen and reshaped by being rendered into common-law form. If that is right, what follows for post-colonial states trying to recover or apply customary law today, and can a tradition reshaped by empire be authentically reclaimed?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "The medieval origins of the common law",
+      "content": "It is well established that the common law emerged in England in the period after the Norman Conquest of 1066, taking recognizable shape under Henry II in the later twelfth century through the expansion of royal justice, itinerant judges, and standardized writs. The Assize of Clarendon (1166) is a conventional marker for the consolidation of a centralized royal justice that displaced purely local custom. The detailed institutional history, traced by scholars such as Maitland and Milsom, rests on surviving court records, writs, and legal treatises. What is firmly known is the institutional development; what is debated is how much continuity there was with pre-Conquest Anglo-Saxon practice versus how much was a Norman and Angevin innovation."
+    },
+    {
+      "status": "emerging",
+      "topic": "Customary law as a colonial construction",
+      "content": "Scholarship in legal pluralism and colonial legal history has increasingly argued that the 'customary law' applied by colonial common-law courts was frequently not a faithful preservation of indigenous practice but a colonial product: fluid, negotiated local norms were frozen into fixed rules, recorded selectively, and reshaped to fit the categories of English law and the needs of administration. This reframing, developed across studies of British Africa and South Asia, is increasingly accepted but remains an active area of research, since the extent of distortion varied widely by region, period, and the degree to which indigenous authorities retained influence over how their law was rendered."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The lived legal experience of those outside the recorded case law",
+      "content": "What evidence would resolve it: systematic records of how law was actually experienced by the majority of people in common-law jurisdictions, especially the poor, the colonized, and others whose disputes rarely reached the appellate courts that generated reported decisions. Why unavailable: the common-law archive is overwhelmingly a record of cases that were litigated, appealed, and reported, which systematically over-represents the propertied and the contested; most legal life left no comparable trace, and in colonial settings the surviving records were kept by the administering power. What can be established: the doctrines courts announced and the reasoning in reported cases. What cannot be recovered: the distribution of everyday legal outcomes, how ordinary and marginalized people fared in unreported matters, and the full content of the indigenous legal traditions that colonial courts displaced before documenting them on their own terms."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "The common-law tradition's self-understanding",
+      "name": "Reason refined by experience",
+      "content": "From inside the tradition, defenders see the case-by-case method as a strength. The seventeenth-century judge Edward Coke called it an artificial reason, a wisdom built up by many minds over long stretches of time. A law that grows from decided cases, on this view, is more practical and more cautious than one written all at once, because it changes only as much as each new dispute requires. Judges bound to follow precedent become a guard against arbitrary rulers. This vantage point shows why common-law lawyers prize continuity and distrust sweeping codes. It also tends to soften an awkward question. The tradition presents its law as having grown naturally, when much of its global reach was in fact carried by force."
+    },
+    {
+      "perspective": "The civil-law comparison",
+      "name": "The code versus the case",
+      "content": "Seen from the civil-law world of Europe and Latin America, the common law looks like one option among several, and an untidy one. Civil-law systems draw on Roman law and modern codes such as France's of 1804. They aim to set the law down clearly and in advance, so that citizens and judges can find it in a single text rather than hunting through old rulings. From this angle, the common law's scatter across case law looks obscure and lawyer-dependent, and its reliance on judge-made rules looks like a failure to decide the law democratically. The comparison reveals that both traditions chase the same goal, a law that is knowable and consistent. They simply trust different hands: the common law trusts the courts, the civil law the lawmaker."
+    },
+    {
+      "perspective": "The colonized and post-colonial world",
+      "name": "The law that arrived with the ships",
+      "content": "For much of the world, the common law was not inherited or chosen but imposed. Across British colonies in Africa, Asia, and the Caribbean, English courts and doctrines were installed over societies that already had their own law. This vantage point reveals what the tradition's self-image hides. The common law's praised flexibility let colonial courts recognize local law selectively, hardening fluid customs into rigid rules and keeping the versions that suited administration. Yet the view resists a simple verdict. Many anti-colonial leaders used the common law's own language of rights against the empire, and new states often kept and adapted the system rather than scrapping it. From here it is at once an instrument of conquest and a tool later turned to other ends, and an honest account carries both."
+    }
+  ],
+  "comparativeSummary": "Everyone agrees the common law is judge-made law built on precedent. They divide over what that fact means. From inside the tradition, it is reason refined by experience, a cautious, liberty-protecting wisdom assembled over centuries. From the civil-law world, it is one institutional choice among several, and a notably untidy one, since it trusts courts with what a code could state plainly. From the colonized world, it is the law that arrived with the ships, imposed over existing traditions even as it supplied a vocabulary of rights that the colonized later used against empire. Hold the three together and the common law stops looking like the natural shape of law and starts looking like a contingent, powerful, double-edged inheritance: a genuine achievement in binding power to settled rules, and a system whose global reach was carried by conquest.",
+  "rabbitHole": [
+    {
+      "label": "Magna Carta",
+      "entryId": "magnaCarta",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "The 1215 charter is intertwined with the common law's growth as a check on royal power. Its clauses on judgment by one's peers and the law of the land became, in later centuries, foundational reference points for the common-law idea that the ruler is bound by law."
+    },
+    {
+      "label": "The Bill of Rights",
+      "entryId": "billOfRights",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "The common-law protections of the accused and of liberty fed directly into the rights tradition the American Bill of Rights wrote into supreme law. Many of its guarantees, from jury trial to protection against unreasonable search, descend from common-law practice."
+    },
+    {
+      "label": "Constitution",
+      "entryId": "constitution",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Common-law systems interpret and supplement written constitutions, and the judge-made tradition supplies the interpretive practices that constitutional courts draw on. The relationship between case-built law and a codified higher law is a central problem both entries share."
+    },
+    {
+      "label": "The Contract",
+      "entryId": "contract",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Contract is one of the great bodies of law shaped chiefly by common-law precedent rather than by a code. Its core doctrines, from offer and acceptance to consideration, were built case by case, making it a working example of the common law's method."
+    },
+    {
+      "label": "The British Empire",
+      "entryId": "britishEmpire",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "The empire is the vehicle that carried the common law across the world, often imposing it over existing legal traditions. The map of common-law jurisdictions is largely the map of former British territories, which makes the empire essential to the concept's reach."
+    },
+    {
+      "label": "Democracy",
+      "entryId": "democracy",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "The common law helped build the rule of law and the limits on arbitrary power that constitutional democracy rests on, while raising the democratic puzzle of how unelected judges can legitimately make law. Both the support and the tension are central to the entry."
+    },
+    {
+      "label": "The Rule of Law",
+      "entryId": "ruleOfLaw",
+      "status": "planned",
+      "relationship": "Thematic",
+      "reason": "The common law is one of the historical engines of the rule of law, the principle that power must answer to settled, knowable rules. The two ideas developed together in England and the question of whether judge-made law serves or strains that principle runs through both."
+    },
+    {
+      "label": "Due Process",
+      "entryId": "dueProcess",
+      "status": "planned",
+      "relationship": "Descendant",
+      "reason": "Due process descends directly from the common-law tradition and from Magna Carta's 'law of the land,' becoming the guarantee that the state must follow fair, established procedures before depriving anyone of life, liberty, or property."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Maitland, Frederic William and Pollock, Frederick",
+      "title": "The History of English Law Before the Time of Edward I",
+      "year": "1895",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The foundational scholarly account of how the common law emerged from the institutions of medieval England. Still the starting point for the early development of royal justice, writs, and the centralization that produced one law common to the realm, and the backbone of the entry's origin narrative."
+    },
+    {
+      "author": "Milsom, S.F.C.",
+      "title": "Historical Foundations of the Common Law",
+      "year": "1969",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The essential modern reinterpretation of how common-law doctrine actually developed out of medieval legal procedure. Milsom shows the substantive law emerging from the forms of action rather than from deliberate design, which grounds the entry's account of growth without a master plan."
+    },
+    {
+      "author": "Simpson, A.W.B.",
+      "title": "Legal Theory and Legal History: Essays on the Common Law",
+      "year": "1987",
+      "type": "Essay collection",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The source of the influential argument that the common law is best understood as a customary body of practice rather than a set of rules announced in cases. Central to the advanced layer's treatment of what precedent actually obligates a later judge to do."
+    },
+    {
+      "author": "Dworkin, Ronald",
+      "title": "Law's Empire",
+      "year": "1986",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The major statement of the interpretive theory that common-law judges in hard cases seek the answer that best fits and justifies past decisions, rather than exercising free discretion. Supplies one pole of the entry's positivism-versus-interpretivism debate over judicial law-making."
+    },
+    {
+      "author": "Hart, H.L.A.",
+      "title": "The Concept of Law",
+      "year": "1961",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The foundational modern statement of legal positivism, including the rule of recognition and the claim that judges exercise discretion to make new law in hard cases. Provides the counterpoint to Dworkin that structures the entry's central jurisprudential dispute."
+    },
+    {
+      "author": "Baker, John",
+      "title": "An Introduction to English Legal History",
+      "year": "2019",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The standard authoritative survey of the development of English law and the common-law institutions, now in its fifth edition. The best single reference for the doctrinal and procedural history the entry compresses, from the medieval courts through the modern system."
+    },
+    {
+      "author": "Merry, Sally Engle",
+      "title": "Colonizing Hawai'i: The Cultural Power of Law",
+      "year": "2000",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "A detailed study of how a common-law legal order was imposed on a colonized society and reshaped its existing norms. Supports the entry's treatment of colonial transplantation and the legal-pluralism claim that 'customary law' was often remade in the act of being recognized."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "The Rule of Law",
+      "author": "Tom Bingham",
+      "note": "Best first book if you have never thought about what the common law is for. A senior British judge explains, in plain language, why law must be knowable and bind even rulers, with the common-law tradition as his living example."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "Letters to a Law Student",
+      "author": "Nicholas J. McBride",
+      "note": "Read this if you are considering law or simply want an accessible map of how common-law reasoning works. It explains cases, precedent, and arguing from authority for a complete newcomer, without assuming any legal background."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "An Introduction to English Legal History",
+      "author": "John Baker",
+      "note": "For the reader ready to see how the doctrines actually grew. Baker traces the common law from the medieval courts to the present, and is the place to go once the basic idea of precedent is clear and you want the real history."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Law's Empire",
+      "author": "Ronald Dworkin",
+      "note": "For readers drawn to the hard question of whether judges find the law or make it. Dworkin's argument that hard cases have right answers is demanding but rewarding, and is best read by someone already comfortable with how precedent operates."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Historical Foundations of the Common Law",
+      "author": "S.F.C. Milsom",
+      "note": "The scholarly standard on how common-law doctrine emerged from medieval procedure. Difficult and rewarding, this is for the reader who wants to understand the tradition from the inside rather than from a survey, and is willing to work for it."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Phrase",
+      "title": "\"There is no law against it\"",
+      "description": "People in common-law countries often assume that anything not banned is allowed, and that the law is a finished list of rules. The everyday phrase hides how the system really works. Much of the law was never written down by lawmakers at all. It was built by judges, case by case, so the rule you need may live in an old decision rather than in any book you could look up."
+    },
+    {
+      "type": "Television",
+      "title": "Rumpole of the Bailey",
+      "description": "This British series follows a stubborn old barrister defending clients in London's criminal courts. It captures the feel of the common-law trial, two sides fighting it out while the judge referees, and the way lawyers argue from past cases. It makes the courtroom look more dramatic and tidy than real trials are, where most cases end in quiet pleas, not grand speeches."
+    },
+    {
+      "type": "Concept",
+      "title": "\"Judge-made law\" as a political insult",
+      "description": "Politicians often attack courts for \"making law from the bench,\" as if judges were stealing power from elected lawmakers. The phrase treats judge-made law as a scandal. In a common-law system it is simply how the law has always grown. The real argument is not whether judges make law, which they do, but how far they should, and who gets to check them when they go too far."
+    },
+    {
+      "type": "Film",
+      "title": "To Kill a Mockingbird (1962)",
+      "description": "The film puts an American courtroom at its center, where a lawyer defends a Black man before an all-white jury in the segregated South. It shows the common-law trial's promise, a fair hearing with both sides arguing the case, and its betrayal, since the verdict follows prejudice, not the evidence. It can leave viewers trusting the courtroom more than the era's real records would justify."
+    },
+    {
+      "type": "Concept",
+      "title": "\"Setting a precedent\" in everyday speech",
+      "description": "People say a choice \"sets a precedent\" whenever they fear it will lock in future decisions. The phrase comes straight from the common law, where a past ruling really does bind later courts. In daily life it usually means only that others may copy what you did. The legal version is stronger: a precedent is not just an example to follow but, within the courts, a command."
+    }
+  ],
+  "startYear": 1166,
+  "endYear": 2025,
+  "regions": [
+    "Europe",
+    "North America"
+  ],
+  "degree": 8,
+  "added": "2026-06-18"
+}

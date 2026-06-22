@@ -181,7 +181,7 @@
     {
       "label": "The U.S. Constitution",
       "entryId": "usConstitution",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "The Federalist exists to explain and defend the Constitution clause by clause, and it cannot be understood apart from the document it argues for. The essays are the most thorough contemporary account of the Constitution's design, written by men who helped draft it."
     },
@@ -191,6 +191,13 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "The central dispute the Papers address is how power should be divided between the national government and the states. Publius defended the new federal balance against Anti-Federalists who feared the states would be swallowed, making The Federalist a foundational text in the long argument over American federalism."
+    },
+    {
+      "label": "Common Law",
+      "entryId": "commonLaw",
+      "relationship": "Thematic",
+      "reason": "The framers built on the inherited English common-law tradition.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -341,6 +348,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 7,
+  "degree": 10,
   "added": "2026-06-18"
 }
