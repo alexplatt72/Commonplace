@@ -148,7 +148,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-05-30"
   },
   {
@@ -229,7 +229,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 32,
+    "degree": 33,
     "added": "2026-05-30"
   },
   {
@@ -398,7 +398,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 15,
+    "degree": 17,
     "added": "2026-05-30"
   },
   {
@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 67,
+    "degree": 69,
     "added": "2026-05-31"
   },
   {
@@ -1201,7 +1201,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 60,
+    "degree": 61,
     "added": "2026-05-30"
   },
   {
@@ -1782,7 +1782,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 17,
+    "degree": 20,
     "added": "2026-05-30"
   },
   {
@@ -1798,7 +1798,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 25,
+    "degree": 28,
     "added": "2026-05-30"
   },
   {
@@ -2897,7 +2897,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 66,
+    "degree": 68,
     "added": "2026-05-30"
   },
   {
@@ -3732,7 +3732,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 19,
+    "degree": 21,
     "added": "2026-05-30"
   },
   {
@@ -4920,7 +4920,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 14,
+    "degree": 16,
     "added": "2026-05-30"
   },
   {
@@ -5264,7 +5264,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 41,
+    "degree": 44,
     "added": "2026-05-30"
   },
   {
@@ -5362,7 +5362,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-01"
   },
   {
@@ -5502,7 +5502,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 63,
+    "degree": 64,
     "added": "2026-05-31"
   },
   {
@@ -14848,7 +14848,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 24,
+    "degree": 25,
     "added": "2026-06-18"
   },
   {
@@ -14960,7 +14960,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 10,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -15024,7 +15024,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -15040,7 +15040,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -15250,7 +15250,7 @@
     "regions": [
       "North America"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-18"
   },
   {
@@ -15312,6 +15312,111 @@
     "status": "published",
     "startYear": 1904,
     "endYear": 1967,
+    "regions": [
+      "North America"
+    ],
+    "degree": 13,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "johnVonNeumann",
+    "title": "John von Neumann",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1903–1957",
+    "themes": [
+      "mathematics",
+      "science",
+      "technology",
+      "war",
+      "economics",
+      "20thCentury"
+    ],
+    "summary": "The Hungarian-American polymath who helped invent both the modern computer and the logic of nuclear war — giving quantum mechanics its mathematical foundation, co-founding game theory, contributing the implosion mathematics behind the plutonium bomb, and writing the stored-program design that became the blueprint for nearly every computer since.",
+    "status": "published",
+    "startYear": 1903,
+    "endYear": 1957,
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "markTwain",
+    "title": "Mark Twain",
+    "template": "People",
+    "subtype": "Creative Figure",
+    "period": "1835–1910",
+    "status": "published",
+    "summary": "The American writer and humorist, born Samuel Clemens in 1835, who taught American literature to speak in an American voice. A printer, Mississippi steamboat pilot, Western miner, and journalist before he became the most famous author and lecturer in the country, he made the plain, funny, regional speech of ordinary people into literature. His masterpiece, Adventures of Huckleberry Finn (1885), follows a poor white boy and Jim, an escaped enslaved man, down the river, turning a comic adventure into a deep moral reckoning with slavery and conscience. The book is widely read as a profound anti-slavery satire and is also among the most challenged in American schools for its relentless use of a racial slur and its treatment of Jim. Often called the father of American literature, Twain wrote a humor that carried a blade, turned bitterly anti-imperialist and pessimistic in his later years, and died in 1910 as the return of Halley's Comet lit the sky he had been born under.",
+    "startYear": 1835,
+    "endYear": 1910,
+    "regions": [
+      "North America"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "nikolaTesla",
+    "title": "Nikola Tesla",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1856–1943",
+    "themes": [
+      "technology",
+      "physics",
+      "science",
+      "capitalism",
+      "20thCentury",
+      "myth"
+    ],
+    "summary": "The Serbian-American inventor whose alternating-current induction motor and polyphase system won the 'War of Currents' and became the way the world is wired — a real genius of the electrical age whose later wireless dreams went unrealized, who died broke and alone, and who is now half-buried under a modern internet legend.",
+    "status": "published",
+    "startYear": 1856,
+    "endYear": 1943,
+    "regions": [
+      "Europe",
+      "North America"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "richardFeynman",
+    "title": "Richard Feynman",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1918–1988",
+    "themes": [
+      "physics",
+      "science",
+      "knowledge",
+      "20thCentury",
+      "america"
+    ],
+    "summary": "The American theoretical physicist who shared the 1965 Nobel Prize for quantum electrodynamics, invented the Feynman diagrams that became a universal language of particle physics, worked on the Manhattan Project as a young man, and — through his lectures, his memoirs, and his televised diagnosis of the Challenger disaster — became the twentieth century's most famous example of science as joyous, skeptical play.",
+    "status": "published",
+    "startYear": 1918,
+    "endYear": 1988,
+    "regions": [
+      "North America"
+    ],
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "thomasEdison",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "1847–1931",
+    "title": "Thomas Edison",
+    "summary": "The American inventor and businessman whose Menlo Park laboratory became the first true industrial research lab — an 'invention factory' that produced the phonograph, an early motion-picture system, and, most consequentially, the first practical incandescent light and the whole electrical system to power it, including the Pearl Street central station of 1882. Edison did not invent the light bulb alone; his genius was as a systems-builder and organizer who industrialized invention itself, and he was also a ruthless competitor whose camp waged the cruel propaganda of the War of Currents against alternating current.",
+    "status": "published",
+    "startYear": 1847,
+    "endYear": 1931,
     "regions": [
       "North America"
     ],
