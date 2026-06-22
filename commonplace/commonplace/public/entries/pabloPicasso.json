@@ -135,6 +135,13 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "The city that organized the Renaissance tradition of painting Picasso inherited and dismantled — the institutional origin of the visual conventions Cubism replaced"
+    },
+    {
+      "label": "Claude Monet",
+      "entryId": "claudeMonet",
+      "relationship": "Precursor",
+      "reason": "Monet’s break with realism helped make later modern art possible.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -397,6 +404,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 11,
+  "degree": 13,
   "added": "2026-06-13"
 }

@@ -190,6 +190,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "A later modern movement that, like Impressionism, defined itself by breaking with inherited academic convention to remake art for the modern, industrial world, extending the rupture Impressionism helped begin into design and architecture."
+    },
+    {
+      "label": "Claude Monet",
+      "entryId": "claudeMonet",
+      "relationship": "Consequential",
+      "reason": "Monet led Impressionism, which took its name from his painting.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -329,6 +336,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 11,
+  "degree": 13,
   "added": "2026-06-18"
 }

@@ -161,6 +161,13 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "The Production Code governed what Hollywood films could show for two decades, a self-imposed censorship regime that shaped not only content but the structure of American storytelling itself."
+    },
+    {
+      "label": "Charlie Chaplin",
+      "entryId": "charlieChaplin",
+      "relationship": "Consequential",
+      "reason": "Chaplin helped define the film industry and star system, then fell foul of it.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -335,6 +342,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }
