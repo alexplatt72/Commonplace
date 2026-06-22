@@ -140,6 +140,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Voltaire is the Enlightenment's most recognizable public voice — his campaigns against religious intolerance, arbitrary power, and censorship defined what Enlightenment criticism looked like in practice rather than just in theory."
+    },
+    {
+      "label": "The Bill of Rights",
+      "entryId": "billOfRights",
+      "relationship": "Consequential",
+      "reason": "The Enlightenment philosophy of natural rights took legal form in the Bill of Rights.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -456,6 +463,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 39,
+  "degree": 41,
   "added": "2026-05-30"
 }

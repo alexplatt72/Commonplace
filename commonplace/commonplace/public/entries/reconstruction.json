@@ -192,6 +192,13 @@
       "status": "planned",
       "relationship": "Consequential",
       "reason": "The Thirteenth, Fourteenth, and Fifteenth Amendments were Reconstruction's most durable creation, rewriting citizenship into the Constitution and becoming the legal foundation of the later Civil Rights Movement."
+    },
+    {
+      "label": "The Bill of Rights",
+      "entryId": "billOfRights",
+      "relationship": "Consequential",
+      "reason": "The Fourteenth Amendment of the Reconstruction era began extending the Bill against the states.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -349,6 +356,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 11,
+  "degree": 16,
   "added": "2026-06-18"
 }
