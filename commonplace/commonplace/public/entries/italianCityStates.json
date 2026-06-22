@@ -181,6 +181,13 @@
       "status": "planned",
       "relationship": "Descendant",
       "reason": "The greatest of the Renaissance city-states, home of the Medici bank, Leonardo, and Michelangelo, and the city whose republican politics and factional violence shaped Machiavelli — the single city in which the whole pattern is concentrated."
+    },
+    {
+      "label": "The Commercial Revolution",
+      "entryId": "commercialRevolution",
+      "relationship": "Consequential",
+      "reason": "The Italian merchant cities pioneered the Commercial Revolution’s finance.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -320,6 +327,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }

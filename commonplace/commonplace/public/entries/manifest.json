@@ -108,7 +108,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 24,
+    "degree": 25,
     "added": "2026-05-31"
   },
   {
@@ -617,7 +617,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 22,
+    "degree": 24,
     "added": "2026-06-13"
   },
   {
@@ -746,7 +746,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 36,
+    "degree": 37,
     "added": "2026-05-30"
   },
   {
@@ -878,7 +878,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 21,
+    "degree": 22,
     "added": "2026-05-31"
   },
   {
@@ -935,7 +935,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 73,
+    "degree": 74,
     "added": "2026-05-31"
   },
   {
@@ -1072,7 +1072,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 48,
+    "degree": 49,
     "added": "2026-06-01"
   },
   {
@@ -1233,7 +1233,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 59,
+    "degree": 61,
     "added": "2026-05-30"
   },
   {
@@ -1662,7 +1662,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 13,
+    "degree": 15,
     "added": "2026-05-31"
   },
   {
@@ -1929,7 +1929,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-01"
   },
   {
@@ -2059,7 +2059,7 @@
       "Europe",
       "North Africa & Middle East"
     ],
-    "degree": 36,
+    "degree": 37,
     "added": "2026-05-30"
   },
   {
@@ -2155,7 +2155,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 29,
+    "degree": 30,
     "added": "2026-05-30"
   },
   {
@@ -2299,7 +2299,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-05-31"
   },
   {
@@ -2897,7 +2897,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 71,
+    "degree": 72,
     "added": "2026-05-30"
   },
   {
@@ -4162,7 +4162,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 55,
+    "degree": 57,
     "added": "2026-05-30"
   },
   {
@@ -4276,7 +4276,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 22,
+    "degree": 24,
     "added": "2026-05-30"
   },
   {
@@ -4292,7 +4292,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 113,
+    "degree": 115,
     "added": "2026-05-30"
   },
   {
@@ -4502,7 +4502,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -4526,7 +4526,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 46,
+    "degree": 47,
     "added": "2026-05-30"
   },
   {
@@ -5192,7 +5192,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 21,
+    "degree": 22,
     "added": "2026-05-30"
   },
   {
@@ -5264,7 +5264,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 44,
+    "degree": 45,
     "added": "2026-05-30"
   },
   {
@@ -5443,7 +5443,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 83,
+    "degree": 85,
     "added": "2026-05-30"
   },
   {
@@ -13760,7 +13760,7 @@
     "regions": [
       "East Asia"
     ],
-    "degree": 15,
+    "degree": 16,
     "added": "2026-06-18"
   },
   {
@@ -14784,7 +14784,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -15533,7 +15533,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 8,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -15565,7 +15565,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -15581,7 +15581,88 @@
     "regions": [
       "Europe"
     ],
-    "degree": 9,
+    "degree": 10,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "russianEmpire",
+    "title": "The Russian Empire",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1721–1917 CE",
+    "summary": "The vast, cold, autocratic realm that grew from a Moscow principality into the largest contiguous land empire of its age, dragged itself toward Western power by force from above, rested on the bound labor of its serfs, and collapsed in 1917 under the weight of all it had refused to reform.",
+    "status": "published",
+    "startYear": 1721,
+    "endYear": 1917,
+    "regions": [
+      "Europe",
+      "East Asia"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "vikings",
+    "title": "The Vikings",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 793–1066 CE",
+    "summary": "The seafaring Norse people of Scandinavia who, for nearly three centuries, burst out of the north in their superb longships to raid monasteries, found cities, settle Iceland and Greenland, reach North America, carve out states from Russia to Normandy, and trade in slaves and silver from Baghdad to Newfoundland — far more than the horned barbarians of legend, and far harder to romanticize than the modern myth allows.",
+    "status": "published",
+    "startYear": 793,
+    "endYear": 1066,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "commercialRevolution",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "c. 1100–1700",
+    "title": "The Commercial Revolution",
+    "summary": "The long expansion of European trade and finance between roughly 1100 and 1700, the centuries when Europe shifted from a mostly rural, local, barter-and-feudal economy toward a market economy of towns, money, merchants, and banks. It began with the revival of long-distance trade in the Italian city-states, the fairs of Champagne, and the Hanseatic League, and accelerated with the Age of Exploration's oceanic routes. Along the way merchants and bankers spread or invented most of the machinery of modern finance — double-entry bookkeeping, bills of exchange, insurance, banking, and the joint-stock company — laying the foundation on which capitalism and the Industrial Revolution would later be built. The same instruments and appetites that built modern finance also financed colonial conquest, plantations, and the Atlantic slave trade.",
+    "status": "published",
+    "startYear": 1100,
+    "endYear": 1700,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "congressOfVienna",
+    "title": "The Congress of Vienna",
+    "template": "Events",
+    "subtype": "Threshold Moment",
+    "period": "1814–1815",
+    "summary": "The peace conference of 1814-1815, hosted by Austria and steered by its foreign minister Metternich, where the powers that had defeated Napoleon redrew the map of Europe on two old principles, legitimacy and the balance of power, restoring monarchies the Revolution had toppled and arranging territory so no single state could dominate again. Conservatives remember it for buying Europe roughly a century without a general war; liberals and nationalists remember it as a graveyard of liberty that handed peoples between thrones and crushed the hopes of freedom and nationhood.",
+    "status": "published",
+    "startYear": 1814,
+    "endYear": 1815,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "discoveryOfDnasStructure",
+    "title": "The Discovery of DNA's Structure",
+    "template": "Events",
+    "subtype": "Threshold Moment — Restructured",
+    "period": "1953",
+    "summary": "The 1953 discovery at Cambridge that the DNA molecule is a double helix — two strands twined together whose paired chemical letters spell out and copy the instructions for life. James Watson and Francis Crick built the model, but their leap rested crucially on the X-ray crystallography of Rosalind Franklin, whose key image was shown to Watson without her knowledge. The breakthrough revealed how heredity works at the molecular level and founded the science of molecular biology.",
+    "status": "published",
+    "startYear": 1953,
+    "endYear": 1953,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 8,
     "added": "2026-06-18"
   }
 ]

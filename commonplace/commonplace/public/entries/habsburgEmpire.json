@@ -136,9 +136,16 @@
     {
       "label": "The Russian Empire",
       "entryId": "russianEmpire",
-      "status": "planned",
+      "status": "published",
       "relationship": "Parallel",
       "reason": "Another sprawling multiethnic dynastic empire of Central and Eastern Europe that, like the Habsburg realm, was strained by the rise of nationalism and destroyed in the upheaval of the First World War, offering a close comparative case for how such empires lived and died."
+    },
+    {
+      "label": "The Congress of Vienna",
+      "entryId": "congressOfVienna",
+      "relationship": "Thematic",
+      "reason": "Metternich’s Austria hosted and led the Congress of Vienna.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -322,6 +329,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 8,
+  "degree": 12,
   "added": "2026-06-18"
 }
