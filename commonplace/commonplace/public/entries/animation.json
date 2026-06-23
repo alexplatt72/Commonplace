@@ -120,14 +120,14 @@
     {
       "label": "Cinema",
       "entryId": "cinema",
-      "status": "planned",
+      "status": "published",
       "relationship": "Parallel",
       "reason": "Cinema is animation's sister moving-image form, sharing a projector and a frame rate but differing at the root: the live-action camera records a world that already moved, while the animator builds movement from nothing. The two forms illuminate each other precisely through that difference."
     },
     {
       "label": "Photography",
       "entryId": "photography",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Photography is the still-image technology on which film, and so film animation, was built. Stop-motion is literally a chain of photographs, and the question of what a recorded image is evidence of runs straight from photography into the heart of how animation differs from it."
     },
@@ -141,7 +141,7 @@
     {
       "label": "Cave Painting",
       "entryId": "cavePainting",
-      "status": "planned",
+      "status": "published",
       "relationship": "Precursor",
       "reason": "Some of the earliest human images already tried to suggest motion, layering limbs and overlapping figures so that a running animal seems to move. The impulse to fake life in a still image, which animation finally achieves frame by frame, is older than any technology of recording it."
     }
@@ -283,6 +283,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 5,
+  "degree": 10,
   "added": "2026-06-18"
 }
