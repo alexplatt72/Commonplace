@@ -186,6 +186,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "Shakespeare and Beethoven occupy the same position in their respective traditions: the figure whose achievement became the definition of what the tradition could do, around whom institutions were built, and whose canonical authority has required scholars to ask whether that authority reflects merit, history, or both."
+    },
+    {
+      "label": "Johann Sebastian Bach",
+      "entryId": "johannSebastianBach",
+      "relationship": "Precursor",
+      "reason": "The later German master who revered Bach and built on his harmonic foundation.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -373,6 +380,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 11,
+  "degree": 13,
   "added": "2026-06-13"
 }

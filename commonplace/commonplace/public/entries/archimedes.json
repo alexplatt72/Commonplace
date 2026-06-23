@@ -194,6 +194,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "The deductive structure of the Elements, deriving theorems from a small base of axioms, was the model of proof Archimedes worked within and extended, and his treatises assume the geometry that the Elements had systematized."
+    },
+    {
+      "label": "Johannes Kepler",
+      "entryId": "johannesKepler",
+      "relationship": "Descendant",
+      "reason": "Kepler extended the ancient mathematical-physics tradition to the heavens.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -333,6 +340,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }
