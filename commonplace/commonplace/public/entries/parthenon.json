@@ -148,14 +148,14 @@
     {
       "label": "Museum",
       "entryId": "museum",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "The dispute over the Parthenon Marbles turns on what a museum is for — whether a universal collection serves the world or whether objects belong with the place that made them. The museum as an institution frames the argument over where the sculptures should be."
     },
     {
       "label": "Monument",
       "entryId": "monument",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "The Parthenon is a supreme example of the monument as a tool for projecting power and fixing meaning across time. The broader study of the monument as a form frames how the temple's significance has shifted with each age that has claimed it."
     }
@@ -297,6 +297,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 8,
+  "degree": 12,
   "added": "2026-06-18"
 }

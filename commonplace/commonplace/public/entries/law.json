@@ -155,6 +155,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "The Code of Hammurabi is one of the oldest entries in the long history of written law. The entry on law — covering why political communities write rules down and what those rules accomplish — requires situating the Hammurabi collection as the starting point from which the Western and Near Eastern legal tradition grew."
+    },
+    {
+      "label": "The Police",
+      "entryId": "police",
+      "relationship": "Consequential",
+      "reason": "The police are the enforcement arm of the law.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -349,7 +356,7 @@
   "regions": [
     "Europe"
   ],
-  "degree": 23,
+  "degree": 25,
   "added": "2026-05-30",
   "comparativeSummary": "Every society calls its rules \"law,\" but the cards disagree about whose interests those rules quietly carry. Babylon's stone code spelled out its hierarchy plainly, handing free people and slaves different punishments without pretending to be fair. Islamic law grew from scholars rather than rulers, which is why it survives as argument across rival schools rather than a single command. England trusted judges to build rights slowly, case by case. Colonial Africa saw imposed European codes erase the customary law already there. The real question underneath: when law arrives, who made it, and who does it leave out?"
 }
