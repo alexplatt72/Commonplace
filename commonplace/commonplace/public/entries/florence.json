@@ -161,6 +161,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Trained in a Florentine workshop, Leonardo embodies the city's fusion of art, craft, and inquiry before he moved on to Milan and beyond."
+    },
+    {
+      "label": "The Sistine Chapel Ceiling",
+      "entryId": "sistineChapelCeiling",
+      "relationship": "Thematic",
+      "reason": "The city that formed Michelangelo.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -306,6 +313,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 13,
+  "degree": 16,
   "added": "2026-06-18"
 }

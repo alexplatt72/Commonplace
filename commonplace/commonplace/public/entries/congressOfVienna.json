@@ -162,6 +162,13 @@
       "status": "planned",
       "relationship": "Parallel",
       "reason": "Westphalia is the other great European peace settlement to which Vienna is constantly compared, an earlier attempt to end a continental catastrophe by reorganizing the relations among sovereign states."
+    },
+    {
+      "label": "The Napoleonic Code",
+      "entryId": "napoleonicCode",
+      "relationship": "Thematic",
+      "reason": "The post-Napoleonic order tried to roll back his empire, yet the Code survived across Europe.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -309,6 +316,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 10,
+  "degree": 11,
   "added": "2026-06-18"
 }

@@ -122,6 +122,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Leonardo's notebooks contain some of the most detailed gear and mechanical device drawings produced before the industrial era, and the gear entry's treatment of gears as 'the grammar of machinery' that Renaissance engineers explored is directly embodied in Leonardo's work — a reader of Leonardo's engineering curiosity would naturally turn to the gear entry to understand the mechanical principle he kept returning to across dozens of designs."
+    },
+    {
+      "label": "The Mona Lisa",
+      "entryId": "monaLisa",
+      "relationship": "Foundational",
+      "reason": "Leonardo da Vinci painted the Mona Lisa.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -368,6 +375,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 7,
+  "degree": 9,
   "added": "2026-05-30"
 }
