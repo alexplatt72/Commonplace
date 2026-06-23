@@ -125,6 +125,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Athenian black-figure and red-figure pottery is among the richest surviving record of ancient Greek daily life, myth, and politics; clay vessels from Attic workshops circulated across the Mediterranean and are now the primary archaeological evidence for understanding Greek society."
+    },
+    {
+      "label": "Greek Tragedy",
+      "entryId": "greekTragedy",
+      "relationship": "Consequential",
+      "reason": "Tragedy was staged as civic life at the Athenian festivals of Dionysus.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -359,6 +366,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-05-30"
 }
