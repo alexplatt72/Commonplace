@@ -199,6 +199,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The Dust Bowl component of the Depression — soil degradation from intensive dry-land farming — illustrates what happens when land is farmed intensively without adequate nutrient replenishment; the connection between soil health, fertilizer, and agricultural crisis."
+    },
+    {
+      "label": "The Green Revolution",
+      "entryId": "greenRevolution",
+      "relationship": "Foundational",
+      "reason": "Synthetic fertilizer was central to the high-yield method.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -364,7 +371,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 10,
+  "degree": 12,
   "added": "2026-05-31",
   "comparativeSummary": "Nobody here disputes the basic facts: synthetic nitrogen feeds about half the world, and it fouls rivers, traps farmers in purchased supplies, and rewards some far more than others. What splits these traditions is which ledger they keep. The optimist counts the famines that never happened and calls it human ingenuity outrunning limits. The ecologist counts the disrupted nitrogen cycle and depleted phosphate and says the gains were borrowed against a future now coming due. The political-economy view asks not whether the world ate, but who got rich feeding it. Same harvest, three different bills."
 }

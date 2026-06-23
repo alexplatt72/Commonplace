@@ -196,6 +196,13 @@
       "status": "planned",
       "relationship": "Consequential",
       "reason": "As its lethal phase passed, the Inquisition turned increasingly to policing books, ideas, and speech through the Index of forbidden books, making it a major engine of early modern censorship."
+    },
+    {
+      "label": "The Jesuits",
+      "entryId": "jesuits",
+      "relationship": "Parallel",
+      "reason": "The other instrument of the Catholic Counter-Reformation.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -342,6 +349,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 11,
+  "degree": 13,
   "added": "2026-06-18"
 }
