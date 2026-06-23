@@ -182,6 +182,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Antibiotics traces how an era of scientific confidence — the mid-twentieth century — could simultaneously banish ancient killers and ignore newly visible ones; the parallel campaign to remove leaded gasoline from the same postwar world is the lead entry's equivalent story of belated regulatory recognition."
+    },
+    {
+      "label": "HIV/AIDS",
+      "entryId": "hivAids",
+      "relationship": "Parallel",
+      "reason": "Like antibiotics against bacteria, antiretrovirals turned a fatal infection manageable.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -402,7 +409,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 11,
+  "degree": 13,
   "added": "2026-05-30",
   "comparativeSummary": "Everyone agrees antibiotics saved hundreds of millions of lives and that resistance now threatens to take those gains back. The argument is about who broke the deal and who should pay to fix it. Public health officials see a shared global duty undermined because heavy users generate resistance that drifts to careful ones. Drug companies point to economics that punish the very restraint good medicine demands, and so they walked away. Voices from poorer countries see a double bind: too few drugs for the sick, too much resistance bred in farms, rivers, and unregulated pharmacies. The same crisis, read as failed cooperation, failed markets, or failed fairness."
 }

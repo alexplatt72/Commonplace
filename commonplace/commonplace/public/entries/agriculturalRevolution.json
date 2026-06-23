@@ -202,6 +202,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "The shift to settled agriculture made large populations dependent on reliable rainfall patterns, turning inter-annual climate variability from a manageable risk into an existential one. El Nino became consequential to human welfare at the same moment that farming made populations too large and too rooted to simply move when the rains failed."
+    },
+    {
+      "label": "Photosynthesis",
+      "entryId": "photosynthesis",
+      "relationship": "Consequential",
+      "reason": "Farming is the deliberate harvest of photosynthetic energy.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -390,7 +397,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 27,
+  "degree": 30,
   "added": "2026-05-31",
   "comparativeSummary": "Everyone agrees on the basic facts: people stopped foraging, started farming, and cities, writing, and kings followed. The argument is over whose story this is. One view treats farming as the foundation of everything worth having, where shorter, sicker early farmers paid a price that bought eight billion descendants a civilization. Another asks a sharper question: most people never chose to pay it, so was it gain or trap? A third shifts the lens entirely, seeing not a human achievement but a ruler's opportunity, since grain ripens on schedule and can be measured, stored, and taxed. The disagreement is about who won."
 }

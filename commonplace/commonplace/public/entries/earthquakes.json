@@ -130,7 +130,7 @@
     {
       "label": "Plate Tectonics",
       "entryId": "plateTectonics",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Plate tectonics is the deep cause that earthquakes make visible. Most quakes occur where the great slabs of the Earth's crust grind against each other, and understanding why the plates move and where their boundaries lie is the necessary background to why faults exist and rupture at all."
     },
@@ -172,7 +172,7 @@
     {
       "label": "Floods",
       "entryId": "floods",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "Floods, like earthquakes, kill through a combination of natural force and human decisions about where and how people build. Both are cases where hazard maps and engineering can sharply reduce a toll that otherwise falls disproportionately on the poor."
     },
@@ -310,6 +310,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 7,
+  "degree": 10,
   "added": "2026-06-18"
 }

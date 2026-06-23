@@ -108,7 +108,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 27,
+    "degree": 30,
     "added": "2026-05-31"
   },
   {
@@ -342,7 +342,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -746,7 +746,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 37,
+    "degree": 38,
     "added": "2026-05-30"
   },
   {
@@ -1056,7 +1056,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-06-02"
   },
   {
@@ -1153,7 +1153,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 50,
+    "degree": 54,
     "added": "2026-05-30"
   },
   {
@@ -1726,7 +1726,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-06-01"
   },
   {
@@ -1815,7 +1815,7 @@
       "Oceania",
       "Global / Transregional"
     ],
-    "degree": 13,
+    "degree": 14,
     "added": "2026-06-13"
   },
   {
@@ -1929,7 +1929,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 18,
+    "degree": 19,
     "added": "2026-06-01"
   },
   {
@@ -2042,7 +2042,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 11,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -2299,7 +2299,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 22,
+    "degree": 23,
     "added": "2026-05-31"
   },
   {
@@ -3553,7 +3553,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 12,
+    "degree": 13,
     "added": "2026-05-30"
   },
   {
@@ -4057,7 +4057,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 37,
+    "degree": 38,
     "added": "2026-05-30"
   },
   {
@@ -4082,7 +4082,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 18,
+    "degree": 19,
     "added": "2026-05-31"
   },
   {
@@ -4203,7 +4203,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 23,
+    "degree": 24,
     "added": "2026-05-31"
   },
   {
@@ -4880,7 +4880,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 25,
+    "degree": 26,
     "added": "2026-06-02"
   },
   {
@@ -5537,7 +5537,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 14,
+    "degree": 15,
     "added": "2026-06-02"
   },
   {
@@ -6044,7 +6044,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 16,
+    "degree": 17,
     "added": "2026-06-01"
   },
   {
@@ -6218,7 +6218,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 24,
+    "degree": 25,
     "added": "2026-06-02"
   },
   {
@@ -8371,7 +8371,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 12,
+    "degree": 14,
     "added": "2026-06-14"
   },
   {
@@ -8851,7 +8851,7 @@
       "North Africa & Middle East",
       "Sub-Saharan Africa"
     ],
-    "degree": 13,
+    "degree": 14,
     "added": "2026-06-14"
   },
   {
@@ -10224,7 +10224,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-16"
   },
   {
@@ -12480,7 +12480,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 9,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -12624,7 +12624,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 11,
+    "degree": 12,
     "added": "2026-06-18"
   },
   {
@@ -12960,7 +12960,7 @@
     "regions": [
       "Southeast Asia"
     ],
-    "degree": 10,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -17234,7 +17234,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 8,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -17348,7 +17348,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 7,
+    "degree": 10,
     "added": "2026-06-18"
   },
   {
@@ -17364,7 +17364,87 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 10,
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "floods",
+    "title": "Floods",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "Recurring, c. 3000 BCE–present",
+    "status": "published",
+    "summary": "A flood is water overflowing land that is normally dry, and it is at once among the deadliest natural hazards in history and the force that built the first civilizations. The annual floods of the Nile, the Tigris and Euphrates, the Indus, the Yellow River, and the Ganges laid down the fertile silt that fed the earliest cities, even as flooding rivers and storm surges have killed more people across recorded time than almost any other natural force. The toll falls unequally: the poorest live on the cheapest, most exposed floodplains, and deforestation, paved cities, and weak drainage turn ordinary rain into catastrophe. Humans have fought floods for millennia with levees, dikes, and dams, but control backfires when levees break and dams displace millions, and climate change is now making extreme floods more frequent.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 11,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "hivAids",
+    "title": "HIV/AIDS",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Event",
+    "period": "1981–present",
+    "status": "published",
+    "summary": "The pandemic caused by the human immunodeficiency virus, which crossed from primates to humans in central Africa around the early twentieth century and, after recognition in 1981, killed roughly forty million people worldwide. HIV destroys the immune system and, untreated, leads to AIDS — once almost always fatal, now manageable with antiretroviral therapy. The disease's path was shaped less by biology alone than by stigma, poverty, political neglect, and the deeply unequal question of who could afford the drugs that saved lives.",
+    "startYear": 1981,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "photosynthesis",
+    "title": "Photosynthesis",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 3.5 billion years ago–present",
+    "status": "published",
+    "summary": "Photosynthesis is the quiet chemistry in every green leaf that turns sunlight, water, and carbon dioxide into sugar and releases oxygen. It is the engine on which nearly all life runs: almost every food chain begins with an organism doing it, and the breathable air is its by-product. It also caused Earth's first great pollution crisis, the Great Oxidation, when the oxygen early microbes poured out was poisonous to most life of the time. Fossil fuels are ancient stored photosynthesis, so the modern carbon and climate problem is, at its root, downstream of this single reaction.",
+    "startYear": -3500000000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 6,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "plateTectonics",
+    "title": "Plate Tectonics",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "c. 3 billion years ago–present",
+    "status": "published",
+    "summary": "Plate tectonics is the great unifying theory of geology: the idea that Earth's rigid outer shell is broken into about a dozen great plates that drift a few centimeters a year over the hot, slowly flowing rock beneath. In a single stroke the theory explains why mountains rise, why the earth quakes, where volcanoes burn, how ocean basins open and close, and how the continents came to drift apart from a single ancient landmass. Its acceptance is also a model of science correcting itself. Alfred Wegener proposed continental drift in 1912 and was ridiculed for decades because he had no mechanism; only in the 1950s and 1960s did seafloor spreading and magnetic evidence vindicate him, and the full theory was accepted around the late 1960s. The plates also explain the unequal geography of hazard, since earthquakes and volcanoes cluster along their boundaries.",
+    "startYear": -3000000000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
+    "added": "2026-06-18"
+  },
+  {
+    "id": "iceAge",
+    "title": "The Ice Age",
+    "template": "Natural Phenomena",
+    "subtype": "Natural Force",
+    "period": "The Quaternary, c. 2.6 million years ago–present (ongoing interglacial)",
+    "status": "published",
+    "summary": "An ice age is a long stretch of deep time when Earth is cold enough for great ice sheets to bury large parts of the land. Several have come and gone across the planet's history; in common speech, 'the Ice Age' means the recent cycles of the last 2.6 million years, and above all the last glacial period, which peaked around 20,000 years ago and gave way to today's warm interglacial about 11,700 years ago. Slow wobbles in Earth's orbit set its rhythm, amplified by feedbacks in ice and carbon. The last glacial shaped our species: Ice Age humans made the great cave art, low seas opened land bridges that peopled new continents, and the warm, stable climate that followed made farming possible. The world humans are now warming through fossil fuels is the mild aftermath of that long cold.",
+    "startYear": -2600000,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 9,
     "added": "2026-06-18"
   }
 ]
