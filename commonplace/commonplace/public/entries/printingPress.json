@@ -141,6 +141,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "The printing press created the volume of written material — pamphlets, newspapers, commercial correspondence — that made a systematic state postal network economically necessary and politically valuable for the first time."
+    },
+    {
+      "label": "The Republic of Letters",
+      "entryId": "republicOfLetters",
+      "relationship": "Consequential",
+      "reason": "Print made the shared scholarship of the Republic of Letters possible.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -357,6 +364,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 36,
+  "degree": 38,
   "added": "2026-05-30"
 }
