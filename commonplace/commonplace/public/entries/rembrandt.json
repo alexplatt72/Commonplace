@@ -166,9 +166,16 @@
     {
       "label": "Vincent van Gogh",
       "entryId": "vincentVanGogh",
-      "status": "planned",
+      "status": "published",
       "relationship": "Descendant",
       "reason": "The later Dutch master who revered Rembrandt and named him among the painters he loved most. Van Gogh took the expressive, heavily worked surface and the unflinching face further toward raw feeling."
+    },
+    {
+      "label": "Amsterdam",
+      "entryId": "amsterdam",
+      "relationship": "Thematic",
+      "reason": "The Golden Age painter whose work the city’s wealth supported.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -318,6 +325,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 8,
+  "degree": 12,
   "added": "2026-06-18"
 }
