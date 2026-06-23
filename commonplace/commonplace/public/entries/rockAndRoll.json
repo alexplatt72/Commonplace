@@ -191,6 +191,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "The blues is the direct parent of rock and roll, the deep root of Black American popular music that, carried north and electrified in the city, became the rhythm and blues from which rock and roll was made."
+    },
+    {
+      "label": "The Beatles",
+      "entryId": "beatles",
+      "relationship": "Consequential",
+      "reason": "The Beatles transformed rock and roll into an art form.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -330,6 +337,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }

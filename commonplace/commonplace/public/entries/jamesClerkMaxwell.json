@@ -193,6 +193,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Maxwell's unification of electricity, magnetism, and light extends the project the Scientific Revolution launched, in which nature is grasped through precise mathematical law. His joining of separate forces under one theory continues the tradition of Kepler, Galileo, and Newton into the nineteenth century."
+    },
+    {
+      "label": "Stephen Hawking",
+      "entryId": "stephenHawking",
+      "relationship": "Parallel",
+      "reason": "The tradition of unifying physical theory Hawking extended to gravity and the quantum.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -332,6 +339,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 11,
+  "degree": 14,
   "added": "2026-06-18"
 }
