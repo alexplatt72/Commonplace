@@ -149,6 +149,13 @@
       "relationship": "Descendant",
       "reason": "Picasso’s Guernica descends directly from Goya’s war protest.",
       "status": "published"
+    },
+    {
+      "label": "Michelangelo",
+      "entryId": "michelangelo",
+      "relationship": "Precursor",
+      "reason": "The later supreme artist measured against Michelangelo’s standard.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -411,6 +418,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 16,
+  "degree": 18,
   "added": "2026-06-13"
 }

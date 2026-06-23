@@ -186,6 +186,13 @@
       "status": "planned",
       "relationship": "Thematic",
       "reason": "Quarantine belongs to the same long effort to control disease by acting on its natural circumstances rather than appealing to the divine, the broad project the Hippocratics helped launch. It shows how the conviction that disease can be managed through worldly means developed into concrete institutions of public response."
+    },
+    {
+      "label": "Louis Pasteur",
+      "entryId": "louisPasteur",
+      "relationship": "Descendant",
+      "reason": "Pasteur’s germ science fulfilled the ancient ideal of medicine as natural inquiry.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -325,6 +332,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 7,
+  "degree": 9,
   "added": "2026-06-18"
 }

@@ -188,6 +188,13 @@
       "status": "planned",
       "relationship": "Foundational",
       "reason": "The calculus of Newton and Leibniz was the great analytical engine of the eighteenth century, and Gauss's work in number theory, geometry, and astronomy extended and deepened the mathematical analysis it made possible. His differential geometry is built on the calculus applied to curved surfaces."
+    },
+    {
+      "label": "Leonhard Euler",
+      "entryId": "leonhardEuler",
+      "relationship": "Descendant",
+      "reason": "Gauss, of the next generation, is ranked beside Euler among the supreme mathematicians.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -327,6 +334,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }
