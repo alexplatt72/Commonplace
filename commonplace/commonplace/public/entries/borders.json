@@ -191,6 +191,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The bridge entry's popular culture section foregrounds two border bridges specifically — the Glienicke Bridge of Cold War prisoner swaps and the Øresund Bridge dividing Sweden and Denmark — because the bridge is the physical structure where borders become crossable, and a reader of the borders entry who thinks about what makes territorial lines traversable in practice would naturally turn to the bridge."
+    },
+    {
+      "label": "Immigration Policy",
+      "entryId": "immigrationPolicy",
+      "relationship": "Foundational",
+      "reason": "Borders are what make immigration a controlled, contested act.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -328,6 +335,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-06-13"
 }
