@@ -165,6 +165,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The Prison entry's account of incarceration as labor discipline is directly connected to the history of strikes: strikebreaking was repeatedly enforced through arrest and imprisonment, and prison labor was used to replace striking workers, making the carceral system a tool of industrial labor control."
+    },
+    {
+      "label": "Due Process",
+      "entryId": "dueProcess",
+      "relationship": "Consequential",
+      "reason": "Due process is the fair procedure that must precede imprisonment.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -337,7 +344,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-06-13",
   "aliases": [
     "penitentiary",

@@ -171,6 +171,13 @@
       "status": "published",
       "relationship": "Descendant",
       "reason": "The contested 'New Jim Crow' thesis holds that mass incarceration functions as a successor system of racialized social control — the most prominent contemporary argument about Jim Crow's enduring shadow."
+    },
+    {
+      "label": "Voting Rights",
+      "entryId": "votingRights",
+      "relationship": "Consequential",
+      "reason": "Jim Crow stripped the vote that Reconstruction had granted Black Americans.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -346,6 +353,6 @@
   "regions": [
     "North America"
   ],
-  "degree": 26,
+  "degree": 28,
   "added": "2026-06-18"
 }

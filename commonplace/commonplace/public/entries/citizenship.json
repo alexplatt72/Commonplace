@@ -149,6 +149,13 @@
       "status": "published",
       "relationship": "Foundational",
       "reason": "Citizenship determines whose passports confer full travel rights and whose confer second-class ones; the passport is the portable certificate of the citizenship relationship, converting legal status into a physical document a border agent can check."
+    },
+    {
+      "label": "Voting Rights",
+      "entryId": "votingRights",
+      "relationship": "Consequential",
+      "reason": "Voting rights are the core political right of citizenship.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -317,7 +324,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-05-31",
   "comparativeSummary": "Everyone agrees citizenship draws a line between members and outsiders. The fight is over what that line is doing. To cosmopolitan thinkers, it is an accident of birth that hands one child a Swiss passport and another a life of closed doors, a sorting system as arbitrary as inherited rank. Historians of empire see the same line as colonial wiring left in place, where formal equality was never delivered evenly. Defenders of sovereignty see something different again: not a flaw but the precondition for any community willing to fund strangers' schools and hospitals. Is the boundary an injustice, a leftover, or a necessity?"
 }
