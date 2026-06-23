@@ -167,6 +167,13 @@
       "status": "published",
       "relationship": "Precursor",
       "reason": "Steel's structural strength and the metallurgical knowledge developed around it were prerequisites for building aircraft that could withstand flight stresses; advances in high-performance alloys driven partly by aviation demand in turn fed back into steel and materials science more broadly."
+    },
+    {
+      "label": "The Skyscraper",
+      "entryId": "skyscraper",
+      "relationship": "Consequential",
+      "reason": "Structural steel made the tall framed tower possible.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -362,6 +369,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 13,
+  "degree": 15,
   "added": "2026-06-13"
 }

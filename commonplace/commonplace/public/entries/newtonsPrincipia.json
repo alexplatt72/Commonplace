@@ -149,6 +149,13 @@
       "status": "planned",
       "relationship": "Foundational",
       "reason": "The mathematics of continuous change that Newton co-invented and used to reason about motion and gravity, even as he cast the published proofs in classical geometry — and whose priority he disputed bitterly with Leibniz."
+    },
+    {
+      "label": "Black Holes",
+      "entryId": "blackHoles",
+      "relationship": "Precursor",
+      "reason": "Newton's gravity that general relativity and black holes pushed past.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -294,6 +301,6 @@
   "regions": [
     "Europe"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }

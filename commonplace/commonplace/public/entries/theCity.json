@@ -161,6 +161,13 @@
       "status": "published",
       "relationship": "Consequential",
       "reason": "Railways transformed the city by extending its reach — enabling commuting, suburban growth, and the supply chains that fed industrial cities. They also connected cities into networks, changing the relationship between urban centers and their hinterlands in ways that restructured both."
+    },
+    {
+      "label": "Earthquakes",
+      "entryId": "earthquakes",
+      "relationship": "Consequential",
+      "reason": "Dense cities are where earthquakes turn into mass-casualty disasters.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -330,7 +337,7 @@
   "regions": [
     "North Africa & Middle East"
   ],
-  "degree": 22,
+  "degree": 24,
   "added": "2026-06-02",
   "comparativeSummary": "Everyone agrees a city is people packed close together. They disagree about what that density is for. Economists see an engine: proximity lets workers specialize and ideas jump from one firm to the next, so crowding people in is how poor places get rich. Critical theorists see the same crowd as a trap, a place where rents rise, owners cash in, and the people who do the work get priced out. Ecologists ask a third question entirely, not who wins but whether the whole arrangement can last as cities burn through energy and heat the planet. The argument turns on which question you bring to the same street."
 }
