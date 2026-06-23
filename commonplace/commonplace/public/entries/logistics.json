@@ -213,6 +213,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The entry on logistics shows how the telegraph transformed the management of supply chains and military movement — for the first time, commanders and merchants could coordinate distant operations in near real time, collapsing the information lag that had defined logistics for centuries."
+    },
+    {
+      "label": "The Army",
+      "entryId": "army",
+      "relationship": "Foundational",
+      "reason": "Supply and movement are the army’s decisive system.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -355,6 +362,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-06-13"
 }

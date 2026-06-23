@@ -200,6 +200,13 @@
       "status": "planned",
       "relationship": "Consequential",
       "reason": "The satellite made aerial surveillance a permanent, global capability rather than a costly special operation. Commercial satellite imagery has since distributed that capability well beyond state intelligence agencies, making the satellite a foundational technology of the modern surveillance infrastructure."
+    },
+    {
+      "label": "The Moon Landing",
+      "entryId": "moonLanding",
+      "relationship": "Parallel",
+      "reason": "The orbital-technology era that put humans on the Moon.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -333,6 +340,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 12,
+  "degree": 14,
   "added": "2026-06-13"
 }

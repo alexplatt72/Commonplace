@@ -160,6 +160,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "Railways, like gunpowder, were a material foundation that reorganized the relationship between distance, force projection, and state power — and the two technologies combined in the 19th century to create military and colonial capacities that neither could have produced alone."
+    },
+    {
+      "label": "The Army",
+      "entryId": "army",
+      "relationship": "Consequential",
+      "reason": "Gunpowder transformed the army’s weapons and organization.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -308,7 +315,7 @@
   "regions": [
     "East Asia"
   ],
-  "degree": 17,
+  "degree": 19,
   "added": "2026-06-02",
   "comparativeSummary": "The same three powders look like three different stories depending on where you stand. In the Chinese telling, gunpowder is a warning: a search for a medicine of long life that soldiers turned into a way to kill. Military historians instead see a leveler, the thing that let a peasant with a gun drop a knight and opened the door to citizen armies. Historians of empire see the cannon that smashed Tenochtitlan and armed European conquest. Liberation or domination, cautionary tale or triumph: the disagreement is really about whose hands the chemistry ended up in."
 }
