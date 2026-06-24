@@ -1244,7 +1244,7 @@ function getFeatured() {
 // Mark the final paragraph with top:true for the divider rule.
 const QA_WEEKLY = [
   {
-    week: "2026-06-09",
+    week: "2026-06-24",
     originId: "georgeWashington",
     originTitle: "George Washington",
     title: "On virtue, custom, and law",
@@ -1328,7 +1328,7 @@ function QAModal({ qa, onClose, onEntry }) {
         <div style={{ background: "#b3243a", padding: "18px 26px 16px", display: "flex", alignItems: "center", gap: 14 }}>
           <div style={{ flexShrink: 0 }}><WaxSeal size={54} /></div>
           <div>
-            <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "#f3d9a0" }}>Question &amp; Answer of the Week</div>
+            <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "#f3d9a0" }}>Question &amp; Answer</div>
             <div style={{ fontFamily: "'DM Serif Display',serif", fontSize: 22, color: "#fff", lineHeight: 1.15, marginTop: 3 }}>{qa.title}</div>
           </div>
           <button onClick={onClose} aria-label="Close"
@@ -1406,8 +1406,8 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
       <div style={{ textAlign:"center", marginBottom:36, position:"relative" }}>
         {!isMobile && (
           <button onClick={() => setShowQA(true)} className="wax-seal-btn"
-            aria-label="Open the Question and Answer of the Week"
-            title="Question &amp; Answer of the Week"
+            aria-label="Open the Question and Answer"
+            title="Question &amp; Answer"
             style={{ position:"absolute", left: isWide ? 150 : -4, top: isWide ? "87%" : "83%",
               transform:"translateY(-50%)", zIndex:3,
               background:"none", border:"none", padding:0, cursor:"pointer" }}>
@@ -1422,7 +1422,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         </h1>
         <p style={{ fontFamily:"'Playfair Display',serif", fontSize:24, fontWeight:600, color:"#9a6a00",
           lineHeight:1.35, maxWidth:660, margin:"0 auto 16px" }}>
-          {totalEntries} pathways through the ideas, people, events, and forces that built the world.
+          {totalEntries} entries on the ideas, people, events, and forces that built the world.
         </p>
         <p style={{ fontFamily:"'Lora',serif", fontSize:15.5, color:C.muted, lineHeight:1.8,
           maxWidth:600, margin:"0 auto" }}>
@@ -1450,8 +1450,8 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
       {isMobile && (
         <div style={{ display:"flex", justifyContent:"center", marginBottom:34, marginTop:-6 }}>
           <button onClick={() => setShowQA(true)} className="wax-seal-btn"
-            aria-label="Open the Question and Answer of the Week"
-            title="Question &amp; Answer of the Week"
+            aria-label="Open the Question and Answer"
+            title="Question &amp; Answer"
             style={{ background:"none", border:"none", padding:0, cursor:"pointer" }}>
             <WaxSeal size={104} />
           </button>
@@ -2015,7 +2015,7 @@ function SearchResultsView({ initialQuery, onEntry, onHome, onSearch }) {
             </div>
             <p style={{ fontFamily:"'Lora',serif", fontSize:14.5, color:C.muted, lineHeight:1.7,
               marginBottom:12 }}>
-              TheCommonPlace covers {totalEntries} subjects currently — and is building toward approximately 7,000. Every entry is selected because it changed what was possible: what could be built, thought, governed, or understood. Not every important topic is here yet, and not every important topic will ever be here. The canon is finite and curated by design.
+              TheCommonPlace is a finite, curated canon of {totalEntries} entries. Every entry is selected because it changed what was possible: what could be built, thought, governed, or understood. Not every important topic is here, and not every important topic will ever be here. The canon is finite and curated by design.
             </p>
             <p style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.light, lineHeight:1.6,
               fontStyle:"italic" }}>
