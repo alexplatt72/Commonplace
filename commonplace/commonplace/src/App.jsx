@@ -720,7 +720,15 @@ function CommerceSection({ items }) {
       {hasBooks && (
         <div style={{ fontFamily:"'Lora',serif", fontSize:11.5, fontStyle:"italic", color:C.light,
           lineHeight:1.6, marginBottom:14 }}>
-          Library links are free to use. As a Bookshop.org affiliate, the site may earn a commission from Bookshop purchases.
+          Library links are free to use.{' '}
+          {(() => {
+            const parts = [];
+            if (AFFILIATES.bookshopId) parts.push('a Bookshop.org affiliate');
+            if (AFFILIATES.amazonTag)  parts.push('an Amazon Associate');
+            return parts.length
+              ? `As ${parts.join(' and ')}, the site earns a commission from qualifying purchases.`
+              : null;
+          })()}
         </div>
       )}
       <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(220px,1fr))", gap:8 }}>
