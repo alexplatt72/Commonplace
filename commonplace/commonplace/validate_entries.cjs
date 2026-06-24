@@ -992,6 +992,15 @@ for (const fname of filesToProcess) {
     }
   }
 
+  // 10.7 Summary length — the public-facing summary is a SUMMARY, not a mini-essay.
+  //      It feeds entry cards, search snippets, and metadata, so an over-long one bloats
+  //      the UI and tires the reader. Hard cap 110 words (aim 55–90). HARD FAIL above 110.
+  if (typeof entry.summary === 'string') {
+    const sw = entry.summary.split(/\s+/).filter(Boolean).length;
+    if (sw > 110)
+      fails.push(`Summary is ${sw} words — the public summary must be ≤110 words (aim 55–90). Compress to the central thesis and a few key specifics; it is a summary, not a second entry.`);
+  }
+
   // ── 11. AI FAILURE MODE WARNINGS ──────────────────────────────────────────
   // Procedural self-narration: kept as warning — distinctive pattern, low false positive rate.
   // Anti-declarative inflation phrases removed — too context-dependent, high false positive rate.

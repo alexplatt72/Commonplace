@@ -854,7 +854,7 @@ function initFuse() {
       { name: "themes",      weight: 0.02 },
       { name: "summary",     weight: 0.01 },
     ],
-    threshold:        0.35,  // 0 = exact, 1 = match anything — 0.35 tolerates typos
+    threshold:        0.32,  // 0 = exact, 1 = match anything — tolerates typos without loose junk
     ignoreLocation:   true,  // match anywhere in the string, not just start
     minMatchCharLength: 2,
     includeScore:     true,
@@ -869,11 +869,12 @@ function scoreEntry(entry, terms) {
   const bare  = title.replace(/^(the |a |an )/, '');
   const siRec   = SEARCH_INDEX.find(s => s.id === entry.id);
   const aliases = (siRec?.aliases || []).map(a => a.toLowerCase());
+  const bareAliases = aliases.map(a => a.replace(/^(the |a |an )/, ''));
 
   if (title === q || bare === q)                              return 1000;
   if (title.startsWith(q) || bare.startsWith(q))             return 950;
-  if (aliases.some(a => a === q))                             return 900;
-  if (aliases.some(a => a.startsWith(q)))                     return 850;
+  if (aliases.some(a => a === q) || bareAliases.some(a => a === q))                  return 900;
+  if (aliases.some(a => a.startsWith(q)) || bareAliases.some(a => a.startsWith(q)))  return 850;
   if (terms.length && terms.every(t => title.includes(t)))   return 800;
   if (terms.length && terms.some(t => title.startsWith(t)))  return 750;
   if (terms.length && terms.some(t => bare.startsWith(t)))   return 700;
@@ -910,11 +911,12 @@ function searchEntries(query) {
     // Aliases from search index (comparative narrative names)
     const siRec   = SEARCH_INDEX.find(s => s.id === entry.id);
     const aliases = (siRec?.aliases || []).map(a => a.toLowerCase());
+    const bareAliases = aliases.map(a => a.replace(/^(the |a |an )/, ''));
 
     if (title === q || bare === q)                        return { id: entry.id, entry, score: 1000 }; // exact
     if (title.startsWith(q) || bare.startsWith(q))       return { id: entry.id, entry, score: 950 };  // title prefix
-    if (aliases.some(a => a === q))                       return { id: entry.id, entry, score: 900 };  // exact alias
-    if (aliases.some(a => a.startsWith(q)))               return { id: entry.id, entry, score: 850 };  // alias prefix
+    if (aliases.some(a => a === q) || bareAliases.some(a => a === q))                  return { id: entry.id, entry, score: 900 };  // exact alias (article-insensitive)
+    if (aliases.some(a => a.startsWith(q)) || bareAliases.some(a => a.startsWith(q)))  return { id: entry.id, entry, score: 850 };  // alias prefix
     if (terms.length && terms.every(t => title.includes(t)))   return { id: entry.id, entry, score: 800 };  // all terms in title
     if (terms.length && terms.some(t => title.startsWith(t)))  return { id: entry.id, entry, score: 750 };  // word prefix
     if (terms.length && terms.some(t => bare.startsWith(t)))   return { id: entry.id, entry, score: 700 };  // bare word prefix
@@ -938,7 +940,9 @@ function searchEntries(query) {
       .map(r => {
         const manifest = MANIFEST.find(e => e.id === r.item.id);
         return { id: r.item.id, entry: manifest || r.item, score: Math.min(499, Math.round((1 - r.score) * 100)) };
-      }).filter(x => x.entry);
+      }).filter(x => x.entry)
+      .sort((a,b) => b.score - a.score)
+      .slice(0, 6);  // confidence cap: keep only the strongest fuzzy "related" matches so a weak tail cannot bury or swamp the strong title/alias results
 
     const combined = [...scoredByTitle, ...fuseExtra].sort((a,b) => b.score - a.score).slice(0, 12);
     if (combined.length > 0) return { results: combined, query, empty: false };
@@ -1622,18 +1626,25 @@ function eraOf(year) {
 }
 const ERA_ORDER = ERAS.reduce((m, e, i) => { m[e.key] = i; return m; }, {});
 
-// Region — collapse granular stored regions into 7 reader-facing buckets (display only)
+// Region — display the precise regions the corpus actually uses (relabel only, no collapsing)
 const REGION_DISPLAY = {
-  "Europe":"Europe", "The Americas":"The Americas",
+  "Europe":"Europe",
+  "North America":"North America",
+  "Latin America & Caribbean":"Latin America & Caribbean",
   "North Africa & Middle East":"Middle East & North Africa",
   "Sub-Saharan Africa":"Sub-Saharan Africa",
-  "East Asia":"East Asia", "Southeast Asia":"East Asia", "Central Asia & the Steppe":"East Asia",
   "South Asia":"South Asia",
-  "Oceania":"Global / Transregional", "Global / Transregional":"Global / Transregional",
+  "East Asia":"East Asia",
+  "Southeast Asia":"Southeast Asia",
+  "Central Asia & the Steppe":"Central Asia & the Steppe",
+  "Oceania":"Oceania",
+  "Global / Transregional":"Global / Transregional",
 };
 const REGION_ORDER = {
-  "Europe":0, "The Americas":1, "Middle East & North Africa":2,
-  "East Asia":3, "South Asia":4, "Sub-Saharan Africa":5, "Global / Transregional":6,
+  "Europe":0, "North America":1, "Latin America & Caribbean":2,
+  "Middle East & North Africa":3, "Sub-Saharan Africa":4, "South Asia":5,
+  "East Asia":6, "Southeast Asia":7, "Central Asia & the Steppe":8,
+  "Oceania":9, "Global / Transregional":10,
 };
 const displayRegions = (regions) => [...new Set((regions || []).map(r => REGION_DISPLAY[r] || r))];
 
