@@ -159,14 +159,14 @@
     {
       "label": "Epidemiology",
       "entryId": "epidemiology",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Whether and how far quarantine can work depends on a disease's transmission dynamics, above all the relation between infectiousness and symptom onset, which is exactly what epidemiology supplies. The evidentiary thresholds that should govern confinement are epidemiological judgments."
     },
     {
       "label": "Emergency Powers",
       "entryId": "emergencyPowers",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "Quarantine is typically imposed through emergency authority, and it shares the core danger of all emergency powers: that the safeguards most needed, time limits, review, and evidence, are the first to be suspended when the threat is framed as existential and immediate."
     }
@@ -308,6 +308,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 8,
+  "degree": 11,
   "added": "2026-06-18"
 }
