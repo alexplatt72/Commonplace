@@ -47,6 +47,35 @@ const FONTS = `
   @keyframes qaFade { from { opacity: 0 } to { opacity: 1 } }
   @keyframes qaPop { from { opacity: 0; transform: translateY(10px) scale(.985) } to { opacity: 1; transform: none } }
   .qa-answer strong { color: #8c1a2c; font-weight: 600; }
+  /* ── Accessibility ──────────────────────────────────────────────────────── */
+  /* Visible keyboard focus ring (many inline styles set outline:none, which alone
+     fails WCAG 2.4.7). :focus-visible only shows for keyboard users, not mouse. */
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible,
+  textarea:focus-visible, [tabindex]:focus-visible, [role="button"]:focus-visible {
+    outline: 2px solid #1d4ed8; outline-offset: 2px; border-radius: 3px;
+  }
+  /* The skip target shouldn't draw a ring around the whole content region. */
+  #main-content:focus { outline: none; }
+  /* Skip-to-content link: off-screen until focused (WCAG 2.4.1 Bypass Blocks). */
+  .skip-link {
+    position: absolute; left: 8px; top: -48px; z-index: 1000;
+    background: #243447; color: #fff; padding: 10px 16px; border-radius: 0 0 6px 6px;
+    font-family: 'Lora', serif; font-size: 14px; text-decoration: none;
+    transition: top .16s ease;
+  }
+  .skip-link:focus { top: 0; }
+  /* Screen-reader-only utility. */
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  /* Respect users who ask for reduced motion (WCAG 2.3.3). */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+      transition-duration: .001ms !important; scroll-behavior: auto !important;
+    }
+  }
 `;
 
 // ─── TEMPLATE CONFIGURATION ───────────────────────────────────────────────────
@@ -66,7 +95,7 @@ const TEMPLATE_CONFIG = {
 const C = {
   bg:"#f4f1eb", surface:"#ffffff", warm:"#faf8f4",
   border:"#e2d8c8", borderStrong:"#c8b89a",
-  text:"#1c1917", muted:"#6b6356", light:"#9c8e7e", navy:"#243447",
+  text:"#1c1917", muted:"#6b6356", light:"#746a58", navy:"#243447",
 };
 
 // ─── PLATFORM CONFIGURATION ───────────────────────────────────────────────────
@@ -375,7 +404,7 @@ function DepthIndicator({ depth, hasResearch, onChange }) {
       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.1em", textTransform:"uppercase", color:C.light, marginRight:4 }}>Depth</span>
       {layers.map((l,i) => (
         <span key={l.id} style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <span onClick={() => onChange(l.id)} title={l.desc} style={{ fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", paddingBottom:1, cursor:"pointer" }}>{l.label}</span>
+          <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={depth === l.id} style={{ background:"none", border:"none", padding:"0 0 1px", fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", cursor:"pointer" }}>{l.label}</button>
           {i < layers.length-1 && <span style={{ color:C.border, fontSize:10 }}>·</span>}
         </span>
       ))}
@@ -1331,10 +1360,11 @@ function QAModal({ qa, onClose, onEntry }) {
   const lab = { fontFamily: "'JetBrains Mono',monospace", fontSize: 10, letterSpacing: "0.12em",
     textTransform: "uppercase", color: C.light, marginBottom: 12 };
   return (
-    <div className="qa-modal-backdrop" onClick={onClose} role="dialog" aria-modal="true"
+    <div className="qa-modal-backdrop" onClick={onClose}
       style={{ position: "fixed", inset: 0, background: "rgba(28,25,23,0.55)", zIndex: 1000,
         display: "flex", alignItems: "flex-start", justifyContent: "center", padding: "5vh 16px", overflowY: "auto" }}>
       <div className="qa-modal-card" onClick={e => e.stopPropagation()}
+        role="dialog" aria-modal="true" aria-label={`Question and Answer: ${qa.title}`}
         style={{ background: C.bg, maxWidth: 680, width: "100%", borderRadius: 14, border: `1px solid ${C.border}`,
           boxShadow: "0 18px 50px rgba(0,0,0,0.35)", position: "relative", overflow: "hidden", marginBottom: 40 }}>
         <div style={{ background: "#b3243a", padding: "18px 26px 16px", display: "flex", alignItems: "center", gap: 14 }}>
@@ -1410,7 +1440,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
   const featured = getFeatured();
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
+    <main id="main-content" tabIndex={-1} style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
 
       {showQA && <QAModal qa={QA_OF_WEEK} onClose={() => setShowQA(false)} onEntry={onEntry} />}
 
@@ -2230,7 +2260,7 @@ function ToursView({ onEntry, onHome, restoreId }) {
   const selected = COLLECTIONS.find(c => c.id === selectedId);
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px", overflowX:"hidden" }}>
+    <main id="main-content" tabIndex={-1} style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px", overflowX:"hidden" }}>
 
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
@@ -2314,6 +2344,8 @@ function ToursView({ onEntry, onHome, restoreId }) {
 
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId, selectedId)}
+                      role="link" tabIndex={0} aria-label={`Open entry: ${entry.title}`}
+                      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onEntry(item.entryId, selectedId); } }}
                       style={{ width: isMobile ? "100%" : "78%", maxWidth:760, minWidth: isMobile ? 0 : 420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
@@ -2367,14 +2399,14 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
   }, [selectedId]);
   const selected = PATHWAYS.find(p => p.id === selectedId);
   if (!PATHWAYS.length) return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
+    <main id="main-content" tabIndex={-1} style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
       <button onClick={onHome} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, cursor:"pointer" }}>← Home</button>
       <p style={{ fontFamily:"'Lora',serif", color:C.muted, marginTop:20 }}>No pathways loaded.</p>
     </main>
   );
 
   return (
-    <main id="main-content" style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px", overflowX:"hidden" }}>
+    <main id="main-content" tabIndex={-1} style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px", overflowX:"hidden" }}>
 
       <button onClick={onHome}
         style={{ display:"inline-flex", alignItems:"center", gap:6, marginBottom:32,
@@ -2467,6 +2499,8 @@ function PathwaysView({ onEntry, onHome, restoreId }) {
 
                     {/* Entry card */}
                     <div onClick={() => onEntry(item.entryId, selectedId)}
+                      role="link" tabIndex={0} aria-label={`Open entry: ${entry.title}`}
+                      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onEntry(item.entryId, selectedId); } }}
                       style={{ width: isMobile ? "100%" : "78%", maxWidth:760, minWidth: isMobile ? 0 : 420,
                         background:C.surface, border:`1px solid ${C.border}`,
                         borderLeft:`3px solid ${accent}`, borderRadius:6, padding:"8px 12px",
@@ -2861,6 +2895,8 @@ export default function CommonplaceApp() {
       backgroundSize:"cover", backgroundPosition:"center top",
       backgroundAttachment: isMobile ? "scroll" : "fixed", backgroundRepeat:"no-repeat" }}>
       <style>{FONTS}</style>
+
+      <a href="#main-content" className="skip-link">Skip to main content</a>
 
       {/* Header */}
       <header role="banner" style={{ background:C.navy, borderBottom:`3px solid ${accent}`,
