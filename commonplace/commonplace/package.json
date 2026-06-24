@@ -12,9 +12,10 @@
     "validate:fast": "node validate_entries.cjs public/entries --fast"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "fuse.js": "^7.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "fuse.js": "^7.0.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",

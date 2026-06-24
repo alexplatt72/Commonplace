@@ -2676,7 +2676,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
         <>
           <P>Short version: The Commonplace is a reading site. It needs no account and asks you for nothing to use it. Last updated for the beta.</P>
           <H>Privacy</H>
-          <P>The site is static and currently sets no advertising or tracking cookies. Our host keeps standard server logs — things like IP address, browser type, and the pages requested — to operate and secure the site. If we add usage analytics during the beta, we will use a privacy-friendly, cookieless tool and update this page to name it.</P>
+          <P>The site is static and sets no advertising or tracking cookies. Our host keeps standard server logs — things like IP address, browser type, and the pages requested — to operate and secure the site. For audience measurement we use Vercel Web Analytics, a privacy-friendly, cookieless tool that records anonymous, aggregate page views without building a profile of you or tracking you across sites.</P>
           <P>If you email us through the Feedback or Suggest-an-entry links, we keep your message and email address so we can reply and improve the site. We do not sell personal information. Questions or requests about your data: {mailLink}.</P>
           <H>An educational project</H>
           <P>The Commonplace is an educational and editorial project. Entries are provided for general learning and exploration — not as legal, medical, financial, professional, or academic advice. The site may contain errors or omissions, especially during the beta. Corrections are welcome at {mailLink}.</P>
