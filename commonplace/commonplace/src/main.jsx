@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -8,5 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     {/* Vercel Web Analytics — cookieless, privacy-friendly; auto-tracks path-route changes */}
     <Analytics />
+    {/* Vercel Speed Insights — measures real user performance metrics */}
+    <SpeedInsights />
   </React.StrictMode>,
 )
