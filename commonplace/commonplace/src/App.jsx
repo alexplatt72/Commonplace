@@ -585,7 +585,7 @@ function ReferenceTab({ items }) {
 
 // Affiliate IDs — empty until accounts are set up. When populated, links gain tags
 // automatically; WorldCat is always a free, non-commercial library link.
-const AFFILIATES = { amazonTag: '', bookshopId: '125011' };
+const AFFILIATES = { amazonTag: 'thecommonpl09-20', bookshopId: '125011' };
 
 const cleanISBN = (v) => (v || '').replace(/[^0-9Xx]/g, '');
 // Literary works (novels, plays, poems, graphic narratives) get an explicit colored callout in
