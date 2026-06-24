@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node build-search-index.js && vite build",
+    "build": "node build-search-index.js && node gen-sitemap.cjs && vite build && node prerender.cjs",
     "preview": "vite preview",
     "validate": "node validate_entries.cjs public/entries",
     "validate:full": "node validate_entries.cjs public/entries --full --verbose",

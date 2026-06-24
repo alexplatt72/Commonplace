@@ -2100,7 +2100,7 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPat
     const siteDesc  = 'A curated canon of civilizational significance — structured analytical depth across history, ideas, and the world.';
     const entryTitle = `${entry.title} — ${siteTitle}`;
     const entryDesc  = entry.summary || siteDesc;
-    const entryUrl   = `https://www.thecommonplace.dev/#/entry/${entryId}`;
+    const entryUrl   = `https://www.thecommonplace.dev/entry/${entryId}`;
 
     const setMeta = (sel, attr, val) => {
       const el = document.querySelector(sel);
@@ -2113,6 +2113,9 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPat
     setMeta('meta[property="og:description"]', 'content', entryDesc);
     setMeta('meta[property="og:url"]',         'content', entryUrl);
     setMeta('meta[property="og:type"]',        'content', 'article');
+    setMeta('meta[name="twitter:title"]',       'content', entryTitle);
+    setMeta('meta[name="twitter:description"]', 'content', entryDesc);
+    setMeta('link[rel="canonical"]',           'href',    entryUrl);
 
     return () => {
       document.title = siteTitle;
@@ -2121,6 +2124,9 @@ function EntryViewWrapper({ entryId, onHome, onTemplate, onEntry, onTours, onPat
       setMeta('meta[property="og:description"]', 'content', siteDesc);
       setMeta('meta[property="og:url"]',         'content', 'https://www.thecommonplace.dev');
       setMeta('meta[property="og:type"]',        'content', 'website');
+      setMeta('meta[name="twitter:title"]',       'content', siteTitle);
+      setMeta('meta[name="twitter:description"]', 'content', siteDesc);
+      setMeta('link[rel="canonical"]',           'href',    'https://www.thecommonplace.dev');
     };
   }, [entry, entryId]);
   if (loading) return <div style={{padding:60,textAlign:'center',fontFamily:"'Lora',serif",color:C.muted}}>Loading…</div>;
@@ -2532,6 +2538,55 @@ function routeToHash(view, s) {
   }
 }
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// PATH ROUTING  —  real, crawlable URLs (/entry/<id>) served via Vercel rewrites +
+//   prerendered static HTML. parsePath/routeToPath mirror parseHash/routeToHash on
+//   window.location.pathname. Old #/… links are migrated to paths once, on load.
+// ═══════════════════════════════════════════════════════════════════════════════
+function parsePath(pathname) {
+  const parts = (pathname || '/').split('/').filter(Boolean);
+  if (parts.length === 0) return { view: 'home' };
+  const seg = parts[0];
+  const arg = parts.length > 1 ? decodeURIComponent(parts.slice(1).join('/')) : null;
+  switch (seg) {
+    case 'browse':   return { view: 'browse' };
+    case 'tours':    return { view: 'tours' };
+    case 'pathways': return { view: 'pathways' };
+    case 'about':    return { view: 'about' };
+    case 'method':   return { view: 'method' };
+    case 'privacy':  return { view: 'privacy' };
+    case 'category': return (arg && TEMPLATE_CONFIG[arg]) ? { view: 'template', template: arg } : { view: 'home' };
+    case 'search':   return arg ? { view: 'search', query: arg } : { view: 'home' };
+    case 'entry':    return arg ? { view: 'entry', entryId: arg } : { view: 'home' };
+    default:         return { view: 'home' };
+  }
+}
+function routeToPath(view, s) {
+  switch (view) {
+    case 'browse':   return '/browse';
+    case 'tours':    return '/tours';
+    case 'pathways': return '/pathways';
+    case 'about':    return '/about';
+    case 'method':   return '/method';
+    case 'privacy':  return '/privacy';
+    case 'template': return s.activeTemplate ? '/category/' + encodeURIComponent(s.activeTemplate) : '/';
+    case 'search':   return s.searchQuery ? '/search/' + encodeURIComponent(s.searchQuery) : '/';
+    case 'entry':    return s.activeEntryId ? '/entry/' + encodeURIComponent(s.activeEntryId) : '/';
+    default:         return '/';
+  }
+}
+// One-time migration of legacy hash links (#/entry/x → /entry/x) before first render.
+function legacyHashToPath() {
+  if (typeof window === 'undefined') return;
+  const h = window.location.hash;
+  if (h && /^#\//.test(h)) {
+    const r = parseHash(h);
+    const path = routeToPath(r.view, { activeTemplate: r.template, activeEntryId: r.entryId, searchQuery: r.query });
+    window.history.replaceState(null, '', path + window.location.search);
+  }
+}
+legacyHashToPath();
+
 // Feedback / contact destination. Monitored mailbox for all feedback/contact links.
 const CONTACT_EMAIL = 'TCPFeedback@pm.me';
 
@@ -2630,7 +2685,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 export default function CommonplaceApp() {
-  const initialRoute = parseHash(typeof window !== 'undefined' ? window.location.hash : '');
+  const initialRoute = parsePath(typeof window !== 'undefined' ? window.location.pathname : '/');
   const isMobile = useIsMobile();
   const compactHeader = useIsMobile(880); // tablet: hide the wordmark text so the search keeps room
   const [manifestLoaded, setManifestLoaded] = React.useState(false);
@@ -2751,18 +2806,12 @@ export default function CommonplaceApp() {
     if (r) goToEntry(r.id);
   };
 
-  // ── Hash routing sync ──────────────────────────────────────────────────────
-  // suppress one hashchange immediately after we write the hash ourselves, so an
-  // in-app navigation does not bounce back through applyHash and clobber context
-  // (e.g. the returnTo set when an entry was opened from a tour).
-  const suppressNextHashApply = React.useRef(false);
-
-  // hash -> state (browser back/forward, or a manually edited/shared URL)
+  // ── Path routing sync ──────────────────────────────────────────────────────
+  // path -> state (browser back/forward, or a manually entered/shared URL)
   useEffect(() => {
     if (!manifestLoaded) return;
-    const onHash = () => {
-      if (suppressNextHashApply.current) { suppressNextHashApply.current = false; return; }
-      const r = parseHash(window.location.hash);
+    const onPop = () => {
+      const r = parsePath(window.location.pathname);
       if (r.view === 'entry')         goToEntry(r.entryId);
       else if (r.view === 'template') goToTemplate(r.template);
       else if (r.view === 'search')   doSearch(r.query);
@@ -2774,17 +2823,16 @@ export default function CommonplaceApp() {
       else if (r.view === 'privacy')  { setReturnTo(null); setReturnToId(null); setView('privacy'); }
       else                            goHome();
     };
-    window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
   }, [manifestLoaded]);
 
-  // state -> hash (in-app navigation), guarded so it never fights the listener
+  // state -> path (in-app navigation). pushState does not fire popstate, so no guard needed.
   useEffect(() => {
     if (!manifestLoaded) return;
-    const desired = routeToHash(view, { activeTemplate, activeEntryId, searchQuery });
-    if ((window.location.hash || '#/') !== desired) {
-      suppressNextHashApply.current = true;
-      window.location.hash = desired;
+    const desired = routeToPath(view, { activeTemplate, activeEntryId, searchQuery });
+    if (window.location.pathname !== desired) {
+      window.history.pushState(null, '', desired);
     }
   }, [manifestLoaded, view, activeEntryId, activeTemplate, searchQuery]);
 
