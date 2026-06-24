@@ -151,7 +151,7 @@
     {
       "label": "Surgery",
       "entryId": "surgery",
-      "status": "planned",
+      "status": "published",
       "relationship": "Consequential",
       "reason": "Surgery is the practice anesthesia transformed. It went from a brief race against a screaming patient, where speed was the only mercy, into a slow and deliberate central tool of medicine that could enter the abdomen, chest, and skull."
     },
@@ -321,6 +321,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }

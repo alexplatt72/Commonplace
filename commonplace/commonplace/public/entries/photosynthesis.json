@@ -164,7 +164,7 @@
     {
       "label": "The Cell",
       "entryId": "cell",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Photosynthesis happens inside cells, in specialized green structures called chloroplasts that descend from once-free-living cyanobacteria. Understanding the reaction means understanding the cellular machinery that houses it."
     },
@@ -178,7 +178,7 @@
     {
       "label": "Water",
       "entryId": "water",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "Photosynthesis splits water to release the oxygen we breathe, making water one of its essential ingredients. The availability of water is also the main limit on how much photosynthesis a landscape can perform, tying the reaction to drought, irrigation, and the geography of life."
     }
@@ -311,6 +311,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 8,
+  "degree": 11,
   "added": "2026-06-18"
 }

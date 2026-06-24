@@ -154,6 +154,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The global movement of crops after 1492 reshaped which plants grew in which soils worldwide; the soil entry's concern with what fertile ground can produce connects to this redistribution of crops across continents."
+    },
+    {
+      "label": "Water",
+      "entryId": "water",
+      "relationship": "Parallel",
+      "reason": "Soil and water are the paired foundations of agriculture; neither grows food without the other.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -304,6 +311,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 11,
+  "degree": 12,
   "added": "2026-06-18"
 }
