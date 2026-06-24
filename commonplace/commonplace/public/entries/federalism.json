@@ -126,7 +126,7 @@
     {
       "label": "Separation of Powers",
       "entryId": "separationOfPowers",
-      "status": "planned",
+      "status": "published",
       "relationship": "Thematic",
       "reason": "Federalism divides power vertically, between levels of government, while the separation of powers divides it horizontally, among branches. Both are devices for checking concentrated authority by splitting it, and they often operate in the same constitution at once."
     },
@@ -143,6 +143,13 @@
       "status": "published",
       "relationship": "Parallel",
       "reason": "The looser end of the spectrum federalism sits on: an alliance of fully sovereign states that pool almost no real authority. Comparing it with a federation clarifies the difference between cooperation among sovereigns and the genuine sharing of sovereignty."
+    },
+    {
+      "label": "Representation",
+      "entryId": "representation",
+      "relationship": "Parallel",
+      "reason": "Federalism layers representation across central and regional governments, dividing whom each body speaks for.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -292,6 +299,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 9,
+  "degree": 12,
   "added": "2026-06-18"
 }

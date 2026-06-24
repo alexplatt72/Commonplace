@@ -1,0 +1,363 @@
+{
+  "id": "surveillance",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Concepts",
+  "subtype": "Normative Concept",
+  "period": "Modern concept and critique from 1791; the underlying practice far older",
+  "title": "Surveillance",
+  "summary": "The systematic, purposeful watching of people — their movements, communications, transactions, and associations — in order to know, manage, predict, or control them; both a tool of genuine protection and the quietest instrument of power ever built, because the mere knowledge of being watched makes a person govern themselves.",
+  "hook": "Design a prison so that any cell can be seen from a central tower, but the prisoners can never tell whether the tower is staffed. Soon you need not staff it at all. Never sure when they are watched, the inmates begin to watch themselves, and behave as if the eye is always open. In 1791 the philosopher Jeremy Bentham drew exactly this building and called it the Panopticon. Its lesson reaches far past any prison. The systematic watching of people can keep them safe and keep them in line at once, because the watcher does not have to punish to control. It only has to be believed. That is why surveillance is both a shield against real danger and the subtlest power one person can hold over another: the eye that changes what it sees.",
+  "comparativeSummary": "These vantage points are not arguing about whether watching can be useful. They are arguing about what it is and what it costs once it becomes systematic. One tradition treats surveillance as a legitimate tool of order and care, justified when it is targeted, lawful, and overseen. A second treats it as the characteristic form of modern power, control achieved not by force but by visibility, so the watched discipline themselves. A third shifts the watcher from the state to the company, which harvests behavior to predict and steer what we do. Each names something real, and each is pressed hardest where watching meets safety, liberty, and the freedom to think unobserved.",
+  "themes": [
+    "ethics",
+    "law",
+    "politics",
+    "technology",
+    "power",
+    "freedom"
+  ],
+  "aliases": [
+    "surveillance",
+    "mass surveillance",
+    "state surveillance",
+    "surveillance capitalism",
+    "monitoring",
+    "watching"
+  ],
+  "indexTerms": [
+    "panopticon",
+    "Jeremy Bentham",
+    "Michel Foucault",
+    "discipline",
+    "Big Brother",
+    "mass surveillance",
+    "Snowden",
+    "surveillance capitalism",
+    "Shoshana Zuboff",
+    "chilling effect",
+    "security versus liberty",
+    "biometric",
+    "facial recognition",
+    "social credit",
+    "secret police"
+  ],
+  "interpretiveInfluences": [
+    "Jeremy Bentham",
+    "Michel Foucault",
+    "Shoshana Zuboff",
+    "David Lyon",
+    "George Orwell"
+  ],
+  "content": {
+    "beginner": {
+      "theConcept": "Think about how you act when you know someone is watching. You sit up a little straighter and choose your words with more care. You do not do the thing you might have done if you were sure you were alone.\n\nThat small change is the whole heart of surveillance. Surveillance is the organized watching of people on purpose. Not a glance, but a system: cameras, records, and now phones that track where you go, who you talk to, and what you buy. A camera on every street that logs every car, kept and searched by the police, is surveillance. A neighbor noticing you leave the house is not.\n\nSurveillance is also one-sided. The watcher can see you, but you usually cannot see the watcher. The one who watches knows more, and knowing more is a kind of power.\n\nThis watching is done by governments over their people, by companies over their users, and by bosses over workers. The goal is always the same: to know what people do, so as to manage, predict, or control them.",
+      "problemItAddresses": "Surveillance has two faces, and both are real.\n\nThe first face is protection. A society has to catch criminals, stop attacks, trace diseases, and collect taxes. All of that needs information about what people are doing. Police solve crimes by tracking suspects. Health workers stop an outbreak by finding who is sick. From this side, watching is simply what safety and public services cost.\n\nThe second face is control. A government that can see everything you do can spot a protest before it starts and track who reads which book. It can find and silence anyone who disagrees. It need not even arrest them. If people believe they are watched, many go quiet on their own.\n\nSo surveillance answers the need for safety and the wish for control with one tool. The camera that catches a thief can also watch a critic, which is why it is so hard to limit.",
+      "competingTraditions": "People who study surveillance look at it in different ways.\n\nOne view focuses on when watching is fair. Surveillance is fine, on this view, when it is aimed at real threats, allowed by law, and checked by courts. A police officer who gets a judge's permission to follow one suspect is watched in turn. The danger comes when watching is secret, aimed at everyone, and answers to no one.\n\nA second view, older and darker, comes from a famous prison design. The philosopher who drew it imagined a building where prisoners could never tell if the guard was looking, so they behaved as if he always was. A thinker named Michel Foucault said this is how power works today. We are controlled less by chains and more by being seen, because being seen makes us police ourselves.\n\nA third view looks not at the state but at companies. Many apps are free because they watch you instead, recording what you click and where you go to nudge what you buy. The watcher here is not a ruler but a business.",
+      "politicalStakes": "The fight over surveillance is really a fight between two things people want.\n\nThe first is safety. After a terrible attack, many people want more watching, and the wish is sincere. Governments promise that more cameras will keep everyone safe, and sometimes they do.\n\nThe second is freedom. A people who are always watched are a people who can be controlled. The same tools used against terrorists can be turned on protesters, minorities, or anyone a ruler dislikes.\n\nThe deepest cost is quieter than any arrest. It is called the chilling effect. When people think they might be watched, they hold back. They stop reading certain things, stop saying certain things, stop joining certain groups. No one is punished. People simply censor themselves, just in case. A society can lose its honest debate with no one jailed.\n\nThis is why one common reply does not settle the matter. Some say, 'I have nothing to hide, so why worry?' The answer is that surveillance shapes everyone's freedom, not just the freedom of people doing wrong.",
+      "contestedHistoryC": "Watching people is ancient. Rulers have always counted their subjects, used spies, and kept lists of enemies. What is new is the scale.\n\nNew tools changed everything. The written file let a state remember more than any person could. The fingerprint, the camera, and the wiretap tracked bodies and voices. Then came the database, the internet, and the smartphone. For the first time, it became cheap to watch almost everyone, almost always.\n\nThe twentieth century showed the worst case. Police states kept files on millions and ruled by fear. The twenty-first made a softer kind of watching ordinary. Cameras hang on city streets, and phones report where we are. Both governments and companies take part.\n\nIn 2013 a worker named Edward Snowden leaked secret documents. They showed one government collecting enormous amounts of data on ordinary people, far beyond what the public knew. Some see this as tools racing ahead of the law. Others say watching has always followed power, now simply faster.",
+      "whereDebateStands": "Almost no one wants either no security or total watching. The argument is about where, between those two, a free society should sit. And the ground keeps moving, because the technology runs ahead of the law.\n\nThe live questions are sharp. How much watching should we accept, and of whom? Who approves it, and who checks the watchers? Can a government collect everyone's data at once and still respect free thought, or should it only watch people it has real reason to suspect?\n\nNewer tools make this harder. Cameras can now pick a face out of a crowd, and computers can guess what a person will do before they do it. Some countries score and track citizens across daily life.\n\nUnder it all sits one worry. Once a society builds the machinery to watch everyone, can any rule keep it from being misused? The eye is built. The argument is who may open it."
+    },
+    "general": {
+      "theConcept": "A camera on a corner records every face that passes, stores each one, and lets a computer search the archive later for a single person. Nobody is touched. No door is broken. Yet something has changed about that street, because the people on it now move through a space that remembers them. This is surveillance in its modern form, and it captures what the word really means. Surveillance is not a glance but a system: the organized, purposeful watching of people in order to know, manage, predict, or control them.\n\nThree features define it. The first is that it is systematic rather than casual, tied to records, technology, and an institution that keeps and uses what it sees. The second is that it is purposeful, attached to a goal, whether catching a criminal, running a service, or steering a customer. The third, and the most consequential, is asymmetry. The watcher sees the watched, who often cannot see back, cannot tell when the watching is happening, and cannot know what is concluded about them. That imbalance of knowledge is an imbalance of power. The watchers are several: the state over its population, companies over their users, employers over workers, institutions over those in their care. To ask whether surveillance is good is usually the wrong question. The question is who watches whom, by what authority, and with what check.",
+      "problemItAddresses": "Surveillance answers two needs at once, and the trouble is that they run through the same machinery. The first need is genuine and shared. A society must catch criminals, foil attacks, trace epidemics, collect taxes, and run complex systems, and all of these require knowing what people do. A contact-tracing effort that halts an outbreak, a financial record that exposes fraud, a warranted wiretap that breaks a trafficking ring: these are surveillance, and they are also protection. From this side, watching is simply the price of safety and of services that depend on information.\n\nThe second need belongs to whoever rules. The same capacity that traces a disease can monitor a movement; the same records that catch a tax cheat can map a person's politics, faith, and friends. Surveillance lets power find dissidents before they act, intimidate them quietly, and make a population legible, which is to say governable. A ruler who can see everything need not punish often, because visibility alone induces caution.\n\nThis is why surveillance resists limits. It solves the problem of safety and the problem of control with one instrument, and the instrument does not announce which job it is doing. A system built in good faith to protect can be turned, with the same hardware and the same data, to dominate. The line between the two is not technical. It is a matter of who is watched, on whose authority, and whether anyone watches the watchers.",
+      "competingTraditions": "The traditions that divide thinking about surveillance are best understood as rival answers to a single question: what is watching, and what does it do to those it watches? One tradition treats surveillance as a legitimate tool of order and care. On this view, the relevant distinction is not watching versus not watching but watching done well versus watching done badly. Surveillance is acceptable when it is targeted at genuine threats, authorized by law, proportionate to the danger, and overseen by courts and legislatures that can be held to account. Its abuse is mass, secret, and unaccountable watching that answers to no one. The strength of this view is that it matches the real practice of policing and public health. Its difficulty is that the technical capacity for mass collection, once built, is hard to confine to targeted use.\n\nA second tradition, drawing on a famous prison design, sees surveillance as the characteristic form of modern power. The philosopher Jeremy Bentham imagined the Panopticon, a building whose inmates, never certain when the central tower was watching, came to police themselves. Michel Foucault took this as a model of how modern societies discipline people in general: control is achieved not by chains or open force but by visibility, so that the watched internalize the watcher and govern their own conduct. On this account surveillance is not a neutral tool but a productive force that shapes the subjects it observes.\n\nA third tradition shifts the watcher from the state to the corporation. The frame of surveillance capitalism, associated with Shoshana Zuboff, holds that the largest technology companies harvest behavioral data not to punish but to predict and steer what people buy and believe. Here the goal is not obedience but profit, and the surveillance is so woven into convenient free services that users supply it willingly. These accounts are not degrees of one idea. They locate the harm differently, point to different remedies, and can pull apart.",
+      "politicalStakes": "Surveillance becomes politically explosive because it sits on the fault line between security and liberty, and both are real goods. Watching genuinely prevents harm. After every atrocity the demand to watch more is powerful and sincere, and it is not foolish, because some attacks really are stopped by intelligence. Yet a population that knows it is watched is a population that can be controlled, and the tools built to catch terrorists can be turned on dissidents, minorities, and political rivals. The same database serves both ends. This is why no appeal to balance settles the dispute. The two sides are not weighing the same quantity, because one counts harms prevented and the other counts the slow erosion of a free people's independence.\n\nThe deepest stake is the chilling effect, and it is subtler than any single arrest. People who suspect they are observed quietly adjust. They read less freely, speak more cautiously, and hesitate to join causes that might be noticed. Over time this self-censorship hollows out free thought and association, and it does so even among people who have broken no law and would, if asked, say they have nothing to hide. The harm is therefore not mainly the exposure of secrets. It is the narrowing of what a society dares to think and do.\n\nRunning alongside the state's mass-monitoring programs is the corporation's empire of data, and the two raise the same question from opposite directions. The 'nothing to hide' reply assumes the watcher is fair and the cost is only to wrongdoers. The standard answer is that surveillance shapes everyone's freedom and that its main effect is structural, a shift in the balance of power between the watched and whoever holds the record. Who watches, by what authority, and who watches them: that is the dispute, and it does not resolve into a simple trade.",
+      "contestedHistoryC": "Surveillance is not a modern invention, but its scale is. Ancient states counted their subjects, kept informers, and maintained spies; rulers have always wanted to know what their people were doing. What changed was technology. The written file let a bureaucracy remember more than any official could carry in his head. The fingerprint and the photograph fixed identity to a body. The wiretap reached into private speech. Then the database, the internet, and the smartphone made it possible, for the first time, to watch nearly everyone, nearly always, at almost no cost. Each step lowered the price of watching and widened its reach.\n\nThe twentieth-century police states showed what total surveillance could do when joined to terror. Secret-police files on millions of citizens, networks of informers, and the punishment of private thought became instruments of rule. The twenty-first century produced a softer, ambient version that runs without obvious terror: cameras on ordinary streets, location data flowing from phones, and monitoring shared between governments and companies. In 2013 the disclosures associated with Edward Snowden revealed how vast secret state monitoring of communications had quietly become, turning an abstract worry into a documented fact and setting off a global argument.\n\nScholars read this history in two ways. One reading sees tools outrunning the law that should govern them, so that capacity expanded faster than the rules and oversight meant to contain it. Another sees surveillance as having always tracked power, now merely more efficient, so that the digital age is less a break than an acceleration. The disagreement is not only about the past. It shapes whether one expects new law to catch up, or expects watching to keep outpacing every attempt to limit it.",
+      "whereDebateStands": "Almost no one defends either no security or total monitoring, so the argument is not about the poles but about where, between them, a free society should sit. That question stays open because the technology keeps moving and the law keeps lagging. The live disputes are concrete. How much watching should be permitted, and of whom? On whose authorization, and with what oversight? Can the mass collection of everyone's data ever be reconciled with privacy and free thought, or can only targeted, warranted watching, aimed at specific people for specific reasons, be squared with a free society?\n\nNewer tools sharpen all of this. Facial recognition can pick individuals out of a crowd in real time, dissolving the old practical anonymity of public space. Predictive systems claim to forecast behavior from data, raising the prospect of acting against people for what they might do. Some states have built comprehensive systems that score and track citizens across many areas of life, presenting one model of where pervasive surveillance leads. Against corporate watching, the debate is over the remedy: whether the answer is regulation, more competition, or refusal of the most invasive tools.\n\nUnderneath runs a harder question. Once a society has built the machinery of total observation, can any rule reliably keep it from being abused, given that the same system serves protection and control? The value of security endures, and so does the value of an unwatched mind. The machinery is built. The unresolved argument is who may open the eye, and on whom."
+    },
+    "advanced": {
+      "theConcept": "Surveillance resists a single definition for a reason that is theoretically instructive: it is not one practice but a relation, and the relation does its normative work before any particular act of watching is described. The constitutive feature is asymmetry of visibility, which is to say asymmetry of knowledge, which is to say asymmetry of power. This is why the early reduction of surveillance to mere observation misleads. Observation describes a momentary act; surveillance describes a standing capacity, embedded in records, institutions, and technologies, to render a population knowable to an agent the population cannot in turn inspect. David Lyon's reframing of surveillance as 'social sorting' sharpens the point: the operative harm is frequently not exposure but classification, the assignment of individuals to categories that govern their access to credit, mobility, suspicion, or care. On this account the question 'is this surveillance?' is malformed until one specifies the watcher, the watched, the mechanism of capture, and the use to which the resulting knowledge is put. The analytically prior question is who is made legible to whom, and the appeal to surveillance as such cannot answer it.",
+      "problemItAddresses": "The standard defense of surveillance runs through aggregate consequences: harms prevented, attacks foiled, frauds exposed, weighed against intrusions suffered. That framing is not wrong, but it understates the problem, because it treats surveillance as a quantity to be balanced against other quantities, which is precisely the logic that licenses both the 'nothing to hide' argument and the security-for-liberty trade. The more demanding line holds that the central harm of systematic watching is structural rather than additive. What is at stake when surveillance becomes pervasive is not principally the exposure of any individual's secrets but a shift in the behavioral equilibrium of a whole population and in the distribution of power between the watched and the institutions that hold the record. The chilling effect is the operative mechanism. Anticipated observation produces self-censorship, conformity, and the attrition of dissent, and it does so even among those who would say they have nothing to hide, because the effect runs on the mere possibility of being watched rather than on actual scrutiny. The harm is therefore non-additive: it is not the sum of individual intrusions but a degradation of the conditions under which free opinion and association are possible at all, which means it cannot be cured by individual opt-outs and is systematically undervalued by any framework that prices watching as a personal intrusion to be consented to or refused.",
+      "competingTraditions": "The deepest division is not between state and corporate watching but between a juridical and a disciplinary understanding of what surveillance is. The juridical conception treats surveillance as an exercise of power that law can authorize, bound, and review: the question is legitimacy, and the apparatus of warrants, proportionality, and oversight is the answer. Foucault's intervention was to argue that this conception mistakes the locus of power. His reading of Bentham's Panopticon holds that disciplinary power does not principally prohibit; it produces. It manufactures subjects who, under conditions of potential constant visibility, internalize the gaze and regulate themselves, so that the decisive effect is achieved whether or not anyone is actually watching. On this account legal limits on particular acts of observation miss the point, because the power operates through the architecture of visibility itself rather than through discrete intrusions a court could authorize. The unresolved difficulty is that the disciplinary account, taken strictly, threatens to make surveillance so diffuse and so productive that it loses critical purchase: if all modern social order is panoptic, the term cannot distinguish a warranted wiretap from a totalitarian file. The juridical theorist answers that the distinction between targeted, accountable watching and mass, secret watching is exactly the distinction the disciplinary frame dissolves, and that surrendering it disarms the critique it claims to sharpen. The surveillance-capitalism literature complicates both by relocating the productive power Foucault ascribed to discipline into a commercial logic whose end is not the docile subject but the predictable consumer.",
+      "politicalStakes": "The security-liberty trade-off is asserted far more often than it is analyzed, and the analysis matters because the trade-off frequently is not the one it appears to be. Framed as a balance between two quantities, more security purchased with less liberty, it invites a utilitarian calculation. But the framing smuggles in two contestable premises. The first is that mass surveillance reliably produces the security it promises, an empirical claim that the record of bulk-collection programs renders genuinely doubtful, since the marginal intelligence value of indiscriminate collection over targeted, warranted watching has proven hard to demonstrate. The second is that the costs of surveillance fall only on those surveilled, when the structural account holds that they fall on the polity as a whole through the erosion of the conditions for dissent. Recast that way, the dispute is partly a contest between an individual-harm conception of surveillance and a collective-good conception of what it damages, and no appeal to balance can adjudicate it, because the disputants are measuring incommensurable quantities. The corporate case has the same structure under a different sign. The data bargain is presented as a consensual exchange of personal information for free service, but aggregation and inference mean that what is extracted exceeds what is knowingly given, and the externalities one person's disclosure imposes on others escape the logic of individual consent entirely. The honest description is not that one side favors security or innovation and the other favors privacy, but that the disputants have not settled which conception of the harm, individual or structural, is to be lexically prior.",
+      "contestedHistoryC": "The historical claim that modern surveillance is a creature of technology and scale, rather than a perennial feature of rule, is doing more analytic work than it appears, because it bears on whether the present situation is a difference of degree or of kind. The continuity reading holds that watching has always tracked power: census, informer, and secret police are ancient, and the database is only the latest and most efficient instrument of a constant impulse. On this view the appropriate response is the familiar one, law and oversight scaled up to match capacity. The discontinuity reading holds that a threshold has been crossed. When the cost of watching falls to near zero and the default shifts from watching someone to watching everyone and searching the record later, the practice changes character: suspicion no longer precedes collection but is generated from it, and the presumption that anonymity is the normal condition of public life is inverted. The strongest version of the discontinuity claim concerns inference. Predictive analytics dissolves the boundary the older debate assumed, because behavior, attributes, and future conduct can be derived from data never volunteered, so that the protection of disclosed information becomes beside the point and the harm migrates from what is known to what is predicted and acted upon. The dispute is not merely about chronology. It determines whether one expects existing legal categories, built around discrete acts of intrusion into identifiable secrets, to be adequate to a regime of ambient, inferential, population-scale watching, or expects them to be structurally outmatched by it.",
+      "whereDebateStands": "The contemporary frontier has moved past the framework of targeted intrusion that organized the older debate, in directions that strain the inherited categories. First, the recognition that the consequential operation of surveillance is sorting rather than seeing has shifted critical attention from collection to use, and from the moment of capture to the algorithmic classifications that allocate suspicion, credit, and access on the basis of inferred group membership, with discriminatory effects that no individual notice could surface. Second, predictive systems unsettle the temporal structure of the whole field. When the object of action is future conduct estimated from data, the wrong is no longer the exposure of what a person has done but intervention against what a model forecasts they might do, which sits awkwardly with legal traditions built on act and intent. Third, the collective turn presses the claim that surveillance cannot be resisted one person at a time, because the relevant unit of harm is the population and the relevant remedy is structural limitation of permissible data practices rather than individual authorization, a claim that fits poorly with a rights tradition built on individual standing. The comparative cases sharpen the stakes: a comprehensive state scoring system and a behavioral-advertising market are, at the level of mechanism, recognizably the same technology of capture and prediction aimed at different ends, which is itself the uncomfortable finding. The common thread is that two once-settled assumptions have come undone together. The field assumed it knew what surveillance threatens, the secrecy of disclosed information, and who bears the interest, the watched individual. Now both the object and the bearer of the harm are unresolved, and the value of an unobserved space for thought endures while the framework built to defend it no longer matches the technologies arrayed against it."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "Surveillance matters not because watching is always wrong but because the same capacity that protects a society can also control it, and the two uses run through the same machinery. The conviction that a state must know things about its people to keep them safe is widely shared, yet so is the fear of a watcher that answers to no one. Understanding the concept means seeing that surveillance is defined by asymmetry — the watcher sees the watched, who cannot see back — and that this imbalance of knowledge is an imbalance of power. It also means distinguishing the two great modern forms, the state's mass monitoring and the corporation's harvesting of behavioral data, and recognizing that targeted, accountable, lawful watching is a different thing from mass, secret, unaccountable watching, even when the technology is the same.",
+        "theDebate": "The central debates concern whether the relevant line runs between watching and not watching or between watching done accountably and watching done secretly and at scale; whether the deepest harm of surveillance is the exposure of individuals or the chilling of a whole society's freedom to think and dissent; whether mass collection of everyone's data can ever be reconciled with a free society or only targeted, warranted watching can; and whether corporate data extraction is best understood as a consensual bargain or as a new form of power. A further debate, drawing on Bentham's Panopticon and Michel Foucault's reading of it, asks whether surveillance is a neutral tool or a force that shapes the people it observes by making them police themselves.",
+        "whyItMatters": "Surveillance connects to nearly every contemporary controversy about technology and power: state monitoring of communications, facial recognition, biometric identification, the business models of the largest technology companies, the security debates that followed major terror attacks and intelligence leaks, and the comprehensive scoring systems built by some governments. Grasping the concept's internal divisions guards against a common confusion, in which one side defends all watching as protection and the other condemns all watching as control, when the real question is which watching, of whom, on whose authority. It also clarifies surveillance's links to privacy, liberty, and the state, each of which it presses upon.",
+        "questions": [
+          "Bentham's Panopticon works because prisoners cannot tell when they are being watched, so they behave as if they always are. How does this idea — that the mere possibility of being watched changes behavior — apply to a city full of cameras or a population carrying tracked phones?",
+          "Some watching is targeted, lawful, and overseen; some is mass, secret, and unaccountable. If both use the same cameras and databases, what actually distinguishes legitimate surveillance from illegitimate surveillance, and who decides?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "The conceptual starting point is Jeremy Bentham's design of the Panopticon (1791), a prison built so that inmates, never certain when they were observed, would discipline themselves. Michel Foucault's Discipline and Punish (1975) made the Panopticon the model of modern disciplinary power, arguing that control in modern societies operates through visibility rather than open force. David Lyon's body of work, including Surveillance Studies: An Overview (2007), reframes surveillance as 'social sorting,' the classification of populations that governs access and suspicion, and helped establish surveillance studies as a field. Shoshana Zuboff's The Age of Surveillance Capitalism (2019) relocates the analysis from the state to the corporation, describing a logic of accumulation built on the extraction and prediction of behavior. George Orwell's Nineteen Eighty-Four (1949) supplied the popular vocabulary, 'Big Brother,' through which mass state watching is most often imagined.",
+        "evidenceAndLimits": "Much of the debate is conceptual and normative rather than empirical, so evidence constrains it without settling it. Empirical work can establish how data is actually collected and combined, whether mass programs measurably prevent crime or terror beyond what targeted methods achieve, and whether and how the awareness of being watched changes behavior, the chilling effect that studies have sought to measure. It cannot determine how much surveillance a free society ought to accept for a given gain in security, because that is a question about the relative weight of competing values. The internal operations of both intelligence agencies and large technology companies are also partly secret, which means the public and even scholars often argue from incomplete knowledge of what is actually being done, a limit that the disclosures associated with Edward Snowden in 2013 exposed and only partly relieved.",
+        "takingAPosition": "A strong argument about surveillance must first specify which form it is judging — targeted and warranted watching, mass and secret collection, or commercial data extraction — since claims that lump them together tend to equivocate. It must then confront the trade-off it faces honestly rather than defining it away: a defense of broad surveillance must say what it costs in the chilling of dissent and must show that mass collection actually delivers security a targeted approach could not, while a defense of strong limits must say what protection is forgone and how that risk is to be borne. The most defensible positions tend to begin from a concrete case — a specific program, a specific technology like facial recognition, a specific data practice — and reason toward the conception of surveillance that best identifies what is wrong or right about it, rather than deducing a verdict from an abstract principle announced in advance. A position that treats every camera as tyranny, or every appeal to security as decisive, has not yet done the analytic work the concept demands.",
+        "questions": [
+          "Foucault argues that surveillance is not just a tool but a force that produces self-disciplining subjects, achieving control whether or not anyone is actually watching. If that is right, do legal limits on particular acts of watching reach the real problem, or does the architecture of visibility itself need to be the target?",
+          "The same technology of capture and prediction can power a state scoring system and a behavioral-advertising market. If the mechanism is the same and only the purpose differs, what should a free society regulate — the technology, the watcher, or the use?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "Surveillance as an asymmetric power relation, not mere observation",
+      "content": "It is well established across the legal, philosophical, and sociological literature that surveillance is not adequately described as watching or observation but as a systematic, institutionally embedded capacity that renders a population knowable to an agent the population cannot inspect in turn. The defining feature is asymmetry of visibility and therefore of knowledge and power. The standard analysis distinguishes the state's mass monitoring from corporate behavioral data extraction and from institutional and workplace watching, and treats the relevant ethical line as running between targeted, accountable, lawful surveillance and mass, secret, unaccountable surveillance. Bentham's 1791 Panopticon and Foucault's 1975 reading of it as a model of disciplinary power are the standard conceptual reference points, and David Lyon's reframing of surveillance as 'social sorting' is a widely cited expression of the view that classification, not exposure, is often the operative harm."
+    },
+    {
+      "status": "emerging",
+      "topic": "Surveillance capitalism, prediction, and the limits of consent",
+      "content": "Since Shoshana Zuboff's The Age of Surveillance Capitalism (2019), a substantial body of work has reframed the data economy as a distinct logic of accumulation in which behavioral data is extracted, often without meaningful awareness, and used to predict and shape conduct. Related empirical work on notice-and-consent regimes finds that disclosures are rarely read or understood and that aggregation and inference allow conclusions never disclosed and never agreed to. Whether this constitutes a genuinely new economic and political form, whether its harms are best addressed by regulation, competition, or refusal, and whether the predictive turn requires abandoning consent-based governance for substantive limits on data practices, remain actively debated and unsettled. The parallel question of whether comprehensive state scoring and monitoring systems represent a durable new model of governance is similarly open."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "The aggregate effect of mass surveillance on dissent and free thought",
+      "content": "Whether and to what degree pervasive surveillance measurably chills free thought, speech, and association across a whole society cannot be established with confidence, and the question is genuinely open rather than merely difficult.\n\nWhat evidence would resolve it: controlled comparison of otherwise identical populations, one subject to mass surveillance and one not, measuring downstream effects on reading, speech, association, and dissent over time.\n\nWhy that is unavailable: surveillance regimes arise in specific historical and political contexts that are not controlled experiments; the chilling effect operates through anticipation and self-censorship, which by their nature leave little record; people who refrain from speaking or joining produce no measurable act to count; and the most intensively surveilled societies are often precisely those where independent measurement is least possible.\n\nWhat can be responsibly inferred: from documented cases of secret-police states, from survey and behavioral studies showing that awareness of observation alters conduct, and from the testimony of those who lived under pervasive watching, that anticipated surveillance does induce caution and self-censorship in identifiable circumstances.\n\nWhat must remain genuinely unknowable: the full magnitude of dissent, association, and thought that never occurred because people believed they were watched, since the central effect is the suppression of acts that, by definition, leave no trace."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "Surveillance as legitimate tool of order",
+      "name": "The Accountable Watch",
+      "content": "The first tradition treats surveillance as a legitimate tool of safety and care. The real question, on this view, is not whether to watch but how. A society cannot catch criminals, stop attacks, trace epidemics, or run its services without knowing what people do. So watching is part of the ordinary work of government. What makes it acceptable is structure. The watching must be aimed at genuine threats, allowed by law, and overseen by courts that can be held to account. A judge approves a wiretap on one suspect, and the police are watched in turn. This vantage sees what critics can miss: targeted, checked watching protects real people from real harm. What it sees less well is how easily the tools built for narrow use spread into watching everyone."
+    },
+    {
+      "perspective": "Surveillance as modern power",
+      "name": "The Self-Policing Eye",
+      "content": "A second tradition, drawn from a prison design, sees surveillance as the very shape of modern power rather than a neutral tool. Jeremy Bentham drew the Panopticon, a building whose inmates could not tell when the tower was watching, so they behaved as if it always was. Michel Foucault read this as a model of how modern societies control people, not by chains but by being seen, so that the watched take the watcher inside and discipline themselves. This vantage reveals what the first tradition cannot: the deepest effect arrives before anyone is punished, as watched people begin to police their own thoughts. Critics answer that if all modern order is a panopticon, the idea loses its edge and can no longer tell a lawful wiretap from a secret-police file."
+    },
+    {
+      "perspective": "Surveillance as commercial extraction",
+      "name": "The Market in Behavior",
+      "content": "A third vantage shifts the watcher from the state to the company. The frame of surveillance capitalism, linked to Shoshana Zuboff, holds that the largest technology firms harvest our behavior not to punish but to predict and steer what we buy and believe. They do it woven into free services we use willingly, so the watching feels like convenience. This vantage sees what the state-centered traditions miss: some of the most far-reaching watching in history is now run by private firms with no warrant and no public accountability. Critics answer that calling every data-hungry app part of one grand machine can flatten real differences, and that regulation, competition, or refusal might address the problem without treating all trade in data as one system of control."
+    }
+  ],
+  "rabbitHole": [
+    {
+      "label": "Privacy",
+      "entryId": "privacy",
+      "status": "published",
+      "relationship": "Parallel",
+      "reason": "Privacy is the right that surveillance most directly threatens; the two concepts define each other, and the security-versus-privacy tension at the heart of both is fought out over how much watching a free society should accept."
+    },
+    {
+      "label": "The State",
+      "entryId": "theState",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The state is the chief wielder of mass surveillance — the actor with the deepest capacity to watch, record, and act on what it knows about its population, which makes the security-versus-liberty collision a contest with the state on one side."
+    },
+    {
+      "label": "Authoritarianism",
+      "entryId": "authoritarianism",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Total watching is the machinery on which the most controlling regimes are built; modern authoritarian rule increasingly works through information control and monitoring rather than open terror, making pervasive surveillance one of its defining instruments."
+    },
+    {
+      "label": "The Police",
+      "entryId": "police",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "The police are the everyday agents of state observation, where the abstract question of who may watch whom becomes the concrete practice of cameras, records, and the tracking of suspects on the street."
+    },
+    {
+      "label": "Censorship",
+      "entryId": "censorship",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "The chilling effect links watching to silencing: surveillance that makes people censor themselves functions as a soft censorship, suppressing speech and association before they happen rather than punishing them afterward."
+    },
+    {
+      "label": "Propaganda",
+      "entryId": "propaganda",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Watching a population and steering its opinion are twin instruments of control; the knowledge surveillance gathers is what makes targeted persuasion possible, so monitoring and messaging work together in the management of belief."
+    },
+    {
+      "label": "Free Speech",
+      "entryId": "freeSpeech",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Surveillance bears directly on free expression: the awareness of being watched chills speech and association, so the freedom to speak and the freedom from being monitored are bound together as conditions of open debate."
+    },
+    {
+      "label": "Terrorism",
+      "entryId": "terrorism",
+      "status": "planned",
+      "relationship": "Contrasting",
+      "reason": "The demand to watch more is most powerful and most sincere after terror attacks; terrorism is the threat invoked to justify mass surveillance, making it the test case where the security-versus-liberty argument is sharpest."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Bentham, Jeremy",
+      "title": "Panopticon; or, the Inspection-House",
+      "year": "1791",
+      "type": "Primary text",
+      "reliability": "Primary",
+      "contribution": "Foundational",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The originating design the entry builds its central image on — the inspection-house whose inmates, never sure when they are watched, come to police themselves. The source of the founding intuition that visibility alone can produce control without continuous punishment."
+    },
+    {
+      "author": "Foucault, Michel",
+      "title": "Discipline and Punish: The Birth of the Prison",
+      "year": "1975",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Foundational",
+      "originLanguage": "French",
+      "domainAuthority": null,
+      "annotation": "The work that made the Panopticon the model of modern disciplinary power, arguing that control operates through visibility rather than open force. The basis for the entry's account of surveillance as a force that produces self-disciplining subjects, not merely a neutral tool."
+    },
+    {
+      "author": "Shoshana Zuboff",
+      "title": "The Age of Surveillance Capitalism",
+      "year": "2019",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The reframing of the data economy as a logic of behavioral extraction and prediction the entry relies on for the corporate-surveillance tradition and the question of whether the commercial harvesting of behavior is a consensual bargain or a new form of power."
+    },
+    {
+      "author": "David Lyon",
+      "title": "Surveillance Studies: An Overview",
+      "year": "2007",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The source of the 'social sorting' reframing the advanced layer adopts — the argument that the operative harm of surveillance is frequently classification rather than exposure — and a foundational synthesis of the field that maps the state, corporate, and institutional forms the entry distinguishes."
+    },
+    {
+      "author": "Daniel J. Solove",
+      "title": "Nothing to Hide: The False Tradeoff Between Privacy and Security",
+      "year": "2011",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The sustained treatment of the 'nothing to hide' argument and the security-versus-liberty trade-off the entry presents without adjudicating, anchoring the claim that the framing smuggles in contestable premises about whom surveillance's costs fall on."
+    },
+    {
+      "author": "Glenn Greenwald",
+      "title": "No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State",
+      "year": "2014",
+      "type": "Monograph",
+      "reliability": "Credible",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The detailed account of the 2013 disclosures the entry draws on for its claim that vast secret state monitoring of communications had quietly become routine, the documented case that turned an abstract worry into a public fact. A participant's account, to be read alongside official and scholarly responses."
+    },
+    {
+      "author": "Bernard E. Harcourt",
+      "title": "Exposed: Desire and Disobedience in the Digital Age",
+      "year": "2015",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The argument the entry uses to complicate the Orwellian image — that contemporary surveillance works less through coercion than through desire and willing participation, as users expose themselves through the conveniences they enjoy, supporting the distinction between hard and ambient watching."
+    },
+    {
+      "author": "Simone Browne",
+      "title": "Dark Matters: On the Surveillance of Blackness",
+      "year": "2015",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The work supplying the entry's attention to how surveillance has historically been targeted unequally, classifying and sorting some populations more intensively than others, which grounds the claim that the harm of watching is often discriminatory classification rather than uniform exposure."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "title": "Surveillance Studies: An Overview",
+      "author": "David Lyon",
+      "note": "The first book to reach for if the word 'surveillance' feels both obvious and slippery. Lyon maps the many forms it takes, from state to corporate to workplace, and introduces the idea that watching is really about sorting people, all in plain and accessible prose."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Nothing to Hide: The False Tradeoff Between Privacy and Security",
+      "author": "Daniel J. Solove",
+      "note": "Read this for the live argument about security versus liberty. Solove takes apart the 'nothing to hide' reply piece by piece and shows why the trade-off is rarely the simple balance it is made to look like."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "The Age of Surveillance Capitalism",
+      "author": "Shoshana Zuboff",
+      "note": "For the reader who wants the case against corporate watching at full strength. Zuboff argues that free services are paid for in behavior; read it alongside a critic, since the thesis is sweeping and contested."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "title": "Permanent Record",
+      "author": "Edward Snowden",
+      "note": "Read this for the human story behind mass state surveillance. Snowden recounts how he came to leak the documents that revealed the scale of secret monitoring; it is a participant's account, so weigh it against the responses of those he accused."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "title": "Discipline and Punish: The Birth of the Prison",
+      "author": "Michel Foucault",
+      "note": "The academic anchor under the whole debate. Demanding but foundational, this is where the Panopticon becomes a theory of modern power, the claim that we are controlled by being seen and so come to watch ourselves."
+    },
+    {
+      "type": "Novel",
+      "title": "Nineteen Eighty-Four",
+      "author": "George Orwell",
+      "note": "The novel that gave us 'Big Brother' and the telescreen that watches every room. Read it for how unforgettably it dramatizes a life with no unwatched space, and read it knowing its watcher rules by open terror, while much of today's watching is soft and convenient."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Phrase",
+      "title": "'Big Brother is watching you'",
+      "description": "George Orwell's 1984 gave the world this phrase, and it is now the first thing many people reach for to describe being watched. It captures the dread of a state that sees everything. But Orwell's Big Brother rules by open terror and visible screens. Today's watching is often quiet and convenient, a phone you carry by choice, which the boot-and-screen image can hide."
+    },
+    {
+      "type": "Concept",
+      "title": "The Panopticon",
+      "description": "Jeremy Bentham's prison design, where inmates never know when they are watched, became shorthand for any system that makes people police themselves. Scholars use it for everything from cameras to social media. The image is powerful because it is true to how watching shapes behavior. Stretched over everything, though, it can blur the line between a checked police wiretap and a state that files away its whole population."
+    },
+    {
+      "type": "Television",
+      "title": "Black Mirror (2011-present)",
+      "description": "This series imagines near futures where recording, scoring, and total memory reshape ordinary life. People are undone by a stored clip or a public rating. It captures the unease of a world that never forgets and watches all the time. Because each story pushes to an extreme, it can make the danger feel like science fiction rather than the slower, quieter watching already here."
+    },
+    {
+      "type": "Concept",
+      "title": "Surveillance capitalism",
+      "description": "This phrase names the idea that big tech firms make money by collecting and predicting our behavior. It spread fast because it gave one label to a vague feeling of being mined for data. The risk is that the label flattens everything. Not every app that asks for data is part of one grand machine, and treating them all alike can dull the sharper, more specific objections."
+    },
+    {
+      "type": "Event",
+      "title": "The Snowden disclosures (2013)",
+      "description": "When Edward Snowden leaked secret files, an abstract worry about government watching became a documented fact. The papers showed monitoring of communications on a scale the public had not known. The story made surveillance real for many people for the first time. It also fixed the debate on one government's programs, while watching by companies and other states kept growing in the background."
+    },
+    {
+      "type": "Concept",
+      "title": "Social credit systems",
+      "description": "Reports of a Chinese system that scores citizens on their behavior spread quickly in the West as an image of total surveillance. The picture is real in part and exaggerated in part, since the actual programs are more scattered and uneven than the single all-seeing score people imagine. The fear it names is genuine, but the cartoon version can stand in for a more complicated reality."
+    }
+  ],
+  "startYear": 1791,
+  "endYear": 2026,
+  "regions": [
+    "Global / Transregional"
+  ],
+  "degree": 15,
+  "added": "2026-06-18"
+}

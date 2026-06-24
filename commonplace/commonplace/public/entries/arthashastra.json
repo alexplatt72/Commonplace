@@ -171,7 +171,7 @@
     {
       "label": "Surveillance",
       "entryId": "surveillance",
-      "status": "planned",
+      "status": "published",
       "relationship": "Precursor",
       "reason": "The Arthashastra imagines a state threaded with spies and informers watching officials, neighbors, and even the royal family, an ancient model of the surveillance state. It is one of the earliest detailed blueprints for governing through systematic watching."
     },
@@ -185,7 +185,7 @@
     {
       "label": "The Rule of Law",
       "entryId": "ruleOfLaw",
-      "status": "planned",
+      "status": "published",
       "relationship": "Contrasting",
       "reason": "The Arthashastra centers danda, the rod of punishment wielded by the king, and treats law as an instrument of royal power and state security. Setting it against the ideal of law as a constraint on rulers sharpens what kind of legal order the text actually imagines."
     }
@@ -334,6 +334,6 @@
   "regions": [
     "South Asia"
   ],
-  "degree": 8,
+  "degree": 10,
   "added": "2026-06-18"
 }
