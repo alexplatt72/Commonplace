@@ -976,6 +976,22 @@ for (const fname of filesToProcess) {
       fails.push(`Banned word "${[...new Set(hits.map(h => h.toLowerCase()))].join('", "')}" appears ${hits.length}× — "historiograph…" must never appear, in any layer. Use plain language: "the historical debate", "how historians have read it", "scholarly accounts".`);
   }
 
+  // 10.6 Inline wiki-link markup — inter-entry cross-references belong ONLY in the
+  //      rabbitHole array, NEVER inline in visible prose. Leaked "[[entryId]]" (or
+  //      "[[id|shown text]]") markup renders literally on the live site, e.g. the reader
+  //      sees "[[magicalRealism]]". Also forbid "see the entry on X" pointer scaffolding,
+  //      which violates the self-contained-layer rule even without brackets. HARD FAIL.
+  {
+    const serial = JSON.stringify(entry);
+    const linkHits = serial.match(/\[\[[^\]]*\]\]/g);
+    if (linkHits) {
+      const uniq = [...new Set(linkHits)].slice(0, 8);
+      fails.push(`Inline wiki-link markup ${linkHits.length}× (${uniq.join(', ')}) — "[[…]]" cross-reference markup must never appear in entry text; it renders literally on the site. Links between entries live only in the rabbitHole array. Remove the brackets (and any "see the entry on…" scaffolding) and let the rabbitHole carry the connection.`);
+    } else if (/\[\[/.test(serial)) {
+      fails.push(`Stray "[[" wiki-link bracket found — inter-entry cross-reference markup must never appear in entry text. Remove it; links live in the rabbitHole array.`);
+    }
+  }
+
   // ── 11. AI FAILURE MODE WARNINGS ──────────────────────────────────────────
   // Procedural self-narration: kept as warning — distinctive pattern, low false positive rate.
   // Anti-declarative inflation phrases removed — too context-dependent, high false positive rate.
