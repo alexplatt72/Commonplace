@@ -163,6 +163,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "The institution where the elements were isolated, weighed, and later synthesized, and where the table's predictions were tested. From Mendeleev's predicted elements to today's superheavy ones, the chart's growth has always depended on laboratory work."
+    },
+    {
+      "label": "Anesthesia",
+      "entryId": "anesthesia",
+      "relationship": "Thematic",
+      "reason": "Ether, nitrous oxide, and chloroform were among the first chemically pure compounds turned to medical use.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -309,6 +316,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 9,
+  "degree": 11,
   "added": "2026-06-18"
 }

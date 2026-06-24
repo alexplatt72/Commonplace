@@ -160,14 +160,14 @@
     {
       "label": "Soil",
       "entryId": "soil",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Soil is the resource the Green Revolution both exploited and degraded; the heavy fertilizer use, salinization from irrigation, and declining fertility of intensively farmed land are central to the costs the new methods left behind."
     },
     {
       "label": "Nitrogen",
       "entryId": "nitrogen",
-      "status": "planned",
+      "status": "published",
       "relationship": "Foundational",
       "reason": "Nitrogen, fixed industrially from the air, is the element the high-yield varieties were bred to convert into grain; the Green Revolution is in large part the story of pouring synthetic nitrogen onto farms at an unprecedented scale, with all its benefits and runoff."
     }
@@ -309,6 +309,6 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 10,
+  "degree": 14,
   "added": "2026-06-18"
 }

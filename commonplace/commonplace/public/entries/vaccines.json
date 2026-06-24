@@ -208,6 +208,13 @@
       "status": "published",
       "relationship": "Thematic",
       "reason": "Vaccine-preventable disease outbreaks are frequently associated with mobile populations — either migrants who carry infections across borders or communities with low vaccination rates that create susceptibility among international travelers."
+    },
+    {
+      "label": "Anesthesia",
+      "entryId": "anesthesia",
+      "relationship": "Parallel",
+      "reason": "Anesthesia ranks with vaccination among the handful of advances that defined modern medicine.",
+      "status": "published"
     }
   ],
   "reference": [
@@ -363,7 +370,7 @@
   "regions": [
     "Global / Transregional"
   ],
-  "degree": 14,
+  "degree": 16,
   "added": "2026-05-31",
   "comparativeSummary": "Almost no one in these cards doubts that vaccines work. The argument is about what the hard problem becomes once the science is settled. For public health researchers, the answer is simple math: nothing else saves so many lives per dollar, so the task is getting shots into as many arms as possible. Bioethicists see a sharper edge, where that collective good rubs against a person's right to refuse what goes into their own body. Global health advocates shift the ground entirely, arguing that the real failure is not refusal but access, and that money and political choice, not biology, decide who lives."
 }
