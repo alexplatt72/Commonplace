@@ -55,7 +55,16 @@ module.exports = function plainEnglish(entry, ctx) {
 
   const beg = (entry.content && entry.content.beginner) || {};
   const cfg = (ctx.rules && ctx.rules.plainEnglish) || {};
-  const split = ctx.splitSentences || (t => (t || '').split(/(?<=[.!?])\s+/).filter(Boolean));
+  // Local, quote-aware sentence splitter — isolated to this module on purpose. The shared
+  // ctx.splitSentences is load-bearing for corpus-wide checks (hook re-narration, echo
+  // overlap, FK floors) calibrated to its exact behavior, so we do NOT reuse it here. This
+  // variant treats a closing quote/bracket after terminal punctuation as a boundary, so B1
+  // dialogue (…angel." He…) is not miscounted as one giant sentence.
+  const split = (t => {
+    const p = (t || '').replace(/(\d)\.(\d)/g, '$1⊙$2');
+    const raw = p.match(/[^.!?]+[.!?]+["'”’)\]]*(?:\s|$)/g) || [p];
+    return raw.map(s => s.replace(/⊙/g, '.').trim()).filter(Boolean);
+  });
 
   const fkMax        = cfg.fkMax            != null ? cfg.fkMax            : 8.0;
   const fkWarn       = cfg.fkWarn           != null ? cfg.fkWarn           : 7.0;
