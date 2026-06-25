@@ -36,6 +36,10 @@ block. Your job is to rewrite its language to B1 and nothing else.
   not "several"), and **loaded/characterizing words the source chose on purpose** ("mobs" not
   "groups"; "grabbing" not "taking"; "accommodated" not "accepted"). A neutral synonym for
   readability is fine; a synonym that shifts meaning, scale, or connotation is fact drift.
+  This does **not** include plain emphasis/intensity adverbs — "remarkably", "enormously",
+  "strikingly", "legendary" may and should be simplified ("very", "really", "great"); they
+  carry no fact. Preserve only words whose change alters who/what/when/how-many or a
+  deliberate characterization (legal vs normal, diagnosis vs understanding, mobs vs groups).
 - Keep the **same sections, in the same order**, with the **same section keys**.
 - Keep roughly the **same number of paragraphs** and the same order of ideas.
 
@@ -48,6 +52,10 @@ do not silently "improve" it. Inventing to improve is the #1 drift failure.
 - One idea per sentence. Prefer 8–14 words; **hard max 28 words** (validator-enforced).
 - Active voice. Clear subject → verb → object.
 - Present tense where the meaning allows.
+- **Readability is enforced (FK ≤ 8 hard, ≤ 7 target).** Abstract topics — concepts,
+  philosophy, economics, law — run hot and need *harder* work: split sentences to ~10–12
+  words and reach for the plainest possible word. If a section feels dense, it is over the
+  line. Re-check your most abstract sections before finishing.
 
 **Vocabulary**
 - Prefer the ~3,000 most common English words.
@@ -126,7 +134,9 @@ positives is as useless as missing real drift. Compare against the Beginner sour
   semicolon) despite passing FK.
 - **DO NOT fail** on a plain-words **gloss** of a term already in the source (that is
   *required* — §3), nor on a **neutral synonym** that does not change meaning, scale, or
-  connotation ("from scratch"→"from nothing", "piles"→"numbers").
+  connotation ("from scratch"→"from nothing", "piles"→"numbers"), nor on a plain
+  **emphasis/intensity adverb** simplified to a plainer one ("remarkably"→"very",
+  "enormous"→"very big", "legendary"→"great") — these carry no fact.
 
 A `pass` must mean the layer is **fact-faithful and B1**, not that it is word-identical to
 Beginner. A fail routes the entry back for regeneration (max N), then to a human queue.
@@ -146,12 +156,27 @@ the layer renders the escape as visible text. (Pilot 1: 3 of 5 agents emitted li
 
 ## 9. Rollout
 
-1. **Pilot ~20 entries** spanning the largest section-key shapes (Material Foundation,
-   Period, Place, Figure/Idea, Event). Hand-read all 20; tune `style.json` thresholds;
-   **lock the spec**.
-2. Scale the remaining ~980 in batches, gates on every entry.
-3. Layer stays hidden the entire time. Flip `PLAIN_ENGLISH_ENABLED = true` only when the
+The pilot (rounds 1–4, 41 entries) is done and the spec is locked. Validated cadence:
+
+1. **Batches of ~15, balanced composition.** Mix concrete/narrative entries (which
+   auto-pass ~60%) with abstract/conceptual ones (which drift more, ~20–30%) so each batch
+   averages ~50% auto-insert and a ~6–8 entry hand-repair tail — tractable in one pass.
+   *Do not* run a batch of 20 that skews abstract: it produces ~16 hand-repairs.
+2. **Per batch:** run the Sonnet workflow (gen + triage review) → `node pe_process.cjs
+   <output>` auto-inserts every clean double-pass (validator 0 fails **and** reviewer
+   `pass:true` **and** no fact flags) → **hand-repair only the flagged tail**, then insert.
+3. **Hand-repair the tail; do not re-run it.** Re-running a flagged tail costs ~1M tokens
+   and hits diminishing returns on the stubborn core (dropped qualifiers, FK on dense
+   topics). Re-run *only* when you have changed the spec and want to re-validate the change.
+4. **Track progress in `plain-english-progress.md`** (the running ledger of done entry IDs,
+   per-round metrics, and what's left).
+5. Layer stays hidden the entire time. Flip `PLAIN_ENGLISH_ENABLED = true` only when the
    full set is generated, validated, and reviewed.
+
+Recurring drift to watch (from the pilot): dropped qualifiers ("Pacific coast"→"coast",
+"A single idea from"); characterization swaps ("found guilty"→"said guilty",
+"argued"→"said"); factually wrong glosses ("condense"→"squeeze"); fact-adding glosses
+(invented Latin names, definitions); and FK creep on abstract topics.
 
 Scope v1: **content layers only**. The hook and summary stay original-register (a B1 hook/
 summary is an optional phase 2). All 1,000 entries are eligible — every entry has a Beginner
