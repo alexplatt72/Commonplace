@@ -55,12 +55,37 @@ const results = Array.isArray(parsed) ? parsed : parsed.result;
 
 const inserted = [];
 const flagged = [];
+const styleWatch = []; // advisory: corpus-wide opening formulas + connective crutches
+
+// Corpus-style watch. Per-entry reviewers can't see cross-entry sameness; this flags it so
+// you can vary openings / trim crutches during the repair pass. ADVISORY only — never blocks.
+const CRUTCHES = [
+  [/one of the (?:most|largest|oldest|greatest|biggest|finest|richest|earliest)/gi, 'one of the most…'],
+  [/for a long time/gi, 'for a long time'],
+  [/for most of history/gi, 'for most of history'],
+  [/at the same time/gi, 'at the same time'],
+  [/chang(?:ed|e) (?:everything|the world)/gi, 'changed everything/the world'],
+];
+function styleCheck(block) {
+  const keys = Object.keys(block);
+  const firstSent = (block[keys[0]] || '').replace(/\n+/g, ' ').split(/(?<=[.!?])\s+/)[0] || '';
+  const opening = /^In\s+(the\s+)?\d/.test(firstSent) ? 'date opener ("In [year]…")'
+    : /^(Imagine|Stand|Think|Picture|Hold|Pick|Look|Consider|Walk|Close|You)\b/.test(firstSent) ? 'device opener'
+    : null;
+  const allText = keys.map(k => block[k]).join(' ');
+  const crutches = [];
+  for (const [re, label] of CRUTCHES) { const n = (allText.match(re) || []).length; if (n) crutches.push(label + (n > 1 ? ` ×${n}` : '')); }
+  return { opening, crutches };
+}
 
 for (const r of results) {
   if (!r || !r.block) { flagged.push({ id: r && r.id, why: ['no block returned (agent died?)'] }); continue; }
   // normalize literal \n -> real newline
   const block = {};
   for (const [k, v] of Object.entries(r.block)) block[k] = String(v).split('\\n').join('\n');
+
+  const sc = styleCheck(block);
+  if (sc.opening || sc.crutches.length) styleWatch.push({ id: r.id, opening: sc.opening, crutches: sc.crutches });
 
   const file = './public/entries/' + r.id + '.json';
   const orig = fs.readFileSync(file, 'utf8');
@@ -98,4 +123,15 @@ for (const f of flagged) {
   (f.reviewerFact || []).forEach(m => console.log('      [reviewer-fact] ' + String(m).slice(0, 170)));
   (f.reviewerLevel || []).forEach(m => console.log('      [reviewer-level] ' + String(m).slice(0, 170)));
 }
+if (styleWatch.length) {
+  console.log('\n──── STYLE WATCH (advisory — corpus-wide sameness, does NOT block) ────');
+  console.log('Vary openings / trim crutches during the repair pass; see spec §3 "Variety".');
+  for (const s of styleWatch) {
+    const bits = [];
+    if (s.opening) bits.push('opening: ' + s.opening);
+    if (s.crutches.length) bits.push('crutch: ' + s.crutches.join(', '));
+    console.log('  • ' + s.id + ' — ' + bits.join('  |  '));
+  }
+}
+
 console.log('\nNOTE: flagged entries were NOT written. Repair them, then insert.');

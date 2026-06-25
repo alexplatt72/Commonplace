@@ -78,6 +78,21 @@ do not silently "improve" it. Inventing to improve is the #1 drift failure.
   "is important", "shaped", "changed", or just state the point. The physical-substance noun
   "matter" ("states of matter") is fine and uncapped.
 
+**Variety — avoid corpus-wide sameness.** You write one entry, but it sits beside hundreds.
+A per-entry reviewer can't see this; you must. An editorial read of the first ~100 entries
+found two repeating molds to break:
+
+- **Vary the opening.** Do *not* default to either of the two over-used openers: a date
+  ("In 1687…", "In 1429…") or a second-person/device hook ("Imagine…", "Stand…", "Think
+  about…", "Pick up…", "you…"). About half the early entries opened one of these two ways.
+  Each is fine *occasionally*, but reach for alternatives: lead with the subject, a plain
+  consequence, a concrete object, a surprising fact, or a direct question. The opening should
+  fit the entry, not a template.
+- **Limit these connective crutches** (they recur across entries): "one of the most / largest
+  / oldest …", "for a long time", "for most of history", "at the same time", "changed
+  everything / changed the world". Use them sparingly — at most once per block — and prefer a
+  specific statement ("the oldest city in the region" beats "one of the oldest cities").
+
 ## 4. Output format
 
 A JSON object whose keys are **exactly** the Beginner block's section keys, each value a
