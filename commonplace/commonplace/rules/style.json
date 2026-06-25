@@ -55,5 +55,38 @@
     "minEntriesToFlag": 25,
     "minOccurrences": 30,
     "stopwordHeavyMax": 0.8
+  },
+
+  "plainEnglish": {
+    "_comment": "CEFR B1 'Plain English' layer gates (validators/plainEnglish.cjs). The layer is generated FROM content.beginner by transformation. Numeric thresholds are the drift fence; tune them here, not in code. Locked after the pilot — see PLAIN_ENGLISH_SPEC.md. Readability is two-tier: fkWarn is the B1 target ceiling (warn), fkMax is the hard fail (clearly above B1). Entries with unavoidable polysyllabic domain terms (electricity, photosynthesis) ride higher on FK, so the hard fail sits at 8.0. Lengths are word counts. lengthBand = total B1 words allowed as a fraction of Beginner words.",
+    "fkWarn": 7.0,
+    "fkMax": 8.0,
+    "sentenceMaxWords": 28,
+    "sentenceMeanMax": 16,
+    "lengthBandLow": 0.6,
+    "lengthBandHigh": 1.25,
+    "matterCap": 2,
+    "_matterCapComment": "Max evaluative 'matters/mattered' uses allowed in one B1 block (the register crutch). Counts the verb/eval frames only, NOT the physical-substance noun ('states of matter', 'dark matter'). Plain-English-ONLY for now; the published-canon overuse (avg ~2.9/entry) is a parked future fix. Tighten to 1 to be stricter.",
+    "_bannedComment": "FAIL-level non-B1 phrasings. High-precision only — keep false positives near zero; the idiom long-tail is caught by the review agent, not regex.",
+    "bannedPatterns": [
+      { "re": "\\bthe stuff of\\b", "flags": "gi", "label": "the stuff of (figurative)" },
+      { "re": "\\b(?:packs?|packed|packing) in\\b", "flags": "gi", "label": "pack in (figurative)" },
+      { "re": "\\bcuts? across\\b", "flags": "gi", "label": "cuts across (figurative)" },
+      { "re": "\\bboils? down to\\b", "flags": "gi", "label": "boils down to (idiom)" },
+      { "re": "\\bunder the hood\\b", "flags": "gi", "label": "under the hood (idiom)" },
+      { "re": "\\bdouble-edged\\b", "flags": "gi", "label": "double-edged (idiom)" },
+      { "re": "\\btip of the iceberg\\b", "flags": "gi", "label": "tip of the iceberg (idiom)" }
+    ],
+    "_watchComment": "WARN-level idiom/phrasal-verb watchlist. Flags a likely-non-B1 construction for review; promote a recurring one to bannedPatterns.",
+    "watchPatterns": [
+      { "re": "\\bat the heart of\\b", "flags": "gi", "label": "at the heart of" },
+      { "re": "\\bset the stage\\b", "flags": "gi", "label": "set the stage" },
+      { "re": "\\bpave(?:s|d)? the way\\b", "flags": "gi", "label": "pave the way" },
+      { "re": "\\bcomes? into play\\b", "flags": "gi", "label": "comes into play" },
+      { "re": "\\bthe (?:lion's|lions) share\\b", "flags": "gi", "label": "the lion's share" },
+      { "re": "\\ba handful of\\b", "flags": "gi", "label": "a handful of" },
+      { "re": "\\bgive(?:s|n)? rise to\\b", "flags": "gi", "label": "give rise to" },
+      { "re": "\\bin the wake of\\b", "flags": "gi", "label": "in the wake of" }
+    ]
   }
 }

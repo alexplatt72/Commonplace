@@ -24,6 +24,21 @@
     "commerce.microcopy": "warn",
     "commerce.fictionCap": "fail",
     "commerce.fictionNote": "fail",
-    "repetition.stem": "warn"
+    "repetition.stem": "warn",
+
+    "pe.keyParity": "fail",
+    "pe.sectionEmpty": "fail",
+    "pe.markdown": "fail",
+    "pe.punctuation": "fail",
+    "pe.readability": "fail",
+    "pe.readabilityWatch": "warn",
+    "pe.sentenceMax": "fail",
+    "pe.numberFidelity": "fail",
+    "pe.sentenceMean": "warn",
+    "pe.properNounFidelity": "warn",
+    "pe.style": "warn",
+    "pe.styleWatch": "warn",
+    "pe.lengthBand": "warn",
+    "pe.matterCap": "warn"
   }
 }

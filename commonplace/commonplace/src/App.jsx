@@ -100,7 +100,29 @@ const C = {
 
 // ─── PLATFORM CONFIGURATION ───────────────────────────────────────────────────
 
+// ── Plain English (CEFR B1) layer — MASTER KILL-SWITCH ──────────────────────
+// The B1 "Plain English" layer is still in development. While this is false the
+// layer is unreachable on the site by ANY path — the depth chip is hidden and the
+// renderer coerces it to Beginner — even on entries whose JSON already carries a
+// content.plainEnglish block. Flip to true to launch it sitewide; it then appears
+// only on entries that actually have the layer (per-entry gate stays in effect).
+const PLAIN_ENGLISH_ENABLED = false;
+
+// Dev-only preview of the hidden layer. Lets you READ the in-development Plain English
+// content locally without exposing it on the live site. Gated to localhost, so even if
+// the flag below were set on production it would stay hidden for real visitors.
+//   Enable:  localStorage.setItem('cp_pe_preview', '1')   then reload
+//   Disable: localStorage.removeItem('cp_pe_preview')      then reload
+function plainEnglishVisible() {
+  if (PLAIN_ENGLISH_ENABLED) return true;
+  try {
+    const onLocalhost = ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname);
+    return onLocalhost && localStorage.getItem('cp_pe_preview') === '1';
+  } catch { return false; }
+}
+
 const DEPTH_LAYERS = [
+  { id:"plainEnglish", label:"Plain English", next:"beginner", nextLabel:"Beginner", desc:"Simple English (CEFR B1)" },
   { id:"beginner",    label:"Beginner",    next:"general",     nextLabel:"General",     desc:"Stable orientation" },
   { id:"general",     label:"General",     next:"educational", nextLabel:"Educational", desc:"Substantive understanding" },
   { id:"educational", label:"Educational", next:"advanced",    nextLabel:"Advanced",    desc:"Analytical literacy" },
@@ -379,14 +401,17 @@ function ResearchView({ items }) {
 }
 
 function ContentView({ entry, depth }) {
+  // Kill-switch insurance: never render the in-development Plain English layer
+  // while it is disabled, regardless of how `depth` got set.
+  const effDepth = (depth === "plainEnglish" && !plainEnglishVisible()) ? "beginner" : depth;
   const sections = SUBTYPE_SECTIONS[entry.subtype] || [];
-  const content = entry.content[depth];
+  const content = entry.content[effDepth];
   const signals = content?.signals || {};
-  if (depth === "educational") {
+  if (effDepth === "educational") {
     if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:15, color:C.muted, fontStyle:"italic" }}>Educational content for this entry is in development.</div>;
     return <EducationalView content={content} />;
   }
-  if (depth === "research") return <ResearchView items={entry.research} />;
+  if (effDepth === "research") return <ResearchView items={entry.research} />;
   if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:16, color:C.muted, fontStyle:"italic" }}>Full content for this depth level available in the concept build files.</div>;
   return (
     <div>
@@ -397,8 +422,10 @@ function ContentView({ entry, depth }) {
   );
 }
 
-function DepthIndicator({ depth, hasResearch, onChange }) {
-  const layers = DEPTH_LAYERS.filter(l => l.id !== "research" || hasResearch);
+function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange }) {
+  const layers = DEPTH_LAYERS.filter(l =>
+    (l.id !== "research" || hasResearch) &&
+    (l.id !== "plainEnglish" || (hasPlainEnglish && plainEnglishVisible())));
   return (
     <div style={{ display:"flex", alignItems:"center", gap:6, flexWrap:"wrap" }}>
       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.1em", textTransform:"uppercase", color:C.light, marginRight:4 }}>Depth</span>
@@ -834,7 +861,7 @@ function EntryView({ entry, accent, navigateTo }) {
             <button key={t} onClick={() => setTab(t)} style={{ padding:"12px 24px", border:"none", borderBottom: tab === t ? `2px solid ${accent}` : "2px solid transparent", background: tab === t ? C.surface : C.warm, color: tab === t ? accent : C.muted, fontFamily:"'Lora',serif", fontSize:14, fontWeight: tab === t ? 600 : 400, cursor:"pointer", transition:"all 0.15s", textTransform:"capitalize" }}>{t}</button>
           ))}
           <div style={{ marginLeft:"auto", display:"flex", alignItems:"center", paddingRight:24, opacity: tab === "reference" ? 0.3 : 1, pointerEvents: tab === "reference" ? "none" : "auto" }}>
-            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={setDepth} />
+            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} hasPlainEnglish={!!entry.content.plainEnglish} onChange={setDepth} />
           </div>
         </div>
       </div>
