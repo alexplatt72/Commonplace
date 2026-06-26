@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **116 / 1000** entries have a `content.plainEnglish` block.
+- **131 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -43,6 +43,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 8 | 15 | 33% (5 auto / 10 hand) | 14 concrete / 1 concept. Steady ~one-slip-per-entry tail (~20 fixes incl. Meiji FK 9.4 rewrite + 2 more FK). Crossed 101/1000. |
 | — | — | — | *Editorial review of the 101 → spec "Variety" guidance + STYLE WATCH (3cb5940); diversification pass on 15 entries (0a55eaf).* |
 | 9 | 15 | 20% (3 auto / 12 hand) | First batch under variety guidance: **0 formula-opener flags** (was ~half). Crutch use down (a few ×2-3, trimmed). Tail = usual micro-drift + FK (Partition longShadow 9.5 rewrite). |
+| 10 | 15 | 20% (3 auto / 12 hand) | Materials-heavy. Variety still holding (0 opener flags). Heaviest tail yet (~40 fixes): many loaded-word/qualifier restores + 4 FK sections (Analects usedAndWeaponized 10.1→7.3). Note: "CO2" trips numberFidelity ("2") → use "carbon dioxide". |
 
 ## Done (41)
 
@@ -55,9 +56,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 7**: michelangelo, charlemagne, suleimanTheMagnificent, martinLuther, maoZedong, petra, angkorWat, baghdad, tenochtitlan, protestantReformation, americanCivilWar, bible, power, theState, property
 **Round 8**: newton, wolfgangAmadeusMozart, ashoka, akbar, georgeWashington, vladimirLenin, cordoba, samarkand, greatZimbabwe, carthage, meijiRestoration, scrambleForAfrica, quran, taleOfGenji, equality
 **Round 9**: napoleon, thomasJefferson, genghisKhan, adamSmith, nalanda, cahokia, teotihuacan, thePartition, theAeneid, beowulf, epicOfGilgamesh, sugar, salt, iron, electricity
+**Round 10**: ludwigVanBeethoven, saladin, toussaintLouverture, hampi, theDivineComedy, glass, bronze, rubber, concrete, antibiotics, steel, plow, bhagavadGita, analects, porcelain
 
 ## Remaining
 
-**~884 entries.** No blockers — every entry has a Beginner layer to transform from.
+**~869 entries.** No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
