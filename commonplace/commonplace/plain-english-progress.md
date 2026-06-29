@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **169 / 1000** entries have a `content.plainEnglish` block.
+- **184 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -47,6 +47,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 11 | 12 | 42% (5 auto / 7 hand) | Balanced, 1 concept. Variety holding (0 opener flags). ~20 fixes + Telephone FK + crutch trim (×4→1). Pattern: agents drop evocative source opening sentences (Kublai) — restore them. |
 | 12 | 15 | 13% (2 auto / 13 hand) | Bio + war + concept heavy → drifts more. Variety holding (0 opener flags). 5 FK rewrites (spanishCivilWar ×3, borders ×2). Two new spec-violation patterns the reviewer caught: agents import an intro paragraph from the hook/summary (battery — removed), and reorder a concept's source paragraphs (censorship — restored Index-first). Loaded "dragged"→"brought/taken" recurred. |
 | 13 | 11 | 18% (2 auto / 9 hand) | Concept-free but thinker/bio heavy → still drifts. Variety holding (0 opener flags). 3 FK rewrites (Aquinas ×2, Machiavelli ×1). Patterns: agents drop the source's vivid opening scene (Maimonides 1185 night-at-the-desk) and add a name not in source (Babur's Rana Sanga — removed). Restored several dropped sentences (Reconquista, printingPress "broke that control"). |
+| 14 | 15 | 13% (2 auto / 13 hand) | Concept-free, concrete-leaning. **Lightest tail despite 13 flags** — nearly every flag a single loaded-word/qualifier restore (struggling→distressed, came→flooded, large→huge, not friendly→hostile), reviewer near-zero false positives. No FK rewrites; 2 sentence-splits (Magna Carta), 1 em-dash (Archimedes). Confirms: auto-% understates how cheap the tail is — repair effort is the real metric. |
 
 ## Done (41)
 
@@ -63,9 +64,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 11**: qinShiHuang, kublaiKhan, mexicanRevolution, bronzeAgeCollapse, donQuixote, telephone, loom, theMarket, bureaucracy, galileo, chichenItza, hagiaSophia
 **Round 12**: ibnKhaldun, rumi, maryWollstonecraft, wEBDuBois, frederickDouglass, harrietTubman, persepolis, lalibela, spanishCivilWar, taipingRebellion, boxerRebellion, battery, censorship, borders, caste
 **Round 13**: maimonides, thomasAquinas, machiavelli, simonBolivar, babur, borobudur, palmyra, reconquista, opiumWars, ramayana, printingPress
+**Round 14**: fire, coal, cotton, canal, athens, cairo, volcanoes, plateTectonics, zero, dna, smallpox, cyrusTheGreat, archimedes, magnaCarta, faust
 
 ## Remaining
 
-**~831 entries.** No blockers — every entry has a Beginner layer to transform from.
+**~816 entries.** No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
