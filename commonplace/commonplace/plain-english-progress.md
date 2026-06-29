@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **274 / 1000** entries have a `content.plainEnglish` block.
+- **289 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -54,6 +54,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 18 | 15 | 27% (4 auto / 11 hand) | Concept-free, concrete. Em-dashes (bananas, elNino, sahara) + 1 heavy FK (bananas presentAndFuture 10.8 — corporate/political 2nd-order content runs hottest) + theRepublic paragraph reorder (cave-first, restored 2 dropped sentences) + micro-restores (botanists, arguing, squeezed, ideology, creeping, machinery). |
 | 19 | 15 | 27% (4 auto / 11 hand) | Concept-free, concrete. **5 FK sections** (cassava/indigo/navigation/probability feedback-type + muhammed whatTheyChanged) — confirms 2nd-order "feedback/what-it-reorganized" sections pack institutional vocab and run hot. Em-dashes (lead, atomicTheory) + pillowBook rivalry restructure + restores (domesticated, parable, equivalence, astonished, masterpieces). |
 | 20 | 15 | 27% (4 auto / 11 hand) | Concept-free, concrete. **6 FK sections** (dam ×2, accounting, logistics ×3 — supply-chain/admin entries pack the most jargon of any type). Dam opening restructure (removed added framing, restored source open + dropped "electricity story belongs to hydropower") + kant ending restructure + heavy micro-restores (geopolitical, compensation, formulas, soggy, relics, fancy, catastrophe/shook/clashes, influential). |
+| 21 | 15 | 7% (1 auto / 14 hand) | Concept-free, concrete. **Hit the API session limit mid-review** — recovered via `resumeFromRunId` (gen stage cached, only the 12 failed reviews re-ran after reset; nothing lost). Tail: micro-restores + 3 FK (aviation ×2, theLibrary) + restored dropped openings (theLibrary survival chain, dreamOfTheRedChamber place phrase, amazon "Every second") + kilwa porcelain sentence moved out of physicalWorld. Op lesson: long batches can trip the limit; resume-from-cache is cheap and safe. |
 
 ## Done (41)
 
@@ -77,9 +78,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 18**: bananas, cacao, camels, microscope, angkor, ife, elNino, sahara, cell, surgery, earthquakes, jesusOfNazareth, hobbes, daoDeJing, theRepublic
 **Round 19**: cassava, indigo, lead, navigation, ayutthaya, gao, coralReefs, blackHoles, atomicTheory, probability, hivAids, muhammed, hume, upanishads, pillowBook
 **Round 20**: dam, hydropower, census, measurement, amsterdam, gandhara, immuneSystem, littleIceAge, accounting, logistics, krakatoa, ibnBattuta, kant, hebrewBibleOldTestament, greekTragedy
+**Round 21**: asphalt, aviation, anesthesia, dyes, berlin, kilwa, amazon, cyclones, theAlphabet, theLibrary, tambora, cixi, freud, billOfRights, dreamOfTheRedChamber
 
 ## Remaining
 
-**~726 entries.** No blockers — every entry has a Beginner layer to transform from.
+**~711 entries.** (Natural Force category now fully done; Natural Event nearly done.) No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
