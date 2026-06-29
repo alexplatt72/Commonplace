@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **319 / 1000** entries have a `content.plainEnglish` block.
+- **334 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -57,6 +57,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 21 | 15 | 7% (1 auto / 14 hand) | Concept-free, concrete. **Hit the API session limit mid-review** — recovered via `resumeFromRunId` (gen stage cached, only the 12 failed reviews re-ran after reset; nothing lost). Tail: micro-restores + 3 FK (aviation ×2, theLibrary) + restored dropped openings (theLibrary survival chain, dreamOfTheRedChamber place phrase, amazon "Every second") + kilwa porcelain sentence moved out of physicalWorld. Op lesson: long batches can trip the limit; resume-from-cache is cheap and safe. |
 | 22 | 15 | 7% (1 auto / 14 hand) | First batch with Non-narrative (monaLisa, guernica) + Creative Figure (hokusai, bobMarley) subtypes — they drift like other bios/artworks (loaded-word + dropped-opening). Process interrupted mid-run; resumed from cache. 4 FK + 2 splits + restored dropped openings (survey "two options", cheGuevara death-scene, artOfWar "general before a battle", mayaCalendar 52-year fact). Crossed 300/1000. |
 | 23 | 15 | 13% (2 auto / 13 hand) | Tech-heavy (computing, internet, AI, spreadsheet, searchEngine) → lots of em-dashes (spreadsheet ×3, searchEngine ×2, periodicTable ×2) + 1 split. Added-content caught: computing introduced "transistors" (not in source) + AI added an intro paragraph — both removed. Precise restores (regulate, public utility, stunning, consequential, assumptions, instinct, stuffed, guesses, volunteers/fixed). |
+| 24 | 15 | 33% (5 auto / 10 hand) | Strong auto rate. Tail: micro-restores + restored dropped openings (paper "pick up a piece", calligraphy brush-scene, gothicCathedral "walk into") + thingsFallApart was heavy (6 drops + FK: detail-list, "center that could not hold", "widely read", "seeded with", proverb illustration, "chaos tamed", "as a corrective"). Last Narrative subtype done. |
 
 ## Done (41)
 
@@ -83,9 +84,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 21**: asphalt, aviation, anesthesia, dyes, berlin, kilwa, amazon, cyclones, theAlphabet, theLibrary, tambora, cixi, freud, billOfRights, dreamOfTheRedChamber
 **Round 22**: maps, banknote, ceramics, gPS, madagascar, java, survey, mayaCalendar, monaLisa, guernica, hokusai, bobMarley, cheGuevara, originOfSpecies, artOfWar
 **Round 23**: computing, internet, bison, artificialIntelligence, bukhara, forbiddenCity, spreadsheet, searchEngine, parthenon, periodicTable, charlesDickens, fridaKahlo, hoChiMinh, newtonsPrincipia, thousandAndOneNights
+**Round 24**: oil, paper, plastic, potatoes, aksum, alhambra, gothicCathedral, calligraphy, columbianExchange, moonLanding, dengXiaoping, alanTuring, federalistPapers, claudeMonet, thingsFallApart
 
 ## Remaining
 
-**~681 entries.** (Natural Force fully done; Natural Event nearly done. Now drawing from Non-narrative + Creative Figure + Conceptual Foundation as concrete pool shrinks.) No blockers — every entry has a Beginner layer to transform from.
+**~666 entries.** (Done: all Natural Force, all Narrative. Concrete pool shrinking — now blending in Threshold-Moment events, Non-narrative, Creative Figure, Movement; abstract categories (Period/Thinker/System/Process/concepts) still the bulk.) No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
