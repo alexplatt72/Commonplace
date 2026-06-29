@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **214 / 1000** entries have a `content.plainEnglish` block.
+- **229 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -50,6 +50,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 14 | 15 | 13% (2 auto / 13 hand) | Concept-free, concrete-leaning. **Lightest tail despite 13 flags** — nearly every flag a single loaded-word/qualifier restore (struggling→distressed, came→flooded, large→huge, not friendly→hostile), reviewer near-zero false positives. No FK rewrites; 2 sentence-splits (Magna Carta), 1 em-dash (Archimedes). Confirms: auto-% understates how cheap the tail is — repair effort is the real metric. |
 | 15 | 15 | 7% (1 auto / 14 hand) | Concept-free, concrete. Tail still mostly micro-restores + 2 FK (brick, bridge), cement CO2 recurrence (→carbon dioxide), 1 sentence-split (Damascus/Paul), 1 paragraph reorder (Einstein contestedInheritance). Crossed 199/1000 (~20%). |
 | 16 | 15 | 13% (2 auto / 13 hand) | Concept-free, concrete. Micro-restores + 2 FK (gear, statistics) + **Clay carried em-dashes into all 5 sections** (de-em-dashed) + euclid double sentence-split + monsoon added-intro removed. New note: accent-stripping a name (François Viète→"Francois Viet") is a name-fidelity fail — restore the diacritics. |
+| 17 | 15 | 27% (4 auto / 11 hand) | Best concrete auto-rate yet. Micro-restores + **Banking carried em-dashes into 5 sections** (like Clay) + 1 FK (banking presentAndFuture) + kyoto whoClaimsIt split + famine definition restored. Pattern confirmed: em-dash-heavy beginner style propagates through every section — scan the whole entry, not just flagged ones. |
 
 ## Done (41)
 
@@ -69,9 +70,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 14**: fire, coal, cotton, canal, athens, cairo, volcanoes, plateTectonics, zero, dna, smallpox, cyrusTheGreat, archimedes, magnaCarta, faust
 **Round 15**: brick, cement, copper, bridge, florence, damascus, climateChange, drought, calculus, language, cholera, alexanderTheGreat, einstein, declarationOfIndependence, journeyToTheWest
 **Round 16**: irrigation, fertilizer, clay, gear, beijing, london, monsoon, hurricanes, algebra, statistics, tuberculosis, dariusTheGreat, euclid, usConstitution, mahabharata
+**Round 17**: maize, cattle, horses, banking, kyoto, cusco, floods, iceAge, germTheory, thermodynamics, famine, hernanCortes, hippocrates, rigveda, shahnameh
 
 ## Remaining
 
-**~786 entries.** No blockers — every entry has a Beginner layer to transform from.
+**~771 entries.** No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
