@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **453 / 1000** entries have a `content.plainEnglish` block.
+- **468 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -66,6 +66,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 30 | 15 | 27% (4 auto / 11 hand) | **Fully abstract batch (Process/Thinker/System/Movement/concept) — yet ZERO validator fails.** All 11 hand-repairs were micro-restores: empire restored its named opening scene (Gallic farmer, 50 BCE); sejong "1446"→"1443" (date not in source = number fail); + anarchy, accusations, "will of", "music or pictures", brutal/levies, invent, decrees/commission. Agents now reliably avoid FK/em-dash even on abstract topics. |
 | 31 | 15 | 20% (3 auto / 12 hand) | Abstract (Process/Thinker/System/Movement/Text/concept). Tail: 2 FK (koreanWar mechanics+causation) + 1 split (coffeehouse) + micro-restores + 2 de-idiom (arthashastra "not invented yesterday", orientalism restored "A painting shows…"). Restores: carried-off, "greatest jobs", "and their animals", trick, "impossible journey", drag, efficient, cannabis federal-clause. |
 | 32 | 15 | 20% (3 auto / 12 hand) | Abstract. **Factory carried em-dashes into all 5 sections** (de-em-dashed, like clay/banking) + court em-dash + 1 FK (monroeDoctrine usedAndWeaponized) + manhattan B2 inverted conditional → simplified + soulsOfBlackFolk metaphor de-figured. Restores: magic, partly, domination, "French army", "dangerous book"/"how the world worked", "a new twist"/hunger, "the key move", extracting. |
+| 33 | 15 | 33% (5 auto / 10 hand) | First Period entries (abbasidCaliphate, ancientEgypt) — handled well. Tail: 2 FK (indianIndependence significance, mine whoOrganizedIt) + 2 reorders (constitution Philadelphia-first, indiraGandhi cotton-sari opening) + abbasid dropped date (830 CE) + micro-restores (for free, radical, "related peoples", boy, glowing, fake, threatened, binding). |
 
 ## Done (41)
 
@@ -101,9 +102,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 30**: culturalRevolution, greatLeapForward, adaLovelace, averroes, army, bollywood, jawaharlalNehru, sejongTheGreat, confucianism, daoism, cozumel, djenne, empire, evolution, napoleonicCode
 **Round 31**: agriculturalRevolution, koreanWar, alBiruni, alGhazali, caravanserai, coffeehouse, haileSelassie, gamalAbdelNasser, bhaktiMovement, sufism, arthashastra, avesta, orientalism, globalization, federalism
 **Round 32**: manhattanProject, greenRevolution, cicero, hegel, court, factory, ranjitSingh, samoriTure, jainism, scholasticism, talmud, monroeDoctrine, manifesto, soulsOfBlackFolk, ideology
+**Round 33**: abbasidCaliphate, ancientEgypt, indianIndependenceMovement, mauMauUprising, johnRawls, laozi, mine, museum, martinLutherKing, indiraGandhi, knightsTemplar, samurai, constitution, contract, skyscraper
 
 ## Remaining
 
-**~547 entries.** (Largest remaining pool is Period (101) — starting to draw from it round 33.) (All concrete pools exhausted; batches now fully abstract — Period/Thinker/System/Process/Movement/Site/Creative Figure/concepts/texts.) (All Threshold-Moment events done; concrete pool exhausted — batches now drawn chiefly from Period/Thinker/System/Process/Movement/Site/concepts. Expect heavier FK tails.) (Done: all Natural Force, all Narrative. Concrete pool shrinking — now blending in Threshold-Moment events, Non-narrative, Creative Figure, Movement; abstract categories (Period/Thinker/System/Process/concepts) still the bulk.) No blockers — every entry has a Beginner layer to transform from.
+**~532 entries.** (Largest remaining pool is Period (101) — starting to draw from it round 33.) (All concrete pools exhausted; batches now fully abstract — Period/Thinker/System/Process/Movement/Site/Creative Figure/concepts/texts.) (All Threshold-Moment events done; concrete pool exhausted — batches now drawn chiefly from Period/Thinker/System/Process/Movement/Site/concepts. Expect heavier FK tails.) (Done: all Natural Force, all Narrative. Concrete pool shrinking — now blending in Threshold-Moment events, Non-narrative, Creative Figure, Movement; abstract categories (Period/Thinker/System/Process/concepts) still the bulk.) No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
