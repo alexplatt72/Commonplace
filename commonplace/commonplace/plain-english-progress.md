@@ -5,7 +5,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 
 ## Status
 
-- **379 / 1000** entries have a `content.plainEnglish` block.
+- **394 / 1000** entries have a `content.plainEnglish` block.
 - **Hidden on the live site** behind `PLAIN_ENGLISH_ENABLED = false` (src/App.jsx).
 - Read locally: on localhost, `localStorage.setItem('cp_pe_preview','1')` then reload.
 - Corpus validates 1000/1000; published canon and all other layers untouched.
@@ -61,6 +61,7 @@ for the generation/validation rules; this file tracks **what is done and what is
 | 25 | 15 | 20% (3 auto / 12 hand) | First Movement entry (jazz). Tail: micro-restores + 3 splits + 1 FK (athenianDemocracy) + 1 em-dash (nitrogen) + added-content caught (Berlin "No shots were fired", Hiroshima "high"/"from the start") + dropped opening (jazz New Orleans scene). Note: generated text can carry curly apostrophes (al-Khwarizmi) — match them, not straight ones. |
 | 26 | 15 | 20% (3 auto / 12 hand) | Threshold-event + bio + Movement mix. Tail: micro-restores + 3 FK (chernobyl/sept11 longShadow, database presentAndFuture) + amritsar reorder/dedupe (removed a duplicated armed-Sikhs sentence). Restored qualifiers: Eventually, significant, empowered, hatred, declared, stationed, gamble, thousands, attend, once, "a thousand years ago". |
 | 27 | 15 | 27% (4 auto / 11 hand) | **All 11 flags were pure micro-restores** — zero validator fails (no FK/em-dash/splits). emilyDickinson had 6 small biographical drops restored; getulioVargas needed a paragraph reorder (death-scene first). Loaded-word restores: feud/blood, treasure, cult, collapsed, twangs/pleads, minor, "By most accounts", "rec room", "tells it four times". |
+| 28 | 15 | 27% (4 auto / 11 hand) | **Hit session limit mid-gen** (only Mehmed generated); recovered via resumeFromRunId after the 11pm reset. Tail: micro-restores + 4 FK (rabbinicJudaism ×3 incl. presentAndFuture 11.4, romanticism) + 2 paragraph reorders (indus thePlace drain-hook-first, salvador death-scene opening) + 1 split (photography). |
 
 ## Done (41)
 
@@ -91,9 +92,10 @@ for the generation/validation rules; this file tracks **what is done and what is
 **Round 25**: nitrogen, nuclearPower, pigs, passports, alAndalus, athenianDemocracy, cinema, cavePainting, fallOfTheBerlinWall, hiroshimaNagasaki, fidelCastro, alKhwarizmi, hadith, danteAlighieri, jazz
 **Round 26**: chernobyl, september11Attacks, vascoDaGamasVoyageToIndia, mayaCollapse, beninBronzes, animation, amritsar, byzantineEmpire, charlieChaplin, beatles, blues, impressionism, database, evaPeron, alFarabi
 **Round 27**: africanIndependence, iranianRevolution, louisianaPurchase, sunniShiaSplit, ayurveda, asanteGoldenStool, caral, chacoCanyon, emilyDickinson, akiraKurosawa, hipHop, rockAndRoll, form, mathematicalNotation, getulioVargas
+**Round 28**: discoveryOfDnasStructure, foundingOfIsrael, mehmedIiAndTheFallOfConstantinople, discoveryOfMiddleEasternOil, photography, opera, amazonianEarthworks, indusValleyCivilization, chinuaAchebe, georgeOrwell, romanticism, surrealism, mayaScript, rabbinicJudaism, salvadorAllende
 
 ## Remaining
 
-**~621 entries.** (Done: all Natural Force, all Narrative. Concrete pool shrinking — now blending in Threshold-Moment events, Non-narrative, Creative Figure, Movement; abstract categories (Period/Thinker/System/Process/concepts) still the bulk.) No blockers — every entry has a Beginner layer to transform from.
+**~606 entries.** (Threshold-Moment events nearly exhausted (chileanCoup left); concrete pool mostly gone — now drawing chiefly from Period/Thinker/System/Process/Movement/concepts.) (Done: all Natural Force, all Narrative. Concrete pool shrinking — now blending in Threshold-Moment events, Non-narrative, Creative Figure, Movement; abstract categories (Period/Thinker/System/Process/concepts) still the bulk.) No blockers — every entry has a Beginner layer to transform from.
 Next: balanced ~15-entry batches. To list entries that still need it:
 `node -e 'const fs=require("fs");for(const f of fs.readdirSync("public/entries")){if(!f.endsWith(".json"))continue;try{const e=JSON.parse(fs.readFileSync("public/entries/"+f));if(e.content&&!e.content.plainEnglish&&e.content.beginner)process.stdout.write(e.id+" ")}catch{}}'`
