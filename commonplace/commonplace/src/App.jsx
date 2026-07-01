@@ -1155,7 +1155,7 @@ const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KE
 
 const READING_LEVELS = [
   { id:"plainEnglish", label:"Plain English", color:"#2b6c6f", selectable:true, tag:"Beta",
-    blurb:"The simplest reading, in easy English (about CEFR B1 level). Made for English-language learners (ESL), and useful for anyone who wants short, clear sentences. Same facts as Essentials, just simpler words." },
+    blurb:"The simplest reading, in easy English (about CEFR B1 level). Made for English-language learners (ESL), and useful for anyone who wants short, clear sentences. It gives the same facts as Essentials, in simpler words." },
   { id:"beginner", label:"Essentials", color:"#2d5a3d", selectable:true,
     blurb:"The same essential story in plain, direct language. A gentle on-ramp, or a reinforcing read before General." },
   { id:"general", label:"General", color:"#1e3a5f", selectable:true, tag:"Recommended start",
@@ -1570,7 +1570,11 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         <ReadingLevelSelector />
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
-          New: <strong style={{ fontWeight:600, color:"#2b6c6f" }}>Plain English</strong> <span style={{ color:"#c8a200", fontWeight:700 }}>(beta)</span> is a simpler reading for English learners (ESL). Hover any level to see what it offers — tap to set where your entries open.
+          New: <strong style={{ fontWeight:600, color:"#2b6c6f" }}>Plain English</strong> <span style={{ color:"#c8a200", fontWeight:700 }}>(beta)</span> is a simpler reading for English learners (ESL).
+        </span>
+        <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
+          color:C.light, fontStyle:"italic" }}>
+          Hover over any level to see what it offers — tap to set where your entries open.
         </span>
       </div>
 
