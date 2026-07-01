@@ -125,7 +125,7 @@ function plainEnglishVisible() {
 // (content.beginner / .educational / .advanced …) and must NOT change — it is wired
 // to 1000 entry JSON files, the validator, and the generation rules.
 const DEPTH_LAYERS = [
-  { id:"plainEnglish", label:"Plain English", next:"beginner", nextLabel:"Essentials", desc:"Simple English (CEFR B1)" },
+  { id:"plainEnglish", label:"Plain English", next:"beginner", nextLabel:"Essentials", desc:"Easy English (CEFR B1)" },
   { id:"beginner",    label:"Essentials",  next:"general",     nextLabel:"General",     desc:"First serious explanation" },
   { id:"general",     label:"General",     next:"educational", nextLabel:"Study",       desc:"Standard adult overview" },
   { id:"educational", label:"Study",       next:"advanced",    nextLabel:"Scholarly",   desc:"Classroom-ready depth" },
@@ -1155,7 +1155,7 @@ const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KE
 
 const READING_LEVELS = [
   { id:"plainEnglish", label:"Plain English", color:"#2b6c6f", selectable:true, tag:"Beta",
-    blurb:"The simplest reading, in easy English (about CEFR B1 level). Made for English-language learners (ESL), and useful for anyone who wants short, clear sentences. It gives the same facts as Essentials, in simpler words." },
+    blurb:"The easiest reading of an entry, in clear, everyday English (about CEFR B1 level). Built for English-language learners (ESL), and for anyone who wants short sentences and plain words. Same facts as Essentials, made easy to read." },
   { id:"beginner", label:"Essentials", color:"#2d5a3d", selectable:true,
     blurb:"The same essential story in plain, direct language. A gentle on-ramp, or a reinforcing read before General." },
   { id:"general", label:"General", color:"#1e3a5f", selectable:true, tag:"Recommended start",
@@ -1570,7 +1570,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         <ReadingLevelSelector />
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
-          New: <strong style={{ fontWeight:600, color:"#2b6c6f" }}>Plain English</strong> <span style={{ color:"#c8a200", fontWeight:700 }}>(beta)</span> is a simpler reading for English learners (ESL).
+          New: <strong style={{ fontWeight:600, color:"#2b6c6f" }}>Plain English</strong> <span style={{ color:"#c8a200", fontWeight:700 }}>(beta)</span> is an easy-reading version for English learners (ESL).
         </span>
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
