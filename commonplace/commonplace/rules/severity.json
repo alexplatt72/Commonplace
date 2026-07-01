@@ -1,11 +1,12 @@
 {
-  "_comment": "Staged severity for every modular check. fail = blocks (counts as a hard fail + blocks commit via hook). warn = review only. off = skip. Flip a check from warn->fail as its remediation phase finishes, so turning the gate on does not block every commit before the backlog is cleared.",
+  "_comment": "Staged severity for every modular check. fail = blocks (counts as a hard fail + blocks commit via hook). warn = review only. off = skip. Flip a check from warn->fail as its remediation phase finishes, so turning the gate on does not block every commit before the backlog is cleared. NOTE: the pe.* (Plain English) checks are NOT on this staging ramp — their fail/warn split is final by design (see _plainEnglish_status below), because the layer is already complete at 0 fails.",
   "_staging_plan": {
     "now (Phase A/B — integrity enforced)": ["ref.duplicateTitle=fail", "ref.noEssential=fail", "rabbit.blankEntryId=fail", "rabbit.dupEntryId=fail"],
     "after taxonomy enums approved (Phase C)": ["taxonomy.pcType -> fail", "taxonomy.theme -> fail"],
     "after comparative-intro pass (Phase D)": ["cm.summaryRequired -> fail"],
     "after popular-culture rewrite (Phase E)": ["pc.scorecard -> fail"]
   },
+  "_plainEnglish_status": "COMPLETE — all 1000 entries carry content.plainEnglish, corpus validates at 0 fails (as of 2026-06-30). The pe.* severities are FINAL, not staging artifacts awaiting promotion. The 7 fails ARE the transformation contract: pe.keyParity (structure mirrors Beginner), pe.sectionEmpty, pe.markdown (plain prose only), pe.punctuation (no em dash / semicolon), pe.readability (FK <= 8.0 hard), pe.sentenceMax (<= 28 words), pe.numberFidelity (every digit traces to Beginner). The 7 warns are heuristics or soft targets that MUST stay warn to avoid false-positive blocks: pe.readabilityWatch (FK <= 7 target, below the hard fail), pe.sentenceMean (<= 16 mean target), pe.properNounFidelity (name-not-in-source heuristic; false-positives on JSON/month names/etc.), pe.style + pe.styleWatch (idiom regex), pe.lengthBand (legit variance), pe.matterCap (register crutch). Spec table: PLAIN_ENGLISH_SPEC.md sec.6.",
   "severity": {
     "ref.duplicateTitle": "fail",
     "ref.likelyDuplicate": "warn",

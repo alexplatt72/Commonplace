@@ -58,7 +58,7 @@
   },
 
   "plainEnglish": {
-    "_comment": "CEFR B1 'Plain English' layer gates (validators/plainEnglish.cjs). The layer is generated FROM content.beginner by transformation. Numeric thresholds are the drift fence; tune them here, not in code. Locked after the pilot — see PLAIN_ENGLISH_SPEC.md. Readability is two-tier: fkWarn is the B1 target ceiling (warn), fkMax is the hard fail (clearly above B1). Entries with unavoidable polysyllabic domain terms (electricity, photosynthesis) ride higher on FK, so the hard fail sits at 8.0. Lengths are word counts. lengthBand = total B1 words allowed as a fraction of Beginner words.",
+    "_comment": "CEFR B1 'Plain English' layer gates (validators/plainEnglish.cjs). The layer is generated FROM content.beginner by transformation. Numeric thresholds are the drift fence; tune them here, not in code. LOCKED and corpus-validated: the layer is COMPLETE — all 1000 entries carry a content.plainEnglish block (as of 2026-06-30) and every threshold below held across the full corpus at 0 fails. Change them only via PLAIN_ENGLISH_SPEC.md (§6, the source of truth), never in the prompt or code. Readability is two-tier: fkWarn is the B1 target ceiling (warn), fkMax is the hard fail (clearly above B1). Entries with unavoidable polysyllabic domain terms (electricity, photosynthesis) ride higher on FK, so the hard fail sits at 8.0. Lengths are word counts. lengthBand = total B1 words allowed as a fraction of Beginner words.",
     "fkWarn": 7.0,
     "fkMax": 8.0,
     "sentenceMaxWords": 28,
@@ -67,7 +67,7 @@
     "lengthBandHigh": 1.25,
     "matterCap": 2,
     "_matterCapComment": "Max evaluative 'matters/mattered' uses allowed in one B1 block (the register crutch). Counts the verb/eval frames only, NOT the physical-substance noun ('states of matter', 'dark matter'). Plain-English-ONLY for now; the published-canon overuse (avg ~2.9/entry) is a parked future fix. Tighten to 1 to be stricter.",
-    "_bannedComment": "FAIL-level non-B1 phrasings. High-precision only — keep false positives near zero; the idiom long-tail is caught by the review agent, not regex.",
+    "_bannedComment": "High-confidence non-B1 idioms/figurative phrasings. Emitted as check pe.style, which runs at severity 'warn' (see severity.json) BY DESIGN, not by staging: even a high-precision idiom regex can false-positive in prose, so nothing here auto-blocks a commit. These are the confident subset worth surfacing on sight; the softer watchPatterns emit pe.styleWatch, and the idiom long-tail is caught by the adversarial review agent + pe_process STYLE WATCH, not by regex. Keep false positives near zero; promote a recurring watchPattern up to here.",
     "bannedPatterns": [
       { "re": "\\bthe stuff of\\b", "flags": "gi", "label": "the stuff of (figurative)" },
       { "re": "\\b(?:packs?|packed|packing) in\\b", "flags": "gi", "label": "pack in (figurative)" },
