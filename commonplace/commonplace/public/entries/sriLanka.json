@@ -347,9 +347,10 @@
   "degree": 12,
   "added": "2026-06-18",
   "geo": {
-    "kind": "point",
-    "lat": 7.5555,
-    "lng": 80.7138,
-    "label": "Sri Lanka"
+    "kind": "country",
+    "codes": [
+      "LK"
+    ],
+    "label": "Modern Sri Lanka"
   }
 }
