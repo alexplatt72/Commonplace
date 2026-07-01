@@ -129,7 +129,7 @@ Thresholds live in `rules/style.json` → `plainEnglish`; severity in `rules/sev
 
 | Check | Severity | What it catches |
 |---|---|---|
-| `pe.keyParity` | **fail** | sections don't mirror Beginner exactly (structure drift) |
+| `pe.keyParity` | **fail** | sections don't mirror Beginner exactly — same keys **and same order** (structure drift) |
 | `pe.sectionEmpty` | **fail** | a section is empty |
 | `pe.markdown` | **fail** | `[[ ]]`, `**`, `#`, list markers, backticks (format drift) |
 | `pe.punctuation` | **fail** | em dash or semicolon present |
