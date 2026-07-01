@@ -371,7 +371,7 @@ function LocatorMap({ geo, accent }) {
   let padX, padY;
   if (isCountry) { padX = Math.max((maxx - minx) * 0.6, 22); padY = Math.max((maxy - miny) * 0.6, 15); }
   else if (isRoute) { padX = Math.max((maxx - minx) * 0.35, 45); padY = Math.max((maxy - miny) * 0.45, 30); }
-  else if (isArea) { padX = (maxx - minx) * 0.4; padY = (maxy - miny) * 0.4; }
+  else if (isArea) { padX = Math.max((maxx - minx) * 0.5, 110); padY = Math.max((maxy - miny) * 0.5, 70); }
   else { padX = 120; padY = 82; }
   let vx = minx - padX, vy = miny - padY, vw = (maxx - minx) + 2 * padX, vh = (maxy - miny) + 2 * padY;
   if (vw / vh > ASPECT) { const n = vw / ASPECT; vy -= (n - vh) / 2; vh = n; }
