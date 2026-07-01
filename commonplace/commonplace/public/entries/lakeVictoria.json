@@ -323,9 +323,11 @@
   "degree": 10,
   "added": "2026-06-14",
   "geo": {
-    "kind": "point",
-    "lat": -1.2659,
-    "lng": 32.8685,
-    "label": "Lake Victoria"
+    "kind": "area",
+    "lat": -1,
+    "lng": 33,
+    "radiusKm": 220,
+    "label": "Lake Victoria",
+    "approx": true
   }
 }

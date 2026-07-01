@@ -313,9 +313,11 @@
   "degree": 13,
   "added": "2026-06-18",
   "geo": {
-    "kind": "point",
-    "lat": -6.7115,
-    "lng": 110.6337,
-    "label": "Java"
+    "kind": "area",
+    "lat": -7.5,
+    "lng": 110,
+    "radiusKm": 480,
+    "label": "Java",
+    "approx": true
   }
 }

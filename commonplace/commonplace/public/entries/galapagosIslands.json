@@ -334,9 +334,11 @@
   "degree": 11,
   "added": "2026-06-18",
   "geo": {
-    "kind": "point",
-    "lat": -0.6288,
-    "lng": -90.3639,
-    "label": "The Galápagos Islands"
+    "kind": "area",
+    "lat": -0.8,
+    "lng": -91,
+    "radiusKm": 180,
+    "label": "The Galápagos Islands",
+    "approx": true
   }
 }
