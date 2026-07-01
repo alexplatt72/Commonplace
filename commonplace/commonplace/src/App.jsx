@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Fuse from "fuse.js";
-import { WORLD_PATHS } from "./worldMap";
+import { WORLD_PATHS, COUNTRIES } from "./worldMap";
 
 // ─── GLOBAL STATE ─────────────────────────────────────────────────────────────
 let MANIFEST = [];      // loaded once from /entries/manifest.json
@@ -336,21 +336,43 @@ function SectionBlock({ label, content, signal, accent }) {
   );
 }
 
-// Static locator map — inline SVG world land (Natural Earth 110m), equirectangular.
-// No map library, tiles, or API key. Plots a point ({lat,lng}) or a route
-// ({kind:'route', points:[{lat,lng}...]}) on a cropped regional view.
+// Static locator map — inline SVG world (Natural Earth 110m), equirectangular.
+// No map library, tiles, or API key. Renders one of:
+//   point   {kind:'point', lat, lng}                 — a marker on a site
+//   route   {kind:'route', points:[{lat,lng}...]}    — a dashed path
+//   country {kind:'country', codes:['ZW',...]}        — shades modern country/countries
+//   area    {kind:'area', lat, lng, radiusKm}         — soft "approximate region" glow
 function LocatorMap({ geo, accent }) {
-  if (!geo || (geo.kind !== "route" && (typeof geo.lat !== "number" || typeof geo.lng !== "number"))) return null;
+  if (!geo) return null;
   const W = 1000, H = 500, ac = accent || C.navy;
   const px = (lng) => (lng + 180) / 360 * W;
   const py = (lat) => (90 - lat) / 180 * H;
   const isRoute = geo.kind === "route" && Array.isArray(geo.points) && geo.points.length > 1;
-  const pts = isRoute ? geo.points.map(p => ({ x: px(p.lng), y: py(p.lat) })) : [{ x: px(geo.lng), y: py(geo.lat) }];
-  let minx = Math.min(...pts.map(p => p.x)), maxx = Math.max(...pts.map(p => p.x));
-  let miny = Math.min(...pts.map(p => p.y)), maxy = Math.max(...pts.map(p => p.y));
+  const codes = (geo.kind === "country" && Array.isArray(geo.codes)) ? geo.codes.filter(c => COUNTRIES[c]) : [];
+  const isCountry = codes.length > 0;
+  const isArea = geo.kind === "area" && typeof geo.lat === "number" && typeof geo.lng === "number";
+  const isPoint = !isRoute && !isCountry && !isArea && typeof geo.lat === "number" && typeof geo.lng === "number";
+  if (!isRoute && !isCountry && !isArea && !isPoint) return null;
+
+  let minx, miny, maxx, maxy, pts = [];
+  if (isCountry) {
+    const b = codes.map(c => COUNTRIES[c].b);
+    minx = Math.min(...b.map(x => x[0])); miny = Math.min(...b.map(x => x[1]));
+    maxx = Math.max(...b.map(x => x[2])); maxy = Math.max(...b.map(x => x[3]));
+  } else if (isArea) {
+    const cx = px(geo.lng), cy = py(geo.lat), rr = (geo.radiusKm || 500) / 111 * (W / 360);
+    minx = cx - rr; maxx = cx + rr; miny = cy - rr; maxy = cy + rr; pts = [{ x: cx, y: cy, rr }];
+  } else {
+    pts = isRoute ? geo.points.map(p => ({ x: px(p.lng), y: py(p.lat) })) : [{ x: px(geo.lng), y: py(geo.lat) }];
+    minx = Math.min(...pts.map(p => p.x)); maxx = Math.max(...pts.map(p => p.x));
+    miny = Math.min(...pts.map(p => p.y)); maxy = Math.max(...pts.map(p => p.y));
+  }
   const ASPECT = 1.85;
-  const padX = isRoute ? Math.max((maxx - minx) * 0.35, 45) : 120;
-  const padY = isRoute ? Math.max((maxy - miny) * 0.45, 30) : 82;
+  let padX, padY;
+  if (isCountry) { padX = Math.max((maxx - minx) * 0.6, 22); padY = Math.max((maxy - miny) * 0.6, 15); }
+  else if (isRoute) { padX = Math.max((maxx - minx) * 0.35, 45); padY = Math.max((maxy - miny) * 0.45, 30); }
+  else if (isArea) { padX = (maxx - minx) * 0.4; padY = (maxy - miny) * 0.4; }
+  else { padX = 120; padY = 82; }
   let vx = minx - padX, vy = miny - padY, vw = (maxx - minx) + 2 * padX, vh = (maxy - miny) + 2 * padY;
   if (vw / vh > ASPECT) { const n = vw / ASPECT; vy -= (n - vh) / 2; vh = n; }
   else { const n = vh * ASPECT; vx -= (n - vw) / 2; vw = n; }
@@ -367,8 +389,10 @@ function LocatorMap({ geo, accent }) {
         <svg viewBox={`${vx} ${vy} ${vw} ${vh}`} width="100%" height="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label={"Map showing " + (geo.label || "location")}>
           <rect x="0" y="0" width={W} height={H} fill="#e9eef2" />
           {WORLD_PATHS.map((d,i) => <path key={i} d={d} fill="#e6ddc9" stroke="#c9bd9f" strokeWidth={sw} />)}
+          {isCountry && codes.flatMap(c => COUNTRIES[c].p).map((d,i) => <path key={"c"+i} d={d} fill={ac} fillOpacity="0.5" stroke={ac} strokeWidth={sw*2.2} strokeLinejoin="round" />)}
+          {isArea && <circle cx={pts[0].x} cy={pts[0].y} r={pts[0].rr} fill={ac} fillOpacity="0.13" stroke={ac} strokeWidth={sw*1.6} strokeDasharray={`${r} ${r*0.8}`} />}
           {isRoute && <polyline points={pts.map(p => p.x + "," + p.y).join(" ")} fill="none" stroke={ac} strokeWidth={r*0.6} strokeLinejoin="round" strokeLinecap="round" strokeDasharray={`${r*1.5} ${r*1.1}`} opacity="0.92" />}
-          {pts.map((p,i) => {
+          {(isPoint || isRoute) && pts.map((p,i) => {
             const end = !isRoute || i === 0 || i === pts.length - 1;
             const rr = end ? r : r * 0.55;
             return (
