@@ -335,5 +335,36 @@
     "North Africa & Middle East"
   ],
   "added": "2026-06-14",
-  "degree": 19
+  "degree": 19,
+  "geo": {
+    "kind": "route",
+    "label": "The Gold-Salt Trade",
+    "approx": true,
+    "points": [
+      {
+        "lat": 34.7,
+        "lng": 10.8
+      },
+      {
+        "lat": 27.9,
+        "lng": -0.3
+      },
+      {
+        "lat": 20.9,
+        "lng": -8
+      },
+      {
+        "lat": 16.8,
+        "lng": -3
+      },
+      {
+        "lat": 13.4,
+        "lng": -6.3
+      },
+      {
+        "lat": 12,
+        "lng": -8.6
+      }
+    ]
+  }
 }

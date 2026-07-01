@@ -323,5 +323,13 @@
     "Southeast Asia"
   ],
   "degree": 9,
-  "added": "2026-06-18"
+  "added": "2026-06-18",
+  "geo": {
+    "kind": "area",
+    "lat": 1.5,
+    "lng": 110,
+    "radiusKm": 1700,
+    "label": "The Malay World",
+    "approx": true
+  }
 }

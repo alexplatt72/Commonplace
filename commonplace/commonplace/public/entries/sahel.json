@@ -338,5 +338,13 @@
     "North Africa & Middle East"
   ],
   "added": "2026-06-14",
-  "degree": 18
+  "degree": 18,
+  "geo": {
+    "kind": "area",
+    "lat": 15,
+    "lng": 3,
+    "radiusKm": 1500,
+    "label": "The Sahel",
+    "approx": true
+  }
 }

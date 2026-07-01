@@ -359,5 +359,13 @@
     "North Africa & Middle East"
   ],
   "degree": 24,
-  "added": "2026-06-13"
+  "added": "2026-06-13",
+  "geo": {
+    "kind": "area",
+    "lat": -6.5,
+    "lng": 39.4,
+    "radiusKm": 950,
+    "label": "The Swahili Coast",
+    "approx": true
+  }
 }

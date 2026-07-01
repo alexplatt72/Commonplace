@@ -338,5 +338,13 @@
     "Global / Transregional"
   ],
   "degree": 10,
-  "added": "2026-06-18"
+  "added": "2026-06-18",
+  "geo": {
+    "kind": "area",
+    "lat": 48,
+    "lng": 68,
+    "radiusKm": 2100,
+    "label": "The Eurasian Steppe",
+    "approx": true
+  }
 }

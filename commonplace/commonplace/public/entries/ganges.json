@@ -337,5 +337,40 @@
     "South Asia"
   ],
   "degree": 11,
-  "added": "2026-06-18"
+  "added": "2026-06-18",
+  "geo": {
+    "kind": "route",
+    "label": "The Ganges",
+    "approx": true,
+    "points": [
+      {
+        "lat": 30.9,
+        "lng": 79.1
+      },
+      {
+        "lat": 29.9,
+        "lng": 78.2
+      },
+      {
+        "lat": 27.4,
+        "lng": 80.3
+      },
+      {
+        "lat": 25.4,
+        "lng": 81.9
+      },
+      {
+        "lat": 25.3,
+        "lng": 83
+      },
+      {
+        "lat": 24,
+        "lng": 88
+      },
+      {
+        "lat": 22.5,
+        "lng": 90.5
+      }
+    ]
+  }
 }

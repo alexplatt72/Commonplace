@@ -339,5 +339,40 @@
     "Sub-Saharan Africa"
   ],
   "degree": 13,
-  "added": "2026-06-14"
+  "added": "2026-06-14",
+  "geo": {
+    "kind": "route",
+    "label": "The Congo River",
+    "approx": true,
+    "points": [
+      {
+        "lat": -11,
+        "lng": 27
+      },
+      {
+        "lat": -6,
+        "lng": 26.5
+      },
+      {
+        "lat": 0.5,
+        "lng": 25.2
+      },
+      {
+        "lat": 2,
+        "lng": 21.5
+      },
+      {
+        "lat": -1,
+        "lng": 17.5
+      },
+      {
+        "lat": -4.3,
+        "lng": 15.3
+      },
+      {
+        "lat": -6,
+        "lng": 12.4
+      }
+    ]
+  }
 }

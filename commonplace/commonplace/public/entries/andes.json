@@ -341,5 +341,48 @@
     "Latin America & Caribbean"
   ],
   "added": "2026-06-15",
-  "degree": 9
+  "degree": 9,
+  "geo": {
+    "kind": "route",
+    "label": "The Andes",
+    "approx": true,
+    "points": [
+      {
+        "lat": 10,
+        "lng": -72
+      },
+      {
+        "lat": 4,
+        "lng": -76
+      },
+      {
+        "lat": -5,
+        "lng": -78.5
+      },
+      {
+        "lat": -13.2,
+        "lng": -72.5
+      },
+      {
+        "lat": -16.5,
+        "lng": -68.1
+      },
+      {
+        "lat": -24,
+        "lng": -67
+      },
+      {
+        "lat": -33,
+        "lng": -70
+      },
+      {
+        "lat": -41,
+        "lng": -72
+      },
+      {
+        "lat": -50,
+        "lng": -73.2
+      }
+    ]
+  }
 }

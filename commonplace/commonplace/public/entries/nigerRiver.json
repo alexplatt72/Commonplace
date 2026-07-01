@@ -331,5 +331,40 @@
     "Sub-Saharan Africa"
   ],
   "added": "2026-06-14",
-  "degree": 12
+  "degree": 12,
+  "geo": {
+    "kind": "route",
+    "label": "The Niger River",
+    "approx": true,
+    "points": [
+      {
+        "lat": 9.9,
+        "lng": -10.8
+      },
+      {
+        "lat": 13.5,
+        "lng": -6.5
+      },
+      {
+        "lat": 16.8,
+        "lng": -3
+      },
+      {
+        "lat": 16.3,
+        "lng": -0.04
+      },
+      {
+        "lat": 13.5,
+        "lng": 1.5
+      },
+      {
+        "lat": 9.5,
+        "lng": 4.5
+      },
+      {
+        "lat": 5.3,
+        "lng": 6.4
+      }
+    ]
+  }
 }

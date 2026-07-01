@@ -354,5 +354,13 @@
     }
   ],
   "added": "2026-06-15",
-  "degree": 15
+  "degree": 15,
+  "geo": {
+    "kind": "area",
+    "lat": 41,
+    "lng": -100,
+    "radiusKm": 1150,
+    "label": "The Great Plains",
+    "approx": true
+  }
 }

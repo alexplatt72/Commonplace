@@ -356,5 +356,36 @@
     "North Africa & Middle East"
   ],
   "added": "2026-06-14",
-  "degree": 27
+  "degree": 27,
+  "geo": {
+    "kind": "route",
+    "label": "Trans-Saharan Trade",
+    "approx": true,
+    "points": [
+      {
+        "lat": 31.8,
+        "lng": -6.9
+      },
+      {
+        "lat": 25,
+        "lng": -4
+      },
+      {
+        "lat": 18,
+        "lng": -2
+      },
+      {
+        "lat": 16.8,
+        "lng": -3
+      },
+      {
+        "lat": 16.3,
+        "lng": -0.04
+      },
+      {
+        "lat": 12,
+        "lng": 8.5
+      }
+    ]
+  }
 }

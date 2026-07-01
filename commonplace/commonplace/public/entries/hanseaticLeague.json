@@ -320,5 +320,40 @@
     "Europe"
   ],
   "degree": 9,
-  "added": "2026-06-18"
+  "added": "2026-06-18",
+  "geo": {
+    "kind": "route",
+    "label": "The Hanseatic League",
+    "approx": true,
+    "points": [
+      {
+        "lat": 51.5,
+        "lng": -0.1
+      },
+      {
+        "lat": 51.2,
+        "lng": 3.2
+      },
+      {
+        "lat": 53.55,
+        "lng": 9.99
+      },
+      {
+        "lat": 53.87,
+        "lng": 10.69
+      },
+      {
+        "lat": 54.35,
+        "lng": 18.65
+      },
+      {
+        "lat": 59.44,
+        "lng": 24.75
+      },
+      {
+        "lat": 58.52,
+        "lng": 31.27
+      }
+    ]
+  }
 }
