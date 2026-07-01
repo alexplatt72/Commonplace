@@ -103,7 +103,7 @@ const C = {
 // ── Plain English (CEFR B1) layer — MASTER KILL-SWITCH ──────────────────────
 // The B1 "Plain English" layer is still in development. While this is false the
 // layer is unreachable on the site by ANY path — the depth chip is hidden and the
-// renderer coerces it to Beginner — even on entries whose JSON already carries a
+// renderer coerces it to the beginner layer (labelled "Essentials") — even on entries whose JSON already carries a
 // content.plainEnglish block. Flip to true to launch it sitewide; it then appears
 // only on entries that actually have the layer (per-entry gate stays in effect).
 const PLAIN_ENGLISH_ENABLED = false;
@@ -121,13 +121,16 @@ function plainEnglishVisible() {
   } catch { return false; }
 }
 
+// Display labels are reader-purpose names; the `id` is the stored content key
+// (content.beginner / .educational / .advanced …) and must NOT change — it is wired
+// to 1000 entry JSON files, the validator, and the generation rules.
 const DEPTH_LAYERS = [
-  { id:"plainEnglish", label:"Plain English", next:"beginner", nextLabel:"Beginner", desc:"Simple English (CEFR B1)" },
-  { id:"beginner",    label:"Beginner",    next:"general",     nextLabel:"General",     desc:"Stable orientation" },
-  { id:"general",     label:"General",     next:"educational", nextLabel:"Educational", desc:"Substantive understanding" },
-  { id:"educational", label:"Educational", next:"advanced",    nextLabel:"Advanced",    desc:"Analytical literacy" },
-  { id:"advanced",    label:"Advanced",    next:"research",    nextLabel:"Research",    desc:"Near-peer engagement" },
-  { id:"research",    label:"Research",    next:null,                                   desc:"Open frontiers" },
+  { id:"plainEnglish", label:"Plain English", next:"beginner", nextLabel:"Essentials", desc:"Simple English (CEFR B1)" },
+  { id:"beginner",    label:"Essentials",  next:"general",     nextLabel:"General",     desc:"First serious explanation" },
+  { id:"general",     label:"General",     next:"educational", nextLabel:"Study",       desc:"Standard adult overview" },
+  { id:"educational", label:"Study",       next:"advanced",    nextLabel:"Scholarly",   desc:"Classroom-ready depth" },
+  { id:"advanced",    label:"Scholarly",   next:"research",    nextLabel:"Research",    desc:"Expert-level and interpretive" },
+  { id:"research",    label:"Research",    next:null,                                   desc:"Sources and open questions" },
 ];
 
 const SUBTYPE_SECTIONS = {
@@ -408,7 +411,7 @@ function ContentView({ entry, depth }) {
   const content = entry.content[effDepth];
   const signals = content?.signals || {};
   if (effDepth === "educational") {
-    if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:15, color:C.muted, fontStyle:"italic" }}>Educational content for this entry is in development.</div>;
+    if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:15, color:C.muted, fontStyle:"italic" }}>Study content for this entry is in development.</div>;
     return <EducationalView content={content} />;
   }
   if (effDepth === "research") return <ResearchView items={entry.research} />;
@@ -1144,14 +1147,14 @@ const getDefaultDepth = () => { try { return localStorage.getItem(DEFAULT_DEPTH_
 const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KEY, d); } catch {} };
 
 const READING_LEVELS = [
-  { id:"beginner", label:"Beginner", color:"#2d5a3d", selectable:true,
-    blurb:"The same essential story in plain, middle-school-level language. A gentle on-ramp, or a reinforcing read before General." },
+  { id:"beginner", label:"Essentials", color:"#2d5a3d", selectable:true,
+    blurb:"The same essential story in plain, direct language. A gentle on-ramp, or a reinforcing read before General." },
   { id:"general", label:"General", color:"#1e3a5f", selectable:true, tag:"Recommended start",
-    blurb:"The complete, standalone account at a high-school reading level. Everything most readers need to understand the entry. Start here; you can stop here too." },
-  { id:"educational", label:"Educational", color:"#9a6a00",
+    blurb:"The complete, standalone account in clear, standard prose. Everything most readers need to understand the entry. Start here; you can stop here too." },
+  { id:"educational", label:"Study", color:"#9a6a00",
     blurb:"General plus teaching scaffolding: evidence, methods, questions, and how we know what we know. For readers who want to learn the subject, not just grasp it." },
-  { id:"advanced", label:"Advanced", color:"#5c2d6e",
-    blurb:"Scholarly depth for engaged readers. More nuance, source problems, interpretation, and debates specialists still argue. Denser, and assumes background." },
+  { id:"advanced", label:"Scholarly", color:"#5c2d6e",
+    blurb:"Expert-level depth for engaged readers. More nuance, source problems, interpretation, and debates specialists still argue. Denser, and assumes background." },
 ];
 
 // Reading-level chip with a hover / tap / focus popover declaring what the level offers.
@@ -1412,7 +1415,7 @@ function QAModal({ qa, onClose, onEntry }) {
               style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#9a6a00",
                 fontFamily: "'Lora',serif", fontSize: 13, fontWeight: 600, textDecoration: "underline" }}>
               {qa.originTitle}
-            </button>{" "}entry's <strong style={{ color: C.text, fontWeight: 600 }}>Educational layer</strong> — a section built around questions to think through, not facts to memorize.
+            </button>{" "}entry's <strong style={{ color: C.text, fontWeight: 600 }}>Study layer</strong> — a section built around questions to think through, not facts to memorize.
           </div>
 
           <div style={{ borderLeft: "3px solid #b3243a", background: C.warm, padding: "14px 18px", borderRadius: "0 8px 8px 0", marginBottom: 22 }}>
@@ -2708,7 +2711,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
         <>
           <P>TheCommonPlace is a curated atlas of the people, ideas, events, and forces that built the world — not an encyclopedia that aims to cover everything, but a deliberately finite canon of subjects that genuinely warrant deep, structured treatment.</P>
           <H>Four ways to read every entry</H>
-          <P>Each entry is written at several reading levels — Beginner, General, and Advanced, alongside Educational and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
+          <P>Each entry is written at several reading levels — Essentials, General, and Scholarly, alongside Study and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
           <H>Find your way in</H>
           <P>Browse the whole canon and filter it by era, region, category, and more; follow a Tour that connects a place to the entries it unlocks; or take a Pathway — a curated sequence that builds toward a big question like “how capitalism happened.” If you prefer to wander, search anything or chase a rabbit hole between related entries.</P>
           <H>This is a beta</H>
@@ -2724,7 +2727,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <H>Why this size now, and what a larger canon means</H>
           <P>The current {MANIFEST.length} entries are an early, deliberately curated core. Growth is gated on quality and balance, not volume: a larger canon should mean more of the world represented — more regions, eras, and traditions — not simply more pages. Expansion is a series of intentional decisions, each with the same threshold.</P>
           <H>What the reading levels mean</H>
-          <P>Beginner grounds the subject in plain language and concrete scenes. General adds the mechanisms, named figures, and live debates. Advanced develops the scholarly tension — the questions specialists actually argue about. Educational and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
+          <P>Essentials grounds the subject in plain language and concrete scenes. General adds the mechanisms, named figures, and live debates. Scholarly develops the interpretive tension — the questions specialists actually argue about. Study and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
           <H>How sources are handled</H>
           <P>The Commonplace is written for layered public reading, not formal academic publication, so the prose carries no inline footnotes or numbered citations. Instead, each entry’s Reference list is the citation: the works that actually informed it — including the books, papers, and primary sources it names and engages in the text — gathered in one place rather than scattered through it.</P>
           <P>References are rated on two axes — Reliability (how trustworthy the source is as a resource) and Role (the part the source played in building this particular entry) — so you can see not just what was used but why it carries weight here. The separate “Find it” links under each layer are for further reading and where to buy a work; they are not a claim that every line traces to them.</P>
