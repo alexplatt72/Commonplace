@@ -317,13 +317,15 @@ function Hook({ text }) {
   );
 }
 
-function SectionBlock({ label, content, signal }) {
+function SectionBlock({ label, content, signal, accent }) {
   if (!content) return null;
   const paragraphs = content.split("\n\n");
+  const ac = accent || C.navy;
   return (
     <div style={{ marginBottom:28 }}>
-      <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:10 }}>
-        <span style={{ fontSize:10, fontFamily:"'JetBrains Mono',monospace", letterSpacing:"0.12em", textTransform:"uppercase", color:C.light, fontWeight:500 }}>{label}</span>
+      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:11 }}>
+        <span style={{ width:3, height:13, borderRadius:2, background:ac, flexShrink:0 }} />
+        <span style={{ fontSize:11, fontFamily:"'JetBrains Mono',monospace", letterSpacing:"0.09em", textTransform:"uppercase", color:ac, fontWeight:700 }}>{label}</span>
         {signal && <Signal label={signal} />}
       </div>
       {paragraphs.map((p,i) => (
@@ -416,10 +418,11 @@ function ContentView({ entry, depth }) {
   }
   if (effDepth === "research") return <ResearchView items={entry.research} />;
   if (!content) return <div style={{ padding:"40px 0", fontFamily:"'Lora',serif", fontSize:16, color:C.muted, fontStyle:"italic" }}>Full content for this depth level available in the concept build files.</div>;
+  const accent = (TEMPLATE_CONFIG[entry.template] && TEMPLATE_CONFIG[entry.template].accent) || C.navy;
   return (
     <div>
       {sections.map(key => content?.[key] ? (
-        <SectionBlock key={key} label={SECTION_LABELS[key]} content={content[key]} signal={signals[key]} />
+        <SectionBlock key={key} label={SECTION_LABELS[key]} content={content[key]} signal={signals[key]} accent={accent} />
       ) : null)}
     </div>
   );
