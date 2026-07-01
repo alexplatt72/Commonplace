@@ -106,7 +106,7 @@ const C = {
 // renderer coerces it to the beginner layer (labelled "Essentials") — even on entries whose JSON already carries a
 // content.plainEnglish block. Flip to true to launch it sitewide; it then appears
 // only on entries that actually have the layer (per-entry gate stays in effect).
-const PLAIN_ENGLISH_ENABLED = false;
+const PLAIN_ENGLISH_ENABLED = true;
 
 // Dev-only preview of the hidden layer. Lets you READ the in-development Plain English
 // content locally without exposing it on the live site. Gated to localhost, so even if
