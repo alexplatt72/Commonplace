@@ -905,6 +905,8 @@ function EntryView({ entry, accent, navigateTo }) {
   // Commerce shows on every reading layer except Research (Plain English, Essentials,
   // General, Study, Scholarly).
   const showCommerce = depth !== "research";
+  // Locator map is orientation — show only on the accessible layers.
+  const showMap = !!entry.geo && (depth === "plainEnglish" || depth === "beginner" || depth === "general");
   return (
     <div>
       <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, overflow:"hidden", borderTop:`4px solid ${accent}`, marginBottom:2 }}>
@@ -931,7 +933,7 @@ function EntryView({ entry, accent, navigateTo }) {
       <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, padding: isMobile ? "24px 16px" : "36px 40px" }}>
         {tab === "content" ? (
           <>
-            {entry.geo && <LocatorMap geo={entry.geo} accent={accent} />}
+            {showMap && <LocatorMap geo={entry.geo} accent={accent} />}
             <ContentView entry={entry} depth={depth} />
             {depth !== "research" && <GoDeeper currentDepth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={changeDepth} accent={accent} />}
             <div style={{ borderTop:`1px solid ${C.border}`, marginTop:44, paddingTop:36 }}>
