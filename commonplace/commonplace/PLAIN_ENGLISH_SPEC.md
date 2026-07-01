@@ -46,6 +46,17 @@ block. Your job is to rewrite its language to B1 and nothing else.
 If the Beginner source is wrong or thin, that is not your problem to fix here — flag it,
 do not silently "improve" it. Inventing to improve is the #1 drift failure.
 
+**The one-line test — Beginner authors, Plain English translates.** This is *not* "easier
+Beginner." FK score does not separate the two layers (both read under 8); **purpose** does.
+The Beginner layer already made every authorial choice — the structure, the emphasis, which
+facts to foreground, the examples, how deep to explain. You may remake **none** of them.
+Beyond "add nothing / drop nothing" above, that specifically means you may **not**: change
+which points are emphasized or re-weight the argument; cut a tension or a difficulty to make
+the prose "flow"; swap in different examples; or compress a section into a summary (stay in
+Beginner's length band — this is a re-expression, not a digest). You may change only the
+*language*: shorter sentences, commoner words, in-line glosses of terms already present, no
+idioms, more sequential syntax.
+
 ## 3. B1 language rules
 
 **Sentences**
