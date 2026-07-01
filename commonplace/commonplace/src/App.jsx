@@ -425,6 +425,11 @@ function ContentView({ entry, depth }) {
   );
 }
 
+// Small yellow "beta" superscript, used to mark the in-beta Plain English layer.
+function BetaSup() {
+  return <sup style={{ fontSize:8, fontWeight:700, color:"#c8a200", letterSpacing:"0.02em", marginLeft:1, verticalAlign:"super" }}>beta</sup>;
+}
+
 function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange }) {
   const layers = DEPTH_LAYERS.filter(l =>
     (l.id !== "research" || hasResearch) &&
@@ -434,7 +439,7 @@ function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange }) {
       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.1em", textTransform:"uppercase", color:C.light, marginRight:4 }}>Depth</span>
       {layers.map((l,i) => (
         <span key={l.id} style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={depth === l.id} style={{ background:"none", border:"none", padding:"0 0 1px", fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", cursor:"pointer" }}>{l.label}</button>
+          <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={depth === l.id} style={{ background:"none", border:"none", padding:"0 0 1px", fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", cursor:"pointer" }}>{l.label}{l.id === "plainEnglish" && <BetaSup />}</button>
           {i < layers.length-1 && <span style={{ color:C.border, fontSize:10 }}>·</span>}
         </span>
       ))}
@@ -449,7 +454,7 @@ function GoDeeper({ currentDepth, hasResearch, onChange, accent }) {
   return (
     <div style={{ marginTop:36, padding:"18px 22px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"space-between" }}>
       <div>
-        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, marginBottom:2 }}>Reading at <strong style={{ color:C.text }}>{current.label}</strong></div>
+        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, marginBottom:2 }}>Reading at <strong style={{ color:C.text }}>{current.label}{current.id === "plainEnglish" && <BetaSup />}</strong></div>
         <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.light, fontStyle:"italic" }}>{current.desc}</div>
       </div>
       <button onClick={() => onChange(current.next)} style={{ padding:"8px 18px", background:accent || C.navy, color:"#fff", border:"none", borderRadius:4, fontFamily:"'Lora',serif", fontSize:13, fontWeight:600, cursor:"pointer" }}>
@@ -844,7 +849,9 @@ function EntryView({ entry, accent, navigateTo }) {
   const showPopularCulture = depth === "beginner" && entry.popularCulture;
   const showComparative = depth === "general" || depth === "educational";
   const showRabbitHole = depth === "beginner" || depth === "general";
-  const showCommerce = depth === "general" || depth === "educational" || depth === "advanced";
+  // Commerce shows on every reading layer except Research (Plain English, Essentials,
+  // General, Study, Scholarly).
+  const showCommerce = depth !== "research";
   return (
     <div>
       <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, overflow:"hidden", borderTop:`4px solid ${accent}`, marginBottom:2 }}>
@@ -1147,6 +1154,8 @@ const getDefaultDepth = () => { try { return localStorage.getItem(DEFAULT_DEPTH_
 const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KEY, d); } catch {} };
 
 const READING_LEVELS = [
+  { id:"plainEnglish", label:"Plain English", color:"#2b6c6f", selectable:true, tag:"Beta",
+    blurb:"The simplest reading, in easy English (about CEFR B1 level). Made for English-language learners (ESL), and useful for anyone who wants short, clear sentences. Same facts as Essentials, just simpler words." },
   { id:"beginner", label:"Essentials", color:"#2d5a3d", selectable:true,
     blurb:"The same essential story in plain, direct language. A gentle on-ramp, or a reinforcing read before General." },
   { id:"general", label:"General", color:"#1e3a5f", selectable:true, tag:"Recommended start",
@@ -1181,7 +1190,7 @@ function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
           background: filled ? level.color : (open ? `${level.color}1a` : (level.tag && !selectable ? `${level.color}0d` : "transparent")),
           cursor: selectable ? "pointer" : "help", transition:"background 0.12s" }}>
         <span style={{ width:6, height:6, borderRadius:"50%", background: filled ? "#fff" : level.color }} />
-        {level.label}
+        {level.label}{level.id === "plainEnglish" && <BetaSup />}
       </button>
       {open && (
         <span role="tooltip" style={{ position:"absolute", left:"50%", bottom:"calc(100% + 9px)",
@@ -1261,7 +1270,7 @@ function FeaturedCard({ id, entry, onClick }) {
         <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between",
           marginTop:12, paddingTop:10, borderTop:`1px solid ${C.border}` }}>
           <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9.5, color:C.light,
-            letterSpacing:"0.04em" }}>4 reading levels</span>
+            letterSpacing:"0.04em" }}>5 reading levels</span>
           <span style={{ fontFamily:"'Lora',serif", fontSize:12.5, fontWeight:500, color:accent }}>Read entry →</span>
         </div>
       </div>
@@ -1556,12 +1565,12 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
         padding:"16px 22px", marginBottom:48, boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
-          Every entry has <strong style={{ fontWeight:600 }}>four reading levels</strong>
+          Every entry has <strong style={{ fontWeight:600 }}>five reading levels</strong>
         </span>
         <ReadingLevelSelector />
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
-          Hover any level to see what it offers — tap to set where your entries open.
+          New: <strong style={{ fontWeight:600, color:"#2b6c6f" }}>Plain English</strong> <span style={{ color:"#c8a200", fontWeight:700 }}>(beta)</span> is a simpler reading for English learners (ESL). Hover any level to see what it offers — tap to set where your entries open.
         </span>
       </div>
 
