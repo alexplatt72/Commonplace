@@ -407,5 +407,52 @@
   ],
   "degree": 86,
   "added": "2026-05-30",
-  "comparativeSummary": "Ask three peoples who used the same routes where the center of the world sat, and each points at itself. Tang China saw the trade as tribute flowing toward the capital, proof that distant peoples wanted to join its order. The Abbasid caliphate saw a hub where Greek, Indian, and Persian learning pooled and could be combined. The Sogdian merchants saw no system at all but their own scattered civilization, a home held together across thousands of miles. The disagreement is about who owned the connection: the empires that taxed it, the scholars who harvested it, or the traders who had nothing else."
+  "comparativeSummary": "Ask three peoples who used the same routes where the center of the world sat, and each points at itself. Tang China saw the trade as tribute flowing toward the capital, proof that distant peoples wanted to join its order. The Abbasid caliphate saw a hub where Greek, Indian, and Persian learning pooled and could be combined. The Sogdian merchants saw no system at all but their own scattered civilization, a home held together across thousands of miles. The disagreement is about who owned the connection: the empires that taxed it, the scholars who harvested it, or the traders who had nothing else.",
+  "geo": {
+    "kind": "route",
+    "approx": true,
+    "label": "The Silk Road — principal overland routes from Chang’an (Xi’an) to the Mediterranean",
+    "points": [
+      {
+        "lat": 34.27,
+        "lng": 108.95
+      },
+      {
+        "lat": 40.14,
+        "lng": 94.66
+      },
+      {
+        "lat": 39.47,
+        "lng": 75.99
+      },
+      {
+        "lat": 39.65,
+        "lng": 66.97
+      },
+      {
+        "lat": 37.66,
+        "lng": 62.19
+      },
+      {
+        "lat": 35.7,
+        "lng": 51.42
+      },
+      {
+        "lat": 33.31,
+        "lng": 44.36
+      },
+      {
+        "lat": 34.55,
+        "lng": 38.27
+      },
+      {
+        "lat": 36.2,
+        "lng": 36.16
+      },
+      {
+        "lat": 41.01,
+        "lng": 28.98
+      }
+    ]
+  }
 }

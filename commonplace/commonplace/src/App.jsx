@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Fuse from "fuse.js";
+import { WORLD_PATHS } from "./worldMap";
 
 // ─── GLOBAL STATE ─────────────────────────────────────────────────────────────
 let MANIFEST = [];      // loaded once from /entries/manifest.json
@@ -331,6 +332,55 @@ function SectionBlock({ label, content, signal, accent }) {
       {paragraphs.map((p,i) => (
         <p key={i} style={{ fontFamily:"'Lora',serif", fontSize:16.5, lineHeight:1.78, color:C.text, marginBottom: i < paragraphs.length-1 ? 14 : 0 }}>{p}</p>
       ))}
+    </div>
+  );
+}
+
+// Static locator map — inline SVG world land (Natural Earth 110m), equirectangular.
+// No map library, tiles, or API key. Plots a point ({lat,lng}) or a route
+// ({kind:'route', points:[{lat,lng}...]}) on a cropped regional view.
+function LocatorMap({ geo, accent }) {
+  if (!geo || (geo.kind !== "route" && (typeof geo.lat !== "number" || typeof geo.lng !== "number"))) return null;
+  const W = 1000, H = 500, ac = accent || C.navy;
+  const px = (lng) => (lng + 180) / 360 * W;
+  const py = (lat) => (90 - lat) / 180 * H;
+  const isRoute = geo.kind === "route" && Array.isArray(geo.points) && geo.points.length > 1;
+  const pts = isRoute ? geo.points.map(p => ({ x: px(p.lng), y: py(p.lat) })) : [{ x: px(geo.lng), y: py(geo.lat) }];
+  let minx = Math.min(...pts.map(p => p.x)), maxx = Math.max(...pts.map(p => p.x));
+  let miny = Math.min(...pts.map(p => p.y)), maxy = Math.max(...pts.map(p => p.y));
+  const ASPECT = 1.85;
+  const padX = isRoute ? Math.max((maxx - minx) * 0.35, 45) : 120;
+  const padY = isRoute ? Math.max((maxy - miny) * 0.45, 30) : 82;
+  let vx = minx - padX, vy = miny - padY, vw = (maxx - minx) + 2 * padX, vh = (maxy - miny) + 2 * padY;
+  if (vw / vh > ASPECT) { const n = vw / ASPECT; vy -= (n - vh) / 2; vh = n; }
+  else { const n = vh * ASPECT; vx -= (n - vw) / 2; vw = n; }
+  if (vx < 0) vx = 0; if (vy < 0) vy = 0;
+  if (vx + vw > W) vx = Math.max(0, W - vw); if (vy + vh > H) vy = Math.max(0, H - vh);
+  const r = Math.max(vw, vh) * 0.011, sw = vw * 0.0011;
+  return (
+    <div style={{ marginBottom:24 }}>
+      <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:9 }}>
+        <span style={{ width:3, height:13, borderRadius:2, background:ac, flexShrink:0 }} />
+        <span style={{ fontSize:11, fontFamily:"'JetBrains Mono',monospace", letterSpacing:"0.09em", textTransform:"uppercase", color:ac, fontWeight:700 }}>Where this took place</span>
+      </div>
+      <div style={{ width:"100%", aspectRatio:String(ASPECT), border:`1px solid ${C.border}`, borderRadius:8, overflow:"hidden", background:"#e9eef2" }}>
+        <svg viewBox={`${vx} ${vy} ${vw} ${vh}`} width="100%" height="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label={"Map showing " + (geo.label || "location")}>
+          <rect x="0" y="0" width={W} height={H} fill="#e9eef2" />
+          {WORLD_PATHS.map((d,i) => <path key={i} d={d} fill="#e6ddc9" stroke="#c9bd9f" strokeWidth={sw} />)}
+          {isRoute && <polyline points={pts.map(p => p.x + "," + p.y).join(" ")} fill="none" stroke={ac} strokeWidth={r*0.6} strokeLinejoin="round" strokeLinecap="round" strokeDasharray={`${r*1.5} ${r*1.1}`} opacity="0.92" />}
+          {pts.map((p,i) => {
+            const end = !isRoute || i === 0 || i === pts.length - 1;
+            const rr = end ? r : r * 0.55;
+            return (
+              <g key={i}>
+                <circle cx={p.x} cy={p.y} r={rr*2} fill={ac} opacity="0.16" />
+                <circle cx={p.x} cy={p.y} r={rr} fill={ac} stroke="#fff" strokeWidth={rr*0.45} />
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+      {geo.label && <div style={{ fontFamily:"'Lora',serif", fontSize:12.5, color:C.light, fontStyle:"italic", marginTop:6 }}>{geo.label}{geo.approx ? " · approximate" : ""}</div>}
     </div>
   );
 }
@@ -881,6 +931,7 @@ function EntryView({ entry, accent, navigateTo }) {
       <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:10, padding: isMobile ? "24px 16px" : "36px 40px" }}>
         {tab === "content" ? (
           <>
+            {entry.geo && <LocatorMap geo={entry.geo} accent={accent} />}
             <ContentView entry={entry} depth={depth} />
             {depth !== "research" && <GoDeeper currentDepth={depth} hasResearch={!!(entry.research && entry.research.length)} onChange={changeDepth} accent={accent} />}
             <div style={{ borderTop:`1px solid ${C.border}`, marginTop:44, paddingTop:36 }}>
