@@ -80,6 +80,27 @@ const KIND = { place: 'point', event: 'point', person: 'point', period: 'region'
 // default decision per bucket: place hits -> keep; ambiguous -> review; concepts -> skip
 const DEFAULT_DECISION = { place: 'keep', event: 'review', person: 'review', period: 'review', work: 'review', skip: 'skip', review: 'review' };
 
+// Rough, generous region boxes [latMin,latMax,lngMin,lngMax] for a plausibility
+// check on geocoded points — catches namesake errors (Alexandria->Italy). Boxes
+// are intentionally loose; a point outside ALL of an entry's region boxes is a
+// SUSPECT to eyeball, not proof of error (Central-Asian & island tags over-flag).
+const REGION_BOX = {
+  'Europe': [34, 72, -25, 45],
+  'North Africa & Middle East': [11, 43, -18, 66],
+  'Sub-Saharan Africa': [-36, 19, -20, 60],
+  'Latin America & Caribbean': [-56, 34, -120, -33],
+  'South Asia': [4, 38, 59, 98],
+  'East Asia': [17, 55, 72, 147],
+  'Southeast Asia': [-11, 29, 91, 142],
+  'North America': [13, 74, -170, -51],
+  'Oceania': [-50, 6, 110, 180],
+};
+function regionPlausible(lat, lng, regionsStr) {
+  const boxes = (regionsStr || '').split('; ').map(g => REGION_BOX[g]).filter(Boolean);
+  if (!boxes.length) return null; // Global/blank only — can't verify
+  return boxes.some(b => lat >= b[0] && lat <= b[1] && lng >= b[2] && lng <= b[3]);
+}
+
 function geocodeQuery(e) {
   // light cleanup of the title into a place query
   return (e.title || e.id).replace(/^The\s+/i, '').replace(/\s*\([^)]*\)\s*$/, '').trim();
@@ -115,7 +136,7 @@ function pickCandidate(list, regions) {
 }
 
 // ── CSV helpers ─────────────────────────────────────────────────────────────
-const COLS = ['id', 'title', 'template', 'subtype', 'regions', 'bucket', 'kind', 'query', 'lat', 'lng', 'matched', 'match_type', 'decision', 'label'];
+const COLS = ['id', 'title', 'template', 'subtype', 'regions', 'bucket', 'flag', 'kind', 'query', 'lat', 'lng', 'matched', 'match_type', 'decision', 'label'];
 function csvCell(v) { v = v == null ? '' : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
 function toCSV(rows) {
   const lines = [COLS.join(',')];
@@ -181,7 +202,7 @@ async function propose() {
     counts[bucket] = (counts[bucket] || 0) + 1;
     const row = {
       id: e.id, title: e.title || '', template: e.template || '', subtype: e.subtype || '',
-      regions: (e.regions || []).join('; '), bucket, kind: KIND[bucket], query: geocodeQuery(e),
+      regions: (e.regions || []).join('; '), bucket, flag: '', kind: KIND[bucket], query: geocodeQuery(e),
       lat: '', lng: '', matched: '', match_type: '', decision: DEFAULT_DECISION[bucket],
       label: (e.title || '').trim(),
     };
@@ -195,6 +216,12 @@ async function propose() {
       if (hit) { row.lat = hit.lat; row.lng = hit.lng; row.matched = hit.matched; row.match_type = hit.cls; geocoded++; }
       else { row.decision = 'review'; row.matched = (list && list.length) ? '(only distant namesakes found — set by hand)' : '(no geocode hit — set by hand)'; }
     }
+    // plausibility flag: coordinate inside the entry's tagged region?
+    if (row.lat !== '') {
+      row.flag = regionPlausible(+row.lat, +row.lng, row.regions) === false ? 'SUSPECT' : 'ok';
+    } else {
+      row.flag = bucket === 'skip' ? 'skip' : 'manual';
+    }
     rows.push(row);
   }
 
@@ -205,7 +232,12 @@ async function propose() {
   console.log('entries considered: ' + rows.length);
   for (const b of ['place', 'event', 'person', 'period', 'work', 'review', 'skip'])
     if (counts[b]) console.log('  ' + b.padEnd(8) + counts[b] + (b === 'place' ? '  (auto-geocoded when --geocode)' : b === 'skip' ? '  (no map)' : '  (fill/verify by hand)'));
-  if (doGeocode) console.log('geocoded this run: ' + geocoded + ' (network requests: ' + requests + ', rest from cache)');
+  if (doGeocode) {
+    const fc = {}; rows.forEach(r => fc[r.flag] = (fc[r.flag] || 0) + 1);
+    const placed = rows.filter(r => r.lat !== '').length;
+    console.log('coordinates set: ' + placed + ' | network requests this run: ' + requests + ' (rest from cache)');
+    console.log('flags: ok ' + (fc.ok || 0) + ', SUSPECT ' + (fc.SUSPECT || 0) + ' (review first — coord outside tagged region), manual ' + (fc.manual || 0) + ' (set by hand), skip ' + (fc.skip || 0) + ' (no map)');
+  }
   else console.log('classification only — re-run with --geocode to fill "place" coordinates via OpenStreetMap.');
   console.log('\nwrote ' + path.basename(OUT_CSV) + ' and ' + path.basename(OUT_JSON));
   console.log('Review the CSV (verify each `matched`, set decision=keep and edit lat/lng where needed), then:');
