@@ -1173,11 +1173,11 @@ const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KE
 // home landing points. Renames here mirror DEPTH_LAYERS (ids are frozen; labels are not).
 const READING_LEVELS = [
   { id:"plainEnglish", label:"Easy", color:"#2b6c6f", selectable:true, sub:"ESL · Grade 4",
-    blurb:"The easiest reading of an entry, in clear, everyday English (about CEFR B1) — roughly a Grade 4 level. Built for English-language learners (ESL) and anyone who wants short sentences and plain words. Same facts as Starter, made easy to read." },
+    blurb:"The easiest read — short sentences and plain words, for English learners and anyone who wants it clear. Same facts as the fuller levels, in plainer language." },
   { id:"beginner", label:"Starter", color:"#2d5a3d", selectable:true, sub:"Grade 8",
-    blurb:"The essential story in plain, direct language — a gentle on-ramp for a topic. Around a Grade 8 reading level." },
+    blurb:"The essential story in plain, direct language — a gentle on-ramp to a topic." },
   { id:"general", label:"Standard", color:"#1e3a5f", selectable:true, tag:"Recommended start", sub:"Grade 11",
-    blurb:"The complete, standalone account in clear, standard prose — everything most readers need. Around a Grade 11 / general-adult level. Start here; you can stop here too." },
+    blurb:"The complete, standalone account in clear, standard prose — everything most readers need. Start here; you can stop here too." },
 ];
 
 // Reading-level chip with a hover / tap / focus popover declaring what the level offers.
