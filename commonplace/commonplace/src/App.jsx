@@ -639,14 +639,14 @@ function ReferenceTab({ items }) {
         const con = CONTRIBUTION_CONFIG[item.contribution] || CONTRIBUTION_CONFIG["Supplementary"];
         return (
           <div key={i} style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:8, padding:"16px 20px", borderLeft:`4px solid ${rel.border}`, marginBottom:10 }}>
-            <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", gap:16, marginBottom:8 }}>
-              <div style={{ display:"flex", flexWrap:"wrap", alignItems:"baseline", gap:"2px 0" }}>
+            <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"space-between", alignItems:"flex-start", gap:16, marginBottom:8 }}>
+              <div style={{ display:"flex", flexWrap:"wrap", alignItems:"baseline", gap:"2px 0", flex:"1 1 200px", minWidth:0 }}>
                 {item.author && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.muted, marginRight:6, whiteSpace:"nowrap" }}>{item.author} —</span>}
                 <span style={{ fontFamily:"'Lora',serif", fontSize:15, fontStyle:"italic", color:C.text }}>{item.title}</span>
                 {item.year && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:11, color:C.light, marginLeft:6, whiteSpace:"nowrap" }}>{item.year}</span>}
                 {item.originLanguage && <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, color:"#4a2060", background:"#f3eef8", padding:"1px 6px", borderRadius:2, marginLeft:8, whiteSpace:"nowrap" }}>Non-English: {item.originLanguage}</span>}
               </div>
-              <div style={{ display:"flex", flexDirection:"column", gap:4, alignItems:"flex-end" }}>
+              <div style={{ display:"flex", flexDirection:"column", gap:4, alignItems:"flex-end", flexShrink:0 }}>
                 <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:rel.color, background:rel.bg, border:`1px solid ${rel.border}` }}>Reliability: {item.reliability}</span>
                 <span style={{ padding:"2px 8px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", fontWeight:500, letterSpacing:"0.04em", whiteSpace:"nowrap", color:con.color, background:con.bg, border:`1px solid ${con.border}` }}>Role: {item.contribution}</span>
               </div>
@@ -1186,6 +1186,18 @@ function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
   const [pinned, setPinned] = React.useState(false);
   // Selectable chips: popover is hover-only (click selects). Non-selectable: click pins it open.
   const open = hover || (pinned && !selectable);
+  // Keep the popover on-screen: after it opens, measure and nudge it back inside the viewport.
+  // Edge chips (Easy far-left, Standard far-right) would otherwise clip off-screen on mobile.
+  const tipRef = React.useRef(null);
+  const [shift, setShift] = React.useState(0);
+  React.useLayoutEffect(() => {
+    if (!open) { setShift(0); return; }
+    const el = tipRef.current; if (!el) return;
+    const r = el.getBoundingClientRect(); const m = 10; let s = 0;
+    if (r.left < m) s = m - r.left;
+    else if (r.right > window.innerWidth - m) s = (window.innerWidth - m) - r.right;
+    if (s) setShift(s);
+  }, [open]);
   const filled = selectable && active;
   const handleClick = () => { if (selectable) { onSelect && onSelect(); } else setPinned(p => !p); };
   const radius = joined === "left" ? "20px 0 0 20px" : joined === "right" ? "0 20px 20px 0" : 20;
@@ -1211,8 +1223,8 @@ function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
           opacity: filled ? 0.92 : 0.7 }}>{level.sub}</span>}
       </button>
       {open && (
-        <span role="tooltip" style={{ position:"absolute", left:"50%", bottom:"calc(100% + 9px)",
-          transform:"translateX(-50%)", width:248, background:C.surface,
+        <span ref={tipRef} role="tooltip" style={{ position:"absolute", left:"50%", bottom:"calc(100% + 9px)",
+          transform:`translateX(-50%) translateX(${shift}px)`, width:"min(248px, calc(100vw - 20px))", background:C.surface,
           border:`1px solid ${level.color}55`, borderTop:`3px solid ${level.color}`, borderRadius:8,
           padding:"10px 13px", boxShadow:"0 6px 20px rgba(0,0,0,0.14)", fontFamily:"'Lora',serif",
           fontSize:12.5, lineHeight:1.5, color:C.text, textAlign:"left", zIndex:50, pointerEvents:"none" }}>
