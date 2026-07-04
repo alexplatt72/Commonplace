@@ -433,19 +433,28 @@ function ContentView({ entry, depth }) {
   );
 }
 
-function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange }) {
+function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange, accent }) {
+  const ac = accent || C.navy;
   const layers = DEPTH_LAYERS.filter(l =>
     (l.id !== "research" || hasResearch) &&
     (l.id !== "plainEnglish" || (hasPlainEnglish && plainEnglishVisible())));
   return (
-    <div style={{ display:"flex", alignItems:"center", gap:6, flexWrap:"wrap" }}>
-      <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.1em", textTransform:"uppercase", color:C.light, marginRight:4 }}>Depth</span>
-      {layers.map((l,i) => (
-        <span key={l.id} style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={depth === l.id} style={{ background:"none", border:"none", padding:"0 0 1px", fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", cursor:"pointer" }}>{l.label}</button>
-          {i < layers.length-1 && <span style={{ color:C.border, fontSize:10 }}>·</span>}
-        </span>
-      ))}
+    <div style={{ display:"flex", alignItems:"center", gap:7, flexWrap:"wrap" }}>
+      <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", color:C.muted, marginRight:3 }}>Reading level</span>
+      {layers.map((l,i) => {
+        const active = depth === l.id;
+        return (
+          <span key={l.id} style={{ display:"flex", alignItems:"center", gap:7 }}>
+            <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={active}
+              onMouseEnter={e => { if (!active) e.currentTarget.style.color = ac; }}
+              onMouseLeave={e => { if (!active) e.currentTarget.style.color = C.muted; }}
+              style={{ background:"none", border:"none", padding:"0 0 2px", fontFamily:"'Lora',serif", fontSize:13.5,
+                color: active ? ac : C.muted, fontWeight: active ? 700 : 500,
+                borderBottom: active ? `2px solid ${ac}` : "2px solid transparent", cursor:"pointer", transition:"color 0.12s" }}>{l.label}</button>
+            {i < layers.length-1 && <span style={{ color:C.border, fontSize:10 }}>·</span>}
+          </span>
+        );
+      })}
     </div>
   );
 }
@@ -870,13 +879,13 @@ function EntryView({ entry, accent, navigateTo }) {
           <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:700, lineHeight:1.25, color:C.text, marginBottom:10 }}>{entry.title}</h2>
           <p style={{ fontFamily:"'Lora',serif", fontSize: isMobile ? 16 : 17.5, lineHeight:1.6, color:C.text, borderLeft:`3px solid ${accent}`, paddingLeft: isMobile ? 14 : 18, margin:"0 0 22px" }}>{entry.summary}</p>
         </div>
-        {["plainEnglish","beginner","general"].includes(depth) && <Hook text={entry.hook} accent={accent} isMobile={isMobile} />}
+        <Hook text={entry.hook} accent={accent} isMobile={isMobile} />
         <div style={{ display:"flex", borderTop:`1px solid ${C.border}` }}>
           {["content","reference"].map(t => (
             <button key={t} onClick={() => setTab(t)} style={{ padding:"12px 24px", border:"none", borderBottom: tab === t ? `2px solid ${accent}` : "2px solid transparent", background: tab === t ? C.surface : C.warm, color: tab === t ? accent : C.muted, fontFamily:"'Lora',serif", fontSize:14, fontWeight: tab === t ? 600 : 400, cursor:"pointer", transition:"all 0.15s", textTransform:"capitalize" }}>{t}</button>
           ))}
           <div style={{ marginLeft:"auto", display:"flex", alignItems:"center", paddingRight:24, opacity: tab === "reference" ? 0.3 : 1, pointerEvents: tab === "reference" ? "none" : "auto" }}>
-            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} hasPlainEnglish={!!entry.content.plainEnglish} onChange={setDepth} />
+            <DepthIndicator depth={depth} hasResearch={!!(entry.research && entry.research.length)} hasPlainEnglish={!!entry.content.plainEnglish} onChange={setDepth} accent={accent} />
           </div>
         </div>
       </div>
@@ -1561,7 +1570,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         <ReadingLevelSelector />
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
-          Tap a level to set your default; hover any level for what it offers.
+          Tap a level to set your default; hover over any level for what it offers.
         </span>
       </div>
 
