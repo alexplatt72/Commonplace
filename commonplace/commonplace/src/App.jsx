@@ -1173,7 +1173,7 @@ const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KE
 // home landing points. Renames here mirror DEPTH_LAYERS (ids are frozen; labels are not).
 const READING_LEVELS = [
   { id:"plainEnglish", label:"Easy", color:"#2b6c6f", selectable:true, sub:"ESL · Grade 4",
-    blurb:"The easiest read — short sentences and plain words, for English learners and anyone who wants it clear. Same facts as the fuller levels, in plainer language." },
+    blurb:"The easiest read, for English Learners and anyone who prefers plain language." },
   { id:"beginner", label:"Starter", color:"#2d5a3d", selectable:true, sub:"Grade 8",
     blurb:"The essential story in plain, direct language — a gentle on-ramp to a topic." },
   { id:"general", label:"Standard", color:"#1e3a5f", selectable:true, tag:"Recommended start", sub:"Grade 11",
