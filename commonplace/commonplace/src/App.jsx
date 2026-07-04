@@ -126,12 +126,12 @@ function plainEnglishVisible() {
 // (content.beginner / .educational / .advanced …) and must NOT change — it is wired
 // to 1000 entry JSON files, the validator, and the generation rules.
 const DEPTH_LAYERS = [
-  { id:"plainEnglish", label:"Plain English", next:"beginner", nextLabel:"Essentials", desc:"Easy English (CEFR B1)" },
-  { id:"beginner",    label:"Essentials",  next:"general",     nextLabel:"General",     desc:"First serious explanation" },
-  { id:"general",     label:"General",     next:"educational", nextLabel:"Study",       desc:"Standard adult overview" },
-  { id:"educational", label:"Study",       next:"advanced",    nextLabel:"Scholarly",   desc:"Classroom-ready depth" },
-  { id:"advanced",    label:"Scholarly",   next:"research",    nextLabel:"Research",    desc:"Expert-level and interpretive" },
-  { id:"research",    label:"Research",    next:null,                                   desc:"Sources and open questions" },
+  { id:"plainEnglish", label:"Easy",     next:"beginner",    nextLabel:"Starter",   desc:"For English learners (ESL) · Grade 4" },
+  { id:"beginner",    label:"Starter",   next:"general",     nextLabel:"Standard",  desc:"A short, plain read · Grade 8" },
+  { id:"general",     label:"Standard",  next:"educational", nextLabel:"Study",     desc:"The full, standard read · Grade 11" },
+  { id:"educational", label:"Study",     next:"advanced",    nextLabel:"Scholarly", desc:"Classroom-ready depth" },
+  { id:"advanced",    label:"Scholarly", next:"research",    nextLabel:"Research",  desc:"Expert-level and interpretive" },
+  { id:"research",    label:"Research",  next:null,                                 desc:"Sources and open questions" },
 ];
 
 const SUBTYPE_SECTIONS = {
@@ -432,11 +432,6 @@ function ContentView({ entry, depth }) {
   );
 }
 
-// Small yellow "beta" superscript, used to mark the in-beta Plain English layer.
-function BetaSup() {
-  return <sup style={{ fontSize:8, fontWeight:700, color:"#c8a200", letterSpacing:"0.02em", marginLeft:1, verticalAlign:"super" }}>beta</sup>;
-}
-
 function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange }) {
   const layers = DEPTH_LAYERS.filter(l =>
     (l.id !== "research" || hasResearch) &&
@@ -446,7 +441,7 @@ function DepthIndicator({ depth, hasResearch, hasPlainEnglish, onChange }) {
       <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, letterSpacing:"0.1em", textTransform:"uppercase", color:C.light, marginRight:4 }}>Depth</span>
       {layers.map((l,i) => (
         <span key={l.id} style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={depth === l.id} style={{ background:"none", border:"none", padding:"0 0 1px", fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", cursor:"pointer" }}>{l.label}{l.id === "plainEnglish" && <BetaSup />}</button>
+          <button onClick={() => onChange(l.id)} title={l.desc} aria-pressed={depth === l.id} style={{ background:"none", border:"none", padding:"0 0 1px", fontFamily:"'Lora',serif", fontSize:13, color: depth === l.id ? "#555" : C.light, fontWeight: depth === l.id ? 600 : 400, borderBottom: depth === l.id ? `1.5px solid #555` : "none", cursor:"pointer" }}>{l.label}</button>
           {i < layers.length-1 && <span style={{ color:C.border, fontSize:10 }}>·</span>}
         </span>
       ))}
@@ -461,7 +456,7 @@ function GoDeeper({ currentDepth, hasResearch, onChange, accent }) {
   return (
     <div style={{ marginTop:36, padding:"18px 22px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"space-between" }}>
       <div>
-        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, marginBottom:2 }}>Reading at <strong style={{ color:C.text }}>{current.label}{current.id === "plainEnglish" && <BetaSup />}</strong></div>
+        <div style={{ fontFamily:"'Lora',serif", fontSize:14, color:C.muted, marginBottom:2 }}>Reading at <strong style={{ color:C.text }}>{current.label}</strong></div>
         <div style={{ fontFamily:"'Lora',serif", fontSize:12, color:C.light, fontStyle:"italic" }}>{current.desc}</div>
       </div>
       <button onClick={() => onChange(current.next)} style={{ padding:"8px 18px", background:accent || C.navy, color:"#fff", border:"none", borderRadius:4, fontFamily:"'Lora',serif", fontSize:13, fontWeight:600, cursor:"pointer" }}>
@@ -1163,17 +1158,16 @@ const DEFAULT_DEPTH_KEY = 'cp_depth';
 const getDefaultDepth = () => { try { return localStorage.getItem(DEFAULT_DEPTH_KEY) || 'general'; } catch { return 'general'; } };
 const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KEY, d); } catch {} };
 
+// The three landing points shown on the home page (where an entry opens by default).
+// Study and Scholarly are intentionally NOT here — they live inside the reader, not as
+// home landing points. Renames here mirror DEPTH_LAYERS (ids are frozen; labels are not).
 const READING_LEVELS = [
-  { id:"plainEnglish", label:"Plain English", color:"#2b6c6f", selectable:true, tag:"Beta",
-    blurb:"The easiest reading of an entry, in clear, everyday English (about CEFR B1 level). Built for English-language learners (ESL), and for anyone who wants short sentences and plain words. Same facts as Essentials, made easy to read." },
-  { id:"beginner", label:"Essentials", color:"#2d5a3d", selectable:true,
-    blurb:"The same essential story in plain, direct language. A gentle on-ramp, or a reinforcing read before General." },
-  { id:"general", label:"General", color:"#1e3a5f", selectable:true, tag:"Recommended start",
-    blurb:"The complete, standalone account in clear, standard prose. Everything most readers need to understand the entry. Start here; you can stop here too." },
-  { id:"educational", label:"Study", color:"#9a6a00",
-    blurb:"General plus teaching scaffolding: evidence, methods, questions, and how we know what we know. For readers who want to learn the subject, not just grasp it." },
-  { id:"advanced", label:"Scholarly", color:"#5c2d6e",
-    blurb:"Expert-level depth for engaged readers. More nuance, source problems, interpretation, and debates specialists still argue. Denser, and assumes background." },
+  { id:"plainEnglish", label:"Easy", color:"#2b6c6f", selectable:true, sub:"ESL · Grade 4",
+    blurb:"The easiest reading of an entry, in clear, everyday English (about CEFR B1) — roughly a Grade 4 level. Built for English-language learners (ESL) and anyone who wants short sentences and plain words. Same facts as Starter, made easy to read." },
+  { id:"beginner", label:"Starter", color:"#2d5a3d", selectable:true, sub:"Grade 8",
+    blurb:"The essential story in plain, direct language — a gentle on-ramp for a topic. Around a Grade 8 reading level." },
+  { id:"general", label:"Standard", color:"#1e3a5f", selectable:true, tag:"Recommended start", sub:"Grade 11",
+    blurb:"The complete, standalone account in clear, standard prose — everything most readers need. Around a Grade 11 / general-adult level. Start here; you can stop here too." },
 ];
 
 // Reading-level chip with a hover / tap / focus popover declaring what the level offers.
@@ -1191,16 +1185,20 @@ function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
         onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
         onClick={handleClick} onBlur={() => setPinned(false)}
         aria-pressed={selectable ? !!active : undefined} aria-expanded={open}
-        style={{ display:"inline-flex", alignItems:"center", gap:6,
+        style={{ display:"inline-flex", flexDirection:"column", alignItems:"center", gap:2,
           fontFamily:"'JetBrains Mono',monospace", fontSize:11,
           color: filled ? "#fff" : level.color,
           border: joined ? `1px solid ${C.borderStrong}` : `1px solid ${level.color}${level.tag ? "99" : "55"}`,
           borderRight: joined === "left" ? "none" : undefined,
-          borderRadius: radius, padding:"5px 13px",
+          borderRadius: radius, padding: level.sub ? "6px 15px" : "5px 13px",
           background: filled ? level.color : (open ? `${level.color}1a` : (level.tag && !selectable ? `${level.color}0d` : "transparent")),
           cursor: selectable ? "pointer" : "help", transition:"background 0.12s" }}>
-        <span style={{ width:6, height:6, borderRadius:"50%", background: filled ? "#fff" : level.color }} />
-        {level.label}{level.id === "plainEnglish" && <BetaSup />}
+        <span style={{ display:"inline-flex", alignItems:"center", gap:6 }}>
+          <span style={{ width:6, height:6, borderRadius:"50%", background: filled ? "#fff" : level.color }} />
+          {level.label}
+        </span>
+        {level.sub && <span style={{ fontSize:8.5, fontWeight:400, letterSpacing:"0.02em",
+          opacity: filled ? 0.92 : 0.7 }}>{level.sub}</span>}
       </button>
       {open && (
         <span role="tooltip" style={{ position:"absolute", left:"50%", bottom:"calc(100% + 9px)",
@@ -1557,16 +1555,12 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
         padding:"16px 22px", marginBottom:48, boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
-          Every entry has <strong style={{ fontWeight:600 }}>five reading levels</strong>
+          Choose <strong style={{ fontWeight:600 }}>where your entries open</strong>
         </span>
         <ReadingLevelSelector />
         <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
           color:C.light, fontStyle:"italic" }}>
-          New: <strong style={{ fontWeight:600, color:"#2b6c6f" }}>Plain English</strong> <span style={{ color:"#c8a200", fontWeight:700 }}>(beta)</span> is an easy-reading version for English learners (ESL).
-        </span>
-        <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
-          color:C.light, fontStyle:"italic" }}>
-          Hover over any level to see what it offers — tap to set where your entries open.
+          Tap a level to set your default; hover any level for what it offers.
         </span>
       </div>
 
@@ -2678,7 +2672,7 @@ function Footer({ onHome, onBrowse, onAbout, onMethod, onPrivacy }) {
         <button onClick={onHome} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer',
           color: C.text, fontFamily: "'DM Serif Display',serif", fontSize: 18 }}>TheCommonPlace</button>
         <div style={{ color: C.light, fontSize: 12, fontStyle: 'italic', fontFamily: "'Lora',serif", marginTop: 2 }}>
-          A curated atlas of civilization, ideas, and power. Currently in beta.
+          A curated atlas of civilization, ideas, and power.
         </div>
       </div>
       <nav style={{ display: 'flex', flexWrap: 'wrap', gap: isMobile ? 16 : 20, alignItems: 'center' }}>
@@ -2686,7 +2680,7 @@ function Footer({ onHome, onBrowse, onAbout, onMethod, onPrivacy }) {
         {link('Method', onMethod)}
         {link('Privacy', onPrivacy)}
         {link('Browse', onBrowse)}
-        {link('Feedback', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — beta feedback')}`)}
+        {link('Feedback', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — feedback')}`)}
         {link('Suggest an entry', null, `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('The Commonplace — entry suggestion')}`)}
       </nav>
     </footer>
@@ -2711,12 +2705,12 @@ function InfoPage({ kind, onHome, onBrowse }) {
       {kind === 'about' ? (
         <>
           <P>TheCommonPlace is a curated atlas of the people, ideas, events, and forces that built the world — not an encyclopedia that aims to cover everything, but a deliberately finite canon of subjects that genuinely warrant deep, structured treatment.</P>
-          <H>Four ways to read every entry</H>
-          <P>Each entry is written at several reading levels — Essentials, General, and Scholarly, alongside Study and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
+          <H>Several ways to read every entry</H>
+          <P>Each entry is written at several reading levels — Easy, Starter, and Standard, alongside Study, Scholarly, and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
           <H>Find your way in</H>
           <P>Browse the whole canon and filter it by era, region, category, and more; follow a Tour that connects a place to the entries it unlocks; or take a Pathway — a curated sequence that builds toward a big question like “how capitalism happened.” If you prefer to wander, search anything or chase a rabbit hole between related entries.</P>
-          <H>This is a beta</H>
-          <P>The canon currently holds {MANIFEST.length} entries and is still expanding. Things will change, and some subjects you expect are not here yet. If you find an error or want to suggest an entry, the Feedback and Suggest links in the footer go straight to us — beta readers are the best source of both.</P>
+          <H>Still growing</H>
+          <P>The canon currently holds {MANIFEST.length} entries and is still expanding. Things will change, and some subjects you expect are not here yet. If you find an error or want to suggest an entry, the Feedback and Suggest links in the footer go straight to us — readers are the best source of both.</P>
           <P><button onClick={onBrowse} style={{ background: 'none', border: `1px solid ${C.borderStrong}`, color: C.text,
             padding: '9px 18px', borderRadius: 4, cursor: 'pointer', fontFamily: "'Lora',serif", fontSize: 15 }}>Start exploring →</button></P>
         </>
@@ -2728,23 +2722,23 @@ function InfoPage({ kind, onHome, onBrowse }) {
           <H>Why this size now, and what a larger canon means</H>
           <P>The current {MANIFEST.length} entries are an early, deliberately curated core. Growth is gated on quality and balance, not volume: a larger canon should mean more of the world represented — more regions, eras, and traditions — not simply more pages. Expansion is a series of intentional decisions, each with the same threshold.</P>
           <H>What the reading levels mean</H>
-          <P>Essentials grounds the subject in plain language and concrete scenes. General adds the mechanisms, named figures, and live debates. Scholarly develops the interpretive tension — the questions specialists actually argue about. Study and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
+          <P>Starter grounds the subject in plain language and concrete scenes. Standard adds the mechanisms, named figures, and live debates. Scholarly develops the interpretive tension — the questions specialists actually argue about. Study and Research material support teaching and deeper study. The levels are meant to differ in altitude, not just in difficulty.</P>
           <H>How sources are handled</H>
           <P>The Commonplace is written for layered public reading, not formal academic publication, so the prose carries no inline footnotes or numbered citations. Instead, each entry’s Reference list is the citation: the works that actually informed it — including the books, papers, and primary sources it names and engages in the text — gathered in one place rather than scattered through it.</P>
           <P>References are rated on two axes — Reliability (how trustworthy the source is as a resource) and Role (the part the source played in building this particular entry) — so you can see not just what was used but why it carries weight here. The separate “Find it” links under each layer are for further reading and where to buy a work; they are not a claim that every line traces to them.</P>
           <H>How entries are made</H>
-          <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. This is a beta, and that process is still being tuned.</P>
+          <P>Entries are composed with AI assistance and then checked against an automated validator and editorial review — for structure, reading-level calibration, sourcing, and balance — before publication. That process is still being tuned.</P>
           <H>How to read omissions</H>
           <P>If something is missing, that is not a verdict that it does not matter. The canon is finite and still expanding, and many worthy subjects simply have not been built yet. Tell us what you would add — the footer’s Suggest link is exactly for that.</P>
         </>
       ) : (
         <>
-          <P>Short version: The Commonplace is a reading site. It needs no account and asks you for nothing to use it. Last updated for the beta.</P>
+          <P>Short version: The Commonplace is a reading site. It needs no account and asks you for nothing to use it.</P>
           <H>Privacy</H>
           <P>The site is static and sets no advertising or tracking cookies. Our host keeps standard server logs — things like IP address, browser type, and the pages requested — to operate and secure the site. For audience measurement we use Vercel Web Analytics, a privacy-friendly, cookieless tool that records anonymous, aggregate page views without building a profile of you or tracking you across sites.</P>
           <P>If you email us through the Feedback or Suggest-an-entry links, we keep your message and email address so we can reply and improve the site. We do not sell personal information. Questions or requests about your data: {mailLink}.</P>
           <H>An educational project</H>
-          <P>The Commonplace is an educational and editorial project. Entries are provided for general learning and exploration — not as legal, medical, financial, professional, or academic advice. The site may contain errors or omissions, especially during the beta. Corrections are welcome at {mailLink}.</P>
+          <P>The Commonplace is an educational and editorial project. Entries are provided for general learning and exploration — not as legal, medical, financial, professional, or academic advice. The site may contain errors or omissions. Corrections are welcome at {mailLink}.</P>
           <H>Sources & rights</H>
           <P>Quotations, references, and images are used for educational and editorial purposes. Where possible, The Commonplace uses public-domain, openly licensed, or attributed material. If you believe something has been used incorrectly, contact us at {mailLink} and we will review it.</P>
         </>
