@@ -19,6 +19,14 @@ treat it as invisible. Entries collect here until you decide to publish them.
   (The `--manifest` flag lets their outbound rabbit-hole links resolve against
   the real corpus while they sit in quarantine.)
 
+- Fact-check them against live sources before promoting (advisory, human-reviewed):
+
+  ```
+  node factcheck_gate.cjs           # LLM + web_search; writes a findings file
+  ```
+
+  See `FACTCHECK_GATE.md` for the two-layer model (deterministic validators + LLM gate).
+
 ## Promotion (the only way into production)
 Explicit, per your instruction — never automatic:
 
