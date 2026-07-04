@@ -309,7 +309,7 @@ function loadTaxonomy(file) {
   catch { return { canonicalSet: new Set(), aliases: {}, mode: 'off' }; }
 }
 const TAXONOMY = { pcTypes: loadTaxonomy('popular_culture_types.json'), themes: loadTaxonomy('themes.json'), regions: loadTaxonomy('regions.json') };
-const MODULE_NAMES = ['references', 'rabbitHoles', 'comparativeMemory', 'popularCultureStyle', 'taxonomy', 'commerce', 'plainEnglish'];
+const MODULE_NAMES = ['references', 'rabbitHoles', 'comparativeMemory', 'popularCultureStyle', 'taxonomy', 'commerce', 'plainEnglish', 'factConsistency'];
 const MODULES = MODULE_NAMES.map(n => require(path.join(__dirname, 'validators', n + '.cjs')));
 const ctx = {
   wordCount,

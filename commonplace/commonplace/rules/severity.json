@@ -28,6 +28,13 @@
     "commerce.fictionNote": "fail",
     "repetition.stem": "warn",
 
+    "arith.dateSpan": "warn",
+    "arith.age": "warn",
+    "consistency.subjectYears": "warn",
+    "consistency.acronym": "warn",
+    "consistency.nameForms": "warn",
+
+
     "pe.keyParity": "fail",
     "pe.sectionEmpty": "fail",
     "pe.markdown": "fail",
