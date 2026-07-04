@@ -131,7 +131,7 @@ const DEPTH_LAYERS = [
   { id:"general",     label:"Standard",  next:"educational", nextLabel:"Study",     desc:"The full, standard read · Grade 11" },
   { id:"educational", label:"Study",     next:"advanced",    nextLabel:"Scholarly", desc:"Classroom-ready depth" },
   { id:"advanced",    label:"Scholarly", next:"research",    nextLabel:"Research",  desc:"Expert-level and interpretive" },
-  { id:"research",    label:"Research",  next:null,                                 desc:"Sources and open questions" },
+  { id:"research",    label:"Research",  next:null,                                 desc:"Open questions and unsettled findings" },
 ];
 
 const SUBTYPE_SECTIONS = {
@@ -310,10 +310,11 @@ function Signal({ label }) {
   );
 }
 
-function Hook({ text }) {
+function Hook({ text, accent, isMobile }) {
   return (
-    <div style={{ padding:"26px 40px 20px", borderBottom:`1px solid ${C.border}` }}>
-      <p style={{ fontFamily:"'Playfair Display',serif", fontSize:20, fontStyle:"italic", lineHeight:1.58, color:C.text }}>{text}</p>
+    <div style={{ padding: isMobile ? "18px 16px 18px" : "22px 40px 22px", borderBottom:`1px solid ${C.border}` }}>
+      <div style={{ width:28, height:3, borderRadius:2, background: accent || C.navy, marginBottom:13 }} />
+      <p style={{ fontFamily:"'Playfair Display',serif", fontSize: isMobile ? 19 : 22, lineHeight:1.5, color:C.text }}>{text}</p>
     </div>
   );
 }
@@ -867,9 +868,9 @@ function EntryView({ entry, accent, navigateTo }) {
             {entry.creatorId && <span style={{ display:"inline-block", padding:"2px 10px", borderRadius:3, fontSize:10, fontFamily:"'JetBrains Mono',monospace", color:"#5b21b6", background:"#f5f0ff", border:"1px solid #c4b5fd" }}>creator: {entry.creatorId}</span>}
           </div>
           <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:700, lineHeight:1.25, color:C.text, marginBottom:10 }}>{entry.title}</h2>
-          <p style={{ fontFamily:"'Lora',serif", fontSize: isMobile ? 16 : 17.5, lineHeight:1.6, color:C.text, fontStyle:"italic", borderLeft:`3px solid ${accent}`, paddingLeft: isMobile ? 14 : 18, margin:"0 0 22px" }}>{entry.summary}</p>
+          <p style={{ fontFamily:"'Lora',serif", fontSize: isMobile ? 16 : 17.5, lineHeight:1.6, color:C.text, borderLeft:`3px solid ${accent}`, paddingLeft: isMobile ? 14 : 18, margin:"0 0 22px" }}>{entry.summary}</p>
         </div>
-        <Hook text={entry.hook} />
+        {["plainEnglish","beginner","general"].includes(depth) && <Hook text={entry.hook} accent={accent} isMobile={isMobile} />}
         <div style={{ display:"flex", borderTop:`1px solid ${C.border}` }}>
           {["content","reference"].map(t => (
             <button key={t} onClick={() => setTab(t)} style={{ padding:"12px 24px", border:"none", borderBottom: tab === t ? `2px solid ${accent}` : "2px solid transparent", background: tab === t ? C.surface : C.warm, color: tab === t ? accent : C.muted, fontFamily:"'Lora',serif", fontSize:14, fontWeight: tab === t ? 600 : 400, cursor:"pointer", transition:"all 0.15s", textTransform:"capitalize" }}>{t}</button>
