@@ -1175,7 +1175,7 @@ const READING_LEVELS = [
   { id:"plainEnglish", label:"Easy", color:"#2b6c6f", selectable:true, sub:"ESL · Grade 4",
     blurb:"The easiest read, for English Learners and anyone who prefers plain language." },
   { id:"beginner", label:"Starter", color:"#2d5a3d", selectable:true, sub:"Grade 8",
-    blurb:"The essential story in plain, direct language — a gentle on-ramp to a topic." },
+    blurb:"It's the shorter read of the essentials, designed for the casual reader. Can be combined with Standard as learning reinforcement on the topic." },
   { id:"general", label:"Standard", color:"#1e3a5f", selectable:true, tag:"Recommended start", sub:"Grade 11",
     blurb:"The complete, standalone account in clear, standard prose — everything most readers need. Start here; you can stop here too." },
 ];
