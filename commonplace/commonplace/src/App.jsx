@@ -1531,9 +1531,12 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
             const random = published[Math.floor(Math.random() * published.length)];
             if (random) onEntry(random.id);
           }}
-            style={{ fontFamily:"'Lora',serif", fontSize:13.5, fontStyle:"italic", color:C.navy,
-              background:"transparent", border:"none", cursor:"pointer", padding:"2px 6px" }}>
-            Prefer a hint of whimsy? Chase the rabbit →
+            style={{ fontFamily:"'Lora',serif", fontSize:16.5, fontStyle:"italic", color:C.navy,
+              background:"transparent", border:"none", cursor:"pointer", padding:"2px 6px",
+              display:"inline-flex", alignItems:"center", gap:7 }}>
+            Learn something random by spinning the compass →
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={C.navy} strokeWidth="1.6"
+              strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
           </button>
         </div>
       </div>
