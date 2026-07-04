@@ -31,7 +31,11 @@ const FAST = process.argv.includes('--fast');   // skip the slow corpus repetiti
 const FULL = process.argv.includes('--full');   // force the corpus repetition scan
 
 // ── Manifest ──────────────────────────────────────────────────────────────────
-const manifestPath = path.join(ENTRIES_DIR, 'manifest.json');
+// --manifest <path> overrides where the manifest is read from. Used to validate
+// entries staged in _quarantine/ against the LIVE production manifest (so their
+// outbound rabbit-hole links resolve) before they are promoted.
+const MANIFEST_OVERRIDE = (() => { const i = process.argv.indexOf('--manifest'); return i !== -1 ? process.argv[i + 1] : null; })();
+const manifestPath = MANIFEST_OVERRIDE || path.join(ENTRIES_DIR, 'manifest.json');
 const manifest     = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 const manifestIds  = new Set(manifest.map(e => e.id));
 
