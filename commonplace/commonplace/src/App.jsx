@@ -1549,27 +1549,6 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         </div>
       )}
 
-      {/* Explore by thread — search shortcuts (not filters) */}
-      <div style={{ textAlign:"center", marginBottom:44 }}>
-        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10, fontWeight:600,
-          letterSpacing:"0.12em", textTransform:"uppercase", color:C.light, marginBottom:13 }}>
-          Explore by thread
-        </div>
-        <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:8,
-          maxWidth:768, margin:"0 auto" }}>
-          {THREADS.map(t => (
-            <button key={t} onClick={() => onSearch(t)}
-              style={{ fontFamily:"'Lora',serif", fontSize:13.5, color:C.navy, background:"transparent",
-                border:`1px solid ${C.borderStrong}`, borderRadius:20, padding:"5px 15px",
-                cursor:"pointer", transition:"all 0.12s" }}
-              onMouseEnter={e => { e.currentTarget.style.background = "#9a6a00"; e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "#9a6a00"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.navy; e.currentTarget.style.borderColor = C.borderStrong; }}>
-              {t}
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Reading levels */}
       <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center",
         gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
@@ -1767,10 +1746,6 @@ const SHAPE_LABEL = {
   "Policy Question":"Open Question", "Policy Landscape":"Landscape",
 };
 const shapeOf = (st) => SHAPE_LABEL[st] || st;
-
-// Threads — search shortcuts (NOT filters); clicking runs the existing search
-const THREADS = ["War","Empire","Religion","Science","Trade","Democracy","Slavery",
-  "Capitalism","Colonialism","Technology","Philosophy","Migration","Disease","Agriculture","Literature"];
 
 function FilterChip({ label, count, active, disabled, accent, onClick }) {
   return (
