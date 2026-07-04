@@ -1499,7 +1499,7 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
           <button onClick={() => setShowQA(true)} className="wax-seal-btn"
             aria-label="Open the Question and Answer"
             title="Question &amp; Answer"
-            style={{ position:"absolute", left: isWide ? 150 : -4, top: isWide ? "87%" : "83%",
+            style={{ position:"absolute", left: isWide ? 8 : -40, top: isWide ? "88%" : "84%",
               transform:"translateY(-50%)", zIndex:3,
               background:"none", border:"none", padding:0, cursor:"pointer" }}>
             <WaxSeal size={120} />
