@@ -12,6 +12,7 @@
     "validate:fast": "node validate_entries.cjs public/entries --fast"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "fuse.js": "^7.0.0",
