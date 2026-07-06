@@ -1,6 +1,10 @@
 # Entry Frame — Field Roles Specification
 
-Status: **draft, not yet enforced.** This is the contract for what the three "frame"
+Status: **ENFORCED (advisory).** The deterministic redundancy check of §6 is live in the
+validator as `frame.echo` (severity `warn`, non-blocking) as of 2026-07-06; the corpus-wide
+corrective sweep that this spec drove is complete (all 9 template categories, ~340 entries
+touched, corpus validates 1000/1000). What remains optional is the LLM paraphrase pass (§6.3).
+This is the contract for what the three "frame"
 fields — `summary`, `hook`, and the opening of each reading layer — are *for*. It exists
 because those three drifted, across much of the 1,000-entry corpus, into the same thing:
 a compressed, vivid mini-essay. Nothing in the validator enforced their *roles*, so they
@@ -112,15 +116,24 @@ layer. Fixing roles does not change any layer's grade level.
 
 ---
 
-## 6. Enforcement (planned validator gate)
+## 6. Enforcement
 
-Advisory first (like `factcheck_gate.cjs`), then `warn`. Three checks:
+Three checks. §6.1 is **live**; §6.2–§6.3 remain the planned extensions.
 
-1. **Frame redundancy (deterministic).** Score `max(overlap(hook, summary), overlap(hook, general-opening))` — the ranker in `hook_prioritize.cjs`. **Threshold is deliberately unset here.** Run the ranker over all 1,000 first, read the distribution, then pick the warn cutoff so it flags the genuine restatements without drowning in false positives — and record the chosen number in this section once set. High precision; a *floor*, since it misses paraphrase.
-2. **Summary-is-a-definition (heuristic + LLM).** Flag summaries that open with a thesis, a scene, or a bare fact-list rather than a definition.
-3. **Frame audit (LLM).** `hook_audit.cjs` (Opus 4.8, advisory) classifies each field and proposes the fix, catching the paraphrase cases the deterministic score misses.
+1. **Frame redundancy (deterministic) — LIVE.** `validators/frame.cjs` scores
+   `max(overlap(hook, summary), overlap(hook, general-opening))` over content words > 3 chars,
+   stopword-filtered, and emits finding `frame.echo` at severity `warn` (advisory, non-blocking;
+   `rules/severity.json`). **Warn cutoff = 0.40**, set from the post-remediation corpus
+   distribution (2026-07-06): 15 entries ≥0.45, ~14 in 0.40–0.45, ~41 in 0.35–0.40, long tail below.
+   0.40 sits at the knee — it surfaces the ~29 worst restatements for review and leaves the
+   same-subject proper-noun noise quiet. It is a **high-recall FLOOR**: it misses paraphrase, and
+   it over-flags entries whose hook and summary legitimately share proper nouns, so a flag is a
+   *request to re-read* against §3, never a verdict — do not auto-rewrite on this signal alone.
+   Tune the cutoff in `rules/style.json` → `frame.warnAt`.
+2. **Summary-is-a-definition (heuristic + LLM) — planned.** Flag summaries that open with a thesis, a scene, or a bare fact-list rather than a definition.
+3. **Frame audit (LLM) — planned/optional.** `hook_audit.cjs` (Opus 4.8, advisory) classifies each field and proposes the fix, catching the paraphrase cases the deterministic score misses. Needs `ANTHROPIC_API_KEY`.
 
-Remediation order once the gate exists: **triage worst-first → trim before rewrite → keep the better-written twin and fix the other field.** Batches 1–2 of the hook pass are the pilot (`hook-audit-batch1.md`, `hook-audit-batch2.md`).
+Remediation order (used across the corrective sweep, retained for future batches): **triage worst-first → trim before rewrite → keep the better-written twin and fix the other field.** Batches 1–2 of the hook pass were the pilot (`hook-audit-batch1.md`, `hook-audit-batch2.md`).
 
 ## 7. Generation (make it born correct)
 

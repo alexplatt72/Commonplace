@@ -57,6 +57,11 @@
     "stopwordHeavyMax": 0.8
   },
 
+  "frame": {
+    "_comment": "Frame-redundancy detector config (validators/frame.cjs), the deterministic half of FIELD_ROLES_SPEC.md §6. Scores overlap(hook, summary) and overlap(hook, general-opening) over content words > 3 chars, stopword-filtered, and warns on the MAX. warnAt is the review cutoff, chosen from the post-remediation corpus distribution (2026-07-06): 0.40 sits at the knee — surfaces the ~29 worst restatements and leaves same-subject proper-noun noise quiet. This is a HIGH-RECALL FLOOR (advisory 'warn' in severity.json): it misses paraphrase (that is the LLM audit, hook_audit.cjs) and over-flags shared-subject vocabulary, so a flag means RE-READ against §3, never auto-rewrite. Tighten toward 0.35 to catch more, raise toward 0.45 to cut noise.",
+    "warnAt": 0.40
+  },
+
   "plainEnglish": {
     "_comment": "CEFR B1 'Plain English' layer gates (validators/plainEnglish.cjs). The layer is generated FROM content.beginner by transformation. Numeric thresholds are the drift fence; tune them here, not in code. LOCKED and corpus-validated: the layer is COMPLETE — all 1000 entries carry a content.plainEnglish block (as of 2026-06-30) and every threshold below held across the full corpus at 0 fails. Change them only via PLAIN_ENGLISH_SPEC.md (§6, the source of truth), never in the prompt or code. Readability is two-tier: fkWarn is the B1 target ceiling (warn), fkMax is the hard fail (clearly above B1). Entries with unavoidable polysyllabic domain terms (electricity, photosynthesis) ride higher on FK, so the hard fail sits at 8.0. Lengths are word counts. lengthBand = total B1 words allowed as a fraction of Beginner words.",
     "fkWarn": 7.0,
