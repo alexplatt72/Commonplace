@@ -1,8 +1,15 @@
 # Plain English (CEFR B1) Layer — Specification
 
-Status: **in development, hidden on the live site** behind the master kill-switch
-`PLAIN_ENGLISH_ENABLED` in `src/App.jsx` (currently `false`). Entries may carry the
-content; users cannot reach it until that flag is flipped.
+> ## ⚠️ RETIRED (2026-07) — HISTORICAL ONLY
+> **The Easy / Plain English layer is retired and must never be written, generated, or
+> transformed again.** It has been removed from the reader-facing site
+> (`PLAIN_ENGLISH_ENABLED = false`, permanent); the accessible reading levels are now
+> **Starter** (`beginner`) and **Standard** (`general`). Legacy entries may carry a dormant
+> `content.plainEnglish` block — hidden and inert; leave it, but never author a new one.
+> This document is kept only to explain the dormant blocks; it is **not** a live authoring spec.
+
+Status (historical): the layer was completed across the canon, then **retired and hidden**
+behind the master kill-switch `PLAIN_ENGLISH_ENABLED` in `src/App.jsx` (permanently `false`).
 
 This document is the **single source of truth** for generating the layer. It is given
 to every generation and review agent **verbatim**. Do not paraphrase it per-run.

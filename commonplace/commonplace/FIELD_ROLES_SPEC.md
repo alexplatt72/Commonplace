@@ -64,7 +64,7 @@ Each field does **one** job. The one-line test for each is the fastest way to ch
 **Test:** it enters the topic in its own way, not by re-running the hook's line or the summary's sentence.
 - **MUST NOT** re-use the hook's device (the same scene, the same reversal, the same first fact).
 - **MUST NOT** restate the summary's definition sentence.
-- Applies to **every** layer's first paragraph (`plainEnglish`, `beginner`/Starter, `general`/Standard, …), because the hook sits above all of them. The default layer (`general`) is the primary check.
+- Applies to **every** layer's first paragraph (`beginner`/Starter, `general`/Standard, …), because the hook sits above all of them. The default layer (`general`) is the primary check. (The old `plainEnglish`/Easy layer is retired.)
 
 ---
 

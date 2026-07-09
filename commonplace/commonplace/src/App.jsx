@@ -47,6 +47,9 @@ const FONTS = `
   .wax-seal-btn .wax-seal-svg { transition: transform .16s ease; }
   .wax-seal-btn:hover .wax-seal-svg { transform: scale(1.07) rotate(2deg); }
   .wax-seal-btn:active .wax-seal-svg { transform: scale(1.02); }
+  .wood-box-svg .box-lid { transition: transform .2s cubic-bezier(.2,.8,.3,1.05); transform-origin: 60px 46px; }
+  .wood-box-btn:hover .box-lid { transform: translateY(-7px) rotate(-3deg); }
+  .wood-box-btn:active .box-lid { transform: translateY(-3px) rotate(-1.5deg); }
   .qa-modal-backdrop { animation: qaFade .18s ease; }
   .qa-modal-card { animation: qaPop .22s cubic-bezier(.2,.8,.3,1.05); }
   @keyframes qaFade { from { opacity: 0 } to { opacity: 1 } }
@@ -102,12 +105,12 @@ const TEMPLATE_CONFIG = {
 // ─── PLATFORM CONFIGURATION ───────────────────────────────────────────────────
 
 // ── Plain English (CEFR B1) layer — MASTER KILL-SWITCH ──────────────────────
-// The B1 "Plain English" layer is still in development. While this is false the
-// layer is unreachable on the site by ANY path — the depth chip is hidden and the
-// renderer coerces it to the beginner layer (labelled "Essentials") — even on entries whose JSON already carries a
-// content.plainEnglish block. Flip to true to launch it sitewide; it then appears
-// only on entries that actually have the layer (per-entry gate stays in effect).
-const PLAIN_ENGLISH_ENABLED = true;
+// The "Easy" (B1 Plain English) layer is RETIRED (2026-07). It is never written for
+// new entries and is hidden site-wide: the depth chip is suppressed and the renderer
+// coerces it to the Starter (beginner) layer even on legacy entries whose JSON still
+// carries a content.plainEnglish block. Reader-facing depth is now Starter and Standard
+// (plus Study / Scholarly / Research inside the reader). Leave this false.
+const PLAIN_ENGLISH_ENABLED = false;
 
 // Dev-only preview of the hidden layer. Lets you READ the in-development Plain English
 // content locally without exposing it on the live site. Gated to localhost, so even if
@@ -127,8 +130,8 @@ function plainEnglishVisible() {
 // to 1000 entry JSON files, the validator, and the generation rules.
 const DEPTH_LAYERS = [
   { id:"plainEnglish", label:"Easy",     next:"beginner",    nextLabel:"Starter",   desc:"For English learners (ESL) · Grade 4" },
-  { id:"beginner",    label:"Starter",   next:"general",     nextLabel:"Standard",  desc:"A short, plain read · Grade 8" },
-  { id:"general",     label:"Standard",  next:"educational", nextLabel:"Study",     desc:"The full, standard read · Grade 11" },
+  { id:"beginner",    label:"Starter",   next:"general",     nextLabel:"Standard",  desc:"A short, plain read · Grade 6" },
+  { id:"general",     label:"Standard",  next:"educational", nextLabel:"Study",     desc:"The full, standard read · Grade 10" },
   { id:"educational", label:"Study",     next:"advanced",    nextLabel:"Scholarly", desc:"Classroom-ready depth" },
   { id:"advanced",    label:"Scholarly", next:"research",    nextLabel:"Research",  desc:"Expert-level and interpretive" },
   { id:"research",    label:"Research",  next:null,                                 desc:"Open questions and unsettled findings" },
@@ -1179,11 +1182,9 @@ const setDefaultDepthPref = (d) => { try { localStorage.setItem(DEFAULT_DEPTH_KE
 // Study and Scholarly are intentionally NOT here — they live inside the reader, not as
 // home landing points. Renames here mirror DEPTH_LAYERS (ids are frozen; labels are not).
 const READING_LEVELS = [
-  { id:"plainEnglish", label:"Easy", color:"#2b6c6f", selectable:true, sub:"ESL · Grade 4",
-    blurb:"The easiest read, for English Learners and anyone who prefers plain language." },
-  { id:"beginner", label:"Starter", color:"#2d5a3d", selectable:true, sub:"Grade 8",
-    blurb:"It's the shorter read of the essentials, designed for the casual reader. Can be combined with Standard as learning reinforcement on the topic." },
-  { id:"general", label:"Standard", color:"#1e3a5f", selectable:true, tag:"Recommended start", sub:"Grade 11",
+  { id:"beginner", label:"Starter", color:"#2d5a3d", selectable:true, sub:"Grade 6",
+    blurb:"The shorter read of the essentials, for the casual reader. Can be combined with Standard as reinforcement on the topic." },
+  { id:"general", label:"Standard", color:"#1e3a5f", selectable:true, tag:"Recommended start", sub:"Grade 10",
     blurb:"The complete, standalone account in clear, standard prose — everything most readers need. Start here; you can stop here too." },
 ];
 
@@ -1250,13 +1251,16 @@ function ReadingLevelChip({ level, selectable, active, onSelect, joined }) {
 
 // The four reading-level chips as a selector for the reader's default opening depth.
 // Click any level to make it the default; the selected one is filled. Hover shows its blurb.
-function ReadingLevelSelector() {
+function ReadingLevelSelector({ compact }) {
   const [pref, setPref] = React.useState(getDefaultDepth);
+  // Legacy readers whose saved default was "Easy" (plainEnglish, now retired) land on Starter.
+  const active = (pref === 'plainEnglish') ? 'beginner' : pref;
   const choose = (id) => { setPref(id); setDefaultDepthPref(id); };
   return (
-    <div style={{ flexBasis:"100%", display:"flex", gap:8, flexWrap:"wrap", justifyContent:"center" }}>
+    <div style={{ display:"flex", gap:8, flexWrap:"wrap", justifyContent:"center",
+      ...(compact ? {} : { flexBasis:"100%" }) }}>
       {READING_LEVELS.map(l => (
-        <ReadingLevelChip key={l.id} level={l} selectable active={pref === l.id} onSelect={() => choose(l.id)} />
+        <ReadingLevelChip key={l.id} level={l} selectable active={active === l.id} onSelect={() => choose(l.id)} />
       ))}
     </div>
   );
@@ -1307,7 +1311,7 @@ function FeaturedCard({ id, entry, onClick }) {
         <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between",
           marginTop:12, paddingTop:10, borderTop:`1px solid ${C.border}` }}>
           <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:9.5, color:C.light,
-            letterSpacing:"0.04em" }}>5 reading levels</span>
+            letterSpacing:"0.04em" }}>4 reading levels</span>
           <span style={{ fontFamily:"'Lora',serif", fontSize:12.5, fontWeight:500, color:accent }}>Read entry →</span>
         </div>
       </div>
@@ -1361,6 +1365,38 @@ function getFeatured() {
 // Mark the final paragraph with top:true for the divider rule.
 const QA_WEEKLY = [
   {
+    week: "2026-07-05",
+    originId: "weimarRepublic",
+    originTitle: "The Weimar Republic",
+    title: "When democracy is used against itself",
+    question: "Hitler came to power through legal appointment as Chancellor, then used legal procedures to establish a dictatorship. Does this mean democracy failed, or that democracy was used against itself? And what institutional safeguards, if any, can prevent a determined authoritarian movement from exploiting democratic procedures?",
+    answer: [
+      { p: "It means **both** — but more importantly, it means that democracy can fail precisely because its own procedures are turned against the purposes they were designed to serve." },
+      { p: "Hitler did not seize power in a classic coup. President Paul von Hindenburg legally appointed him Chancellor on January 30, 1933. Conservative politicians who helped arrange the appointment believed they could use Hitler's popularity while controlling him from within a coalition government. They were catastrophically wrong." },
+      { p: "Once in office, Hitler did not immediately abolish every constitutional form. He exploited them. After the Reichstag fire, the government used the emergency powers available under Article 48 to suspend fundamental rights — including freedoms of speech, press, and assembly — and to arrest political opponents. Then the Enabling Act transferred legislative authority from parliament to Hitler's government, allowing it to make laws without normal parliamentary consent. The institutions of democracy were used to disable democracy itself." },
+      { p: "So the answer is not simply that democracy failed because the wrong person won an election. Hitler never won a free national election with a majority of the German vote. Nor was his dictatorship created through democratic persuasion alone: violence, intimidation, arrests, exclusion of Communist deputies, emergency rule, and political coercion were already shaping the environment in which the decisive Enabling Act vote occurred." },
+      { p: "But neither can democracy be absolved entirely. Hitler's movement acquired genuine mass support. Democratic institutions admitted him to power. Political elites opened the door. Constitutional provisions supplied tools he could exploit. Parliament eventually surrendered its own power." },
+      { pull: "Democracy was not merely attacked from outside. Parts of the democratic system cooperated in their own destruction." },
+      { lifecycleLabel: "The authoritarian's path through democracy", lifecycle: [
+        ["Gain enough popular support to become unavoidable.", "An authoritarian movement does not necessarily need a majority. It may only need enough votes, seats, followers, or disruption to convince existing elites that government is impossible without it."],
+        ["Persuade conventional politicians that they can control you.", "Perhaps the most dangerous moment. The authoritarian is still outside full power, so established politicians believe they hold the stronger hand. They tell themselves that bringing him inside will moderate him."],
+        ["Use a real crisis — or the fear of one — to demand exceptional powers.", "Emergency powers are rarely advertised as the end of freedom. They are presented as temporary necessities needed to restore order, defeat enemies, stop violence, or save the nation."],
+        ["Redefine political opponents as threats to the state.", "Once opponents are no longer merely wrong but dangerous, traitorous, criminal, or illegitimate, stripping them of ordinary protections becomes easier to justify."],
+        ["Keep the forms while destroying the substance.", "There may still be laws, judges, legislatures, elections, and official procedures. But if the opposition cannot compete freely, the press cannot criticize safely, and institutions cannot restrain executive power, democratic forms become theatrical scenery."],
+      ] },
+      { p: "The disturbing lesson is that **legality and democracy are not the same thing.** A law can be legally enacted and profoundly anti-democratic. A parliament can legally surrender its own authority. An executive can invoke powers granted by a constitution to destroy constitutional government. Procedure alone cannot tell us whether democracy survives. We also have to ask whether political competition remains genuine, whether opponents retain rights, whether power can still change hands, and whether those in authority remain subject to institutions they cannot simply neutralize." },
+      { p: "So what safeguards can prevent this? There are some, but none is perfect." },
+      { p: "A constitution can sharply limit emergency powers: define exactly what constitutes an emergency, impose automatic expiration dates, require repeated legislative approval, preserve judicial review, and make certain fundamental rights impossible to suspend. Weimar's Article 48 gave the president extraordinary emergency authority, and its use had already become normalized before Hitler became Chancellor. What was supposed to be exceptional had begun to become an ordinary method of governing." },
+      { p: "A democracy can also make constitutional self-destruction more difficult by preventing a temporary majority from abolishing the basic democratic order itself. Postwar Germany drew exactly this lesson from Weimar: some constitutional principles are placed beyond ordinary amendment, and institutions have powers to act against movements that seek to use democratic freedoms to abolish democracy." },
+      { p: "But even these protections have a limit, because every safeguard must be administered by human beings. Courts must be willing to rule against those in power. Legislators must refuse to surrender their authority. Civil servants must resist unlawful abuses. Political parties must sometimes value the survival of the democratic system more than the immediate defeat of their rivals. Voters must reject the temptation to excuse authoritarian behavior because it comes from their own side." },
+      { pull: "The safeguards most needed against authoritarianism often look most frustrating when democracy is healthy." },
+      { p: "Independent courts obstruct popular governments. Due process protects people we may despise. A free press publishes things we believe are false or harmful. Divided government prevents decisive action. These frustrations are not always bugs in democracy. Sometimes they are the cost of preventing temporary political power from becoming permanent political power." },
+      { p: "So, did democracy fail in Weimar, or was democracy used against itself? **Both.** Democracy failed because it allowed its procedures to become detached from its underlying purpose. And it was used against itself because an authoritarian movement discovered that destroying a democracy from within could be easier than overthrowing it from outside." },
+      { p: "The deepest safeguard, therefore, is not one ingenious constitutional clause. It is a system in which power is divided among institutions strong enough to say no, rights do not disappear during moments of panic, political opponents remain legitimate participants in public life, and no leader can plausibly argue that his personal necessity outweighs the constitutional order. Even that cannot guarantee survival: a constitution can slow an authoritarian down, expose what he is doing, and preserve places of resistance, but it cannot save democracy indefinitely when enough voters want an exception, enough politicians think they can profit from it, and enough institutions decide that this one leader, this one emergency, or this one victory is worth suspending the rules." },
+      { p: "Weimar's warning is not merely that democracies can elect bad leaders. **It is that a democracy can retain laws, procedures, votes, and offices right up to the moment when those things no longer provide any meaningful way to remove the people in power.**", top: true },
+    ],
+  },
+  {
     week: "2026-06-24",
     originId: "georgeWashington",
     originTitle: "George Washington",
@@ -1386,6 +1422,154 @@ const QA_WEEKLY = [
   },
 ];
 const QA_OF_WEEK = QA_WEEKLY[0];
+
+// ─── QUESTION ARCHIVE ───────────────────────────────────────────────────────
+// Past questions, newest first. Each is a short description of the issue — NOT
+// the full question text. Dates are exact and always a Sunday. When a Q&A
+// rotates off the seal, add a one-line entry here. (Initial set seeded below.)
+const QA_ARCHIVE = [
+  // Washington reuses its full Q&A object (from QA_WEEKLY), re-dated to a Sunday.
+  { ...QA_WEEKLY[1], week: "2026-06-28",
+    blurb: "Can a republic rely on a founder's personal restraint where its laws demand none — and what changes when that unwritten norm finally has to be written into law?" },
+  { week: "2026-06-21", originId: "surveillance", originTitle: "Surveillance",
+    title: "The technology, the watcher, or the use",
+    blurb: "The same capture-and-predict machinery powers a state scoring system and an advertising market — so what should a free society actually regulate: the tool, the watcher, or the use?",
+    question: "The same technology of capture and prediction can power a state scoring system and a behavioral-advertising market. If the mechanism is the same and only the purpose differs, what should a free society regulate — the technology, the watcher, or the use?",
+    answer: [
+      { p: "A free society should regulate **all three — but not equally.** The technology matters because some capabilities are dangerous at scale. The watcher matters because a government, an employer, an insurer, and a retailer hold very different power over the person watched. But the use matters most, because the deepest question is not merely **what can be collected?**" },
+      { pull: "What can someone do to you because they know it?" },
+      { p: "That is the difference between a weather app using your location to show tomorrow's forecast and a government using the same location history to see whether you attended a protest. The data can be identical; the technology can be identical; the consequence is not. But there is a trap in saying only purpose matters. A company may collect behavioral data 'to show relevant ads' — and the same profile can then set your price, flag you as vulnerable to a sales pitch, target the political message most likely to move you, or feed others' assumptions about your health, finances, or state of mind. **Purpose expands once the data exists.**" },
+      { p: "So the problem cannot be solved by asking the watcher to declare good intentions. A free society has to regulate the whole chain: what may be collected, who may collect it, what they may infer, what they may do with the inference, and what power the watched person has to refuse, leave, appeal, or demand deletion." },
+      { lifecycleLabel: "Three places to draw the line", lifecycle: [
+        ["Regulate the technology when the capability itself is extraordinarily dangerous.", "Some systems are dangerous before any harmful use is named — a database of a whole population's movements is not neutral because its current administrator promises restraint. Build it to improve traffic, and then comes an election, an attack, a protest, or a new administration with different ideas about 'dangerous behavior.' The system need not be rebuilt; only the purpose changes. This is why data minimization regulates at the point of collection: information never collected cannot be leaked, sold, subpoenaed, stolen, or weaponized. Do not build an unlimited memory of human behavior and assume every future user of it stays benevolent."],
+        ["Regulate the watcher, because watchers are not equal.", "A supermarket, an employer, an insurer, a police department, and an intelligence agency may use the same predictive tools but stand in very different relationships to you. You can, in theory, stop shopping somewhere; you cannot withdraw from the state. So consent alone cannot solve it: a worker who must accept monitoring to keep a job has 'consented' thinly, and a citizen cannot opt out of being governed. The less easily a person can leave the relationship, the less surveillance should rest on supposed consent and the more on law, necessity, proportionality, and oversight — which is why state social scoring, now restricted under the EU's AI Act, raises the sharpest concerns: prediction joined to power and consequence."],
+        ["Regulate the use most strictly, because information becomes power through consequences.", "The same observations — you stay up until 3 a.m., stopped exercising, keep searching debt relief, buy more alcohol — can feed a helpful sleep-app suggestion, or an ad built to exploit your impulsivity, a higher insurance premium, an employer's doubt, a denied loan, or a lowered score that gates your housing. The facts are identical; the moral stakes are not. So the line is not public vs. private or government vs. business — the FTC treats commercial surveillance as a serious harm too. The real question: what decision is being made about a person, on what information, with what consequence, and with what chance to know, challenge, or escape it?"],
+      ] },
+      { lifecycleLabel: "Five questions any surveillance system should answer", lifecycle: [
+        ["Was the information necessary to collect at all?", "Not merely useful, not potentially valuable someday — necessary for a legitimate, clearly stated purpose. Rules like the EU's are technology-neutral: they follow the data and its use, not the latest machine, so they need not chase each new technology after it appears."],
+        ["Was the person meaningfully free to refuse?", "A checkbox buried on page 47 of a policy is legally convenient, not meaningful consent. The more essential the service and the greater the power imbalance, the less plausible it is that the person freely agreed to comprehensive surveillance."],
+        ["What is inferred beyond what the person revealed?", "You may never disclose that you are pregnant, depressed, in financial distress, politically radical, or beginning a serious illness — and the system infers it anyway. Modern surveillance is less about capturing what people disclose than predicting what they never chose to. Once prediction is accurate enough, the line between private and inferred-private information collapses."],
+        ["What consequence follows from the prediction?", "A book recommendation and a prison sentence are not equivalent because both use algorithms. Scrutiny should rise as a prediction moves from recommendation to persuasion to price discrimination to access decisions to employment to healthcare to policing to punishment. The higher the stakes, the less acceptable secrecy, weak evidence, and unchallengeable automation become."],
+        ["Can the person see, contest, and escape the judgment?", "If an algorithm decides you are risky: do you know it did? Can you see why, correct bad data, demand human review, appeal — and leave the system without forfeiting the ability to work, travel, bank, or get healthcare? A score you can neither see nor challenge, imposed by an institution you cannot avoid, is less information-processing than unaccountable power."],
+      ] },
+      { p: "Two mistakes to avoid. The first is treating commercial surveillance as automatically free. 'Government is coercive; business is voluntary' is sometimes true, but the boundary is not clean: services are woven into ordinary life, data flows through invisible intermediaries, and — as the FTC has documented — major platforms surveil users extensively to monetize them. Worse, commercial systems feed state power: governments buy commercially-collected data, and a technology built to sell shoes can map your movements, associations, and beliefs. The real question is who ultimately holds the record of your life, and what they can do with it." },
+      { p: "The second mistake is treating all prediction as inherently wrong. A free society cannot ban prediction — it forecasts weather, detects fraud, spots disease, and recommends the film you actually want. Nor is all personalization manipulation. The question is not whether technology knows something about us; a society cannot run under universal informational blindness. **The question is whether knowledge about us is converted into power over us without adequate limits.**" },
+      { p: "The same technology deserves progressively greater scrutiny as the danger signs accumulate: the collection is invisible; the data is intimate or comprehensive; the prediction concerns traits never revealed; the watcher holds real power; the consequences are serious; the system is hard to escape; the decision cannot be challenged; the data can be repurposed for uses never contemplated. A restaurant remembering your favorite table, a platform profiling you to find the message that best manipulates you, and a state fusing financial, social, political, and behavioral data to decide your rights are not morally equivalent — but the first harmless use never proves the machinery cannot become dangerous." },
+      { p: "**So — the technology, the watcher, or the use? All three, through different principles.** Regulate the **technology** when mere accumulation creates extraordinary, irreversible risk. Regulate the **watcher** by how much power it holds and how hard it is to refuse or leave. Regulate the **use** most strictly of all — by the stakes of the decision, the harm that can follow, and whether the person can see and contest it." },
+      { pull: "No institution should hold more knowledge about a person than it can justify, or more power to act on it than the person can meaningfully challenge." },
+      { p: "That applies whether the watcher wears a government uniform or a corporate logo. The great danger of surveillance is not simply that someone knows what you did. It is that observation becomes prediction, prediction becomes judgment, and judgment becomes consequence — all without your awareness, your participation, or any real chance of appeal." },
+      { p: "**Freedom does not require that nobody ever watches, records, or predicts. It requires that no invisible watcher — public or private — be allowed to turn a secret model of who you are into unanswerable power over what you are permitted to do.**", top: true },
+    ] },
+  { week: "2026-06-14", originId: "manhattanProject", originTitle: "The Manhattan Project",
+    title: "The maker's responsibility",
+    blurb: "What responsibility do scientists bear for how their discoveries are used — and what should they do when they believe the use is wrong?",
+    question: "The scientists who built the bomb organized to prevent its use on Japanese cities without warning. Their petition was suppressed by General Groves. What responsibility do scientists bear for the applications of their knowledge — and what should they do when they believe those applications are wrong?",
+    answer: [
+      { p: "It tells us that scientists may not control how their discoveries are used, but they do not become morally irrelevant once their work leaves the laboratory." },
+      { p: "The Manhattan Project scientists did not all agree on what should happen after the bomb was built. Some supported military use; others argued for a demonstration or a warning first. Leo Szilard's July 1945 petition, signed by roughly seventy project scientists, urged President Truman not to use atomic bombs against Japan without first making the terms of surrender public and giving Japan a chance to accept them. Truman never saw it. The earlier Franck Report had likewise argued against surprise use on Japanese cities, and warned about the world that beginning the nuclear age this way would create." },
+      { p: "That history is hard because there are two easy answers, and both fail. The first: **scientists only discover things; politicians and generals decide what to do with them.** The second: **if your discovery causes harm, you are responsible for everything done with it.** Neither is convincing." },
+      { p: "Scientists are not generals. They do not choose military targets, declare wars, or hold sovereign authority. A physicist who helps discover fission cannot control every future use of nuclear physics any more than a chemist can control every future use of chemistry. But neither can scientists always retreat into the claim that they merely supplied neutral knowledge. When a scientist works on a specific weapon, understands its likely consequences better than almost anyone, and knows that political leaders may not fully grasp them, expertise creates a special responsibility to speak." },
+      { pull: "The responsibility is not necessarily to control the decision. It is to make ignorance impossible." },
+      { lifecycleLabel: "A scientist's chain of responsibility", lifecycle: [
+        ["Understand what you are creating.", "Intellectual honesty first: what can this actually do, whom can it harm, how easily can it spread, what happens if it works exactly as intended? A scientist who refuses to think past the technical problem has not escaped ethics — he has decided that someone else will do his ethical thinking for him."],
+        ["Warn clearly about foreseeable consequences.", "Scientists often know what decision-makers do not, which creates an obligation to state the risks plainly when the stakes are enormous or irreversible. The Franck Report did exactly this — arguing that the first use of the bomb would shape the postwar order and the coming arms race, not merely that its authors disliked the weapon."],
+        ["Do not let secrecy become a substitute for obedience.", "Secrecy can be legitimate in war, but it creates a moral danger: the people with the most knowledge become the least able to challenge how it is used. Szilard's petition never reached Truman. A system that gathers the greatest minds to build unprecedented power, then keeps their objections from the person deciding how to use it, wants their intelligence but not their judgment."],
+        ["Escalate when ordinary channels fail.", "The hardest case, with no universal answer — disclosure can cost imprisonment, careers, or real security. But filing an internal memo is not always enough: organizing colleagues, petitions, appeals to civilian authority, public resignation, testimony, the press, and in the extreme refusing to continue the work. The greater the potential harm, the less adequate silence becomes."],
+      ] },
+      { p: "**But responsibility has limits.** It would be too easy to make this a story of pure scientists and deaf generals. The scientists themselves disagreed: some believed military use was justified, others favored a demonstration; the Franck Report was one faction, not a consensus. And expertise has limits. A physicist may understand blast effects better than a president, but not Japanese politics, military strategy, Soviet intentions, invasion casualties, or the full range of alternatives. Scientific expertise gives authority over some questions; it does not give sovereignty over all of them." },
+      { p: "The danger of saying 'scientists should decide' is technocracy — the idea that superior knowledge in one field entitles someone to make moral and political choices for everyone. The opposite danger is just as real: that politicians treat scientists as hired hands, taking their knowledge while dismissing their warnings the moment those warnings become inconvenient." },
+      { pull: "Scientists do not get the final say simply because they are scientists — but neither should authority be allowed to silence them because their expertise has become inconvenient." },
+      { p: "**The burden of creating power.** Does creating something dangerous impose a special moral burden on its creator? It does — not total responsibility, not permanent guilt, but special responsibility. The person who understands a technology best is often the first to see what others cannot yet see, so the duty does not end with getting the calculation right. It includes asking what happens when the calculation leaves the page and enters the world." },
+      { p: "This reaches far beyond the bomb. Today's scientist or engineer may be building an artificial-intelligence system capable of mass persuasion, a technique that can alter organisms, a system that can track whole populations, or an algorithm that decides who receives a loan or a job. In each case the temptation is the same:" },
+      { pull: "I built the tool. Someone else decided how to use it." },
+      { p: "Sometimes that is a fair defense. Sometimes it is an evasion. The difference depends on what the scientist knew, what harm was foreseeable, what power he had to object, and what he actually did once the danger became clear." },
+      { p: "**Knowledge creates responsibility, but not control.** A scientist cannot be blamed for every unpredictable use of a discovery — Marie Curie for every future misuse of radiation, the inventors of the internet for every online crime. But responsibility grows when four things come together: **the harm is foreseeable; the scientist understands it; the scientist is directly involved in the application; and the scientist has a meaningful chance to object.** At that point, neutrality becomes very hard to claim." },
+      { p: "The scientists who petitioned were not trying to seize control of American foreign policy. They were trying to ensure that the people making the decision confronted what had been created. Their failure to stop the bombing does not make the effort meaningless — it may make it more important, because responsibility is not the same as success." },
+      { pull: "When you cannot prevent the harm, the duty is at least to object clearly enough that no one can later say: we did not know." },
+      { p: "So what responsibility do scientists bear? Not for every use of what they discover — but when they knowingly help build a powerful application with foreseeable consequences, they acquire a duty to understand those consequences, speak honestly about them, and resist uses they believe cross a serious moral line. And when they believe an application is wrong, they should argue from evidence rather than authority, warn clearly, organize rather than assume a lone objection will be heard, and use every legitimate channel — and when those channels exist only to bury the warning, the question is no longer whether to stay obedient, but whether obedience has become a way of avoiding responsibility." },
+      { p: "**The person who creates a new form of power does not automatically gain the right to decide how society uses it — but neither does he lose the obligation to speak when he sees that power being used in ways he believes could change the world for the worse.**", top: true },
+    ] },
+  { week: "2026-06-07", originId: "propaganda", originTitle: "Propaganda",
+    title: "When the gatekeepers vanish",
+    blurb: "When the gatekeepers disappear, does an open information age become more democratic, or only easier to manipulate?",
+    question: "The internet has eliminated many of the institutional gatekeepers — editors, broadcasters, fact-checkers — who previously filtered claims before mass circulation. Has this produced a more democratic information environment (anyone can publish) or a more propagandistic one (false claims circulate as easily as true ones)? What would evidence on either side look like?",
+    answer: [
+      { p: "It has produced **both a more democratic information environment and a more propagandistic one**, because removing the barriers to publication solved one problem while creating another." },
+      { p: "The old information system asked: **who is allowed to speak?** The internet answered: almost anyone. But that created a new question — **when everyone can speak at once, how does anyone know whom to believe?**" },
+      { p: "That distinction matters because the internet did not actually eliminate gatekeepers. It replaced one kind with another. Editors, publishers, and broadcasters lost much of their control, but algorithms, platform owners, influencers, search rankings, recommendation systems, and sheer virality acquired enormous power over what people actually see." },
+      { pull: "The gate was not removed. The gatekeeper changed." },
+      { p: "And unlike a newspaper editor, the new gatekeeper may not primarily care whether something is true. It may care whether people click, watch, share, argue, or stay on the platform. That is the internet's central contradiction: it radically democratized the ability to **publish** without equally democratizing the ability to establish **credibility**." },
+      { p: "**What the internet genuinely democratized.** Before the internet, reaching a mass audience generally required access to institutions — a newspaper had to print you, a station had to air you, a publisher had to accept your book. Those institutions could exclude nonsense, but they could also exclude unconventional ideas, minority voices, whistleblowers, local witnesses, and anyone who lacked the right connections." },
+      { p: "The internet shattered much of that control. An eyewitness can publish video before a television crew arrives. A scientist can explain her own research without waiting for a journalist to interpret it. Communities ignored by mainstream media can document their own experience. Errors by prestigious institutions can be challenged in public rather than corrected quietly, if at all. That is a genuine redistribution of expressive power." },
+      { p: "And it can pay off. A large systematic review of digital media and democracy found that digital media use can raise political knowledge and information-seeking, though effects vary greatly by platform and user. A 2025 field experiment with Instagram and WhatsApp users in France and Germany found that people randomly nudged to follow news organizations became more knowledgeable and better able to tell true news from false. So the claim that the internet has simply made everyone stupid is too easy: **access to more information really can produce more knowledge.** But access is not understanding, and publication is not truth." },
+      { p: "**What the internet made dangerously easier.** The old gatekeepers were imperfect, sometimes badly so — newspapers published falsehoods, broadcasters carried prejudice, governments manipulated the press. Anyone nostalgic for a golden age of purely objective media is remembering an age that never existed. But traditional gatekeeping did impose **friction**: before a false claim could reach ten million people, someone usually had to print it, broadcast it, or stake an institutional reputation on it. That never prevented propaganda; it raised the cost of mass distribution." },
+      { p: "The internet cut that cost almost to zero. A fabrication can be made in minutes, published anonymously, copied infinitely, and carried across borders before any fact-checker has begun — and the very qualities that make something unreliable (novelty, outrage, shock, emotional intensity) can also make it more attractive to human attention. The most famous study of the problem examined roughly 126,000 stories on Twitter and found that false news traveled farther, faster, deeper, and more broadly than the truth — and that humans, not merely bots, were substantially responsible." },
+      { pull: "In some environments, truth and falsehood do not compete on equal terms — because falsehood can be more contagious." },
+      { lifecycleLabel: "Two kinds of democratization", lifecycle: [
+        ["The democratization of speech.", "More people can publish, challenge institutions, expose wrongdoing, share expertise, and reach audiences without permission. The internet plainly achieved much of this."],
+        ["The democratization of credibility.", "People becoming equally able to judge which claims deserve belief. It is far less clear the internet achieved this."],
+      ] },
+      { p: "Even here the picture is more complicated than the bleakest version. A 2025 meta-analysis of 194,438 people across 40 countries found that, on average, people were substantially better than chance at telling true news from false — and that excessive skepticism toward *true* information may be its own serious problem. Most people are not helplessly gullible." },
+      { p: "That changes the diagnosis. Perhaps the core problem is not that people have lost the ability to recognize truth, but that the environment rewards them for attending to something else — sharing what is funny, enraging, tribal, surprising, or damaging to an opponent. Research finds that simply nudging attention toward accuracy improves what people choose to share, which suggests they often spread misinformation not because they believe it, but because truth was not the consideration governing the moment." },
+      { p: "The old system asked, however imperfectly:" },
+      { pull: "Is this credible enough to publish?" },
+      { p: "The social internet frequently asks instead:" },
+      { pull: "Will people engage with this?" },
+      { p: "Those are not the same question — and a society whose information system optimizes the second while merely hoping for the first has built an obvious vulnerability." },
+      { lifecycleLabel: "Evidence for a MORE democratic environment", lifecycle: [
+        ["More diverse voices in public debate.", "People and communities once shut out of mass communication now reach meaningful audiences."],
+        ["More exposure to genuine knowledge.", "People who use digital sources actually become better informed about public affairs, science, and events."],
+        ["Faster correction of institutional error.", "False claims by governments, companies, and experts are caught quickly because outsiders can challenge them in public."],
+        ["Access to primary evidence.", "Citizens can inspect original documents, video, research, and firsthand accounts instead of depending entirely on intermediaries."],
+        ["Better truth discernment.", "People grow more, not less, able to tell reliable claims from unreliable ones."],
+      ] },
+      { lifecycleLabel: "Evidence for a MORE propagandistic environment", lifecycle: [
+        ["False information spreads better than true.", "Not merely that falsehood exists, but that the structure of the system gives it an advantage."],
+        ["Emotional intensity outranks accuracy.", "Claims that provoke anger, fear, or tribal loyalty get more distribution regardless of truth."],
+        ["People become confidently misinformed.", "Exposure does not merely confuse; it produces durable false beliefs."],
+        ["Corrections cannot catch up.", "A falsehood reaches millions before it is checked; the correction reaches a fraction of them."],
+        ["Reality fragments.", "Groups no longer merely disagree about values — they work from entirely different supposed facts."],
+        ["Consensus can be manufactured cheaply.", "Campaigns and interests can make a fringe claim look spontaneous and widespread."],
+      ] },
+      { p: "Some of this is already visible — most clearly that false news can spread faster and farther than true news, and that digital media's effects include both real knowledge gains and serious risks of polarization. But the evidence does **not** support the simplest apocalyptic claim that people believe everything they see. Across many countries, people do beat chance at telling true from false." },
+      { p: "The real problem is subtler. People do not have to believe every falsehood for propaganda to work. It can succeed by making truth seem unknowable — by exhausting people's willingness to check, by convincing them every institution lies equally, or by burying one true fact under so much noise that no one knows what deserves attention." },
+      { pull: "The opposite of truth is not always falsehood. Sometimes it is confusion." },
+      { p: "So has the internet produced a more democratic information environment or a more propagandistic one? **Both — but in different dimensions.** It is more democratic in deciding **who may speak.** It can be more propagandistic in deciding **what gets amplified.**" },
+      { p: "The internet gave ordinary people an unprecedented freedom to publish, investigate, criticize, and organize; handing that power back to a small class of gatekeepers would fix some problems by recreating others. But removing the old gatekeepers never removed the need for judgment — it transferred that burden onto individuals, inside systems often built to maximize attention rather than truth." },
+      { p: "The challenge is not to choose between a world where five editors decide what everyone may know and a world where every claim is treated as equally true. **It is to keep the internet's great achievement — that almost anyone may speak — without accepting the far more dangerous idea that because everyone may speak, every claim deserves equal belief.**", top: true },
+    ] },
+  { week: "2026-05-31", originId: "vaccines", originTitle: "Vaccines",
+    title: "When facts don't change minds",
+    blurb: "Why does a thoroughly discredited vaccine-autism claim persist — measles returning with it — and what, if anything, actually changes a health belief like that?",
+    question: "Andrew Wakefield's fraudulent MMR-autism paper was retracted in 2010, twelve years after publication. Wakefield lost his medical license. Yet the belief persists and measles has returned in communities with high rates of vaccine refusal. What does the persistence of a thoroughly discredited scientific claim reveal about how health beliefs are formed and maintained — and what interventions, if any, are effective at changing them?",
+    answer: [
+      { p: "It reveals that health beliefs are not formed from evidence alone — and so cannot always be undone simply by supplying better evidence." },
+      { p: "The scientific question has been studied exhaustively. In December 2025 the World Health Organization reviewed 31 studies published between 2010 and 2025 and reaffirmed that there is no causal link between vaccines and autism. Wakefield's paper had been retracted fifteen years earlier. Yet the claim survived. If a belief depended only on the paper that created it, retraction — and a mountain of larger studies finding nothing — should have dissolved it. Often the belief no longer depends on that evidence at all." },
+      { p: "**Wakefield's paper became less important than the story it released into the world** — simple, frightening, emotionally powerful: a healthy child receives a vaccine, the child changes, and a medical establishment refuses to admit fault. Once that narrative existed, parents attached their own experience to it, online communities reinforced it, and distrust of pharmaceutical companies, doctors, and government folded into a single worldview. Eventually the belief no longer needed Andrew Wakefield." },
+      { pull: "The paper was the match. The fire had found other fuel." },
+      { lifecycleLabel: "How a false health belief survives its evidence", lifecycle: [
+        ["A frightening story beats a statistical conclusion.", "Science speaks in probabilities — no increased risk across hundreds of thousands of children. A parent speaks differently: my child was fine, then came the vaccine, then something changed. That sequence does not prove causation, but a population study cannot erase a parent's lived experience, and the false claim offers a visible cause for something frightening."],
+        ["Protecting your child makes changing your mind a moral act, not a factual one.", "Hesitancy is too casually called ignorance. A parent may believe refusing the shot is protection. To change requires conceding not one fact but that the very act they thought kept their child safe may have exposed them to danger — that they trusted the wrong people. People do not surrender beliefs like that as easily as a trivia answer."],
+        ["Distrust makes contrary evidence strengthen the belief.", "Conspiratorial reasoning becomes self-sealing: that journals reject the claim proves the journals are compromised; that the paper was retracted proves powerful interests wanted it silenced. Every institution that could offer a correction has already been classified as untrustworthy — which is why 'trust the science' fails when trust itself is the thing in dispute."],
+        ["The belief becomes social.", "Tied to friends, communities, political identity, and the pride of having 'done your own research', a belief is far harder to drop. Changing your mind can mean admitting your community was wrong, losing standing among people who praised your skepticism, and becoming one of the 'gullible' you once mocked. It is no longer just something you think; it is part of where you belong."],
+        ["The cost stays invisible for years.", "Vaccination's success makes the threat disappear. Parents who never saw measles wards or polio wards see the vaccine as the visible risk and the disease as an abstraction — until coverage falls and the disease returns."],
+      ] },
+      { p: "The return is now measurable. As of July 2, 2026, the CDC had recorded 2,170 confirmed measles cases in the United States in 2026, 93 percent tied to outbreaks; national MMR coverage among kindergartners had slipped from 95.2 percent in 2019–2020 to 92.5 percent in 2024–2025, far lower in some communities. The irony is severe: vaccines become victims of their own success, because the better they work, the fewer people remember why they were needed." },
+      { p: "**So why doesn't fact-checking solve it?** Because correcting a false belief and changing behavior are not the same achievement. A well-known randomized trial tested four standard approaches — including directly correcting the autism myth and showing the dangers of the disease — and none increased parents' intention to vaccinate. The correction could reduce belief in the false claim without changing the behavior. A parent can say 'fine, maybe MMR doesn't cause autism' and immediately add 'but I still don't trust vaccines.'" },
+      { p: "That does not make facts useless — they are indispensable, and public health cannot go vague about the evidence. But the question a hesitant parent is really asking may not be 'what does the epidemiology show?' It may be: who has my child's best interests at heart? What if the experts are wrong? Why should I trust these institutions? What happens if I vaccinate and something goes wrong? Those are partly factual questions — and partly questions about trust, risk, fear, and control." },
+      { lifecycleLabel: "What actually seems to help", lifecycle: [
+        ["Correct the myth without making it the center.", "State what is true, but repeating a myth can keep it alive. It is often better to shift from the imagined danger of the vaccine to the real danger of the disease — a PNAS experiment found that emphasizing what measles, mumps, and rubella actually do improved attitudes even where directly correcting the autism claim did not. The disease becomes real again."],
+        ["Use trusted people, not just institutional authority.", "A frightened parent may ignore a government website or a fact-check but trust a pediatrician who has cared for the child for years and who listens rather than dismisses. A 2018 postpartum study using motivational interviewing — asking questions, helping people examine their own reasons — improved short-term vaccination coverage. It begins not with 'here are twelve reasons you're wrong' but with 'what worries you?'"],
+        ["Separate the uncertain from the unreachable.", "There is a large gap between 'I have some questions' and 'everyone who disagrees with me is in on the conspiracy.' The first is reachable; the second usually is not, because any evidence has already been folded into the conspiracy. Endless energy on the most committed opponents is often less effective than reaching the uncertain before hesitation hardens into identity."],
+        ["Make the healthy choice normal and easy.", "How a recommendation is framed matters: in an HPV trial, training clinicians to present vaccination as the routine, recommended course raised uptake more than an open-ended conversation. Health decisions are not solitary evidence-evaluations; they are shaped by what the doctor recommends, what the community treats as normal, and what is offered automatically. The architecture of a decision can matter as much as the argument."],
+      ] },
+      { p: "**The hardest truth is that some beliefs cannot be fact-checked out of existence.** The comforting assumption — bad information causes bad beliefs, so better information will fix them — is only sometimes true. People do not hold every belief as miniature scientists; we also use beliefs to build coherent stories, manage fear, explain misfortune, establish identity, and find communities that make us feel understood. That is why a claim can outlive the destruction of its evidence. By 2010 the MMR–autism belief no longer rested on twelve children in a 1998 paper; it had become a story about corrupted experts, injured children, brave outsiders, and institutions that could not be trusted. Retraction answered the scientific question. It did not dismantle the story." },
+      { p: "So facts matter — direct correction can reduce false belief, showing the real consequences of disease can shift attitudes, and trusted clinicians, motivational interviewing, strong recommendations, and repeated personal contact can improve acceptance and sometimes actual behavior. But no intervention reliably changes every mind, especially once a belief is central to someone's identity or protected by a worldview in which every correction is itself proof of conspiracy." },
+      { pull: "Truth and persuasion are different problems." },
+      { p: "Science can settle whether MMR causes autism; the evidence is overwhelming that it does not. But getting a human being to abandon a frightening story — one tied to their child, their community, and their sense of whom to trust — takes more than winning an argument." },
+      { p: "**A false claim can be killed scientifically and remain alive socially. Once that happens, the task is no longer to disprove it. It is to understand what the belief is now doing for the people who still need it to be true.**", top: true },
+    ] },
+];
 
 // Render a plain string with **bold** segments as JSX.
 function qaInline(text) {
@@ -1421,6 +1605,124 @@ function WaxSeal({ size = 116 }) {
         <text x="60" y="73" textAnchor="middle" fontFamily="'JetBrains Mono',monospace" fontSize="6.4" letterSpacing="1.6" fill="#e7cf9e">EDUCATION</text>
       </g>
     </svg>
+  );
+}
+
+// A small wooden chest that opens (lid lifts on hover) into the Question Archive.
+// A miniature wax seal sits on the front; the lid reads "QUESTION ARCHIVE".
+function WoodBox({ size = 118, onClick }) {
+  return (
+    <button className="wood-box-btn" onClick={onClick}
+      aria-label="Open the Question Archive" title="Question Archive"
+      style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}>
+      <svg className="wood-box-svg" width={size} height={size} viewBox="0 0 120 120"
+        role="img" xmlns="http://www.w3.org/2000/svg"
+        style={{ filter: "drop-shadow(0 3px 5px rgba(40,24,10,0.30))", display: "block", overflow: "visible" }}>
+        <defs>
+          <linearGradient id="wbBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7d5531" /><stop offset="1" stopColor="#4a3019" />
+          </linearGradient>
+          <linearGradient id="wbLid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#98693c" /><stop offset="1" stopColor="#6b4626" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="60" cy="99" rx="43" ry="5" fill="rgba(0,0,0,0.16)" />
+        {/* body */}
+        <rect x="18" y="52" width="84" height="42" rx="4" fill="url(#wbBody)" stroke="#331f0f" strokeWidth="1.5" />
+        <line x1="46" y1="55" x2="46" y2="91" stroke="#331f0f" strokeWidth="1" opacity="0.45" />
+        <line x1="74" y1="55" x2="74" y2="91" stroke="#331f0f" strokeWidth="1" opacity="0.45" />
+        {/* metal corner straps */}
+        <rect x="18" y="52" width="6" height="42" fill="#2c2c30" opacity="0.5" />
+        <rect x="96" y="52" width="6" height="42" fill="#2c2c30" opacity="0.5" />
+        {/* miniature wax seal on the front */}
+        <g transform="rotate(-6 60 73)">
+          <circle cx="60" cy="73" r="12.5" fill="#b3243a" stroke="#7c1522" strokeWidth="1.4" />
+          <circle cx="60" cy="73" r="9" fill="none" stroke="#e9d3a6" strokeOpacity="0.4" strokeWidth="0.8" />
+          <text x="60" y="76.5" textAnchor="middle" fontFamily="'DM Serif Display',serif" fontSize="9" fill="#f5e9d2">Q&amp;A</text>
+        </g>
+        {/* lid (lifts on hover) */}
+        <g className="box-lid">
+          <rect x="14" y="27" width="92" height="22" rx="5" fill="url(#wbLid)" stroke="#331f0f" strokeWidth="1.5" />
+          <rect x="16" y="29" width="88" height="5" rx="2.5" fill="#b07f4c" opacity="0.55" />
+          <text x="60" y="42" textAnchor="middle" fontFamily="'JetBrains Mono',monospace" fontSize="8" fontWeight="700" letterSpacing="0.6" fill="#f2e6d2">QUESTION ARCHIVE</text>
+        </g>
+      </svg>
+    </button>
+  );
+}
+
+// The Question Archive — its own routed page (/archive), not a popup. A Year + Month
+// selector (2026 only for now; only months that actually have entries; defaults to the
+// latest) filters the list. Opening a row shows that question's full Q&A.
+function ArchiveView({ onEntry, onHome }) {
+  const isMobile = useIsMobile();
+  const [openQA, setOpenQA] = React.useState(null);
+  const YEARS = ["2026"];
+  const [year, setYear] = React.useState("2026");
+  // Only months that actually contain archived questions, newest first.
+  const months = React.useMemo(() => {
+    const set = new Set(QA_ARCHIVE.filter(q => q.week.startsWith(year + "-")).map(q => q.week.slice(0, 7)));
+    return [...set].sort().reverse();
+  }, [year]);
+  const [month, setMonth] = React.useState(months[0]);
+  React.useEffect(() => { if (!months.includes(month)) setMonth(months[0]); }, [months]); // keep valid across year change
+  const items = QA_ARCHIVE.filter(q => q.week.slice(0, 7) === month).sort((a, b) => (a.week < b.week ? 1 : -1));
+  const fmtMonth = ym => new Date(ym + "-01T00:00:00").toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  const fmtDate = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+  const selStyle = { fontFamily: "'Lora',serif", fontSize: 15, color: C.text, background: C.surface,
+    border: `1px solid ${C.borderStrong}`, borderRadius: 6, padding: "7px 10px", cursor: "pointer" };
+  const labStyle = { fontFamily: "'JetBrains Mono',monospace", fontSize: 10.5, fontWeight: 700,
+    letterSpacing: "0.06em", textTransform: "uppercase", color: C.muted, marginRight: 8 };
+  return (
+    <main id="main-content" tabIndex={-1}
+      style={{ maxWidth: 820, margin: "0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
+      {openQA && <QAModal qa={openQA} onClose={() => setOpenQA(null)} onEntry={onEntry} />}
+      <button onClick={onHome}
+        style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: C.muted, background: "none",
+          border: "none", cursor: "pointer", padding: 0, marginBottom: 16 }}>‹ Home</button>
+      <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 8 }}>
+        <span style={{ flexShrink: 0 }}><WoodBox size={64} /></span>
+        <h1 style={{ fontFamily: "'DM Serif Display',serif", fontSize: isMobile ? 30 : 40, fontWeight: 400,
+          color: C.text, lineHeight: 1.1, margin: 0 }}>Question Archive</h1>
+      </div>
+      <p style={{ fontFamily: "'Lora',serif", fontSize: 15.5, color: C.muted, lineHeight: 1.6, margin: 0 }}>
+        Past questions of the week. Choose a month to browse; open any one to read the full question and answer.
+      </p>
+      <div style={{ display: "flex", gap: 24, alignItems: "center", flexWrap: "wrap",
+        margin: "22px 0 6px", padding: "14px 16px", background: C.warm, border: `1px solid ${C.border}`, borderRadius: 10 }}>
+        <span><span style={labStyle}>Year</span>
+          <select value={year} onChange={e => setYear(e.target.value)} style={selStyle} aria-label="Year">
+            {YEARS.map(y => <option key={y} value={y}>{y}</option>)}
+          </select></span>
+        <span><span style={labStyle}>Month</span>
+          <select value={month || ""} onChange={e => setMonth(e.target.value)} style={selStyle} aria-label="Month">
+            {months.map(m => <option key={m} value={m}>{fmtMonth(m)}</option>)}
+          </select></span>
+      </div>
+      <div style={{ borderTop: `1px solid ${C.border}`, marginTop: 22 }}>
+        {items.map(q => (
+          <button key={q.week} onClick={() => setOpenQA(q)}
+            style={{ display: "block", width: "100%", textAlign: "left", background: "none", cursor: "pointer",
+              border: "none", borderBottom: `1px solid ${C.border}`, padding: "16px 6px", transition: "background 0.12s" }}
+            onMouseEnter={e => e.currentTarget.style.background = C.warm}
+            onMouseLeave={e => e.currentTarget.style.background = "none"}>
+            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
+              <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, letterSpacing: "0.04em",
+                color: "#9a6a00", whiteSpace: "nowrap" }}>{fmtDate(q.week)}</span>
+              <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, color: C.light }}>{q.originTitle}</span>
+            </div>
+            <div style={{ fontFamily: "'Lora',serif", fontSize: 16, lineHeight: 1.55, color: C.text, marginTop: 5 }}>
+              {q.blurb}
+            </div>
+          </button>
+        ))}
+        {items.length === 0 && (
+          <p style={{ fontFamily: "'Lora',serif", color: C.muted, fontStyle: "italic", padding: "20px 6px" }}>
+            No questions archived in this month.
+          </p>
+        )}
+      </div>
+    </main>
   );
 }
 
@@ -1506,10 +1808,10 @@ function QAModal({ qa, onClose, onEntry }) {
   );
 }
 
-function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
+function HomeView({ onSearch, onTemplate, onEntry, onBrowse, onArchive }) {
   const isMobile = useIsMobile();
   const isWide = !useIsMobile(960);   // ≥960px: content column is a fixed 880, room to nudge the seal right
-  const [showQA, setShowQA] = useState(false);
+  const [openQA, setOpenQA] = useState(null);
 
   const totalEntries = MANIFEST.length;
 
@@ -1518,20 +1820,10 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
   return (
     <main id="main-content" tabIndex={-1} style={{ maxWidth:960, margin:"0 auto", padding: isMobile ? "24px 14px 60px" : "40px 40px 80px" }}>
 
-      {showQA && <QAModal qa={QA_OF_WEEK} onClose={() => setShowQA(false)} onEntry={onEntry} />}
+      {openQA && <QAModal qa={openQA} onClose={() => setOpenQA(null)} onEntry={onEntry} />}
 
       {/* Platform statement */}
-      <div style={{ textAlign:"center", marginBottom:36, position:"relative" }}>
-        {!isMobile && (
-          <button onClick={() => setShowQA(true)} className="wax-seal-btn"
-            aria-label="Open the Question and Answer"
-            title="Question &amp; Answer"
-            style={{ position:"absolute", left: isWide ? 8 : -40, top: isWide ? "88%" : "84%",
-              transform:"translateY(-50%)", zIndex:3,
-              background:"none", border:"none", padding:0, cursor:"pointer" }}>
-            <WaxSeal size={120} />
-          </button>
-        )}
+      <div style={{ textAlign:"center", marginBottom:30 }}>
         <img src="/tcp_logo_transparent.webp" alt="TheCommonPlace logo"
           style={{ display:"block", margin:"0 auto 6px", width:"340px", maxWidth:"86%", objectFit:"contain" }} />
         <h1 style={{ fontFamily:"'DM Serif Display',serif", fontSize: isMobile ? 34 : 50, fontWeight:400,
@@ -1546,13 +1838,28 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
           maxWidth:600, margin:"0 auto" }}>
           How a mosquito defeated an empire. Why debt existed before money.<br/>Who reforested a continent without planting a single tree.
         </p>
-        <div style={{ marginTop:26, display:"flex", flexDirection:"column", alignItems:"center", gap:14 }}>
+
+        {/* Centered vertical stack: "Open entries at" on top, then a down-arrow pointing to
+            the Start exploring button below it. */}
+        <div style={{ marginTop:28, display:"flex", flexDirection:"column", alignItems:"center", gap:9 }}>
+          <div style={{ display:"inline-flex", alignItems:"center", gap:12, flexWrap:"wrap",
+            justifyContent:"center", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
+            padding:"9px 18px", boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
+            <span style={{ fontFamily:"'Lora',serif", fontSize:12.5, color:C.muted }}>
+              Open entries at
+            </span>
+            <ReadingLevelSelector compact />
+          </div>
+          <span aria-hidden="true" style={{ color:C.navy, fontSize:22, lineHeight:1, margin:"-1px 0" }}>↓</span>
           <button onClick={() => onBrowse()}
             style={{ fontFamily:"'Playfair Display',serif", fontSize:16, color:"#fff", background:C.navy,
               border:"none", borderRadius:6, padding:"13px 32px", cursor:"pointer", letterSpacing:"0.01em",
               boxShadow:"0 2px 6px rgba(36,52,71,0.25)" }}>
-            Start exploring  →
+            Start exploring
           </button>
+        </div>
+
+        <div style={{ marginTop:18 }}>
           <button onClick={() => {
             const published = MANIFEST.filter(e => e.status === 'published');
             const random = published[Math.floor(Math.random() * published.length)];
@@ -1568,29 +1875,28 @@ function HomeView({ onSearch, onTemplate, onEntry, onBrowse }) {
         </div>
       </div>
 
-      {isMobile && (
-        <div style={{ display:"flex", justifyContent:"center", marginBottom:34, marginTop:-6 }}>
-          <button onClick={() => setShowQA(true)} className="wax-seal-btn"
+      {/* This week's Q&A seal + the Question Archive box, side by side, centered */}
+      <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", alignItems:"flex-start",
+        gap: isMobile ? 30 : 60, marginTop:4, marginBottom:48 }}>
+        <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:9 }}>
+          <button onClick={() => setOpenQA(QA_OF_WEEK)} className="wax-seal-btn"
             aria-label="Open the Question and Answer"
             title="Question &amp; Answer"
             style={{ background:"none", border:"none", padding:0, cursor:"pointer" }}>
-            <WaxSeal size={104} />
+            <WaxSeal size={isMobile ? 100 : 116} />
           </button>
+          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10.5, letterSpacing:"0.06em",
+            textTransform:"uppercase", color:C.muted }}>
+            This week's Q&amp;A
+          </span>
         </div>
-      )}
-
-      {/* Reading levels */}
-      <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center",
-        gap:"10px 18px", background:C.warm, border:`1px solid ${C.border}`, borderRadius:10,
-        padding:"16px 22px", marginBottom:48, boxShadow:"0 2px 8px rgba(0,0,0,0.06)" }}>
-        <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:14, color:C.text }}>
-          Choose <strong style={{ fontWeight:600 }}>where your entries open</strong>
-        </span>
-        <ReadingLevelSelector />
-        <span style={{ flexBasis:"100%", textAlign:"center", fontFamily:"'Lora',serif", fontSize:12.5,
-          color:C.light, fontStyle:"italic" }}>
-          Tap a level to set your default; hover over any level for what it offers.
-        </span>
+        <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:9 }}>
+          <WoodBox size={isMobile ? 100 : 116} onClick={() => onArchive()} />
+          <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:10.5, letterSpacing:"0.06em",
+            textTransform:"uppercase", color:C.muted }}>
+            Past questions
+          </span>
+        </div>
       </div>
 
       {/* Category grid */}
@@ -2613,6 +2919,7 @@ function parseHash(hash) {
     case 'about':    return { view: 'about' };
     case 'method':   return { view: 'method' };
     case 'privacy':  return { view: 'privacy' };
+    case 'archive':  return { view: 'archive' };
     case 'category': return (arg && TEMPLATE_CONFIG[arg]) ? { view: 'template', template: arg } : { view: 'home' };
     case 'search':   return arg ? { view: 'search', query: arg } : { view: 'home' };
     case 'entry':    return arg ? { view: 'entry', entryId: arg } : { view: 'home' };
@@ -2651,6 +2958,7 @@ function parsePath(pathname) {
     case 'about':    return { view: 'about' };
     case 'method':   return { view: 'method' };
     case 'privacy':  return { view: 'privacy' };
+    case 'archive':  return { view: 'archive' };
     case 'category': return (arg && TEMPLATE_CONFIG[arg]) ? { view: 'template', template: arg } : { view: 'home' };
     case 'search':   return arg ? { view: 'search', query: arg } : { view: 'home' };
     case 'entry':    return arg ? { view: 'entry', entryId: arg } : { view: 'home' };
@@ -2665,6 +2973,7 @@ function routeToPath(view, s) {
     case 'about':    return '/about';
     case 'method':   return '/method';
     case 'privacy':  return '/privacy';
+    case 'archive':  return '/archive';
     case 'template': return s.activeTemplate ? '/category/' + encodeURIComponent(s.activeTemplate) : '/';
     case 'search':   return s.searchQuery ? '/search/' + encodeURIComponent(s.searchQuery) : '/';
     case 'entry':    return s.activeEntryId ? '/entry/' + encodeURIComponent(s.activeEntryId) : '/';
@@ -2735,7 +3044,7 @@ function InfoPage({ kind, onHome, onBrowse }) {
         <>
           <P>TheCommonPlace is a curated atlas of the people, ideas, events, and forces that built the world — not an encyclopedia that aims to cover everything, but a deliberately finite canon of subjects that genuinely warrant deep, structured treatment.</P>
           <H>Several ways to read every entry</H>
-          <P>Each entry is written at several reading levels — Easy, Starter, and Standard, alongside Study, Scholarly, and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
+          <P>Each entry is written at several reading levels — Starter and Standard, alongside Study, Scholarly, and Research material. You choose how deep to go and can move between levels as you read. The idea is one subject, met at whatever altitude you need: a clear first orientation, a fuller account, or the scholarly debate underneath.</P>
           <H>Find your way in</H>
           <P>Browse the whole canon and filter it by era, region, category, and more; follow a Tour that connects a place to the entries it unlocks; or take a Pathway — a curated sequence that builds toward a big question like “how capitalism happened.” If you prefer to wander, search anything or chase a rabbit hole between related entries.</P>
           <H>Still growing</H>
@@ -2880,6 +3189,7 @@ export default function CommonplaceApp() {
   };
   const goToTemplate = (t) => { setActiveTemplate(t); setView('template'); };
   const goToBrowse = () => { setReturnTo(null); setReturnToId(null); setView('browse'); };
+  const goToArchive = () => { setReturnTo(null); setReturnToId(null); setView('archive'); };
   const goToEntry = (id, source=null, sourceId=null, preserveReturn=false) => {
     if (!MANIFEST.find(e => e.id === id)) return;
     if (!preserveReturn) {
@@ -2912,6 +3222,7 @@ export default function CommonplaceApp() {
       else if (r.view === 'template') goToTemplate(r.template);
       else if (r.view === 'search')   doSearch(r.query);
       else if (r.view === 'browse')   goToBrowse();
+      else if (r.view === 'archive')  goToArchive();
       else if (r.view === 'tours')    goToTours();
       else if (r.view === 'pathways') goToPathways();
       else if (r.view === 'about')    { setReturnTo(null); setReturnToId(null); setView('about'); }
@@ -3076,10 +3387,13 @@ export default function CommonplaceApp() {
 
       {/* Views */}
       {view === 'home' && (
-        <HomeView onSearch={doSearch} onTemplate={goToTemplate} onEntry={goToEntry} onBrowse={goToBrowse} />
+        <HomeView onSearch={doSearch} onTemplate={goToTemplate} onEntry={goToEntry} onBrowse={goToBrowse} onArchive={goToArchive} />
       )}
       {view === 'browse' && (
         <BrowseAllView onEntry={goToEntry} onHome={goHome} />
+      )}
+      {view === 'archive' && (
+        <ArchiveView onEntry={goToEntry} onHome={goHome} />
       )}
       {view === 'tours' && (
         <ToursView
