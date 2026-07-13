@@ -374,7 +374,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 39,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -1088,7 +1088,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 7,
     "added": "2026-06-01"
   },
   {
@@ -1742,7 +1742,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 6,
     "added": "2026-05-30"
   },
   {
@@ -2091,7 +2091,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 24,
+    "degree": 10,
     "added": "2026-06-02"
   },
   {
@@ -3194,7 +3194,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 23,
+    "degree": 9,
     "added": "2026-05-30"
   },
   {
@@ -4293,7 +4293,7 @@
     "regions": [
       "North Africa & Middle East"
     ],
-    "degree": 127,
+    "degree": 10,
     "added": "2026-05-30"
   },
   {
@@ -4753,7 +4753,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 13,
+    "degree": 5,
     "added": "2026-05-30"
   },
   {
@@ -4849,7 +4849,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 42,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -5265,7 +5265,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 67,
+    "degree": 10,
     "added": "2026-05-30"
   },
   {
@@ -5411,7 +5411,7 @@
     "regions": [
       "South Asia"
     ],
-    "degree": 14,
+    "degree": 6,
     "added": "2026-05-30"
   },
   {
@@ -5460,7 +5460,7 @@
     "regions": [
       "Latin America & Caribbean"
     ],
-    "degree": 21,
+    "degree": 8,
     "added": "2026-06-01"
   },
   {
@@ -5477,7 +5477,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 6,
     "added": "2026-06-01"
   },
   {
@@ -5699,7 +5699,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 16,
+    "degree": 8,
     "added": "2026-05-30"
   },
   {
@@ -10354,7 +10354,7 @@
     "regions": [
       "Sub-Saharan Africa"
     ],
-    "degree": 9,
+    "degree": 8,
     "added": "2026-06-16"
   },
   {
@@ -13844,7 +13844,7 @@
     "regions": [
       "Central Asia & the Steppe"
     ],
-    "degree": 12,
+    "degree": 9,
     "added": "2026-06-18"
   },
   {
@@ -15602,7 +15602,7 @@
       "Europe",
       "East Asia"
     ],
-    "degree": 20,
+    "degree": 11,
     "added": "2026-06-18"
   },
   {
@@ -15778,7 +15778,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 10,
+    "degree": 8,
     "added": "2026-06-18"
   },
   {
@@ -16213,7 +16213,7 @@
     "regions": [
       "Europe"
     ],
-    "degree": 13,
+    "degree": 9,
     "added": "2026-06-18"
   },
   {
@@ -17719,7 +17719,7 @@
     "regions": [
       "Global / Transregional"
     ],
-    "degree": 9,
+    "degree": 7,
     "added": "2026-06-18"
   },
   {
@@ -18371,5 +18371,787 @@
     ],
     "degree": 11,
     "added": "2026-06-18"
+  },
+  {
+    "id": "americanWest",
+    "title": "The American West",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1803–present",
+    "status": "published",
+    "summary": "The American West is both a region — the lands beyond the Mississippi River that the United States conquered and settled across the nineteenth century — and a national myth about that region, built around the idea of the frontier as the force that shaped American character. This entry treats the West as an idea: the frontier thesis, the doctrine of manifest destiny, and the later scholarship that revised both.",
+    "startYear": 1803,
+    "endYear": 2026,
+    "regions": [
+      "North America"
+    ],
+    "degree": 8,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "antitrust",
+    "title": "Antitrust and Trust-Busting",
+    "template": "Policy",
+    "subtype": "Policy Question",
+    "period": "1890–present",
+    "status": "published",
+    "summary": "Antitrust is the body of law and the recurring political fight over how much market power a company may hold and what the state should do when it holds too much. It began in the United States with the Sherman Act of 1890, aimed at the Gilded Age trusts, and now runs through fights over Standard Oil, AT&T, Microsoft, and the largest technology firms. As a policy question, it asks a question that has never been settled: is the danger of a giant company mainly that it raises prices and dulls innovation, or that it concentrates political and economic power in too few hands?",
+    "degree": 8,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "atollClimateDisplacement",
+    "title": "Atoll Climate Displacement",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "late 20th century–present",
+    "status": "published",
+    "summary": "Atoll climate displacement is the threat that rising seas, saltwater flooding, and stronger storms will make low-lying coral-atoll nations unlivable, forcing their people to move and raising new questions about whether a country can outlast the loss of its land. It centers on four nations most exposed to it — Tuvalu, Kiribati, the Marshall Islands, and the Maldives — whose ground rises only a few metres above the ocean.",
+    "startYear": 1988,
+    "endYear": 2026,
+    "regions": [
+      "Oceania",
+      "South Asia",
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "cosmopolitanism",
+    "title": "Cosmopolitanism",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "4th century BCE–present",
+    "status": "published",
+    "summary": "Cosmopolitanism is the moral and political idea that all human beings belong to a single community, so every person, not only our fellow citizens, holds a moral claim on us — though cosmopolitans differ sharply over how far that claim reaches. It runs from the Greek Cynics and Stoics through Kant's plan for perpetual peace to today's arguments over global justice, migration, and human rights.",
+    "startYear": -400,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional",
+      "Europe"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "counterReformation",
+    "title": "The Counter-Reformation",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1545–1648",
+    "status": "published",
+    "summary": "The Counter-Reformation was the Catholic Church's roughly century-long response to the Protestant Reformation, running from the opening of the Council of Trent in 1545 to the Peace of Westphalia in 1648. It combined an internal reform of the clergy and doctrine with a combative campaign to define Catholic belief against Protestantism and to win back lost ground.",
+    "startYear": 1545,
+    "endYear": 1648,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 6,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "cultureWars",
+    "title": "The Culture Wars",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1960s–present",
+    "status": "published",
+    "summary": "The culture wars are a framework for understanding the enduring conflict in American public life over values rather than economics: over abortion, religion, sexuality, guns, family, and what schools teach. The sociologist James Davison Hunter gave the idea its influential form in 1991, arguing that Americans were dividing into two moral camps, which he called orthodox and progressive, that cut across the older lines of denomination and class.",
+    "degree": 8,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "electoralCollege",
+    "title": "The Electoral College",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1787–present",
+    "status": "published",
+    "summary": "The Electoral College is the indirect method the United States uses to elect its president: voters in each state choose electors, apportioned by that state's seats in Congress, and those electors cast the official votes. It is less a single design than a founding compromise that later party competition and winner-take-all state laws reshaped into something its authors would not recognize.",
+    "degree": 7,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "ellisIsland",
+    "title": "Ellis Island and the Great Wave",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1880–1924",
+    "status": "published",
+    "summary": "Ellis Island and the Great Wave is the name given to the era of mass immigration to the United States, running roughly from the 1880s to 1924, when more than twenty million people arrived. Ellis Island, the federal inspection station that opened in New York Harbor in 1892, processed some twelve million of them before it closed in 1954. Most came from southern and eastern Europe and remade the country's cities, religions, and self-image, until national-origins quotas passed in 1924 shut the door.",
+    "startYear": 1880,
+    "endYear": 1924,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "existentialism",
+    "title": "Existentialism",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "19th century–present",
+    "status": "published",
+    "summary": "Existentialism is a twentieth-century philosophy holding that human beings have no fixed essence or built-in purpose. A person exists first and must then define who they are through free choice, bearing full responsibility for those choices in a universe that offers no external guarantee of meaning. It is most closely tied to Jean-Paul Sartre and the postwar French thinkers around him, though its roots reach back to Kierkegaard and Nietzsche.",
+    "startYear": 1843,
+    "endYear": 2026,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 5,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "federalReserve",
+    "title": "The Federal Reserve",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1913–present",
+    "status": "published",
+    "summary": "The Federal Reserve is the central bank of the United States, created by Congress in 1913 to supply an elastic currency and act as a lender of last resort after a century of recurring bank panics. Built as twelve regional banks coordinated by a board in Washington, it now issues the nation's money and sets the interest rate that prices credit across the economy. Its independence from elected officials, and the reach of its power, have been contested since its founding.",
+    "startYear": 1913,
+    "endYear": 2026,
+    "regions": [
+      "North America"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "fiji",
+    "title": "Fiji",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1000 BCE – present",
+    "status": "published",
+    "summary": "Fiji is an archipelago nation of more than three hundred islands in the southwestern Pacific, of which about a third are inhabited. Settled by ocean voyagers some three thousand years ago and ceded to Britain in 1874, it became a sugar colony worked by indentured laborers carried from India, whose descendants, the Indo-Fijians, came to live alongside the indigenous iTaukei. Independent since 1970 and shaken by four coups since 1987, Fiji is today the hub of the independent Pacific, a country still defined by the effort of two peoples to share one land.",
+    "startYear": -1000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 5,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "fourNobleTruths",
+    "title": "The Four Noble Truths",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "c. 5th–4th century BCE – present",
+    "status": "published",
+    "summary": "The Four Noble Truths are the framework at the center of Buddhism, a four-part analysis of why beings suffer and how they might not: that ordinary existence is pervaded by dukkha; that dukkha arises from craving; that craving, and so the suffering it feeds, can be brought to an end; and that a practical discipline, the Noble Eightfold Path, leads to that end. They are less a creed to be believed than a sequence to be worked through, and they remained the common inheritance of every school that later divided Buddhism.",
+    "startYear": -400,
+    "endYear": 2026,
+    "regions": [
+      "South Asia",
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "gildedAge",
+    "title": "The Gilded Age and the Robber Barons",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1870–1900",
+    "status": "published",
+    "summary": "The Gilded Age is the name given to the decades of explosive American industrial growth, roughly the 1870s to 1900, when railroads, steel, and oil built the modern economy and a handful of businessmen amassed fortunes on a scale never seen before. It was an era of dazzling wealth alongside crowded slums, brutal labor, and open political corruption. The name comes from an 1873 satirical novel by Mark Twain and Charles Dudley Warner, mocking a society that glittered on the surface and was corrupt beneath, and the tycoons who dominated it are still remembered by two rival names: robber barons and captains of industry.",
+    "startYear": 1870,
+    "endYear": 1900,
+    "regions": [
+      "North America"
+    ],
+    "degree": 8,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "gulag",
+    "title": "The Gulag",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1930–1960",
+    "status": "published",
+    "summary": "The Gulag was the Soviet Union's system of forced-labor camps, run by the secret police, through which millions of prisoners passed between roughly 1930 and the mid-1950s. Its name is an acronym for the government office that managed the camps, and it came to stand for the whole world of Soviet forced labor: the camps, the sentences, and the literature of survival written by those who lived through them. The system reached its height under Joseph Stalin and was dismantled in the years after his death in 1953.",
+    "startYear": 1930,
+    "endYear": 1960,
+    "regions": [
+      "Europe",
+      "Central Asia & the Steppe"
+    ],
+    "degree": 6,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "interstateHighwaySystem",
+    "title": "The Interstate Highway System",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "1956 CE – present",
+    "status": "published",
+    "summary": "The Interstate Highway System is the national network of limited-access expressways that the United States began building in 1956 under the Federal-Aid Highway Act. Now more than 46,000 miles long and paid for largely by federal fuel taxes, it standardized long-distance road travel, remade American cities and suburbs, and bound the country to a car-and-truck economy.",
+    "startYear": 1956,
+    "endYear": 2026,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "islamicPhilosophy",
+    "title": "Islamic Philosophy",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "9th–12th century CE (classical falsafa); continuing thereafter in the Islamic east",
+    "status": "published",
+    "summary": "Islamic philosophy, known in Arabic as falsafa, is the tradition of rational inquiry that took up ancient Greek philosophy, above all Aristotle and Neoplatonism, and developed it in Arabic across the medieval Islamic world. Pursued by Muslim, Christian, and Jewish thinkers from roughly the ninth century onward, it produced original systems of metaphysics and logic and, through Latin translations, carried much of Greek thought back into Europe.",
+    "startYear": 800,
+    "endYear": 1700,
+    "regions": [
+      "North Africa & Middle East",
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "israeliPalestinianConflict",
+    "title": "The Israeli-Palestinian Conflict",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "Late 19th century – present",
+    "status": "published",
+    "summary": "The Israeli-Palestinian conflict is the long, unresolved struggle between two national movements, Israeli Jews and Palestinian Arabs, over the same land between the Jordan River and the Mediterranean Sea. It turns on rival claims to territory, statehood, security, and the fate of Palestinian refugees, and it has run from the late nineteenth century into the present without a settled peace.",
+    "regions": [
+      "North Africa & Middle East"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "jayavarmanVii",
+    "title": "Jayavarman VII",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "r. c. 1181 – c. 1218 CE",
+    "status": "published",
+    "summary": "Jayavarman VII was a Khmer king (reigned c. 1181 – c. 1218) who ruled the Angkorian empire near its height, drove out a Cham army that had sacked the capital in 1177, and rebuilt the realm as a Buddhist state. He was the most prolific builder in Khmer history, founding the walled city of Angkor Thom with its face-covered Bayon temple, raising Ta Prohm and Preah Khan for his parents, and endowing a network of roads, rest-houses, and hospitals recorded in his inscriptions.",
+    "startYear": 1181,
+    "endYear": 1218,
+    "regions": [
+      "Southeast Asia"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "kamehamehaI",
+    "title": "Kamehameha I",
+    "template": "People",
+    "subtype": "Historical Actor",
+    "period": "c. 1758–1819 CE",
+    "status": "published",
+    "summary": "Kamehameha I (c. 1758–1819), known as Kamehameha the Great, was the Hawaiian chief who conquered and unified the islands into a single realm, founding the Kingdom of Hawaiʻi and the dynasty that ruled it for most of the nineteenth century. He is remembered both as a warrior who mastered newly arrived European arms and as a lawgiver whose kingdom outlived him.",
+    "startYear": 1758,
+    "endYear": 1819,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 6,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "mccarthyism",
+    "title": "McCarthyism and the Red Scare",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1947–1957",
+    "status": "published",
+    "summary": "McCarthyism, also called the Second Red Scare, was the wave of anticommunist fear, investigation, and persecution that gripped the United States from roughly 1947 to 1957. Named for Senator Joseph McCarthy of Wisconsin, it reached far beyond him: loyalty boards, congressional committees, and the FBI hunted suspected Communists in government, Hollywood, schools, and unions, costing thousands their jobs and reputations while exposing almost no actual spies.",
+    "startYear": 1947,
+    "endYear": 1957,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "melanesia",
+    "title": "Melanesia",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 50,000 BCE – present",
+    "status": "published",
+    "summary": "Melanesia is the name for the arc of Pacific islands running from New Guinea through the Bismarck Archipelago, the Solomon Islands, Vanuatu, and New Caledonia to Fiji — a region of extraordinary linguistic diversity settled by humans for some fifty thousand years. It is also a nineteenth-century European racial category, coined for the dark skin of the islanders it grouped together, that many modern Melanesians have both criticized and reclaimed.",
+    "startYear": -50000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 6,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "michelFoucault",
+    "title": "Michel Foucault",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "1926–1984",
+    "status": "published",
+    "summary": "Michel Foucault (1926–1984) was a French philosopher and historian of ideas. He wrote pathbreaking histories of madness, medicine, punishment, and sexuality, arguing that what a society treats as knowledge is bound up with how it exercises power. His books, among them The Order of Things, Discipline and Punish, and The History of Sexuality, made him one of the most influential and most contested thinkers of the late twentieth century.",
+    "startYear": 1926,
+    "endYear": 1984,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "micronesia",
+    "title": "Micronesia",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1500 BCE – present",
+    "status": "published",
+    "summary": "Micronesia is a region of thousands of small islands scattered across the western Pacific north of the equator — the Mariana, Caroline, and Marshall archipelagoes, along with Palau, Nauru, and the Gilbert Islands of Kiribati. It is also a nineteenth-century European label, meaning 'small islands,' that gathered hundreds of distinct communities under one name coined from outside. The region holds both a deep human past and a colonial classification that its own people still argue over.",
+    "startYear": -1500,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "nagarjuna",
+    "title": "Nagarjuna",
+    "template": "People",
+    "subtype": "Thinker",
+    "period": "c. 2nd century CE",
+    "status": "published",
+    "summary": "Nagarjuna was an Indian Buddhist philosopher, active by tradition around the second century CE, who founded the Madhyamaka or 'Middle Way' school and gave systematic argument to the Mahayana idea of emptiness: the claim that nothing possesses an independent, self-standing nature of its own. His Fundamental Verses on the Middle Way became one of the most influential and most argued-over texts in the history of Asian philosophy.",
+    "startYear": 150,
+    "endYear": 250,
+    "regions": [
+      "South Asia"
+    ],
+    "degree": 6,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "nomadism",
+    "title": "Nomadism",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "c. 3000 BCE – present",
+    "status": "published",
+    "summary": "Nomadism is the concept used to name a way of organizing social and economic life around mobility rather than a fixed home. In its main historical form, pastoral nomadism, communities live off herds of domesticated animals and move with the seasons across arid land that cannot support farming. As an analytical category it groups the mobile herding societies of the Eurasian steppe and other dry regions — including the empires that repeatedly reshaped the settled world — and it carries a long argument about whether such mobility was a primitive stage or a specialized adaptation.",
+    "startYear": -3000,
+    "endYear": 2026,
+    "regions": [
+      "Central Asia & the Steppe",
+      "North Africa & Middle East",
+      "Sub-Saharan Africa",
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "norseMythology",
+    "title": "Norse Mythology",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "Pre-Christian belief of Viking-Age Scandinavia and earlier; recorded in Iceland in the 13th century CE; living reception to the present",
+    "status": "published",
+    "summary": "Norse mythology is the body of pre-Christian myths and religious beliefs of the Norse-speaking peoples of Scandinavia and Iceland: the stories of gods like Odin, Thor, and Loki, of the world-tree Yggdrasil, and of Ragnarök, the foretold end of the world. Most of what survives was written down by Christian Icelanders two centuries after the North converted, above all in the two works known as the Eddas.",
+    "startYear": 800,
+    "endYear": 2025,
+    "regions": [
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "palau",
+    "title": "Palau",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1000 BCE – present",
+    "status": "published",
+    "summary": "Palau is a small archipelago nation of several hundred islands at the western edge of Micronesia, in the western Pacific. Home to a matrilineal island society for at least three thousand years, it was ruled in turn by Spain, Germany, Japan, and the United States before becoming independent in 1994, the last piece of the American-run Pacific trust territory to do so. A country of fewer than twenty thousand people, Palau is known for the Rock Islands and their marine lakes, for the ferocious 1944 Battle of Peleliu, and for using treaties and law to act far larger than its size.",
+    "startYear": -1000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "prohibition",
+    "title": "Prohibition",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1920–1933",
+    "status": "published",
+    "summary": "Prohibition was the nationwide ban on making, selling, and transporting alcohol in the United States, in force from 1920 to 1933 under the 18th Amendment and the Volstead Act. It was the crowning victory of a century-long movement to rid the country of drink. Widely evaded and linked to a boom in organized crime, it became the only constitutional amendment ever repealed.",
+    "degree": 7,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "reaganRevolution",
+    "title": "The Reagan Revolution",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "1981–1989",
+    "status": "published",
+    "summary": "The Reagan Revolution is the name for the conservative shift in American politics and economics during the 1980s, led by President Ronald Reagan, who held office from 1981 to 1989. It combined large tax cuts, restraint on many domestic programs, lighter regulation of business, and a major military buildup with an appeal to patriotism and traditional values. Supporters credit it with taming inflation, reviving growth, and helping end the Cold War. Critics blame it for rising debt, weakened regulation and unions, and widening inequality. Historians still debate whether it was a lasting political realignment.",
+    "startYear": 1981,
+    "endYear": 1989,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "republicanism",
+    "title": "Republicanism",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "509 BCE–present",
+    "status": "published",
+    "summary": "Republicanism is the political tradition holding that free self-government exists to prevent any person or group from holding arbitrary power over others, and that liberty depends on dividing power, binding it with law, and cultivating citizens willing to defend the public good. It runs from the Roman Republic through Machiavelli's Florence and the Atlantic revolutions to a philosophical revival that began in the 1990s.",
+    "startYear": -509,
+    "endYear": 2026,
+    "regions": [
+      "Europe",
+      "Global / Transregional"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "rhetoric",
+    "title": "Rhetoric",
+    "template": "Foundations",
+    "subtype": "Conceptual Foundation",
+    "period": "c. 5th century BCE – present",
+    "status": "published",
+    "summary": "Rhetoric is the systematic art of persuasion — the study and practice of using language to move an audience toward belief or action. From ancient Greece through the nineteenth century it was a central subject of formal education in the West, and its five-part method for composing a speech shaped how people were taught to argue, write, and reason in public.",
+    "startYear": -450,
+    "endYear": 2026,
+    "regions": [
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "royalSociety",
+    "title": "The Royal Society",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1660 CE – present",
+    "status": "published",
+    "summary": "The Royal Society is the learned society founded in London in 1660 and chartered by Charles II in 1662 to study nature through experiment. One of the oldest scientific bodies still in existence, it is best understood as an early working model of organized knowledge: a standing membership that tested claims in public, recorded them, and printed them in a journal so that distant readers could check and extend them. That model of witnessed, published, correctable inquiry became the template for how modern science is done.",
+    "startYear": 1660,
+    "endYear": 2026,
+    "regions": [
+      "Europe",
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "samoa",
+    "title": "Samoa",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1000 BCE – present",
+    "status": "published",
+    "summary": "Samoa is an independent Polynesian nation of two main islands and several smaller ones in the central South Pacific, long regarded as a heartland of Polynesian culture. Settled by Lapita voyagers roughly three thousand years ago, it carried the matai chiefly-title system and the customary order known as fa'a Samoa through a colonial era that split the archipelago among Germany, the United States, and New Zealand. After a nonviolent independence movement, it became, on 1 January 1962, the first Pacific island nation to regain its independence in the twentieth century. It is distinct from American Samoa, the United States territory that occupies the eastern islands.",
+    "startYear": -1000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "serfdom",
+    "title": "Serfdom",
+    "template": "Concepts",
+    "subtype": "Normative Concept",
+    "period": "c. 500–1861 CE",
+    "status": "published",
+    "summary": "Serfdom is a system of unfree labor in which peasants were legally bound to the land they worked and owed compulsory labor and dues to its lord. Unlike a slave, a serf was tied to an estate rather than owned outright as movable property, keeping a family, a customary holding, and a recognized place in law. For much of the European Middle Ages it was the condition of most people, and in Russia it lasted until 1861. As a name for dependent labor that cannot freely leave, the idea has never quite disappeared.",
+    "startYear": 500,
+    "endYear": 1861,
+    "regions": [
+      "Europe",
+      "Central Asia & the Steppe"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "siliconValley",
+    "title": "Silicon Valley",
+    "template": "Places",
+    "subtype": "System",
+    "period": "c. 1950s – present",
+    "status": "published",
+    "summary": "Silicon Valley is a region at the southern end of the San Francisco Bay Area in California, and the name for the technology industry and innovation system centered there. Since the mid-twentieth century it has been the world's leading source of computer chips, and later of personal computers, software, and internet companies. Built around a distinctive mix of university research, venture capital, and constant company founding, it is admired as a model of innovation and criticized for its concentrated wealth and power.",
+    "startYear": 1951,
+    "endYear": 2025,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "suburbia",
+    "title": "Suburbia and the American Dream",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1945–1970",
+    "status": "published",
+    "summary": "Suburbia and the American Dream refers to the mass movement of Americans into newly built residential suburbs after the Second World War, roughly 1945 to 1970, when federal home loans, cheap cars, and assembly-line construction put a single-family house with a yard within reach of millions of working families. It became the physical form of the American Dream. It was also, by the design of the same government programs, a machine of racial exclusion that shut Black families out of the wealth it created.",
+    "startYear": 1945,
+    "endYear": 1970,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "supremeCourt",
+    "title": "The Supreme Court",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "1789–present",
+    "status": "published",
+    "summary": "The Supreme Court is the highest court in the United States and the final judge of what the Constitution means. It hears cases the lower courts cannot settle, and its readings bind every other court, legislature, and official in the country. Its defining power is judicial review: it can refuse to enforce a law it finds unconstitutional, which lets an unelected bench overrule an elected majority. That power is nowhere spelled out in the Constitution's text. It was built up through decisions and accepted over time, and it makes the Court unusually strong for a body with no army and no vote to answer to.",
+    "startYear": 1789,
+    "endYear": 2026,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "tahiti",
+    "title": "Tahiti",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1000 CE – present",
+    "status": "published",
+    "summary": "Tahiti is the largest island of the Society Islands, in the South Pacific territory that France governs as French Polynesia. A high volcanic island settled by Polynesian voyagers about a thousand years ago, it became, after European ships arrived in the 1760s, the West's defining image of a tropical paradise, and later a French colony at the center of the twentieth-century Pacific. Home to a living Polynesian society, it remains far more complicated than the postcard the world made of it.",
+    "startYear": 1000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 5,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theBountyMutiny",
+    "title": "The Bounty Mutiny",
+    "template": "Events",
+    "subtype": "Discrete Event",
+    "period": "April 28, 1789",
+    "status": "published",
+    "summary": "The Bounty mutiny was the 1789 seizure of a small British naval ship by part of its crew, an act that cast its commander adrift in an open boat and drove the rebels to found a hidden island colony. It grew into one of the most retold sea stories in the English-speaking world, and its descendants still live on Pitcairn Island.",
+    "startYear": 1789,
+    "endYear": 1789,
+    "regions": [
+      "Oceania",
+      "Europe"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theCookVoyages",
+    "title": "The Cook Voyages",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1768–1779",
+    "status": "published",
+    "summary": "The Cook Voyages were three British expeditions that James Cook led across the Pacific Ocean between 1768 and 1779. Backed by the Royal Society and the Royal Navy, they mapped New Zealand, the east coast of Australia, and many Pacific islands with new accuracy, observed the 1769 transit of Venus, and disproved the idea of a habitable southern continent. They also opened the Pacific to European settlers, missionaries, traders, and the diseases that followed, making the voyages both a landmark of science and the leading edge of European empire in the Pacific.",
+    "startYear": 1768,
+    "endYear": 1779,
+    "regions": [
+      "Oceania",
+      "Global / Transregional"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theFijianChieftaincy",
+    "title": "The Fijian Chieftaincy",
+    "template": "Periods",
+    "subtype": "Period",
+    "period": "c. 1800 – present",
+    "status": "published",
+    "summary": "The Fijian chieftaincy is the indigenous iTaukei system of hereditary titled chiefs bound to their people through the vanua, the web of land, kinship, and obligation that organizes iTaukei society. Once the framework of many independent island polities, it was formalized and frozen by British colonial rule after 1874 and remains a contested force in Fiji's politics today.",
+    "startYear": 1800,
+    "endYear": 2025,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theFrigateBirdAndStickCharts",
+    "title": "The Frigate Bird and Stick Charts",
+    "template": "Foundations",
+    "subtype": "Material Foundation",
+    "period": "c. 1500 BCE – present",
+    "status": "published",
+    "summary": "The frigate bird and stick charts are two of the instruments behind traditional Pacific wayfinding — the system of memorized stars, wave patterns, and animal signs that let sailors cross open ocean and find islands with no compass, chart, or clock. Marshall Islands navigators built stick charts specifically to model ocean swells; voyagers across the wider Pacific read seabirds, clouds, and drift for the same purpose. Together they represent one of the most sophisticated navigation systems developed anywhere before mechanical instruments existed.",
+    "startYear": -1500,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theKingitanga",
+    "title": "The Kīngitanga",
+    "template": "Periods",
+    "subtype": "Movement",
+    "period": "1858–present",
+    "status": "published",
+    "summary": "The Kīngitanga, or Māori King Movement, is a political and cultural institution founded in 1858 to unite the independent tribes of Aotearoa New Zealand under a single monarch and to halt the loss of Māori land to British settlers. Centred on the Tainui people of the Waikato, it crowned Pōtatau Te Wherowhero as its first king, survived a colonial invasion and mass land confiscation in the 1860s, and endures today as a living movement based at Tūrangawaewae marae, where Ngā wai hono i te pō was crowned as its eighth monarch in 2024.",
+    "startYear": 1858,
+    "endYear": 2025,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theMarquesasIslands",
+    "title": "The Marquesas Islands",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1000 CE – present",
+    "status": "published",
+    "summary": "The Marquesas Islands are a remote archipelago of steep volcanic islands in the eastern Pacific, part of French Polynesia. Among the earliest-settled islands of East Polynesia and a likely springboard for the peopling of Hawaii and Rapa Nui, they developed one of the Pacific's richest cultures before European contact triggered a catastrophic collapse of their population. Annexed by France in 1842 and reduced by disease to a fraction of their former numbers, the islands are today the site of a determined Polynesian cultural revival.",
+    "startYear": 1000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "theMauiCycle",
+    "title": "The Māui Cycle",
+    "template": "Works",
+    "subtype": "Narrative",
+    "period": "Oral tradition of ancestral and settlement-era Polynesia, spread across the Pacific over roughly two millennia; first written down in the nineteenth century CE; living tradition to the present",
+    "status": "published",
+    "summary": "The Māui Cycle is the shared body of traditional stories, told across the islands of Polynesia, about Māui, a clever demigod and trickster hero. In tellings from Hawai'i and Aotearoa (New Zealand) to Tahiti, Tonga, and Samoa, he fishes islands up from the sea, slows the sun to lengthen the day, and brings fire to humankind. The stories were carried for centuries by memory and performance rather than writing, so they differ from island to island, and most of what we can now read was recorded only in the nineteenth century.",
+    "startYear": -1000,
+    "endYear": 2025,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 8,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "transcontinentalRailroad",
+    "title": "The Transcontinental Railroad",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1863–1869",
+    "status": "published",
+    "summary": "The Transcontinental Railroad was the rail line, completed in 1869, that first joined the eastern United States by rail to the Pacific coast. Two private companies built it from opposite ends and met in Utah, backed by federal loans and grants of public land. It cut a journey that had taken months down to about a week, opening the American West to settlement and trade at a heavy cost to the Chinese workers who built it and the Native peoples in its path.",
+    "startYear": 1863,
+    "endYear": 1869,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
+  },
+  {
+    "id": "twoPartySystem",
+    "title": "The Two-Party System",
+    "template": "Concepts",
+    "subtype": "Analytical Concept",
+    "period": "19th century–present",
+    "status": "published",
+    "summary": "A two-party system is a pattern of party competition in which two large parties dominate elections and government, and smaller parties rarely win power. It is the normal shape of politics in the United States and in some other democracies that elect one representative per district, and political scientists have long argued about how much the rules cause it and how much the voters do.",
+    "degree": 7,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "vanuatu",
+    "title": "Vanuatu",
+    "template": "Places",
+    "subtype": "Site",
+    "period": "c. 1000 BCE – present",
+    "status": "published",
+    "summary": "Vanuatu is a Melanesian nation of some eighty islands in the southwestern Pacific, home to more than a hundred indigenous languages among only a few hundred thousand people, which makes it among the most linguistically dense places on earth. Settled by Lapita voyagers about three thousand years ago, it was governed until 1980 by a joint British and French administration, the Anglo-French Condominium, before becoming independent as the Republic of Vanuatu. It remains a place where local custom, called kastom, and a shared national life are still being fitted together.",
+    "startYear": -1000,
+    "endYear": 2026,
+    "regions": [
+      "Oceania"
+    ],
+    "degree": 7,
+    "added": "2026-07-09"
+  },
+  {
+    "id": "wallStreet",
+    "title": "Wall Street",
+    "template": "Places",
+    "subtype": "System",
+    "period": "1653–present",
+    "status": "published",
+    "summary": "Wall Street is a street in Lower Manhattan and, more broadly, the name for the American financial system centered there: the stock exchanges, investment banks, and traders through which companies and governments raise money and securities are bought and sold. Since the late eighteenth century it has been the main marketplace where the nation's savings are channeled into enterprise, and it has become a byword for both the power and the excesses of high finance.",
+    "degree": 7,
+    "added": "2026-07-13"
+  },
+  {
+    "id": "watergate",
+    "title": "Watergate",
+    "template": "Events",
+    "subtype": "Extended Process",
+    "period": "1972–1974",
+    "status": "published",
+    "summary": "Watergate was the American political scandal of 1972 to 1974 that forced President Richard Nixon to resign. It began with a burglary at the Democratic Party's offices in the Watergate complex and grew into a criminal cover-up run from the White House, exposed by the press, Congress, and the courts, and ended with the only resignation of a U.S. president.",
+    "startYear": 1972,
+    "endYear": 1974,
+    "regions": [
+      "North America"
+    ],
+    "degree": 7,
+    "added": "2026-07-07"
   }
 ]
