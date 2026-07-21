@@ -1,0 +1,355 @@
+{
+  "id": "justInTimeManufacturing",
+  "schemaVersion": 1,
+  "status": "published",
+  "qualityTier": "A",
+  "template": "Concepts",
+  "subtype": "Analytical Concept",
+  "period": "20th century–present",
+  "title": "Just-in-Time Manufacturing",
+  "summary": "Just-in-time manufacturing is a production method that makes and moves goods only as they are needed, holding inventory to a minimum so that parts arrive at each step of assembly just before they are used. Kiichiro Toyoda framed the idea at Toyota in the late 1930s, but the working system was built after the war by Taiichi Ohno and spread across the company's plants by the early 1960s. It reorganized modern industry around the elimination of waste — and, in doing so, made global supply chains both leaner and more exposed to shock.",
+  "hook": "Walk through a modern car plant and you will not find the mountain of parts you might expect. There is no vast warehouse of spare engines, no aisles stacked with months of steel. A finished seat reaches the line a few hours before it is bolted into the one car it was built for, in that car's exact color and trim. A dashboard shows up minutes ahead of the worker who installs it. Stock that once sat for weeks now flows through the building almost without stopping. This is not luck or tight scheduling. It is the deliberate core of a system that treats a stockpile not as safety but as waste — money frozen in place, and a cushion that hides the problems it should be forcing you to fix.",
+  "aliases": [
+    "JIT",
+    "just-in-time production",
+    "Toyota Production System",
+    "lean manufacturing",
+    "lean production",
+    "kanban system"
+  ],
+  "indexTerms": [
+    "just-in-time",
+    "JIT",
+    "Toyota Production System",
+    "lean manufacturing",
+    "kanban",
+    "Taiichi Ohno",
+    "Kiichiro Toyoda",
+    "muda",
+    "jidoka",
+    "andon cord",
+    "pull system",
+    "inventory"
+  ],
+  "themes": [
+    "technology",
+    "economicHistory",
+    "capitalism",
+    "labor",
+    "globalization",
+    "japan",
+    "eastAsia"
+  ],
+  "interpretiveInfluences": [
+    "Taiichi Ohno",
+    "Kiichiro Toyoda",
+    "Shigeo Shingo",
+    "James P. Womack",
+    "Takahiro Fujimoto"
+  ],
+  "content": {
+    "beginner": {
+      "theConcept": "For most of the twentieth century, factories worked by piling up parts. Henry Ford's plants kept huge stockpiles beside the line, so machines stayed busy and no worker ever waited. Making things in large batches seemed obviously smart.\n\nToyota, in postwar Japan, could not afford that. Money was scarce, space was tight, and cash tied up in warehoused parts was cash the company did not have. So its engineers asked a different question: what if you made each part only when the next step actually needed it?\n\nThat is the heart of just-in-time. Instead of building parts in advance and storing them, you build them on demand. A signal moves backward: when final assembly uses a part, the step before it makes one more. Nothing is produced until something asks for it. The warehouse shrinks, the parts keep flowing, and the factory runs on request rather than guesswork about later needs.",
+      "problemItSolves": "The old way had a hidden cost. A stockpile looks like safety, but it ties up money and space. Worse, it hides problems: if one machine makes bad parts, a big pile of spares lets the mistake go unnoticed for days while the defects accumulate.\n\nJust-in-time attacks this directly. With almost no spare parts on hand, a problem stops the line at once. That sounds bad, but it is the point: the stoppage forces workers to find the cause and fix it now, not later. Toyota's engineers came to see stored inventory as a fog that let waste hide.\n\nThe system also answers a money problem. A firm holding weeks of inventory has huge sums locked in shelves — cash it cannot use. Shrinking those shelves frees the money and makes the true state of the factory visible. The gain is not only speed but constant pressure to spot trouble the moment it appears.",
+      "howItWorks": "The engine of just-in-time is an idea Toyota borrowed from an unlikely place: the American supermarket. A shelf is restocked only after a customer takes something, pulling new stock from the back as it empties. Toyota built its factory the same way.\n\nThe tool is the kanban, a Japanese word for a card or sign. When a bin of parts is used up, its card travels back to the step that supplies them. The card is an order: make one more, exactly this many. No card, no production. This is a pull system: demand at the end pulls parts forward instead of a plan at the start pushing them out.\n\nA second idea supports the first. Toyota called it jidoka, roughly \"automation with a human touch.\" Machines and workers are set up to stop the instant something goes wrong, and a cord above the line lets any worker halt production. With no cushion of spare parts, the whole plant depends on catching defects at once.",
+      "whatItExplains": "Just-in-time explains why a modern factory can feel almost empty of stored goods yet still turn out thousands of finished products a day. The parts are not gone; they are moving. It trades the security of a full warehouse for the speed and clarity of constant flow.\n\nIt also explains a deeper shift in how companies think about waste. Toyota gave waste a name, muda, and hunted it everywhere: wasted material, motion, waiting, and overproduction. Making too much, too early, was the worst waste of all, because it hid every other kind. This way of seeing spread far beyond cars; hospitals, software teams, and coffee chains now borrow the same language.\n\nAnd it explains why so many industries chose to run lean. Holding little inventory saves money and exposes problems fast. For decades that looked like nearly pure gain: companies that mastered it made better products at lower cost. The idea seemed to have almost no downside, which is exactly why it spread worldwide so quickly.",
+      "whereItBreaksDown": "The weakness of just-in-time is the flip side of its strength. A system with no cushion has nothing to fall back on. If parts stop arriving, the line stops within hours, not weeks. The thin buffer that saves money in calm times becomes a danger in a crisis.\n\nThe world has tested this more than once. In 2011, a huge earthquake and tsunami struck northeast Japan, damaging factories that made specialized parts, and carmakers around the world slowed or stopped. Toyota alone lost production of well over a hundred thousand vehicles and took about three months to recover. A single broken link froze plants an ocean away.\n\nThe COVID-19 pandemic showed it again on a global scale. When demand and shipping swung wildly, factories with no spare stock could not adjust. A shortage of computer chips idled auto plants for months. Store shelves went bare. Many firms had stretched their supply chains thin and lean at once, and the two choices together left almost no room to absorb a shock.",
+      "usedAndMisusedC": "Just-in-time began as a way to build cars, but its ideas were carried almost everywhere. Managers turned Toyota's factory methods into a broad philosophy, often called lean. Hospitals used it to speed up patient care, software teams borrowed its cards to track their work, and the word lean became a badge that promised efficiency in almost any setting.\n\nSome of this spread was genuine improvement. But the tools were often copied without the thinking behind them. Toyota's system rested on trained workers trusted to stop the line and fix problems. Stripped of that, lean could become simple cost-cutting: fewer workers, tighter schedules, more pressure. Critics argued that in many workplaces it meant speeding people up until they broke, then calling the breakdown a lesson.\n\nThe deeper misuse was treating thinness as always good. Running lean saves money, so firms pushed inventory as low as it could go, everywhere at once, squeezing out buffers even as their supply lines stretched across the planet. When shocks came, the savings of years could vanish in a few idle weeks. The tool was sound; the belief that less is always better was not."
+    },
+    "general": {
+      "theConcept": "In the 1930s, Kiichiro Toyoda studied Henry Ford's moving assembly line and saw both its power and a way to improve it. Ford's system made parts in great batches and stored them beside the line. Toyoda, launching Toyota's car business in a capital-starved country, proposed the opposite: make each part \"just in time\" for the next step, and hold almost nothing in reserve. He coined the phrase, but the war interrupted the work, and the idea stayed mostly on paper.\n\nThe man who turned it into a working system was Taiichi Ohno, an engineer who had come up through Toyota's loom business. From the late 1940s onward, with the backing of the executive Eiji Toyoda, Ohno rebuilt the shop floor around a single principle: nothing should be produced until a later stage asks for it. The method was refined over two decades by his shop teams and carried outward to Toyota's suppliers. By the early 1960s the kanban system had spread across all of the company's plants. This became the Toyota Production System. Just-in-time was one of its two pillars, and it inverted the logic that had governed factories since Ford.",
+      "problemItSolves": "Mass production solved the problem of cost by making identical goods in enormous runs. But large batches carry a hidden tax. Inventory is money that sits idle, and stored parts conceal defects: if a machine turns out flawed pieces, a large stockpile lets the flaw travel for days before anyone notices. Ohno came to regard held inventory as the enemy, because it papered over every other kind of waste.\n\nJust-in-time replaces the deep buffer with a thin one, and the thinness is the mechanism, not a side effect. When there is little spare stock, a defect or a breakdown halts the line quickly, which forces an immediate search for the cause. Problems surface while they are still small and cheap to fix. Ohno grouped the targets under the word muda, waste, and treated overproduction — making too much, too soon — as the root waste that generated the others. The framework replaced the older assumption that a busy machine is always a productive one. A machine building parts nobody needs yet, in this view, is manufacturing waste with great efficiency.",
+      "howItWorks": "Ohno's central insight came from an ordinary American supermarket, which he studied through descriptions before seeing one in person. A shelf is refilled only when a customer removes an item; consumption at the front pulls replacement from the back. He rebuilt the factory to run on that logic. Each stage draws parts from the stage before it only as it uses them, so demand at final assembly ripples backward through the whole plant.\n\nThe signal that carries this demand is the kanban, a card attached to a bin of parts. An emptied bin sends its card upstream as an instruction to produce exactly one replacement batch, no more. Without a card, a station stands idle rather than build ahead. This is the pull system, opposed to the push of a central schedule guessing what each stage should make. Supporting it is jidoka, or \"automation with a human touch\": machines stop themselves when they detect a fault, and any worker can pull the andon cord to halt the line. Shigeo Shingo, an outside consultant who taught courses at Toyota, helped codify the enabling tools. His work on rapid tool changeovers let Toyota switch between products in minutes and so made tiny batches affordable.",
+      "whatItExplains": "The reach of just-in-time explains why \"lean\" became one of the most exported management ideas of the late twentieth century. When a five-year study of the global auto industry by researchers at the Massachusetts Institute of Technology reported its findings in the 1990 book The Machine That Changed the World, it gave Toyota's approach the name the West still uses — lean production — and documented that Japanese plants built better cars with less labor, less space, and far less inventory. The performance gap was too large to ignore, and manufacturers everywhere set out to copy it.\n\nWhat traveled was not only a set of factory tools but a way of seeing. The idea that inventory is waste, that problems should be surfaced rather than buffered, and that value should be pulled by demand rather than pushed by forecast, proved portable. Hospitals applied it to patient flow, software teams adopted kanban boards, and \"lean\" attached itself to startups and public services alike. Some of these transplants worked and some were cargo-cult imitations, but the spread shows how a solution to one country's postwar scarcity became a general theory of efficient work.",
+      "whereItBreaksDown": "The same thinness that surfaces problems inside a plant leaves the plant defenseless against shocks from outside it. A system holding hours of inventory, not weeks, has no reserve when a supplier fails, and failure anywhere in a long chain propagates fast. This limit is not a flaw in the concept so much as its cost, and the cost stayed largely invisible while the world was calm.\n\nTwo events made it visible. In March 2011, the Tōhoku earthquake and tsunami knocked out Japanese plants that made specialized components, including microcontrollers that carmakers could not source elsewhere; Toyota lost output of well over 150,000 vehicles and needed roughly three months to recover. Then the COVID-19 pandemic scrambled demand and freight at once, and firms running on minimal stock could not flex. A global shortage of semiconductors idled auto lines for months, and thinly stocked retailers faced empty shelves. Analysts noted that the damage came less from just-in-time alone than from combining it with single sourcing and stretched global supply lines — leanness and fragility layered on top of one another until almost no slack remained.",
+      "usedAndMisusedC": "Because lean promised efficiency, it was adopted far beyond the conditions that made it work, and the gap between tool and philosophy is where the trouble lies. Toyota's system depended on skilled workers empowered to stop the line, stable supplier relationships built over years, and a discipline of continuous problem-solving. Copied without those foundations, lean often collapsed into ordinary cost-cutting dressed in Japanese vocabulary.\n\nLabor critics pressed this point hardest. Mike Parker and Jane Slaughter argued that lean production, in many Western plants, amounted to \"management by stress\": systems were deliberately tightened until someone could not keep up, and the breakdown was then treated as a chance to squeeze the job further. Where Toyota framed the andon cord as trust in the worker, its imitators sometimes used the same lean logic to intensify labor and thin the workforce.\n\nThe broader misuse was ideological — the belief that leaner is always better. Firms drove inventory toward zero everywhere, at the same moment they were spreading supply chains across the planet, as if buffers were pure waste rather than insurance with a price. The pandemic forced a reckoning, and many companies began quietly rebuilding the reserves that decades of lean orthodoxy had told them to eliminate."
+    },
+    "advanced": {
+      "theConcept": "The most productive way to read just-in-time is as an argument about where the value of a manufacturing system actually resides, and the argument cuts against a century of intuition. Classical mass production, following Ford, located efficiency in economies of scale: long runs of identical output amortized fixed costs and kept expensive machinery fully loaded. Utilization was the master metric, and inventory was its natural byproduct — the slack that decoupled each stage from the failures of its neighbors. Ohno's system inverts the objective function. It treats inventory not as buffer but as the principal form of waste, because inventory is simultaneously immobilized capital and, more subtly, an information-suppressing agent that lets defects, imbalances, and breakdowns persist unobserved. The deliberate removal of buffer is therefore not a cost-saving measure layered onto an otherwise conventional factory; it is an epistemic strategy. A line held taut broadcasts its own faults. Lowering the \"water level\" of inventory, in Ohno's famous metaphor, exposes the rocks. What looks like a logistics technique is at bottom a claim that the fastest route to quality and low cost runs through the continuous, forced surfacing of problems — and that a comfortable stockpile is precisely what prevents an organization from ever having to solve them.",
+      "problemItSolves": "This reframing dissolves an assumption embedded in cost accounting: that a machine producing anything is preferable to a machine standing idle. Under just-in-time, a station without a kanban card is correctly idle, and a station building unrequested parts is actively destroying value even as it registers, on conventional metrics, as productive. The tension here is real and unresolved in practice, because standard accounting capitalizes inventory as an asset while lean logic reclassifies most of it as a liability. Firms that adopted lean tools while retaining utilization-maximizing incentive structures routinely produced contradictory behavior — building ahead to hit efficiency targets, then discovering the resulting stock concealed the very defects lean was meant to expose. The deeper problem the system solves, then, is not merely inventory cost but the misalignment between local optimization and system performance. Ohno's method subordinates every station's output to demand from the station downstream, making the pace of final assembly, not the appetite of any individual machine, the governor of the whole. The scholarly literature on the Toyota Production System, notably Takahiro Fujimoto's account of its evolution, stresses that this was not a designed blueprint but an emergent capability, assembled through decades of trial, and that its coherence is easy to overstate in retrospect.",
+      "howItWorks": "The mechanics reward close attention because their interdependence is what makes the system both powerful and difficult to transplant. Pull scheduling via kanban is inseparable from small-lot production, which is itself impossible without short changeover times — hence Shigeo Shingo's single-minute exchange of die, which converted setups measured in hours into ones measured in minutes and made economical the tiny batches that pull requires. Jidoka, the second pillar, supplies the quality precondition: because there is no inventory to screen defects out, defects must not be produced, so machines and operators are given authority to stop at the first abnormality. These are not independent tools that a firm can adopt piecemeal; they form a tightly coupled system in which removing the buffer only works if changeover, quality, and supplier reliability have all been brought to the level the thin buffer demands. This is the crux of the transferability debate. One camp, exemplified by the Machine That Changed the World team, argued lean is a universal set of principles any competent manufacturer can learn. Critics countered that Toyota's system was inseparable from specific institutional conditions — long-term keiretsu supplier networks, enterprise unions, and something close to lifetime employment that made workers willing to surface problems that might, elsewhere, cost them their jobs. Whether \"lean\" names a portable technology or a culturally embedded settlement remains the field's central dispute.",
+      "whatItExplains": "The system's diffusion explains something about the modern economy that its origin does not obviously predict: a shop-floor method born of one firm's postwar scarcity became, within four decades, the closest thing global manufacturing has to a common grammar. The puzzle is that the productivity gap the MIT study measured was large and durable, yet the techniques that produced it proved only partly portable — and the cleanest way to see why is to read just-in-time as a theory of substitution rather than a scheduling discipline. On this reading, inventory is what a firm holds in place of knowledge. Every bin of spares is a quantified admission of ignorance: about when a machine will fail, how long a changeover will take, whether a supplier will deliver, how many pieces in a batch are already defective. Buffer and information are therefore substitutes purchased against the same uncertainty, and lean is the wager that the second can be bought more cheaply than the first — but only by an organization that has built the machinery to generate it. What proved portable was the wager itself, because a proposition can be stated in a sentence and converts an accounting entry into a diagnostic instrument; it carried intact into hospitals, software, and services that had no assembly line at all. What did not travel was the machinery: the changeover engineering, the supplier reliability, the quality discipline, and the labor settlement that let a thin buffer actually hold. Firms that took the wager without the substrate did not obtain a leaner system; they obtained the same underlying uncertainty with the insurance canceled and the savings booked in advance — which is why the identical word, lean, names both a formidable production system and its hollow imitation. Just-in-time thus explains a broader feature of how management knowledge moves. A model of the world is vastly more transmissible than the capabilities that made the model true somewhere, and it routinely arrives long before — sometimes permanently instead of — them.",
+      "whereItBreaksDown": "The concept's gravest limit is not internal but appears the moment its logic crosses the factory gate, and it was severe enough to force a global reappraisal. Just-in-time's pull discipline did not stop at the wall of the plant. Extended outward, it became the template for the lean supply chain: minimal inventory not only between workstations but between firms, across borders, and along tiers of suppliers whose full depth the lead firm often could not see. This delivered extraordinary capital efficiency and, at the same time, an unbooked accumulation of systemic fragility. Each firm minimizing its own inventory rationally externalized the risk of disruption onto a network whose correlated vulnerabilities no single balance sheet revealed — the same pattern of individually rational, collectively dangerous thinness that marks financial systems before a crisis. The 2011 Tōhoku earthquake gave the first large demonstration, when the loss of a few specialized suppliers several tiers deep halted assembly worldwide. COVID-19 generalized it. The uncomfortable conclusion is that just-in-time did not merely happen to have a fragility problem; at the scale of the global supply chain it may have been a fragility-generating machine, converting slack that had quietly functioned as insurance into booked cost savings, precisely because each participant was behaving efficiently. Efficiency and resilience, on this reading, are not simply different goals but partly opposed ones.",
+      "usedAndMisusedC": "The most uncomfortable challenge to the system is not the supply-chain critique, which Toyota itself substantially anticipated and hedged against, but the labor critique, because it questions whether the system's celebrated virtues and its human costs are separable at all. Mike Parker and Jane Slaughter's \"management by stress\" analysis holds that the continuous surfacing of problems, read from the shop floor rather than the boardroom, is experienced as the deliberate intensification of work: the line is tightened until it breaks, the break identifies the weakest worker or step, and the cycle repeats with no natural stopping point. On this reading, the andon cord and the quality circle are not counterweights to speedup but instruments that enlist workers in engineering their own. Defenders respond that Toyota's own plants pair this pressure with employment security and genuine authority to halt production, and that the abusive cases are precisely the imitations that took the tools while discarding the reciprocal obligations. But this defense concedes the critics' most important point: that the system's benignity is contingent on institutional guarantees the tools themselves do not supply, and that lean production stripped of those guarantees — which is how it arrived in much of the world — reliably tends toward intensification. The unresolved question is whether the humane version is the true system and the exploitative version a corruption, or whether both are stable expressions of a method whose core operation is, after all, the removal of every form of slack — including the slack in a working day."
+    },
+    "educational": {
+      "foundation": {
+        "theStory": "Just-in-time manufacturing is best understood as a problem about buffers: how much slack a productive system should hold against uncertainty, and what that slack costs. For most of industrial history the answer seemed obvious — hold plenty, because a stockpile keeps the line running and protects against the unexpected. Toyota, building cars in a poor and crowded postwar Japan, could not afford that answer and was forced to invent another: hold almost nothing, and use the resulting exposure to force continuous improvement. The story of just-in-time is the story of how a constraint became a philosophy, spread from one company to global industry, and then revealed, in a run of twenty-first-century shocks, that the slack it had eliminated had quietly been doing important work all along. It sits at the intersection of business history, the study of technology and organizations, and the economics of risk.",
+        "theDebate": "Two debates organize the subject. The first is about transferability: is lean production a universal toolkit that any firm can learn, as the influential MIT study argued, or is it inseparable from Japanese institutions — close-knit supplier networks, enterprise unions, secure employment — that let workers surface problems without fear? The second is about the balance between efficiency and resilience: for decades minimal inventory looked like nearly free money, but the 2011 Tōhoku earthquake and the COVID-19 pandemic suggested that leanness, especially combined with long global supply chains, manufactured a fragility that its own accounting could not see. A third, sharper debate runs underneath both: whether the system's continuous pressure to remove slack improves work or simply intensifies it.",
+        "whyItMatters": "Understanding just-in-time unlocks a great deal about the modern world: why factories look the way they do, how Japan became a manufacturing power, why \"lean\" language now pervades hospitals and offices, and why a disruption in one country can empty shelves on the other side of the planet. It offers a concrete case for thinking about a general trade-off — between optimizing a system and protecting it — that appears in finance, public health, and infrastructure as much as in manufacturing.",
+        "questions": [
+          "Toyota came to see a full warehouse of spare parts not as safety but as a problem. Why would a company deliberately remove its own cushion, and what does that choice assume about the people running the line?",
+          "For decades, holding almost no inventory looked like pure savings. What changed in 2011 and again during the pandemic that made companies start rebuilding the buffers they had spent years eliminating?"
+        ]
+      },
+      "interpretation": {
+        "scholarlyConversation": "Scholarship on just-in-time runs along a few clear fault lines. The foundational account by James Womack, Daniel Jones, and Daniel Roos in The Machine That Changed the World (1990) presented lean production as a general advance over mass production, learnable by any manufacturer — a broadly universalist reading. Takahiro Fujimoto's study of the system's evolution complicated this by showing that Toyota's capability emerged gradually and unplanned, deeply entangled with the firm's particular history, which makes clean copying harder than the toolkit view implies. From labor studies, Mike Parker and Jane Slaughter advanced the \"management by stress\" critique, reading the same practices the MIT team praised as mechanisms of work intensification. Taiichi Ohno's own writing supplies the insider's philosophy, centered on the relentless elimination of waste. The conversation is genuinely unresolved because the participants are often studying different things — factory performance, organizational history, and shop-floor experience — and reaching conclusions that do not neatly contradict so much as talk past one another.",
+        "evidenceAndLimits": "The evidence for just-in-time's performance advantages is strong and was measured carefully: the MIT program's comparative plant data documented real, large gaps in productivity, quality, and inventory between lean and mass-production factories. What the evidence supports less cleanly is the causal story behind those gaps — how much owed to specific tools versus to Japanese labor relations, supplier structures, or macroeconomic conditions of the period. The fragility case rests on a small number of vivid episodes, chiefly 2011 and 2020–2021, which are powerful illustrations but a thin statistical base; disentangling the contribution of just-in-time itself from single sourcing and globalization is difficult, and the counterfactual — how those same firms would have fared holding more inventory — cannot be directly observed. The labor critique draws on plant-level ethnography and union experience that is real but contested, and hard to generalize across very different national settings.",
+        "takingAPosition": "A defensible position has to hold two things at once that partisans tend to separate. Just-in-time was a genuine and hard-won achievement: it really did produce better goods at lower cost, and its core insight — that buffers hide the problems an organization needs to see — is sound and travels well. But the same removal of slack that surfaces problems inside a plant externalizes risk when extended across a global supply chain, and can intensify work when transplanted without the employment guarantees Toyota paired it with. The strongest argument therefore resists both the triumphalist reading, which treats lean as costless efficiency, and the wholly critical reading, which treats it as mere speedup or reckless thinness. It asks instead where slack is genuinely waste and where it is doing unpriced work — as quality insurance, as disruption insurance, as the margin that makes a job humane. Getting the answer right requires naming who bears the cost of thinness when a shock arrives, a question the accounting that justified lean was never designed to ask.",
+        "questions": [
+          "The MIT study measured lean plants outperforming mass-production plants and concluded the methods were broadly transferable. What kinds of evidence would you need to distinguish the effect of the tools themselves from the effect of the Japanese institutions surrounding them?",
+          "If minimal inventory is individually rational for each firm but produces fragility for the whole network, is this a failure of just-in-time or a failure of the accounting that treats buffer stock purely as cost? How would you tell the difference?"
+        ]
+      }
+    }
+  },
+  "research": [
+    {
+      "status": "established",
+      "topic": "The origins of just-in-time at Toyota and its two pillars",
+      "content": "The historical record on the system's origins is well documented, including in Toyota's own corporate history and in independent scholarship. Kiichiro Toyoda articulated a \"just-in-time\" concept in the 1930s, adapting ideas from Henry Ford's flow production to a capital-scarce setting, and is credited with the phrase. Taiichi Ohno developed it into a working production system from the late 1940s through the 1950s, and Toyota extended the kanban method across its plants by the early 1960s. Just-in-time and jidoka (\"automation with a human touch\") are consistently identified as the two pillars of the Toyota Production System, with Ohno's inspiration from the American supermarket's restocking model a frequently attested detail. Shigeo Shingo is associated with enabling techniques such as rapid die changeover (SMED). What is settled is the broad sequence and the identity of the principal figures; the precise apportioning of credit among them is less firmly fixed."
+    },
+    {
+      "status": "emerging",
+      "topic": "Whether lean production systematically trades resilience for efficiency at the supply-chain scale",
+      "content": "Since 2011, and far more intensely since 2020, a body of work in operations management and economics has examined whether just-in-time, extended into globally distributed supply chains, generates systemic fragility. Studies of the 2011 Tōhoku earthquake traced how disruption to a few deep-tier suppliers propagated into worldwide production losses, and pandemic-era research extended the question to semiconductors and consumer goods. The emerging finding is that minimal inventory interacts dangerously with single sourcing and long, opaque supply networks, so that individually rational leanness can aggregate into collective vulnerability. This remains emerging rather than established because the evidence leans on a few major episodes, the counterfactual inventory levels are unobservable, and it is analytically hard to separate the contribution of just-in-time itself from that of globalization and sourcing strategy. Firms' post-pandemic moves toward larger buffers and dual sourcing are real but too recent to evaluate."
+    },
+    {
+      "status": "unrecoverable",
+      "topic": "How much of Toyota's performance advantage was the method versus its institutional setting",
+      "content": "It cannot be established with confidence how much of Toyota's measured superiority over mass-production rivals came from just-in-time techniques themselves and how much from the surrounding Japanese institutions — long-term keiretsu supplier ties, enterprise unions, secure employment, and the macroeconomic conditions of the postwar decades. Resolving it would require something unavailable: controlled variation in which the same techniques were applied with and without those institutions, holding all else constant. Real-world attempts to transplant lean approximate this only loosely, because transplanting firms differed in countless other respects, and Toyota's own overseas plants deliberately carried modified versions of the institutions with them. What can be responsibly inferred is that the tools and the setting were mutually reinforcing rather than separable, and that pure-toolkit and pure-culture explanations are both too simple. What must remain unknown is the precise weighting, because the clean comparison the question demands was never possible to run."
+    }
+  ],
+  "comparativeNarrative": [
+    {
+      "perspective": "Operations management and the lean movement",
+      "name": "A Universal Advance",
+      "content": "To the managers and engineers who carried lean around the world, just-in-time is one of the great achievements of modern industry. Before it, factories accepted waste as normal: piles of parts, long waits, defects caught only at the end. Toyota showed that a plant could be faster, cheaper, and higher in quality all at once, and that the key was to stop making things nobody had yet asked for. On this view the methods are general tools, not Japanese secrets, and any competent organization can learn them. The failures people point to are failures of copying — firms that grabbed the vocabulary without the discipline. The answer to a lean system that broke is almost always a more faithful lean system, applied with the patience Toyota spent decades developing."
+    },
+    {
+      "perspective": "Labor and the shop floor",
+      "name": "Management by Stress",
+      "content": "Workers and labor researchers often see the same system from underneath, and the view is harsher. Removing every buffer does not only expose faulty machines; it exposes people. A line run with no slack is a line that can be tightened until someone cannot keep up, and in many plants that pressure was the point. Mike Parker and Jane Slaughter called it \"management by stress.\" The cord that lets a worker stop the line can look like trust or like a trap, depending on whether stopping it costs you your job. Where Toyota paired the pressure with secure employment and real authority, the bargain could hold. Where imitators took the speed and dropped the security, lean became a polished name for doing more with fewer people, faster."
+    },
+    {
+      "perspective": "Supply-chain and risk analysts",
+      "name": "The Hidden Cost of Thinness",
+      "content": "A third group watches not the factory but the network around it, and draws a warning. Holding little inventory is smart for any single firm, but when every firm does it along a chain that stretches across the globe, the slack that once absorbed shocks disappears. The savings are visible on each balance sheet; the risk is spread across a system no one fully sees. The 2011 earthquake in Japan and the COVID-19 pandemic both proved the point, freezing production worldwide when a few deep suppliers faltered. To these analysts, the lesson is not that just-in-time was wrong but that it was pushed past its safe limits, treating buffers as pure waste when they were also insurance with a price worth paying."
+    }
+  ],
+  "comparativeSummary": "The three vantages are not really arguing about the same object, which is why the disagreement is so durable. The lean movement is looking at plant performance and sees a genuine, transferable advance; labor is looking at the working day and sees a method whose core operation is the removal of slack, up to and including the slack that makes a job bearable; the risk analysts are looking at the network and see individually sensible thinness aggregating into collective danger. Each is largely right within its frame. Held together, they suggest that just-in-time succeeded exactly by eliminating buffers — and that buffers, it turned out, had been quietly doing several different jobs at once: hiding defects, yes, but also protecting workers from unbounded pressure and protecting supply chains from shocks. The question that survives all three is not whether the system works but where slack is waste and where it is unpriced insurance, and who pays when it is gone.",
+  "rabbitHole": [
+    {
+      "label": "The Factory",
+      "entryId": "factory",
+      "status": "published",
+      "relationship": "Foundational",
+      "reason": "Just-in-time is a reorganization of the factory itself — the physical logic of the assembly line is what Ohno rebuilt around pull rather than push. Understanding how the factory concentrated production in the first place is prerequisite to seeing what just-in-time changed about it."
+    },
+    {
+      "label": "Mass Production",
+      "entryId": "massProduction",
+      "status": "planned",
+      "relationship": "Contrasting",
+      "reason": "Just-in-time defined itself against Fordist mass production and its economies of scale. The two systems answer the question 'when should a part be made?' in opposite ways, and the contrast is the sharpest route into understanding what is distinctive about the lean approach."
+    },
+    {
+      "label": "The Industrial Revolution",
+      "entryId": "industrialRevolution",
+      "status": "published",
+      "relationship": "Precursor",
+      "reason": "The factory system and the drive to mechanize production that just-in-time refines both descend from the Industrial Revolution. Ohno's system is a late chapter in a long argument about how to organize machine-based manufacturing for maximum output."
+    },
+    {
+      "label": "The Supply Chain",
+      "entryId": "supplyChain",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Just-in-time logic extended outward from the plant to the network between firms, producing the lean global supply chain — and the systemic fragility that the 2011 Tōhoku disaster and the pandemic exposed. The entry's account of resilience versus efficiency runs directly through supply-chain design."
+    },
+    {
+      "label": "Globalization",
+      "entryId": "globalization",
+      "status": "published",
+      "relationship": "Consequential",
+      "reason": "Minimal inventory combined with globally dispersed sourcing to make just-in-time both a driver and a vulnerability of the integrated world economy. The fragility the system revealed is inseparable from the reach of global production networks."
+    },
+    {
+      "label": "The Meiji Restoration",
+      "entryId": "meijiRestoration",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Japan's rise as an industrial power, which the Toyota Production System came to symbolize, has its roots in the state-led modernization that began with the Meiji Restoration. The trajectory from that opening to postwar manufacturing leadership frames why the system emerged where it did."
+    },
+    {
+      "label": "The Corporation",
+      "entryId": "corporation",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "Just-in-time reshaped how large manufacturing firms organize work, relate to suppliers, and account for inventory — questions that sit at the heart of what the modern corporation is and how it coordinates production across boundaries."
+    },
+    {
+      "label": "The Balance Sheet",
+      "entryId": "balanceSheet",
+      "status": "published",
+      "relationship": "Thematic",
+      "reason": "The lean insight that inventory is waste is partly an argument with accounting, which books inventory as an asset. Just-in-time treats much of that 'asset' as immobilized capital and hidden liability, making it a case study in what a balance sheet does and does not reveal."
+    }
+  ],
+  "reference": [
+    {
+      "author": "Ohno, Taiichi",
+      "title": "Toyota Production System: Beyond Large-Scale Production",
+      "year": "1988",
+      "type": "Primary text",
+      "reliability": "Primary",
+      "contribution": "Foundational",
+      "originLanguage": "Japanese",
+      "domainAuthority": null,
+      "annotation": "The insider's statement of the philosophy by the engineer who built the system, first published in Japanese in 1978. The source for the entry's account of inventory-as-waste, the supermarket inspiration, and the pull logic, given in Ohno's own terms rather than a later interpreter's."
+    },
+    {
+      "author": "Womack, James P.; Jones, Daniel T.; Roos, Daniel",
+      "title": "The Machine That Changed the World: The Story of Lean Production",
+      "year": "1990",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The MIT International Motor Vehicle Program study that named 'lean production' for a Western audience and supplied the comparative plant data behind the entry's claims about the performance gap. The standard reference for the universalist reading the entry weighs against its critics."
+    },
+    {
+      "author": "Fujimoto, Takahiro",
+      "title": "The Evolution of a Manufacturing System at Toyota",
+      "year": "1999",
+      "type": "Monograph",
+      "reliability": "Authoritative",
+      "contribution": "Essential",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The major scholarly study of how the Toyota Production System actually developed — emergent, unplanned, entangled with the firm's history. Grounds the entry's argument that the system resists clean copying and that its retrospective coherence is easy to overstate."
+    },
+    {
+      "author": "Womack, James P.; Jones, Daniel T.",
+      "title": "Lean Thinking: Banish Waste and Create Wealth in Your Corporation",
+      "year": "1996",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The sequel that generalized lean from cars into a portable management philosophy of value, flow, and pull. Useful for the entry's account of how the ideas spread beyond manufacturing and where that spread outran its foundations."
+    },
+    {
+      "author": "Parker, Mike; Slaughter, Jane",
+      "title": "Choosing Sides: Unions and the Team Concept",
+      "year": "1988",
+      "type": "Monograph",
+      "reliability": "Scholarly",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The labor-side critique that named lean production 'management by stress.' The source for the entry's treatment of the human cost of removing slack and of the gap between Toyota's practice and its Western imitations."
+    },
+    {
+      "author": "Liker, Jeffrey K.",
+      "title": "The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer",
+      "year": "2004",
+      "type": "Monograph",
+      "reliability": "Credible",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "The most widely read synthesis of Toyota's management principles for a general business audience. Included as the entry point through which most managers encountered the system, and a marker of how it was translated — and simplified — for export."
+    },
+    {
+      "author": "Shingo, Shigeo",
+      "title": "A Study of the Toyota Production System: From an Industrial Engineering Viewpoint",
+      "year": "1989",
+      "type": "Monograph",
+      "reliability": "Credible",
+      "contribution": "Supplementary",
+      "originLanguage": "Japanese",
+      "domainAuthority": null,
+      "annotation": "First published in Japanese in 1981 and translated by Productivity Press in 1989. The consultant's-eye account by the industrial engineer who taught courses at Toyota from the 1950s and formalized enabling techniques such as SMED, the single-minute exchange of die. Grounds the entry's treatment of rapid changeover as the precondition for the small batches that pull scheduling requires; Shingo codified and popularized these tools rather than originating the production system."
+    },
+    {
+      "author": "Toyota Motor Corporation",
+      "title": "75 Years of Toyota: The Origins of Just-in-Time",
+      "year": "2012",
+      "type": "Corporate history",
+      "reliability": "Primary",
+      "contribution": "Supplementary",
+      "originLanguage": null,
+      "domainAuthority": null,
+      "annotation": "Toyota's own online corporate history, which distinguishes Kiichiro Toyoda's late-1930s coining of the 'just-in-time' idea from Taiichi Ohno's postwar construction of the working system and its spread across the company's plants by the early 1960s. Grounds the entry's phased chronology and its attribution of separate roles to founder, engineer, and plant."
+    }
+  ],
+  "commerce": [
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "author": "Liker, Jeffrey K.",
+      "title": "The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer",
+      "note": "The clearest on-ramp if you have never studied Toyota — Liker lays out the principles in plain business language, so read it first to grasp what people mean by 'lean' before you meet the sharper histories and critiques."
+    },
+    {
+      "type": "Book",
+      "level": "Introductory",
+      "author": "Womack, James P.; Jones, Daniel T.; Roos, Daniel",
+      "title": "The Machine That Changed the World: The Story of Lean Production",
+      "note": "The book that named lean for the West, and still the most gripping narrative of how Toyota outbuilt Detroit. Best for a reader who wants the story and the data together rather than a how-to manual."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "author": "Ohno, Taiichi",
+      "title": "Toyota Production System: Beyond Large-Scale Production",
+      "note": "Go here once the summaries feel thin and you want the system from the person who built it. Short, aphoristic, and occasionally cryptic — Ohno assumes you will think alongside him rather than be walked through it."
+    },
+    {
+      "type": "Book",
+      "level": "Intermediate",
+      "author": "Womack, James P.; Jones, Daniel T.",
+      "title": "Lean Thinking: Banish Waste and Create Wealth in Your Corporation",
+      "note": "For the reader who wants to see the factory ideas generalized into value, flow, and pull across whole organizations — the book that pushed lean out of the auto plant and into services, for better and worse."
+    },
+    {
+      "type": "Book",
+      "level": "Scholarly",
+      "author": "Fujimoto, Takahiro",
+      "title": "The Evolution of a Manufacturing System at Toyota",
+      "note": "The serious academic account for anyone who wants to test the popular story against the record. Fujimoto shows the system as messy, emergent, and historically contingent — demanding, but the corrective to every tidy management summary."
+    }
+  ],
+  "popularCulture": [
+    {
+      "type": "Film",
+      "title": "Gung Ho (1986, dir. Ron Howard)",
+      "description": "A Japanese company reopens a closed American car plant and clashes with its workers over discipline, teamwork, and speed. The comedy plays the culture gap for laughs and leans on broad stereotypes. But it caught a real 1980s anxiety: that Japanese factory methods were beating American ones, and that the reasons ran deeper than machines."
+    },
+    {
+      "type": "Novel",
+      "title": "The Goal (1984, Eliyahu Goldratt and Jeff Cox)",
+      "description": "A business novel about a plant manager racing to save his factory by rethinking how work flows through it. Its focus is bottlenecks rather than just-in-time exactly, but it made a generation of managers think about production as a system. Millions read it in business schools, which is rare for a factory story."
+    },
+    {
+      "type": "Concept",
+      "title": "Kanban boards in office and software work",
+      "description": "Toyota's paper cards for signaling 'make one more' became the columns of cards on screens in Trello, Jira, and countless offices. Software teams borrowed the pull idea to limit work in progress. Most people sliding a card from 'doing' to 'done' have no idea the tool was born on a car assembly line."
+    },
+    {
+      "type": "Event",
+      "title": "The COVID-19 supply shortages (2020–2021)",
+      "description": "Empty shelves and a long shortage of computer chips that idled car plants made the fragility of lean supply chains front-page news. For years, holding little inventory had looked like smart management. The pandemic showed how fast a thin, global system could seize up, and sent many firms scrambling to rebuild the buffers they had cut."
+    },
+    {
+      "type": "Phrase",
+      "title": "\"Just-in-time\" in everyday speech",
+      "description": "The phrase escaped the factory and now describes anything delivered at the last needed moment: just-in-time hiring, just-in-time learning, even a rushed personal errand. In casual use it usually means cutting it close. The original meaning — a disciplined system that made lateness impossible — tends to drop away entirely."
+    },
+    {
+      "type": "Concept",
+      "title": "\"Lean\" as a management buzzword",
+      "description": "Toyota's factory philosophy became a label stuck on almost everything: lean startups, lean healthcare, lean government. Often it signals real focus on cutting waste. Just as often it is a polite word for spending less and expecting more, borrowing Toyota's prestige while dropping the trained workers and patient problem-solving that made the original work."
+    }
+  ],
+  "startYear": 1938,
+  "endYear": 2026,
+  "regions": [
+    "East Asia"
+  ],
+  "degree": 7,
+  "added": "2026-07-09"
+}
