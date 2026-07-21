@@ -245,12 +245,18 @@ function repMatch(sa, sb, lenient) {
 // Same logic as the dedup tool: strip parenthetical edition/translator notes so
 // "Arrian (Penguin Classics edition)" matches "Arrian", but distinct authors of a
 // same-titled book (Isaacson vs Clark on "Leonardo da Vinci") stay distinct.
+// The title is also stripped of a trailing " -- Creator" suffix and a leading
+// article, so a plain Book "Penelopiad -- Margaret Atwood" is caught as the same
+// work as a LITERARY pick "The Penelopiad" by the same author. Different
+// translators/editors keep the author half of the signature distinct, so genuine
+// alternate editions (e.g. Lau vs Le Guin on the Tao Te Ching) still pass.
 const mediaNorm = s => (s || '').toString().toLowerCase().replace(/[^a-z0-9]/g, '');
 const mediaStripParen = s => (s || '').replace(/\([^)]*\)/g, ' ');
+const mediaStripTitle = s => (s || '').split(' -- ')[0].replace(/^\s*(the|a|an)\s+/i, '');
 function commerceSig(c) {
   const sigs = [];
   if (c.isbn) sigs.push('i:' + String(c.isbn).replace(/[^0-9xX]/g, ''));
-  const t = mediaNorm(mediaStripParen(c.title));
+  const t = mediaNorm(mediaStripTitle(mediaStripParen(c.title)));
   if (t) sigs.push('t:' + t + '|' + mediaNorm(mediaStripParen(c.author)));
   return sigs;
 }
